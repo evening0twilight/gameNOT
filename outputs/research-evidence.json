@@ -1,0 +1,3109 @@
+{
+  "as_of": "2026-10-30",
+  "method": "Purposive desk research, not a representative survey. 16 paired regional store snapshots, plus Dispatch as an adjacent benchmark in the report. 36 review pages × first 5 rendered cards; 180 appearances / 173 unique candidate permalinks. 33 selected qualitative summaries. No interviews or playtests conducted.",
+  "sources": {
+    "post": [
+      "Our Adventurer Guild：开发者公开复盘，2024",
+      "https://www.reddit.com/r/gamedev/comments/1cp0ukt/a_postmortem_for_my_first_game_which_went_much/"
+    ],
+    "exo": [
+      "Northway Games：Exocolonist 发售公告，2022",
+      "https://northwaygames.com/exocolonist-release/"
+    ],
+    "volcano": [
+      "AUTOMATON：火山的女儿开发者访谈，2026-07-29",
+      "https://automaton-media.com/en/interviews/daughter-raising-sim-volcano-princess-aimed-to-reassure-players-that-any-life-you-lead-is-equally-wonderful-devs-reflect-on-the-games-breakout-success-and-complete-edition/"
+    ],
+    "dispatch": [
+      "Dispatch：Steam 官方商店",
+      "https://store.steampowered.com/app/2592160/Dispatch/"
+    ],
+    "dispatch-news": [
+      "GamesBeat：Dispatch 周年开发者采访，2026-10-22",
+      "https://gamesbeat.com/dispatch-surpasses-5-million-players-as-adhoc-announces-mobile-expansion/"
+    ],
+    "loc": [
+      "Allcorrect：公开本地化报价说明，2026-03-05",
+      "https://allcorrectgames.com/insights/localization-pricing/"
+    ],
+    "visibility": [
+      "Steamworks：商店曝光机制",
+      "https://partner.steamgames.com/doc/marketing/visibility"
+    ],
+    "utm": [
+      "Steamworks：UTM 归因",
+      "https://partner.steamgames.com/doc/marketing/utm_analytics"
+    ],
+    "direct": [
+      "Steam Direct：发行流程与费用",
+      "https://partner.steamgames.com/steamdirect"
+    ],
+    "ai": [
+      "Steamworks：内容调查与 AI 内容披露",
+      "https://partner.steamgames.com/doc/gettingstarted/contentsurvey"
+    ],
+    "nppa": [
+      "国家新闻出版署：出版国产网络游戏作品审批",
+      "https://www.nppa.gov.cn/bsfw/xksx/cbfxl/wlcbfwspsx/202210/t20221013_600725.html"
+    ],
+    "godot": [
+      "Godot：许可证与商业发行",
+      "https://docs.godotengine.org/en/stable/about/complying_with_licenses.html"
+    ],
+    "web": [
+      "Godot：网页导出约束",
+      "https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html"
+    ]
+  },
+  "store_snapshots": [
+    {
+      "appid": 763890,
+      "group": "A",
+      "name": "Wildermyth",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/763890/?cc=cn&l=schinese",
+      "title": "Steam 上的 漫野奇谭",
+      "review_rows": [
+        "最近评测： 特别好评 (45) - 过去 30 天内的 45 篇用户评测中有 80% 为好评。",
+        "简体中文评测： 特别好评 (3,075) - 此游戏的 3,075 篇用户评测中有 94% 为好评。"
+      ],
+      "purchases": [
+        "购买 Wildermyth ¥ 80.00 添加至购物车",
+        "购买 Wildermyth Complete Edition 捆绑包 (?) 包含 3 件物品： Wildermyth , 漫野奇谭 - 盔甲与皮肤 , Wildermyth - Omenroad 捆绑包信息 -15% -15% ¥ 144.00 ¥ 122.40 立省 15%。原价为 ¥ 144.00，折后为 ¥ 122.40。 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2021 年 6 月 15 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ 英语 ✔ 葡萄牙语 - 巴西 ✔ 德语 ✔ 西班牙语 - 拉丁美洲 ✔ 法语 ✔ 俄语 ✔"
+    },
+    {
+      "appid": 763890,
+      "group": "A",
+      "name": "Wildermyth",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/763890/?cc=us&l=english",
+      "title": "Wildermyth on Steam",
+      "review_rows": [
+        "Recent Reviews: Very Positive (45) - 80% of the 45 user reviews in the last 30 days are positive.",
+        "English Reviews: Overwhelmingly Positive (11,723) - 95% of the 11,723 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Buy Wildermyth $24.99 Add to Cart",
+        "Buy Wildermyth Complete Edition BUNDLE (?) Includes 3 items: Wildermyth , Wildermyth - Armors and Skins , Wildermyth - Omenroad Bundle info -15% -15% $39.97 $33.97 15% off. $39.97 normally, discounted to $33.97 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Jun 15, 2021",
+      "language_table": "Interface Full Audio Subtitles English ✔ Simplified Chinese ✔ Portuguese - Brazil ✔ German ✔ Spanish - Latin America ✔ French ✔ Russian ✔"
+    },
+    {
+      "appid": 365360,
+      "group": "A",
+      "name": "Battle Brothers",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/365360/?cc=cn&l=schinese",
+      "title": "Steam 上的 战场兄弟 Battle Brothers",
+      "review_rows": [
+        "最近评测： 特别好评 (219) - 过去 30 天内的 219 篇用户评测中有 83% 为好评。",
+        "简体中文评测： 多半好评 (2,525) - 此游戏的 2,525 篇用户评测中有 72% 为好评。"
+      ],
+      "purchases": [
+        "购买 战场兄弟 Battle Brothers ¥ 99.00 添加至购物车",
+        "购买 《战场兄弟》完整版 捆绑包 (?) 包含 4 件物品： 战场兄弟 Battle Brothers , Battle Brothers - Beasts & Exploration , Battle Brothers - Warriors of the North , Battle Brothers - Blazing Deserts 捆绑包信息 -25% -25% ¥ 206.00 ¥ 154.50 立省 25%。原价为 ¥ 206.00，折后为 ¥ 154.50。 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2017 年 3 月 24 日",
+      "language_table": "界面 完全音频 字幕 简体中文 不支持 英语 ✔ ✔"
+    },
+    {
+      "appid": 365360,
+      "group": "A",
+      "name": "Battle Brothers",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/365360/?cc=us&l=english",
+      "title": "Battle Brothers on Steam",
+      "review_rows": [
+        "Recent Reviews: Very Positive (219) - 83% of the 219 user reviews in the last 30 days are positive.",
+        "English Reviews: Very Positive (15,650) - 89% of the 15,650 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Buy Battle Brothers $29.99 Add to Cart",
+        "Buy Battle Brothers: Complete BUNDLE (?) Includes 4 items: Battle Brothers , Battle Brothers - Beasts & Exploration , Battle Brothers - Warriors of the North , Battle Brothers - Blazing Deserts Bundle info -25% -25% $64.96 $48.71 25% off. $64.96 normally, discounted to $48.71 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Mar 24, 2017",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔"
+    },
+    {
+      "appid": 601840,
+      "group": "A",
+      "name": "Griftlands",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/601840/?cc=us&l=english",
+      "title": "Griftlands on Steam",
+      "review_rows": [
+        "Recent Reviews: Mostly Positive (47) - 74% of the 47 user reviews in the last 30 days are positive.",
+        "English Reviews: Very Positive (5,299) - 93% of the 5,299 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Download Griftlands Demo Free Demo Download",
+        "Buy Deck Mastery Duo BUNDLE (?) Includes 2 items: Cobalt Core , Griftlands Bundle info -40% -55% $39.98 $17.98 55% off. $39.98 normally, discounted to $17.98 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Jun 1, 2021",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ Simplified Chinese ✔ ✔ Traditional Chinese ✔ ✔ French ✔ ✔ German ✔ ✔ Japanese ✔ ✔ Korean ✔ ✔ Polish ✔ ✔ Portuguese - Brazil ✔ ✔ Russian ✔ ✔ Spanish - Spain ✔ ✔"
+    },
+    {
+      "appid": 1940340,
+      "group": "A",
+      "name": "Darkest Dungeon II",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/1940340/?cc=us&l=english",
+      "title": "Darkest Dungeon® II on Steam",
+      "review_rows": [
+        "Recent Reviews: Mostly Positive (228) - 70% of the 228 user reviews in the last 30 days are positive.",
+        "English Reviews: Mostly Positive (12,152) - 75% of the 12,152 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Buy Darkest Dungeon® II $39.99 Add to Cart",
+        "Buy Darkest Dungeon®: The Collector's Edition BUNDLE (?) Includes 12 items: Darkest Dungeon , Darkest Dungeon® II , Darkest Dungeon©: The Color Of Madness , Darkest Dungeon©: The Shieldbreaker , Darkest Dungeon©: The Crimso n Court , Darkest Dungeon® II: Inhuman Bondage , Darkest Dungeon® II: The Binding Blade , Darkest Dungeon Soundtrack , Darkest Dungeon® II Soundtrack , Darkest Dungeon® II: Infernal Supporter Pack , Darkest Dungeon©: The Butcher's Circus , Darkest Dungeon®: The Fire's Edge Show less … Show more Bundle info -25% -25% $135.89 $101.89 25% off. $135.89 normally, discounted to $101.89 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: May 8, 2023",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ ✔ French ✔ ✔ Italian ✔ ✔ German ✔ ✔ Czech ✔ ✔ Polish ✔ ✔ Portuguese - Brazil ✔ ✔ Russian ✔ ✔ Spanish - Latin America ✔ ✔ Japanese ✔ ✔ Korean ✔ ✔ Simplified Chinese ✔ ✔ Ukrainian ✔ ✔ Spanish - Spain ✔ ✔ Traditional Chinese ✔ ✔"
+    },
+    {
+      "appid": 601840,
+      "group": "A",
+      "name": "Griftlands",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/601840/?cc=cn&l=schinese",
+      "title": "Steam 上的 欺诈之地",
+      "review_rows": [
+        "最近评测： 多半好评 (47) - 过去 30 天内的 47 篇用户评测中有 74% 为好评。",
+        "简体中文评测： 特别好评 (6,190) - 此游戏的 6,190 篇用户评测中有 94% 为好评。"
+      ],
+      "purchases": [
+        "下载 欺诈之地试玩 Free Demo 下载",
+        "购买 Griftlands ¥ 48.00 添加至购物车"
+      ],
+      "release": "发行日期: 2021 年 6 月 1 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ ✔ 英语 ✔ ✔ 繁体中文 ✔ ✔ 法语 ✔ ✔ 德语 ✔ ✔ 日语 ✔ ✔ 韩语 ✔ ✔ 波兰语 ✔ ✔ 葡萄牙语 - 巴西 ✔ ✔ 俄语 ✔ ✔ 西班牙语 - 西班牙 ✔ ✔"
+    },
+    {
+      "appid": 1940340,
+      "group": "A",
+      "name": "Darkest Dungeon II",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/1940340/?cc=cn&l=schinese",
+      "title": "Steam 上的 暗黑地牢2 Darkest Dungeon II",
+      "review_rows": [
+        "最近评测： 多半好评 (228) - 过去 30 天内的 228 篇用户评测中有 70% 为好评。",
+        "简体中文评测： 褒贬不一 (5,083) - 此游戏的 5,083 篇用户评测中有 65% 为好评。"
+      ],
+      "purchases": [
+        "购买 Darkest Dungeon® II ¥ 138.00 添加至购物车",
+        "购买 Darkest Dungeon®: The Collector's Edition 捆绑包 (?) 包含 12 件物品： Darkest Dungeon , Darkest Dungeon® II , Darkest Dungeon©: The Color Of Madness , Darkest Dungeon©: The Shieldbreaker , Darkest Dungeon©: The Crimso n Court , Darkest Dungeon® II: Inhuman Bondage , Darkest Dungeon® II: The Binding Blade , Darkest Dungeon Soundtrack , Darkest Dungeon® II Soundtrack , Darkest Dungeon® II: Infernal Supporter Pack , Darkest Dungeon©: The Butcher's Circus , Darkest Dungeon®: The Fire's Edge 收起 … 显示更多 捆绑包信息 -25% -25% ¥ 489.00 ¥ 366.75 立省 25%。原价为 ¥ 489.00，折后为 ¥ 366.75。 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2023 年 5 月 8 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ ✔ 英语 ✔ ✔ ✔ 法语 ✔ ✔ 意大利语 ✔ ✔ 德语 ✔ ✔ 捷克语 ✔ ✔ 波兰语 ✔ ✔ 葡萄牙语 - 巴西 ✔ ✔ 俄语 ✔ ✔ 西班牙语 - 拉丁美洲 ✔ ✔ 日语 ✔ ✔ 韩语 ✔ ✔ 乌克兰语 ✔ ✔ 西班牙语 - 西班牙 ✔ ✔ 繁体中文 ✔ ✔"
+    },
+    {
+      "appid": 1340480,
+      "group": "B",
+      "name": "The Cosmic Wheel Sisterhood",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/1340480/?cc=us&l=english",
+      "title": "The Cosmic Wheel Sisterhood on Steam",
+      "review_rows": [
+        "Recent Reviews: Very Positive (81) - 88% of the 81 user reviews in the last 30 days are positive.",
+        "English Reviews: Very Positive (2,948) - 93% of the 2,948 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Download The Cosmic Wheel Sisterhood Demo Download",
+        "Buy The Cosmic Wheel Sisterhood $17.99 Add to Cart"
+      ],
+      "release": "Release Date: Aug 16, 2023",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ French ✔ ✔ Spanish - Spain ✔ ✔ Japanese ✔ ✔ Russian ✔ ✔ Simplified Chinese ✔ ✔ German ✔ ✔"
+    },
+    {
+      "appid": 1148760,
+      "group": "B",
+      "name": "I Was a Teenage Exocolonist",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/1148760/?cc=us&l=english",
+      "title": "I Was a Teenage Exocolonist on Steam",
+      "review_rows": [
+        "Recent Reviews: Very Positive (39) - 94% of the 39 user reviews in the last 30 days are positive.",
+        "English Reviews: Overwhelmingly Positive (4,013) - 96% of the 4,013 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Buy I Was a Teenage Exocolonist $24.99 Add to Cart",
+        "Buy I Was a Teenage Exocolonist Deluxe BUNDLE (?) Includes 2 items: I Was a Teenage Exocolonist , I Was a Teenage Exocolonist Soundtrack Bundle info $34.98 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Aug 25, 2022",
+      "language_table": "Interface Full Audio Subtitles English ✔"
+    },
+    {
+      "appid": 1148760,
+      "group": "B",
+      "name": "I Was a Teenage Exocolonist",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/1148760/?cc=cn&l=schinese",
+      "title": "Steam 上的 I Was a Teenage Exocolonist",
+      "review_rows": [
+        "最近评测： 特别好评 (39) - 过去 30 天内的 39 篇用户评测中有 94% 为好评。",
+        "所有评测： 好评如潮 (4,489) - 此游戏的 4,489 篇用户评测中有 96% 为好评。"
+      ],
+      "purchases": [
+        "购买 I Was a Teenage Exocolonist ¥ 92.00 添加至购物车",
+        "购买 I Was a Teenage Exocolonist Deluxe 捆绑包 (?) 包含 2 件物品： I Was a Teenage Exocolonist , I Was a Teenage Exocolonist Soundtrack 捆绑包信息 ¥ 134.00 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2022 年 8 月 25 日",
+      "language_table": "界面 完全音频 字幕 简体中文 不支持 英语 ✔"
+    },
+    {
+      "appid": 1340480,
+      "group": "B",
+      "name": "The Cosmic Wheel Sisterhood",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/1340480/?cc=cn&l=schinese",
+      "title": "Steam 上的 宇宙之轮姐妹会",
+      "review_rows": [
+        "最近评测： 特别好评 (81) - 过去 30 天内的 81 篇用户评测中有 88% 为好评。",
+        "简体中文评测： 特别好评 (1,289) - 此游戏的 1,289 篇用户评测中有 90% 为好评。"
+      ],
+      "purchases": [
+        "下载 宇宙之轮姐妹会 Demo 下载",
+        "购买 The Cosmic Wheel Sisterhood ¥ 68.00 添加至购物车"
+      ],
+      "release": "发行日期: 2023 年 8 月 16 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ ✔ 英语 ✔ ✔ 法语 ✔ ✔ 西班牙语 - 西班牙 ✔ ✔ 日语 ✔ ✔ 俄语 ✔ ✔ 德语 ✔ ✔"
+    },
+    {
+      "appid": 1266030,
+      "group": "B",
+      "name": "The Pale Beyond",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/1266030/?cc=us&l=english",
+      "title": "The Pale Beyond on Steam",
+      "review_rows": [
+        "Recent Reviews: Very Positive (56) - 94% of the 56 user reviews in the last 30 days are positive.",
+        "All Reviews: Very Positive (1,919) - 90% of the 1,919 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Buy The Pale Beyond $19.99 Add to Cart",
+        "Buy The Pale Beyond: Deluxe Edition Includes 3 items: The Pale Beyond , The Pale Beyond Deluxe Soundtrack , The Pale Beyond Digital Artbook Bundle info -15% -15% $44.97 $38.22 15% off. $44.97 normally, discounted to $38.22 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Feb 24, 2023",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔"
+    },
+    {
+      "appid": 462770,
+      "group": "B",
+      "name": "Pyre",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/462770/?cc=us&l=english",
+      "title": "Pyre on Steam",
+      "review_rows": [
+        "Recent Reviews: Very Positive (14) - 85% of the 14 user reviews in the last 30 days are positive.",
+        "English Reviews: Very Positive (5,579) - 90% of the 5,579 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Buy Pyre $19.99 Add to Cart",
+        "Buy Pyre: Soundtrack Edition Includes 2 items: Pyre , Pyre: Original Soundtrack Bundle info -15% -15% $29.98 $25.48 15% off. $29.98 normally, discounted to $25.48 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Jul 25, 2017",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ ✔ French ✔ ✔ German ✔ ✔ Spanish - Spain ✔ ✔ Russian ✔ ✔ Simplified Chinese ✔ ✔"
+    },
+    {
+      "appid": 1266030,
+      "group": "B",
+      "name": "The Pale Beyond",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/1266030/?cc=cn&l=schinese",
+      "title": "Steam 上的 The Pale Beyond",
+      "review_rows": [
+        "最近评测： 特别好评 (56) - 过去 30 天内的 56 篇用户评测中有 94% 为好评。",
+        "所有评测： 特别好评 (1,919) - 此游戏的 1,919 篇用户评测中有 90% 为好评。"
+      ],
+      "purchases": [
+        "购买 The Pale Beyond ¥ 70.00 添加至购物车",
+        "购买 The Pale Beyond: Deluxe Edition 包含 3 件物品： The Pale Beyond , The Pale Beyond Deluxe Soundtrack , The Pale Beyond Digital Artbook 捆绑包信息 -15% -15% ¥ 170.00 ¥ 144.50 立省 15%。原价为 ¥ 170.00，折后为 ¥ 144.50。 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2023 年 2 月 24 日",
+      "language_table": "界面 完全音频 字幕 简体中文 不支持 英语 ✔ ✔"
+    },
+    {
+      "appid": 462770,
+      "group": "B",
+      "name": "Pyre",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/462770/?cc=cn&l=schinese",
+      "title": "Steam 上的 Pyre",
+      "review_rows": [
+        "最近评测： 特别好评 (14) - 过去 30 天内的 14 篇用户评测中有 85% 为好评。",
+        "简体中文评测： 特别好评 (995) - 此游戏的 995 篇用户评测中有 89% 为好评。"
+      ],
+      "purchases": [
+        "购买 Pyre ¥ 76.00 添加至购物车",
+        "购买 Pyre: Soundtrack Edition 包含 2 件物品： Pyre , Pyre: Original Soundtrack 捆绑包信息 -15% -15% ¥ 118.00 ¥ 100.30 立省 15%。原价为 ¥ 118.00，折后为 ¥ 100.30。 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2017 年 7 月 25 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ ✔ 英语 ✔ ✔ ✔ 法语 ✔ ✔ 德语 ✔ ✔ 西班牙语 - 西班牙 ✔ ✔ 俄语 ✔ ✔"
+    },
+    {
+      "appid": 2026000,
+      "group": "C",
+      "name": "Our Adventurer Guild",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/2026000/?cc=cn&l=schinese",
+      "title": "Steam 上的 我们的冒险者公会",
+      "review_rows": [
+        "最近评测： 特别好评 (57) - 过去 30 天内的 57 篇用户评测中有 94% 为好评。",
+        "简体中文评测： 特别好评 (612) - 此游戏的 612 篇用户评测中有 94% 为好评。"
+      ],
+      "purchases": [
+        "下载 Our Adventurer Guild Demo 下载",
+        "购买 Our Adventurer Guild ¥ 58.00 添加至购物车"
+      ],
+      "release": "发行日期: 2024 年 4 月 12 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ ✔ 英语 ✔ ✔ 德语 ✔ ✔ 日语 ✔ ✔ 韩语 ✔ ✔"
+    },
+    {
+      "appid": 2026000,
+      "group": "C",
+      "name": "Our Adventurer Guild",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/2026000/?cc=us&l=english",
+      "title": "Our Adventurer Guild on Steam",
+      "review_rows": [
+        "Recent Reviews: Very Positive (57) - 94% of the 57 user reviews in the last 30 days are positive.",
+        "English Reviews: Overwhelmingly Positive (1,842) - 95% of the 1,842 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Download Our Adventurer Guild Demo Download",
+        "Buy Our Adventurer Guild $14.99 Add to Cart"
+      ],
+      "release": "Release Date: Apr 12, 2024",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ German ✔ ✔ Japanese ✔ ✔ Korean ✔ ✔ Simplified Chinese ✔ ✔"
+    },
+    {
+      "appid": 1043260,
+      "group": "C",
+      "name": "Gladiator Guild Manager",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/1043260/?cc=us&l=english",
+      "title": "Save 67% on Gladiator Guild Manager on Steam",
+      "review_rows": [
+        "Recent Reviews: Mixed (26) - 69% of the 26 user reviews in the last 30 days are positive.",
+        "English Reviews: Very Positive (1,650) - 80% of the 1,650 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Buy Gladiator Guild Manager SPECIAL PROMOTION! Offer ends in -67% $14.99 $4.94 67% off. $14.99 normally, discounted to $4.94 Add to Cart",
+        "Buy TV Station Tycoon - Gladiator Guild Manager BUNDLE (?) Includes 2 items: Gladiator Guild Manager , TV Station Tycoon Bundle info -10% -63% $19.98 $7.46 63% off. $19.98 normally, discounted to $7.46 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Jun 22, 2024",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ French ✔ ✔ Italian ✔ ✔ German ✔ ✔ Spanish - Spain ✔ ✔ Czech ✔ ✔ Japanese ✔ ✔ Korean ✔ ✔ Polish ✔ ✔ Portuguese - Portugal ✔ ✔ Portuguese - Brazil ✔ ✔ Russian ✔ ✔ Simplified Chinese ✔ ✔ Spanish - Latin America ✔ ✔ Turkish ✔ ✔"
+    },
+    {
+      "appid": 1043260,
+      "group": "C",
+      "name": "Gladiator Guild Manager",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/1043260/?cc=cn&l=schinese",
+      "title": "在 Steam 上购买 角斗士公会经理 立省 67%",
+      "review_rows": [
+        "最近评测： 褒贬不一 (26) - 过去 30 天内的 26 篇用户评测中有 69% 为好评。",
+        "简体中文评测： 褒贬不一 (599) - 此游戏的 599 篇用户评测中有 69% 为好评。"
+      ],
+      "purchases": [
+        "购买 Gladiator Guild Manager 特价促销！剩余时间 -67% ¥ 52.00 ¥ 17.16 立省 67%。原价为 ¥ 52.00，折后为 ¥ 17.16。 添加至购物车"
+      ],
+      "release": "发行日期: 2024 年 6 月 22 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ ✔ 英语 ✔ ✔ 法语 ✔ ✔ 意大利语 ✔ ✔ 德语 ✔ ✔ 西班牙语 - 西班牙 ✔ ✔ 捷克语 ✔ ✔ 日语 ✔ ✔ 韩语 ✔ ✔ 波兰语 ✔ ✔ 葡萄牙语 - 葡萄牙 ✔ ✔ 葡萄牙语 - 巴西 ✔ ✔ 俄语 ✔ ✔ 西班牙语 - 拉丁美洲 ✔ ✔ 土耳其语 ✔ ✔"
+    },
+    {
+      "appid": 1119600,
+      "group": "C",
+      "name": "Help Will Come Tomorrow",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/1119600/?cc=us&l=english",
+      "title": "Save 85% on Help Will Come Tomorrow on Steam",
+      "review_rows": [
+        "All Reviews: Very Positive (783) - 80% of the 783 user reviews for this game are positive.",
+        "All Reviews: All Time: Very Positive (80% of 783)"
+      ],
+      "purchases": [
+        "Download Help Will Come Tomorrow Demo Download",
+        "Buy Help Will Come Tomorrow SPECIAL PROMOTION! Offer ends in -85% $19.99 $2.99 85% off. $19.99 normally, discounted to $2.99 Add to Cart"
+      ],
+      "release": "Release Date: Apr 21, 2020",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ Polish ✔ ✔ Russian ✔ ✔"
+    },
+    {
+      "appid": 317820,
+      "group": "C",
+      "name": "Guild of Dungeoneering",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/317820/?cc=cn&l=schinese",
+      "title": "Steam 上的 地下城探险公会终极版 Guild of Dungeoneering Ultimate Edition",
+      "review_rows": [
+        "所有评测： 多半好评 (1,741) - 此游戏的 1,741 篇用户评测中有 76% 为好评。",
+        "所有评测： 发布至今： 多半好评 (1,741 篇中的 76%)"
+      ],
+      "purchases": [
+        "购买 地下城探险公会终极版 Guild of Dungeoneering Ultimate Edition ¥ 79.00 添加至购物车",
+        "购买 Gambrinous Bundle 捆绑包 (?) 包含 2 件物品： Cardpocalypse , 地下城探险公会终极版 Guild of Dungeoneering Ultimate Edition 捆绑包信息 -10% -10% ¥ 171.00 ¥ 153.90 立省 10%。原价为 ¥ 171.00，折后为 ¥ 153.90。 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2015 年 7 月 14 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ 英语 ✔ ✔ 日语 ✔ 韩语 ✔ 繁体中文 ✔"
+    },
+    {
+      "appid": 317820,
+      "group": "C",
+      "name": "Guild of Dungeoneering",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/317820/?cc=us&l=english",
+      "title": "Guild of Dungeoneering Ultimate Edition on Steam",
+      "review_rows": [
+        "All Reviews: Mostly Positive (1,741) - 76% of the 1,741 user reviews for this game are positive.",
+        "All Reviews: All Time: Mostly Positive (76% of 1,741)"
+      ],
+      "purchases": [
+        "Buy Guild of Dungeoneering Ultimate Edition $19.99 Add to Cart",
+        "Buy Gambrinous Bundle BUNDLE (?) Includes 2 items: Cardpocalypse , Guild of Dungeoneering Ultimate Edition Bundle info -10% -10% $44.98 $40.48 10% off. $44.98 normally, discounted to $40.48 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Jul 14, 2015",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ Simplified Chinese ✔ Japanese ✔ Korean ✔ Traditional Chinese ✔"
+    },
+    {
+      "appid": 1119600,
+      "group": "C",
+      "name": "Help Will Come Tomorrow",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/1119600/?cc=cn&l=schinese",
+      "title": "在 Steam 上购买 Help Will Come Tomorrow 立省 85%",
+      "review_rows": [
+        "所有评测： 特别好评 (783) - 此游戏的 783 篇用户评测中有 80% 为好评。",
+        "所有评测： 发布至今： 特别好评 (783 篇中的 80%)"
+      ],
+      "purchases": [
+        "下载 Help Will Come Tomorrow Demo 下载",
+        "购买 Help Will Come Tomorrow 特价促销！剩余时间 -85% ¥ 77.00 ¥ 11.55 立省 85%。原价为 ¥ 77.00，折后为 ¥ 11.55。 添加至购物车"
+      ],
+      "release": "发行日期: 2020 年 4 月 21 日",
+      "language_table": "界面 完全音频 字幕 简体中文 不支持 英语 ✔ ✔ 波兰语 ✔ ✔ 俄语 ✔ ✔"
+    },
+    {
+      "appid": 699330,
+      "group": "C",
+      "name": "The Iron Oath",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/699330/?cc=us&l=english",
+      "title": "The Iron Oath on Steam",
+      "review_rows": [
+        "All Reviews: Mostly Positive (771) - 76% of the 771 user reviews for this game are positive.",
+        "All Reviews: All Time: Mostly Positive (76% of 771)"
+      ],
+      "purchases": [
+        "Buy The Iron Oath $24.99 Add to Cart",
+        "Buy War-Forged Tactician BUNDLE (?) Includes 3 items: Those Who Rule , The Iron Oath , Lost Eidolons Bundle info -10% -42% $77.97 $44.97 42% off. $77.97 normally, discounted to $44.97 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Nov 2, 2023",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ ✔"
+    },
+    {
+      "appid": 280320,
+      "group": "C",
+      "name": "Adventurer Manager",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/280320/?cc=cn&l=schinese",
+      "title": "Steam 上的 Adventurer Manager",
+      "review_rows": [
+        "所有评测： 褒贬不一 (492) - 此游戏的 492 篇用户评测中有 59% 为好评。",
+        "所有评测： 发布至今： 褒贬不一 (492 篇中的 59%)"
+      ],
+      "purchases": [
+        "购买 Adventurer Manager ¥ 21.00 添加至购物车"
+      ],
+      "release": "发行日期: 2014 年 12 月 4 日",
+      "language_table": "界面 完全音频 字幕 简体中文 不支持 英语 ✔ ✔ ✔"
+    },
+    {
+      "appid": 280320,
+      "group": "C",
+      "name": "Adventurer Manager",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/280320/?cc=us&l=english",
+      "title": "Adventurer Manager on Steam",
+      "review_rows": [
+        "All Reviews: Mixed (492) - 59% of the 492 user reviews for this game are positive.",
+        "All Reviews: All Time: Mixed (59% of 492)"
+      ],
+      "purchases": [
+        "Buy Adventurer Manager $4.99 Add to Cart"
+      ],
+      "release": "Release Date: Dec 4, 2014",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ ✔"
+    },
+    {
+      "appid": 699330,
+      "group": "C",
+      "name": "The Iron Oath",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/699330/?cc=cn&l=schinese",
+      "title": "Steam 上的 The Iron Oath",
+      "review_rows": [
+        "所有评测： 多半好评 (771) - 此游戏的 771 篇用户评测中有 76% 为好评。",
+        "所有评测： 发布至今： 多半好评 (771 篇中的 76%)"
+      ],
+      "purchases": [
+        "购买 The Iron Oath ¥ 148.00 添加至购物车",
+        "购买 War-Forged Tactician 捆绑包 (?) 包含 3 件物品： Those Who Rule , The Iron Oath , Lost Eidolons 捆绑包信息 -10% -43% ¥ 395.00 ¥ 226.62 立省 43%。原价为 ¥ 395.00，折后为 ¥ 226.62。 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2023 年 11 月 2 日",
+      "language_table": "界面 完全音频 字幕 简体中文 不支持 英语 ✔ ✔ ✔"
+    },
+    {
+      "appid": 1669980,
+      "group": "B-boundary",
+      "name": "Volcano Princess",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/1669980/?cc=us&l=english",
+      "title": "Save 35% on Volcano Princess on Steam",
+      "review_rows": [
+        "Recent Reviews: Overwhelmingly Positive (218) - 95% of the 218 user reviews in the last 30 days are positive.",
+        "English Reviews: Overwhelmingly Positive (3,016) - 95% of the 3,016 user reviews for this game are positive."
+      ],
+      "purchases": [
+        "Buy Volcano Princess SPECIAL PROMOTION! Offer ends November 12 -35% $10.99 $7.14 35% off. $10.99 normally, discounted to $7.14 Add to Cart",
+        "Buy Volcano Princess & Maltese's Fluffy Onsen BUNDLE (?) Includes 2 items: Maltese's Fluffy Onsen , Volcano Princess Bundle info -10% -30% $16.98 $11.82 30% off. $16.98 normally, discounted to $11.82 Add to Cart Add to Account"
+      ],
+      "release": "Release Date: Apr 20, 2023",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ Simplified Chinese ✔ ✔ Japanese ✔ ✔ Korean ✔ ✔ Traditional Chinese ✔ ✔"
+    },
+    {
+      "appid": 1669980,
+      "group": "B-boundary",
+      "name": "Volcano Princess",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/1669980/?cc=cn&l=schinese",
+      "title": "在 Steam 上购买 火山的女儿 立省 35%",
+      "review_rows": [
+        "最近评测： 好评如潮 (218) - 过去 30 天内的 218 篇用户评测中有 95% 为好评。",
+        "简体中文评测： 好评如潮 (38,896) - 此游戏的 38,896 篇用户评测中有 97% 为好评。"
+      ],
+      "purchases": [
+        "购买 Volcano Princess 特别促销！11 月 12 日截止 -35% ¥ 35.00 ¥ 22.75 立省 35%。原价为 ¥ 35.00，折后为 ¥ 22.75。 添加至购物车",
+        "购买 火山的女儿 & 线条小狗：动物温泉 捆绑包 (?) 包含 2 件物品： 线条小狗：动物温泉 , Volcano Princess 捆绑包信息 -10% -28% ¥ 61.00 ¥ 43.87 立省 28%。原价为 ¥ 61.00，折后为 ¥ 43.87。 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2023 年 4 月 20 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ ✔ 英语 ✔ ✔ 日语 ✔ ✔ 韩语 ✔ ✔ 繁体中文 ✔ ✔"
+    },
+    {
+      "appid": 1948980,
+      "group": "A-boundary",
+      "name": "Hero's Adventure",
+      "region": "cn",
+      "lang": "schinese",
+      "url": "https://store.steampowered.com/app/1948980/?cc=cn&l=schinese",
+      "title": "Steam 上的 大侠立志传：碧血丹心",
+      "review_rows": [
+        "最近评测： 褒贬不一 (146) - 过去 30 天内的 146 篇用户评测中有 47% 为好评。 此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的总体评价。",
+        "简体中文评测： 特别好评 (17,248) * - 此游戏的 17,248 篇用户评测中有 80% 为好评。 此产品在一个或多个时间段内出现跑题评测活动。这些时间段内的评测已按您的偏好设置不计入此产品的总体评价。"
+      ],
+      "purchases": [
+        "购买 大侠立志传：碧血丹心 ¥ 69.00 添加至购物车",
+        "购买 冷雪大侠 捆绑包 (?) 包含 2 件物品： 暖雪 Warm Snow , 大侠立志传：碧血丹心 捆绑包信息 -10% -10% ¥ 127.00 ¥ 114.30 立省 10%。原价为 ¥ 127.00，折后为 ¥ 114.30。 添加至购物车 添加到帐户"
+      ],
+      "release": "发行日期: 2023 年 11 月 15 日",
+      "language_table": "界面 完全音频 字幕 简体中文 ✔ ✔ 繁体中文 ✔ ✔ 英语 ✔ ✔ 葡萄牙语 - 葡萄牙 ✔ ✔ 西班牙语 - 拉丁美洲 ✔ ✔ 越南语 ✔ ✔ 泰语 ✔ ✔"
+    },
+    {
+      "appid": 1948980,
+      "group": "A-boundary",
+      "name": "Hero's Adventure",
+      "region": "us",
+      "lang": "english",
+      "url": "https://store.steampowered.com/app/1948980/?cc=us&l=english",
+      "title": "Hero's Adventure: Road to Passion on Steam",
+      "review_rows": [
+        "Recent Reviews: Mixed (146) - 47% of the 146 user reviews in the last 30 days are positive. This product has experienced one or more periods of off-topic review activity.  Based on your preferences, the reviews within these periods have been excluded from this product's Review Score.",
+        "English Reviews: Very Positive (2,015) * - 93% of the 2,015 user reviews for this game are positive. This product has experienced one or more periods of off-topic review activity.  Based on your preferences, the reviews within these periods have been excluded from this product's Review Score."
+      ],
+      "purchases": [
+        "Buy Dreamscape Canvas BUNDLE (?) Includes 2 items: Hero's Adventure:Road to Passion , 大侠立志传：碧血丹心 - 新颜绘梦 Bundle info -10% -10% $19.98 $17.98 10% off. $19.98 normally, discounted to $17.98 Add to Cart Add to Account",
+        "Buy Hero's Adventure:Road to Passion $17.99 Add to Cart"
+      ],
+      "release": "Release Date: Nov 15, 2023",
+      "language_table": "Interface Full Audio Subtitles English ✔ ✔ Simplified Chinese ✔ ✔ Traditional Chinese ✔ ✔ Portuguese - Portugal ✔ ✔ Spanish - Latin America ✔ ✔ Vietnamese ✔ ✔ Thai ✔ ✔"
+    }
+  ],
+  "selected_review_evidence": [
+    {
+      "id": "E01",
+      "appid": 763890,
+      "game": "Wildermyth",
+      "sampling_page": "recent",
+      "url": "https://steamcommunity.com/id/swarskop/recommended/763890/",
+      "date_as_displayed": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "8.3 hrs on record",
+      "observation": "玩家记住的是家庭关系与一次牺牲，而不仅是战斗胜负。",
+      "implication": "养成需要留下可叙述的共同经历。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E02",
+      "appid": 763890,
+      "game": "Wildermyth",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/ancient_eli/recommended/763890/",
+      "date_as_displayed": "Posted: 17 June, 2021",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "16.7 hrs on record",
+      "observation": "首轮新鲜感很强，之后事件与战斗构筑的重复削弱继续游玩的动力。",
+      "implication": "不要把有限事件包装成无限故事。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E03",
+      "appid": 763890,
+      "game": "Wildermyth",
+      "sampling_page": "chinese",
+      "url": "https://steamcommunity.com/id/heiyang/recommended/763890/",
+      "date_as_displayed": "Posted: 6 January, 2022",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "53.8 hrs on record",
+      "observation": "起初不喜欢画风，经朋友推荐购买，最终被角色经历打动。",
+      "implication": "口碑能跨过审美障碍，但这不证明美术不重要。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E04",
+      "appid": 365360,
+      "game": "Battle Brothers",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/profiles/76561198004010238/recommended/365360/",
+      "date_as_displayed": "Posted: 24 March, 2017",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "102.6 hrs on record",
+      "observation": "随机损失角色后，重建队伍和重新培养的时间负担令玩家厌倦。",
+      "implication": "失败应产生新局面，避免长时间补回旧进度。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E05",
+      "appid": 601840,
+      "game": "Griftlands",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/id/wargear/recommended/601840/",
+      "date_as_displayed": "Posted: 2 July, 2020",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "8.2 hrs on record",
+      "observation": "好恶关系能改变协助、交易与交涉，玩家感到选择与战斗相连。",
+      "implication": "关系应提供行动和后果，不只是背景介绍。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E06",
+      "appid": 601840,
+      "game": "Griftlands",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/id/TheSacredVoice/recommended/601840/",
+      "date_as_displayed": "Posted: 18 June, 2020",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "69.2 hrs on record",
+      "observation": "推荐游戏，但认为高难度下关系奖励会让角色扮演退化为收益优化。",
+      "implication": "给角色作选择与配最强增益之间存在张力。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E07",
+      "appid": 601840,
+      "game": "Griftlands",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/profiles/76561198060999290/recommended/601840/",
+      "date_as_displayed": "Posted: 24 May, 2023",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "43.8 hrs on record",
+      "observation": "反复阅读相同对白、较长流程让多次游玩变得拖沓。",
+      "implication": "重复内容应跳过；时长不能依赖重复对话。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E08",
+      "appid": 601840,
+      "game": "Griftlands",
+      "sampling_page": "chinese",
+      "url": "https://steamcommunity.com/profiles/76561198400424478/recommended/601840/",
+      "date_as_displayed": "Posted: 6 June, 2021",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "32.8 hrs on record",
+      "observation": "明确提到因中文游戏视频创作者的游玩内容而购买。",
+      "implication": "有创作者导购的个案证据，没有可外推的转化率。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E09",
+      "appid": 1940340,
+      "game": "Darkest Dungeon II",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/thisiceaintnice/recommended/1940340/",
+      "date_as_displayed": "Posted: 11 August, 2024",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "54.0 hrs on record",
+      "observation": "认为负面关系强制使用不想用的技能，限制了策略控制；也不喜欢长局失败后的重复。",
+      "implication": "争执必须可预见、可应对，且损失与投入时间相称。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E10",
+      "appid": 1148760,
+      "game": "I Was a Teenage Exocolonist",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/id/snowshoes1818/recommended/1148760/",
+      "date_as_displayed": "Posted: 17 September, 2022",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "136.6 hrs on record",
+      "observation": "人物与故事带来持续的情绪投入，并驱动多次游玩。",
+      "implication": "叙事用户愿意为人物体验返回游戏。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E11",
+      "appid": 1148760,
+      "game": "I Was a Teenage Exocolonist",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/carnaxcce/recommended/1148760/",
+      "date_as_displayed": "Posted: 28 August, 2022",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "7.1 hrs on record",
+      "observation": "肯定开头的美术、音乐和故事，但对后期重复、恋爱状态反馈不足及结尾失望。",
+      "implication": "漂亮开场不能代替关系成立后的持续反应。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E12",
+      "appid": 1148760,
+      "game": "I Was a Teenage Exocolonist",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/wolfmarelalala/recommended/1148760/",
+      "date_as_displayed": "Posted: 30 August, 2022",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "10.0 hrs on record",
+      "observation": "反感为了修正悲剧重复流程，认为部分选择更像寻找唯一正确答案。",
+      "implication": "悲剧和多周目不是天然的留存机制。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E13",
+      "appid": 1148760,
+      "game": "I Was a Teenage Exocolonist",
+      "sampling_page": "chinese",
+      "url": "https://steamcommunity.com/profiles/76561198204102055/recommended/1148760/",
+      "date_as_displayed": "Posted: 25 August, 2022",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "18.4 hrs on record",
+      "observation": "画风吸引购买兴趣，同时明确提出中文支持的重要性。",
+      "implication": "美术负责进入漏斗，本地化决定能否继续体验。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E14",
+      "appid": 1148760,
+      "game": "I Was a Teenage Exocolonist",
+      "sampling_page": "chinese",
+      "url": "https://steamcommunity.com/id/vonny627/recommended/1148760/",
+      "date_as_displayed": "Posted: 28 March",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "1.6 hrs on record",
+      "observation": "题材和身份表达有吸引力，但文字、数值成长和简单卡牌未形成乐趣。",
+      "implication": "题材认同不能替代实际游玩节奏。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E15",
+      "appid": 1340480,
+      "game": "The Cosmic Wheel Sisterhood",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/Adeaia6954/recommended/1340480/",
+      "date_as_displayed": "Posted: 31 July",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "7.0 hrs on record",
+      "observation": "喜欢早期卡牌制作、像素美术与音乐，不喜欢后半段转向政治经营的节奏。",
+      "implication": "前后半程应兑现同一种核心体验承诺。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E16",
+      "appid": 462770,
+      "game": "Pyre",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/profiles/76561198042813967/recommended/462770/",
+      "date_as_displayed": "Posted: 25 July, 2017",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "9.1 hrs on record",
+      "observation": "喜欢大量阅读、角色和抉择，并提醒潜在玩家这是一款很重叙事的游戏。",
+      "implication": "宣传应明确阅读比例，筛选合适用户。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E17",
+      "appid": 462770,
+      "game": "Pyre",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/skywhalepod/recommended/462770/",
+      "date_as_displayed": "Posted: 23 October, 2020",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "23.4 hrs on record",
+      "observation": "肯定角色与演出，但高互动比赛和低互动长对白的节奏切换令人疲惫。",
+      "implication": "两种好玩法拼接起来仍可能互相打断。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E18",
+      "appid": 1266030,
+      "game": "The Pale Beyond",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/profiles/76561198026663817/recommended/1266030/",
+      "date_as_displayed": "Posted: 3 January, 2024",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "12.0 hrs on record",
+      "observation": "喜欢承受选择后果、带着不同局面继续推进的体验。",
+      "implication": "可继续的失败比频繁重来更适合角色依恋。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E19",
+      "appid": 1266030,
+      "game": "The Pale Beyond",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/NeWnAr/recommended/1266030/",
+      "date_as_displayed": "Posted: 14 January, 2024",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "9.0 hrs on record",
+      "observation": "认为资源状态、角色绝望与某些对白承诺之间缺少一致性。",
+      "implication": "人物反应必须读取真实的任务和资源状态。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E20",
+      "appid": 1266030,
+      "game": "The Pale Beyond",
+      "sampling_page": "chinese",
+      "url": "https://steamcommunity.com/profiles/76561198107892065/recommended/1266030/",
+      "date_as_displayed": "Posted: 2 March, 2023",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "0.8 hrs on record",
+      "observation": "希望增加中文，现有语言条件让游玩费力。",
+      "implication": "重文本产品的语言门槛真实存在；数量不能用于估算需求规模。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E21",
+      "appid": 2026000,
+      "game": "Our Adventurer Guild",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/id/jimmhel/recommended/2026000/",
+      "date_as_displayed": "Posted: 27 December, 2024",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "211.2 hrs on record",
+      "observation": "喜欢职业培养、装备与训练，认为部分界面难懂，战斗鼓励对白重复而慢。",
+      "implication": "养成选择要丰富；重复人物表达要简短、可加速。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E22",
+      "appid": 2026000,
+      "game": "Our Adventurer Guild",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/profiles/76561198102264659/recommended/2026000/",
+      "date_as_displayed": "Posted: 13 June, 2024",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "200.7 hrs on record",
+      "observation": "喜欢多系统协同，尤其职业与战术；接受较轻、较套路的故事。",
+      "implication": "这类用户主要购买战术深度，不能假定会转向纯叙事。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E23",
+      "appid": 2026000,
+      "game": "Our Adventurer Guild",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/profiles/76561198879410051/recommended/2026000/",
+      "date_as_displayed": "Posted: 5 October, 2024",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "47.1 hrs on record",
+      "observation": "希望更多队员间对话，认为角色成长没有得到足够的队伍互动呈现。",
+      "implication": "关系表达仍有改进机会，但不能据一条评测认定市场空白。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E24",
+      "appid": 2026000,
+      "game": "Our Adventurer Guild",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/tyvus/recommended/2026000/",
+      "date_as_displayed": "Posted: 4 August, 2025",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "2.0 hrs on record",
+      "observation": "对战棋与经营的组合有兴趣，却因浅层系统和重复推进不愿继续。",
+      "implication": "每个系统都做一点，未必有一个足够强的购买理由。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E25",
+      "appid": 2026000,
+      "game": "Our Adventurer Guild",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/kaeshiva/recommended/2026000/",
+      "date_as_displayed": "Posted: 30 August, 2025",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "90.4 hrs on record",
+      "observation": "漏看不幸福提示后，长期培养的角色离队且自动存档，引发强烈挫败。",
+      "implication": "离队等重大后果要有清晰预警和干预窗口。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E26",
+      "appid": 2026000,
+      "game": "Our Adventurer Guild",
+      "sampling_page": "chinese",
+      "url": "https://steamcommunity.com/profiles/76561198238637924/recommended/2026000/",
+      "date_as_displayed": "Posted: 6 July, 2025",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "1.4 hrs on record",
+      "observation": "认可玩法，但明确不满意美术。",
+      "implication": "愿意容忍美术的现有买家，不代表被美术挡在门外的人不存在。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E27",
+      "appid": 1043260,
+      "game": "Gladiator Guild Manager",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/profiles/76561198014252077/recommended/1043260/",
+      "date_as_displayed": "Posted: 3 May, 2024",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "10.3 hrs on record",
+      "observation": "重复布阵、整理装备和缺少数值预览，使早期有趣的循环变成操作负担。",
+      "implication": "经营深度应来自选择，不能来自反复点击。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E28",
+      "appid": 1043260,
+      "game": "Gladiator Guild Manager",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/id/dep123/recommended/1043260/",
+      "date_as_displayed": "Posted: 16 September, 2025",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "61.1 hrs on record",
+      "observation": "以较低预期享受培养、搭配和战斗，但也提到缺陷。",
+      "implication": "价格与购买场景影响满意度；低价好评不等于高价支付意愿。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E29",
+      "appid": 1119600,
+      "game": "Help Will Come Tomorrow",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/id/UnitedCritics-Mich/recommended/1119600/",
+      "date_as_displayed": "Posted: 16 January, 2022",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "17.4 hrs on record",
+      "observation": "喜欢不同社会背景的人逐渐互相了解，且关系影响合作。",
+      "implication": "共同处境与价值冲突能够支持群像关系。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E30",
+      "appid": 1119600,
+      "game": "Help Will Come Tomorrow",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/profiles/76561198044082092/recommended/1119600/",
+      "date_as_displayed": "Posted: 22 April, 2020",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "3.9 hrs on record",
+      "observation": "难以理解好感、信任和士气到底产生了什么效果，也不满意表达和界面。",
+      "implication": "关系机制必须能解释因果，不能只有若干进度条。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E31",
+      "appid": 1119600,
+      "game": "Help Will Come Tomorrow",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/asbijou/recommended/1119600/",
+      "date_as_displayed": "Posted: 2 April, 2022",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "28.8 hrs on record",
+      "observation": "觉得极端生存处境下部分拒绝合作不合人物逻辑，系统过多且难读。",
+      "implication": "冲突强度必须符合处境；生硬制造争执会破坏可信度。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E32",
+      "appid": 317820,
+      "game": "Guild of Dungeoneering",
+      "sampling_page": "helpful",
+      "url": "https://steamcommunity.com/id/avavt/recommended/317820/",
+      "date_as_displayed": "Posted: 17 July, 2015",
+      "recommendation": "Recommended",
+      "hours_as_displayed": "21.3 hrs on record",
+      "observation": "喜欢独特的卡牌与地牢构筑，但提醒名称容易让人误以为是另一种 RPG。",
+      "implication": "类型描述与截图必须准确管理预期。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    },
+    {
+      "id": "E33",
+      "appid": 317820,
+      "game": "Guild of Dungeoneering",
+      "sampling_page": "negative",
+      "url": "https://steamcommunity.com/id/ekirk/recommended/317820/",
+      "date_as_displayed": "Posted: 11 October, 2016",
+      "recommendation": "Not Recommended",
+      "hours_as_displayed": "3.9 hrs on record",
+      "observation": "欣赏美术、幽默和新意，却因重复死亡、重练与战斗循环而不推荐。",
+      "implication": "新颖设定和风格不能单独支撑长线体验。",
+      "limitation": "个体主观体验；历史版本未复测。采样排序并非随机。"
+    }
+  ],
+  "candidate_review_metadata": [
+    {
+      "url": "https://steamcommunity.com/id/swarskop/recommended/763890/",
+      "date": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours": "8.3 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/pseudo_science_labs/recommended/763890/",
+      "date": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours": "50.1 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198053292217/recommended/763890/",
+      "date": "Posted: 28 October",
+      "recommendation": "Recommended",
+      "hours": "16.0 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198106007891/recommended/763890/",
+      "date": "Posted: 26 October",
+      "recommendation": "Recommended",
+      "hours": "18.9 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199058567567/recommended/763890/",
+      "date": "Posted: 25 October",
+      "recommendation": "Recommended",
+      "hours": "10.1 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561197966287779/recommended/763890/",
+      "date": "Posted: 16 July, 2021",
+      "recommendation": "Not Recommended",
+      "hours": "15.8 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/rabidstump/recommended/763890/",
+      "date": "Posted: 19 June, 2021",
+      "recommendation": "Not Recommended",
+      "hours": "6.0 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198014998468/recommended/763890/",
+      "date": "Posted: 3 March, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "7.3 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/ancient_eli/recommended/763890/",
+      "date": "Posted: 17 June, 2021",
+      "recommendation": "Not Recommended",
+      "hours": "16.7 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/sagesource/recommended/763890/",
+      "date": "Posted: 30 October, 2021",
+      "recommendation": "Not Recommended",
+      "hours": "6.3 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/mundas/recommended/763890/",
+      "date": "Posted: 17 June, 2021",
+      "recommendation": "Recommended",
+      "hours": "7.2 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/Oldblood03/recommended/763890/",
+      "date": "Posted: 17 June, 2022",
+      "recommendation": "Recommended",
+      "hours": "163.3 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/DiceAreCool/recommended/763890/",
+      "date": "Posted: 27 October, 2021",
+      "recommendation": "Recommended",
+      "hours": "43.1 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198041020327/recommended/763890/",
+      "date": "Posted: 24 July, 2020",
+      "recommendation": "Recommended",
+      "hours": "33.1 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198125902066/recommended/763890/",
+      "date": "Posted: 8 September, 2022",
+      "recommendation": "Recommended",
+      "hours": "65.9 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198414115280/recommended/763890/",
+      "date": "Posted: 16 June, 2021",
+      "recommendation": "Recommended",
+      "hours": "61.7 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/heiyang/recommended/763890/",
+      "date": "Posted: 6 January, 2022",
+      "recommendation": "Recommended",
+      "hours": "53.8 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198135458537/recommended/763890/",
+      "date": "Posted: 13 July, 2021",
+      "recommendation": "Recommended",
+      "hours": "24.3 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/PaladinLeon/recommended/763890/",
+      "date": "Posted: 24 September, 2020",
+      "recommendation": "Recommended",
+      "hours": "1.6 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198865230207/recommended/763890/",
+      "date": "Posted: 16 November, 2021",
+      "recommendation": "Recommended",
+      "hours": "11.8 hrs on record",
+      "game": "Wildermyth",
+      "appid": 763890,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/unislash/recommended/365360/",
+      "date": "Posted: 23 June, 2020",
+      "recommendation": "Recommended",
+      "hours": "9,483.5 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198341879166/recommended/365360/",
+      "date": "Posted: 20 June, 2022",
+      "recommendation": "Recommended",
+      "hours": "14.7 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/UnitedCritics-Mich/recommended/365360/",
+      "date": "Posted: 21 December, 2019",
+      "recommendation": "Recommended",
+      "hours": "557.6 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/ChickenHeart/recommended/365360/",
+      "date": "Posted: 31 July, 2020",
+      "recommendation": "Recommended",
+      "hours": "272.8 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/crystalclearCC/recommended/365360/",
+      "date": "Posted: 14 April, 2023",
+      "recommendation": "Recommended",
+      "hours": "971.5 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198004010238/recommended/365360/",
+      "date": "Posted: 24 March, 2017",
+      "recommendation": "Not Recommended",
+      "hours": "102.6 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198013230087/recommended/365360/",
+      "date": "Posted: 2 July",
+      "recommendation": "Not Recommended",
+      "hours": "140.9 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/xpom/recommended/365360/",
+      "date": "Posted: 25 February, 2021",
+      "recommendation": "Not Recommended",
+      "hours": "290.7 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198079502968/recommended/365360/",
+      "date": "Posted: 23 October, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "74.7 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198176967967/recommended/365360/",
+      "date": "Posted: 24 June, 2017",
+      "recommendation": "Not Recommended",
+      "hours": "41.5 hrs on record",
+      "game": "Battle Brothers",
+      "appid": 365360,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/OfficeGossip/recommended/1940340/",
+      "date": "Posted: 8 August, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "63.7 hrs on record",
+      "game": "Darkest Dungeon II",
+      "appid": 1940340,
+      "sampled_on_pages": [
+        "negative",
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/TheMumbles/recommended/1940340/",
+      "date": "Posted: 27 July, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "64.3 hrs on record",
+      "game": "Darkest Dungeon II",
+      "appid": 1940340,
+      "sampled_on_pages": [
+        "negative",
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/thisiceaintnice/recommended/1940340/",
+      "date": "Posted: 11 August, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "54.0 hrs on record",
+      "game": "Darkest Dungeon II",
+      "appid": 1940340,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198079502968/recommended/1940340/",
+      "date": "Posted: 16 October, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "98.7 hrs on record",
+      "game": "Darkest Dungeon II",
+      "appid": 1940340,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198080688594/recommended/1940340/",
+      "date": "Posted: 30 November, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "50.4 hrs on record",
+      "game": "Darkest Dungeon II",
+      "appid": 1940340,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198074126116/recommended/1940340/",
+      "date": "Posted: 9 May, 2023",
+      "recommendation": "Recommended",
+      "hours": "64.0 hrs on record",
+      "game": "Darkest Dungeon II",
+      "appid": 1940340,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/zeddsdead/recommended/1940340/",
+      "date": "Posted: 9 May, 2023",
+      "recommendation": "Recommended",
+      "hours": "6.6 hrs on record",
+      "game": "Darkest Dungeon II",
+      "appid": 1940340,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198172087829/recommended/1940340/",
+      "date": "Posted: 30 June, 2023",
+      "recommendation": "Recommended",
+      "hours": "78.0 hrs on record",
+      "game": "Darkest Dungeon II",
+      "appid": 1940340,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198984656750/recommended/601840/",
+      "date": "Posted: 13 July, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "5.6 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/dj-drunkmunk/recommended/601840/",
+      "date": "Posted: 26 February, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "36.3 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198045981391/recommended/601840/",
+      "date": "Posted: 3 June, 2021",
+      "recommendation": "Not Recommended",
+      "hours": "40.3 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/realmravatar/recommended/601840/",
+      "date": "Posted: 1 February, 2021",
+      "recommendation": "Not Recommended",
+      "hours": "19.4 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198060999290/recommended/601840/",
+      "date": "Posted: 24 May, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "43.8 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198035424261/recommended/601840/",
+      "date": "Posted: 15 June, 2020",
+      "recommendation": "Recommended",
+      "hours": "57.7 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198038713854/recommended/601840/",
+      "date": "Posted: 17 June, 2021",
+      "recommendation": "Recommended",
+      "hours": "233.8 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198123925407/recommended/601840/",
+      "date": "Posted: 4 November, 2021",
+      "recommendation": "Recommended",
+      "hours": "20.9 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/wargear/recommended/601840/",
+      "date": "Posted: 2 July, 2020",
+      "recommendation": "Recommended",
+      "hours": "8.2 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/TheSacredVoice/recommended/601840/",
+      "date": "Posted: 18 June, 2020",
+      "recommendation": "Recommended",
+      "hours": "69.2 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/DarkCatAlone/recommended/601840/",
+      "date": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours": "128.5 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198006527927/recommended/601840/",
+      "date": "Posted: 28 October",
+      "recommendation": "Not Recommended",
+      "hours": "2.2 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/a-merk/recommended/601840/",
+      "date": "Posted: 26 October",
+      "recommendation": "Recommended",
+      "hours": "6.6 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198397698266/recommended/601840/",
+      "date": "Posted: 23 October",
+      "recommendation": "Recommended",
+      "hours": "109.2 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198044252103/recommended/601840/",
+      "date": "Posted: 22 October",
+      "recommendation": "Recommended",
+      "hours": "8.3 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198107133048/recommended/601840/",
+      "date": "Posted: 19 June, 2020",
+      "recommendation": "Recommended",
+      "hours": "9.7 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198400424478/recommended/601840/",
+      "date": "Posted: 6 June, 2021",
+      "recommendation": "Recommended",
+      "hours": "32.8 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198796622961/recommended/601840/",
+      "date": "Posted: 27 June, 2020",
+      "recommendation": "Recommended",
+      "hours": "160.0 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/WindyWang/recommended/601840/",
+      "date": "Posted: 14 June, 2020",
+      "recommendation": "Recommended",
+      "hours": "48.5 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198151713344/recommended/601840/",
+      "date": "Posted: 6 June, 2021",
+      "recommendation": "Recommended",
+      "hours": "34.8 hrs on record",
+      "game": "Griftlands",
+      "appid": 601840,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/carnaxcce/recommended/1148760/",
+      "date": "Posted: 28 August, 2022",
+      "recommendation": "Not Recommended",
+      "hours": "7.1 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/santamonicapier/recommended/1148760/",
+      "date": "Posted: 26 August, 2022",
+      "recommendation": "Not Recommended",
+      "hours": "3.4 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/wolfmarelalala/recommended/1148760/",
+      "date": "Posted: 30 August, 2022",
+      "recommendation": "Not Recommended",
+      "hours": "10.0 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198380758596/recommended/1148760/",
+      "date": "Posted: 5 July, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "25.5 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/bestscapegoat/recommended/1148760/",
+      "date": "Posted: 1 July, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "17.2 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/snowshoes1818/recommended/1148760/",
+      "date": "Posted: 17 September, 2022",
+      "recommendation": "Recommended",
+      "hours": "136.6 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/notabsolutelysure/recommended/1148760/",
+      "date": "Posted: 26 August, 2023",
+      "recommendation": "Recommended",
+      "hours": "5.3 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/chubbytired/recommended/1148760/",
+      "date": "Posted: 25 August, 2022",
+      "recommendation": "Recommended",
+      "hours": "19.9 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198934080011/recommended/1148760/",
+      "date": "Posted: 28 May, 2024",
+      "recommendation": "Recommended",
+      "hours": "102.2 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/kendallberner/recommended/1148760/",
+      "date": "Posted: 31 December, 2023",
+      "recommendation": "Recommended",
+      "hours": "21.0 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198827871732/recommended/1148760/",
+      "date": "Posted: 15 March",
+      "recommendation": "Recommended",
+      "hours": "41.7 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199064394050/recommended/1148760/",
+      "date": "Posted: 30 August, 2023",
+      "recommendation": "Recommended",
+      "hours": "21.1 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198204102055/recommended/1148760/",
+      "date": "Posted: 25 August, 2022",
+      "recommendation": "Recommended",
+      "hours": "18.4 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198387436660/recommended/1148760/",
+      "date": "Posted: 12 August, 2024",
+      "recommendation": "Recommended",
+      "hours": "16.4 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/vonny627/recommended/1148760/",
+      "date": "Posted: 28 March",
+      "recommendation": "Not Recommended",
+      "hours": "1.6 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/daizydaiz/recommended/1148760/",
+      "date": "Posted: 30 October",
+      "recommendation": "Recommended",
+      "hours": "78.6 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/petrichorkiss/recommended/1148760/",
+      "date": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours": "26.3 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199229944753/recommended/1148760/",
+      "date": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours": "97.4 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/snakest1cks/recommended/1148760/",
+      "date": "Posted: 26 October",
+      "recommendation": "Recommended",
+      "hours": "52.7 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/lizard-smile/recommended/1148760/",
+      "date": "Posted: 26 October",
+      "recommendation": "Recommended",
+      "hours": "24.5 hrs on record",
+      "game": "I Was a Teenage Exocolonist",
+      "appid": 1148760,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/notabsolutelysure/recommended/1340480/",
+      "date": "Posted: 17 August, 2023",
+      "recommendation": "Recommended",
+      "hours": "6.5 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198139064813/recommended/1340480/",
+      "date": "Posted: 5 September, 2023",
+      "recommendation": "Recommended",
+      "hours": "33.5 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/Sunny_Bunnies/recommended/1340480/",
+      "date": "Posted: 9 December, 2023",
+      "recommendation": "Recommended",
+      "hours": "14.2 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198144852348/recommended/1340480/",
+      "date": "Posted: 30 December, 2023",
+      "recommendation": "Recommended",
+      "hours": "6.8 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199095761332/recommended/1340480/",
+      "date": "Posted: 5 September, 2023",
+      "recommendation": "Recommended",
+      "hours": "16.8 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/audioslaver/recommended/1340480/",
+      "date": "Posted: 6 September, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "10.0 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/Adeaia6954/recommended/1340480/",
+      "date": "Posted: 31 July",
+      "recommendation": "Not Recommended",
+      "hours": "7.0 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/ImAWynner/recommended/1340480/",
+      "date": "Posted: 29 November, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "12.0 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198697445134/recommended/1340480/",
+      "date": "Posted: 14 June",
+      "recommendation": "Not Recommended",
+      "hours": "6.4 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561197968768811/recommended/1340480/",
+      "date": "Posted: 29 June, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "10.2 hrs on record",
+      "game": "The Cosmic Wheel Sisterhood",
+      "appid": 1340480,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198007730203/recommended/1266030/",
+      "date": "Posted: 16 March, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "7.8 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/ActionBastardd/recommended/1266030/",
+      "date": "Posted: 9 May, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "15.0 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198049117483/recommended/1266030/",
+      "date": "Posted: 14 December, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "13.3 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/NeWnAr/recommended/1266030/",
+      "date": "Posted: 14 January, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "9.0 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198001656726/recommended/1266030/",
+      "date": "Posted: 4 March, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "21.4 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/Hazelescence/recommended/1266030/",
+      "date": "Posted: 25 February, 2023",
+      "recommendation": "Recommended",
+      "hours": "13.0 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/alphyna/recommended/1266030/",
+      "date": "Posted: 21 June, 2023",
+      "recommendation": "Recommended",
+      "hours": "9.8 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198039665871/recommended/1266030/",
+      "date": "Posted: 24 February, 2023",
+      "recommendation": "Recommended",
+      "hours": "10.0 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198026663817/recommended/1266030/",
+      "date": "Posted: 3 January, 2024",
+      "recommendation": "Recommended",
+      "hours": "12.0 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198031046439/recommended/1266030/",
+      "date": "Posted: 24 February, 2023",
+      "recommendation": "Recommended",
+      "hours": "14.1 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/RandolphVI/recommended/1266030/",
+      "date": "Posted: 31 March",
+      "recommendation": "Recommended",
+      "hours": "3.1 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/DaisyComment/recommended/1266030/",
+      "date": "Posted: 25 February, 2023",
+      "recommendation": "Recommended",
+      "hours": "18.7 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198107892065/recommended/1266030/",
+      "date": "Posted: 2 March, 2023",
+      "recommendation": "Recommended",
+      "hours": "0.8 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198894342988/recommended/1266030/",
+      "date": "Posted: 26 March, 2024",
+      "recommendation": "Recommended",
+      "hours": "1.0 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199077215433/recommended/1266030/",
+      "date": "Posted: 15 February, 2024",
+      "recommendation": "Recommended",
+      "hours": "2.0 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561197989501030/recommended/1266030/",
+      "date": "Posted: 30 October",
+      "recommendation": "Recommended",
+      "hours": "13.3 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198236549984/recommended/1266030/",
+      "date": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours": "9.0 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199227194029/recommended/1266030/",
+      "date": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours": "8.8 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199820057447/recommended/1266030/",
+      "date": "Posted: 28 October",
+      "recommendation": "Recommended",
+      "hours": "16.1 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198002737362/recommended/1266030/",
+      "date": "Posted: 26 October",
+      "recommendation": "Recommended",
+      "hours": "16.0 hrs on record",
+      "game": "The Pale Beyond",
+      "appid": 1266030,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198070915580/recommended/462770/",
+      "date": "Posted: 29 July, 2017",
+      "recommendation": "Recommended",
+      "hours": "82.2 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198042813967/recommended/462770/",
+      "date": "Posted: 25 July, 2017",
+      "recommendation": "Recommended",
+      "hours": "9.1 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/fockzii/recommended/462770/",
+      "date": "Posted: 5 August, 2017",
+      "recommendation": "Recommended",
+      "hours": "14.7 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561197981643140/recommended/462770/",
+      "date": "Posted: 16 August, 2017",
+      "recommendation": "Recommended",
+      "hours": "20.1 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/cocoabine/recommended/462770/",
+      "date": "Posted: 2 July, 2018",
+      "recommendation": "Recommended",
+      "hours": "22.8 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/LordGorzul/recommended/462770/",
+      "date": "Posted: 14 October, 2017",
+      "recommendation": "Not Recommended",
+      "hours": "22.8 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/skywhalepod/recommended/462770/",
+      "date": "Posted: 23 October, 2020",
+      "recommendation": "Not Recommended",
+      "hours": "23.4 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/estesark/recommended/462770/",
+      "date": "Posted: 26 July, 2018",
+      "recommendation": "Not Recommended",
+      "hours": "4.7 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/Drippuh/recommended/462770/",
+      "date": "Posted: 28 November, 2017",
+      "recommendation": "Not Recommended",
+      "hours": "1.6 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198033523446/recommended/462770/",
+      "date": "Posted: 30 December, 2018",
+      "recommendation": "Not Recommended",
+      "hours": "23.7 hrs on record",
+      "game": "Pyre",
+      "appid": 462770,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/jimmhel/recommended/2026000/",
+      "date": "Posted: 27 December, 2024",
+      "recommendation": "Recommended",
+      "hours": "211.2 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198002338993/recommended/2026000/",
+      "date": "Posted: 15 April, 2024",
+      "recommendation": "Recommended",
+      "hours": "53.7 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561197991039349/recommended/2026000/",
+      "date": "Posted: 30 January, 2025",
+      "recommendation": "Recommended",
+      "hours": "118.2 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198102264659/recommended/2026000/",
+      "date": "Posted: 13 June, 2024",
+      "recommendation": "Recommended",
+      "hours": "200.7 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561197993727555/recommended/2026000/",
+      "date": "Posted: 21 June",
+      "recommendation": "Recommended",
+      "hours": "594.7 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198879410051/recommended/2026000/",
+      "date": "Posted: 5 October, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "47.1 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/tyvus/recommended/2026000/",
+      "date": "Posted: 4 August, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "2.0 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198839925117/recommended/2026000/",
+      "date": "Posted: 20 September, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "39.7 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/kaeshiva/recommended/2026000/",
+      "date": "Posted: 30 August, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "90.4 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198064757612/recommended/2026000/",
+      "date": "Posted: 19 May",
+      "recommendation": "Not Recommended",
+      "hours": "15.5 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/martian08331994/recommended/2026000/",
+      "date": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours": "9.6 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/corbear/recommended/2026000/",
+      "date": "Posted: 29 October",
+      "recommendation": "Recommended",
+      "hours": "50.3 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198708775446/recommended/2026000/",
+      "date": "Posted: 28 October",
+      "recommendation": "Recommended",
+      "hours": "146.5 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561197965977165/recommended/2026000/",
+      "date": "Posted: 27 October",
+      "recommendation": "Recommended",
+      "hours": "237.7 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/ryanzinch/recommended/2026000/",
+      "date": "Posted: 22 October",
+      "recommendation": "Recommended",
+      "hours": "130.7 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198238637924/recommended/2026000/",
+      "date": "Posted: 6 July, 2025",
+      "recommendation": "Recommended",
+      "hours": "1.4 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198165387177/recommended/2026000/",
+      "date": "Posted: 26 October, 2025",
+      "recommendation": "Recommended",
+      "hours": "8.0 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198129308801/recommended/2026000/",
+      "date": "Posted: 9 November, 2025",
+      "recommendation": "Recommended",
+      "hours": "3.8 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198107153861/recommended/2026000/",
+      "date": "Posted: 7 September, 2025",
+      "recommendation": "Recommended",
+      "hours": "5.5 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199833914434/recommended/2026000/",
+      "date": "Posted: 11 July, 2025",
+      "recommendation": "Recommended",
+      "hours": "7.9 hrs on record",
+      "game": "Our Adventurer Guild",
+      "appid": 2026000,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/minicoaster/recommended/1043260/",
+      "date": "Posted: 27 May, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "10.4 hrs on record",
+      "game": "Gladiator Guild Manager",
+      "appid": 1043260,
+      "sampled_on_pages": [
+        "helpful",
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198004827108/recommended/1043260/",
+      "date": "Posted: 4 September, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "15.0 hrs on record",
+      "game": "Gladiator Guild Manager",
+      "appid": 1043260,
+      "sampled_on_pages": [
+        "helpful",
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/dep123/recommended/1043260/",
+      "date": "Posted: 16 September, 2025",
+      "recommendation": "Recommended",
+      "hours": "61.1 hrs on record",
+      "game": "Gladiator Guild Manager",
+      "appid": 1043260,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198037145818/recommended/1043260/",
+      "date": "Posted: 12 June, 2023",
+      "recommendation": "Recommended",
+      "hours": "3.7 hrs on record",
+      "game": "Gladiator Guild Manager",
+      "appid": 1043260,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/SirGamesalot777/recommended/1043260/",
+      "date": "Posted: 24 June, 2024",
+      "recommendation": "Recommended",
+      "hours": "44.8 hrs on record",
+      "game": "Gladiator Guild Manager",
+      "appid": 1043260,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198014252077/recommended/1043260/",
+      "date": "Posted: 3 May, 2024",
+      "recommendation": "Not Recommended",
+      "hours": "10.3 hrs on record",
+      "game": "Gladiator Guild Manager",
+      "appid": 1043260,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/vera-nika/recommended/1043260/",
+      "date": "Posted: 17 January",
+      "recommendation": "Not Recommended",
+      "hours": "48.3 hrs on record",
+      "game": "Gladiator Guild Manager",
+      "appid": 1043260,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198036485396/recommended/1043260/",
+      "date": "Posted: 22 December, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "0.6 hrs on record",
+      "game": "Gladiator Guild Manager",
+      "appid": 1043260,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199117119242/recommended/1119600/",
+      "date": "Posted: 20 December, 2020",
+      "recommendation": "Recommended",
+      "hours": "18.0 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198189330451/recommended/1119600/",
+      "date": "Posted: 24 July, 2021",
+      "recommendation": "Recommended",
+      "hours": "81.2 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/UnitedCritics-Mich/recommended/1119600/",
+      "date": "Posted: 16 January, 2022",
+      "recommendation": "Recommended",
+      "hours": "17.4 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198044082092/recommended/1119600/",
+      "date": "Posted: 22 April, 2020",
+      "recommendation": "Not Recommended",
+      "hours": "3.9 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "helpful",
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/Gennadios/recommended/1119600/",
+      "date": "Posted: 22 April, 2020",
+      "recommendation": "Not Recommended",
+      "hours": "6.8 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "helpful",
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/asbijou/recommended/1119600/",
+      "date": "Posted: 2 April, 2022",
+      "recommendation": "Not Recommended",
+      "hours": "28.8 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198049236943/recommended/1119600/",
+      "date": "Posted: 25 March, 2021",
+      "recommendation": "Not Recommended",
+      "hours": "13.6 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198035951038/recommended/1119600/",
+      "date": "Posted: 13 November, 2023",
+      "recommendation": "Not Recommended",
+      "hours": "7.9 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/starisstarisstarisstarisstaris/recommended/1119600/",
+      "date": "Posted: 29 October",
+      "recommendation": "Not Recommended",
+      "hours": "5.4 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198434097260/recommended/1119600/",
+      "date": "Posted: 1 October",
+      "recommendation": "Recommended",
+      "hours": "5.1 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198816076403/recommended/1119600/",
+      "date": "Posted: 13 September",
+      "recommendation": "Recommended",
+      "hours": "42.8 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198122366606/recommended/1119600/",
+      "date": "Posted: 4 September",
+      "recommendation": "Recommended",
+      "hours": "4.1 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199522993169/recommended/1119600/",
+      "date": "Posted: 28 August",
+      "recommendation": "Recommended",
+      "hours": "17.1 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "recent"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198257886872/recommended/1119600/",
+      "date": "Posted: 10 June, 2020",
+      "recommendation": "Recommended",
+      "hours": "0.9 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/ooyac/recommended/1119600/",
+      "date": "Posted: 5 July, 2020",
+      "recommendation": "Recommended",
+      "hours": "0.5 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198162789677/recommended/1119600/",
+      "date": "Posted: 19 July, 2020",
+      "recommendation": "Recommended",
+      "hours": "0.2 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198328571961/recommended/1119600/",
+      "date": "Posted: 22 April, 2020",
+      "recommendation": "Recommended",
+      "hours": "49.6 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198315769152/recommended/1119600/",
+      "date": "Posted: 21 June, 2020",
+      "recommendation": "Recommended",
+      "hours": "2.5 hrs on record",
+      "game": "Help Will Come Tomorrow",
+      "appid": 1119600,
+      "sampled_on_pages": [
+        "chinese"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/avavt/recommended/317820/",
+      "date": "Posted: 17 July, 2015",
+      "recommendation": "Recommended",
+      "hours": "21.3 hrs on record",
+      "game": "Guild of Dungeoneering",
+      "appid": 317820,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/athravan/recommended/317820/",
+      "date": "Posted: 18 July, 2015",
+      "recommendation": "Recommended",
+      "hours": "11.4 hrs on record",
+      "game": "Guild of Dungeoneering",
+      "appid": 317820,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/Hautedio/recommended/317820/",
+      "date": "Posted: 7 June, 2017",
+      "recommendation": "Recommended",
+      "hours": "6.7 hrs on record",
+      "game": "Guild of Dungeoneering",
+      "appid": 317820,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/diogocosta738/recommended/317820/",
+      "date": "Posted: 7 July, 2018",
+      "recommendation": "Recommended",
+      "hours": "11.3 hrs on record",
+      "game": "Guild of Dungeoneering",
+      "appid": 317820,
+      "sampled_on_pages": [
+        "helpful"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561198019887289/recommended/317820/",
+      "date": "Posted: 2 July, 2025",
+      "recommendation": "Not Recommended",
+      "hours": "14.2 hrs on record",
+      "game": "Guild of Dungeoneering",
+      "appid": 317820,
+      "sampled_on_pages": [
+        "helpful",
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/ekirk/recommended/317820/",
+      "date": "Posted: 11 October, 2016",
+      "recommendation": "Not Recommended",
+      "hours": "3.9 hrs on record",
+      "game": "Guild of Dungeoneering",
+      "appid": 317820,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/zebulan/recommended/317820/",
+      "date": "Posted: 16 July, 2015",
+      "recommendation": "Not Recommended",
+      "hours": "1.6 hrs on record",
+      "game": "Guild of Dungeoneering",
+      "appid": 317820,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/Fishe414/recommended/317820/",
+      "date": "Posted: 20 October, 2015",
+      "recommendation": "Not Recommended",
+      "hours": "7.8 hrs on record",
+      "game": "Guild of Dungeoneering",
+      "appid": 317820,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    },
+    {
+      "url": "https://steamcommunity.com/id/kklawm/recommended/317820/",
+      "date": "Posted: 13 June, 2020",
+      "recommendation": "Not Recommended",
+      "hours": "4.9 hrs on record",
+      "game": "Guild of Dungeoneering",
+      "appid": 317820,
+      "sampled_on_pages": [
+        "negative"
+      ]
+    }
+  ],
+  "cash_budget_unit": "CNY 10,000; planning assumptions, not vendor quotes",
+  "cash_budget_rows": [
+    [
+      "美术、UI、有限演出",
+      7,
+      15,
+      6,
+      14,
+      4,
+      9
+    ],
+    [
+      "外部叙事编辑／部分事件协作",
+      1,
+      3,
+      3,
+      8,
+      1,
+      3
+    ],
+    [
+      "程序专项协助与审查",
+      1,
+      4,
+      0.5,
+      2,
+      0.5,
+      2
+    ],
+    [
+      "中译英、母语润色与语言测试",
+      2.5,
+      6,
+      5,
+      12,
+      2,
+      5
+    ],
+    [
+      "音乐、音效、音频整合外援",
+      0.8,
+      2,
+      0.8,
+      2,
+      0.5,
+      1.5
+    ],
+    [
+      "外部功能测试与兼容测试",
+      1.5,
+      3.5,
+      1.5,
+      3.5,
+      1,
+      2.5
+    ],
+    [
+      "商店胶囊、预告片、小规模宣传测试",
+      1.2,
+      3.5,
+      1.2,
+      3.5,
+      1,
+      3
+    ],
+    [
+      "软件、素材授权、发行杂项",
+      0.3,
+      0.8,
+      0.3,
+      0.8,
+      0.3,
+      0.8
+    ]
+  ],
+  "cash_budget_totals": {
+    "A": {
+      "base_low": 15.3,
+      "base_high": 37.8,
+      "total_low": 19.125,
+      "total_high": 47.25
+    },
+    "B": {
+      "base_low": 18.3,
+      "base_high": 45.8,
+      "total_low": 22.875,
+      "total_high": 57.25
+    },
+    "C": {
+      "base_low": 10.3,
+      "base_high": 26.8,
+      "total_low": 12.875,
+      "total_high": 33.5
+    }
+  },
+  "research_limitations": [
+    "Review counts are not sales; review language is not buyer country.",
+    "Prices are regional snapshots; discount and lifetime cohorts differ.",
+    "Historical reviews were not tested against current builds.",
+    "No verifiable deduplicated audience size, forecast sales, or project purchase intention."
+  ]
+}

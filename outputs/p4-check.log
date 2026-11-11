@@ -1,0 +1,361 @@
+REPOSITORY_OK: 226 files; nesting, case, literal resources, renderer
+EVIDENCE_OK: 34 files
+DESIGN_VIEWS_OK: 33
+RULE CHECKS 1172
+HISTORICAL_GATES_EXCLUDED: 2 runtime byte-identity assertions; original hashes preserved
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started 正在注册全局类…… (8 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  11% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  22% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  33% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  44% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  55% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  66% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  77% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+TEST_RESULTS: 33 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CONTENT_TEST_RESULTS: failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_TEST_RESULTS: 166 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_SYSTEMS_RESULTS: 179 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+UI_LOCALIZATION_RESULTS: checks=418 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+VISUAL_P1_RESULTS: checks=544 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CHAPTER_ONE_RESULTS: checks=132 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_PATH: M01 success actions=47
+P3_PATH: M02 success actions=35
+P3_PATH: M03 success actions=39
+P3_PATH: M04 success actions=34
+P3_PATH: M05 success actions=30
+P3_PATH: M06 success actions=44
+P3_PATH: M07 success actions=40
+P3_PATH: M08 success actions=33
+P3_PATH: M09 success actions=45
+P3_PATH: M10 success actions=30
+P3_PATH: M11 success actions=32
+P3_PATH: M12 success actions=31
+P3_PATH: M13 success actions=36
+P3_PATH: M14 success actions=29
+P3_PATH: M15 success actions=32
+P3_PATH: M16 success actions=39
+P3_PATH: M17 success actions=37
+P3_PATH: M18 success actions=27
+P3_PATH: M19 success actions=35
+P3_PATH: M20 success actions=26
+P3_PATH: M21 success actions=30
+P3_PATH: M22 success actions=27
+P3_PATH: M23 success actions=48
+P3_PATH: M24 success actions=48
+P3_PATH: S01 success actions=25
+P3_PATH: S02 success actions=32
+P3_PATH: S03 success actions=40
+P3_PATH: S04 success actions=29
+P3_PATH: S05 success actions=39
+P3_PATH: S06 success actions=37
+P3_PATH: S07 success actions=31
+P3_PATH: S08 success actions=31
+P3_PATH: S09 success actions=25
+P3_PATH: S10 success actions=24
+P3_PATH: S11 success actions=24
+P3_PATH: S12 success actions=30
+P3_PATH_RESULTS: missions=36 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_RULES_RESULTS: checks=1789 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_SPECIALTIES_RESULTS: checks=67 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_STORY_PROOFS_RESULTS: checks=56 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_CAMPAIGN: mode=shared_control days=24 ending=shared_control
+P3_CAMPAIGN_RESULTS: campaigns=1 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_CAMPAIGN: mode=distributed_rebuild days=24 ending=distributed_rebuild
+P3_CAMPAIGN_RESULTS: campaigns=1 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_CAMPAIGN: mode=evacuation days=24 ending=evacuation
+P3_CAMPAIGN_RESULTS: campaigns=1 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_CAMPAIGN: mode=failure days=24 ending=evacuation
+P3_CAMPAIGN_RESULTS: campaigns=1 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+P2_PRESENTATION_RESULTS: checks=92 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+P3_PRESENTATION_RESULTS: checks=178 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_PRODUCT_RESULTS: checks=820 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_HISTORY_RESULTS: checks=50 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_MATRIX_PATH: M01 relaxed A success continued=true
+P4_MATRIX_PATH: M02 relaxed A success continued=true
+P4_MATRIX_PATH: M03 relaxed A success continued=true
+P4_MATRIX_PATH: M04 relaxed A success continued=true
+P4_MATRIX_PATH: M05 relaxed A success continued=true
+P4_MATRIX_PATH: M06 relaxed A success continued=true
+P4_MATRIX_PATH: M07 relaxed A success continued=true
+P4_MATRIX_PATH: M08 relaxed A success continued=true
+P4_MATRIX_PATH: M09 relaxed A success continued=true
+P4_MATRIX_PATH: M10 relaxed A success continued=true
+P4_MATRIX_PATH: M11 relaxed A success continued=true
+P4_MATRIX_PATH: M12 relaxed A success continued=true
+P4_MATRIX_PATH: M13 relaxed A success continued=true
+P4_MATRIX_PATH: M14 relaxed A success continued=true
+P4_MATRIX_PATH: M15 relaxed A success continued=true
+P4_MATRIX_PATH: M16 relaxed A success continued=true
+P4_MATRIX_PATH: M17 relaxed A success continued=true
+P4_MATRIX_PATH: M18 relaxed A success continued=true
+P4_MATRIX_PATH: M19 relaxed A success continued=true
+P4_MATRIX_PATH: M20 relaxed A success continued=true
+P4_MATRIX_PATH: M21 relaxed A success continued=true
+P4_MATRIX_PATH: M22 relaxed A success continued=true
+P4_MATRIX_PATH: M23 relaxed A success continued=true
+P4_MATRIX_PATH: M24 relaxed A success continued=true
+P4_MATRIX_PATH: S01 relaxed A success continued=true
+P4_MATRIX_PATH: S02 relaxed A success continued=true
+P4_MATRIX_PATH: S03 relaxed A success continued=true
+P4_MATRIX_PATH: S04 relaxed A success continued=true
+P4_MATRIX_PATH: S05 relaxed A success continued=true
+P4_MATRIX_PATH: S06 relaxed A success continued=true
+P4_MATRIX_PATH: S07 relaxed A success continued=true
+P4_MATRIX_PATH: S08 relaxed A success continued=true
+P4_MATRIX_PATH: S09 relaxed A success continued=true
+P4_MATRIX_PATH: S10 relaxed A success continued=true
+P4_MATRIX_PATH: S11 relaxed A success continued=true
+P4_MATRIX_PATH: S12 relaxed A success continued=true
+P4_MATRIX_PATH: M01 relaxed B success continued=true
+P4_MATRIX_PATH: M02 relaxed B success continued=true
+P4_MATRIX_PATH: M03 relaxed B success continued=true
+P4_MATRIX_PATH: M04 relaxed B success continued=true
+P4_MATRIX_PATH: M05 relaxed B success continued=true
+P4_MATRIX_PATH: M06 relaxed B success continued=true
+P4_MATRIX_PATH: M07 relaxed B success continued=true
+P4_MATRIX_PATH: M08 relaxed B success continued=true
+P4_MATRIX_PATH: M09 relaxed B success continued=true
+P4_MATRIX_PATH: M10 relaxed B success continued=true
+P4_MATRIX_PATH: M11 relaxed B success continued=true
+P4_MATRIX_PATH: M12 relaxed B success continued=true
+P4_MATRIX_PATH: M13 relaxed B success continued=true
+P4_MATRIX_PATH: M14 relaxed B success continued=true
+P4_MATRIX_PATH: M15 relaxed B success continued=true
+P4_MATRIX_PATH: M16 relaxed B success continued=true
+P4_MATRIX_PATH: M17 relaxed B success continued=true
+P4_MATRIX_PATH: M18 relaxed B success continued=true
+P4_MATRIX_PATH: M19 relaxed B success continued=true
+P4_MATRIX_PATH: M20 relaxed B success continued=true
+P4_MATRIX_PATH: M21 relaxed B success continued=true
+P4_MATRIX_PATH: M22 relaxed B success continued=true
+P4_MATRIX_PATH: M23 relaxed B success continued=true
+P4_MATRIX_PATH: M24 relaxed B success continued=true
+P4_MATRIX_PATH: S01 relaxed B success continued=true
+P4_MATRIX_PATH: S02 relaxed B success continued=true
+P4_MATRIX_PATH: S03 relaxed B success continued=true
+P4_MATRIX_PATH: S04 relaxed B success continued=true
+P4_MATRIX_PATH: S05 relaxed B success continued=true
+P4_MATRIX_PATH: S06 relaxed B success continued=true
+P4_MATRIX_PATH: S07 relaxed B success continued=true
+P4_MATRIX_PATH: S08 relaxed B success continued=true
+P4_MATRIX_PATH: S09 relaxed B success continued=true
+P4_MATRIX_PATH: S10 relaxed B success continued=true
+P4_MATRIX_PATH: S11 relaxed B success continued=true
+P4_MATRIX_PATH: S12 relaxed B success continued=true
+P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ "success": 72, "partial": 0, "failed": 0 }
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_MATRIX_PATH: M01 standard A success continued=true
+P4_MATRIX_PATH: M02 standard A success continued=true
+P4_MATRIX_PATH: M03 standard A success continued=true
+P4_MATRIX_PATH: M04 standard A success continued=true
+P4_MATRIX_PATH: M05 standard A success continued=true
+P4_MATRIX_PATH: M06 standard A success continued=true
+P4_MATRIX_PATH: M07 standard A success continued=true
+P4_MATRIX_PATH: M08 standard A success continued=true
+P4_MATRIX_PATH: M09 standard A success continued=true
+P4_MATRIX_PATH: M10 standard A success continued=true
+P4_MATRIX_PATH: M11 standard A success continued=true
+P4_MATRIX_PATH: M12 standard A success continued=true
+P4_MATRIX_PATH: M13 standard A success continued=true
+P4_MATRIX_PATH: M14 standard A success continued=true
+P4_MATRIX_PATH: M15 standard A success continued=true
+P4_MATRIX_PATH: M16 standard A success continued=true
+P4_MATRIX_PATH: M17 standard A success continued=true
+P4_MATRIX_PATH: M18 standard A success continued=true
+P4_MATRIX_PATH: M19 standard A success continued=true
+P4_MATRIX_PATH: M20 standard A success continued=true
+P4_MATRIX_PATH: M21 standard A success continued=true
+P4_MATRIX_PATH: M22 standard A success continued=true
+P4_MATRIX_PATH: M23 standard A success continued=true
+P4_MATRIX_PATH: M24 standard A success continued=true
+P4_MATRIX_PATH: S01 standard A success continued=true
+P4_MATRIX_PATH: S02 standard A success continued=true
+P4_MATRIX_PATH: S03 standard A success continued=true
+P4_MATRIX_PATH: S04 standard A success continued=true
+P4_MATRIX_PATH: S05 standard A success continued=true
+P4_MATRIX_PATH: S06 standard A success continued=true
+P4_MATRIX_PATH: S07 standard A success continued=true
+P4_MATRIX_PATH: S08 standard A success continued=true
+P4_MATRIX_PATH: S09 standard A success continued=true
+P4_MATRIX_PATH: S10 standard A success continued=true
+P4_MATRIX_PATH: S11 standard A success continued=true
+P4_MATRIX_PATH: S12 standard A success continued=true
+P4_MATRIX_PATH: M01 standard B success continued=true
+P4_MATRIX_PATH: M02 standard B success continued=true
+P4_MATRIX_PATH: M03 standard B success continued=true
+P4_MATRIX_PATH: M04 standard B success continued=true
+P4_MATRIX_PATH: M05 standard B success continued=true
+P4_MATRIX_PATH: M06 standard B success continued=true
+P4_MATRIX_PATH: M07 standard B success continued=true
+P4_MATRIX_PATH: M08 standard B success continued=true
+P4_MATRIX_PATH: M09 standard B success continued=true
+P4_MATRIX_PATH: M10 standard B success continued=true
+P4_MATRIX_PATH: M11 standard B success continued=true
+P4_MATRIX_PATH: M12 standard B success continued=true
+P4_MATRIX_PATH: M13 standard B success continued=true
+P4_MATRIX_PATH: M14 standard B success continued=true
+P4_MATRIX_PATH: M15 standard B success continued=true
+P4_MATRIX_PATH: M16 standard B success continued=true
+P4_MATRIX_PATH: M17 standard B success continued=true
+P4_MATRIX_PATH: M18 standard B success continued=true
+P4_MATRIX_PATH: M19 standard B success continued=true
+P4_MATRIX_PATH: M20 standard B success continued=true
+P4_MATRIX_PATH: M21 standard B success continued=true
+P4_MATRIX_PATH: M22 standard B success continued=true
+P4_MATRIX_PATH: M23 standard B success continued=true
+P4_MATRIX_PATH: M24 standard B success continued=true
+P4_MATRIX_PATH: S01 standard B success continued=true
+P4_MATRIX_PATH: S02 standard B success continued=true
+P4_MATRIX_PATH: S03 standard B success continued=true
+P4_MATRIX_PATH: S04 standard B success continued=true
+P4_MATRIX_PATH: S05 standard B success continued=true
+P4_MATRIX_PATH: S06 standard B success continued=true
+P4_MATRIX_PATH: S07 standard B success continued=true
+P4_MATRIX_PATH: S08 standard B success continued=true
+P4_MATRIX_PATH: S09 standard B success continued=true
+P4_MATRIX_PATH: S10 standard B success continued=true
+P4_MATRIX_PATH: S11 standard B success continued=true
+P4_MATRIX_PATH: S12 standard B success continued=true
+P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ "success": 72, "partial": 0, "failed": 0 }
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_MATRIX_PATH: M01 hard A success continued=true
+P4_MATRIX_PATH: M02 hard A success continued=true
+P4_MATRIX_PATH: M03 hard A success continued=true
+P4_MATRIX_PATH: M04 hard A success continued=true
+P4_MATRIX_PATH: M05 hard A success continued=true
+P4_MATRIX_PATH: M06 hard A success continued=true
+P4_MATRIX_PATH: M07 hard A success continued=true
+P4_MATRIX_PATH: M08 hard A success continued=true
+P4_MATRIX_PATH: M09 hard A success continued=true
+P4_MATRIX_PATH: M10 hard A success continued=true
+P4_MATRIX_PATH: M11 hard A success continued=true
+P4_MATRIX_PATH: M12 hard A success continued=true
+P4_MATRIX_PATH: M13 hard A success continued=true
+P4_MATRIX_PATH: M14 hard A success continued=true
+P4_MATRIX_PATH: M15 hard A success continued=true
+P4_MATRIX_PATH: M16 hard A success continued=true
+P4_MATRIX_PATH: M17 hard A success continued=true
+P4_MATRIX_PATH: M18 hard A success continued=true
+P4_MATRIX_PATH: M19 hard A success continued=true
+P4_MATRIX_PATH: M20 hard A success continued=true
+P4_MATRIX_PATH: M21 hard A success continued=true
+P4_MATRIX_PATH: M22 hard A success continued=true
+P4_MATRIX_PATH: M23 hard A success continued=true
+P4_MATRIX_PATH: M24 hard A success continued=true
+P4_MATRIX_PATH: S01 hard A success continued=true
+P4_MATRIX_PATH: S02 hard A success continued=true
+P4_MATRIX_PATH: S03 hard A success continued=true
+P4_MATRIX_PATH: S04 hard A success continued=true
+P4_MATRIX_PATH: S05 hard A success continued=true
+P4_MATRIX_PATH: S06 hard A success continued=true
+P4_MATRIX_PATH: S07 hard A success continued=true
+P4_MATRIX_PATH: S08 hard A success continued=true
+P4_MATRIX_PATH: S09 hard A success continued=true
+P4_MATRIX_PATH: S10 hard A success continued=true
+P4_MATRIX_PATH: S11 hard A success continued=true
+P4_MATRIX_PATH: S12 hard A success continued=true
+P4_MATRIX_PATH: M01 hard B success continued=true
+P4_MATRIX_PATH: M02 hard B success continued=true
+P4_MATRIX_PATH: M03 hard B success continued=true
+P4_MATRIX_PATH: M04 hard B success continued=true
+P4_MATRIX_PATH: M05 hard B success continued=true
+P4_MATRIX_PATH: M06 hard B success continued=true
+P4_MATRIX_PATH: M07 hard B success continued=true
+P4_MATRIX_PATH: M08 hard B success continued=true
+P4_MATRIX_PATH: M09 hard B success continued=true
+P4_MATRIX_PATH: M10 hard B success continued=true
+P4_MATRIX_PATH: M11 hard B success continued=true
+P4_MATRIX_PATH: M12 hard B success continued=true
+P4_MATRIX_PATH: M13 hard B success continued=true
+P4_MATRIX_PATH: M14 hard B success continued=true
+P4_MATRIX_PATH: M15 hard B success continued=true
+P4_MATRIX_PATH: M16 hard B success continued=true
+P4_MATRIX_PATH: M17 hard B success continued=true
+P4_MATRIX_PATH: M18 hard B success continued=true
+P4_MATRIX_PATH: M19 hard B success continued=true
+P4_MATRIX_PATH: M20 hard B success continued=true
+P4_MATRIX_PATH: M21 hard B success continued=true
+P4_MATRIX_PATH: M22 hard B success continued=true
+P4_MATRIX_PATH: M23 hard B success continued=true
+P4_MATRIX_PATH: M24 hard B success continued=true
+P4_MATRIX_PATH: S01 hard B success continued=true
+P4_MATRIX_PATH: S02 hard B success continued=true
+P4_MATRIX_PATH: S03 hard B success continued=true
+P4_MATRIX_PATH: S04 hard B success continued=true
+P4_MATRIX_PATH: S05 hard B success continued=true
+P4_MATRIX_PATH: S06 hard B success continued=true
+P4_MATRIX_PATH: S07 hard B success continued=true
+P4_MATRIX_PATH: S08 hard B success continued=true
+P4_MATRIX_PATH: S09 hard B success continued=true
+P4_MATRIX_PATH: S10 hard B success continued=true
+P4_MATRIX_PATH: S11 hard B success continued=true
+P4_MATRIX_PATH: S12 hard B success continued=true
+P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ "success": 72, "partial": 0, "failed": 0 }
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+CHECK_OK: current development automated checks; P4 Windows native acceptance remains separate

@@ -1,0 +1,4 @@
+relay True 8 ['r1', 'r2', 'asset'] False True [{'round': 4, 'action': 'relay_carry', 'actor': 0, 'at': (6, 2), 'ap_left': 1, 'target': 'asset', 'path': None}, {'round': 4, 'action': 'relay_carry', 'actor': 2, 'at': (5, 5), 'ap_left': 1, 'target': 'asset', 'path': [(6, 3), (6, 4), (6, 5), (5, 5)]}]
+ordinary_handoff True 7 ['r1', 'r2'] False True []
+pull True 12 ['block1', 'block2', 'truck', 'live_service'] True True [{'round': 4, 'action': 'coordinated_pull', 'actor': 0, 'at': (7, 6), 'ap_left': 1, 'target': 'M08_enemy1', 'destination': (6, 5)}, {'round': 4, 'action': 'coordinated_pull', 'actor': 2, 'at': (7, 4), 'ap_left': 0, 'target': 'M08_enemy1', 'destination': (6, 5)}, {'round': 5, 'action': 'restore_power', 'actor': 2, 'at': (7, 3), 'ap_left': 0, 'target': 'M08_enemy1_cut'}]
+ordinary_parallel_M22 7 31 3 ['handover', 'e', 'privacy', 'live_service']

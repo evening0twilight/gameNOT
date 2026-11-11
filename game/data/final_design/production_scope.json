@@ -1,0 +1,134 @@
+{
+  "version": "0.18-predevelopment",
+  "date": "2026-11-04",
+  "stage": "design_only",
+  "decision": "取消独立高级合作养成分支；四项协作改为情境行动，不将其当作培养回报。人物培养集中在两项专业能力、已有被动和人物关系履约。",
+  "abilities": [
+    "lin_1",
+    "lin_3",
+    "xu_1",
+    "xu_3",
+    "su_1",
+    "su_3",
+    "chen_1",
+    "chen_3",
+    "ye_1",
+    "ye_3",
+    "he_1",
+    "he_3",
+    "mo_1",
+    "mo_3",
+    "jiang_1",
+    "jiang_3"
+  ],
+  "equipment": [
+    "crowbar",
+    "medkit",
+    "winch",
+    "shield",
+    "insulation",
+    "scanner",
+    "stretcher"
+  ],
+  "retired_abilities": [
+    "lin_5",
+    "xu_5",
+    "su_5",
+    "chen_5",
+    "ye_5",
+    "he_5",
+    "mo_5",
+    "jiang_5"
+  ],
+  "retired_equipment": [
+    "foam",
+    "battery",
+    "beacon",
+    "cutter",
+    "extinguisher"
+  ],
+  "cooperation": {
+    "training_tree": false,
+    "learned_pair_flags": false,
+    "blanket_trust_threshold": false,
+    "actions": [
+      "protected_work",
+      "mutual_cover",
+      "relay_carry",
+      "coordinated_pull"
+    ],
+    "rules": "沿用现有AP、距离、次数、真实路径与具体情境保障。移除每人物对学习标记和60信任总门槛。发生过具体冲突仍需要相应承诺、接收者安排或物理保障；基础动作不受剥夺。",
+    "ui": "协作放入目标的情境行动菜单；隐藏无关操作，合法性预览解释当前需要的搭档/位置/保障。不新增合作经验条、解锁页或熟练度货币。"
+  },
+  "growth": {
+    "L1": "获得第一专长；次数以abilities条目为准，叶禾分路隔离1次，其余按各自定义。",
+    "L2": "现有施工/移动被动二选一",
+    "L3": "第二专长；固定保留两项。江朔的第一专长同时扩为2格交接，见growth_identity_contract.level3_modifiers。",
+    "L4": "原有HP+1",
+    "L5": "强化本人的一项现有专长用途，见growth_identity_contract.level5；不再统一增加一次使用次数，不增加第三个技能按钮。",
+    "L6": "原有HP+1并取得另一L2被动"
+  },
+  "scope_caps": {
+    "board": "固定8×8二维棋盘；36关数据化目标/布置，四种额外现场操作",
+    "crew": "8人、3人出勤；每人最多2项专长",
+    "enemies": "保留6种已有确定性预告模式，不新增Boss规则树",
+    "presentation": "2D立绘/头像＋棋盘标记、少量通用移动和命中特效；不采用骨骼战斗动画或3D角色模型",
+    "platform": "先完成单机桌面版本；一个规则结算器供预览、执行、存档和事件账本共用",
+    "not_in_scope": [
+      "实时战斗/物理连锁",
+      "联网/服务器/实时AI角色",
+      "程序生成地图",
+      "随机词条装备/武器技能树",
+      "额外第三专长分支",
+      "独立高级合作养成树",
+      "新天气伤害类型",
+      "即时动态全语音演出"
+    ]
+  },
+  "validation_limits": [
+    "离线规则检查不等于Godot界面、存档、目标设备或真人体验验收。",
+    "有限配置覆盖不是全部行动序列穷举；可作为开工基线，不能证明所有阵容等强。"
+  ],
+  "engineering_contract": {
+    "command": [
+      "actor/partner/target/path",
+      "preflight eligibility and exact effects",
+      "single commit with stable receipt IDs"
+    ],
+    "preview": "同一纯状态转换产生预览与提交结果，显示AP、落点、实际伤害、目标期限和明确关系条件；避免另一份UI规则。",
+    "save": "只在稳定玩家阶段和营地落盘；保存预告、目标ID、库存、已用次数和事件去重ID；动作中途不写半个状态。",
+    "content": "地图仅组合已验证目标和机器模板；新脚本机制必须替换现有机制而不是自动叠加。",
+    "acceptance": [
+      "同命令在相同状态产生相同预览和实际结果",
+      "存档恢复后下轮预告/目标期限/道具用量一致",
+      "移除人物或协作后仍有基础救援和继续结局路线",
+      "一次任务事实只结算一次关系、资源和剧情贡献",
+      "实机文字可读、输入反馈与新手理解由真人验证"
+    ]
+  },
+  "capacity_judgment": "收敛后的二维确定性方案有可实施路径；现有仓库尚无可玩完整战役，不能据离线推演保证两人交付质量或报出可靠工期。开发能力的主要风险是集成和内容验收，并非单个算法。",
+  "battle_form": {
+    "mechanics": "固定8×8网格的空间战术救援",
+    "presentation": "固定俯视2D：有职业剪影的角色棋子、场景插画/地块、立绘剧情",
+    "turns": "我方全队回合，每人2AP，玩家交错操作三人；结束后按预告结算机器和环境，无速度条",
+    "not_chosen": [
+      "抽牌组牌对撞",
+      "3D站桩阵列回合",
+      "实时动作",
+      "3D网格场景"
+    ],
+    "reason": "现有乐趣依赖地形、搬运、供电与撤离路线；站桩阵列会丢掉这些选择，3D网格仅增加表现管线而不增加当前核心玩法。",
+    "feedback": [
+      "选中及合法目标轮廓",
+      "路线与受击范围预览",
+      "短移动/作业/发射提示",
+      "命中与护盾吸收反馈",
+      "资源/伤势/目标状态变化"
+    ],
+    "art_budget": "8套角色立绘及表情、8个可辨识棋子主体，通用移动/作业/受击效果。换装备显示图标及通用效果，不承诺逐武器握持模型和专属动作。棋盘图仅为布局规范，不是最终美术质量证明。",
+    "weapon_policy": "不新增随机武器词条和独立武器树。基础攻击是统一破拆动作；7种救援装备改变可做的操作和站位。2D同样需要目标规则、反馈、平衡和说明，不能把换一串伤害数值当新武器内容。"
+  },
+  "positive_relationships_ref": "growth_identity_contract.json",
+  "added_complexity": "新增机器危险输出隔离与全队守恒的AP转交；其余L5用既有范围、工量、护盾、持续时间和路径检查。正向关系新增两种营地/出勤模板，不新增56套合击动画或一套合作经验货币。",
+  "audit_ref": "full_audit_contract.json"
+}

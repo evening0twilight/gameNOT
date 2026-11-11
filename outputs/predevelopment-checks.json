@@ -1,0 +1,6636 @@
+{
+  "version": "0.18-predevelopment",
+  "date": "2026-11-04",
+  "design_checks": 1630,
+  "rule_regression": 1174,
+  "campaigns": 108,
+  "actual_battles": 3420,
+  "phase_graph_nodes": 212,
+  "checks": [
+    {
+      "group": "authority",
+      "name": "exact baseline version"
+    },
+    {
+      "group": "authority",
+      "name": "scope pointer"
+    },
+    {
+      "group": "authority",
+      "name": "economy pointer"
+    },
+    {
+      "group": "authority",
+      "name": "product pointer"
+    },
+    {
+      "group": "authority",
+      "name": "confirmed_policy pointer"
+    },
+    {
+      "group": "authority",
+      "name": "characters pointer"
+    },
+    {
+      "group": "authority",
+      "name": "initial_relationships pointer"
+    },
+    {
+      "group": "authority",
+      "name": "abilities pointer"
+    },
+    {
+      "group": "authority",
+      "name": "enemies pointer"
+    },
+    {
+      "group": "authority",
+      "name": "equipment pointer"
+    },
+    {
+      "group": "authority",
+      "name": "facilities pointer"
+    },
+    {
+      "group": "authority",
+      "name": "combat pointer"
+    },
+    {
+      "group": "authority",
+      "name": "progression_relationship pointer"
+    },
+    {
+      "group": "authority",
+      "name": "growth pointer"
+    },
+    {
+      "group": "authority",
+      "name": "training pointer"
+    },
+    {
+      "group": "authority",
+      "name": "experience pointer"
+    },
+    {
+      "group": "authority",
+      "name": "field_operations pointer"
+    },
+    {
+      "group": "authority",
+      "name": "world pointer"
+    },
+    {
+      "group": "authority",
+      "name": "coordination pointer"
+    },
+    {
+      "group": "authority",
+      "name": "campaign pointer"
+    },
+    {
+      "group": "authority",
+      "name": "integration pointer"
+    },
+    {
+      "group": "authority",
+      "name": "stories pointer"
+    },
+    {
+      "group": "authority",
+      "name": "scripts pointer"
+    },
+    {
+      "group": "authority",
+      "name": "boards pointer"
+    },
+    {
+      "group": "authority",
+      "name": "player_readiness pointer"
+    },
+    {
+      "group": "authority",
+      "name": "persistence_inventory pointer"
+    },
+    {
+      "group": "authority",
+      "name": "player_flow pointer"
+    },
+    {
+      "group": "authority",
+      "name": "release_scope pointer"
+    },
+    {
+      "group": "authority",
+      "name": "acceptance pointer"
+    },
+    {
+      "group": "authority",
+      "name": "decisions pointer"
+    },
+    {
+      "group": "authority",
+      "name": "compatibility_rules pointer"
+    },
+    {
+      "group": "authority",
+      "name": "mission_index pointer"
+    },
+    {
+      "group": "authority",
+      "name": "requirements pointer"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/production_scope.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/campaign_economy_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/product.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/confirmed_experience_policy.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/characters.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/initial_relationships.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/abilities.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/enemies.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/equipment.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/facilities.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/combat.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/progression_relationship.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/growth_identity_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/training_value_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/player_experience_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/player_choice_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/campaign_world_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/campaign_coordination_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/whole_campaign_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/integration.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/stories.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/character_scripts.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/boards.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/player_ready_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/full_audit_contract.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/campaign_flow.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/player_flow.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/release_scope.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/acceptance.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/final_design/predevelopment_decisions.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/rules.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/mission_registry.json"
+    },
+    {
+      "group": "authority",
+      "name": "identical generated view game/data/requirements.json"
+    },
+    {
+      "group": "authority",
+      "name": "runtime not authorized"
+    },
+    {
+      "group": "authority",
+      "name": "scope current version"
+    },
+    {
+      "group": "authority",
+      "name": "economy current version"
+    },
+    {
+      "group": "authority",
+      "name": "confirmed_policy current version"
+    },
+    {
+      "group": "authority",
+      "name": "combat current version"
+    },
+    {
+      "group": "authority",
+      "name": "progression_relationship current version"
+    },
+    {
+      "group": "authority",
+      "name": "growth current version"
+    },
+    {
+      "group": "authority",
+      "name": "training current version"
+    },
+    {
+      "group": "authority",
+      "name": "experience current version"
+    },
+    {
+      "group": "authority",
+      "name": "field_operations current version"
+    },
+    {
+      "group": "authority",
+      "name": "world current version"
+    },
+    {
+      "group": "authority",
+      "name": "coordination current version"
+    },
+    {
+      "group": "authority",
+      "name": "campaign current version"
+    },
+    {
+      "group": "authority",
+      "name": "integration current version"
+    },
+    {
+      "group": "authority",
+      "name": "stories current version"
+    },
+    {
+      "group": "authority",
+      "name": "scripts current version"
+    },
+    {
+      "group": "authority",
+      "name": "boards current version"
+    },
+    {
+      "group": "authority",
+      "name": "player_readiness current version"
+    },
+    {
+      "group": "authority",
+      "name": "persistence_inventory current version"
+    },
+    {
+      "group": "authority",
+      "name": "player_flow current version"
+    },
+    {
+      "group": "authority",
+      "name": "release_scope current version"
+    },
+    {
+      "group": "authority",
+      "name": "acceptance current version"
+    },
+    {
+      "group": "authority",
+      "name": "decisions current version"
+    },
+    {
+      "group": "scope",
+      "name": "all active abilities only"
+    },
+    {
+      "group": "scope",
+      "name": "all active equipment only"
+    },
+    {
+      "group": "scope",
+      "name": "legacy equipment projection"
+    },
+    {
+      "group": "scope",
+      "name": "legacy enemy projection"
+    },
+    {
+      "group": "scope",
+      "name": "four services two investments"
+    },
+    {
+      "group": "scope",
+      "name": "no learned cooperation flags"
+    },
+    {
+      "group": "scope",
+      "name": "current root rules projection"
+    },
+    {
+      "group": "economy",
+      "name": "product economy identical"
+    },
+    {
+      "group": "economy",
+      "name": "current initial resources"
+    },
+    {
+      "group": "content",
+      "name": "36 boards,24 main,12 side"
+    },
+    {
+      "group": "content",
+      "name": "M018x8"
+    },
+    {
+      "group": "content",
+      "name": "M01 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M01 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M01 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M01/r1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M01/r1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M01/r2 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M01/r2 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M01/map prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M01/map no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M01/M01_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M01/M01_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M01 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M01 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M028x8"
+    },
+    {
+      "group": "content",
+      "name": "M02 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M02 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M02 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M02/cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M02/cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M02/power prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M02/power no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M02/spare prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M02/spare no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M02/M02_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M02/M02_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M02 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M02 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M038x8"
+    },
+    {
+      "group": "content",
+      "name": "M03 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M03 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M03 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M03/door prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M03/door no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M03/crate prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M03/crate no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M03/parts prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M03/parts no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M03/M03_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M03/M03_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M03 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M03 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M048x8"
+    },
+    {
+      "group": "content",
+      "name": "M04 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M04 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M04 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M04/brace1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M04/brace1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M04/brace2 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M04/brace2 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M04/worker prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M04/worker no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M04/rail prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M04/rail no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M04/M04_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M04/M04_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M04 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M04 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M058x8"
+    },
+    {
+      "group": "content",
+      "name": "M05 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M05 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M05 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M05/isolate prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M05/isolate no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M05/pump prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M05/pump no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M05/module prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M05/module no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M05/M05_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M05/M05_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M05 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M05 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M068x8"
+    },
+    {
+      "group": "content",
+      "name": "M06 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M06 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M06 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M06/r1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M06/r1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M06/r2 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M06/r2 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M06/asset prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M06/asset no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M06/M06_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M06/M06_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M06/M06_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M06/M06_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M06 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M06 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M078x8"
+    },
+    {
+      "group": "content",
+      "name": "M07 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M07 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M07 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M07/cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M07/cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M07/worker prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M07/worker no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M07/serial prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M07/serial no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M07/M07_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M07/M07_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M07/M07_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M07/M07_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M07 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M07 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M088x8"
+    },
+    {
+      "group": "content",
+      "name": "M08 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M08 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M08 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M08/block1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M08/block1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M08/block2 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M08/block2 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M08/truck prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M08/truck no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M08/alt prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M08/alt no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M08/M08_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M08/M08_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M08/M08_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M08/M08_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M08 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M08 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M098x8"
+    },
+    {
+      "group": "content",
+      "name": "M09 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M09 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M09 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M09/r1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M09/r1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M09/r2 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M09/r2 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M09/med prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M09/med no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M09/M09_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M09/M09_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M09/M09_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M09/M09_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M09 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M09 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M108x8"
+    },
+    {
+      "group": "content",
+      "name": "M10 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M10 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M10 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M10/test1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M10/test1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M10/test2 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M10/test2 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M10/meeting prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M10/meeting no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M10/M10_enemy1_cut0 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M10/M10_enemy1_cut0 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M10/M10_enemy1_cut1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M10/M10_enemy1_cut1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M10 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M10 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M118x8"
+    },
+    {
+      "group": "content",
+      "name": "M11 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M11 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M11 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M11/cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M11/cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M11/lock prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M11/lock no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M11/e prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M11/e no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M11/M11_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M11/M11_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M11/M11_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M11/M11_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M11 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M11 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M128x8"
+    },
+    {
+      "group": "content",
+      "name": "M12 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M12 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M12 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M12/backup prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M12/backup no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M12/drive prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M12/drive no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M12/e prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M12/e no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M12/M12_enemy1_cut0 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M12/M12_enemy1_cut0 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M12/M12_enemy1_cut1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M12/M12_enemy1_cut1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M12/M12_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M12/M12_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M12 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M12 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M138x8"
+    },
+    {
+      "group": "content",
+      "name": "M13 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M13 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M13 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M13/cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M13/cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M13/log prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M13/log no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M13/e prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M13/e no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M13/M13_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M13/M13_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M13/M13_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M13/M13_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M13 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M13 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M148x8"
+    },
+    {
+      "group": "content",
+      "name": "M14 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M14 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M14 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M14/meds prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M14/meds no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M14/cold prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M14/cold no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M14/ledger prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M14/ledger no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M14/M14_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M14/M14_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M14/M14_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M14/M14_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M14 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M14 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M158x8"
+    },
+    {
+      "group": "content",
+      "name": "M15 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M15 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M15 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M15/north prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M15/north no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M15/east prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M15/east no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M15/west prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M15/west no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M15/M15_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M15/M15_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M15/M15_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M15/M15_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M15 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M15 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M168x8"
+    },
+    {
+      "group": "content",
+      "name": "M16 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M16 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M16 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M16/lane prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M16/lane no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M16/people prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M16/people no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M16/goods prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M16/goods no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M16/M16_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M16/M16_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M16/M16_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M16/M16_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M16 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M16 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M178x8"
+    },
+    {
+      "group": "content",
+      "name": "M17 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M17 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M17 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M17/repair1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M17/repair1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M17/repair2 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M17/repair2 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M17/isolate prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M17/isolate no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M17/e prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M17/e no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M17/M17_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M17/M17_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M17/M17_enemy2_cut0 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M17/M17_enemy2_cut0 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M17/M17_enemy2_cut1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M17/M17_enemy2_cut1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M17 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M17 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M188x8"
+    },
+    {
+      "group": "content",
+      "name": "M18 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M18 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M18 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M18/relay prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M18/relay no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M18/broadcast prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M18/broadcast no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M18/backup prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M18/backup no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M18/M18_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M18/M18_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M18/M18_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M18/M18_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M18 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M18 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M198x8"
+    },
+    {
+      "group": "content",
+      "name": "M19 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M19 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M19 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M19/patient prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M19/patient no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M19/shelter prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M19/shelter no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M19/device prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M19/device no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M19/M19_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M19/M19_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M19/M19_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M19/M19_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M19 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M19 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M208x8"
+    },
+    {
+      "group": "content",
+      "name": "M20 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M20 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M20 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M20/west prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M20/west no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M20/east prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M20/east no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M20/transfer prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M20/transfer no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M20/M20_enemy1_cut0 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M20/M20_enemy1_cut0 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M20/M20_enemy1_cut1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M20/M20_enemy1_cut1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M20/M20_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M20/M20_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M20 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M20 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M218x8"
+    },
+    {
+      "group": "content",
+      "name": "M21 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M21 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M21 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M21/route prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M21/route no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M21/e prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M21/e no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M21/marker prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M21/marker no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M21/M21_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M21/M21_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M21/M21_enemy2_cut0 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M21/M21_enemy2_cut0 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M21/M21_enemy2_cut1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M21/M21_enemy2_cut1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M21 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M21 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M228x8"
+    },
+    {
+      "group": "content",
+      "name": "M22 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M22 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M22 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M22/handover prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M22/handover no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M22/e prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M22/e no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M22/privacy prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M22/privacy no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M22/M22_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M22/M22_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M22/M22_enemy2_cut0 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M22/M22_enemy2_cut0 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M22/M22_enemy2_cut1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M22/M22_enemy2_cut1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M22 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M22 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M238x8"
+    },
+    {
+      "group": "content",
+      "name": "M23 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M23 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M23 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M23/r1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M23/r1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M23/r2 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M23/r2 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M23/rebuild prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M23/rebuild no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M23/M23_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M23/M23_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M23/M23_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M23/M23_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M23/M23_enemy3_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M23/M23_enemy3_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M23 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M23 authored role"
+    },
+    {
+      "group": "content",
+      "name": "M248x8"
+    },
+    {
+      "group": "content",
+      "name": "M24 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "M24 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "M24 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "M24/bus prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/bus no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/auth prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/auth no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/west prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/west no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/east prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/east no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/r1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/r1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/r2 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/r2 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/archive prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/archive no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/M24_enemy1_cut0 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/M24_enemy1_cut0 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/M24_enemy1_cut1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/M24_enemy1_cut1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/M24_enemy2_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/M24_enemy2_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24/M24_enemy3_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "M24/M24_enemy3_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "M24 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M24 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M24 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M24 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "M24 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S018x8"
+    },
+    {
+      "group": "content",
+      "name": "S01 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S01 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S01 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S01/engine prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S01/engine no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S01/tickets prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S01/tickets no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S01/S01_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S01/S01_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S01 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S01 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S028x8"
+    },
+    {
+      "group": "content",
+      "name": "S02 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S02 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S02 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S02/med prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S02/med no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S02/books prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S02/books no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S02/S02_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S02/S02_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S02 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S02 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S038x8"
+    },
+    {
+      "group": "content",
+      "name": "S03 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S03 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S03 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S03/cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S03/cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S03/passenger prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S03/passenger no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S03/S03_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S03/S03_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S03 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S03 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S048x8"
+    },
+    {
+      "group": "content",
+      "name": "S04 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S04 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S04 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S04/seed prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S04/seed no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S04/rack prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S04/rack no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S04/S04_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S04/S04_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S04 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S04 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S058x8"
+    },
+    {
+      "group": "content",
+      "name": "S05 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S05 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S05 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S05/isolate prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S05/isolate no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S05/cloth prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S05/cloth no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S05/S05_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S05/S05_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S05 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S05 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S068x8"
+    },
+    {
+      "group": "content",
+      "name": "S06 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S06 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S06 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S06/locate prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S06/locate no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S06/resident prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S06/resident no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S06/meal prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S06/meal no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S06/S06_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S06/S06_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S06 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S06 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S078x8"
+    },
+    {
+      "group": "content",
+      "name": "S07 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S07 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S07 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S07/clerk prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S07/clerk no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S07/copy prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S07/copy no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S07/S07_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S07/S07_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S07 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S07 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S088x8"
+    },
+    {
+      "group": "content",
+      "name": "S08 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S08 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S08 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S08/luggage prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S08/luggage no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S08/tools prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S08/tools no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S08/S08_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S08/S08_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S08 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S08 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S098x8"
+    },
+    {
+      "group": "content",
+      "name": "S09 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S09 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S09 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S09/class prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S09/class no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S09/books prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S09/books no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S09/S09_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S09/S09_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S09 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S09 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S108x8"
+    },
+    {
+      "group": "content",
+      "name": "S10 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S10 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S10 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S10/light prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S10/light no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S10/chart prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S10/chart no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S10/S10_enemy1_cut0 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S10/S10_enemy1_cut0 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S10/S10_enemy1_cut1 prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S10/S10_enemy1_cut1 no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S10 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S10 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S118x8"
+    },
+    {
+      "group": "content",
+      "name": "S11 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S11 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S11 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S11/wire prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S11/wire no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S11/cold prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S11/cold no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S11/S11_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S11/S11_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S11 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S11 authored role"
+    },
+    {
+      "group": "content",
+      "name": "S128x8"
+    },
+    {
+      "group": "content",
+      "name": "S12 unique objects"
+    },
+    {
+      "group": "content",
+      "name": "S12 correct reward owner"
+    },
+    {
+      "group": "content",
+      "name": "S12 no retired foam logic"
+    },
+    {
+      "group": "content",
+      "name": "S12/box prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S12/box no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S12/photo prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S12/photo no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S12/S12_enemy1_cut prerequisite IDs"
+    },
+    {
+      "group": "content",
+      "name": "S12/S12_enemy1_cut no dependency cycle"
+    },
+    {
+      "group": "content",
+      "name": "S12 valid nonempty goal groups"
+    },
+    {
+      "group": "content",
+      "name": "S12 authored role"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('M02', 'spare')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('M03', 'parts')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('M05', 'module')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('M08', 'alt')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('M09', 'med')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('M14', 'meds')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('M16', 'goods')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('M19', 'device')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('M23', 'rebuild')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S01', 'tickets')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S02', 'med')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S02', 'books')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S04', 'seed')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S04', 'rack')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S05', 'cloth')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S06', 'meal')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S08', 'luggage')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S08', 'tools')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S09', 'books')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S10', 'chart')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S11', 'cold')"
+    },
+    {
+      "group": "economy",
+      "name": "real reward ('S12', 'box')"
+    },
+    {
+      "group": "economy",
+      "name": "22unique object reward sources"
+    },
+    {
+      "group": "economy",
+      "name": "M02 recovery parts"
+    },
+    {
+      "group": "narrative",
+      "name": "personal_nodes exact script IDs"
+    },
+    {
+      "group": "narrative",
+      "name": "relationship_nodes exact script IDs"
+    },
+    {
+      "group": "narrative",
+      "name": "community_nodes exact script IDs"
+    },
+    {
+      "group": "narrative",
+      "name": "recovery_nodes exact script IDs"
+    },
+    {
+      "group": "narrative",
+      "name": "chapter_nodes exact script IDs"
+    },
+    {
+      "group": "narrative",
+      "name": "96 full nodes"
+    },
+    {
+      "group": "narrative",
+      "name": "46 night slots and36 main relationship/personal nodes"
+    },
+    {
+      "group": "narrative",
+      "name": "orthogonal epilogue"
+    },
+    {
+      "group": "flow",
+      "name": "all campaign phase nodes can reach ending"
+    },
+    {
+      "group": "flow",
+      "name": "no day24 camp or side stage"
+    },
+    {
+      "group": "flow",
+      "name": "D1 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D2 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D3 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D4 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D5 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D6 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D7 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D8 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D9 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D10 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D11 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D12 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D13 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D14 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D15 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D16 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D17 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D18 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D19 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D20 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D21 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D22 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "D23 skip-side legal"
+    },
+    {
+      "group": "flow",
+      "name": "newgame and load error return paths"
+    },
+    {
+      "group": "flow",
+      "name": "critical snapshots listed"
+    },
+    {
+      "group": "acceptance",
+      "name": "design and future acceptance separate"
+    },
+    {
+      "group": "scope",
+      "name": "16 screens unique"
+    },
+    {
+      "group": "scope",
+      "name": "12 location kits"
+    },
+    {
+      "group": "acceptance",
+      "name": "CORE-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "CORE-02 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "CORE-03 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "CORE-04 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "CORE-05 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "REL-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "REL-02 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "REL-03 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "REL-04 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "REL-05 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "CHAR-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "CHAR-02 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "CHAR-03 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "CHAR-04 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "ECO-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "ECO-02 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "ECO-03 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "WORLD-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "WORLD-02 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "EVENT-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "EVENT-02 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "END-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "REPLAY-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "DIFF-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "UI-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "UI-02 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "SAVE-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "SAVE-02 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "TECH-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "TECH-02 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "TECH-03 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "ASSET-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "AUDIO-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "QA-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "SCOPE-01 mapped to actual gate"
+    },
+    {
+      "group": "acceptance",
+      "name": "SCOPE-02 mapped to actual gate"
+    },
+    {
+      "group": "l2",
+      "name": "lin1work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin1work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin1work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin1work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin1work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "lin1move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin1move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin1move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin1move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin1move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "lin2work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin2work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin2work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin2work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin2work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "lin2move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin2move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin2move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin2move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin2move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "lin3work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin3work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin3work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin3work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin3work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "lin3move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin3move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin3move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin3move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin3move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "lin5work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin5work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin5work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin5work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin5work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "lin5move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin5move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin5move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin5move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin5move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "lin6work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin6work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin6work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin6work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin6work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "lin6move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "lin6move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "lin6move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "lin6move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "lin6move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu1work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu1work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu1work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu1work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu1work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu1move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu1move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu1move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu1move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu1move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu2work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu2work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu2work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu2work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu2work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu2move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu2move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu2move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu2move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu2move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu3work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu3work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu3work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu3work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu3work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu3move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu3move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu3move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu3move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu3move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu5work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu5work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu5work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu5work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu5work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu5move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu5move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu5move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu5move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu5move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu6work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu6work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu6work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu6work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu6work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "xu6move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "xu6move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "xu6move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "xu6move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "xu6move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su1work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su1work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su1work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su1work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su1work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su1move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su1move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su1move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su1move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su1move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su2work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su2work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su2work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su2work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su2work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su2move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su2move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su2move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su2move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su2move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su3work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su3work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su3work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su3work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su3work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su3move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su3move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su3move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su3move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su3move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su5work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su5work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su5work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su5work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su5work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su5move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su5move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su5move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su5move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su5move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su6work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su6work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su6work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su6work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su6work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "su6move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "su6move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "su6move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "su6move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "su6move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen1work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen1work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen1work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen1work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen1work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen1move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen1move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen1move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen1move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen1move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen2work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen2work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen2work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen2work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen2work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen2move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen2move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen2move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen2move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen2move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen3work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen3work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen3work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen3work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen3work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen3move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen3move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen3move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen3move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen3move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen5work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen5work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen5work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen5work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen5work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen5move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen5move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen5move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen5move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen5move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen6work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen6work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen6work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen6work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen6work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "chen6move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "chen6move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "chen6move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "chen6move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "chen6move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye1work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye1work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye1work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye1work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye1work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye1move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye1move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye1move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye1move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye1move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye2work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye2work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye2work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye2work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye2work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye2move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye2move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye2move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye2move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye2move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye3work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye3work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye3work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye3work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye3work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye3move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye3move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye3move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye3move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye3move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye5work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye5work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye5work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye5work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye5work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye5move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye5move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye5move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye5move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye5move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye6work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye6work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye6work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye6work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye6work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "ye6move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "ye6move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "ye6move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "ye6move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "ye6move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he1work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he1work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he1work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he1work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he1work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he1move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he1move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he1move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he1move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he1move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he2work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he2work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he2work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he2work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he2work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he2move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he2move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he2move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he2move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he2move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he3work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he3work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he3work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he3work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he3work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he3move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he3move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he3move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he3move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he3move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he5work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he5work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he5work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he5work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he5work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he5move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he5move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he5move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he5move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he5move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he6work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he6work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he6work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he6work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he6work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "he6move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "he6move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "he6move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "he6move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "he6move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo1work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo1work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo1work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo1work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo1work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo1move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo1move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo1move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo1move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo1move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo2work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo2work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo2work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo2work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo2work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo2move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo2move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo2move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo2move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo2move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo3work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo3work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo3work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo3work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo3work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo3move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo3move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo3move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo3move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo3move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo5work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo5work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo5work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo5work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo5work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo5move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo5move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo5move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo5move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo5move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo6work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo6work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo6work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo6work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo6work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "mo6move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "mo6move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "mo6move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "mo6move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "mo6move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang1move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang2move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang3move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang5move firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6work personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6work other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6work actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6work no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6work firstwork not repeated"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6move personal move"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6move other independent"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6move actual work"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6move no global leakage"
+    },
+    {
+      "group": "l2",
+      "name": "jiang6move firstwork not repeated"
+    },
+    {
+      "group": "emotion",
+      "name": "breach exact current family"
+    },
+    {
+      "group": "emotion",
+      "name": "unfairness exact current family"
+    },
+    {
+      "group": "emotion",
+      "name": "humiliation exact current family"
+    },
+    {
+      "group": "emotion",
+      "name": "concealment exact current family"
+    },
+    {
+      "group": "emotion",
+      "name": "cost_overrun exact current family"
+    },
+    {
+      "group": "narrative",
+      "name": "He can assist without forfeiting delegated work"
+    },
+    {
+      "group": "narrative",
+      "name": "He false proof rejected primary_only"
+    },
+    {
+      "group": "narrative",
+      "name": "He false proof rejected no_other"
+    },
+    {
+      "group": "narrative",
+      "name": "He false proof rejected no_protection"
+    },
+    {
+      "group": "narrative",
+      "name": "He false proof rejected wrong_mission"
+    },
+    {
+      "group": "narrative",
+      "name": "He false proof rejected not_extracted"
+    },
+    {
+      "group": "determinism",
+      "name": "qualified across hash seed 0"
+    },
+    {
+      "group": "determinism",
+      "name": "qualified across hash seed 1"
+    },
+    {
+      "group": "determinism",
+      "name": "qualified across hash seed 2"
+    },
+    {
+      "group": "determinism",
+      "name": "qualified across hash seed 27"
+    },
+    {
+      "group": "determinism",
+      "name": "qualified across hash seed 99"
+    },
+    {
+      "group": "determinism",
+      "name": "historical unordered path reproducibly differs across seeds"
+    },
+    {
+      "group": "campaigns",
+      "name": "108 fresh campaigns"
+    },
+    {
+      "group": "campaigns",
+      "name": "3420 actual battles"
+    },
+    {
+      "group": "campaigns",
+      "name": "36 maps covered"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/relaxed/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/standard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "main_only/hard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/relaxed/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/standard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "cautious/hard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/relaxed/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/standard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "collector/hard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/relaxed/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/standard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "favorite/hard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/relaxed/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/standard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "dismantler/hard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/relaxed/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/standard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/A/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/evacuation all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/evacuation battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/evacuation final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/evacuation intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/distributed_rebuild all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/distributed_rebuild battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/distributed_rebuild final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/distributed_rebuild intermediate pressure unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/shared_control all24main"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/shared_control battle results unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/shared_control final state unchanged"
+    },
+    {
+      "group": "campaigns",
+      "name": "mixed/hard/B/shared_control intermediate pressure unchanged"
+    },
+    {
+      "group": "boundary",
+      "name": "all formal runtime files unchanged"
+    },
+    {
+      "group": "boundary",
+      "name": "no unresolved product decision"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html unique anchors"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html #decision"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html #game"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html #flow"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html #people"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html #maps"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html #production"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html #acceptance"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html #rules"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html predevelopment-review.html"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html predevelopment-checks.json"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html ../game/data/final_design/design_manifest.json"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html character-script-final.html"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html ../game/data/final_design/release_baseline.json"
+    },
+    {
+      "group": "artifact",
+      "name": "full-game-design.html ../game/data/final_design/design_manifest.json"
+    },
+    {
+      "group": "artifact",
+      "name": "predevelopment-review.html unique anchors"
+    },
+    {
+      "group": "artifact",
+      "name": "predevelopment-review.html predevelopment-checks.json"
+    },
+    {
+      "group": "artifact",
+      "name": "predevelopment-review.html predevelopment-rule-checks.json"
+    },
+    {
+      "group": "artifact",
+      "name": "predevelopment-review.html predevelopment-campaigns.json"
+    },
+    {
+      "group": "artifact",
+      "name": "predevelopment-review.html full-game-design.html"
+    },
+    {
+      "group": "artifact",
+      "name": "predevelopment-review.html character-script-final.html"
+    },
+    {
+      "group": "artifact",
+      "name": "predevelopment-review.html full-game-design-v017.html"
+    },
+    {
+      "group": "artifact",
+      "name": "character-script-final.html unique anchors"
+    },
+    {
+      "group": "artifact",
+      "name": "character-script-final.html full-game-design.html#people"
+    }
+  ],
+  "contribution_receipt_corrections": [],
+  "hash_seed_results": [
+    [
+      "jiang",
+      "ye"
+    ],
+    [
+      "jiang",
+      "ye"
+    ],
+    [
+      "jiang",
+      "ye"
+    ],
+    [
+      "jiang",
+      "ye"
+    ],
+    [
+      "jiang",
+      "ye"
+    ]
+  ],
+  "historical_hash_seed_results": [
+    [
+      "ye",
+      "jiang"
+    ],
+    [
+      "ye",
+      "jiang"
+    ],
+    [
+      "ye",
+      "jiang"
+    ],
+    [
+      "jiang",
+      "ye"
+    ],
+    [
+      "ye",
+      "jiang"
+    ]
+  ],
+  "html_structure_checked": [
+    "full-game-design.html",
+    "predevelopment-review.html",
+    "character-script-final.html"
+  ],
+  "runtime_unchanged": true,
+  "known_design_blockers": [],
+  "development_readiness": "GO_FOR_SAME_FINAL_PROJECT_WHEN_USER_AUTHORIZES",
+  "formal_development_started": false,
+  "release_readiness": "NOT_VERIFIED",
+  "limitations": [
+    "不能穷举全部行动序列、所有记忆组合和全部玩家偏好。",
+    "统计是脚本策略结果，不是真人胜率、留存率、付费率或市场证明。",
+    "通过检查意味着已知范围可实施，不保证后续没有新bug。"
+  ],
+  "sha256": {
+    "game/data/final_design/release_baseline.json": "1f74768ce8dfa5ebf43567e1e6dc6c4cd9a3db6d0ad22774aa943b2f8a6d6a75",
+    "game/data/final_design/design_manifest.json": "94a140d60a14788dbd320e384500e425262c7ad8d254bb00e8c314fe28004cec",
+    "game/data/final_design/production_scope.json": "e980fdfb7b4202b23949df2674b0f91ebf5eb0addc3b6166cedd8f6b3a2909c6",
+    "game/data/campaign_economy_contract.json": "a0a60f456c853b56d543f77ae1a3648579eb40ba474c9c2680e766a6bcf789da",
+    "game/data/product.json": "7a77bc9371ca7980a1d5a1471b7eca9f2fc952d66423d47055c19b05bfda78e4",
+    "game/data/confirmed_experience_policy.json": "79c943fcaf92ff2fd4ecdbf39d06f16a1409f509e2169055ad0b650762648413",
+    "game/data/characters.json": "8b71fd1cd460da591d11b2fcb61d607ed2793e267e8cf8df23297eb895d972d9",
+    "game/data/initial_relationships.json": "315ef69cf7f624bd395ea6f780c33db95df89213f85537300fe1467171af8a76",
+    "game/data/final_design/abilities.json": "8653d237f2a73f88cfef2e731eb22187ff251e543fe04ccee324a46a369eb875",
+    "game/data/final_design/enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+    "game/data/final_design/equipment.json": "4339095d58912300eb6835b7d40756d8d63481c9848369e40b606c52b8454141",
+    "game/data/final_design/facilities.json": "b7a1774db0358850e1a3c050cd993963f6d4c7a53f19a739dea3914355709e7a",
+    "game/data/final_design/combat.json": "33daa21a56ad76026a49bf35c0c98e8672bbc5e52a25af2545cb89c407289031",
+    "game/data/final_design/progression_relationship.json": "f4b467aa82fb60ff01447253d4a3da8f187e3e26ab2fe83a763c608b990036a4",
+    "game/data/final_design/growth_identity_contract.json": "f045b2ff0954bb9de4dd5409103074c64055e0783304bcb46070dfcb056ccf6f",
+    "game/data/final_design/training_value_contract.json": "8840fa8e5ba4308b81ad85181def8c5ff6772c162f61f08790fc0182e65eb0a3",
+    "game/data/final_design/player_experience_contract.json": "1aa7895a216e0f52fc41afd6fd6485e3a45a0d7b018fb355f7b9db00d919182d",
+    "game/data/final_design/player_choice_contract.json": "daca55c228bfdda51251de3c8453a277911fa5da1af8a6f63d32ba48a05203af",
+    "game/data/campaign_world_contract.json": "d38b514e60a54589a890a7d3fe24cb19cc1f2b552229d76b67c54aa6c7d689b6",
+    "game/data/campaign_coordination_contract.json": "f1eae32a9c28d111a6cbd5154ade2f238881f1b3dd13b0a2d74b81f9e1328773",
+    "game/data/final_design/whole_campaign_contract.json": "feb03d9ded7b571ff85ff4ebedf4da21048a3cdf195faebca3448bac963e2ec4",
+    "game/data/final_design/integration.json": "c9b1e8230f5ebe56587b4027c0354499d95f16c2da830c39a4dc6fc829aa74f7",
+    "game/data/final_design/stories.json": "1e48cfdcda5dc282957cba6ab5792ec235be9e56d1d38d8fce6aca23dc0b5b0a",
+    "game/data/final_design/character_scripts.json": "eafee9a799a3598e460bd26239dc6735435d70139e877217c376969205f100a9",
+    "game/data/final_design/boards.json": "80d5050519b04549268a4d46fbea608725fbb79c208769bbfd4a22d7a9c63855",
+    "game/data/final_design/player_ready_contract.json": "69ba1905c7038e7605d75de2afab0058aa55a3f14e7d730813e5cb6c32da87ee",
+    "game/data/final_design/full_audit_contract.json": "6de56925ccbd4bf0fe184b5be8054ce9403c1908c2b299e7a7dfcdb5b9ab7a48",
+    "game/data/campaign_flow.json": "62ad3710b0e052551825ce7704d10bdb694ca53b09b8a5512c4675cbd9788772",
+    "game/data/final_design/player_flow.json": "62ad3710b0e052551825ce7704d10bdb694ca53b09b8a5512c4675cbd9788772",
+    "game/data/final_design/release_scope.json": "f4ac9f21673f3290ea9ce6627de2ec575e3ebe0de0d3c8e9232f8f2e14e084c3",
+    "game/data/final_design/acceptance.json": "0b08a7f4ecd913eab7103aee7072c3f7f02009763709071558d57ddf9851a0cc",
+    "game/data/final_design/predevelopment_decisions.json": "e1d8cc41e77ec4aa121e8d7234ac488149740484eeba1beff2412a33e58c2a04",
+    "game/data/rules.json": "bfac9922bd6a9fcea32bab9f202e6c82e9a8f512f47428fcc7b570821a04a26b",
+    "game/data/mission_registry.json": "ed5d08192557008f53c4497e2b5464a17915f1d0bceb2cbfef65a9f6c2177002",
+    "game/data/requirements.json": "29e4e75e4a53bec3f2bb28f5a3cac342a9f2423fd7acb6324dfd2f76bc654d75",
+    "work/cooperation-value-review/current_rules.py": "0b8144f5a622777ff61b5a485dc99bc1dd8ea75b37ce8dead9741b91dbe83519",
+    "work/growth-identity-review/relationships.py": "5c8608369ce32a1a4c28aa794a6e0e886238bbb6dcaf0348b1d7a26a7377e7cc",
+    "work/integrated-review/social.py": "ce2bebe61f0bd97caee94cd353d2f6d89e665ebfb3e5b6ed21596715c42e35d0",
+    "work/predevelopment-review/story_obligations.py": "d791fa0508e3c7b8262c57d71e0117ea0b5ef1df7eb4ab934e7bdbef41a33430",
+    "work/campaign-review/ledger_review.py": "2e172fbaea1dbafa94c5d979989d9d6c4f45ce48d11a121874d25da4473c148c",
+    "work/ordinary-player-review/campaigns.py": "d31d289f098cde7907b58070c9fb2b2ccccfd8e05d3e5e6595865c4bc0eee034",
+    "work/predevelopment-review/regression.py": "8dd1907eec7da9a8f11dbbdfe8f9789234627df8ddc86a938d9fd851c92ca71c",
+    "work/predevelopment-review/verify.py": "eff88fdb79bae409137d69c2e199cdd97440ad11851604799307d6e50566c4e7"
+  }
+}

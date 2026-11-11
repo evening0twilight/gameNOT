@@ -1,0 +1,1501 @@
+{
+  "scope": "46goal variants at both physical exits using level3initial trio/no specialties. Alternate dock is geometrically tested on all36maps but earned availability remains late main missions only. Existing vehicle destinations and deadlines unchanged.",
+  "rows": [
+    {
+      "mission": "M01",
+      "route": "default",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 8,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "map"
+      ]
+    },
+    {
+      "mission": "M01",
+      "route": "default",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "map"
+      ]
+    },
+    {
+      "mission": "M02",
+      "route": "default",
+      "goals": [
+        "cut",
+        "power"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 8,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "power",
+        "spare"
+      ]
+    },
+    {
+      "mission": "M02",
+      "route": "default",
+      "goals": [
+        "cut",
+        "power"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "power",
+        "spare"
+      ]
+    },
+    {
+      "mission": "M03",
+      "route": "default",
+      "goals": [
+        "door",
+        "crate"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "door",
+        "crate",
+        "parts"
+      ]
+    },
+    {
+      "mission": "M03",
+      "route": "default",
+      "goals": [
+        "door",
+        "crate"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "door",
+        "crate",
+        "parts"
+      ]
+    },
+    {
+      "mission": "M04",
+      "route": "default",
+      "goals": [
+        "brace1",
+        "brace2",
+        "worker"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "brace1",
+        "brace2",
+        "worker",
+        "rail"
+      ]
+    },
+    {
+      "mission": "M04",
+      "route": "default",
+      "goals": [
+        "brace1",
+        "brace2",
+        "worker"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "brace1",
+        "brace2",
+        "worker",
+        "rail"
+      ]
+    },
+    {
+      "mission": "M05",
+      "route": "default",
+      "goals": [
+        "isolate",
+        "pump"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "isolate",
+        "pump",
+        "module"
+      ]
+    },
+    {
+      "mission": "M05",
+      "route": "default",
+      "goals": [
+        "isolate",
+        "pump"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "isolate",
+        "pump",
+        "module"
+      ]
+    },
+    {
+      "mission": "M06",
+      "route": "default",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "asset"
+      ]
+    },
+    {
+      "mission": "M06",
+      "route": "default",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "asset"
+      ]
+    },
+    {
+      "mission": "M07",
+      "route": "default",
+      "goals": [
+        "cut",
+        "worker"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 9,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "worker",
+        "serial"
+      ]
+    },
+    {
+      "mission": "M07",
+      "route": "default",
+      "goals": [
+        "cut",
+        "worker"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "worker",
+        "serial"
+      ]
+    },
+    {
+      "mission": "M08",
+      "route": "default",
+      "goals": [
+        "block1",
+        "block2",
+        "truck"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 10,
+      "damage": 0,
+      "secured": [
+        "block1",
+        "block2",
+        "truck",
+        "alt"
+      ]
+    },
+    {
+      "mission": "M08",
+      "route": "default",
+      "goals": [
+        "block1",
+        "block2",
+        "truck"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 11,
+      "damage": 0,
+      "secured": [
+        "block1",
+        "block2",
+        "truck",
+        "alt"
+      ]
+    },
+    {
+      "mission": "M09",
+      "route": "default",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "med"
+      ]
+    },
+    {
+      "mission": "M09",
+      "route": "default",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "med"
+      ]
+    },
+    {
+      "mission": "M10",
+      "route": "default",
+      "goals": [
+        "test1",
+        "test2"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "test1",
+        "test2",
+        "meeting"
+      ]
+    },
+    {
+      "mission": "M10",
+      "route": "default",
+      "goals": [
+        "test1",
+        "test2"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 4,
+      "damage": 0,
+      "secured": [
+        "test1",
+        "test2",
+        "meeting"
+      ]
+    },
+    {
+      "mission": "M11",
+      "route": "default",
+      "goals": [
+        "cut",
+        "lock"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "lock",
+        "e"
+      ]
+    },
+    {
+      "mission": "M11",
+      "route": "default",
+      "goals": [
+        "cut",
+        "lock"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "lock",
+        "e"
+      ]
+    },
+    {
+      "mission": "M12",
+      "route": "default",
+      "goals": [
+        "backup",
+        "drive"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 9,
+      "damage": 0,
+      "secured": [
+        "backup",
+        "drive",
+        "e"
+      ]
+    },
+    {
+      "mission": "M12",
+      "route": "default",
+      "goals": [
+        "backup",
+        "drive"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 9,
+      "damage": 0,
+      "secured": [
+        "backup",
+        "drive",
+        "e"
+      ]
+    },
+    {
+      "mission": "M13",
+      "route": "default",
+      "goals": [
+        "cut",
+        "log"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "log",
+        "e"
+      ]
+    },
+    {
+      "mission": "M13",
+      "route": "default",
+      "goals": [
+        "cut",
+        "log"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "log",
+        "e"
+      ]
+    },
+    {
+      "mission": "M14",
+      "route": "default",
+      "goals": [
+        "meds"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "meds",
+        "cold",
+        "ledger"
+      ]
+    },
+    {
+      "mission": "M14",
+      "route": "default",
+      "goals": [
+        "meds"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "meds",
+        "cold",
+        "ledger"
+      ]
+    },
+    {
+      "mission": "M14",
+      "route": "default",
+      "goals": [
+        "cold"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "meds",
+        "cold",
+        "ledger"
+      ]
+    },
+    {
+      "mission": "M14",
+      "route": "default",
+      "goals": [
+        "cold"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "meds",
+        "cold",
+        "ledger"
+      ]
+    },
+    {
+      "mission": "M15",
+      "route": "default",
+      "goals": [
+        "north"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "north",
+        "east",
+        "west"
+      ]
+    },
+    {
+      "mission": "M15",
+      "route": "default",
+      "goals": [
+        "north"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 8,
+      "damage": 0,
+      "secured": [
+        "north",
+        "east",
+        "west"
+      ]
+    },
+    {
+      "mission": "M15",
+      "route": "default",
+      "goals": [
+        "east"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "north",
+        "east",
+        "west"
+      ]
+    },
+    {
+      "mission": "M15",
+      "route": "default",
+      "goals": [
+        "east"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 2,
+      "secured": [
+        "north",
+        "east",
+        "west"
+      ]
+    },
+    {
+      "mission": "M15",
+      "route": "default",
+      "goals": [
+        "west"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "north",
+        "east",
+        "west"
+      ]
+    },
+    {
+      "mission": "M15",
+      "route": "default",
+      "goals": [
+        "west"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 2,
+      "secured": [
+        "north",
+        "east",
+        "west"
+      ]
+    },
+    {
+      "mission": "M16",
+      "route": "default",
+      "goals": [
+        "lane",
+        "people"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 8,
+      "damage": 0,
+      "secured": [
+        "lane",
+        "people",
+        "goods"
+      ]
+    },
+    {
+      "mission": "M16",
+      "route": "default",
+      "goals": [
+        "lane",
+        "people"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "lane",
+        "people",
+        "goods"
+      ]
+    },
+    {
+      "mission": "M17",
+      "route": "default",
+      "goals": [
+        "repair2"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "repair1",
+        "repair2",
+        "e"
+      ]
+    },
+    {
+      "mission": "M17",
+      "route": "default",
+      "goals": [
+        "repair2"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "repair1",
+        "repair2",
+        "e"
+      ]
+    },
+    {
+      "mission": "M17",
+      "route": "default",
+      "goals": [
+        "isolate"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "isolate",
+        "e"
+      ]
+    },
+    {
+      "mission": "M17",
+      "route": "default",
+      "goals": [
+        "isolate"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "isolate",
+        "e"
+      ]
+    },
+    {
+      "mission": "M18",
+      "route": "default",
+      "goals": [
+        "relay",
+        "broadcast"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "relay",
+        "broadcast",
+        "backup"
+      ]
+    },
+    {
+      "mission": "M18",
+      "route": "default",
+      "goals": [
+        "relay",
+        "broadcast"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "relay",
+        "broadcast",
+        "backup"
+      ]
+    },
+    {
+      "mission": "M19",
+      "route": "default",
+      "goals": [
+        "patient",
+        "shelter"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 8,
+      "damage": 0,
+      "secured": [
+        "patient",
+        "shelter",
+        "device"
+      ]
+    },
+    {
+      "mission": "M19",
+      "route": "default",
+      "goals": [
+        "patient",
+        "shelter"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 8,
+      "damage": 0,
+      "secured": [
+        "patient",
+        "shelter",
+        "device"
+      ]
+    },
+    {
+      "mission": "M20",
+      "route": "default",
+      "goals": [
+        "west"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 4,
+      "damage": 0,
+      "secured": [
+        "west",
+        "east",
+        "transfer"
+      ]
+    },
+    {
+      "mission": "M20",
+      "route": "default",
+      "goals": [
+        "west"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "west",
+        "east",
+        "transfer"
+      ]
+    },
+    {
+      "mission": "M20",
+      "route": "default",
+      "goals": [
+        "east"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 4,
+      "damage": 0,
+      "secured": [
+        "west",
+        "east",
+        "transfer"
+      ]
+    },
+    {
+      "mission": "M20",
+      "route": "default",
+      "goals": [
+        "east"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "west",
+        "east",
+        "transfer"
+      ]
+    },
+    {
+      "mission": "M21",
+      "route": "default",
+      "goals": [
+        "route"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "route",
+        "e",
+        "marker"
+      ]
+    },
+    {
+      "mission": "M21",
+      "route": "default",
+      "goals": [
+        "route"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "route",
+        "e",
+        "marker"
+      ]
+    },
+    {
+      "mission": "M22",
+      "route": "default",
+      "goals": [
+        "handover"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "handover",
+        "e",
+        "privacy"
+      ]
+    },
+    {
+      "mission": "M22",
+      "route": "default",
+      "goals": [
+        "handover"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "handover",
+        "e",
+        "privacy"
+      ]
+    },
+    {
+      "mission": "M23",
+      "route": "default",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "rebuild"
+      ]
+    },
+    {
+      "mission": "M23",
+      "route": "default",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "rebuild"
+      ]
+    },
+    {
+      "mission": "M24",
+      "route": "shared_control",
+      "goals": [
+        "bus",
+        "auth"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "bus",
+        "auth",
+        "archive"
+      ]
+    },
+    {
+      "mission": "M24",
+      "route": "shared_control",
+      "goals": [
+        "bus",
+        "auth"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "bus",
+        "auth",
+        "archive"
+      ]
+    },
+    {
+      "mission": "M24",
+      "route": "distributed_rebuild",
+      "goals": [
+        "west",
+        "east"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "west",
+        "east",
+        "archive"
+      ]
+    },
+    {
+      "mission": "M24",
+      "route": "distributed_rebuild",
+      "goals": [
+        "west",
+        "east"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "west",
+        "east",
+        "archive"
+      ]
+    },
+    {
+      "mission": "M24",
+      "route": "evacuation",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "archive"
+      ]
+    },
+    {
+      "mission": "M24",
+      "route": "evacuation",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2",
+        "archive"
+      ]
+    },
+    {
+      "mission": "S01",
+      "route": "default",
+      "goals": [
+        "engine"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "engine",
+        "tickets"
+      ]
+    },
+    {
+      "mission": "S01",
+      "route": "default",
+      "goals": [
+        "engine"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "engine",
+        "tickets"
+      ]
+    },
+    {
+      "mission": "S02",
+      "route": "default",
+      "goals": [
+        "med"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "med",
+        "books"
+      ]
+    },
+    {
+      "mission": "S02",
+      "route": "default",
+      "goals": [
+        "med"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "med",
+        "books"
+      ]
+    },
+    {
+      "mission": "S02",
+      "route": "default",
+      "goals": [
+        "books"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "med",
+        "books"
+      ]
+    },
+    {
+      "mission": "S02",
+      "route": "default",
+      "goals": [
+        "books"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "med",
+        "books"
+      ]
+    },
+    {
+      "mission": "S03",
+      "route": "default",
+      "goals": [
+        "cut",
+        "passenger"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 8,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "passenger"
+      ]
+    },
+    {
+      "mission": "S03",
+      "route": "default",
+      "goals": [
+        "cut",
+        "passenger"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "cut",
+        "passenger"
+      ]
+    },
+    {
+      "mission": "S04",
+      "route": "default",
+      "goals": [
+        "seed"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "seed",
+        "rack"
+      ]
+    },
+    {
+      "mission": "S04",
+      "route": "default",
+      "goals": [
+        "seed"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "seed",
+        "rack"
+      ]
+    },
+    {
+      "mission": "S04",
+      "route": "default",
+      "goals": [
+        "rack"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "seed",
+        "rack"
+      ]
+    },
+    {
+      "mission": "S04",
+      "route": "default",
+      "goals": [
+        "rack"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "seed",
+        "rack"
+      ]
+    },
+    {
+      "mission": "S05",
+      "route": "default",
+      "goals": [
+        "isolate",
+        "cloth"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 8,
+      "damage": 0,
+      "secured": [
+        "isolate",
+        "cloth"
+      ]
+    },
+    {
+      "mission": "S05",
+      "route": "default",
+      "goals": [
+        "isolate",
+        "cloth"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "isolate",
+        "cloth"
+      ]
+    },
+    {
+      "mission": "S06",
+      "route": "default",
+      "goals": [
+        "locate",
+        "resident"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "locate",
+        "resident",
+        "meal"
+      ]
+    },
+    {
+      "mission": "S06",
+      "route": "default",
+      "goals": [
+        "locate",
+        "resident"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "locate",
+        "resident",
+        "meal"
+      ]
+    },
+    {
+      "mission": "S07",
+      "route": "default",
+      "goals": [
+        "clerk"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "clerk",
+        "copy"
+      ]
+    },
+    {
+      "mission": "S07",
+      "route": "default",
+      "goals": [
+        "clerk"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "clerk",
+        "copy"
+      ]
+    },
+    {
+      "mission": "S08",
+      "route": "default",
+      "goals": [
+        "luggage"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "luggage",
+        "tools"
+      ]
+    },
+    {
+      "mission": "S08",
+      "route": "default",
+      "goals": [
+        "luggage"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "luggage",
+        "tools"
+      ]
+    },
+    {
+      "mission": "S08",
+      "route": "default",
+      "goals": [
+        "tools"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "luggage",
+        "tools"
+      ]
+    },
+    {
+      "mission": "S08",
+      "route": "default",
+      "goals": [
+        "tools"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "luggage",
+        "tools"
+      ]
+    },
+    {
+      "mission": "S09",
+      "route": "default",
+      "goals": [
+        "class"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "class",
+        "books"
+      ]
+    },
+    {
+      "mission": "S09",
+      "route": "default",
+      "goals": [
+        "class"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "class",
+        "books"
+      ]
+    },
+    {
+      "mission": "S10",
+      "route": "default",
+      "goals": [
+        "light"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "light",
+        "chart"
+      ]
+    },
+    {
+      "mission": "S10",
+      "route": "default",
+      "goals": [
+        "light"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 4,
+      "damage": 0,
+      "secured": [
+        "light",
+        "chart"
+      ]
+    },
+    {
+      "mission": "S11",
+      "route": "default",
+      "goals": [
+        "wire"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 4,
+      "damage": 0,
+      "secured": [
+        "wire",
+        "cold"
+      ]
+    },
+    {
+      "mission": "S11",
+      "route": "default",
+      "goals": [
+        "wire"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 4,
+      "damage": 0,
+      "secured": [
+        "wire",
+        "cold"
+      ]
+    },
+    {
+      "mission": "S12",
+      "route": "default",
+      "goals": [
+        "box"
+      ],
+      "dock": false,
+      "success": true,
+      "rounds": 5,
+      "damage": 0,
+      "secured": [
+        "box",
+        "photo"
+      ]
+    },
+    {
+      "mission": "S12",
+      "route": "default",
+      "goals": [
+        "box"
+      ],
+      "dock": true,
+      "success": true,
+      "rounds": 6,
+      "damage": 0,
+      "secured": [
+        "box",
+        "photo"
+      ]
+    }
+  ]
+}

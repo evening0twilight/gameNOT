@@ -1,0 +1,9784 @@
+{
+  "actions": [
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "emergency_retreat",
+      "payload": {
+        "confirmed": true
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 1.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 1.0
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "interact",
+      "payload": {
+        "target": "M02_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "interact",
+      "payload": {
+        "target": "cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "interact",
+      "payload": {
+        "target": "M02_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "interact",
+      "payload": {
+        "target": "cut"
+      },
+      "round": 3
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "interact",
+      "payload": {
+        "target": "power"
+      },
+      "round": 3
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "interact",
+      "payload": {
+        "target": "power"
+      },
+      "round": 3
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          4
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "responder_M02_2",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "responder_M02_0",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "responder_M02_1",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 6.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 6.0
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "door"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "xu",
+      "kind": "interact",
+      "payload": {
+        "target": "M03_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "door"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "pickup",
+      "payload": {
+        "target": "crate"
+      },
+      "round": 2
+    },
+    {
+      "actor": "xu",
+      "kind": "interact",
+      "payload": {
+        "target": "M03_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          1
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          1
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "extract",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          1
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          3
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          1
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "xu",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 7.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 7.0
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          1
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "brace1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "brace2"
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "brace1"
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "brace2"
+      },
+      "round": 3
+    },
+    {
+      "actor": "xu",
+      "kind": "stabilize",
+      "payload": {
+        "target": "worker"
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "xu",
+      "kind": "pickup",
+      "payload": {
+        "target": "worker"
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "xu",
+      "kind": "extract",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "xu",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 7.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 7.0
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          4
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          5
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "isolate"
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "isolate"
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "pump"
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "pump"
+      },
+      "round": 3
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "xu",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          1
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "specialty",
+      "payload": {
+        "ability": "lin_1",
+        "target": "r1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "xu",
+      "kind": "interact",
+      "payload": {
+        "target": "M06_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          1
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "stabilize",
+      "payload": {
+        "target": "r2"
+      },
+      "round": 2
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "pickup",
+      "payload": {
+        "target": "r1"
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "pickup",
+      "payload": {
+        "target": "r2"
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          1
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "extract",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          1
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          1
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "extract",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          5
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "xu",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "xu",
+      "kind": "interact",
+      "payload": {
+        "target": "M07_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "stabilize",
+      "payload": {
+        "target": "worker"
+      },
+      "round": 2
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "pickup",
+      "payload": {
+        "target": "worker"
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "extract",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          4
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "xu",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "xu",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "end_round",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "lin",
+      "kind": "emergency_retreat",
+      "payload": {
+        "confirmed": true
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 1.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 1.0
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          6
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "stabilize",
+      "payload": {
+        "target": "r1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "interact",
+      "payload": {
+        "target": "M09_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "pickup",
+      "payload": {
+        "target": "r1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "ye",
+      "kind": "stabilize",
+      "payload": {
+        "target": "r2"
+      },
+      "round": 2
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "interact",
+      "payload": {
+        "target": "M09_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "ye",
+      "kind": "pickup",
+      "payload": {
+        "target": "r2"
+      },
+      "round": 3
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "extract",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          4
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          3
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "ye",
+      "kind": "extract",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          4
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "ye",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "responder_M09_2",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 8
+    },
+    {
+      "actor": "chen",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "interact",
+      "payload": {
+        "target": "test1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "M10_enemy1_cut0"
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "interact",
+      "payload": {
+        "target": "test1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "ye",
+      "kind": "interact",
+      "payload": {
+        "target": "test2"
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 4.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 4.0
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "M11_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "interact",
+      "payload": {
+        "target": "cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "interact",
+      "payload": {
+        "target": "cut"
+      },
+      "round": 3
+    },
+    {
+      "actor": "ye",
+      "kind": "interact",
+      "payload": {
+        "target": "lock"
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "interact",
+      "payload": {
+        "target": "backup"
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "M12_enemy1_cut0"
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "pickup",
+      "payload": {
+        "target": "drive"
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "attack",
+      "payload": {
+        "target": "M12_enemy2"
+      },
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "attack",
+      "payload": {
+        "target": "M12_enemy2"
+      },
+      "round": 5
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "chen",
+      "kind": "extract",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "chen",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "ye",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 7.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 7.0
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "interact",
+      "payload": {
+        "target": "cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          4
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "M13_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "interact",
+      "payload": {
+        "target": "log"
+      },
+      "round": 3
+    },
+    {
+      "actor": "ye",
+      "kind": "interact",
+      "payload": {
+        "target": "log"
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "chen",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "ye",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "chen",
+      "kind": "pickup",
+      "payload": {
+        "target": "meds"
+      },
+      "round": 2
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          4
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "interact",
+      "payload": {
+        "target": "M14_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "chen",
+      "kind": "extract",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "chen",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "ye",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "chen",
+      "kind": "emergency_retreat",
+      "payload": {
+        "confirmed": true
+      },
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 1.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 1.0
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "interact",
+      "payload": {
+        "target": "lane"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "M16_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "stabilize",
+      "payload": {
+        "target": "people"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "pickup",
+      "payload": {
+        "target": "people"
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "extract",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "mo",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "he",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "interact",
+      "payload": {
+        "target": "repair1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "M17_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          1
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "interact",
+      "payload": {
+        "target": "repair2"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          1
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "interact",
+      "payload": {
+        "target": "repair2"
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "repair2"
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          1
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          6
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "interact",
+      "payload": {
+        "target": "relay"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "M18_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "interact",
+      "payload": {
+        "target": "broadcast"
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 6.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 6.0
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          4
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "stabilize",
+      "payload": {
+        "target": "patient"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "interact",
+      "payload": {
+        "target": "shelter"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "M19_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "pickup",
+      "payload": {
+        "target": "patient"
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "extract",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "mo",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 6.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 6.0
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "interact",
+      "payload": {
+        "target": "M20_enemy1_cut0"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "interact",
+      "payload": {
+        "target": "west"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 4.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 4.0
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "interact",
+      "payload": {
+        "target": "route"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "M21_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "interact",
+      "payload": {
+        "target": "route"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "interact",
+      "payload": {
+        "target": "route"
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          5
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 5.0
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          6
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "interact",
+      "payload": {
+        "target": "handover"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          4
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "M22_enemy1_cut"
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 6.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 6.0
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          5
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "stabilize",
+      "payload": {
+        "target": "r1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          5
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "pickup",
+      "payload": {
+        "target": "r1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "stabilize",
+      "payload": {
+        "target": "r2"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "pickup",
+      "payload": {
+        "target": "r2"
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "M23_enemy1_cut"
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "extract",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "attack",
+      "payload": {
+        "target": "M23_enemy2"
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "attack",
+      "payload": {
+        "target": "M23_enemy2"
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          2
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "extract",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "mo",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "he",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "enter_camp",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "select_route",
+      "payload": {
+        "route": "evacuation"
+      },
+      "round": 8
+    },
+    {
+      "actor": "lin",
+      "kind": "finish_evening",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "lin",
+      "kind": "depart",
+      "payload": {},
+      "round": 8.0
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          4
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          1
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          2
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          3
+        ]
+      },
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 1
+    },
+    {
+      "actor": "he",
+      "kind": "stabilize",
+      "payload": {
+        "target": "r1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          1
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "interact",
+      "payload": {
+        "target": "M24_enemy1_cut0"
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "pickup",
+      "payload": {
+        "target": "r1"
+      },
+      "round": 2
+    },
+    {
+      "actor": "mo",
+      "kind": "stabilize",
+      "payload": {
+        "target": "r2"
+      },
+      "round": 2
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          1
+        ]
+      },
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 2
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "pickup",
+      "payload": {
+        "target": "r2"
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          1
+        ]
+      },
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 3
+    },
+    {
+      "actor": "he",
+      "kind": "extract",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          1
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          5,
+          1
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          1
+        ]
+      },
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 4
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          1
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          3
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          4,
+          1
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 5
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          6,
+          1
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "mo",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "mo",
+      "kind": "extract",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          2,
+          1
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          1
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          2
+        ]
+      },
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 6
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          1
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "mo",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          5
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          4
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "su",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          6
+        ]
+      },
+      "round": 7
+    },
+    {
+      "actor": "he",
+      "kind": "end_round",
+      "payload": {},
+      "round": 7
+    },
+    {
+      "actor": "he",
+      "kind": "move",
+      "payload": {
+        "cell": [
+          0,
+          7
+        ]
+      },
+      "round": 8
+    },
+    {
+      "actor": "su",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 8
+    },
+    {
+      "actor": "he",
+      "kind": "leave_site",
+      "payload": {},
+      "round": 8
+    }
+  ],
+  "days": [
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4,
+          "name": "陈砚",
+          "ready_day": 1,
+          "self_load": 0,
+          "stress": 10,
+          "tendency": "work",
+          "training_completed": 0,
+          "xp": 0
+        },
+        "he": {
+          "fatigue": 0,
+          "id": "he",
+          "join": 10,
+          "name": "贺鸣",
+          "ready_day": 1,
+          "self_load": 0,
+          "stress": 10,
+          "tendency": "work",
+          "training_completed": 0,
+          "xp": 12
+        },
+        "jiang": {
+          "fatigue": 0,
+          "id": "jiang",
+          "join": 16,
+          "name": "江朔",
+          "ready_day": 1,
+          "self_load": 0,
+          "stress": 10,
+          "tendency": "work",
+          "training_completed": 0,
+          "xp": 28
+        },
+        "lin": {
+          "fatigue": 18,
+          "id": "lin",
+          "join": 1,
+          "name": "林岚",
+          "ready_day": 3,
+          "self_load": 1.0625,
+          "stress": 16,
+          "tendency": "work",
+          "training_completed": 0,
+          "xp": 1
+        },
+        "mo": {
+          "fatigue": 0,
+          "id": "mo",
+          "join": 13,
+          "name": "莫遥",
+          "ready_day": 1,
+          "self_load": 0,
+          "stress": 10,
+          "tendency": "work",
+          "training_completed": 0,
+          "xp": 28
+        },
+        "su": {
+          "fatigue": 18,
+          "id": "su",
+          "join": 1,
+          "name": "苏棠",
+          "ready_day": 3,
+          "self_load": 0.9375,
+          "stress": 16,
+          "tendency": "work",
+          "training_completed": 0,
+          "xp": 1
+        },
+        "xu": {
+          "fatigue": 18,
+          "id": "xu",
+          "join": 1,
+          "name": "许舟",
+          "ready_day": 3,
+          "self_load": 0.8125,
+          "stress": 16,
+          "tendency": "work",
+          "training_completed": 0,
+          "xp": 1
+        },
+        "ye": {
+          "fatigue": 0,
+          "id": "ye",
+          "join": 7,
+          "name": "叶禾",
+          "ready_day": 1,
+          "self_load": 0,
+          "stress": 10,
+          "tendency": "work",
+          "training_completed": 0,
+          "xp": 12
+        }
+      },
+      "day": 1,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "inventory": {
+        "credits": 36.0,
+        "parts": 2.0,
+        "supplies": 6.0
+      },
+      "outcome": "failed",
+      "roster": [
+        "lin",
+        "xu",
+        "su"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0.0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 0.0
+        },
+        "he": {
+          "fatigue": 0.0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 6,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 8,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 1.0
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 6,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 8,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 1.0
+        },
+        "xu": {
+          "fatigue": 6,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 8,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 1.0
+        },
+        "ye": {
+          "fatigue": 0.0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        }
+      },
+      "day": 2,
+      "injured": [],
+      "inventory": {
+        "credits": 42.0,
+        "parts": 3.0,
+        "supplies": 7.0
+      },
+      "outcome": "success",
+      "roster": [
+        "responder_M02_0",
+        "responder_M02_1",
+        "responder_M02_2"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0.0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 0.0
+        },
+        "he": {
+          "fatigue": 0.0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 18,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 6
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 18,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 6
+        },
+        "xu": {
+          "fatigue": 18,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 6
+        },
+        "ye": {
+          "fatigue": 0.0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        }
+      },
+      "day": 3,
+      "injured": [],
+      "inventory": {
+        "credits": 52.0,
+        "parts": 4.0,
+        "supplies": 8.0
+      },
+      "outcome": "success",
+      "roster": [
+        "lin",
+        "su",
+        "xu"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0.0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 0.0
+        },
+        "he": {
+          "fatigue": 0.0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 24,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 11
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 24,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 11
+        },
+        "xu": {
+          "fatigue": 24,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 11
+        },
+        "ye": {
+          "fatigue": 0.0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        }
+      },
+      "day": 4,
+      "injured": [],
+      "inventory": {
+        "credits": 62.0,
+        "parts": 5.0,
+        "supplies": 9.0
+      },
+      "outcome": "success",
+      "roster": [
+        "lin",
+        "su",
+        "xu"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 2,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 0.0
+        },
+        "he": {
+          "fatigue": 0.0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 30,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 16
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 30,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 16
+        },
+        "xu": {
+          "fatigue": 30,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 16
+        },
+        "ye": {
+          "fatigue": 0.0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        }
+      },
+      "day": 5,
+      "injured": [],
+      "inventory": {
+        "credits": 72.0,
+        "parts": 6.0,
+        "supplies": 10.0
+      },
+      "outcome": "success",
+      "roster": [
+        "lin",
+        "su",
+        "xu"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 0.0
+        },
+        "he": {
+          "fatigue": 0.0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 36,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 21
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 36,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 21
+        },
+        "xu": {
+          "fatigue": 36,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 21
+        },
+        "ye": {
+          "fatigue": 0.0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        }
+      },
+      "day": 6,
+      "injured": [],
+      "inventory": {
+        "credits": 82.0,
+        "parts": 7.0,
+        "supplies": 11.0
+      },
+      "outcome": "success",
+      "roster": [
+        "lin",
+        "su",
+        "xu"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 0.0
+        },
+        "he": {
+          "fatigue": 0.0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 42,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 26
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 42,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 26
+        },
+        "xu": {
+          "fatigue": 42,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 3.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 26
+        },
+        "ye": {
+          "fatigue": 0.0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        }
+      },
+      "day": 7,
+      "injured": [],
+      "inventory": {
+        "credits": 92.0,
+        "parts": 8.0,
+        "supplies": 12.0
+      },
+      "outcome": "success",
+      "roster": [
+        "lin",
+        "su",
+        "xu"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 0.0
+        },
+        "he": {
+          "fatigue": 0.0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 48,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 10.0,
+          "self_load": 1.0625,
+          "stress": 6,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 48,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.9375,
+          "stress": 6,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27
+        },
+        "xu": {
+          "fatigue": 48,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.8125,
+          "stress": 6,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27
+        },
+        "ye": {
+          "fatigue": 0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 2,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        }
+      },
+      "day": 8,
+      "injured": [
+        "lin",
+        "su",
+        "xu"
+      ],
+      "inventory": {
+        "credits": 98.0,
+        "parts": 8.0,
+        "supplies": 12.0
+      },
+      "outcome": "failed",
+      "roster": [
+        "lin",
+        "su",
+        "xu"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 18,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 5
+        },
+        "he": {
+          "fatigue": 0.0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 36,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 36,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "xu": {
+          "fatigue": 36,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 18,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 17
+        }
+      },
+      "day": 9,
+      "injured": [],
+      "inventory": {
+        "credits": 104.0,
+        "parts": 9.0,
+        "supplies": 13.0
+      },
+      "outcome": "success",
+      "roster": [
+        "chen",
+        "ye",
+        "responder_M09_2"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 24,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 10
+        },
+        "he": {
+          "fatigue": 0.0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 26,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 32
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 8,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "xu": {
+          "fatigue": 8,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 24,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 22
+        }
+      },
+      "day": 10,
+      "injured": [],
+      "inventory": {
+        "credits": 114.0,
+        "parts": 10.0,
+        "supplies": 14.0
+      },
+      "outcome": "success",
+      "roster": [
+        "chen",
+        "ye",
+        "lin"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 30,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 15
+        },
+        "he": {
+          "fatigue": 0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 2,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 32,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 37
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 0,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 30,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27
+        }
+      },
+      "day": 11,
+      "injured": [],
+      "inventory": {
+        "credits": 124.0,
+        "parts": 11.0,
+        "supplies": 15.0
+      },
+      "outcome": "success",
+      "roster": [
+        "chen",
+        "ye",
+        "lin"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 36,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 20
+        },
+        "he": {
+          "fatigue": 0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 38,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 42
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 0,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 36,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 32
+        }
+      },
+      "day": 12,
+      "injured": [],
+      "inventory": {
+        "credits": 134.0,
+        "parts": 12.0,
+        "supplies": 16.0
+      },
+      "outcome": "success",
+      "roster": [
+        "chen",
+        "ye",
+        "lin"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 42,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 25
+        },
+        "he": {
+          "fatigue": 0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 44,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 47
+        },
+        "mo": {
+          "fatigue": 0.0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 0,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 42,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 37
+        }
+      },
+      "day": 13,
+      "injured": [],
+      "inventory": {
+        "credits": 144.0,
+        "parts": 13.0,
+        "supplies": 17.0
+      },
+      "outcome": "success",
+      "roster": [
+        "chen",
+        "ye",
+        "lin"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 48,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 30
+        },
+        "he": {
+          "fatigue": 0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 50,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 52
+        },
+        "mo": {
+          "fatigue": 0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 2,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 0,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 48,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 42
+        }
+      },
+      "day": 14,
+      "injured": [],
+      "inventory": {
+        "credits": 154.0,
+        "parts": 14.0,
+        "supplies": 21.0
+      },
+      "outcome": "success",
+      "roster": [
+        "chen",
+        "ye",
+        "lin"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 54,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.875,
+          "stress": 6,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31
+        },
+        "he": {
+          "fatigue": 0,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 12.0
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 56,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 1.0625,
+          "stress": 6,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53
+        },
+        "mo": {
+          "fatigue": 0,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "su": {
+          "fatigue": 0,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 54,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.6875,
+          "stress": 6,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43
+        }
+      },
+      "day": 15,
+      "injured": [
+        "chen",
+        "ye",
+        "lin"
+      ],
+      "inventory": {
+        "credits": 160.0,
+        "parts": 14.0,
+        "supplies": 21.0
+      },
+      "outcome": "failed",
+      "roster": [
+        "chen",
+        "ye",
+        "lin"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 42,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31.0
+        },
+        "he": {
+          "fatigue": 18,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 17
+        },
+        "jiang": {
+          "fatigue": 0.0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 10.0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 44,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53.0
+        },
+        "mo": {
+          "fatigue": 18,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 33
+        },
+        "su": {
+          "fatigue": 18,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 32
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 42,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43.0
+        }
+      },
+      "day": 16,
+      "injured": [],
+      "inventory": {
+        "credits": 170.0,
+        "parts": 15.0,
+        "supplies": 22.0
+      },
+      "outcome": "success",
+      "roster": [
+        "he",
+        "mo",
+        "su"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 14,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31.0
+        },
+        "he": {
+          "fatigue": 24,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 22
+        },
+        "jiang": {
+          "fatigue": 0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 2,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 16,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53.0
+        },
+        "mo": {
+          "fatigue": 24,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 38
+        },
+        "su": {
+          "fatigue": 24,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 37
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 14,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43.0
+        }
+      },
+      "day": 17,
+      "injured": [],
+      "inventory": {
+        "credits": 180.0,
+        "parts": 16.0,
+        "supplies": 23.0
+      },
+      "outcome": "success",
+      "roster": [
+        "he",
+        "mo",
+        "su"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31.0
+        },
+        "he": {
+          "fatigue": 30,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27
+        },
+        "jiang": {
+          "fatigue": 0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 0,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53.0
+        },
+        "mo": {
+          "fatigue": 30,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43
+        },
+        "su": {
+          "fatigue": 30,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 42
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43.0
+        }
+      },
+      "day": 18,
+      "injured": [],
+      "inventory": {
+        "credits": 190.0,
+        "parts": 17.0,
+        "supplies": 24.0
+      },
+      "outcome": "success",
+      "roster": [
+        "he",
+        "mo",
+        "su"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31.0
+        },
+        "he": {
+          "fatigue": 36,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 32
+        },
+        "jiang": {
+          "fatigue": 0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 0,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53.0
+        },
+        "mo": {
+          "fatigue": 36,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 48
+        },
+        "su": {
+          "fatigue": 36,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 47
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43.0
+        }
+      },
+      "day": 19,
+      "injured": [],
+      "inventory": {
+        "credits": 200.0,
+        "parts": 18.0,
+        "supplies": 25.0
+      },
+      "outcome": "success",
+      "roster": [
+        "he",
+        "mo",
+        "su"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31.0
+        },
+        "he": {
+          "fatigue": 42,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 37
+        },
+        "jiang": {
+          "fatigue": 0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 0,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53.0
+        },
+        "mo": {
+          "fatigue": 42,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53
+        },
+        "su": {
+          "fatigue": 42,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 52
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43.0
+        }
+      },
+      "day": 20,
+      "injured": [],
+      "inventory": {
+        "credits": 210.0,
+        "parts": 19.0,
+        "supplies": 26.0
+      },
+      "outcome": "success",
+      "roster": [
+        "he",
+        "mo",
+        "su"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31.0
+        },
+        "he": {
+          "fatigue": 48,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 42
+        },
+        "jiang": {
+          "fatigue": 0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 0,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53.0
+        },
+        "mo": {
+          "fatigue": 48,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 58
+        },
+        "su": {
+          "fatigue": 48,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 57
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43.0
+        }
+      },
+      "day": 21,
+      "injured": [],
+      "inventory": {
+        "credits": 220.0,
+        "parts": 20.0,
+        "supplies": 27.0
+      },
+      "outcome": "success",
+      "roster": [
+        "he",
+        "mo",
+        "su"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31.0
+        },
+        "he": {
+          "fatigue": 54,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 47
+        },
+        "jiang": {
+          "fatigue": 0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 0,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53.0
+        },
+        "mo": {
+          "fatigue": 54,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 63
+        },
+        "su": {
+          "fatigue": 54,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 62
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43.0
+        }
+      },
+      "day": 22,
+      "injured": [],
+      "inventory": {
+        "credits": 230.0,
+        "parts": 21.0,
+        "supplies": 28.0
+      },
+      "outcome": "success",
+      "roster": [
+        "he",
+        "mo",
+        "su"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31.0
+        },
+        "he": {
+          "fatigue": 60,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 52
+        },
+        "jiang": {
+          "fatigue": 0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 0,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53.0
+        },
+        "mo": {
+          "fatigue": 60,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 68
+        },
+        "su": {
+          "fatigue": 60,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 67
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43.0
+        }
+      },
+      "day": 23,
+      "injured": [],
+      "inventory": {
+        "credits": 240.0,
+        "parts": 22.0,
+        "supplies": 29.0
+      },
+      "outcome": "success",
+      "roster": [
+        "he",
+        "mo",
+        "su"
+      ]
+    },
+    {
+      "actors": {
+        "chen": {
+          "fatigue": 0,
+          "id": "chen",
+          "join": 4.0,
+          "name": "陈砚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 31.0
+        },
+        "he": {
+          "fatigue": 66,
+          "id": "he",
+          "join": 10.0,
+          "name": "贺鸣",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 57
+        },
+        "jiang": {
+          "fatigue": 0,
+          "id": "jiang",
+          "join": 16.0,
+          "name": "江朔",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 28.0
+        },
+        "lin": {
+          "fatigue": 0,
+          "id": "lin",
+          "join": 1.0,
+          "name": "林岚",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 53.0
+        },
+        "mo": {
+          "fatigue": 66,
+          "id": "mo",
+          "join": 13.0,
+          "name": "莫遥",
+          "ready_day": 1.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 73
+        },
+        "su": {
+          "fatigue": 66,
+          "id": "su",
+          "join": 1.0,
+          "name": "苏棠",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 72
+        },
+        "xu": {
+          "fatigue": 0,
+          "id": "xu",
+          "join": 1.0,
+          "name": "许舟",
+          "ready_day": 10.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 27.0
+        },
+        "ye": {
+          "fatigue": 0,
+          "id": "ye",
+          "join": 7.0,
+          "name": "叶禾",
+          "ready_day": 17.0,
+          "self_load": 0.0,
+          "stress": 0,
+          "tendency": "work",
+          "training_completed": 0.0,
+          "xp": 43.0
+        }
+      },
+      "day": 24,
+      "injured": [],
+      "inventory": {
+        "credits": 250.0,
+        "parts": 23.0,
+        "supplies": 30.0
+      },
+      "outcome": "success",
+      "roster": [
+        "he",
+        "mo",
+        "su"
+      ]
+    }
+  ],
+  "ending": "evacuation",
+  "finished": true,
+  "profile": "injury_rotation",
+  "source": "continuous production reducer with real daily save/load; no inventory/XP/fatigue resets"
+}

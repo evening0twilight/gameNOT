@@ -1,0 +1,120 @@
+夜潮事务所：工程规范外部资料对照与硬件准备
+日期：2026-11-04；仅技术准备，不进入玩法实现。
+
+现状判断
+上一轮已建立工程约束与本地工具，但没有完成广泛的外部资料对照；不能声称此前已经全面借鉴成熟项目。
+本次补查官方、GDQuest、官方demo仓库、GUT、Steamworks和3份社区skill。
+这是针对当前工程的规范对照，不是已经审查一个完整成品游戏，也不以资料数量证明质量。
+检索了X相关内容，但未取得比作者正式文档更可核验的工程依据，未以社交帖作规范来源。
+没有安装社区skill或自动执行其中脚本；只将符合官方语义的审查项纳入本项目。
+
+资料与采纳结论
+1. Godot 4.7 Project organization
+https://docs.godotengine.org/en/4.7/tutorials/best_practices/project_organization.html
+采用：小写文件路径、明确大小写、文档目录.gdignore、插件集中addons管理。
+调整：纯domain/app/infrastructure仍按责任分层；具体界面场景的私有脚本/纹理可以在同一功能目录就近存放，
+共享资产才进统一assets，避免为目录整齐让每次改UI都跨很多目录。当前不批量搬动已有文件。
+
+2. Godot Scene organization / GDScript style guide
+https://docs.godotengine.org/en/stable/tutorials/best_practices/scene_organization.html
+https://docs.godotengine.org/en/stable/tutorials/scripting/gdscript/gdscript_styleguide.html
+采用：场景职责单一、从外部注入依赖、减少跨层节点路径、遵循官方命名与声明顺序。
+UI子场景用信号报告意图，由协调层连线；domain仍只返回数据，不借信号传播隐式规则事务。
+不将所有状态塞入Autoload，不把同一状态分别存在场景、单例、存档模块三处。
+
+3. GDQuest作者指南与信号实践
+https://gdquest.gitbook.io/gdquests-guidelines/godot-gdscript-guidelines
+https://www.gdquest.com/tutorial/godot/best-practices/signals/
+采用：公共接口类型明确、保持可读性、系统交界处清晰、控制信号连接复杂度。
+限制：页面部分示例含Godot 3语法，只借鉴原则；正式代码遵守锁定Godot 4.7.2实际解析结果。
+不复制旧yield、旧export或字符串connect写法；不把作者旧机器的性能数字当本项目承诺。
+
+4. Godot官方demo仓库
+https://github.com/godotengine/godot-demo-projects
+已核对仓库用途与版本分支政策：master对应引擎开发版，不能直接当4.7.2模板。
+仅在需要具体GUI、加载或输入实现时选匹配稳定分支的单个例子，保留许可和来源。
+本次未导入demo，也未对其全部源码作审计；不另建可丢弃游戏。
+
+5. GUT作者仓库
+https://github.com/bitwes/Gut
+已核查：支持GDScript测试、参数化、命令行与JUnit结果；版本须匹配Godot。
+目前保留已验证的无插件33项基础测试。P1若需要复杂场景/信号等待和测试替身，再以独立变更引入GUT，
+届时锁定兼容tag/commit、包hash和MIT许可，不能只跟main。没有声称当前已经安装GUT或拥有完整集成覆盖。
+无论测试框架如何，拒绝操作原子性、预览不写状态、重复结算、坏档恢复仍是必须验证的行为。
+
+6. 性能与发行平台
+https://docs.godotengine.org/en/4.4/tutorials/performance/general_optimization.html
+https://contributing.godotengine.org/en/latest/development/engine/optimization.html
+https://partner.steamgames.com/doc/store/application/builds
+https://partner.steamgames.com/doc/store/application/platforms?language=english
+采用跨设备测量和先定位瓶颈再优化；区分持续慢帧、瞬时卡顿和加载等待。
+Steam参考用于未来构建清单、测试分支和目标系统验证，不代表已选择发行渠道或接入SDK。
+当前本地构建带hash与版本回执；未来发布必须从明确提交生成，同一包完成验收后再发布，避免重建后不复测。
+
+7. 社区skills（作为次级参考）
+https://github.com/vanbanana/godot-skills/blob/main/gdscript-patterns/SKILL.md
+https://github.com/vanbanana/godot-skills/blob/main/godot-code-review/SKILL.md
+https://github.com/vanbanana/godot-skills/blob/main/gdscript-advanced/SKILL.md
+对照了类型、节点依赖、Autoload、异步生命周期及profiler相关建议。
+采纳：参数/返回值类型、浅层组合、释放对象后的回调检查、编辑器工具与运行时边界。
+不采纳：没有对应环境与基准的“整数向量快30–40%”及泛化耗时结论；以本机/目标机测量代替。
+不引入C#、ECS、大型全局事件总线或无实测需求的对象池。Skill不是官方兼容性证明。
+
+本次新增的可执行约束
+- tools/check_repository.py：阻止game内嵌套Git、大小写冲突、字面res://引用缺失/大小写错误、渲染器漂移。
+- 已接入tools/check.py，CI使用同一入口。动态拼接的资源路径仍需运行时测试，检查不声称能静态发现全部依赖。
+- game/docs/.gdignore减少文档导入；tests不忽略，否则会妨碍Godot测试载入。
+- 场景进入/退出、重复打开窗口的信号连接须检查；不能重复connect或让已失效UI收到回调后改状态。
+- await恢复后验证目标对象仍有效、session/revision仍一致；不能因旧动画结束而提交过期指令。
+- 一次操作的状态事务必须在同步规则层完成；音视频回调不承担规则结算。
+- 合并前人工审查：模块依赖、状态所有权、错误传播、UI可取消/可退出、授权追溯及新测试是否真正覆盖行为。
+以上后三类是代码审查/未来集成测试项，不冒充已自动化执行。
+
+当前仍未完成的工程项
+Windows模板未下完，导出preset未通过真实导出；远程CI未运行；正式schema2存档与统一reduce仍待P1实现。
+复杂生命周期与全部资源质量无法靠当前33项基础测试验证。代码规范已具备开工条件，但不是发布成熟度认证。
+
+开发环境实测与准备建议
+当前主机Apple M3 / 16GiB统一内存，macOS26.5.2；已有Godot4.7.2和Python3.14.7，当前检查运行正常。
+本次瞬时观测：swap约4538MiB，压缩页占用约6.5–6.9GiB，系统压力值2；两秒增量采样未见新增swapout。
+这说明已有压缩/换页占用，不能只据swap存量断言此刻持续卡顿或项目必须升级内存。
+磁盘df报告可用约26GiB。建议先为开发盘留50GiB以上余量（工程工作建议，不是游戏最低磁盘配置）。
+16GiB可继续本项目常规编辑/测试；少同时运行大型素材工具、多份编辑器或本地大模型。
+本项目不需要本地AI模型、Unity、Unreal、Docker或Visual Studio/.NET。
+Windows测试者运行导出包无需安装Godot/Python；只需Windows11 x64、可用驱动、键鼠与可写入用户目录。
+如果要在Windows改工程/运行源码检查，才准备同版本Godot、Python和Git。
+不自动关闭用户应用，不清理仓库之外的个人文件，不要求购置新电脑。
+Apple参考：https://support.apple.com/en-au/guide/activity-monitor/-actmntr1004/mac
+
+Windows硬件与兼容性计划
+用户报告：RTX5060Ti 8GB显存、16GB系统内存、约1TB存储；CPU为AMD Ryzen 5 5600，SSD；显示分辨率待补。
+已写入windows-test-record.json；是用户提供的信息，尚未实机核验。
+此电脑可定位为主流中档独显测试机；对本项目2D规模，显卡预期有余量，但没有帧率实测。
+存储总容量不代表可用空间或读盘速度；CPU会影响规则/加载/UI，不能只记GPU。
+显存8GB与0.18要求的8GB系统内存参考机是两回事，当前16GB机器不能直接完成低内存验收。
+
+计划矩阵（测试覆盖建议，不是新增最低配置承诺，不要求现在购置）：
+A 主机：用户5060Ti/16GB，功能、1080p/显示缩放、保存恢复、完整周目。
+B 常见旧代独显：借用/试玩者RTX3060或同档30系、RTX4060或同档40系；分别记录完整型号/CPU/驱动。
+C 低端：8GB系统内存、具备Compatibility所需OpenGL支持的旧独显或核显机器，验证R07与内存余量。
+D 驱动差异：至少补AMD或Intel设备样本；不能只有NVIDIA的三代显卡就声称跨厂商兼容。
+没有合适C/D机器时保留“未验证”，可后续借用/招募测试，不先采购。
+不同代的低端卡和高端卡不可仅按30/40/50数字排序；降低分辨率或限帧也不能模拟旧显卡驱动和低系统内存。
+R07原标准不变：8GB系统参考机，1080p稳定场景95%帧<=16.7ms、冷启动<=10秒、输入反馈<=100ms、
+2小时无持续内存增长。CPU/GPU/内存/驱动/磁盘/分辨率/构建hash必须随测量记录。
+对8×8的2D回合制，避免为少量实体引入高GPU需求是工程目标；最低配置须等正式代表场景实测后公布。
+
+用户补充配置：微星RTX5060Ti 8G INSPIRE 2X；技嘉B550M-K D4；
+华硕TUF x 阿斯加特DDR4-3600 8GB×2；联发科Wi-Fi6；Windows11。
+显示器“180和320hx”暂按刷新率180/320Hz理解，尚未确认，不能据此推断分辨率。
+高刷新率显示器后续验证帧率限制与VSync；回合、AP和动画完成不得依赖渲染帧数。
+60fps验收目标不因用户显示器刷新率升高而自动变更。
+
+显示信息确认：两台显示器均为2560×1440，刷新率分别为180Hz与320Hz。
+1920×1080为必须验收项，覆盖三档字号、系统100%/125%/150%缩放与关键确认/取消按钮。
+同时保留2560×1440和1280×720窗口布局检查；高刷新显示器测试限帧/VSync及跨屏切换。
+当前2K显示器运行1080p窗口可检查布局，但不能替代1080p笔记本的屏幕尺寸、DPI、GPU、散热及性能实测。
+不把1080p假定为所有笔记本的统一配置，验收按明确分辨率和设备记录执行。
+
+后续状态更新：Windows模板已完整校验安装，实际x64导出与资源包独立启动通过，
+先前“模板未下完/未验证导出”已解决；详见windows-export-validation.json。

@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/a1-6/Documents/Codex/2026-10-30/new-chat/work/full-audit/verify.py", line 44, in <module>
+    g.h[1]['p']=(3,5);g.rows[4][3]='X';g.h[0]['carry']='r1';g.objects['r1'].update(carrier=0,stable=True);g.use(0,'xu_1',destination=(4,4));check('equipment','L3 uses real anchor without deleting it',g.h[0]['p']==(4,4) and g.anchors=={(2,5)})
+                                                                                                          ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/a1-6/Documents/Codex/2026-10-30/new-chat/work/growth-identity-review/model.py", line 29, in use
+    try:return self._identity_use(actor,key,target,destination,blocked)
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/a1-6/Documents/Codex/2026-10-30/new-chat/work/growth-identity-review/model.py", line 51, in _identity_use
+    if key in ABILITIES:assert self.usable(h,key) and not h['down'] and not h['left']
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

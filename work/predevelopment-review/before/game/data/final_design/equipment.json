@@ -1,0 +1,201 @@
+{
+  "items": [
+    {
+      "id": "crowbar",
+      "unlocked_after_main": 0,
+      "price_credits": 0,
+      "price_parts": 0,
+      "slot": "tool",
+      "action_ap": 1,
+      "range": 1,
+      "uses_per_mission": null,
+      "effect": "邻接轻障碍/门增加2工量；基础交互是1。开局共有一件；不是人物专属。",
+      "consumable_supply_cost": 0,
+      "valid_target_tags": [
+        "light_obstacle"
+      ],
+      "production_status": "active"
+    },
+    {
+      "id": "medkit",
+      "unlocked_after_main": 0,
+      "price_credits": 0,
+      "price_parts": 0,
+      "slot": "support",
+      "action_ap": 1,
+      "range": 1,
+      "uses_per_mission": 2,
+      "effect": "1AP使用实际打包药剂，为站立且未离场队友恢复最多3HP，截断到该角色当前等级HP上限；基础2次，工坊II出勤快照3次。不复活、不空耗药剂、不在携带时操作。",
+      "consumable_supply_cost": 1,
+      "valid_target_tags": [
+        "standing_wounded_hero"
+      ],
+      "production_status": "active"
+    },
+    {
+      "id": "winch",
+      "unlocked_after_main": 3,
+      "price_credits": 20,
+      "price_parts": 2,
+      "slot": "support",
+      "action_ap": 2,
+      "range": 1,
+      "uses_per_mission": 1,
+      "effect": "部署独立锚点；相邻人员每次花1 AP可沿直线跨过单格X并携带伤员，终点必须干地。代替危险绳索协作，不提升信任。",
+      "consumable_supply_cost": 0,
+      "valid_target_tags": [
+        "valid_anchor_and_one_cell_gap"
+      ],
+      "production_status": "active"
+    },
+    {
+      "id": "shield",
+      "unlocked_after_main": 4,
+      "price_credits": 18,
+      "price_parts": 1,
+      "slot": "tool",
+      "action_ap": 1,
+      "range": 1,
+      "uses_per_mission": 1,
+      "effect": "放置4HP屏障，持续本任务，友军可穿过不可落脚；拾回1 AP，不能拾回补HP。",
+      "consumable_supply_cost": 0,
+      "valid_target_tags": [
+        "empty_walkable_cell"
+      ],
+      "production_status": "active"
+    },
+    {
+      "id": "foam",
+      "unlocked_after_main": 5,
+      "price_credits": 0,
+      "price_parts": 0,
+      "slot": "consumable",
+      "action_ap": 1,
+      "range": 2,
+      "uses_per_mission": null,
+      "effect": "封住一个已列出的漏口，阻止其后续水位扩张3轮，不清除已有水；消耗一份。",
+      "consumable_supply_cost": 1,
+      "valid_target_tags": [
+        "leak_source"
+      ],
+      "production_status": "retired_0.12"
+    },
+    {
+      "id": "insulation",
+      "unlocked_after_main": 7,
+      "price_credits": 20,
+      "price_parts": 2,
+      "slot": "support",
+      "action_ap": 1,
+      "range": 1,
+      "uses_per_mission": 1,
+      "effect": "1AP铺一格绝缘持续本任务，可提前铺在干地、碎石或浅水；不能在墙/深水铺。只免电伤，不改变占位、通行或火伤。",
+      "consumable_supply_cost": 0,
+      "valid_target_tags": [
+        "ground_not_wall_or_deep_water"
+      ],
+      "production_status": "active"
+    },
+    {
+      "id": "battery",
+      "unlocked_after_main": 1,
+      "price_credits": 0,
+      "price_parts": 0,
+      "slot": "consumable",
+      "action_ap": 1,
+      "range": 1,
+      "uses_per_mission": null,
+      "effect": "向指定可接受电池的目标提供2工量的供电步骤；不跳过断路前置，不开启任意门。",
+      "consumable_supply_cost": 2,
+      "valid_target_tags": [
+        "power_socket"
+      ],
+      "production_status": "retired_0.12"
+    },
+    {
+      "id": "scanner",
+      "unlocked_after_main": 10,
+      "price_credits": 16,
+      "price_parts": 1,
+      "slot": "support",
+      "action_ap": 1,
+      "range": 4,
+      "uses_per_mission": 1,
+      "effect": "1AP对4格内一处已知停机开关提供1工量，每任务一次；不加速主目标、证据或计时步骤，不叠加L2施工。基础交互仍可完成同样工量；价值是省去走近并分担前排AP。",
+      "consumable_supply_cost": 0,
+      "valid_target_tags": [
+        "machine_shutdown"
+      ],
+      "display_name": "远程停机探针",
+      "production_status": "active"
+    },
+    {
+      "id": "beacon",
+      "unlocked_after_main": 11,
+      "price_credits": 0,
+      "price_parts": 0,
+      "slot": "consumable",
+      "action_ap": 1,
+      "range": 3,
+      "uses_per_mission": null,
+      "effect": "空地落下诱饵，持续两次选敌；只影响巡检机下次计划，不暗改当前预告。",
+      "consumable_supply_cost": 1,
+      "valid_target_tags": [
+        "empty_dry_cell"
+      ],
+      "production_status": "retired_0.12"
+    },
+    {
+      "id": "cutter",
+      "unlocked_after_main": 13,
+      "price_credits": 26,
+      "price_parts": 3,
+      "slot": "tool",
+      "action_ap": 1,
+      "range": 1,
+      "uses_per_mission": 2,
+      "effect": "相邻重障碍增加2工量；若未耗尽本关增援额度，预告下一轮最近合法出生格来一台巡检机；无合法格则取消。",
+      "consumable_supply_cost": 0,
+      "valid_target_tags": [
+        "heavy_obstacle"
+      ],
+      "production_status": "retired_0.12"
+    },
+    {
+      "id": "stretcher",
+      "unlocked_after_main": 16,
+      "price_credits": 24,
+      "price_parts": 2,
+      "slot": "support",
+      "action_ap": 0,
+      "range": 0,
+      "uses_per_mission": null,
+      "effect": "被动：搬运移动预算3；不与贺鸣或其他移动加成相加；稳定与拾起照常花AP。",
+      "consumable_supply_cost": 0,
+      "valid_target_tags": [
+        "equipped_actor_carrying_stable_casualty"
+      ],
+      "production_status": "active"
+    },
+    {
+      "id": "extinguisher",
+      "unlocked_after_main": 18,
+      "price_credits": 0,
+      "price_parts": 0,
+      "slot": "consumable",
+      "action_ap": 1,
+      "range": 2,
+      "uses_per_mission": null,
+      "effect": "清除相邻十字最多5格现有火，抑制该区域下一次火源；该区域焊接机当轮伤害-1。",
+      "consumable_supply_cost": 1,
+      "valid_target_tags": [
+        "active_fire",
+        "welder"
+      ],
+      "production_status": "retired_0.12"
+    }
+  ],
+  "inventory": "永久工具全队每种最多一件，三人各tool/support一槽；任务内不交接刷新次数。当前唯一耗材为医疗药剂，队伍总容量3、单品默认2，工坊II后单品3；未用药剂撤退后回仓，已用不返。永久工具不因角色离队丢失。",
+  "craft": "仅制作医疗药剂，每份1物资。打包不再次付费，使用扣任务内库存，未用回仓。工坊II是增加可用药剂与急救包次数，不再是无效的总容量3→4。",
+  "baseline": "无装备、无专长、零信任也能用通用交互完成主线必需步骤。装备缩短工量/路线或保住可选成果，不能成为必需钥匙。"
+}

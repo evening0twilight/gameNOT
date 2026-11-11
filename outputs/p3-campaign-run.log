@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_CAMPAIGN: mode=shared_control days=24 ending=shared_control
+P3_CAMPAIGN: mode=distributed_rebuild days=24 ending=distributed_rebuild
+P3_CAMPAIGN: mode=evacuation days=24 ending=evacuation
+P3_CAMPAIGN: mode=failure days=24 ending=evacuation
+P3_CAMPAIGN_RESULTS: campaigns=4 failures=0

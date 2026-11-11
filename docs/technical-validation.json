@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-04",
+  "phase": "technical_preparation_only",
+  "platform_user_confirmed": true,
+  "windows_device_available": true,
+  "local_host": {
+    "os": "macOS 26.5.2",
+    "architecture": "arm64",
+    "python": "3.14.7",
+    "godot": "4.7.2.stable.official.ed1daf0bf"
+  },
+  "validation": {
+    "frozen_design_checks": 1630,
+    "reference_rules": 1174,
+    "godot_foundation_tests": 33,
+    "startup": "PROJECT_BOOT_OK: roster=8 relationships=64",
+    "critical_migration_hashes_unchanged": 49,
+    "generated_views": 33,
+    "clean_source_file_count": 1308,
+    "clean_restore_and_tests": "passed; source copied using git inclusion rules, with ignored evidence absent initially",
+    "campaigns_rerun": false,
+    "existing_campaign_evidence_compared": {
+      "campaigns": 108,
+      "battles": 3420
+    }
+  },
+  "archive": {
+    "files": 34,
+    "original_bytes": 356545373,
+    "gzip_bytes": 16915511,
+    "originals_preserved": true
+  },
+  "nested_git": {
+    "commits": 0,
+    "tracked_files": 0,
+    "remotes": 0,
+    "action": "moved empty game/.git metadata to ignored archives/local/game-git-metadata-20261104; root Git unchanged"
+  },
+  "windows_export": {
+    "status": "passed",
+    "evidence": "docs/windows-export-validation.json",
+    "exe_produced": true,
+    "native_windows_execution": "not_tested"
+  },
+  "remote_ci": "configured_not_run",
+  "windows_runtime": "not_run",
+  "performance": "not_run",
+  "human_acceptance": "not_run",
+  "gameplay_code_changed": false,
+  "commit_or_push_performed": false,
+  "p1_blockers": [],
+  "before_release": [
+    "Windows export and native device acceptance",
+    "Complete runtime and assets",
+    "R01-R08 and H01-H04 evidence"
+  ],
+  "notes": [
+    "Engine tests cover preparation modules only.",
+    "No claim of fully playable campaign.",
+    "No new worktree, purchases or remote publishing."
+  ]
+}

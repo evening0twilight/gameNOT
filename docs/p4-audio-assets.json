@@ -1,0 +1,165 @@
+{
+  "created": "2026-11-06",
+  "method": "Original deterministic PCM synthesis using tools/generate_audio_p4.py; no external samples, copied composition, voice, purchase or commissioned material.",
+  "license": "Project-authored audio; no third-party audio license required.",
+  "review": "Generated candidate audio; human listening acceptance pending.",
+  "sample_rate": 22050,
+  "assets": [
+    {
+      "path": "game/assets/audio_p4/ui_focus.wav",
+      "sha256": "2d9a745f0b1cb35e73bb4ebd6486268b2fd8d15f87d4e2c65c20eda6c8df39d1",
+      "duration_seconds": 0.06,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/ui_confirm.wav",
+      "sha256": "08c228f91102eb3e52c28fa21ac9a001d5cf6c0dd736c09ff6563517e5ae2d85",
+      "duration_seconds": 0.12,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/ui_cancel.wav",
+      "sha256": "428619fb751512c6047329ace231cab583dbf7fb24a347be95027530043a5756",
+      "duration_seconds": 0.1,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/ui_error.wav",
+      "sha256": "eb0ec72dfb4b72c29a49fa12202c41f04180db6622ca07b4bc64ea2ea59a8bf8",
+      "duration_seconds": 0.18,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/ui_page.wav",
+      "sha256": "a6d0dbdc755865579cdfdb4fe8a715d975a5be3d6a50a91bdb9da292bd8d2c80",
+      "duration_seconds": 0.1,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/ui_save.wav",
+      "sha256": "9fccda0fbd088aebc3257cd565a33d1374d4ef4a928dfe06280e4c943a868c12",
+      "duration_seconds": 0.14997732426303856,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/move.wav",
+      "sha256": "2ebdaa8a64018846fb53449e56073f67a4287d7217a33ece2287d416a680fe9d",
+      "duration_seconds": 0.08997732426303855,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/attack.wav",
+      "sha256": "5549f2a51d36da6b76a0b5d365b96b14d954d1a5ee195b8298065236cc8bf136",
+      "duration_seconds": 0.14,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/push.wav",
+      "sha256": "bd0354461812a54a03b1e0c60091ad33387070e867914560766f7455668afb15",
+      "duration_seconds": 0.18,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/stabilize.wav",
+      "sha256": "3556817169a1a1fef5eb50a734e7db04ffb3046ecbc47011b0b6145dc8414368",
+      "duration_seconds": 0.18,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/pickup.wav",
+      "sha256": "24bd48c2173279e26d59e38acf222eac3c4c58cf8ccc69cff1b58b5df748f981",
+      "duration_seconds": 0.12,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/work.wav",
+      "sha256": "b436dd4190ccb329c1ae228859fdc1c506a9fe45200c8aade3f21e85da1daffb",
+      "duration_seconds": 0.16997732426303855,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/drop.wav",
+      "sha256": "6fb8f9d450998a7220fcb064afebef2d8f018aa12046e9ab0656dfa7158de09a",
+      "duration_seconds": 0.12,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/extract.wav",
+      "sha256": "4a272cc3d92d81590583acb5d57df0a1fbb0a788dd38c1d2eda993792ba8e11d",
+      "duration_seconds": 0.28,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/machine_scout.wav",
+      "sha256": "074c021b5db9d32943b4a4c1539adc8edef52ef0ff86b4bb3d302026c13c0b38",
+      "duration_seconds": 0.22997732426303855,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/machine_welder.wav",
+      "sha256": "46d972f153aa925392aa86792e40d81a3a80f29715d75820c8ba28acc1cb2ccb",
+      "duration_seconds": 0.3,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/machine_hauler.wav",
+      "sha256": "9ec7f68b57c543b2a2ac4d13cc213c20156ecb9c2e369eefddf19b6fc672bdc9",
+      "duration_seconds": 0.3,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/machine_skimmer.wav",
+      "sha256": "839b6f4ac86b687008f9a920fa2a00dd9606a257a39c18f0eaf31940cc0779df",
+      "duration_seconds": 0.22997732426303855,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/machine_relay.wav",
+      "sha256": "f4a64ba7692fcffcc0689c7c4d9c8e1164368f9b894aab9fdcdd58ae689ef2f6",
+      "duration_seconds": 0.22,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/machine_sentinel.wav",
+      "sha256": "0de7177a3487f235d60ef1f5d9cd808d78dcb5f7c4ecc0363dd62208fd812c77",
+      "duration_seconds": 0.34997732426303857,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/objective.wav",
+      "sha256": "661c416aee2186213fbede0d4d736d04da9e28be08e73e5f508fa08ffc514a27",
+      "duration_seconds": 0.32,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/injury.wav",
+      "sha256": "f6f62ede0f3a7551e42f0842ca05242079d001dc17641f75c114bdc68f9b76eb",
+      "duration_seconds": 0.3,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/end_round.wav",
+      "sha256": "78b5032884d499fe69d535232be8d59840807b615658d870804755ef8ece6091",
+      "duration_seconds": 0.22,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/ending.wav",
+      "sha256": "904de5b4cb5c3e65ca863798183abb18f4f4fb2aa21e208277011394ec772050",
+      "duration_seconds": 0.6999546485260771,
+      "loop": false
+    },
+    {
+      "path": "game/assets/audio_p4/ambient_camp.wav",
+      "sha256": "db3bc61c50c28c817505e74f2b1be248a06225c6ab7f8c2eb9fb3120a3cf57ee",
+      "duration_seconds": 16.0,
+      "loop": true
+    },
+    {
+      "path": "game/assets/audio_p4/ambient_field.wav",
+      "sha256": "b4c1b0fea0057785ff9cc9f80e083ee126225fd20fe8f5e79c74b37f4db8f214",
+      "duration_seconds": 16.0,
+      "loop": true
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+REPOSITORY_OK: 273 files; nesting, case, literal resources, renderer
+EVIDENCE_OK: 34 files
+DESIGN_VIEWS_OK: 33
+RULE CHECKS 1172
+HISTORICAL_GATES_EXCLUDED: 2 runtime byte-identity assertions; original hashes preserved
+Traceback (most recent call last):
+  File "/Users/a1-6/projects/person/gameNOT/tools/check.py", line 75, in <module>
+    main()
+    ~~~~^^
+  File "/Users/a1-6/projects/person/gameNOT/tools/check.py", line 43, in main
+    run([engine, '--headless', '--path', 'game', '--editor', '--import', '--quit'])
+    ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/a1-6/projects/person/gameNOT/tools/check.py", line 14, in run
+    result = subprocess.run(args, cwd=ROOT, text=True, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, env=env, timeout=180)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 557, in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1221, in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 2154, in _communicate
+    self._check_timeout(endtime, orig_timeout, stdout, stderr)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 1268, in _check_timeout
+    raise TimeoutExpired(
+    ...<2 lines>...
+            stderr=b''.join(stderr_seq) if stderr_seq else None)
+subprocess.TimeoutExpired: Command '['/Users/a1-6/projects/person/gameNOT/work/toolchain/godot-4.7.2/Godot.app/Contents/MacOS/Godot', '--headless', '--path', 'game', '--editor', '--import', '--quit']' timed out after 180 seconds
+Traceback (most recent call last):
+  File "/Users/a1-6/projects/person/gameNOT/tools/build_windows_p4_tuning.py", line 13, in <module>
+    subprocess.run([sys.executable, str(ROOT / 'tools/check.py'), '--engine'], cwd=ROOT, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/opt/homebrew/opt/python@3.14/bin/python3.14', '/Users/a1-6/projects/person/gameNOT/tools/check.py', '--engine']' returned non-zero exit status 1.

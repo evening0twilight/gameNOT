@@ -1,0 +1,53 @@
+[
+  {
+    "id": "first_choice_ignored",
+    "requested": "share",
+    "stored": "private",
+    "reproduced": true
+  },
+  {
+    "id": "promise_creates_release",
+    "reproduced": true,
+    "records": [
+      {
+        "seq": 1,
+        "kind": "story_choice",
+        "day": 18,
+        "actor": "mo",
+        "node": "P_mo_2",
+        "choice": "redact"
+      },
+      {
+        "seq": 2,
+        "kind": "public_record_release",
+        "day": 18,
+        "privacy": "redacted"
+      }
+    ]
+  },
+  {
+    "id": "rope_transport_missing",
+    "reproduced": true,
+    "log": [
+      {
+        "round": 1,
+        "action": "xu_1",
+        "actor": 0,
+        "target": null,
+        "destination": [
+          4,
+          4
+        ],
+        "ap_left": 1
+      }
+    ]
+  },
+  {
+    "id": "lost_prerequisite_stall",
+    "reproduced": true,
+    "rounds": 15,
+    "healthy_extracted": 0,
+    "downed": 0,
+    "last_action_round": 4
+  }
+]

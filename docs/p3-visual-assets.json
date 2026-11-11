@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-05",
+  "generator": "built-in image_gen",
+  "acceptance": "human art acceptance pending",
+  "runtime_atlas_note": "Sprites retain original generated pixels; runtime regions use 4 columns and top 56%/bottom 44% to preserve complete figures. Source image and tool-edited sibling retained.",
+  "files": [
+    {
+      "path": "game/assets/visual_p3/crew_sprites.png",
+      "bytes": 2383976,
+      "sha256": "73ae95a3b3f0c29d3296e35a285777448eafc871d89dd24dfca54cf28160be2b"
+    },
+    {
+      "path": "game/assets/visual_p3/crew_sprites_source.png",
+      "bytes": 2238276,
+      "sha256": "e3502f76dbf8458ed29854edfce212d14852e29ccc15ae9e1b62273ee9f050f5"
+    },
+    {
+      "path": "game/assets/visual_p3/crew_portraits.png",
+      "bytes": 2571113,
+      "sha256": "809efd1ddd696eb08a67983f7d245a24908f0b608d746ece21fe1927ccbb3414"
+    },
+    {
+      "path": "game/assets/visual_p3/environments.png",
+      "bytes": 3065669,
+      "sha256": "ca18bfe4b6064e5994528ac4f254c4468e9cf07662421804cb36866529f230b6"
+    }
+  ],
+  "runtime_portrait_note": "New crew portrait atlas uses top 54% at runtime to keep faces visible in portrait and thumbnail containers; original pixels untouched. Verified on external-display screenshots."
+}

@@ -1,0 +1,1533 @@
+{
+  "scope": "Diagnostic of the first0.11 candidate, in which protection and mutual cover still required paid pair training. Four revised field tasks, sampled complete plans; existing-tool comparison is not a universal optimality proof.",
+  "rows": [
+    {
+      "mission": "M05",
+      "cases": 4,
+      "cooperation_attempts": 6,
+      "dominated_if_owned": 6,
+      "dominated_if_new_purchase": 6,
+      "cases_with_non_dominated_cooperation": 0
+    },
+    {
+      "mission": "M10",
+      "cases": 10,
+      "cooperation_attempts": 6,
+      "dominated_if_owned": 6,
+      "dominated_if_new_purchase": 6,
+      "cases_with_non_dominated_cooperation": 0
+    },
+    {
+      "mission": "M21",
+      "cases": 56,
+      "cooperation_attempts": 72,
+      "dominated_if_owned": 70,
+      "dominated_if_new_purchase": 0,
+      "cases_with_non_dominated_cooperation": 2
+    },
+    {
+      "mission": "S11",
+      "cases": 56,
+      "cooperation_attempts": 59,
+      "dominated_if_owned": 59,
+      "dominated_if_new_purchase": 59,
+      "cases_with_non_dominated_cooperation": 0
+    }
+  ],
+  "ordinary_dominance_examples": [
+    {
+      "mission": "M05",
+      "party": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "cooperation": {
+        "mission": "M05",
+        "goals": [
+          "isolate",
+          "pump"
+        ],
+        "extra": [
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 9,
+        "limit": 13,
+        "ap": 38,
+        "damage": 6,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "isolate",
+          "pump",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": true,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 1,
+          "xu": 1,
+          "su": 1
+        },
+        "approach": "protected",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "drained",
+            "round": 5,
+            "cells": [
+              [
+                6,
+                3
+              ],
+              [
+                5,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "drained",
+            "round": 6,
+            "cells": [
+              [
+                6,
+                4
+              ],
+              [
+                7,
+                3
+              ]
+            ]
+          }
+        ],
+        "cooperation_actions": 3,
+        "player_choice_version": "0.11"
+      },
+      "ordinary": {
+        "mission": "M05",
+        "goals": [
+          "isolate",
+          "pump"
+        ],
+        "extra": [
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 9,
+        "limit": 13,
+        "ap": 36,
+        "damage": 4,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "isolate",
+          "pump",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": false,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 1,
+          "xu": 1,
+          "su": 1
+        },
+        "approach": "independent",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "drained",
+            "round": 5,
+            "cells": [
+              [
+                6,
+                3
+              ],
+              [
+                5,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "drained",
+            "round": 6,
+            "cells": [
+              [
+                6,
+                4
+              ],
+              [
+                7,
+                3
+              ]
+            ]
+          }
+        ],
+        "cooperation_actions": 0,
+        "player_choice_version": "0.11"
+      }
+    },
+    {
+      "mission": "M05",
+      "party": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "cooperation": {
+        "mission": "M05",
+        "goals": [
+          "isolate",
+          "pump"
+        ],
+        "extra": [
+          "live_service",
+          "module"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 9,
+        "limit": 13,
+        "ap": 42,
+        "damage": 2,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "isolate",
+          "pump",
+          "module",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": true,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 1,
+          "xu": 1,
+          "su": 1
+        },
+        "approach": "protected",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "drained",
+            "round": 5,
+            "cells": [
+              [
+                6,
+                3
+              ],
+              [
+                5,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "drained",
+            "round": 6,
+            "cells": [
+              [
+                6,
+                4
+              ],
+              [
+                7,
+                3
+              ]
+            ]
+          }
+        ],
+        "cooperation_actions": 2,
+        "player_choice_version": "0.11"
+      },
+      "ordinary": {
+        "mission": "M05",
+        "goals": [
+          "isolate",
+          "pump"
+        ],
+        "extra": [
+          "live_service",
+          "module"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 9,
+        "limit": 13,
+        "ap": 39,
+        "damage": 0,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "isolate",
+          "pump",
+          "module",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": false,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 1,
+          "xu": 1,
+          "su": 1
+        },
+        "approach": "independent",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "drained",
+            "round": 5,
+            "cells": [
+              [
+                6,
+                3
+              ],
+              [
+                5,
+                3
+              ]
+            ]
+          },
+          {
+            "kind": "drained",
+            "round": 6,
+            "cells": [
+              [
+                6,
+                4
+              ],
+              [
+                7,
+                3
+              ]
+            ]
+          }
+        ],
+        "cooperation_actions": 0,
+        "player_choice_version": "0.11"
+      }
+    },
+    {
+      "mission": "M10",
+      "party": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "cooperation": {
+        "mission": "M10",
+        "goals": [
+          "test1",
+          "test2"
+        ],
+        "extra": [
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 5,
+        "limit": 13,
+        "ap": 28,
+        "damage": 3,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "test1",
+          "test2",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": true,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 2,
+          "xu": 2,
+          "su": 2
+        },
+        "approach": "protected",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          2,
+          0
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "exit_opened",
+            "round": 3,
+            "cell": [
+              6,
+              1
+            ]
+          }
+        ],
+        "cooperation_actions": 1,
+        "player_choice_version": "0.11"
+      },
+      "ordinary": {
+        "mission": "M10",
+        "goals": [
+          "test1",
+          "test2"
+        ],
+        "extra": [
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 5,
+        "limit": 13,
+        "ap": 28,
+        "damage": 0,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "test1",
+          "test2",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 2,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": false,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 2,
+          "xu": 2,
+          "su": 2
+        },
+        "approach": "independent",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0,
+          1
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "exit_opened",
+            "round": 3,
+            "cell": [
+              6,
+              1
+            ]
+          }
+        ],
+        "cooperation_actions": 0,
+        "player_choice_version": "0.11"
+      }
+    },
+    {
+      "mission": "M10",
+      "party": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "cooperation": {
+        "mission": "M10",
+        "goals": [
+          "test1",
+          "test2"
+        ],
+        "extra": [
+          "live_service",
+          "meeting"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 8,
+        "limit": 13,
+        "ap": 38,
+        "damage": 0,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "test1",
+          "test2",
+          "meeting",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 2,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": true,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 2,
+          "xu": 2,
+          "su": 2
+        },
+        "approach": "protected",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          2,
+          0
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "exit_opened",
+            "round": 3,
+            "cell": [
+              6,
+              1
+            ]
+          }
+        ],
+        "cooperation_actions": 1,
+        "player_choice_version": "0.11"
+      },
+      "ordinary": {
+        "mission": "M10",
+        "goals": [
+          "test1",
+          "test2"
+        ],
+        "extra": [
+          "live_service",
+          "meeting"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 5,
+        "limit": 13,
+        "ap": 28,
+        "damage": 0,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "test1",
+          "test2",
+          "meeting",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 2,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": false,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 2,
+          "xu": 2,
+          "su": 2
+        },
+        "approach": "independent",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0,
+          1
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "exit_opened",
+            "round": 3,
+            "cell": [
+              6,
+              1
+            ]
+          }
+        ],
+        "cooperation_actions": 0,
+        "player_choice_version": "0.11"
+      }
+    },
+    {
+      "mission": "M21",
+      "party": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "cooperation": {
+        "mission": "M21",
+        "goals": [
+          "route"
+        ],
+        "extra": [
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 6,
+        "limit": 14,
+        "ap": 29,
+        "damage": 8,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "route",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": true,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 4,
+          "xu": 4,
+          "su": 4
+        },
+        "approach": "protected",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0,
+          2
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 2,
+        "field_effects": [
+          {
+            "kind": "exit_opened",
+            "round": 4,
+            "cell": [
+              6,
+              1
+            ]
+          }
+        ],
+        "cooperation_actions": 2,
+        "player_choice_version": "0.11"
+      },
+      "ordinary": {
+        "mission": "M21",
+        "goals": [
+          "route"
+        ],
+        "extra": [
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {
+          "shield": 2
+        },
+        "level": 1,
+        "rounds": 6,
+        "limit": 14,
+        "ap": 28,
+        "damage": 0,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "route",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": false,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 4,
+          "xu": 4,
+          "su": 4
+        },
+        "approach": "independent",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0,
+          1
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "exit_opened",
+            "round": 4,
+            "cell": [
+              6,
+              1
+            ]
+          }
+        ],
+        "cooperation_actions": 0,
+        "player_choice_version": "0.11"
+      }
+    },
+    {
+      "mission": "M21",
+      "party": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "cooperation": {
+        "mission": "M21",
+        "goals": [
+          "route"
+        ],
+        "extra": [
+          "e",
+          "live_service",
+          "marker"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 8,
+        "limit": 14,
+        "ap": 42,
+        "damage": 8,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "route",
+          "e",
+          "marker",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 3,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": true,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 4,
+          "xu": 4,
+          "su": 4
+        },
+        "approach": "protected",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0,
+          2
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 2,
+        "field_effects": [
+          {
+            "kind": "exit_opened",
+            "round": 4,
+            "cell": [
+              6,
+              1
+            ]
+          }
+        ],
+        "cooperation_actions": 2,
+        "player_choice_version": "0.11"
+      },
+      "ordinary": {
+        "mission": "M21",
+        "goals": [
+          "route"
+        ],
+        "extra": [
+          "e",
+          "live_service",
+          "marker"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {
+          "shield": 2
+        },
+        "level": 1,
+        "rounds": 7,
+        "limit": 14,
+        "ap": 34,
+        "damage": 0,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "route",
+          "e",
+          "marker",
+          "live_service"
+        ],
+        "lost": [],
+        "controls": 2,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": false,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 4,
+          "xu": 4,
+          "su": 4
+        },
+        "approach": "independent",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0,
+          1
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [
+          {
+            "kind": "exit_opened",
+            "round": 4,
+            "cell": [
+              6,
+              1
+            ]
+          }
+        ],
+        "cooperation_actions": 0,
+        "player_choice_version": "0.11"
+      }
+    },
+    {
+      "mission": "S11",
+      "party": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "cooperation": {
+        "mission": "S11",
+        "goals": [
+          "wire"
+        ],
+        "extra": [
+          "cold",
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 8,
+        "limit": 12,
+        "ap": 35,
+        "damage": 2,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "wire",
+          "cold",
+          "live_service"
+        ],
+        "lost": [
+          "S11_enemy1_cut"
+        ],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": true,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 4,
+          "xu": 4,
+          "su": 4
+        },
+        "approach": "protected",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [],
+        "cooperation_actions": 3,
+        "player_choice_version": "0.11"
+      },
+      "ordinary": {
+        "mission": "S11",
+        "goals": [
+          "wire"
+        ],
+        "extra": [
+          "cold",
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 8,
+        "limit": 12,
+        "ap": 30,
+        "damage": 2,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "wire",
+          "cold",
+          "live_service"
+        ],
+        "lost": [
+          "S11_enemy1_cut"
+        ],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": false,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 4,
+          "xu": 4,
+          "su": 4
+        },
+        "approach": "independent",
+        "service_secured": true,
+        "machinery_intact": true,
+        "watchers": [
+          0
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [],
+        "cooperation_actions": 0,
+        "player_choice_version": "0.11"
+      }
+    },
+    {
+      "mission": "S11",
+      "party": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "cooperation": {
+        "mission": "S11",
+        "goals": [
+          "wire"
+        ],
+        "extra": [
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 11,
+        "limit": 12,
+        "ap": 25,
+        "damage": 0,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "wire"
+        ],
+        "lost": [
+          "S11_enemy1_cut",
+          "live_service"
+        ],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": true,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 4,
+          "xu": 4,
+          "su": 4
+        },
+        "approach": "protected",
+        "service_secured": false,
+        "machinery_intact": true,
+        "watchers": [
+          2
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [],
+        "cooperation_actions": 1,
+        "player_choice_version": "0.11"
+      },
+      "ordinary": {
+        "mission": "S11",
+        "goals": [
+          "wire"
+        ],
+        "extra": [
+          "live_service"
+        ],
+        "difficulty": "standard",
+        "variant": "A",
+        "style": "controls",
+        "gear": {},
+        "level": 1,
+        "rounds": 11,
+        "limit": 12,
+        "ap": 23,
+        "damage": 0,
+        "healthy_extracted": 3,
+        "downed": 0,
+        "success": true,
+        "secured": [
+          "wire"
+        ],
+        "lost": [
+          "S11_enemy1_cut",
+          "live_service"
+        ],
+        "controls": 0,
+        "spawned": 0,
+        "party": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "skills_enabled": false,
+        "skill_actions": 0,
+        "relation_refusals": 0,
+        "skill_action_types": [],
+        "levels": {
+          "lin": 4,
+          "xu": 4,
+          "su": 4
+        },
+        "approach": "independent",
+        "service_secured": false,
+        "machinery_intact": true,
+        "watchers": [
+          0
+        ],
+        "trained": [
+          [
+            "lin",
+            "su",
+            "coordinated_pull"
+          ],
+          [
+            "lin",
+            "su",
+            "mutual_cover"
+          ],
+          [
+            "lin",
+            "su",
+            "protected_work"
+          ],
+          [
+            "lin",
+            "su",
+            "relay_carry"
+          ]
+        ],
+        "protocol_effects": 0,
+        "field_effects": [],
+        "cooperation_actions": 0,
+        "player_choice_version": "0.11"
+      }
+    }
+  ],
+  "baseline_configurations": 1432,
+  "baseline_unfound": 0
+}

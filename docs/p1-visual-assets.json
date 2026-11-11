@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-05",
+  "assets": [
+    {
+      "path": "game/assets/visual_p1/crew_portraits.png",
+      "bytes": 2528453,
+      "sha256": "211b632e309bc74a186423fc11c5870fab04f81e2b2a44a6b43a9048e4c2db9f",
+      "source": "OpenAI built-in image_gen tool, generated for this project",
+      "prompt_set": "docs/p1-visual-prompt-set.json",
+      "original_preserved": true
+    },
+    {
+      "path": "game/assets/visual_p1/harbor_camp.png",
+      "bytes": 2717990,
+      "sha256": "6a6235c9f352d89b70525577eb6b0ad5500347cad441bb56fd4cd0d287dbc762",
+      "source": "OpenAI built-in image_gen tool, generated for this project",
+      "prompt_set": "docs/p1-visual-prompt-set.json",
+      "original_preserved": true
+    },
+    {
+      "path": "game/assets/visual_p1/rescue_sprites.png",
+      "bytes": 1727796,
+      "sha256": "9b6d171f782aa6eb2aba10f46ee4c943e1a61028a4c5cff1681fe9c13debd18f",
+      "source": "OpenAI built-in image_gen tool, generated for this project",
+      "prompt_set": "docs/p1-visual-prompt-set.json",
+      "original_preserved": true
+    },
+    {
+      "path": "game/assets/visual_p1/support_responder.png",
+      "bytes": 827884,
+      "sha256": "163126e30bc30b0d8ef0337e1ea37f9606a138ea1f4a78415418d69fc23bcaa5",
+      "source": "OpenAI built-in image_gen tool, generated for this project",
+      "prompt_set": "docs/p1-visual-prompt-set.json",
+      "original_preserved": true
+    },
+    {
+      "path": "game/assets/visual_p1/terrain_atlas.png",
+      "bytes": 2324187,
+      "sha256": "a9715b1d68b2d1c0fb39aabbeb38a5941078c4c828bcf816dc2b82ba062cff7e",
+      "source": "OpenAI built-in image_gen tool, generated for this project",
+      "prompt_set": "docs/p1-visual-prompt-set.json",
+      "original_preserved": true
+    }
+  ]
+}

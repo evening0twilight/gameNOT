@@ -1,0 +1,28 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+LINKED_DAY: 1 success ["lin", "xu", "su"]
+LINKED_DAY: 2 success ["lin", "xu", "su"]
+LINKED_DAY: 3 success ["lin", "xu", "su"]
+LINKED_DAY: 4 success ["lin", "xu", "su"]
+LINKED_DAY: 5 success ["lin", "chen", "xu"]
+LINKED_DAY: 6 success ["lin", "chen", "xu"]
+LINKED_MENTOR_OFFER: { "gain": 24, "ordinary": 12, "reasons": [], "error": "" }
+LINKED_DAY: 7 success ["lin", "xu", "su"]
+LINKED_DAY: 8 success ["lin", "xu", "su"]
+LINKED_DAY: 9 success ["lin", "xu", "su"]
+LINKED_DAY: 10 success ["lin", "xu", "su"]
+LINKED_DAY: 11 success ["lin", "xu", "su"]
+LINKED_DAY: 12 success ["lin", "xu", "su"]
+LINKED_DAY: 13 success ["lin", "xu", "su"]
+LINKED_DAY: 14 success ["lin", "xu", "su"]
+LINKED_DAY: 15 success ["lin", "xu", "su"]
+LINKED_DAY: 16 success ["lin", "xu", "su"]
+LINKED_DAY: 17 success ["su", "jiang", "lin"]
+LINKED_DAY: 18 success ["su", "jiang", "lin"]
+LINKED_DAY: 19 success ["su", "lin", "xu"]
+LINKED_DAY: 20 success ["lin", "xu", "su"]
+LINKED_DAY: 21 success ["lin", "xu", "su"]
+LINKED_DAY: 22 success ["lin", "xu", "su"]
+LINKED_DAY: 23 success ["lin", "xu", "su"]
+LINKED_DAY: 24 success ["lin", "xu", "su"]
+BASELINE018_LINKED: failures=0

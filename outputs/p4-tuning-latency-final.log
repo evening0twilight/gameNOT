@@ -1,0 +1,4 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+LATENCY_PROBE: [{"ok":true,"preview_ms":3.431,"render_ms":46.609,"submit_ms":49.32,"undo":1},{"ok":true,"preview_ms":2.807,"render_ms":61.022,"submit_ms":73.7,"undo":2},{"ok":true,"preview_ms":4.462,"render_ms":105.661,"submit_ms":232.551,"undo":3},{"ok":true,"preview_ms":6.821,"render_ms":73.984,"submit_ms":274.035,"undo":4},{"ok":true,"preview_ms":7.09,"render_ms":37.139,"submit_ms":262.325,"undo":5},{"ok":true,"preview_ms":10.022,"render_ms":55.13,"submit_ms":726.555,"undo":6}]

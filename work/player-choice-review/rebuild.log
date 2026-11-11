@@ -1,0 +1,56 @@
+Authored0.11:4distinct field tasks,8removed waits,2finite support investments,2basic guards and2advanced actions learned with ordinary pair training.
+{'mission': 'M01', 'title': '最后一班渡轮', 'cases': 1, 'baseline_solved': 1, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 1, 'role': '教学：双伤员与记录，容许独立救援、分工或合法接力，不加新压力'}
+{'mission': 'M02', 'title': '诊所的备用电', 'cases': 1, 'baseline_solved': 1, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 1, 'role': '现场电池用来供电或带回；施工队留物资，运输队改变去向'}
+{'mission': 'M03', 'title': '被锁住的仓库', 'cases': 1, 'baseline_solved': 1, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 1, 'role': '把人力用于开门后再搬货，或一人处理门、两人处理货与零件'}
+{'mission': 'M04', 'title': '高架桥下', 'cases': 1, 'baseline_solved': 1, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 1, 'role': '分点加固后接应，仍保护首次前置教学，不增加突发限制'}
+{'mission': 'M05', 'title': '旧泵房来电', 'cases': 4, 'baseline_solved': 4, 'service_solved': 4, 'intact_service': 4, 'different_outcomes': 4, 'role': '分两段排出浅水：先完成原泵体检修，再分段排水。每段有效操作后，标记浅水格在下一轮变为干地；中断只损失当轮，保留已排出的水。原漏口的未来涨水照常发生，不获得无限防洪。'}
+{'mission': 'M06', 'title': '第一次涨潮', 'cases': 4, 'baseline_solved': 4, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 0, 'role': '先保证救援，或分出快手抢档案；承诺必须自愿接受'}
+{'mission': 'M07', 'title': '工具箱的名字', 'cases': 4, 'baseline_solved': 4, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 4, 'role': '先停危险设备，或临时控制后切割救人，兼顾铭牌证据'}
+{'mission': 'M08', 'title': '断开的补给线', 'cases': 10, 'baseline_solved': 10, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 10, 'role': '删除双端值守；保留清障、补给车、备用物资与重机移位。牵引只是可选空间操作，不为它另造必做试验。'}
+{'mission': 'M09', 'title': '屋顶上的病房', 'cases': 10, 'baseline_solved': 10, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 10, 'role': '集中救治后分头运送，或边搬运边由另一人取药，允许舍弃药箱'}
+{'mission': 'M10', 'title': '撤离预案', 'cases': 10, 'baseline_solved': 10, 'service_solved': 10, 'intact_service': 10, 'different_outcomes': 10, 'role': '双端确认临时登船点：两个位置在同一轮有效即可；两个原测试目标完成后开放临时出口。测试与双端确认可先后安排。'}
+{'mission': 'M11', 'title': '需要签字的门', 'cases': 20, 'baseline_solved': 20, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 20, 'role': '删除名单值守；切开入口、取得记录与限时取证已足够，火场分工保留。'}
+{'mission': 'M12', 'title': '闸下的记录', 'cases': 20, 'baseline_solved': 20, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 20, 'role': '先控威胁再等待备份，或留一人处理终端、两人抢早期证据'}
+{'mission': 'M13', 'title': '会说谎的日志', 'cases': 20, 'baseline_solved': 20, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 20, 'role': '删除故障采样值守；离线日志、现场证据与机器干扰已经构成取舍。'}
+{'mission': 'M14', 'title': '冷库里的电池', 'cases': 70, 'baseline_solved': 70, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 70, 'role': '转运药物与原地恢复冷藏两种保护方式，不默认所有货都要搬走'}
+{'mission': 'M15', 'title': '三条同时响起的电话', 'cases': 105, 'baseline_solved': 105, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 105, 'role': '分散接三户、集中保一户再转场，接力留人继续现场救援'}
+{'mission': 'M16', 'title': '没有空位的船', 'cases': 35, 'baseline_solved': 35, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 35, 'role': '人员优先撤离，或把运输者留在中转点同时争取货物'}
+{'mission': 'M17', 'title': '修复或拆除', 'cases': 112, 'baseline_solved': 112, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 112, 'role': '删除带载值守；保留原修复/隔离分支及地区恢复上限，不在维修任务里再套一层值守。'}
+{'mission': 'M18', 'title': '广播塔的盲区', 'cases': 56, 'baseline_solved': 56, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 56, 'role': '停机再播报，或限时取备份同时暂控增援；等待时间不被施工跳过'}
+{'mission': 'M19', 'title': '警戒水位', 'cases': 56, 'baseline_solved': 56, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 56, 'role': '一人转运病人、另一组恢复避难所，或集中稳住现场再搬运'}
+{'mission': 'M20', 'title': '两座避难所', 'cases': 112, 'baseline_solved': 112, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 112, 'role': '转移到一座避难所或同时修两座，物资与人员安排不等价'}
+{'mission': 'M21', 'title': '旧路与新桥', 'cases': 56, 'baseline_solved': 56, 'service_solved': 56, 'intact_service': 56, 'different_outcomes': 56, 'role': '两端护送通过新桥：两端连续保障两轮；中断重新计数，施工完成后开放新桥出口。全游戏只保留这一处双点连续驻守。'}
+{'mission': 'M22', 'title': '最后一份记录', 'cases': 56, 'baseline_solved': 56, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 56, 'role': '删除在线交接附加值守；保留原交接、证据与脱敏，不重复收费或重复授信。'}
+{'mission': 'M23', 'title': '撤离顺序', 'cases': 56, 'baseline_solved': 56, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 56, 'role': '救治、搬运、重建物资三项分工，保留原先有效的多阵容路线'}
+{'mission': 'M24', 'title': '天亮以前', 'cases': 168, 'baseline_solved': 168, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 168, 'role': '世界路线分别有目标，档案为额外成果；不添加终局隐藏资格'}
+{'mission': 'S01', 'title': '维修船票', 'cases': 1, 'baseline_solved': 1, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 1, 'role': '删除岸上值守；开局短支线只保留修船与船票运输。'}
+{'mission': 'S02', 'title': '旧书与药箱', 'cases': 8, 'baseline_solved': 8, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 8, 'role': '药箱与旧书各自有事实结果，接力中转与独立两路搬运都合法'}
+{'mission': 'S03', 'title': '电梯里的灯', 'cases': 4, 'baseline_solved': 4, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 0, 'role': '先断电或暂时压制危险救人，主要目标保留基础替代办法'}
+{'mission': 'S04', 'title': '屋顶菜园', 'cases': 20, 'baseline_solved': 20, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 20, 'role': '删除灌溉值守；菜园保留种子运输和架体修复，承担较轻的节奏。'}
+{'mission': 'S05', 'title': '剩余的绝缘布', 'cases': 20, 'baseline_solved': 20, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 0, 'role': '停机取绝缘布或带现有保护工具进现场；不靠指定电工开门'}
+{'mission': 'S06', 'title': '一份未送达的饭', 'cases': 20, 'baseline_solved': 20, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 20, 'role': '找人、送饭、救出居民可分工；不拿饭菜不自动伤害关系'}
+{'mission': 'S07', 'title': '失联的记录员', 'cases': 35, 'baseline_solved': 35, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 23, 'role': '救人保底，分流抢备份需要承担接力、走位与时间风险'}
+{'mission': 'S08', 'title': '工人的行李', 'cases': 112, 'baseline_solved': 112, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 112, 'role': '行李与工具都是成果，物流接力让另一人继续处理现场而非全员撤出'}
+{'mission': 'S09', 'title': '临时课堂', 'cases': 56, 'baseline_solved': 56, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 56, 'role': '现场办学与带回书籍分工；莫遥远程停机避免所有人都挤在开关'}
+{'mission': 'S10', 'title': '备用引航灯', 'cases': 56, 'baseline_solved': 56, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 56, 'role': '删除连续引航值守；灯具与航图处理保留，避免主线M21前再来一次站点等待。'}
+{'mission': 'S11', 'title': '留给诊所的电', 'cases': 56, 'baseline_solved': 56, 'service_solved': 56, 'intact_service': 56, 'different_outcomes': 56, 'role': '先接备用电，再切换冷柜：先完成原接线任务；再在冷柜旁确认备用电，然后去分路位置切换。两步各留到一轮末，中间可以移动或处理别的任务，第一步不因第二步中断而消失。'}
+{'mission': 'S12', 'title': '不能沉下去的箱子', 'cases': 56, 'baseline_solved': 56, 'service_solved': 0, 'intact_service': 0, 'different_outcomes': 56, 'role': '两箱分别转运或使用接力中转；丢掉照片不改写此前人物事实'}
+Player-choice matrix 1432 configurations 18344 attempts baseline failures 0 cooperation outcome counterfactuals 672
+普通轮换，不使用外部休整 24 0 {'credits': 622, 'supplies': 32, 'parts': 50} {'service_delivered': 0, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {}, 'days': [], 'fatigue_recovered': 0, 'stress_recovered': 0}
+普通轮换，按需使用保全设施 24 0 {'credits': 622, 'supplies': 33, 'parts': 50} {'service_delivered': 0, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+偏好阵容，一次搭档训练 24 0 {'credits': 584, 'supplies': 43, 'parts': 47} {'service_delivered': 3, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+专业人员轮换，按需使用后勤 24 0 {'credits': 602, 'supplies': 43, 'parts': 48} {'service_delivered': 2, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+固定阵容拆除，不维修 24 0 {'credits': 622, 'supplies': 44, 'parts': 50} {'service_delivered': 3, 'intact': 1, 'repaired': 0, 'repair_projects': 0} {'uses': {'M10': 2}, 'days': [11, 12], 'fatigue_recovered': 48, 'stress_recovered': 0}
+固定阵容拆除，及时维修并使用 24 0 {'credits': 622, 'supplies': 47, 'parts': 50} {'service_delivered': 3, 'intact': 1, 'repaired': 1, 'repair_projects': 1} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+固定阵容拆除，过期后才公益修复 24 0 {'credits': 622, 'supplies': 44, 'parts': 50} {'service_delivered': 3, 'intact': 1, 'repaired': 1, 'repair_projects': 1} {'uses': {'M10': 2}, 'days': [11, 12], 'fatigue_recovered': 48, 'stress_recovered': 0}
+完整36关，按需合作和后勤 24 12 {'credits': 776, 'supplies': 53, 'parts': 59} {'service_delivered': 3, 'intact': 4, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 0}
+最高难度连续失误后继续 24 0 {'credits': 504, 'supplies': 28, 'parts': 39} {'service_delivered': 2, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 1, 'M10': 2}, 'days': [6, 11, 12], 'fatigue_recovered': 60, 'stress_recovered': 2.0}
+relay True 8 ['r1', 'r2', 'asset']
+ordinary_handoff True 7 ['r1', 'r2']
+pull_without_added_wait True 12 ['block1', 'block2', 'truck']
+[{'mission': 'M05', 'cases': 4, 'cooperation_attempts': 19, 'dominated_if_owned': 19, 'dominated_if_new_purchase': 19, 'cases_with_non_dominated_cooperation': 0}, {'mission': 'M10', 'cases': 10, 'cooperation_attempts': 40, 'dominated_if_owned': 40, 'dominated_if_new_purchase': 40, 'cases_with_non_dominated_cooperation': 0}, {'mission': 'M21', 'cases': 56, 'cooperation_attempts': 672, 'dominated_if_owned': 646, 'dominated_if_new_purchase': 0, 'cases_with_non_dominated_cooperation': 26}, {'mission': 'S11', 'cases': 56, 'cooperation_attempts': 336, 'dominated_if_owned': 336, 'dominated_if_new_purchase': 336, 'cases_with_non_dominated_cooperation': 0}]
+0.11 player-choice checks: 115
+Built0.11 player-choice review,36-map table and current-design section.
+Wrote final design report: 391518 characters
+Authored0.11:4distinct field tasks,8removed waits,2finite support investments,2basic guards and2advanced actions learned with ordinary pair training.
+0.11 artifact checks: 87

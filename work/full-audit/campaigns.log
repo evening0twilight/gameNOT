@@ -1,0 +1,4 @@
+0.14固定队伍全36关 shared_control {'credits': 814, 'supplies': 115, 'parts': 63} []
+0.14轮换与选择性培养全36关 shared_control {'credits': 814, 'supplies': 110, 'parts': 63} []
+0.14最高难度全36关 shared_control {'credits': 806, 'supplies': 114, 'parts': 63} []
+0.14最高难度含终战在内五次失误 evacuation {'credits': 528, 'supplies': 73, 'parts': 41} ['su', 'chen']

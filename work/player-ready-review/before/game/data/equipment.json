@@ -1,0 +1,98 @@
+[
+  {
+    "id": "winch",
+    "name": "独立绞盘",
+    "effect": "部署独立锚点；相邻人员每次花1 AP可沿直线跨过单格X并携带伤员，终点必须干地。代替危险绳索协作，不提升信任。",
+    "slot": "support",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#winch"
+  },
+  {
+    "id": "crowbar",
+    "name": "破拆工具",
+    "effect": "邻接轻障碍/门增加2工量；基础交互是1。开局共有一件；不是人物专属。",
+    "slot": "tool",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#crowbar"
+  },
+  {
+    "id": "medkit",
+    "name": "急救包",
+    "effect": "站立队友回复3HP，不能复活；每用一次消耗已打包的一份医疗耗材。开局共有一件空包。",
+    "slot": "support",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#medkit"
+  },
+  {
+    "id": "shield",
+    "name": "折叠盾",
+    "effect": "放置4HP屏障，持续本任务，友军可穿过不可落脚；拾回1 AP，不能拾回补HP。",
+    "slot": "tool",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#shield"
+  },
+  {
+    "id": "foam",
+    "name": "封堵泡沫",
+    "effect": "封住一个已列出的漏口，阻止其后续水位扩张3轮，不清除已有水；消耗一份。",
+    "slot": "consumable",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#foam"
+  },
+  {
+    "id": "insulation",
+    "name": "绝缘垫",
+    "effect": "铺一格绝缘垫持续本任务；不能在深水铺，绝缘只免电伤。",
+    "slot": "support",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#insulation"
+  },
+  {
+    "id": "battery",
+    "name": "备用电池",
+    "effect": "向指定可接受电池的目标提供2工量的供电步骤；不跳过断路前置，不开启任意门。",
+    "slot": "consumable",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#battery"
+  },
+  {
+    "id": "scanner",
+    "name": "扫描仪",
+    "effect": "1AP对4格内一处已知停机开关提供1工量，每任务一次；不加速主目标、证据或计时步骤，不叠加L2施工。基础交互仍可完成同样工量；价值是省去走近并分担前排AP。",
+    "slot": "support",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#scanner"
+  },
+  {
+    "id": "beacon",
+    "name": "诱导信标",
+    "effect": "空地落下诱饵，持续两次选敌；只影响巡检机下次计划，不暗改当前预告。",
+    "slot": "consumable",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#beacon"
+  },
+  {
+    "id": "cutter",
+    "name": "切割器",
+    "effect": "相邻重障碍增加2工量；若未耗尽本关增援额度，预告下一轮最近合法出生格来一台巡检机；无合法格则取消。",
+    "slot": "tool",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#cutter"
+  },
+  {
+    "id": "stretcher",
+    "name": "拖行担架",
+    "effect": "被动：搬运移动预算3；不与贺鸣或其他移动加成相加；稳定与拾起照常花AP。",
+    "slot": "support",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#stretcher"
+  },
+  {
+    "id": "extinguisher",
+    "name": "灭火罐",
+    "effect": "清除相邻十字最多5格现有火，抑制该区域下一次火源；该区域焊接机当轮伤害-1。",
+    "slot": "consumable",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/equipment.json#extinguisher"
+  }
+]

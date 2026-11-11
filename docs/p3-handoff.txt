@@ -1,0 +1,26 @@
+P3 开发交接 — 2026-11-05
+
+用户最新授权：Windows能用；进入游戏不知道做什么，当前觉得无聊，但基本符合阶段预期。引导可以后置，现在开始下一阶段，可新开对话。
+这仅是P2 Windows可运行的用户报告，不是DPI/性能/H01/美术或趣味性验收通过。目标不清与无聊必须保留为产品问题，不以增加地图数量声称解决。
+
+下一阶段依冻结基线 production_milestones.P3：全四章内容接入，余下地图、人物分支、96场景及三世界结局；全36图实际运行路径记录，24日正反结果闭环。先核实基线，盘点P2实现边界，制定可执行任务并立即实现；不要只交计划。不每完成一点就停下来交付。正式引导暂后置，但新内容的目标与反馈应清楚。
+
+正式工程 /Users/a1-6/projects/person/gameNOT，复用当前工作目录与所有未提交/未跟踪文件，不另建工程、worktree，不提交推送或发布。
+设计入口 game/data/final_design/design_manifest.json，authority release_baseline.json。冻结数据/历史hash不可修改或伪造。tools/check.py开发检查与历史字节冻结门分离。
+Godot锁定4.7.2，Compatibility。二次元/卡通方向未获授权，用户明确选择保留半写实人物、强化完整场景与镜头表现。
+所有GUI仅扩展显示器：tests/gui_external.gd会检查至少两屏，选非主屏。不要在主显示器弹窗口。
+
+P2实现：chapter_one.gd、chapter_stories.gd、chapter_hazards.gd；campaign_rules接入六主线三支线、配队、D4陈砚、群组训练/带教、故事、社区回访、章末。仍有许多第一章硬边界，扩展需逐一审计，不可简单放宽MAIN_LAST后声称四章完成。
+存档schema2/runtime_revision3，P2槽user://saves/p2/；兼容读取旧runtime2，保留P1槽。校验/迁移需补上P3字段，不得补造历史行为与关系贡献。
+专长P1及陈砚；后续人物专长待按权威数据接入。首章故事按day<=6筛选；普通训练当前阶段上限1；带教也按首章限制。下一阶段必须扩展入队、跨章阶段保留、人物项目与结局。
+美术game/assets/visual_p1与visual_p2；visual_assets.gd用AtlasTexture缓存；五个P2生成资产含陈砚、六场景、设备、机器。完整提示词与真实sha256在docs/p2-visual-*。绘图调用内置image_gen技能，原图保留，不用Python做图像编辑。
+i18n在game/data/localization/zh_CN.json，不能改冻结正文；en_XA是伪本地化不是英文翻译。不要漏掉新增文本、中文字体、字号与布局验证。
+
+最新测试：reference1172、foundation33、P1loop166、P1systems179、UI321、P1visual544、P2rules132、P2presentation92通过；九图各自合法指令成功路径；六主线连续保留XP/疲劳/物资、每晚存读档通过。九图独立路径不等于连续9任务成功。零资源连续失败至章末已测。
+工具：python3 tools/check.py --engine；python3 tools/build_windows.py；python3 tools/package_p2.py。P3用独立包/报告，保留P1/P2历史证据，不让旧打包脚本覆写已交付包。检查工具已加180秒超时。
+证据 docs/p2-validation.json、docs/p2-validation.txt、outputs/p2-build.log、outputs/p2-path-exploration.json。
+P2包 build/night-tide-windows-p2.zip，68,902,315 bytes，SHA256 d9ef45c55e7bbdb68cd4c2f04523ad0b442560d3ab29bae86f6ee03d5f8796ca。
+Windows实机逐项/性能/DPI尚未实测指标不要代填。用户最新“Windows能用”应保留原话。
+
+当前可能仍运行的P2扩展屏窗口是隔离的M04视觉测试fixture（启动参数--isolated-ui-review --p2-review），不是用户正式存档。更早的P1用户测试窗口可能仍在运行，勿随意关闭/覆盖用户存档。不要把fixture当自然推进证据。
+不自动使用子agent；用户未要求并行代理。若新任务需要持续执行，按用户授权推进，不反复问是否继续。

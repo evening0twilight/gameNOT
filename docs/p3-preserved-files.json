@@ -1,0 +1,16 @@
+{
+  "game/data/final_design/release_baseline.json": "1f74768ce8dfa5ebf43567e1e6dc6c4cd9a3db6d0ad22774aa943b2f8a6d6a75",
+  "game/data/final_design/design_manifest.json": "94a140d60a14788dbd320e384500e425262c7ad8d254bb00e8c314fe28004cec",
+  "build/night-tide-windows-p2.zip": "d9ef45c55e7bbdb68cd4c2f04523ad0b442560d3ab29bae86f6ee03d5f8796ca",
+  "docs/p2-visual-assets.json": "ab3bf0f7311a457f726a9f7cf3df469fa4173ef7e2d131a497ac026247c008c6",
+  "docs/p2-validation.txt": "d72fbae125159113f844666b2e9f7c10693d8d24124e0e76a8680fff4f354774",
+  "docs/p2-validation.json": "3bb5a9c4f875463635428c90f72f9a8820abe3811ee594b38af56bb4ba149ab7",
+  "docs/p2-windows-checklist.txt": "2ab31641130cf3c66ee4376b1d72001c0b7caa9bcae7b291f363bc50691769df",
+  "docs/p2-work-plan.txt": "4f7c6981cf06e01e695fc4206cc3b7bf3d5d820be834d2f1f7bb0a56fa333196",
+  "docs/p2-user-feedback.json": "a093f5147f81667a195e3059d149702be680d476ddf9c02e95789aba8822a4bc",
+  "docs/p2-visual-prompt-set.json": "4b00d4fe0b2e161c25b3ddb148a413c528dbe6724f47615ec8cdb20a29f3f6bc",
+  "outputs/p2-path-exploration.json": "8e054b5e6468777984840cc494d7719fcdb24fac169d53aa7351661cad8e0d6d",
+  "outputs/p2-check.log": "ac91ff3471c1dca47fe90e84e9b0a62af69fe436ee5377585e78cf3f146ddcc9",
+  "outputs/p2-build.log": "e0fa499de5d3b31d588bd08cb7b9fc3d73cd4d8f2fbe51a3abbd35d3fcc5e7a8",
+  "outputs/p2-path.log": "4e1d39f4a24f0619cfa3e4a19685810aa11d181dcfd185b26bb71c1931de7568"
+}

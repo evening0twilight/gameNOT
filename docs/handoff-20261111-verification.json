@@ -1,0 +1,29 @@
+{
+  "date": "2026-11-11",
+  "scope": "handoff and Git portability; no game-source changes or repeat full game acceptance",
+  "staged_game_matches_product018_build": true,
+  "local_history": {
+    "verified": 287,
+    "expected": 287,
+    "missing": [],
+    "complete": true
+  },
+  "fresh_checkout_history": {
+    "verified": 280,
+    "expected": 287,
+    "missing": [
+      "build/night-tide-windows-p4-tuning.zip",
+      "outputs/p4-tuning-runtime.avi",
+      "build/night-tide-windows-p2.zip",
+      "build/night-tide-windows-p3.zip",
+      "build/night-tide-windows-p4.zip",
+      "build/night-tide-windows-p4-feedback.zip",
+      "outputs/p4-feedback-runtime.avi"
+    ],
+    "complete": false
+  },
+  "history_option_unit_tests": 6,
+  "credential_pattern_scan": "no matches; browser state excluded",
+  "full_game_suite_rerun": false,
+  "remote_ci_run": false
+}

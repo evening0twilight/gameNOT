@@ -1,0 +1,147 @@
+{
+  "version": "0.18-predevelopment",
+  "definition": "current_check表示本轮离线/静态验收目标，具体是否通过只认predevelopment-checks.json；pending全部尚未验收。",
+  "criteria": [
+    {
+      "id": "D01",
+      "area": "规则权威",
+      "pass_condition": "只有本版baseline生效；投影视图逐字匹配，36关/16能力/7装备/96剧本引用完整，无历史数值重新启用。",
+      "method": "static",
+      "status": "current_check"
+    },
+    {
+      "id": "D02",
+      "area": "完整流程",
+      "pass_condition": "新局/读档/主支线/营地/终局/退出有定义；D24无营地；零资源和零健康主角仍有主线及结局路径。",
+      "method": "offline",
+      "status": "current_check"
+    },
+    {
+      "id": "D03",
+      "area": "培养与阵容",
+      "pass_condition": "自然XP和恢复不削弱；训练/带教共用有限课程；默认阵容结果回归相同；L2倾向按角色生效不串人。",
+      "method": "offline",
+      "status": "current_check"
+    },
+    {
+      "id": "D04",
+      "area": "经济与来源",
+      "pass_condition": "唯一目标奖励表；重复结算、退款、无效操作不改变余额；已消费+归还=带出，额外目标无通用奖励。",
+      "method": "offline",
+      "status": "current_check"
+    },
+    {
+      "id": "D05",
+      "area": "人物与关系",
+      "pass_condition": "真实知情/责任/同源事件去重；信任每方向每任务最多3；无误会修复刷取；职业/履约/在场/关系分开。",
+      "method": "offline",
+      "status": "current_check"
+    },
+    {
+      "id": "D06",
+      "area": "边界与范围",
+      "pass_condition": "能力/装备/现场操作及修复范围固定；严重难度永久离队已告知；不可把旧报告视作本版通过。",
+      "method": "static",
+      "status": "current_check"
+    },
+    {
+      "id": "R01",
+      "area": "预览执行",
+      "pass_condition": "全部动作类型在合法/非法/过期状态夹具上：预览效果=提交差分；取消/非法操作零写入；跳动画不变结果。",
+      "method": "runtime",
+      "status": "pending"
+    },
+    {
+      "id": "R02",
+      "area": "36关与低资源整局",
+      "pass_condition": "全部36图在正式程序跑A/B和三难度各至少一条可继续路径；完整主线零付费训练、少支线、偏爱固定队、重伤轮换四类存档走到结局；不要求每条路径全成果。",
+      "method": "runtime",
+      "status": "pending"
+    },
+    {
+      "id": "R03",
+      "area": "伤势与永久离队",
+      "pass_condition": "期限最后一轮救出/少一轮超时/站立紧急撤退/全队失能在三难度各测；结果与披露一致；基础行动不因关系被夺走。",
+      "method": "runtime",
+      "status": "pending"
+    },
+    {
+      "id": "R04",
+      "area": "保存与中断",
+      "pass_condition": "每种稳定阶段往返得到相同下一预告/奖励/情绪；模拟写入失败、坏档、重复结算、未知版本；有效旧档保留。退出/崩溃不丢失此前成功自动存档。",
+      "method": "runtime",
+      "status": "pending"
+    },
+    {
+      "id": "R05",
+      "area": "人物分支",
+      "pass_condition": "96节点每一选项在正常/重伤/离队和已知/未知责任下检查适用内容；不在场不说现场台词，没发生不说已发生，承诺未核验不生成已履约结语。",
+      "method": "runtime_editorial",
+      "status": "pending"
+    },
+    {
+      "id": "R06",
+      "area": "教程与输入",
+      "pass_condition": "M01最多3张分回合、其余每关最多1首次卡；开关不改规则，过期目标撤下提示；无AP有结束/撤退入口；键鼠/文字缩放不藏确认/取消。",
+      "method": "runtime_human",
+      "status": "pending"
+    },
+    {
+      "id": "R07",
+      "area": "首发硬件",
+      "pass_condition": "在记录CPU/GPU/内存的Windows 11 x64 8GB参考机测试；1080p棋盘目标60fps（稳定场景95%帧≤16.7ms），冷启动≤10s，输入反馈≤100ms，连续2小时内存无持续增长趋势；未实测不发布最低配置。",
+      "method": "runtime_device",
+      "status": "pending"
+    },
+    {
+      "id": "R08",
+      "area": "素材与授权",
+      "pass_condition": "清单素材可追溯来源/使用权，8人96px辨识一致；字号三档无遮挡，重要信息不只靠颜色；独立音量与静音生效；用户确认代表素材后再批量。",
+      "method": "asset_human",
+      "status": "pending"
+    },
+    {
+      "id": "H01",
+      "area": "新人能上手",
+      "pass_condition": "至少5名未看方案的目标玩家；至少4名无需口头教学能在M01说明目标、预告、撤离及一种替代解法；记录卡住位置，不能用测试者背设计文档冒充。",
+      "method": "human",
+      "status": "pending"
+    },
+    {
+      "id": "H02",
+      "area": "选择有意义",
+      "pass_condition": "至少5名玩过一章者能各自解释一次培养/放弃培养与换人/留队的具体原因；每角色至少一个实际可获得时点的独特收益场景，不要求各人同胜率。若只是多说对白或普通路线全方位替代，回调关卡与收益。",
+      "method": "human_runtime",
+      "status": "pending"
+    },
+    {
+      "id": "H03",
+      "area": "经济和整局疲劳",
+      "pass_condition": "至少5份完整周目观察，包含主线为主/支线积极/固定喜好队；记录每夜管理耗时、被迫恢复/等待、资源短缺、阅读与战斗时长；无因经济无法继续；若多数报告同一步骤反复无意义，修交互/节奏后复测。",
+      "method": "human",
+      "status": "pending"
+    },
+    {
+      "id": "H04",
+      "area": "品质停止线",
+      "pass_condition": "任何存档丢失、剧情根事实自相矛盾、无法操作/继续、错误永久离队均阻止发布；影响选择的数值/解释错也必须修。允许记录不影响结果的小视觉瑕疵，不用其掩盖玩法问题。",
+      "method": "release_gate",
+      "status": "pending"
+    }
+  ],
+  "gate_policy": {
+    "development_ready": "D01–D06实际通过、无待用户决定的基础玩法矛盾、范围和接口明确；可以建议进入同一最终项目开发。",
+    "release_ready": "R01–R08、H01–H04全部有实际证据且阻断缺陷为0；本轮不能给出发布通过。",
+    "authorization": "本轮只审查；即使设计达到开工条件也不开始写正式运行代码。"
+  },
+  "coverage_limits": [
+    "不能穷举全部行动序列、所有记忆组合和全部玩家偏好。",
+    "统计是脚本策略结果，不是真人胜率、留存率、付费率或市场证明。",
+    "通过检查意味着已知范围可实施，不保证后续没有新bug。"
+  ],
+  "existing_evidence": [
+    "0.17训练审查的868局/26364场属于明确输入的历史证据；本轮重新跑1174条规则回归和108局整局回归，另加版本/流程/L2检查。",
+    "旧33条Godot基础模块检查仅涵盖旧情绪与保存容器，不等于本版完整运行验收。"
+  ],
+  "change_control": "后续发现会改玩法的矛盾，更新唯一baseline、测试期望和手册并记决策；显示/实现bug可直接修。新增系统须替换已有范围或重新评估成本，不静默扩张。"
+}

@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M3
+
+GUI_EXTERNAL_DISPLAY: screen=1 primary=0 total=2
+PROJECT_BOOT_OK: P4 campaign UI
+ERROR: Attempting to make child window exclusive, but the parent window already has another exclusive child. This window: /root/Main/@Window@748, parent window: /root, current exclusive child window: /root/Main/@Window@732
+   at: _set_transient_exclusive_child (scene/main/window.cpp:1160)
+   GDScript backtrace (most recent call first):
+       [0] modal (res://scripts/app/main.gd:570)
+       [1] show_intro (res://scripts/app/main.gd:925)
+       [2] <anonymous lambda> (res://scripts/app/main.gd:936)

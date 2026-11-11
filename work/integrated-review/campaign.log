@@ -1,0 +1,7 @@
+标准轮换 24 0 shared_control injurywithdraw 0 cards 9
+标准全支线 24 12 shared_control injurywithdraw 0 cards 9
+最高轮换 24 0 shared_control injurywithdraw 0 cards 9
+最高连续失误后继续 24 0 shared_control injurywithdraw 4 cards 10
+固定偏好阵容且关闭讲解 24 0 shared_control injurywithdraw 0 cards 0
+反复失约但仍尝试救援 24 0 shared_control injurywithdraw 0 cards 9
+真实购买装备与训练合作，争取额外目标 24 0 shared_control injurywithdraw 0 cards 10

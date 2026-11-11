@@ -1,0 +1,7 @@
+基础通关，不接现场值守 24 0 {'credits': 622, 'supplies': 32, 'parts': 50} {'service_delivered': 0, 'intact': 8, 'repaired': 0, 'unrepaired': 0, 'repair_projects': 0}
+固定偏好，支付训练争取在线服务 24 0 {'credits': 584, 'supplies': 48, 'parts': 47} {'service_delivered': 7, 'intact': 8, 'repaired': 0, 'unrepaired': 0, 'repair_projects': 0}
+工程电力与防护人员轮换 24 0 {'credits': 602, 'supplies': 46, 'parts': 48} {'service_delivered': 6, 'intact': 8, 'repaired': 0, 'unrepaired': 0, 'repair_projects': 0}
+拆除威胁，营地优先维修 24 0 {'credits': 622, 'supplies': 26, 'parts': 50} {'service_delivered': 8, 'intact': 2, 'repaired': 6, 'unrepaired': 0, 'repair_projects': 6}
+同样拆除，保留物资与项目 24 0 {'credits': 622, 'supplies': 32, 'parts': 50} {'service_delivered': 8, 'intact': 2, 'repaired': 0, 'unrepaired': 6, 'repair_projects': 0}
+轮换并做全部可出勤支线 24 12 {'credits': 776, 'supplies': 54, 'parts': 59} {'service_delivered': 12, 'intact': 12, 'repaired': 0, 'unrepaired': 0, 'repair_projects': 0}
+最高难度连续失误后仍继续 24 0 {'credits': 496, 'supplies': 27, 'parts': 39} {'service_delivered': 7, 'intact': 8, 'repaired': 0, 'unrepaired': 0, 'repair_projects': 0}

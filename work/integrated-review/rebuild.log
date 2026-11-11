@@ -1,0 +1,590 @@
+Authored combat, six enemies, 24 abilities, 12 equipment items, four protocols and eight facility tiers.
+Authored 36 encounters with coordinates, mandatory groups, controls, variants and consequences.
+Authored 24 personal nodes, 12 pair scenes, 24 community nodes, 18 everyday scenes, 18 consequence nodes = 96.
+Authored cross-system receipts, eight proof verifiers, nine directed history-repair routes and resolved contradictions.
+{
+  "existing_rule": [
+    {
+      "day": 1,
+      "before": 42,
+      "new_strength": 19.71,
+      "serious": false,
+      "resentment": 61.71
+    },
+    {
+      "day": 2,
+      "before": 57.64,
+      "new_strength": 24.05,
+      "serious": false,
+      "resentment": 66
+    },
+    {
+      "day": 3,
+      "before": 66,
+      "new_strength": 27.95,
+      "serious": false,
+      "resentment": 66
+    }
+  ],
+  "specified_escalation": [
+    {
+      "day": 1,
+      "before": 42,
+      "new_strength": 19.71,
+      "serious": false,
+      "resentment": 61.71
+    },
+    {
+      "day": 2,
+      "before": 57.64,
+      "new_strength": 24.05,
+      "serious": false,
+      "resentment": 66
+    },
+    {
+      "day": 3,
+      "before": 66,
+      "new_strength": 40,
+      "serious": true,
+      "resentment": 100
+    }
+  ],
+  "no_old_grudge": [
+    {
+      "day": 1,
+      "before": 0,
+      "new_strength": 15.37,
+      "serious": false,
+      "resentment": 15.37
+    },
+    {
+      "day": 2,
+      "before": 12.2,
+      "new_strength": 17.11,
+      "serious": false,
+      "resentment": 24
+    },
+    {
+      "day": 3,
+      "before": 23.27,
+      "new_strength": 28.87,
+      "serious": true,
+      "resentment": 52.14
+    }
+  ]
+}
+Authored whole-campaign state, phase, settlement and interface contract.
+Applied v0.5 target, contextual-cooperation and epilogue design amendments.
+Applied 0.6 systematic design amendments; runtime unchanged.
+Applied 0.7 tactical design amendments.
+Wrote0.8experience design:15guide entries,8visual/personality briefs.
+Applied0.9 single-owner,source,help budget and Mo remote-work revisions.
+{"passed": 488, "route_cases": 46, "max_rounds": 12, "story_paths": 224, "last_scene_day": 23}
+[{"style": "baseline", "rounds": 5, "ap_used": 26, "supplies_used": 0, "hp": {"A": 10, "B": 10, "C": 10}}, {"style": "level2", "rounds": 4, "ap_used": 23, "supplies_used": 0, "hp": {"A": 10, "B": 10, "C": 10}}, {"style": "battery", "rounds": 5, "ap_used": 25, "supplies_used": 2, "hp": {"A": 10, "B": 10, "C": 10}}]
+Story obligation and ending checks: 49
+Synchronized primary project data and honest implementation status to v0.4.
+Story obligation and ending checks: 49
+{
+  "checks": 51,
+  "scenarios": [
+    {
+      "name": "偏好固定队伍",
+      "ending": "shared_control",
+      "main": 24,
+      "side": 6,
+      "resources": {
+        "credits": 459,
+        "supplies": 57,
+        "parts": 33
+      },
+      "withdrawn": 0
+    },
+    {
+      "name": "轮换与建设",
+      "ending": "shared_control",
+      "main": 24,
+      "side": 6,
+      "resources": {
+        "credits": 399,
+        "supplies": 46,
+        "parts": 25
+      },
+      "withdrawn": 0
+    },
+    {
+      "name": "最高难度极端连续失败",
+      "ending": "evacuation",
+      "main": 24,
+      "side": 0,
+      "resources": {
+        "credits": 144,
+        "supplies": 0,
+        "parts": 0
+      },
+      "withdrawn": 8
+    },
+    {
+      "name": "固定队伍：每主任务使用2份医疗耗材",
+      "ending": "shared_control",
+      "main": 24,
+      "side": 6,
+      "resources": {
+        "credits": 447,
+        "supplies": 13,
+        "parts": 33
+      },
+      "withdrawn": 0
+    },
+    {
+      "name": "轮换：每主任务使用2份医疗耗材",
+      "ending": "shared_control",
+      "main": 24,
+      "side": 6,
+      "resources": {
+        "credits": 375,
+        "supplies": 5,
+        "parts": 25
+      },
+      "withdrawn": 0
+    }
+  ]
+}
+Equipment target and unlock checks: 84
+Wrote whole-campaign design review and master-document section.
+Recorded design-only phase; no runtime implementation authorized in this stage.
+{
+  "checks": 89,
+  "properties": {
+    "relationship_transitions": 8000,
+    "band_states": 40804
+  },
+  "examples": [
+    {
+      "id": "saturation",
+      "old_before": 100,
+      "old_after": 100,
+      "new_before": 100.0,
+      "new_after": 86.9796,
+      "new_active": [
+        17.1633,
+        17.1633,
+        10.6531
+      ]
+    },
+    {
+      "id": "repeated_breach",
+      "resentment": [
+        61.7111,
+        66.0,
+        100.0
+      ],
+      "trust": 72
+    }
+  ],
+  "runtime_unchanged": true
+}
+Wrote systematic audit report: 18 issue groups, 89 named checks.
+Mechanic fixture checks: 115 coverage: 40
+M01 default r1,r2 relaxed A OK 7 0
+M01 default r1,r2 relaxed B OK 7 0
+M01 default r1,r2 standard A OK 7 0
+M01 default r1,r2 standard B OK 7 0
+M01 default r1,r2 hard A OK 7 0
+M01 default r1,r2 hard B OK 7 0
+M02 default cut,power relaxed A OK 6 0
+M02 default cut,power relaxed B OK 6 0
+M02 default cut,power standard A OK 6 0
+M02 default cut,power standard B OK 6 0
+M02 default cut,power hard A OK 6 0
+M02 default cut,power hard B OK 6 0
+M03 default door,crate relaxed A OK 7 1
+M03 default door,crate relaxed B OK 7 1
+M03 default door,crate standard A OK 7 2
+M03 default door,crate standard B OK 7 2
+M03 default door,crate hard A OK 7 2
+M03 default door,crate hard B OK 7 2
+M04 default brace1,brace2,worker relaxed A OK 6 1
+M04 default brace1,brace2,worker relaxed B OK 6 1
+M04 default brace1,brace2,worker standard A OK 6 2
+M04 default brace1,brace2,worker standard B OK 6 2
+M04 default brace1,brace2,worker hard A OK 6 2
+M04 default brace1,brace2,worker hard B OK 6 2
+M05 default isolate,pump relaxed A OK 5 2
+M05 default isolate,pump relaxed B OK 5 2
+M05 default isolate,pump standard A OK 5 4
+M05 default isolate,pump standard B OK 5 4
+M05 default isolate,pump hard A OK 5 4
+M05 default isolate,pump hard B OK 5 4
+M06 default r1,r2 relaxed A OK 7 1
+M06 default r1,r2 relaxed B OK 7 1
+M06 default r1,r2 standard A OK 7 2
+M06 default r1,r2 standard B OK 7 2
+M06 default r1,r2 hard A OK 7 2
+M06 default r1,r2 hard B OK 7 2
+M07 default cut,worker relaxed A OK 8 0
+M07 default cut,worker relaxed B OK 8 0
+M07 default cut,worker standard A OK 8 0
+M07 default cut,worker standard B OK 8 0
+M07 default cut,worker hard A OK 8 0
+M07 default cut,worker hard B OK 8 0
+M08 default block1,block2,truck relaxed A OK 10 1
+M08 default block1,block2,truck relaxed B OK 10 1
+M08 default block1,block2,truck standard A OK 10 2
+M08 default block1,block2,truck standard B OK 10 2
+M08 default block1,block2,truck hard A OK 10 2
+M08 default block1,block2,truck hard B OK 10 2
+M09 default r1,r2 relaxed A OK 8 0
+M09 default r1,r2 relaxed B OK 8 0
+M09 default r1,r2 standard A OK 8 0
+M09 default r1,r2 standard B OK 8 0
+M09 default r1,r2 hard A OK 8 0
+M09 default r1,r2 hard B OK 8 0
+M10 default test1,test2 relaxed A OK 5 0
+M10 default test1,test2 relaxed B OK 5 0
+M10 default test1,test2 standard A OK 5 0
+M10 default test1,test2 standard B OK 5 0
+M10 default test1,test2 hard A OK 5 0
+M10 default test1,test2 hard B OK 5 0
+M11 default cut,lock relaxed A OK 5 0
+M11 default cut,lock relaxed B OK 5 0
+M11 default cut,lock standard A OK 5 0
+M11 default cut,lock standard B OK 5 0
+M11 default cut,lock hard A OK 5 0
+M11 default cut,lock hard B OK 5 0
+M12 default backup,drive relaxed A OK 7 0
+M12 default backup,drive relaxed B OK 7 0
+M12 default backup,drive standard A OK 7 0
+M12 default backup,drive standard B OK 7 0
+M12 default backup,drive hard A OK 7 0
+M12 default backup,drive hard B OK 7 0
+M13 default cut,log relaxed A OK 5 0
+M13 default cut,log relaxed B OK 5 0
+M13 default cut,log standard A OK 5 0
+M13 default cut,log standard B OK 5 0
+M13 default cut,log hard A OK 5 0
+M13 default cut,log hard B OK 5 0
+M14 default meds relaxed A OK 5 0
+M14 default meds relaxed B OK 5 0
+M14 default meds standard A OK 5 0
+M14 default meds standard B OK 5 0
+M14 default meds hard A OK 5 0
+M14 default meds hard B OK 5 0
+M14 default cold relaxed A OK 5 0
+M14 default cold relaxed B OK 5 0
+M14 default cold standard A OK 5 0
+M14 default cold standard B OK 5 0
+M14 default cold hard A OK 5 0
+M14 default cold hard B OK 5 0
+M15 default north relaxed A OK 6 0
+M15 default north relaxed B OK 6 0
+M15 default north standard A OK 6 0
+M15 default north standard B OK 6 0
+M15 default north hard A OK 6 0
+M15 default north hard B OK 6 0
+M15 default east relaxed A OK 7 0
+M15 default east relaxed B OK 7 0
+M15 default east standard A OK 7 0
+M15 default east standard B OK 7 0
+M15 default east hard A OK 7 0
+M15 default east hard B OK 7 0
+M15 default west relaxed A OK 3 0
+M15 default west relaxed B OK 3 0
+M15 default west standard A OK 3 0
+M15 default west standard B OK 3 0
+M15 default west hard A OK 3 0
+M15 default west hard B OK 3 0
+M16 default lane,people relaxed A OK 8 0
+M16 default lane,people relaxed B OK 8 0
+M16 default lane,people standard A OK 8 0
+M16 default lane,people standard B OK 8 0
+M16 default lane,people hard A OK 8 0
+M16 default lane,people hard B OK 8 0
+M17 default repair2 relaxed A OK 6 3
+M17 default repair2 relaxed B OK 6 3
+M17 default repair2 standard A OK 6 5
+M17 default repair2 standard B OK 6 5
+M17 default repair2 hard A OK 6 5
+M17 default repair2 hard B OK 6 5
+M17 default isolate relaxed A OK 3 0
+M17 default isolate relaxed B OK 3 0
+M17 default isolate standard A OK 3 0
+M17 default isolate standard B OK 3 0
+M17 default isolate hard A OK 3 0
+M17 default isolate hard B OK 3 0
+M18 default relay,broadcast relaxed A OK 7 0
+M18 default relay,broadcast relaxed B OK 7 0
+M18 default relay,broadcast standard A OK 7 0
+M18 default relay,broadcast standard B OK 7 0
+M18 default relay,broadcast hard A OK 7 0
+M18 default relay,broadcast hard B OK 7 0
+M19 default patient,shelter relaxed A OK 6 2
+M19 default patient,shelter relaxed B OK 6 2
+M19 default patient,shelter standard A OK 6 4
+M19 default patient,shelter standard B OK 6 4
+M19 default patient,shelter hard A OK 6 4
+M19 default patient,shelter hard B OK 6 4
+M20 default west relaxed A OK 4 0
+M20 default west relaxed B OK 4 0
+M20 default west standard A OK 4 0
+M20 default west standard B OK 4 0
+M20 default west hard A OK 4 0
+M20 default west hard B OK 4 0
+M20 default east relaxed A OK 5 0
+M20 default east relaxed B OK 5 0
+M20 default east standard A OK 5 0
+M20 default east standard B OK 5 0
+M20 default east hard A OK 5 0
+M20 default east hard B OK 5 0
+M21 default route relaxed A OK 4 0
+M21 default route relaxed B OK 4 0
+M21 default route standard A OK 4 0
+M21 default route standard B OK 4 0
+M21 default route hard A OK 4 0
+M21 default route hard B OK 4 0
+M22 default handover relaxed A OK 5 0
+M22 default handover relaxed B OK 5 0
+M22 default handover standard A OK 5 0
+M22 default handover standard B OK 5 0
+M22 default handover hard A OK 5 0
+M22 default handover hard B OK 5 0
+M23 default r1,r2 relaxed A OK 8 0
+M23 default r1,r2 relaxed B OK 8 0
+M23 default r1,r2 standard A OK 8 0
+M23 default r1,r2 standard B OK 8 0
+M23 default r1,r2 hard A OK 8 0
+M23 default r1,r2 hard B OK 8 0
+M24 shared_control bus,auth relaxed A OK 6 0
+M24 shared_control bus,auth relaxed B OK 6 0
+M24 shared_control bus,auth standard A OK 6 0
+M24 shared_control bus,auth standard B OK 6 0
+M24 shared_control bus,auth hard A OK 6 0
+M24 shared_control bus,auth hard B OK 6 0
+M24 distributed_rebuild west,east relaxed A OK 4 0
+M24 distributed_rebuild west,east relaxed B OK 4 0
+M24 distributed_rebuild west,east standard A OK 4 0
+M24 distributed_rebuild west,east standard B OK 4 0
+M24 distributed_rebuild west,east hard A OK 4 0
+M24 distributed_rebuild west,east hard B OK 4 0
+M24 evacuation r1,r2 relaxed A OK 7 0
+M24 evacuation r1,r2 relaxed B OK 7 0
+M24 evacuation r1,r2 standard A OK 7 0
+M24 evacuation r1,r2 standard B OK 7 0
+M24 evacuation r1,r2 hard A OK 7 0
+M24 evacuation r1,r2 hard B OK 7 0
+S01 default engine relaxed A OK 4 0
+S01 default engine relaxed B OK 4 0
+S01 default engine standard A OK 4 0
+S01 default engine standard B OK 4 0
+S01 default engine hard A OK 4 0
+S01 default engine hard B OK 4 0
+S02 default med relaxed A OK 5 0
+S02 default med relaxed B OK 5 0
+S02 default med standard A OK 5 0
+S02 default med standard B OK 5 0
+S02 default med hard A OK 5 0
+S02 default med hard B OK 5 0
+S02 default books relaxed A OK 6 0
+S02 default books relaxed B OK 6 0
+S02 default books standard A OK 6 0
+S02 default books standard B OK 6 0
+S02 default books hard A OK 6 0
+S02 default books hard B OK 6 0
+S03 default cut,passenger relaxed A OK 7 0
+S03 default cut,passenger relaxed B OK 7 0
+S03 default cut,passenger standard A OK 7 0
+S03 default cut,passenger standard B OK 7 0
+S03 default cut,passenger hard A OK 7 0
+S03 default cut,passenger hard B OK 7 0
+S04 default seed relaxed A OK 5 0
+S04 default seed relaxed B OK 5 0
+S04 default seed standard A OK 5 0
+S04 default seed standard B OK 5 0
+S04 default seed hard A OK 5 0
+S04 default seed hard B OK 5 0
+S04 default rack relaxed A OK 5 0
+S04 default rack relaxed B OK 5 0
+S04 default rack standard A OK 5 0
+S04 default rack standard B OK 5 0
+S04 default rack hard A OK 5 0
+S04 default rack hard B OK 5 0
+S05 default isolate,cloth relaxed A OK 8 0
+S05 default isolate,cloth relaxed B OK 8 0
+S05 default isolate,cloth standard A OK 8 0
+S05 default isolate,cloth standard B OK 8 0
+S05 default isolate,cloth hard A OK 8 0
+S05 default isolate,cloth hard B OK 8 0
+S06 default locate,resident relaxed A OK 7 0
+S06 default locate,resident relaxed B OK 7 0
+S06 default locate,resident standard A OK 7 0
+S06 default locate,resident standard B OK 7 0
+S06 default locate,resident hard A OK 7 0
+S06 default locate,resident hard B OK 7 0
+S07 default clerk relaxed A OK 5 0
+S07 default clerk relaxed B OK 5 0
+S07 default clerk standard A OK 5 0
+S07 default clerk standard B OK 5 0
+S07 default clerk hard A OK 5 0
+S07 default clerk hard B OK 5 0
+S08 default luggage relaxed A OK 5 0
+S08 default luggage relaxed B OK 5 0
+S08 default luggage standard A OK 5 0
+S08 default luggage standard B OK 5 0
+S08 default luggage hard A OK 5 0
+S08 default luggage hard B OK 5 0
+S08 default tools relaxed A OK 6 0
+S08 default tools relaxed B OK 6 0
+S08 default tools standard A OK 6 0
+S08 default tools standard B OK 6 0
+S08 default tools hard A OK 6 0
+S08 default tools hard B OK 6 0
+S09 default class relaxed A OK 4 0
+S09 default class relaxed B OK 4 0
+S09 default class standard A OK 4 0
+S09 default class standard B OK 4 0
+S09 default class hard A OK 4 0
+S09 default class hard B OK 4 0
+S10 default light relaxed A OK 4 0
+S10 default light relaxed B OK 4 0
+S10 default light standard A OK 4 0
+S10 default light standard B OK 4 0
+S10 default light hard A OK 4 0
+S10 default light hard B OK 4 0
+S11 default wire relaxed A OK 4 0
+S11 default wire relaxed B OK 4 0
+S11 default wire standard A OK 4 0
+S11 default wire standard B OK 4 0
+S11 default wire hard A OK 4 0
+S11 default wire hard B OK 4 0
+S12 default box relaxed A OK 5 0
+S12 default box relaxed B OK 5 0
+S12 default box standard A OK 5 0
+S12 default box standard B OK 5 0
+S12 default box hard A OK 5 0
+S12 default box hard B OK 5 0
+{
+  "checks": 9,
+  "counts": {
+    "map_goal_cases": 46,
+    "difficulty_variant_cases": 276,
+    "policy_attempts": 1104,
+    "optional_attempts": 184,
+    "equipment_growth_relationship_attempts": 1794,
+    "one_round_delay_attempts": 184,
+    "full_basic_witnesses": 276,
+    "factorial_configurations": 736,
+    "factorial_policy_attempts": 1472
+  },
+  "failed_policy_attempts": 2,
+  "one_round_delay_solved": 46
+}
+{"witnesses_replayed": 276, "player_commands_checked": 7392, "enemy_environment_steps_replayed": 1314, "strategy_policy_called": false, "result": "PASS", "boundary": "Independent command legality/replay, same authored rule model; not independent human play or production implementation."}
+[
+  {
+    "name": "实际战斗结果驱动的标准轮换整局",
+    "ending": "shared_control",
+    "resources": {
+      "credits": 622,
+      "supplies": 32,
+      "parts": 50
+    },
+    "verified_contracts": [
+      "lin",
+      "xu",
+      "su",
+      "chen",
+      "ye",
+      "mo",
+      "jiang"
+    ],
+    "levels": {
+      "lin": 5,
+      "xu": 5,
+      "su": 5,
+      "chen": 5,
+      "ye": 5,
+      "he": 5,
+      "mo": 4,
+      "jiang": 4
+    }
+  },
+  {
+    "name": "实际战斗结果驱动的最高难度轮换整局",
+    "ending": "shared_control",
+    "resources": {
+      "credits": 622,
+      "supplies": 32,
+      "parts": 50
+    },
+    "verified_contracts": [
+      "lin",
+      "xu",
+      "su",
+      "chen",
+      "ye",
+      "mo",
+      "jiang"
+    ],
+    "levels": {
+      "lin": 5,
+      "xu": 5,
+      "su": 5,
+      "chen": 5,
+      "ye": 5,
+      "he": 5,
+      "mo": 4,
+      "jiang": 4
+    }
+  }
+]
+{"mission": "M22", "rounds": 6, "limit": 8, "ap": 26, "damage": 0, "all_extracted": true, "story_proof_verified": true}
+Wrote 0.7 tactical report: 369961 characters,36 maps,40 mechanic rows.
+Experience checks: 73 passed;1200context samples;24M01strategy configurations.
+Wrote0.8player-experience report and master section.
+M01 named configurations 1 solved 1 skill benefits 0
+M02 named configurations 1 solved 1 skill benefits 0
+M03 named configurations 1 solved 1 skill benefits 0
+M04 named configurations 1 solved 1 skill benefits 0
+M05 named configurations 4 solved 4 skill benefits 0
+M06 named configurations 4 solved 4 skill benefits 0
+M07 named configurations 4 solved 4 skill benefits 3
+M08 named configurations 10 solved 10 skill benefits 0
+M09 named configurations 10 solved 10 skill benefits 0
+M10 named configurations 10 solved 10 skill benefits 0
+M11 named configurations 20 solved 20 skill benefits 0
+M12 named configurations 20 solved 20 skill benefits 0
+M13 named configurations 20 solved 20 skill benefits 4
+M14 named configurations 70 solved 70 skill benefits 8
+M15 named configurations 105 solved 105 skill benefits 37
+M16 named configurations 35 solved 35 skill benefits 18
+M17 named configurations 112 solved 112 skill benefits 0
+M18 named configurations 56 solved 56 skill benefits 6
+M19 named configurations 56 solved 56 skill benefits 26
+M20 named configurations 112 solved 112 skill benefits 0
+M21 named configurations 56 solved 56 skill benefits 0
+M22 named configurations 56 solved 56 skill benefits 0
+M23 named configurations 56 solved 56 skill benefits 23
+M24 named configurations 168 solved 168 skill benefits 25
+S01 named configurations 1 solved 1 skill benefits 0
+S02 named configurations 8 solved 8 skill benefits 0
+S03 named configurations 4 solved 4 skill benefits 0
+S04 named configurations 20 solved 20 skill benefits 0
+S05 named configurations 20 solved 20 skill benefits 0
+S06 named configurations 20 solved 20 skill benefits 0
+S07 named configurations 35 solved 35 skill benefits 0
+S08 named configurations 112 solved 112 skill benefits 26
+S09 named configurations 56 solved 56 skill benefits 15
+S10 named configurations 56 solved 56 skill benefits 0
+S11 named configurations 56 solved 56 skill benefits 0
+S12 named configurations 56 solved 56 skill benefits 6
+{"attempts": 5728, "named_configurations": 1432, "all_solved": true, "skill_uses": {"lin_1": 266, "xu_1": 55, "chen_1": 14, "ye_1": 4, "su_3": 143, "mo_1": 473, "lin_3": 72, "he_1": 1, "jiang_1": 34}}
+标准轮换 24 0 shared_control injurywithdraw 0 cards 9
+标准全支线 24 12 shared_control injurywithdraw 0 cards 9
+最高轮换 24 0 shared_control injurywithdraw 0 cards 9
+最高连续失误后继续 24 0 shared_control injurywithdraw 4 cards 10
+固定偏好阵容且关闭讲解 24 0 shared_control injurywithdraw 0 cards 0
+反复失约但仍尝试救援 24 0 shared_control injurywithdraw 0 cards 9
+真实购买装备与训练合作，争取额外目标 24 0 shared_control injurywithdraw 0 cards 10
+Integrated adversarial checks: 38 passed; guidance traces828.
+Wrote0.9 integrated review,36map table and master section.
+Wrote final design report: 389105 characters
+Final0.7artifact checks: 192 passed; runtime unchanged.

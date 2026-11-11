@@ -1,0 +1,32 @@
+{
+  "version": "0.14",
+  "data_sha256": {
+    "facilities.json": "b7a1774db0358850e1a3c050cd993963f6d4c7a53f19a739dea3914355709e7a",
+    "production_scope.json": "37765dbf27c256b96ac3076181443113003b018804dfcf1c2bd4e2e36b0f6087",
+    "integrated_review_contract.json": "10187719d53255a03292020e3807e178214ca249bb2f91705f56589e4ace7aac",
+    "tactical_review_contract.json": "c050d86adf6cb5a4ee018bb702407f7a71b050f56d24ab98ab3e718dbf26061d",
+    "boards.json": "d895aca21b760fb1d71cb86f73f9c7fc8eaa6d81bd92ab3104c0eec3b5a8d5a0",
+    "player_experience_contract.json": "0cc3ef495086e08c1b29ea1614ea8993f56e741b2fd747936a61063b9e6cddbc",
+    "growth_identity_contract.json": "360a16db904c866d018a9fc08e231086eb2a0bef911727869d3a547aa7e8fe85",
+    "whole_campaign_contract.json": "e25d8cd0dc2fd6598042ee0f704a3aabe166e17c6cb9eb904cfd56c25a2e7613",
+    "stories.json": "a3050613a98fcf79ae601acc3dbaea8d896b2fecf0a75d4d8611ee9062897f1a",
+    "player_choice_contract.json": "597df92c44458376a471a21e21c3af31cdfd0a0caf36f90c4e22ddb5d5667a54",
+    "relationship_edge_cases.json": "236e4d89ce6564137907f201f954c61507eb7c87cbb676ebf9ff881c1959e2d4",
+    "enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+    "full_audit_contract.json": "c2cbda8cecbd5e4d8540142e23ef4cb6035f3e2ccd1f8f169f6a24edeb88e8ef",
+    "design_manifest.json": "422f84f14c307562fb76f9920ed61343e7beb50e65ef37217684bd11bb2db1fa",
+    "system_audit_contract.json": "8982635b6a8e189236e28f07c4bdbb5c90452a8af82d555919701dedd346c333",
+    "approach_review_contract.json": "591b52f30a343dc121d891594ff9e73ad90e438d88fd0892b0cd6cf48c81613a",
+    "integration.json": "f718c769d4ee381644f4f3291228945a393d5bae24203a970fa2827ecbf0a434",
+    "abilities.json": "381e5655eaad13cafe71a4ed988a10d57983744f432903bd4716ebdd935a2798",
+    "combat.json": "2d8519e85ecde519ddc584b67794833966395e8c890cd87a9492f9ce57ab6392",
+    "equipment.json": "31987b21d81881d0c1befaa15b87c92595a00b8b6ef675f7ade710096a44e0c7",
+    "progression_relationship.json": "ce1bfe61ae78342fae81c137a2c60d434389a43741c0136c460661298010116b"
+  },
+  "reference_sha256": {
+    "work/growth-identity-review/model.py": "a4c840a8bc33be295a59be45b6a64f568572c5e872b8bce7e76e40ece92983ba",
+    "work/growth-identity-review/relationships.py": "c030ef9f4f89df6a50020b1bd9dbec86efb3c00a3812a3d0c91b843ee9d6b0c9",
+    "work/campaign-review/ledger_review.py": "0286e1767ee1b44872946d32cbf72202ee04fe5699acad5b71b44e5a3d3a4a3f"
+  },
+  "scope": "Fingerprint of rules accompanying this audit; not a product save compatibility implementation."
+}

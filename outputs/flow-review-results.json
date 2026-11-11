@@ -1,0 +1,5090 @@
+{
+  "version": "0.3",
+  "date": "2026-10-31",
+  "passed": 31,
+  "checks": [
+    "normal full trace reaches shared control",
+    "all-failure abstract trace settles 24 duties without resource debt",
+    "all-failure trace has a complete alternative ending",
+    "missing-evidence route is disabled before committing final mission",
+    "isolation route does not require evidence or named hero",
+    "duplicate evidence does not consume another project or grant credit",
+    "missing direct evidence can be recovered before the ending",
+    "no retroactive evidence lookup after the final mission",
+    "free ordinary recovery is not gated by buying treatment",
+    "two failed duties still leave valid resource state",
+    "optional expedited treatment can be bought after two allowances",
+    "treatment cost has explicit payment",
+    "two failures can return the original team on day three",
+    "duplicate mission reward rejected",
+    "new crew cannot create a food-tax penalty",
+    "projected fatigue test rejects cap-and-reset exploit",
+    "a fresh main-duty actor can take a side duty",
+    "late exhausted actor cannot double-deploy",
+    "there are no side duties after final settlement",
+    "all evidence has multiple direct sources and explicit public review windows",
+    "each main milestone has an explicit no-named-hero fallback contract",
+    "normal and hard differ in loss policy, not basic action control",
+    "ordinary and standard never impose permanent loss on a missed rescue",
+    "hard-mode timely retrieval still saves the developed character",
+    "hard-mode loss needs a missed deadline or confirmed abandonment",
+    "two conflicts select one deterministic scene without dropping restrictions",
+    "constraint categories do not override universal movement or first aid",
+    "roster scheduling never double-books more than three main heroes",
+    "camp schedule stays within two projects",
+    "fatigue comparison stays in valid range",
+    "training and purchase costs stay within earned resources"
+  ],
+  "traces": {
+    "normal": [
+      {
+        "day": 1,
+        "mission": "M01",
+        "outcome": "success",
+        "before": {
+          "credits": 60,
+          "supplies": 8,
+          "parts": 2
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 84,
+          "supplies": 10,
+          "parts": 4
+        },
+        "infrastructure": 6,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 2,
+        "mission": "M02",
+        "outcome": "success",
+        "before": {
+          "credits": 84,
+          "supplies": 10,
+          "parts": 4
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 108,
+          "supplies": 12,
+          "parts": 6
+        },
+        "infrastructure": 7,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 3,
+        "mission": "M03",
+        "outcome": "success",
+        "before": {
+          "credits": 108,
+          "supplies": 12,
+          "parts": 6
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 132,
+          "supplies": 14,
+          "parts": 8
+        },
+        "infrastructure": 7,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 4,
+        "mission": "M04",
+        "outcome": "success",
+        "before": {
+          "credits": 132,
+          "supplies": 14,
+          "parts": 8
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 156,
+          "supplies": 16,
+          "parts": 10
+        },
+        "infrastructure": 8,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 5,
+        "mission": "M05",
+        "outcome": "success",
+        "before": {
+          "credits": 156,
+          "supplies": 16,
+          "parts": 10
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 180,
+          "supplies": 18,
+          "parts": 12
+        },
+        "infrastructure": 9,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 6,
+        "mission": "M06",
+        "outcome": "success",
+        "before": {
+          "credits": 180,
+          "supplies": 18,
+          "parts": 12
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 204,
+          "supplies": 20,
+          "parts": 14
+        },
+        "infrastructure": 9,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 7,
+        "mission": "M07",
+        "outcome": "success",
+        "before": {
+          "credits": 204,
+          "supplies": 20,
+          "parts": 14
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 228,
+          "supplies": 22,
+          "parts": 16
+        },
+        "infrastructure": 9,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 8,
+        "mission": "M08",
+        "outcome": "success",
+        "before": {
+          "credits": 228,
+          "supplies": 22,
+          "parts": 16
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 252,
+          "supplies": 24,
+          "parts": 18
+        },
+        "infrastructure": 10,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 9,
+        "mission": "M09",
+        "outcome": "success",
+        "before": {
+          "credits": 252,
+          "supplies": 24,
+          "parts": 18
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 276,
+          "supplies": 26,
+          "parts": 20
+        },
+        "infrastructure": 10,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 10,
+        "mission": "M10",
+        "outcome": "success",
+        "before": {
+          "credits": 276,
+          "supplies": 26,
+          "parts": 20
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 300,
+          "supplies": 28,
+          "parts": 22
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 11,
+        "mission": "M11",
+        "outcome": "success",
+        "before": {
+          "credits": 300,
+          "supplies": 28,
+          "parts": 22
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 324,
+          "supplies": 30,
+          "parts": 24
+        },
+        "infrastructure": 11,
+        "evidence": [
+          "E_MAINTENANCE"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 12,
+        "mission": "M12",
+        "outcome": "success",
+        "before": {
+          "credits": 324,
+          "supplies": 30,
+          "parts": 24
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 348,
+          "supplies": 32,
+          "parts": 26
+        },
+        "infrastructure": 11,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 13,
+        "mission": "M13",
+        "outcome": "success",
+        "before": {
+          "credits": 348,
+          "supplies": 32,
+          "parts": 26
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 372,
+          "supplies": 34,
+          "parts": 28
+        },
+        "infrastructure": 11,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 14,
+        "mission": "M14",
+        "outcome": "success",
+        "before": {
+          "credits": 372,
+          "supplies": 34,
+          "parts": 28
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 396,
+          "supplies": 36,
+          "parts": 30
+        },
+        "infrastructure": 11,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 15,
+        "mission": "M15",
+        "outcome": "success",
+        "before": {
+          "credits": 396,
+          "supplies": 36,
+          "parts": 30
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 420,
+          "supplies": 38,
+          "parts": 32
+        },
+        "infrastructure": 11,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 16,
+        "mission": "M16",
+        "outcome": "success",
+        "before": {
+          "credits": 420,
+          "supplies": 38,
+          "parts": 32
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 444,
+          "supplies": 40,
+          "parts": 34
+        },
+        "infrastructure": 12,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 17,
+        "mission": "M17",
+        "outcome": "success",
+        "before": {
+          "credits": 444,
+          "supplies": 40,
+          "parts": 34
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 468,
+          "supplies": 42,
+          "parts": 36
+        },
+        "infrastructure": 13,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 18,
+        "mission": "M18",
+        "outcome": "success",
+        "before": {
+          "credits": 468,
+          "supplies": 42,
+          "parts": 36
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 492,
+          "supplies": 44,
+          "parts": 38
+        },
+        "infrastructure": 14,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 19,
+        "mission": "M19",
+        "outcome": "success",
+        "before": {
+          "credits": 492,
+          "supplies": 44,
+          "parts": 38
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 516,
+          "supplies": 46,
+          "parts": 40
+        },
+        "infrastructure": 14,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 20,
+        "mission": "M20",
+        "outcome": "success",
+        "before": {
+          "credits": 516,
+          "supplies": 46,
+          "parts": 40
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 540,
+          "supplies": 48,
+          "parts": 42
+        },
+        "infrastructure": 15,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 21,
+        "mission": "M21",
+        "outcome": "success",
+        "before": {
+          "credits": 540,
+          "supplies": 48,
+          "parts": 42
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 564,
+          "supplies": 50,
+          "parts": 44
+        },
+        "infrastructure": 15,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 22,
+        "mission": "M22",
+        "outcome": "success",
+        "before": {
+          "credits": 564,
+          "supplies": 50,
+          "parts": 44
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 588,
+          "supplies": 52,
+          "parts": 46
+        },
+        "infrastructure": 15,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 23,
+        "mission": "M23",
+        "outcome": "success",
+        "before": {
+          "credits": 588,
+          "supplies": 52,
+          "parts": 46
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 612,
+          "supplies": 54,
+          "parts": 48
+        },
+        "infrastructure": 16,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 24,
+        "mission": "M24",
+        "outcome": "success",
+        "before": {
+          "credits": 612,
+          "supplies": 54,
+          "parts": 48
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 636,
+          "supplies": 56,
+          "parts": 50
+        },
+        "infrastructure": 16,
+        "evidence": [
+          "E_MAINTENANCE",
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      }
+    ],
+    "all_failed": [
+      {
+        "day": 1,
+        "mission": "M01",
+        "outcome": "failed",
+        "before": {
+          "credits": 0,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 6,
+        "evidence": [],
+        "reserves": 0,
+        "named_team": [
+          "lin",
+          "xu",
+          "su"
+        ],
+        "withdrawn_after_mission": [
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "day": 2,
+        "mission": "M02",
+        "outcome": "failed",
+        "before": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 12,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 5,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "day": 3,
+        "mission": "M03",
+        "outcome": "failed",
+        "before": {
+          "credits": 12,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 18,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 5,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "day": 4,
+        "mission": "M04",
+        "outcome": "failed",
+        "before": {
+          "credits": 18,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 24,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 4,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "day": 5,
+        "mission": "M05",
+        "outcome": "failed",
+        "before": {
+          "credits": 24,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 30,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 3,
+        "evidence": [],
+        "reserves": 2,
+        "named_team": [
+          "chen"
+        ],
+        "withdrawn_after_mission": [
+          "chen",
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "day": 6,
+        "mission": "M06",
+        "outcome": "failed",
+        "before": {
+          "credits": 30,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 36,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 3,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "day": 7,
+        "mission": "M07",
+        "outcome": "failed",
+        "before": {
+          "credits": 36,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 42,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 3,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "day": 8,
+        "mission": "M08",
+        "outcome": "failed",
+        "before": {
+          "credits": 42,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 48,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 2,
+        "evidence": [],
+        "reserves": 2,
+        "named_team": [
+          "ye"
+        ],
+        "withdrawn_after_mission": [
+          "chen",
+          "lin",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 9,
+        "mission": "M09",
+        "outcome": "failed",
+        "before": {
+          "credits": 48,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 54,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 2,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "lin",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 10,
+        "mission": "M10",
+        "outcome": "failed",
+        "before": {
+          "credits": 54,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 60,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 2,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "lin",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 11,
+        "mission": "M11",
+        "outcome": "failed",
+        "before": {
+          "credits": 60,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 66,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 2,
+        "evidence": [],
+        "reserves": 2,
+        "named_team": [
+          "he"
+        ],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "lin",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 12,
+        "mission": "M12",
+        "outcome": "failed",
+        "before": {
+          "credits": 66,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 72,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 2,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "lin",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 13,
+        "mission": "M13",
+        "outcome": "failed",
+        "before": {
+          "credits": 72,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 78,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 2,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "lin",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 14,
+        "mission": "M14",
+        "outcome": "failed",
+        "before": {
+          "credits": 78,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 84,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 2,
+        "evidence": [],
+        "reserves": 2,
+        "named_team": [
+          "mo"
+        ],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 15,
+        "mission": "M15",
+        "outcome": "failed",
+        "before": {
+          "credits": 84,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 90,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 2,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 16,
+        "mission": "M16",
+        "outcome": "failed",
+        "before": {
+          "credits": 90,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 96,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 1,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 17,
+        "mission": "M17",
+        "outcome": "failed",
+        "before": {
+          "credits": 96,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 102,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 1,
+        "evidence": [],
+        "reserves": 2,
+        "named_team": [
+          "jiang"
+        ],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "jiang",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 18,
+        "mission": "M18",
+        "outcome": "failed",
+        "before": {
+          "credits": 102,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 108,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 0,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "jiang",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 19,
+        "mission": "M19",
+        "outcome": "failed",
+        "before": {
+          "credits": 108,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 114,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 0,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "jiang",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 20,
+        "mission": "M20",
+        "outcome": "failed",
+        "before": {
+          "credits": 114,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 120,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 0,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "jiang",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 21,
+        "mission": "M21",
+        "outcome": "failed",
+        "before": {
+          "credits": 120,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 126,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 0,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "jiang",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 22,
+        "mission": "M22",
+        "outcome": "failed",
+        "before": {
+          "credits": 126,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 132,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 0,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "jiang",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 23,
+        "mission": "M23",
+        "outcome": "failed",
+        "before": {
+          "credits": 132,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 138,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 0,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "jiang",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      },
+      {
+        "day": 24,
+        "mission": "M24",
+        "outcome": "failed",
+        "before": {
+          "credits": 138,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 144,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 0,
+        "evidence": [],
+        "reserves": 3,
+        "named_team": [],
+        "withdrawn_after_mission": [
+          "chen",
+          "he",
+          "jiang",
+          "lin",
+          "mo",
+          "su",
+          "xu",
+          "ye"
+        ]
+      }
+    ],
+    "isolation_no_evidence": [
+      {
+        "day": 1,
+        "mission": "M01",
+        "outcome": "success",
+        "before": {
+          "credits": 60,
+          "supplies": 8,
+          "parts": 2
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 84,
+          "supplies": 10,
+          "parts": 4
+        },
+        "infrastructure": 6,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 2,
+        "mission": "M02",
+        "outcome": "success",
+        "before": {
+          "credits": 84,
+          "supplies": 10,
+          "parts": 4
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 108,
+          "supplies": 12,
+          "parts": 6
+        },
+        "infrastructure": 7,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 3,
+        "mission": "M03",
+        "outcome": "success",
+        "before": {
+          "credits": 108,
+          "supplies": 12,
+          "parts": 6
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 132,
+          "supplies": 14,
+          "parts": 8
+        },
+        "infrastructure": 7,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 4,
+        "mission": "M04",
+        "outcome": "success",
+        "before": {
+          "credits": 132,
+          "supplies": 14,
+          "parts": 8
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 156,
+          "supplies": 16,
+          "parts": 10
+        },
+        "infrastructure": 8,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 5,
+        "mission": "M05",
+        "outcome": "success",
+        "before": {
+          "credits": 156,
+          "supplies": 16,
+          "parts": 10
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 180,
+          "supplies": 18,
+          "parts": 12
+        },
+        "infrastructure": 9,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 6,
+        "mission": "M06",
+        "outcome": "success",
+        "before": {
+          "credits": 180,
+          "supplies": 18,
+          "parts": 12
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 204,
+          "supplies": 20,
+          "parts": 14
+        },
+        "infrastructure": 9,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 7,
+        "mission": "M07",
+        "outcome": "success",
+        "before": {
+          "credits": 204,
+          "supplies": 20,
+          "parts": 14
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 228,
+          "supplies": 22,
+          "parts": 16
+        },
+        "infrastructure": 9,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 8,
+        "mission": "M08",
+        "outcome": "success",
+        "before": {
+          "credits": 228,
+          "supplies": 22,
+          "parts": 16
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 252,
+          "supplies": 24,
+          "parts": 18
+        },
+        "infrastructure": 10,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 9,
+        "mission": "M09",
+        "outcome": "success",
+        "before": {
+          "credits": 252,
+          "supplies": 24,
+          "parts": 18
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 276,
+          "supplies": 26,
+          "parts": 20
+        },
+        "infrastructure": 10,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 10,
+        "mission": "M10",
+        "outcome": "success",
+        "before": {
+          "credits": 276,
+          "supplies": 26,
+          "parts": 20
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 300,
+          "supplies": 28,
+          "parts": 22
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 11,
+        "mission": "M11",
+        "outcome": "success",
+        "before": {
+          "credits": 300,
+          "supplies": 28,
+          "parts": 22
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 324,
+          "supplies": 30,
+          "parts": 24
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 12,
+        "mission": "M12",
+        "outcome": "success",
+        "before": {
+          "credits": 324,
+          "supplies": 30,
+          "parts": 24
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 348,
+          "supplies": 32,
+          "parts": 26
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 13,
+        "mission": "M13",
+        "outcome": "success",
+        "before": {
+          "credits": 348,
+          "supplies": 32,
+          "parts": 26
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 372,
+          "supplies": 34,
+          "parts": 28
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 14,
+        "mission": "M14",
+        "outcome": "success",
+        "before": {
+          "credits": 372,
+          "supplies": 34,
+          "parts": 28
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 396,
+          "supplies": 36,
+          "parts": 30
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 15,
+        "mission": "M15",
+        "outcome": "success",
+        "before": {
+          "credits": 396,
+          "supplies": 36,
+          "parts": 30
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 420,
+          "supplies": 38,
+          "parts": 32
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 16,
+        "mission": "M16",
+        "outcome": "success",
+        "before": {
+          "credits": 420,
+          "supplies": 38,
+          "parts": 32
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 444,
+          "supplies": 40,
+          "parts": 34
+        },
+        "infrastructure": 12,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 17,
+        "mission": "M17",
+        "outcome": "success",
+        "before": {
+          "credits": 444,
+          "supplies": 40,
+          "parts": 34
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 468,
+          "supplies": 42,
+          "parts": 36
+        },
+        "infrastructure": 13,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 18,
+        "mission": "M18",
+        "outcome": "success",
+        "before": {
+          "credits": 468,
+          "supplies": 42,
+          "parts": 36
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 492,
+          "supplies": 44,
+          "parts": 38
+        },
+        "infrastructure": 14,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 19,
+        "mission": "M19",
+        "outcome": "success",
+        "before": {
+          "credits": 492,
+          "supplies": 44,
+          "parts": 38
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 516,
+          "supplies": 46,
+          "parts": 40
+        },
+        "infrastructure": 14,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 20,
+        "mission": "M20",
+        "outcome": "success",
+        "before": {
+          "credits": 516,
+          "supplies": 46,
+          "parts": 40
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 540,
+          "supplies": 48,
+          "parts": 42
+        },
+        "infrastructure": 15,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 21,
+        "mission": "M21",
+        "outcome": "success",
+        "before": {
+          "credits": 540,
+          "supplies": 48,
+          "parts": 42
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 564,
+          "supplies": 50,
+          "parts": 44
+        },
+        "infrastructure": 15,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 22,
+        "mission": "M22",
+        "outcome": "success",
+        "before": {
+          "credits": 564,
+          "supplies": 50,
+          "parts": 44
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 588,
+          "supplies": 52,
+          "parts": 46
+        },
+        "infrastructure": 15,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 23,
+        "mission": "M23",
+        "outcome": "success",
+        "before": {
+          "credits": 588,
+          "supplies": 52,
+          "parts": 46
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 612,
+          "supplies": 54,
+          "parts": 48
+        },
+        "infrastructure": 16,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 24,
+        "mission": "M24",
+        "outcome": "success",
+        "before": {
+          "credits": 612,
+          "supplies": 54,
+          "parts": 48
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 636,
+          "supplies": 56,
+          "parts": 50
+        },
+        "infrastructure": 16,
+        "evidence": [],
+        "reserves": 0
+      }
+    ],
+    "public_evidence_recovery": [
+      {
+        "day": 1,
+        "mission": "M01",
+        "outcome": "success",
+        "before": {
+          "credits": 60,
+          "supplies": 8,
+          "parts": 2
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 84,
+          "supplies": 10,
+          "parts": 4
+        },
+        "infrastructure": 6,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 2,
+        "mission": "M02",
+        "outcome": "success",
+        "before": {
+          "credits": 84,
+          "supplies": 10,
+          "parts": 4
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 108,
+          "supplies": 12,
+          "parts": 6
+        },
+        "infrastructure": 7,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 3,
+        "mission": "M03",
+        "outcome": "success",
+        "before": {
+          "credits": 108,
+          "supplies": 12,
+          "parts": 6
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 132,
+          "supplies": 14,
+          "parts": 8
+        },
+        "infrastructure": 7,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 4,
+        "mission": "M04",
+        "outcome": "success",
+        "before": {
+          "credits": 132,
+          "supplies": 14,
+          "parts": 8
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 156,
+          "supplies": 16,
+          "parts": 10
+        },
+        "infrastructure": 8,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 5,
+        "mission": "M05",
+        "outcome": "success",
+        "before": {
+          "credits": 156,
+          "supplies": 16,
+          "parts": 10
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 180,
+          "supplies": 18,
+          "parts": 12
+        },
+        "infrastructure": 9,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 6,
+        "mission": "M06",
+        "outcome": "success",
+        "before": {
+          "credits": 180,
+          "supplies": 18,
+          "parts": 12
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 204,
+          "supplies": 20,
+          "parts": 14
+        },
+        "infrastructure": 9,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 7,
+        "mission": "M07",
+        "outcome": "success",
+        "before": {
+          "credits": 204,
+          "supplies": 20,
+          "parts": 14
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 228,
+          "supplies": 22,
+          "parts": 16
+        },
+        "infrastructure": 9,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 8,
+        "mission": "M08",
+        "outcome": "success",
+        "before": {
+          "credits": 228,
+          "supplies": 22,
+          "parts": 16
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 252,
+          "supplies": 24,
+          "parts": 18
+        },
+        "infrastructure": 10,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 9,
+        "mission": "M09",
+        "outcome": "success",
+        "before": {
+          "credits": 252,
+          "supplies": 24,
+          "parts": 18
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 276,
+          "supplies": 26,
+          "parts": 20
+        },
+        "infrastructure": 10,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 10,
+        "mission": "M10",
+        "outcome": "success",
+        "before": {
+          "credits": 276,
+          "supplies": 26,
+          "parts": 20
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 300,
+          "supplies": 28,
+          "parts": 22
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 11,
+        "mission": "M11",
+        "outcome": "success",
+        "before": {
+          "credits": 300,
+          "supplies": 28,
+          "parts": 22
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 324,
+          "supplies": 30,
+          "parts": 24
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 12,
+        "mission": "M12",
+        "outcome": "success",
+        "before": {
+          "credits": 324,
+          "supplies": 30,
+          "parts": 24
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 348,
+          "supplies": 32,
+          "parts": 26
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 13,
+        "mission": "M13",
+        "outcome": "success",
+        "before": {
+          "credits": 348,
+          "supplies": 32,
+          "parts": 26
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 372,
+          "supplies": 34,
+          "parts": 28
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 14,
+        "mission": "M14",
+        "outcome": "success",
+        "before": {
+          "credits": 372,
+          "supplies": 34,
+          "parts": 28
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 396,
+          "supplies": 36,
+          "parts": 30
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 15,
+        "mission": "M15",
+        "outcome": "success",
+        "before": {
+          "credits": 396,
+          "supplies": 36,
+          "parts": 30
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 420,
+          "supplies": 38,
+          "parts": 32
+        },
+        "infrastructure": 11,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 16,
+        "mission": "M16",
+        "outcome": "success",
+        "before": {
+          "credits": 420,
+          "supplies": 38,
+          "parts": 32
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 444,
+          "supplies": 40,
+          "parts": 34
+        },
+        "infrastructure": 12,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 17,
+        "mission": "M17",
+        "outcome": "success",
+        "before": {
+          "credits": 444,
+          "supplies": 40,
+          "parts": 34
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 468,
+          "supplies": 42,
+          "parts": 36
+        },
+        "infrastructure": 13,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 18,
+        "mission": "M18",
+        "outcome": "success",
+        "before": {
+          "credits": 468,
+          "supplies": 42,
+          "parts": 36
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 492,
+          "supplies": 44,
+          "parts": 38
+        },
+        "infrastructure": 14,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 19,
+        "mission": "M19",
+        "outcome": "success",
+        "before": {
+          "credits": 492,
+          "supplies": 44,
+          "parts": 38
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 516,
+          "supplies": 46,
+          "parts": 40
+        },
+        "infrastructure": 14,
+        "evidence": [],
+        "reserves": 0
+      },
+      {
+        "day": 20,
+        "mission": "M20",
+        "outcome": "success",
+        "before": {
+          "credits": 516,
+          "supplies": 46,
+          "parts": 40
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 540,
+          "supplies": 48,
+          "parts": 42
+        },
+        "infrastructure": 15,
+        "evidence": [],
+        "reserves": 0,
+        "camp_reviews": [
+          "E_ORDER"
+        ],
+        "after_camp_evidence": [
+          "E_ORDER"
+        ]
+      },
+      {
+        "day": 21,
+        "mission": "M21",
+        "outcome": "success",
+        "before": {
+          "credits": 540,
+          "supplies": 48,
+          "parts": 42
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 564,
+          "supplies": 50,
+          "parts": 44
+        },
+        "infrastructure": 15,
+        "evidence": [
+          "E_ORDER"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 22,
+        "mission": "M22",
+        "outcome": "success",
+        "before": {
+          "credits": 564,
+          "supplies": 50,
+          "parts": 44
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 588,
+          "supplies": 52,
+          "parts": 46
+        },
+        "infrastructure": 15,
+        "evidence": [
+          "E_ORDER"
+        ],
+        "reserves": 0,
+        "camp_reviews": [
+          "E_WARNING"
+        ],
+        "after_camp_evidence": [
+          "E_ORDER",
+          "E_WARNING"
+        ]
+      },
+      {
+        "day": 23,
+        "mission": "M23",
+        "outcome": "success",
+        "before": {
+          "credits": 588,
+          "supplies": 52,
+          "parts": 46
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 612,
+          "supplies": 54,
+          "parts": 48
+        },
+        "infrastructure": 16,
+        "evidence": [
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      },
+      {
+        "day": 24,
+        "mission": "M24",
+        "outcome": "success",
+        "before": {
+          "credits": 612,
+          "supplies": 54,
+          "parts": 48
+        },
+        "reward": {
+          "credits": 24,
+          "supplies": 2,
+          "parts": 2
+        },
+        "after": {
+          "credits": 636,
+          "supplies": 56,
+          "parts": 50
+        },
+        "infrastructure": 16,
+        "evidence": [
+          "E_ORDER",
+          "E_WARNING"
+        ],
+        "reserves": 0
+      }
+    ],
+    "two_failures_zero_stock": [
+      {
+        "day": 1,
+        "mission": "M01",
+        "outcome": "failed",
+        "before": {
+          "credits": 0,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 6,
+        "evidence": [],
+        "reserves": 0,
+        "injury": {
+          "lin": {
+            "injury_day": 1,
+            "ordinary_ready_day": 3
+          }
+        }
+      },
+      {
+        "day": 2,
+        "mission": "M02",
+        "outcome": "failed",
+        "before": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "reward": {
+          "credits": 6,
+          "supplies": 0,
+          "parts": 0
+        },
+        "after": {
+          "credits": 12,
+          "supplies": 0,
+          "parts": 0
+        },
+        "infrastructure": 5,
+        "evidence": [],
+        "reserves": 1,
+        "named_team": [
+          "xu",
+          "su"
+        ],
+        "injury": {
+          "xu": {
+            "injury_day": 2,
+            "ordinary_ready_day": 4
+          }
+        },
+        "camp_treatment": {
+          "actor": "xu",
+          "treated_ready_day": 3,
+          "cost_credits_to_buy_two_supplies": 8,
+          "remaining_resources": {
+            "credits": 4,
+            "supplies": 0,
+            "parts": 0
+          }
+        }
+      }
+    ]
+  },
+  "roster_comparison": [
+    {
+      "style": "fixed",
+      "recover_projects": 22,
+      "training_projects": 24,
+      "borrowed_slots": 0,
+      "final": {
+        "lin": {
+          "fatigue": 72,
+          "xp": 138
+        },
+        "xu": {
+          "fatigue": 72,
+          "xp": 138
+        },
+        "su": {
+          "fatigue": 72,
+          "xp": 138
+        },
+        "chen": {
+          "fatigue": 0,
+          "xp": 27
+        },
+        "ye": {
+          "fatigue": 0,
+          "xp": 33
+        },
+        "he": {
+          "fatigue": 0,
+          "xp": 30
+        },
+        "mo": {
+          "fatigue": 0,
+          "xp": 34
+        },
+        "jiang": {
+          "fatigue": 0,
+          "xp": 34
+        }
+      },
+      "resources": {
+        "credits": 636,
+        "supplies": 12,
+        "parts": 50
+      },
+      "days": [
+        {
+          "day": 1,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 14,
+              "xp": 8
+            },
+            "xu": {
+              "fatigue": 14,
+              "xp": 8
+            },
+            "su": {
+              "fatigue": 14,
+              "xp": 8
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 84,
+            "supplies": 7,
+            "parts": 4
+          }
+        },
+        {
+          "day": 2,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 28,
+              "xp": 16
+            },
+            "xu": {
+              "fatigue": 28,
+              "xp": 16
+            },
+            "su": {
+              "fatigue": 28,
+              "xp": 16
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 108,
+            "supplies": 6,
+            "parts": 6
+          }
+        },
+        {
+          "day": 3,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 42,
+              "xp": 24
+            },
+            "xu": {
+              "fatigue": 42,
+              "xp": 24
+            },
+            "su": {
+              "fatigue": 42,
+              "xp": 24
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 132,
+            "supplies": 5,
+            "parts": 8
+          }
+        },
+        {
+          "day": 4,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 56,
+              "xp": 32
+            },
+            "xu": {
+              "fatigue": 56,
+              "xp": 32
+            },
+            "su": {
+              "fatigue": 56,
+              "xp": 32
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 156,
+            "supplies": 4,
+            "parts": 10
+          }
+        },
+        {
+          "day": 5,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 70,
+              "xp": 40
+            },
+            "xu": {
+              "fatigue": 70,
+              "xp": 40
+            },
+            "su": {
+              "fatigue": 70,
+              "xp": 40
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 3
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 180,
+            "supplies": 2,
+            "parts": 12
+          }
+        },
+        {
+          "day": 6,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 64,
+              "xp": 45
+            },
+            "xu": {
+              "fatigue": 64,
+              "xp": 45
+            },
+            "su": {
+              "fatigue": 64,
+              "xp": 45
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 3
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 204,
+            "supplies": 4,
+            "parts": 14
+          }
+        },
+        {
+          "day": 7,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 58,
+              "xp": 50
+            },
+            "xu": {
+              "fatigue": 58,
+              "xp": 50
+            },
+            "su": {
+              "fatigue": 58,
+              "xp": 50
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 3
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 228,
+            "supplies": 6,
+            "parts": 16
+          }
+        },
+        {
+          "day": 8,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 72,
+              "xp": 58
+            },
+            "xu": {
+              "fatigue": 64,
+              "xp": 55
+            },
+            "su": {
+              "fatigue": 72,
+              "xp": 58
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 6
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 15
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 252,
+            "supplies": 4,
+            "parts": 18
+          }
+        },
+        {
+          "day": 9,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 66,
+              "xp": 63
+            },
+            "xu": {
+              "fatigue": 58,
+              "xp": 60
+            },
+            "su": {
+              "fatigue": 66,
+              "xp": 63
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 6
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 15
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 276,
+            "supplies": 6,
+            "parts": 20
+          }
+        },
+        {
+          "day": 10,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 60,
+              "xp": 68
+            },
+            "xu": {
+              "fatigue": 64,
+              "xp": 65
+            },
+            "su": {
+              "fatigue": 60,
+              "xp": 68
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 9
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 18
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 300,
+            "supplies": 6,
+            "parts": 22
+          }
+        },
+        {
+          "day": 11,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 54,
+              "xp": 73
+            },
+            "xu": {
+              "fatigue": 58,
+              "xp": 70
+            },
+            "su": {
+              "fatigue": 54,
+              "xp": 73
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 9
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 18
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 12
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 324,
+            "supplies": 8,
+            "parts": 24
+          }
+        },
+        {
+          "day": 12,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 60,
+              "xp": 78
+            },
+            "xu": {
+              "fatigue": 72,
+              "xp": 78
+            },
+            "su": {
+              "fatigue": 60,
+              "xp": 78
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 12
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 21
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 15
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 348,
+            "supplies": 6,
+            "parts": 26
+          }
+        },
+        {
+          "day": 13,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 54,
+              "xp": 83
+            },
+            "xu": {
+              "fatigue": 66,
+              "xp": 83
+            },
+            "su": {
+              "fatigue": 54,
+              "xp": 83
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 12
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 21
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 15
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 372,
+            "supplies": 8,
+            "parts": 28
+          }
+        },
+        {
+          "day": 14,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 60,
+              "xp": 88
+            },
+            "xu": {
+              "fatigue": 60,
+              "xp": 88
+            },
+            "su": {
+              "fatigue": 60,
+              "xp": 88
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 15
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 21
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 18
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 28
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 396,
+            "supplies": 8,
+            "parts": 30
+          }
+        },
+        {
+          "day": 15,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 54,
+              "xp": 93
+            },
+            "xu": {
+              "fatigue": 54,
+              "xp": 93
+            },
+            "su": {
+              "fatigue": 54,
+              "xp": 93
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 15
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 21
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 18
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 28
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 420,
+            "supplies": 10,
+            "parts": 32
+          }
+        },
+        {
+          "day": 16,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 60,
+              "xp": 98
+            },
+            "xu": {
+              "fatigue": 60,
+              "xp": 98
+            },
+            "su": {
+              "fatigue": 60,
+              "xp": 98
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 18
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 24
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 21
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 31
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 444,
+            "supplies": 8,
+            "parts": 34
+          }
+        },
+        {
+          "day": 17,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 54,
+              "xp": 103
+            },
+            "xu": {
+              "fatigue": 54,
+              "xp": 103
+            },
+            "su": {
+              "fatigue": 54,
+              "xp": 103
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 18
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 24
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 21
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 31
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 28
+            }
+          },
+          "resources": {
+            "credits": 468,
+            "supplies": 10,
+            "parts": 36
+          }
+        },
+        {
+          "day": 18,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 60,
+              "xp": 108
+            },
+            "xu": {
+              "fatigue": 60,
+              "xp": 108
+            },
+            "su": {
+              "fatigue": 60,
+              "xp": 108
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 21
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 27
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 24
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 31
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 31
+            }
+          },
+          "resources": {
+            "credits": 492,
+            "supplies": 8,
+            "parts": 38
+          }
+        },
+        {
+          "day": 19,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 54,
+              "xp": 113
+            },
+            "xu": {
+              "fatigue": 54,
+              "xp": 113
+            },
+            "su": {
+              "fatigue": 54,
+              "xp": 113
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 21
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 27
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 24
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 31
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 31
+            }
+          },
+          "resources": {
+            "credits": 516,
+            "supplies": 10,
+            "parts": 40
+          }
+        },
+        {
+          "day": 20,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 60,
+              "xp": 118
+            },
+            "xu": {
+              "fatigue": 60,
+              "xp": 118
+            },
+            "su": {
+              "fatigue": 60,
+              "xp": 118
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 24
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 30
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 27
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 31
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 34
+            }
+          },
+          "resources": {
+            "credits": 540,
+            "supplies": 8,
+            "parts": 42
+          }
+        },
+        {
+          "day": 21,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 54,
+              "xp": 123
+            },
+            "xu": {
+              "fatigue": 54,
+              "xp": 123
+            },
+            "su": {
+              "fatigue": 54,
+              "xp": 123
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 24
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 30
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 27
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 31
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 34
+            }
+          },
+          "resources": {
+            "credits": 564,
+            "supplies": 10,
+            "parts": 44
+          }
+        },
+        {
+          "day": 22,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 60,
+              "xp": 128
+            },
+            "xu": {
+              "fatigue": 60,
+              "xp": 128
+            },
+            "su": {
+              "fatigue": 60,
+              "xp": 128
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 27
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 33
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 30
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 34
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 34
+            }
+          },
+          "resources": {
+            "credits": 588,
+            "supplies": 8,
+            "parts": 46
+          }
+        },
+        {
+          "day": 23,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 54,
+              "xp": 133
+            },
+            "xu": {
+              "fatigue": 54,
+              "xp": 133
+            },
+            "su": {
+              "fatigue": 54,
+              "xp": 133
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 27
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 33
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 30
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 34
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 34
+            }
+          },
+          "resources": {
+            "credits": 612,
+            "supplies": 10,
+            "parts": 48
+          }
+        },
+        {
+          "day": 24,
+          "team": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 0,
+          "state": {
+            "lin": {
+              "fatigue": 72,
+              "xp": 138
+            },
+            "xu": {
+              "fatigue": 72,
+              "xp": 138
+            },
+            "su": {
+              "fatigue": 72,
+              "xp": 138
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 27
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 33
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 30
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 34
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 34
+            }
+          },
+          "resources": {
+            "credits": 636,
+            "supplies": 12,
+            "parts": 50
+          }
+        }
+      ],
+      "assumptions": "Both scripts preserve at least three projected eligible actors before spending on training. All main outcomes are supplied as success; no side missions, injuries or relationship interference. Training and purchases are paid from the same reward rules. These are illustrative policies, not optimal strategies or player-win simulations."
+    },
+    {
+      "style": "rotation",
+      "recover_projects": 0,
+      "training_projects": 46,
+      "borrowed_slots": 0,
+      "final": {
+        "lin": {
+          "fatigue": 0,
+          "xp": 90
+        },
+        "xu": {
+          "fatigue": 18,
+          "xp": 93
+        },
+        "su": {
+          "fatigue": 0,
+          "xp": 91
+        },
+        "chen": {
+          "fatigue": 6,
+          "xp": 92
+        },
+        "ye": {
+          "fatigue": 6,
+          "xp": 90
+        },
+        "he": {
+          "fatigue": 18,
+          "xp": 91
+        },
+        "mo": {
+          "fatigue": 18,
+          "xp": 88
+        },
+        "jiang": {
+          "fatigue": 14,
+          "xp": 69
+        }
+      },
+      "resources": {
+        "credits": 500,
+        "supplies": 2,
+        "parts": 50
+      },
+      "days": [
+        {
+          "day": 1,
+          "team": [
+            "lin",
+            "su",
+            "xu"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 14,
+              "xp": 8
+            },
+            "xu": {
+              "fatigue": 14,
+              "xp": 8
+            },
+            "su": {
+              "fatigue": 14,
+              "xp": 8
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 84,
+            "supplies": 7,
+            "parts": 4
+          }
+        },
+        {
+          "day": 2,
+          "team": [
+            "lin",
+            "su",
+            "xu"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 28,
+              "xp": 16
+            },
+            "xu": {
+              "fatigue": 28,
+              "xp": 16
+            },
+            "su": {
+              "fatigue": 28,
+              "xp": 16
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 108,
+            "supplies": 6,
+            "parts": 6
+          }
+        },
+        {
+          "day": 3,
+          "team": [
+            "lin",
+            "su",
+            "xu"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 42,
+              "xp": 24
+            },
+            "xu": {
+              "fatigue": 42,
+              "xp": 24
+            },
+            "su": {
+              "fatigue": 42,
+              "xp": 24
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 132,
+            "supplies": 5,
+            "parts": 8
+          }
+        },
+        {
+          "day": 4,
+          "team": [
+            "lin",
+            "su",
+            "xu"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 56,
+              "xp": 32
+            },
+            "xu": {
+              "fatigue": 56,
+              "xp": 32
+            },
+            "su": {
+              "fatigue": 56,
+              "xp": 32
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 156,
+            "supplies": 4,
+            "parts": 10
+          }
+        },
+        {
+          "day": 5,
+          "team": [
+            "chen",
+            "lin",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 70,
+              "xp": 40
+            },
+            "xu": {
+              "fatigue": 36,
+              "xp": 35
+            },
+            "su": {
+              "fatigue": 70,
+              "xp": 40
+            },
+            "chen": {
+              "fatigue": 14,
+              "xp": 8
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 180,
+            "supplies": 2,
+            "parts": 12
+          }
+        },
+        {
+          "day": 6,
+          "team": [
+            "chen",
+            "xu",
+            "lin"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 84,
+              "xp": 48
+            },
+            "xu": {
+              "fatigue": 50,
+              "xp": 43
+            },
+            "su": {
+              "fatigue": 50,
+              "xp": 43
+            },
+            "chen": {
+              "fatigue": 28,
+              "xp": 16
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 204,
+            "supplies": 0,
+            "parts": 14
+          }
+        },
+        {
+          "day": 7,
+          "team": [
+            "chen",
+            "su",
+            "xu"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 64,
+              "xp": 51
+            },
+            "xu": {
+              "fatigue": 64,
+              "xp": 51
+            },
+            "su": {
+              "fatigue": 64,
+              "xp": 51
+            },
+            "chen": {
+              "fatigue": 42,
+              "xp": 24
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 220,
+            "supplies": 0,
+            "parts": 16
+          }
+        },
+        {
+          "day": 8,
+          "team": [
+            "ye",
+            "chen",
+            "lin"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 70,
+              "xp": 56
+            },
+            "xu": {
+              "fatigue": 44,
+              "xp": 54
+            },
+            "su": {
+              "fatigue": 44,
+              "xp": 54
+            },
+            "chen": {
+              "fatigue": 56,
+              "xp": 32
+            },
+            "ye": {
+              "fatigue": 14,
+              "xp": 20
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 236,
+            "supplies": 0,
+            "parts": 18
+          }
+        },
+        {
+          "day": 9,
+          "team": [
+            "ye",
+            "su",
+            "xu"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 50,
+              "xp": 59
+            },
+            "xu": {
+              "fatigue": 50,
+              "xp": 59
+            },
+            "su": {
+              "fatigue": 58,
+              "xp": 62
+            },
+            "chen": {
+              "fatigue": 36,
+              "xp": 35
+            },
+            "ye": {
+              "fatigue": 28,
+              "xp": 28
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 252,
+            "supplies": 0,
+            "parts": 20
+          }
+        },
+        {
+          "day": 10,
+          "team": [
+            "ye",
+            "chen",
+            "lin"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 56,
+              "xp": 64
+            },
+            "xu": {
+              "fatigue": 30,
+              "xp": 62
+            },
+            "su": {
+              "fatigue": 38,
+              "xp": 65
+            },
+            "chen": {
+              "fatigue": 50,
+              "xp": 43
+            },
+            "ye": {
+              "fatigue": 42,
+              "xp": 36
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 268,
+            "supplies": 0,
+            "parts": 22
+          }
+        },
+        {
+          "day": 11,
+          "team": [
+            "he",
+            "xu",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 36,
+              "xp": 67
+            },
+            "xu": {
+              "fatigue": 36,
+              "xp": 67
+            },
+            "su": {
+              "fatigue": 44,
+              "xp": 70
+            },
+            "chen": {
+              "fatigue": 30,
+              "xp": 46
+            },
+            "ye": {
+              "fatigue": 22,
+              "xp": 39
+            },
+            "he": {
+              "fatigue": 14,
+              "xp": 20
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 284,
+            "supplies": 0,
+            "parts": 24
+          }
+        },
+        {
+          "day": 12,
+          "team": [
+            "he",
+            "ye",
+            "chen"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 16,
+              "xp": 70
+            },
+            "xu": {
+              "fatigue": 8,
+              "xp": 67
+            },
+            "su": {
+              "fatigue": 16,
+              "xp": 70
+            },
+            "chen": {
+              "fatigue": 44,
+              "xp": 54
+            },
+            "ye": {
+              "fatigue": 36,
+              "xp": 47
+            },
+            "he": {
+              "fatigue": 28,
+              "xp": 28
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 300,
+            "supplies": 0,
+            "parts": 26
+          }
+        },
+        {
+          "day": 13,
+          "team": [
+            "xu",
+            "lin",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 22,
+              "xp": 75
+            },
+            "xu": {
+              "fatigue": 22,
+              "xp": 75
+            },
+            "su": {
+              "fatigue": 22,
+              "xp": 75
+            },
+            "chen": {
+              "fatigue": 24,
+              "xp": 57
+            },
+            "ye": {
+              "fatigue": 16,
+              "xp": 50
+            },
+            "he": {
+              "fatigue": 8,
+              "xp": 31
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 0
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 316,
+            "supplies": 0,
+            "parts": 28
+          }
+        },
+        {
+          "day": 14,
+          "team": [
+            "mo",
+            "he",
+            "ye"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 0,
+              "xp": 75
+            },
+            "xu": {
+              "fatigue": 0,
+              "xp": 75
+            },
+            "su": {
+              "fatigue": 0,
+              "xp": 75
+            },
+            "chen": {
+              "fatigue": 4,
+              "xp": 60
+            },
+            "ye": {
+              "fatigue": 30,
+              "xp": 58
+            },
+            "he": {
+              "fatigue": 22,
+              "xp": 39
+            },
+            "mo": {
+              "fatigue": 14,
+              "xp": 36
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 332,
+            "supplies": 0,
+            "parts": 30
+          }
+        },
+        {
+          "day": 15,
+          "team": [
+            "lin",
+            "su",
+            "xu"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 6,
+              "xp": 80
+            },
+            "xu": {
+              "fatigue": 6,
+              "xp": 80
+            },
+            "su": {
+              "fatigue": 6,
+              "xp": 80
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 63
+            },
+            "ye": {
+              "fatigue": 10,
+              "xp": 61
+            },
+            "he": {
+              "fatigue": 2,
+              "xp": 42
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 39
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 348,
+            "supplies": 0,
+            "parts": 32
+          }
+        },
+        {
+          "day": 16,
+          "team": [
+            "mo",
+            "chen",
+            "he"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 0,
+              "xp": 80
+            },
+            "xu": {
+              "fatigue": 0,
+              "xp": 80
+            },
+            "su": {
+              "fatigue": 0,
+              "xp": 80
+            },
+            "chen": {
+              "fatigue": 14,
+              "xp": 71
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 64
+            },
+            "he": {
+              "fatigue": 16,
+              "xp": 50
+            },
+            "mo": {
+              "fatigue": 14,
+              "xp": 47
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 0
+            }
+          },
+          "resources": {
+            "credits": 364,
+            "supplies": 0,
+            "parts": 34
+          }
+        },
+        {
+          "day": 17,
+          "team": [
+            "jiang",
+            "ye",
+            "lin"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 6,
+              "xp": 85
+            },
+            "xu": {
+              "fatigue": 0,
+              "xp": 80
+            },
+            "su": {
+              "fatigue": 0,
+              "xp": 80
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 71
+            },
+            "ye": {
+              "fatigue": 14,
+              "xp": 72
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 53
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 50
+            },
+            "jiang": {
+              "fatigue": 14,
+              "xp": 36
+            }
+          },
+          "resources": {
+            "credits": 380,
+            "supplies": 0,
+            "parts": 36
+          }
+        },
+        {
+          "day": 18,
+          "team": [
+            "mo",
+            "he",
+            "chen"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 0,
+              "xp": 85
+            },
+            "xu": {
+              "fatigue": 0,
+              "xp": 80
+            },
+            "su": {
+              "fatigue": 0,
+              "xp": 80
+            },
+            "chen": {
+              "fatigue": 6,
+              "xp": 76
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 75
+            },
+            "he": {
+              "fatigue": 14,
+              "xp": 61
+            },
+            "mo": {
+              "fatigue": 14,
+              "xp": 58
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 39
+            }
+          },
+          "resources": {
+            "credits": 396,
+            "supplies": 0,
+            "parts": 38
+          }
+        },
+        {
+          "day": 19,
+          "team": [
+            "jiang",
+            "ye",
+            "su"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 0,
+              "xp": 85
+            },
+            "xu": {
+              "fatigue": 0,
+              "xp": 80
+            },
+            "su": {
+              "fatigue": 6,
+              "xp": 85
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 79
+            },
+            "ye": {
+              "fatigue": 6,
+              "xp": 80
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 64
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 61
+            },
+            "jiang": {
+              "fatigue": 14,
+              "xp": 47
+            }
+          },
+          "resources": {
+            "credits": 412,
+            "supplies": 0,
+            "parts": 40
+          }
+        },
+        {
+          "day": 20,
+          "team": [
+            "mo",
+            "he",
+            "chen"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 0,
+              "xp": 85
+            },
+            "xu": {
+              "fatigue": 0,
+              "xp": 83
+            },
+            "su": {
+              "fatigue": 0,
+              "xp": 85
+            },
+            "chen": {
+              "fatigue": 6,
+              "xp": 84
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 80
+            },
+            "he": {
+              "fatigue": 14,
+              "xp": 72
+            },
+            "mo": {
+              "fatigue": 14,
+              "xp": 69
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 50
+            }
+          },
+          "resources": {
+            "credits": 428,
+            "supplies": 0,
+            "parts": 42
+          }
+        },
+        {
+          "day": 21,
+          "team": [
+            "jiang",
+            "ye",
+            "xu"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 0,
+              "xp": 85
+            },
+            "xu": {
+              "fatigue": 6,
+              "xp": 88
+            },
+            "su": {
+              "fatigue": 0,
+              "xp": 85
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 87
+            },
+            "ye": {
+              "fatigue": 6,
+              "xp": 85
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 75
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 72
+            },
+            "jiang": {
+              "fatigue": 14,
+              "xp": 58
+            }
+          },
+          "resources": {
+            "credits": 444,
+            "supplies": 0,
+            "parts": 44
+          }
+        },
+        {
+          "day": 22,
+          "team": [
+            "mo",
+            "he",
+            "lin"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 6,
+              "xp": 90
+            },
+            "xu": {
+              "fatigue": 0,
+              "xp": 88
+            },
+            "su": {
+              "fatigue": 0,
+              "xp": 88
+            },
+            "chen": {
+              "fatigue": 0,
+              "xp": 87
+            },
+            "ye": {
+              "fatigue": 0,
+              "xp": 85
+            },
+            "he": {
+              "fatigue": 14,
+              "xp": 83
+            },
+            "mo": {
+              "fatigue": 14,
+              "xp": 80
+            },
+            "jiang": {
+              "fatigue": 0,
+              "xp": 61
+            }
+          },
+          "resources": {
+            "credits": 460,
+            "supplies": 0,
+            "parts": 46
+          }
+        },
+        {
+          "day": 23,
+          "team": [
+            "jiang",
+            "ye",
+            "chen"
+          ],
+          "reserves": 0,
+          "evening_projects": 2,
+          "state": {
+            "lin": {
+              "fatigue": 0,
+              "xp": 90
+            },
+            "xu": {
+              "fatigue": 0,
+              "xp": 88
+            },
+            "su": {
+              "fatigue": 0,
+              "xp": 91
+            },
+            "chen": {
+              "fatigue": 6,
+              "xp": 92
+            },
+            "ye": {
+              "fatigue": 6,
+              "xp": 90
+            },
+            "he": {
+              "fatigue": 0,
+              "xp": 86
+            },
+            "mo": {
+              "fatigue": 0,
+              "xp": 83
+            },
+            "jiang": {
+              "fatigue": 14,
+              "xp": 69
+            }
+          },
+          "resources": {
+            "credits": 476,
+            "supplies": 0,
+            "parts": 48
+          }
+        },
+        {
+          "day": 24,
+          "team": [
+            "mo",
+            "he",
+            "xu"
+          ],
+          "reserves": 0,
+          "evening_projects": 0,
+          "state": {
+            "lin": {
+              "fatigue": 0,
+              "xp": 90
+            },
+            "xu": {
+              "fatigue": 18,
+              "xp": 93
+            },
+            "su": {
+              "fatigue": 0,
+              "xp": 91
+            },
+            "chen": {
+              "fatigue": 6,
+              "xp": 92
+            },
+            "ye": {
+              "fatigue": 6,
+              "xp": 90
+            },
+            "he": {
+              "fatigue": 18,
+              "xp": 91
+            },
+            "mo": {
+              "fatigue": 18,
+              "xp": 88
+            },
+            "jiang": {
+              "fatigue": 14,
+              "xp": 69
+            }
+          },
+          "resources": {
+            "credits": 500,
+            "supplies": 2,
+            "parts": 50
+          }
+        }
+      ],
+      "assumptions": "Both scripts preserve at least three projected eligible actors before spending on training. All main outcomes are supplied as success; no side missions, injuries or relationship interference. Training and purchases are paid from the same reward rules. These are illustrative policies, not optimal strategies or player-win simulations."
+    }
+  ],
+  "limits": [
+    "Mission outcomes are supplied, not inferred from playable boards.",
+    "No claim about player enjoyment, actual playtime or strategic win rates.",
+    "All-failure trace verifies accounting and ending rules, not the physical feasibility of unbuilt maps.",
+    "Conditional narrative text and full character arcs are not authored by this script."
+  ]
+}

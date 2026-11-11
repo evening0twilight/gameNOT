@@ -1,0 +1,6675 @@
+{
+  "scope": "24 actual simulated battles feed one ledger per scenario. Party availability, fatigue, XP, supplied support work, projects, narrative proof and ending evaluated together. Tactical solution is selected from3 heuristic policies, not a simulated novice; no auto-granted personal reconciliation.",
+  "scenarios": [
+    {
+      "summary": {
+        "name": "实际战斗结果驱动的标准轮换整局",
+        "world_ending": "shared_control",
+        "selected_route": "shared_control",
+        "main_count": 24,
+        "side_count": 0,
+        "resources": {
+          "credits": 622,
+          "supplies": 32,
+          "parts": 50
+        },
+        "crafted_inventory": {
+          "med_dose": 0,
+          "battery": 0
+        },
+        "consumed": {},
+        "tools": [
+          "crowbar",
+          "medkit"
+        ],
+        "facilities": {
+          "infirmary": 0,
+          "workshop": 0,
+          "rest_area": 0,
+          "communications": 0
+        },
+        "borrowed_slots": 0,
+        "withdrawn": [],
+        "levels": {
+          "lin": 5,
+          "xu": 5,
+          "su": 5,
+          "chen": 5,
+          "ye": 5,
+          "he": 5,
+          "mo": 4,
+          "jiang": 4
+        },
+        "xp": {
+          "lin": 87,
+          "xu": 84,
+          "su": 89,
+          "chen": 80,
+          "ye": 75,
+          "he": 77,
+          "mo": 71,
+          "jiang": 49
+        },
+        "story_projects": 8,
+        "read_scenes": 36,
+        "verified_contracts": [
+          "lin",
+          "xu",
+          "su",
+          "chen",
+          "ye",
+          "mo",
+          "jiang"
+        ],
+        "character_endings": {
+          "lin": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "xu": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "su": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "chen": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "ye": {
+            "presence": "in_crew",
+            "requested_personal_choice": "professional",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "he": {
+            "presence": "in_crew",
+            "requested_personal_choice": "professional",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "unfulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "mo": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "jiang": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          }
+        },
+        "trained_protocols": [],
+        "relationship_sample": {
+          "lin>xu": {
+            "trust": 46,
+            "resentment": 42
+          },
+          "lin>su": {
+            "trust": 68,
+            "resentment": 0.0
+          },
+          "ye>chen": {
+            "trust": 40,
+            "resentment": 55
+          }
+        }
+      },
+      "battles": [
+        {
+          "day": 1,
+          "party": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "rounds": 7,
+          "limit": 12,
+          "ap": 37,
+          "damage": 0,
+          "style": "attack",
+          "completed": [
+            "r1",
+            "r2"
+          ],
+          "actual_contributors": {
+            "r1": [
+              "lin"
+            ],
+            "r2": [
+              "xu",
+              "su"
+            ]
+          },
+          "xp_after": {
+            "lin": 5,
+            "xu": 5,
+            "su": 5
+          }
+        },
+        {
+          "day": 2,
+          "party": [
+            "su",
+            "lin",
+            "xu"
+          ],
+          "rounds": 6,
+          "limit": 12,
+          "ap": 32,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "cut",
+            "power"
+          ],
+          "actual_contributors": {
+            "cut": [
+              "su",
+              "lin"
+            ],
+            "power": [
+              "lin",
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "su": 10,
+            "lin": 13,
+            "xu": 13
+          }
+        },
+        {
+          "day": 3,
+          "party": [
+            "xu",
+            "su",
+            "lin"
+          ],
+          "rounds": 7,
+          "limit": 13,
+          "ap": 33,
+          "damage": 2,
+          "style": "rush",
+          "completed": [
+            "door",
+            "crate"
+          ],
+          "actual_contributors": {
+            "door": [
+              "xu",
+              "su"
+            ],
+            "crate": [
+              "lin"
+            ]
+          },
+          "xp_after": {
+            "xu": 18,
+            "su": 18,
+            "lin": 21
+          }
+        },
+        {
+          "day": 4,
+          "party": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "rounds": 8,
+          "limit": 15,
+          "ap": 38,
+          "damage": 0,
+          "style": "controls",
+          "completed": [
+            "brace1",
+            "brace2",
+            "worker"
+          ],
+          "actual_contributors": {
+            "brace1": [
+              "xu"
+            ],
+            "brace2": [
+              "lin",
+              "xu"
+            ],
+            "worker": [
+              "xu",
+              "su"
+            ]
+          },
+          "xp_after": {
+            "lin": 26,
+            "xu": 26,
+            "su": 26
+          }
+        },
+        {
+          "day": 5,
+          "party": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "rounds": 5,
+          "limit": 13,
+          "ap": 25,
+          "damage": 4,
+          "style": "controls",
+          "completed": [
+            "isolate",
+            "pump"
+          ],
+          "actual_contributors": {
+            "isolate": [
+              "xu"
+            ],
+            "pump": [
+              "chen"
+            ]
+          },
+          "xp_after": {
+            "chen": 8,
+            "xu": 31,
+            "su": 31
+          }
+        },
+        {
+          "day": 6,
+          "party": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "rounds": 7,
+          "limit": 15,
+          "ap": 33,
+          "damage": 2,
+          "style": "attack",
+          "completed": [
+            "r1",
+            "r2"
+          ],
+          "actual_contributors": {
+            "r1": [
+              "su"
+            ],
+            "r2": [
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "chen": 16,
+            "xu": 36,
+            "su": 36
+          }
+        },
+        {
+          "day": 7,
+          "party": [
+            "chen",
+            "lin",
+            "xu"
+          ],
+          "rounds": 8,
+          "limit": 14,
+          "ap": 43,
+          "damage": 0,
+          "style": "attack",
+          "completed": [
+            "cut",
+            "worker"
+          ],
+          "actual_contributors": {
+            "cut": [
+              "chen"
+            ],
+            "worker": [
+              "lin",
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "chen": 24,
+            "lin": 41,
+            "xu": 41
+          }
+        },
+        {
+          "day": 8,
+          "party": [
+            "ye",
+            "lin",
+            "chen"
+          ],
+          "rounds": 10,
+          "limit": 16,
+          "ap": 32,
+          "damage": 4,
+          "style": "rush",
+          "completed": [
+            "block1",
+            "block2",
+            "truck"
+          ],
+          "actual_contributors": {
+            "block1": [
+              "ye",
+              "chen"
+            ],
+            "block2": [
+              "lin"
+            ],
+            "truck": [
+              "lin"
+            ]
+          },
+          "xp_after": {
+            "ye": 20,
+            "lin": 46,
+            "chen": 32
+          }
+        },
+        {
+          "day": 9,
+          "party": [
+            "ye",
+            "su",
+            "lin"
+          ],
+          "rounds": 8,
+          "limit": 15,
+          "ap": 31,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "r1",
+            "r2"
+          ],
+          "actual_contributors": {
+            "r1": [
+              "ye",
+              "lin"
+            ],
+            "r2": [
+              "su"
+            ]
+          },
+          "xp_after": {
+            "ye": 28,
+            "su": 49,
+            "lin": 51
+          }
+        },
+        {
+          "day": 10,
+          "party": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "rounds": 5,
+          "limit": 13,
+          "ap": 28,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "test1",
+            "test2"
+          ],
+          "actual_contributors": {
+            "test1": [
+              "chen",
+              "su"
+            ],
+            "test2": [
+              "ye"
+            ]
+          },
+          "xp_after": {
+            "chen": 40,
+            "ye": 36,
+            "su": 54
+          }
+        },
+        {
+          "day": 11,
+          "party": [
+            "he",
+            "xu",
+            "chen"
+          ],
+          "rounds": 5,
+          "limit": 14,
+          "ap": 29,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "cut",
+            "lock"
+          ],
+          "actual_contributors": {
+            "cut": [
+              "chen",
+              "he"
+            ],
+            "lock": [
+              "xu",
+              "chen"
+            ]
+          },
+          "xp_after": {
+            "he": 20,
+            "xu": 50,
+            "chen": 45
+          }
+        },
+        {
+          "day": 12,
+          "party": [
+            "su",
+            "he",
+            "xu"
+          ],
+          "rounds": 7,
+          "limit": 15,
+          "ap": 27,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "backup",
+            "drive"
+          ],
+          "actual_contributors": {
+            "backup": [
+              "su"
+            ],
+            "drive": [
+              "he"
+            ]
+          },
+          "xp_after": {
+            "su": 59,
+            "he": 28,
+            "xu": 55
+          }
+        },
+        {
+          "day": 13,
+          "party": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "rounds": 5,
+          "limit": 14,
+          "ap": 28,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "cut",
+            "log"
+          ],
+          "actual_contributors": {
+            "cut": [
+              "chen",
+              "su"
+            ],
+            "log": [
+              "chen",
+              "ye"
+            ]
+          },
+          "xp_after": {
+            "chen": 50,
+            "ye": 50,
+            "su": 64
+          }
+        },
+        {
+          "day": 14,
+          "party": [
+            "xu",
+            "mo",
+            "chen"
+          ],
+          "rounds": 5,
+          "limit": 12,
+          "ap": 20,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "meds"
+          ],
+          "actual_contributors": {
+            "meds": [
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "xu": 60,
+            "mo": 36,
+            "chen": 55
+          }
+        },
+        {
+          "day": 15,
+          "party": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "rounds": 6,
+          "limit": 12,
+          "ap": 25,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "north"
+          ],
+          "actual_contributors": {
+            "north": [
+              "su",
+              "he"
+            ]
+          },
+          "xp_after": {
+            "su": 69,
+            "ye": 55,
+            "he": 42
+          }
+        },
+        {
+          "day": 16,
+          "party": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "rounds": 8,
+          "limit": 15,
+          "ap": 35,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "lane",
+            "people"
+          ],
+          "actual_contributors": {
+            "lane": [
+              "xu",
+              "chen"
+            ],
+            "people": [
+              "mo"
+            ]
+          },
+          "xp_after": {
+            "xu": 65,
+            "chen": 60,
+            "mo": 47
+          }
+        },
+        {
+          "day": 17,
+          "party": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "rounds": 6,
+          "limit": 15,
+          "ap": 32,
+          "damage": 5,
+          "style": "rush",
+          "completed": [
+            "repair1",
+            "repair2"
+          ],
+          "actual_contributors": {
+            "repair1": [
+              "su"
+            ],
+            "repair2": [
+              "ye",
+              "he",
+              "su"
+            ]
+          },
+          "xp_after": {
+            "su": 74,
+            "ye": 60,
+            "he": 50
+          }
+        },
+        {
+          "day": 18,
+          "party": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "rounds": 7,
+          "limit": 15,
+          "ap": 26,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "relay",
+            "broadcast"
+          ],
+          "actual_contributors": {
+            "relay": [
+              "xu",
+              "mo"
+            ],
+            "broadcast": [
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "xu": 70,
+            "chen": 65,
+            "mo": 55
+          }
+        },
+        {
+          "day": 19,
+          "party": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "rounds": 6,
+          "limit": 15,
+          "ap": 28,
+          "damage": 4,
+          "style": "rush",
+          "completed": [
+            "patient",
+            "shelter"
+          ],
+          "actual_contributors": {
+            "patient": [
+              "ye",
+              "su"
+            ],
+            "shelter": [
+              "he",
+              "ye"
+            ]
+          },
+          "xp_after": {
+            "su": 79,
+            "ye": 65,
+            "he": 61
+          }
+        },
+        {
+          "day": 20,
+          "party": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "rounds": 4,
+          "limit": 13,
+          "ap": 20,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "west"
+          ],
+          "actual_contributors": {
+            "west": [
+              "chen",
+              "mo"
+            ]
+          },
+          "xp_after": {
+            "xu": 75,
+            "chen": 70,
+            "mo": 63
+          }
+        },
+        {
+          "day": 21,
+          "party": [
+            "lin",
+            "su",
+            "ye"
+          ],
+          "rounds": 4,
+          "limit": 14,
+          "ap": 21,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "route"
+          ],
+          "actual_contributors": {
+            "route": [
+              "lin",
+              "su",
+              "ye"
+            ]
+          },
+          "xp_after": {
+            "lin": 78,
+            "su": 84,
+            "ye": 70
+          }
+        },
+        {
+          "day": 22,
+          "party": [
+            "chen",
+            "he",
+            "mo"
+          ],
+          "rounds": 5,
+          "limit": 14,
+          "ap": 17,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "handover"
+          ],
+          "actual_contributors": {
+            "handover": [
+              "chen"
+            ]
+          },
+          "xp_after": {
+            "chen": 75,
+            "he": 69,
+            "mo": 68
+          }
+        },
+        {
+          "day": 23,
+          "party": [
+            "xu",
+            "su",
+            "ye"
+          ],
+          "rounds": 8,
+          "limit": 16,
+          "ap": 33,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "r1",
+            "r2"
+          ],
+          "actual_contributors": {
+            "r1": [
+              "xu"
+            ],
+            "r2": [
+              "su"
+            ]
+          },
+          "xp_after": {
+            "xu": 82,
+            "su": 89,
+            "ye": 75
+          }
+        },
+        {
+          "day": 24,
+          "party": [
+            "lin",
+            "chen",
+            "he"
+          ],
+          "rounds": 6,
+          "limit": 17,
+          "ap": 30,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "bus",
+            "auth"
+          ],
+          "actual_contributors": {
+            "bus": [
+              "lin",
+              "chen"
+            ],
+            "auth": [
+              "he"
+            ]
+          },
+          "xp_after": {
+            "lin": 87,
+            "chen": 80,
+            "he": 77
+          }
+        }
+      ],
+      "skipped_nodes": [],
+      "receipts": [
+        {
+          "seq": 1,
+          "kind": "assignment",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "support": null,
+          "reserves": 0
+        },
+        {
+          "seq": 2,
+          "kind": "objective_completed",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "object": "r1",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "lin"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 3,
+          "kind": "casualty_saved",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "object": "r1",
+          "contributors": [
+            "lin"
+          ]
+        },
+        {
+          "seq": 4,
+          "kind": "objective_completed",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "object": "r2",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "xu",
+            "su"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 5,
+          "kind": "casualty_saved",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "object": "r2",
+          "contributors": [
+            "xu",
+            "su"
+          ]
+        },
+        {
+          "seq": 6,
+          "kind": "mission_settled",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 7,
+          "kind": "training",
+          "day": 1,
+          "actors": [
+            "lin",
+            "xu"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 8,
+          "kind": "assignment",
+          "day": 2,
+          "mission": "M02",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "lin",
+            "xu"
+          ],
+          "support": null,
+          "reserves": 0
+        },
+        {
+          "seq": 9,
+          "kind": "objective_completed",
+          "day": 2,
+          "mission": "M02",
+          "mission_kind": "main",
+          "object": "cut",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "su",
+            "lin"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 10,
+          "kind": "objective_completed",
+          "day": 2,
+          "mission": "M02",
+          "mission_kind": "main",
+          "object": "power",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "power_socket",
+            "work"
+          ],
+          "contributors": [
+            "lin",
+            "xu"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 11,
+          "kind": "mission_settled",
+          "day": 2,
+          "mission": "M02",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "lin",
+            "xu"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 12,
+          "kind": "story_choice",
+          "day": 2,
+          "actor": "lin",
+          "node": "P_lin_1",
+          "choice": "private"
+        },
+        {
+          "seq": 13,
+          "kind": "training",
+          "day": 2,
+          "actors": [
+            "su",
+            "lin"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 14,
+          "kind": "assignment",
+          "day": 3,
+          "mission": "M03",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "su",
+            "lin"
+          ],
+          "support": null,
+          "reserves": 0
+        },
+        {
+          "seq": 15,
+          "kind": "objective_completed",
+          "day": 3,
+          "mission": "M03",
+          "mission_kind": "main",
+          "object": "door",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "light_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu",
+            "su"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 16,
+          "kind": "objective_completed",
+          "day": 3,
+          "mission": "M03",
+          "mission_kind": "main",
+          "object": "crate",
+          "type": "cargo",
+          "tags": [
+            "cargo",
+            "objective"
+          ],
+          "contributors": [
+            "lin"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 17,
+          "kind": "mission_settled",
+          "day": 3,
+          "mission": "M03",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "su",
+            "lin"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 18,
+          "kind": "story_choice",
+          "day": 3,
+          "actor": "xu",
+          "node": "P_xu_1",
+          "choice": "record"
+        },
+        {
+          "seq": 19,
+          "kind": "short_scene",
+          "day": 3,
+          "node": "R06"
+        },
+        {
+          "seq": 20,
+          "kind": "training",
+          "day": 3,
+          "actors": [
+            "xu",
+            "su"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 21,
+          "kind": "assignment",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "support": null,
+          "reserves": 0
+        },
+        {
+          "seq": 22,
+          "kind": "objective_completed",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "object": "brace1",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 23,
+          "kind": "objective_completed",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "object": "brace2",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "lin",
+            "xu"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 24,
+          "kind": "objective_completed",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "object": "worker",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "xu",
+            "su"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 25,
+          "kind": "casualty_saved",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "object": "worker",
+          "contributors": [
+            "xu",
+            "su"
+          ]
+        },
+        {
+          "seq": 26,
+          "kind": "recruit",
+          "day": 4,
+          "actor": "chen"
+        },
+        {
+          "seq": 27,
+          "kind": "mission_settled",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 28,
+          "kind": "story_choice",
+          "day": 4,
+          "actor": "su",
+          "node": "P_su_1",
+          "choice": "list"
+        },
+        {
+          "seq": 29,
+          "kind": "training",
+          "day": 4,
+          "actors": [
+            "chen",
+            "lin"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 30,
+          "kind": "assignment",
+          "day": 5,
+          "mission": "M05",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 31,
+          "kind": "objective_completed",
+          "day": 5,
+          "mission": "M05",
+          "mission_kind": "main",
+          "object": "isolate",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 32,
+          "kind": "objective_completed",
+          "day": 5,
+          "mission": "M05",
+          "mission_kind": "main",
+          "object": "pump",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "power_socket",
+            "work"
+          ],
+          "contributors": [
+            "chen"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 33,
+          "kind": "support_work",
+          "day": 5,
+          "mission": "M05",
+          "actor": "lin"
+        },
+        {
+          "seq": 34,
+          "kind": "mission_settled",
+          "day": 5,
+          "mission": "M05",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 35,
+          "kind": "story_choice",
+          "day": 5,
+          "actor": "chen",
+          "node": "P_chen_1",
+          "choice": "copy"
+        },
+        {
+          "seq": 36,
+          "kind": "training",
+          "day": 5,
+          "actors": [
+            "chen",
+            "lin"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 37,
+          "kind": "assignment",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 38,
+          "kind": "objective_completed",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "object": "r1",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 39,
+          "kind": "casualty_saved",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "object": "r1",
+          "contributors": [
+            "su"
+          ]
+        },
+        {
+          "seq": 40,
+          "kind": "objective_completed",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "object": "r2",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 41,
+          "kind": "casualty_saved",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "object": "r2",
+          "contributors": [
+            "xu"
+          ]
+        },
+        {
+          "seq": 42,
+          "kind": "support_work",
+          "day": 6,
+          "mission": "M06",
+          "actor": "lin"
+        },
+        {
+          "seq": 43,
+          "kind": "mission_settled",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 44,
+          "kind": "short_scene",
+          "day": 6,
+          "node": "R01"
+        },
+        {
+          "seq": 45,
+          "kind": "recovery",
+          "day": 6,
+          "actors": [
+            "lin",
+            "xu"
+          ]
+        },
+        {
+          "seq": 46,
+          "kind": "training",
+          "day": 6,
+          "actors": [
+            "chen",
+            "su"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 47,
+          "kind": "assignment",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "lin",
+            "xu"
+          ],
+          "support": "su",
+          "reserves": 0
+        },
+        {
+          "seq": 48,
+          "kind": "objective_completed",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "object": "cut",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 49,
+          "kind": "objective_completed",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "object": "worker",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "lin",
+            "xu"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 50,
+          "kind": "casualty_saved",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "object": "worker",
+          "contributors": [
+            "lin",
+            "xu"
+          ]
+        },
+        {
+          "seq": 51,
+          "kind": "support_work",
+          "day": 7,
+          "mission": "M07",
+          "actor": "su"
+        },
+        {
+          "seq": 52,
+          "kind": "recruit",
+          "day": 7,
+          "actor": "ye"
+        },
+        {
+          "seq": 53,
+          "kind": "mission_settled",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "lin",
+            "xu"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 54,
+          "kind": "recovery",
+          "day": 7,
+          "actors": [
+            "su"
+          ]
+        },
+        {
+          "seq": 55,
+          "kind": "training",
+          "day": 7,
+          "actors": [
+            "ye",
+            "chen"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 56,
+          "kind": "assignment",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "actors": [
+            "ye",
+            "lin",
+            "chen"
+          ],
+          "support": "xu",
+          "reserves": 0
+        },
+        {
+          "seq": 57,
+          "kind": "objective_completed",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "object": "block1",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "light_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "ye",
+            "chen"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 58,
+          "kind": "objective_completed",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "object": "block2",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "heavy_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "lin"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 59,
+          "kind": "objective_completed",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "object": "truck",
+          "type": "convoy",
+          "tags": [
+            "convoy",
+            "objective"
+          ],
+          "contributors": [
+            "lin"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 60,
+          "kind": "support_work",
+          "day": 8,
+          "mission": "M08",
+          "actor": "xu"
+        },
+        {
+          "seq": 61,
+          "kind": "mission_settled",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "actors": [
+            "ye",
+            "lin",
+            "chen"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 62,
+          "kind": "story_choice",
+          "day": 8,
+          "actor": "ye",
+          "node": "P_ye_1",
+          "choice": "retain"
+        },
+        {
+          "seq": 63,
+          "kind": "recovery",
+          "day": 8,
+          "actors": [
+            "lin",
+            "chen"
+          ]
+        },
+        {
+          "seq": 64,
+          "kind": "training",
+          "day": 8,
+          "actors": [
+            "ye",
+            "su"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 65,
+          "kind": "assignment",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "actors": [
+            "ye",
+            "su",
+            "lin"
+          ],
+          "support": "xu",
+          "reserves": 0
+        },
+        {
+          "seq": 66,
+          "kind": "objective_completed",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "object": "r1",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "ye",
+            "lin"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 67,
+          "kind": "casualty_saved",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "object": "r1",
+          "contributors": [
+            "ye",
+            "lin"
+          ]
+        },
+        {
+          "seq": 68,
+          "kind": "objective_completed",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "object": "r2",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 69,
+          "kind": "casualty_saved",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "object": "r2",
+          "contributors": [
+            "su"
+          ]
+        },
+        {
+          "seq": 70,
+          "kind": "support_work",
+          "day": 9,
+          "mission": "M09",
+          "actor": "xu"
+        },
+        {
+          "seq": 71,
+          "kind": "mission_settled",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "actors": [
+            "ye",
+            "su",
+            "lin"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 72,
+          "kind": "story_choice",
+          "day": 9,
+          "actor": "lin",
+          "node": "P_lin_2",
+          "choice": "rotation"
+        },
+        {
+          "seq": 73,
+          "kind": "short_scene",
+          "day": 9,
+          "node": "R02"
+        },
+        {
+          "seq": 74,
+          "kind": "training",
+          "day": 9,
+          "actors": [
+            "ye",
+            "chen"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 75,
+          "kind": "assignment",
+          "day": 10,
+          "mission": "M10",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 76,
+          "kind": "objective_completed",
+          "day": 10,
+          "mission": "M10",
+          "mission_kind": "main",
+          "object": "test1",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "su"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 77,
+          "kind": "objective_completed",
+          "day": 10,
+          "mission": "M10",
+          "mission_kind": "main",
+          "object": "test2",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "ye"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 78,
+          "kind": "support_work",
+          "day": 10,
+          "mission": "M10",
+          "actor": "lin"
+        },
+        {
+          "seq": 79,
+          "kind": "recruit",
+          "day": 10,
+          "actor": "he"
+        },
+        {
+          "seq": 80,
+          "kind": "mission_settled",
+          "day": 10,
+          "mission": "M10",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 81,
+          "kind": "story_choice",
+          "day": 10,
+          "actor": "xu",
+          "node": "P_xu_2",
+          "choice": "bounded"
+        },
+        {
+          "seq": 82,
+          "kind": "training",
+          "day": 10,
+          "actors": [
+            "he",
+            "ye"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 83,
+          "kind": "assignment",
+          "day": 11,
+          "mission": "M11",
+          "mission_kind": "main",
+          "actors": [
+            "he",
+            "xu",
+            "chen"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 84,
+          "kind": "objective_completed",
+          "day": 11,
+          "mission": "M11",
+          "mission_kind": "main",
+          "object": "cut",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "he"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 85,
+          "kind": "objective_completed",
+          "day": 11,
+          "mission": "M11",
+          "mission_kind": "main",
+          "object": "lock",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "light_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu",
+            "chen"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 86,
+          "kind": "support_work",
+          "day": 11,
+          "mission": "M11",
+          "actor": "lin"
+        },
+        {
+          "seq": 87,
+          "kind": "mission_settled",
+          "day": 11,
+          "mission": "M11",
+          "mission_kind": "main",
+          "actors": [
+            "he",
+            "xu",
+            "chen"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 88,
+          "kind": "retreat_promise",
+          "day": 11,
+          "mission": "M11",
+          "kept": true
+        },
+        {
+          "seq": 89,
+          "kind": "story_choice",
+          "day": 11,
+          "actor": "he",
+          "node": "P_he_1",
+          "choice": "name"
+        },
+        {
+          "seq": 90,
+          "kind": "story_choice",
+          "day": 11,
+          "actor": "su",
+          "node": "P_su_2",
+          "choice": "rota"
+        },
+        {
+          "seq": 91,
+          "kind": "training",
+          "day": 11,
+          "actors": [
+            "he",
+            "ye"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 92,
+          "kind": "assignment",
+          "day": 12,
+          "mission": "M12",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "he",
+            "xu"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 93,
+          "kind": "objective_completed",
+          "day": 12,
+          "mission": "M12",
+          "mission_kind": "main",
+          "object": "backup",
+          "type": "channel",
+          "tags": [
+            "channel",
+            "objective"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 94,
+          "kind": "objective_completed",
+          "day": 12,
+          "mission": "M12",
+          "mission_kind": "main",
+          "object": "drive",
+          "type": "cargo",
+          "tags": [
+            "cargo",
+            "objective"
+          ],
+          "contributors": [
+            "he"
+          ],
+          "primary_contributor": "he"
+        },
+        {
+          "seq": 95,
+          "kind": "support_work",
+          "day": 12,
+          "mission": "M12",
+          "actor": "lin"
+        },
+        {
+          "seq": 96,
+          "kind": "mission_settled",
+          "day": 12,
+          "mission": "M12",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "he",
+            "xu"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 97,
+          "kind": "retreat_promise",
+          "day": 12,
+          "mission": "M12",
+          "kept": true
+        },
+        {
+          "seq": 98,
+          "kind": "story_choice",
+          "day": 12,
+          "actor": "chen",
+          "node": "P_chen_2",
+          "choice": "fund"
+        },
+        {
+          "seq": 99,
+          "kind": "payment",
+          "day": 12,
+          "purpose": "chen_compensation",
+          "amount": 8
+        },
+        {
+          "seq": 100,
+          "kind": "known_information",
+          "day": 12,
+          "actor": "ye",
+          "fact": "chen_signed_responsibility"
+        },
+        {
+          "seq": 101,
+          "kind": "short_scene",
+          "day": 12,
+          "node": "R03"
+        },
+        {
+          "seq": 102,
+          "kind": "training",
+          "day": 12,
+          "actors": [
+            "he",
+            "ye"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 103,
+          "kind": "assignment",
+          "day": 13,
+          "mission": "M13",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 104,
+          "kind": "objective_completed",
+          "day": 13,
+          "mission": "M13",
+          "mission_kind": "main",
+          "object": "cut",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "su"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 105,
+          "kind": "objective_completed",
+          "day": 13,
+          "mission": "M13",
+          "mission_kind": "main",
+          "object": "log",
+          "type": "work",
+          "tags": [
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "ye"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 106,
+          "kind": "support_work",
+          "day": 13,
+          "mission": "M13",
+          "actor": "lin"
+        },
+        {
+          "seq": 107,
+          "kind": "recruit",
+          "day": 13,
+          "actor": "mo"
+        },
+        {
+          "seq": 108,
+          "kind": "mission_settled",
+          "day": 13,
+          "mission": "M13",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 109,
+          "kind": "short_scene",
+          "day": 13,
+          "node": "R08"
+        },
+        {
+          "seq": 110,
+          "kind": "short_scene",
+          "day": 13,
+          "node": "R11"
+        },
+        {
+          "seq": 111,
+          "kind": "training",
+          "day": 13,
+          "actors": [
+            "mo",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 112,
+          "kind": "assignment",
+          "day": 14,
+          "mission": "M14",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "mo",
+            "chen"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 113,
+          "kind": "objective_completed",
+          "day": 14,
+          "mission": "M14",
+          "mission_kind": "main",
+          "object": "meds",
+          "type": "cargo",
+          "tags": [
+            "cargo",
+            "objective"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 114,
+          "kind": "support_work",
+          "day": 14,
+          "mission": "M14",
+          "actor": "lin"
+        },
+        {
+          "seq": 115,
+          "kind": "mission_settled",
+          "day": 14,
+          "mission": "M14",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "mo",
+            "chen"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 116,
+          "kind": "retreat_promise",
+          "day": 14,
+          "mission": "M14",
+          "kept": true
+        },
+        {
+          "seq": 117,
+          "kind": "story_choice",
+          "day": 14,
+          "actor": "mo",
+          "node": "P_mo_1",
+          "choice": "classify"
+        },
+        {
+          "seq": 118,
+          "kind": "story_choice",
+          "day": 14,
+          "actor": "ye",
+          "node": "P_ye_2",
+          "choice": "audit"
+        },
+        {
+          "seq": 119,
+          "kind": "training",
+          "day": 14,
+          "actors": [
+            "he",
+            "mo"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 120,
+          "kind": "assignment",
+          "day": 15,
+          "mission": "M15",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 121,
+          "kind": "objective_completed",
+          "day": 15,
+          "mission": "M15",
+          "mission_kind": "main",
+          "object": "north",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "su",
+            "he"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 122,
+          "kind": "casualty_saved",
+          "day": 15,
+          "mission": "M15",
+          "mission_kind": "main",
+          "object": "north",
+          "contributors": [
+            "su",
+            "he"
+          ]
+        },
+        {
+          "seq": 123,
+          "kind": "support_work",
+          "day": 15,
+          "mission": "M15",
+          "actor": "lin"
+        },
+        {
+          "seq": 124,
+          "kind": "mission_settled",
+          "day": 15,
+          "mission": "M15",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 125,
+          "kind": "short_scene",
+          "day": 15,
+          "node": "R05"
+        },
+        {
+          "seq": 126,
+          "kind": "short_scene",
+          "day": 15,
+          "node": "R07"
+        },
+        {
+          "seq": 127,
+          "kind": "training",
+          "day": 15,
+          "actors": [
+            "mo",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 128,
+          "kind": "assignment",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 129,
+          "kind": "objective_completed",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "object": "lane",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu",
+            "chen"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 130,
+          "kind": "objective_completed",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "object": "people",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "mo"
+          ],
+          "primary_contributor": "mo"
+        },
+        {
+          "seq": 131,
+          "kind": "casualty_saved",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "object": "people",
+          "contributors": [
+            "mo"
+          ]
+        },
+        {
+          "seq": 132,
+          "kind": "support_work",
+          "day": 16,
+          "mission": "M16",
+          "actor": "lin"
+        },
+        {
+          "seq": 133,
+          "kind": "recruit",
+          "day": 16,
+          "actor": "jiang"
+        },
+        {
+          "seq": 134,
+          "kind": "mission_settled",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 135,
+          "kind": "retreat_promise",
+          "day": 16,
+          "mission": "M16",
+          "kept": true
+        },
+        {
+          "seq": 136,
+          "kind": "story_choice",
+          "day": 16,
+          "actor": "he",
+          "node": "P_he_2",
+          "choice": "delegate"
+        },
+        {
+          "seq": 137,
+          "kind": "ending_preference",
+          "day": 16,
+          "actor": "lin",
+          "choice": "integrated"
+        },
+        {
+          "seq": 138,
+          "kind": "training",
+          "day": 16,
+          "actors": [
+            "jiang",
+            "mo"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 139,
+          "kind": "assignment",
+          "day": 17,
+          "mission": "M17",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 140,
+          "kind": "objective_completed",
+          "day": 17,
+          "mission": "M17",
+          "mission_kind": "main",
+          "object": "repair1",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 141,
+          "kind": "objective_completed",
+          "day": 17,
+          "mission": "M17",
+          "mission_kind": "main",
+          "object": "repair2",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "ye",
+            "he",
+            "su"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 142,
+          "kind": "support_work",
+          "day": 17,
+          "mission": "M17",
+          "actor": "lin"
+        },
+        {
+          "seq": 143,
+          "kind": "mission_settled",
+          "day": 17,
+          "mission": "M17",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 144,
+          "kind": "story_choice",
+          "day": 17,
+          "actor": "jiang",
+          "node": "P_jiang_1",
+          "choice": "wages"
+        },
+        {
+          "seq": 145,
+          "kind": "ending_preference",
+          "day": 17,
+          "actor": "xu",
+          "choice": "integrated"
+        },
+        {
+          "seq": 146,
+          "kind": "training",
+          "day": 17,
+          "actors": [
+            "jiang",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 147,
+          "kind": "assignment",
+          "day": 18,
+          "mission": "M18",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 148,
+          "kind": "objective_completed",
+          "day": 18,
+          "mission": "M18",
+          "mission_kind": "main",
+          "object": "relay",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu",
+            "mo"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 149,
+          "kind": "objective_completed",
+          "day": 18,
+          "mission": "M18",
+          "mission_kind": "main",
+          "object": "broadcast",
+          "type": "channel",
+          "tags": [
+            "channel",
+            "objective"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 150,
+          "kind": "support_work",
+          "day": 18,
+          "mission": "M18",
+          "actor": "lin"
+        },
+        {
+          "seq": 151,
+          "kind": "mission_settled",
+          "day": 18,
+          "mission": "M18",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 152,
+          "kind": "retreat_promise",
+          "day": 18,
+          "mission": "M18",
+          "kept": true
+        },
+        {
+          "seq": 153,
+          "kind": "story_choice",
+          "day": 18,
+          "actor": "mo",
+          "node": "P_mo_2",
+          "choice": "redact"
+        },
+        {
+          "seq": 154,
+          "kind": "public_record_release",
+          "day": 18,
+          "privacy": "redacted"
+        },
+        {
+          "seq": 155,
+          "kind": "ending_preference",
+          "day": 18,
+          "actor": "su",
+          "choice": "integrated"
+        },
+        {
+          "seq": 156,
+          "kind": "training",
+          "day": 18,
+          "actors": [
+            "jiang",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 157,
+          "kind": "assignment",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 158,
+          "kind": "objective_completed",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "object": "patient",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "ye",
+            "su"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 159,
+          "kind": "casualty_saved",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "object": "patient",
+          "contributors": [
+            "ye",
+            "su"
+          ]
+        },
+        {
+          "seq": 160,
+          "kind": "objective_completed",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "object": "shelter",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "he",
+            "ye"
+          ],
+          "primary_contributor": "he"
+        },
+        {
+          "seq": 161,
+          "kind": "support_work",
+          "day": 19,
+          "mission": "M19",
+          "actor": "lin"
+        },
+        {
+          "seq": 162,
+          "kind": "mission_settled",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 163,
+          "kind": "ending_preference",
+          "day": 19,
+          "actor": "chen",
+          "choice": "integrated"
+        },
+        {
+          "seq": 164,
+          "kind": "short_scene",
+          "day": 19,
+          "node": "R04"
+        },
+        {
+          "seq": 165,
+          "kind": "training",
+          "day": 19,
+          "actors": [
+            "jiang",
+            "mo"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 166,
+          "kind": "assignment",
+          "day": 20,
+          "mission": "M20",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 167,
+          "kind": "objective_completed",
+          "day": 20,
+          "mission": "M20",
+          "mission_kind": "main",
+          "object": "west",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "mo"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 168,
+          "kind": "support_work",
+          "day": 20,
+          "mission": "M20",
+          "actor": "lin"
+        },
+        {
+          "seq": 169,
+          "kind": "mission_settled",
+          "day": 20,
+          "mission": "M20",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 170,
+          "kind": "retreat_promise",
+          "day": 20,
+          "mission": "M20",
+          "kept": true
+        },
+        {
+          "seq": 171,
+          "kind": "ending_preference",
+          "day": 20,
+          "actor": "he",
+          "choice": "professional"
+        },
+        {
+          "seq": 172,
+          "kind": "story_choice",
+          "day": 20,
+          "actor": "jiang",
+          "node": "P_jiang_2",
+          "choice": "settle"
+        },
+        {
+          "seq": 173,
+          "kind": "payment",
+          "day": 20,
+          "purpose": "jiang_wages",
+          "amount": 6
+        },
+        {
+          "seq": 174,
+          "kind": "evidence_verified",
+          "day": 20,
+          "id": "E_ORDER",
+          "source": "public_review"
+        },
+        {
+          "seq": 175,
+          "kind": "assignment",
+          "day": 21,
+          "mission": "M21",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "su",
+            "ye"
+          ],
+          "support": "xu",
+          "reserves": 0
+        },
+        {
+          "seq": 176,
+          "kind": "objective_completed",
+          "day": 21,
+          "mission": "M21",
+          "mission_kind": "main",
+          "object": "route",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "heavy_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "lin",
+            "su",
+            "ye"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 177,
+          "kind": "support_work",
+          "day": 21,
+          "mission": "M21",
+          "actor": "xu"
+        },
+        {
+          "seq": 178,
+          "kind": "mission_settled",
+          "day": 21,
+          "mission": "M21",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "su",
+            "ye"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 179,
+          "kind": "ending_preference",
+          "day": 21,
+          "actor": "ye",
+          "choice": "professional"
+        },
+        {
+          "seq": 180,
+          "kind": "short_scene",
+          "day": 21,
+          "node": "R09"
+        },
+        {
+          "seq": 181,
+          "kind": "training",
+          "day": 21,
+          "actors": [
+            "jiang",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 182,
+          "kind": "assignment",
+          "day": 22,
+          "mission": "M22",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "he",
+            "mo"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 183,
+          "kind": "objective_completed",
+          "day": 22,
+          "mission": "M22",
+          "mission_kind": "main",
+          "object": "handover",
+          "type": "channel",
+          "tags": [
+            "channel",
+            "objective"
+          ],
+          "contributors": [
+            "chen"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 184,
+          "kind": "support_work",
+          "day": 22,
+          "mission": "M22",
+          "actor": "lin"
+        },
+        {
+          "seq": 185,
+          "kind": "mission_settled",
+          "day": 22,
+          "mission": "M22",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "he",
+            "mo"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 186,
+          "kind": "short_scene",
+          "day": 22,
+          "node": "R10"
+        },
+        {
+          "seq": 187,
+          "kind": "short_scene",
+          "day": 22,
+          "node": "R12"
+        },
+        {
+          "seq": 188,
+          "kind": "evidence_verified",
+          "day": 22,
+          "id": "E_MAINTENANCE",
+          "source": "public_review"
+        },
+        {
+          "seq": 189,
+          "kind": "known_information",
+          "day": 22,
+          "actor": "ye",
+          "fact": "maintenance_audit"
+        },
+        {
+          "seq": 190,
+          "kind": "training",
+          "day": 22,
+          "actors": [
+            "jiang",
+            "mo"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 191,
+          "kind": "assignment",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "su",
+            "ye"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 192,
+          "kind": "objective_completed",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "object": "r1",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 193,
+          "kind": "casualty_saved",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "object": "r1",
+          "contributors": [
+            "xu"
+          ]
+        },
+        {
+          "seq": 194,
+          "kind": "objective_completed",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "object": "r2",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 195,
+          "kind": "casualty_saved",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "object": "r2",
+          "contributors": [
+            "su"
+          ]
+        },
+        {
+          "seq": 196,
+          "kind": "support_work",
+          "day": 23,
+          "mission": "M23",
+          "actor": "lin"
+        },
+        {
+          "seq": 197,
+          "kind": "mission_settled",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "su",
+            "ye"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 198,
+          "kind": "retreat_promise",
+          "day": 23,
+          "mission": "M23",
+          "kept": true
+        },
+        {
+          "seq": 199,
+          "kind": "ending_preference",
+          "day": 23,
+          "actor": "jiang",
+          "choice": "integrated"
+        },
+        {
+          "seq": 200,
+          "kind": "ending_preference",
+          "day": 23,
+          "actor": "mo",
+          "choice": "integrated"
+        },
+        {
+          "seq": 201,
+          "kind": "evidence_verified",
+          "day": 23,
+          "id": "E_WARNING",
+          "source": "public_review"
+        },
+        {
+          "seq": 202,
+          "kind": "training",
+          "day": 23,
+          "actors": [
+            "jiang",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 203,
+          "kind": "assignment",
+          "day": 24,
+          "mission": "M24",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "chen",
+            "he"
+          ],
+          "support": "xu",
+          "reserves": 0
+        },
+        {
+          "seq": 204,
+          "kind": "objective_completed",
+          "day": 24,
+          "mission": "M24",
+          "mission_kind": "main",
+          "object": "bus",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "lin",
+            "chen"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 205,
+          "kind": "objective_completed",
+          "day": 24,
+          "mission": "M24",
+          "mission_kind": "main",
+          "object": "auth",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "he"
+          ],
+          "primary_contributor": "he"
+        },
+        {
+          "seq": 206,
+          "kind": "support_work",
+          "day": 24,
+          "mission": "M24",
+          "actor": "xu"
+        },
+        {
+          "seq": 207,
+          "kind": "mission_settled",
+          "day": 24,
+          "mission": "M24",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "chen",
+            "he"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        }
+      ]
+    },
+    {
+      "summary": {
+        "name": "实际战斗结果驱动的最高难度轮换整局",
+        "world_ending": "shared_control",
+        "selected_route": "shared_control",
+        "main_count": 24,
+        "side_count": 0,
+        "resources": {
+          "credits": 622,
+          "supplies": 32,
+          "parts": 50
+        },
+        "crafted_inventory": {
+          "med_dose": 0,
+          "battery": 0
+        },
+        "consumed": {},
+        "tools": [
+          "crowbar",
+          "medkit"
+        ],
+        "facilities": {
+          "infirmary": 0,
+          "workshop": 0,
+          "rest_area": 0,
+          "communications": 0
+        },
+        "borrowed_slots": 0,
+        "withdrawn": [],
+        "levels": {
+          "lin": 5,
+          "xu": 5,
+          "su": 5,
+          "chen": 5,
+          "ye": 5,
+          "he": 5,
+          "mo": 4,
+          "jiang": 4
+        },
+        "xp": {
+          "lin": 87,
+          "xu": 84,
+          "su": 89,
+          "chen": 80,
+          "ye": 75,
+          "he": 77,
+          "mo": 71,
+          "jiang": 49
+        },
+        "story_projects": 8,
+        "read_scenes": 36,
+        "verified_contracts": [
+          "lin",
+          "xu",
+          "su",
+          "chen",
+          "ye",
+          "mo",
+          "jiang"
+        ],
+        "character_endings": {
+          "lin": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "xu": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "su": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "chen": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "ye": {
+            "presence": "in_crew",
+            "requested_personal_choice": "professional",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "he": {
+            "presence": "in_crew",
+            "requested_personal_choice": "professional",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "unfulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "mo": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          },
+          "jiang": {
+            "presence": "in_crew",
+            "requested_personal_choice": "integrated",
+            "ongoing_obligation": "no_recorded_breach",
+            "contract": "fulfilled",
+            "career": "continue_work",
+            "relationship_overlay": "no_new_unresolved_breach",
+            "relationship_directions": []
+          }
+        },
+        "trained_protocols": [],
+        "relationship_sample": {
+          "lin>xu": {
+            "trust": 46,
+            "resentment": 42
+          },
+          "lin>su": {
+            "trust": 68,
+            "resentment": 0.0
+          },
+          "ye>chen": {
+            "trust": 40,
+            "resentment": 55
+          }
+        }
+      },
+      "battles": [
+        {
+          "day": 1,
+          "party": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "rounds": 7,
+          "limit": 9,
+          "ap": 37,
+          "damage": 0,
+          "style": "attack",
+          "completed": [
+            "r1",
+            "r2"
+          ],
+          "actual_contributors": {
+            "r1": [
+              "lin"
+            ],
+            "r2": [
+              "xu",
+              "su"
+            ]
+          },
+          "xp_after": {
+            "lin": 5,
+            "xu": 5,
+            "su": 5
+          }
+        },
+        {
+          "day": 2,
+          "party": [
+            "su",
+            "lin",
+            "xu"
+          ],
+          "rounds": 6,
+          "limit": 8,
+          "ap": 32,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "cut",
+            "power"
+          ],
+          "actual_contributors": {
+            "cut": [
+              "su",
+              "lin"
+            ],
+            "power": [
+              "lin",
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "su": 10,
+            "lin": 13,
+            "xu": 13
+          }
+        },
+        {
+          "day": 3,
+          "party": [
+            "xu",
+            "su",
+            "lin"
+          ],
+          "rounds": 7,
+          "limit": 9,
+          "ap": 33,
+          "damage": 2,
+          "style": "rush",
+          "completed": [
+            "door",
+            "crate"
+          ],
+          "actual_contributors": {
+            "door": [
+              "xu",
+              "su"
+            ],
+            "crate": [
+              "lin"
+            ]
+          },
+          "xp_after": {
+            "xu": 18,
+            "su": 18,
+            "lin": 21
+          }
+        },
+        {
+          "day": 4,
+          "party": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "rounds": 8,
+          "limit": 9,
+          "ap": 38,
+          "damage": 0,
+          "style": "controls",
+          "completed": [
+            "brace1",
+            "brace2",
+            "worker"
+          ],
+          "actual_contributors": {
+            "brace1": [
+              "xu"
+            ],
+            "brace2": [
+              "lin",
+              "xu"
+            ],
+            "worker": [
+              "xu",
+              "su"
+            ]
+          },
+          "xp_after": {
+            "lin": 26,
+            "xu": 26,
+            "su": 26
+          }
+        },
+        {
+          "day": 5,
+          "party": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "rounds": 5,
+          "limit": 7,
+          "ap": 25,
+          "damage": 4,
+          "style": "controls",
+          "completed": [
+            "isolate",
+            "pump"
+          ],
+          "actual_contributors": {
+            "isolate": [
+              "xu"
+            ],
+            "pump": [
+              "chen"
+            ]
+          },
+          "xp_after": {
+            "chen": 8,
+            "xu": 31,
+            "su": 31
+          }
+        },
+        {
+          "day": 6,
+          "party": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "rounds": 7,
+          "limit": 9,
+          "ap": 33,
+          "damage": 2,
+          "style": "attack",
+          "completed": [
+            "r1",
+            "r2"
+          ],
+          "actual_contributors": {
+            "r1": [
+              "su"
+            ],
+            "r2": [
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "chen": 16,
+            "xu": 36,
+            "su": 36
+          }
+        },
+        {
+          "day": 7,
+          "party": [
+            "chen",
+            "lin",
+            "xu"
+          ],
+          "rounds": 8,
+          "limit": 10,
+          "ap": 43,
+          "damage": 0,
+          "style": "attack",
+          "completed": [
+            "cut",
+            "worker"
+          ],
+          "actual_contributors": {
+            "cut": [
+              "chen"
+            ],
+            "worker": [
+              "lin",
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "chen": 24,
+            "lin": 41,
+            "xu": 41
+          }
+        },
+        {
+          "day": 8,
+          "party": [
+            "ye",
+            "lin",
+            "chen"
+          ],
+          "rounds": 10,
+          "limit": 12,
+          "ap": 32,
+          "damage": 4,
+          "style": "rush",
+          "completed": [
+            "block1",
+            "block2",
+            "truck"
+          ],
+          "actual_contributors": {
+            "block1": [
+              "ye",
+              "chen"
+            ],
+            "block2": [
+              "lin"
+            ],
+            "truck": [
+              "lin"
+            ]
+          },
+          "xp_after": {
+            "ye": 20,
+            "lin": 46,
+            "chen": 32
+          }
+        },
+        {
+          "day": 9,
+          "party": [
+            "ye",
+            "su",
+            "lin"
+          ],
+          "rounds": 8,
+          "limit": 10,
+          "ap": 31,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "r1",
+            "r2"
+          ],
+          "actual_contributors": {
+            "r1": [
+              "ye",
+              "lin"
+            ],
+            "r2": [
+              "su"
+            ]
+          },
+          "xp_after": {
+            "ye": 28,
+            "su": 49,
+            "lin": 51
+          }
+        },
+        {
+          "day": 10,
+          "party": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "rounds": 5,
+          "limit": 7,
+          "ap": 28,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "test1",
+            "test2"
+          ],
+          "actual_contributors": {
+            "test1": [
+              "chen",
+              "su"
+            ],
+            "test2": [
+              "ye"
+            ]
+          },
+          "xp_after": {
+            "chen": 40,
+            "ye": 36,
+            "su": 54
+          }
+        },
+        {
+          "day": 11,
+          "party": [
+            "he",
+            "xu",
+            "chen"
+          ],
+          "rounds": 5,
+          "limit": 7,
+          "ap": 29,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "cut",
+            "lock"
+          ],
+          "actual_contributors": {
+            "cut": [
+              "chen",
+              "he"
+            ],
+            "lock": [
+              "xu",
+              "chen"
+            ]
+          },
+          "xp_after": {
+            "he": 20,
+            "xu": 50,
+            "chen": 45
+          }
+        },
+        {
+          "day": 12,
+          "party": [
+            "su",
+            "he",
+            "xu"
+          ],
+          "rounds": 7,
+          "limit": 9,
+          "ap": 27,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "backup",
+            "drive"
+          ],
+          "actual_contributors": {
+            "backup": [
+              "su"
+            ],
+            "drive": [
+              "he"
+            ]
+          },
+          "xp_after": {
+            "su": 59,
+            "he": 28,
+            "xu": 55
+          }
+        },
+        {
+          "day": 13,
+          "party": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "rounds": 5,
+          "limit": 7,
+          "ap": 28,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "cut",
+            "log"
+          ],
+          "actual_contributors": {
+            "cut": [
+              "chen",
+              "su"
+            ],
+            "log": [
+              "chen",
+              "ye"
+            ]
+          },
+          "xp_after": {
+            "chen": 50,
+            "ye": 50,
+            "su": 64
+          }
+        },
+        {
+          "day": 14,
+          "party": [
+            "xu",
+            "mo",
+            "chen"
+          ],
+          "rounds": 5,
+          "limit": 7,
+          "ap": 20,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "meds"
+          ],
+          "actual_contributors": {
+            "meds": [
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "xu": 60,
+            "mo": 36,
+            "chen": 55
+          }
+        },
+        {
+          "day": 15,
+          "party": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "rounds": 6,
+          "limit": 9,
+          "ap": 25,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "north"
+          ],
+          "actual_contributors": {
+            "north": [
+              "su",
+              "he"
+            ]
+          },
+          "xp_after": {
+            "su": 69,
+            "ye": 55,
+            "he": 42
+          }
+        },
+        {
+          "day": 16,
+          "party": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "rounds": 8,
+          "limit": 10,
+          "ap": 35,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "lane",
+            "people"
+          ],
+          "actual_contributors": {
+            "lane": [
+              "xu",
+              "chen"
+            ],
+            "people": [
+              "mo"
+            ]
+          },
+          "xp_after": {
+            "xu": 65,
+            "chen": 60,
+            "mo": 47
+          }
+        },
+        {
+          "day": 17,
+          "party": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "rounds": 6,
+          "limit": 8,
+          "ap": 32,
+          "damage": 5,
+          "style": "rush",
+          "completed": [
+            "repair1",
+            "repair2"
+          ],
+          "actual_contributors": {
+            "repair1": [
+              "su"
+            ],
+            "repair2": [
+              "ye",
+              "he",
+              "su"
+            ]
+          },
+          "xp_after": {
+            "su": 74,
+            "ye": 60,
+            "he": 50
+          }
+        },
+        {
+          "day": 18,
+          "party": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "rounds": 7,
+          "limit": 9,
+          "ap": 26,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "relay",
+            "broadcast"
+          ],
+          "actual_contributors": {
+            "relay": [
+              "xu",
+              "mo"
+            ],
+            "broadcast": [
+              "xu"
+            ]
+          },
+          "xp_after": {
+            "xu": 70,
+            "chen": 65,
+            "mo": 55
+          }
+        },
+        {
+          "day": 19,
+          "party": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "rounds": 6,
+          "limit": 8,
+          "ap": 28,
+          "damage": 4,
+          "style": "rush",
+          "completed": [
+            "patient",
+            "shelter"
+          ],
+          "actual_contributors": {
+            "patient": [
+              "ye",
+              "su"
+            ],
+            "shelter": [
+              "he",
+              "ye"
+            ]
+          },
+          "xp_after": {
+            "su": 79,
+            "ye": 65,
+            "he": 61
+          }
+        },
+        {
+          "day": 20,
+          "party": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "rounds": 4,
+          "limit": 7,
+          "ap": 20,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "west"
+          ],
+          "actual_contributors": {
+            "west": [
+              "chen",
+              "mo"
+            ]
+          },
+          "xp_after": {
+            "xu": 75,
+            "chen": 70,
+            "mo": 63
+          }
+        },
+        {
+          "day": 21,
+          "party": [
+            "lin",
+            "su",
+            "ye"
+          ],
+          "rounds": 4,
+          "limit": 6,
+          "ap": 21,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "route"
+          ],
+          "actual_contributors": {
+            "route": [
+              "lin",
+              "su",
+              "ye"
+            ]
+          },
+          "xp_after": {
+            "lin": 78,
+            "su": 84,
+            "ye": 70
+          }
+        },
+        {
+          "day": 22,
+          "party": [
+            "chen",
+            "he",
+            "mo"
+          ],
+          "rounds": 5,
+          "limit": 8,
+          "ap": 17,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "handover"
+          ],
+          "actual_contributors": {
+            "handover": [
+              "chen"
+            ]
+          },
+          "xp_after": {
+            "chen": 75,
+            "he": 69,
+            "mo": 68
+          }
+        },
+        {
+          "day": 23,
+          "party": [
+            "xu",
+            "su",
+            "ye"
+          ],
+          "rounds": 8,
+          "limit": 10,
+          "ap": 33,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "r1",
+            "r2"
+          ],
+          "actual_contributors": {
+            "r1": [
+              "xu"
+            ],
+            "r2": [
+              "su"
+            ]
+          },
+          "xp_after": {
+            "xu": 82,
+            "su": 89,
+            "ye": 75
+          }
+        },
+        {
+          "day": 24,
+          "party": [
+            "lin",
+            "chen",
+            "he"
+          ],
+          "rounds": 6,
+          "limit": 9,
+          "ap": 30,
+          "damage": 0,
+          "style": "rush",
+          "completed": [
+            "bus",
+            "auth"
+          ],
+          "actual_contributors": {
+            "bus": [
+              "lin",
+              "chen"
+            ],
+            "auth": [
+              "he"
+            ]
+          },
+          "xp_after": {
+            "lin": 87,
+            "chen": 80,
+            "he": 77
+          }
+        }
+      ],
+      "skipped_nodes": [],
+      "receipts": [
+        {
+          "seq": 1,
+          "kind": "assignment",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "support": null,
+          "reserves": 0
+        },
+        {
+          "seq": 2,
+          "kind": "objective_completed",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "object": "r1",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "lin"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 3,
+          "kind": "casualty_saved",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "object": "r1",
+          "contributors": [
+            "lin"
+          ]
+        },
+        {
+          "seq": 4,
+          "kind": "objective_completed",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "object": "r2",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "xu",
+            "su"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 5,
+          "kind": "casualty_saved",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "object": "r2",
+          "contributors": [
+            "xu",
+            "su"
+          ]
+        },
+        {
+          "seq": 6,
+          "kind": "mission_settled",
+          "day": 1,
+          "mission": "M01",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 7,
+          "kind": "training",
+          "day": 1,
+          "actors": [
+            "lin",
+            "xu"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 8,
+          "kind": "assignment",
+          "day": 2,
+          "mission": "M02",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "lin",
+            "xu"
+          ],
+          "support": null,
+          "reserves": 0
+        },
+        {
+          "seq": 9,
+          "kind": "objective_completed",
+          "day": 2,
+          "mission": "M02",
+          "mission_kind": "main",
+          "object": "cut",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "su",
+            "lin"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 10,
+          "kind": "objective_completed",
+          "day": 2,
+          "mission": "M02",
+          "mission_kind": "main",
+          "object": "power",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "power_socket",
+            "work"
+          ],
+          "contributors": [
+            "lin",
+            "xu"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 11,
+          "kind": "mission_settled",
+          "day": 2,
+          "mission": "M02",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "lin",
+            "xu"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 12,
+          "kind": "story_choice",
+          "day": 2,
+          "actor": "lin",
+          "node": "P_lin_1",
+          "choice": "private"
+        },
+        {
+          "seq": 13,
+          "kind": "training",
+          "day": 2,
+          "actors": [
+            "su",
+            "lin"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 14,
+          "kind": "assignment",
+          "day": 3,
+          "mission": "M03",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "su",
+            "lin"
+          ],
+          "support": null,
+          "reserves": 0
+        },
+        {
+          "seq": 15,
+          "kind": "objective_completed",
+          "day": 3,
+          "mission": "M03",
+          "mission_kind": "main",
+          "object": "door",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "light_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu",
+            "su"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 16,
+          "kind": "objective_completed",
+          "day": 3,
+          "mission": "M03",
+          "mission_kind": "main",
+          "object": "crate",
+          "type": "cargo",
+          "tags": [
+            "cargo",
+            "objective"
+          ],
+          "contributors": [
+            "lin"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 17,
+          "kind": "mission_settled",
+          "day": 3,
+          "mission": "M03",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "su",
+            "lin"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 18,
+          "kind": "story_choice",
+          "day": 3,
+          "actor": "xu",
+          "node": "P_xu_1",
+          "choice": "record"
+        },
+        {
+          "seq": 19,
+          "kind": "short_scene",
+          "day": 3,
+          "node": "R06"
+        },
+        {
+          "seq": 20,
+          "kind": "training",
+          "day": 3,
+          "actors": [
+            "xu",
+            "su"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 21,
+          "kind": "assignment",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "support": null,
+          "reserves": 0
+        },
+        {
+          "seq": 22,
+          "kind": "objective_completed",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "object": "brace1",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 23,
+          "kind": "objective_completed",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "object": "brace2",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "lin",
+            "xu"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 24,
+          "kind": "objective_completed",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "object": "worker",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "xu",
+            "su"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 25,
+          "kind": "casualty_saved",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "object": "worker",
+          "contributors": [
+            "xu",
+            "su"
+          ]
+        },
+        {
+          "seq": 26,
+          "kind": "recruit",
+          "day": 4,
+          "actor": "chen"
+        },
+        {
+          "seq": 27,
+          "kind": "mission_settled",
+          "day": 4,
+          "mission": "M04",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "xu",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 28,
+          "kind": "story_choice",
+          "day": 4,
+          "actor": "su",
+          "node": "P_su_1",
+          "choice": "list"
+        },
+        {
+          "seq": 29,
+          "kind": "training",
+          "day": 4,
+          "actors": [
+            "chen",
+            "lin"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 30,
+          "kind": "assignment",
+          "day": 5,
+          "mission": "M05",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 31,
+          "kind": "objective_completed",
+          "day": 5,
+          "mission": "M05",
+          "mission_kind": "main",
+          "object": "isolate",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 32,
+          "kind": "objective_completed",
+          "day": 5,
+          "mission": "M05",
+          "mission_kind": "main",
+          "object": "pump",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "power_socket",
+            "work"
+          ],
+          "contributors": [
+            "chen"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 33,
+          "kind": "support_work",
+          "day": 5,
+          "mission": "M05",
+          "actor": "lin"
+        },
+        {
+          "seq": 34,
+          "kind": "mission_settled",
+          "day": 5,
+          "mission": "M05",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 35,
+          "kind": "story_choice",
+          "day": 5,
+          "actor": "chen",
+          "node": "P_chen_1",
+          "choice": "copy"
+        },
+        {
+          "seq": 36,
+          "kind": "training",
+          "day": 5,
+          "actors": [
+            "chen",
+            "lin"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 37,
+          "kind": "assignment",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 38,
+          "kind": "objective_completed",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "object": "r1",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 39,
+          "kind": "casualty_saved",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "object": "r1",
+          "contributors": [
+            "su"
+          ]
+        },
+        {
+          "seq": 40,
+          "kind": "objective_completed",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "object": "r2",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 41,
+          "kind": "casualty_saved",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "object": "r2",
+          "contributors": [
+            "xu"
+          ]
+        },
+        {
+          "seq": 42,
+          "kind": "support_work",
+          "day": 6,
+          "mission": "M06",
+          "actor": "lin"
+        },
+        {
+          "seq": 43,
+          "kind": "mission_settled",
+          "day": 6,
+          "mission": "M06",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "xu",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 44,
+          "kind": "short_scene",
+          "day": 6,
+          "node": "R01"
+        },
+        {
+          "seq": 45,
+          "kind": "recovery",
+          "day": 6,
+          "actors": [
+            "lin",
+            "xu"
+          ]
+        },
+        {
+          "seq": 46,
+          "kind": "training",
+          "day": 6,
+          "actors": [
+            "chen",
+            "su"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 47,
+          "kind": "assignment",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "lin",
+            "xu"
+          ],
+          "support": "su",
+          "reserves": 0
+        },
+        {
+          "seq": 48,
+          "kind": "objective_completed",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "object": "cut",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 49,
+          "kind": "objective_completed",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "object": "worker",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "lin",
+            "xu"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 50,
+          "kind": "casualty_saved",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "object": "worker",
+          "contributors": [
+            "lin",
+            "xu"
+          ]
+        },
+        {
+          "seq": 51,
+          "kind": "support_work",
+          "day": 7,
+          "mission": "M07",
+          "actor": "su"
+        },
+        {
+          "seq": 52,
+          "kind": "recruit",
+          "day": 7,
+          "actor": "ye"
+        },
+        {
+          "seq": 53,
+          "kind": "mission_settled",
+          "day": 7,
+          "mission": "M07",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "lin",
+            "xu"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 54,
+          "kind": "recovery",
+          "day": 7,
+          "actors": [
+            "su"
+          ]
+        },
+        {
+          "seq": 55,
+          "kind": "training",
+          "day": 7,
+          "actors": [
+            "ye",
+            "chen"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 56,
+          "kind": "assignment",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "actors": [
+            "ye",
+            "lin",
+            "chen"
+          ],
+          "support": "xu",
+          "reserves": 0
+        },
+        {
+          "seq": 57,
+          "kind": "objective_completed",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "object": "block1",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "light_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "ye",
+            "chen"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 58,
+          "kind": "objective_completed",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "object": "block2",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "heavy_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "lin"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 59,
+          "kind": "objective_completed",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "object": "truck",
+          "type": "convoy",
+          "tags": [
+            "convoy",
+            "objective"
+          ],
+          "contributors": [
+            "lin"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 60,
+          "kind": "support_work",
+          "day": 8,
+          "mission": "M08",
+          "actor": "xu"
+        },
+        {
+          "seq": 61,
+          "kind": "mission_settled",
+          "day": 8,
+          "mission": "M08",
+          "mission_kind": "main",
+          "actors": [
+            "ye",
+            "lin",
+            "chen"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 62,
+          "kind": "story_choice",
+          "day": 8,
+          "actor": "ye",
+          "node": "P_ye_1",
+          "choice": "retain"
+        },
+        {
+          "seq": 63,
+          "kind": "recovery",
+          "day": 8,
+          "actors": [
+            "lin",
+            "chen"
+          ]
+        },
+        {
+          "seq": 64,
+          "kind": "training",
+          "day": 8,
+          "actors": [
+            "ye",
+            "su"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 65,
+          "kind": "assignment",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "actors": [
+            "ye",
+            "su",
+            "lin"
+          ],
+          "support": "xu",
+          "reserves": 0
+        },
+        {
+          "seq": 66,
+          "kind": "objective_completed",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "object": "r1",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "ye",
+            "lin"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 67,
+          "kind": "casualty_saved",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "object": "r1",
+          "contributors": [
+            "ye",
+            "lin"
+          ]
+        },
+        {
+          "seq": 68,
+          "kind": "objective_completed",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "object": "r2",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 69,
+          "kind": "casualty_saved",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "object": "r2",
+          "contributors": [
+            "su"
+          ]
+        },
+        {
+          "seq": 70,
+          "kind": "support_work",
+          "day": 9,
+          "mission": "M09",
+          "actor": "xu"
+        },
+        {
+          "seq": 71,
+          "kind": "mission_settled",
+          "day": 9,
+          "mission": "M09",
+          "mission_kind": "main",
+          "actors": [
+            "ye",
+            "su",
+            "lin"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 72,
+          "kind": "story_choice",
+          "day": 9,
+          "actor": "lin",
+          "node": "P_lin_2",
+          "choice": "rotation"
+        },
+        {
+          "seq": 73,
+          "kind": "short_scene",
+          "day": 9,
+          "node": "R02"
+        },
+        {
+          "seq": 74,
+          "kind": "training",
+          "day": 9,
+          "actors": [
+            "ye",
+            "chen"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 75,
+          "kind": "assignment",
+          "day": 10,
+          "mission": "M10",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 76,
+          "kind": "objective_completed",
+          "day": 10,
+          "mission": "M10",
+          "mission_kind": "main",
+          "object": "test1",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "su"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 77,
+          "kind": "objective_completed",
+          "day": 10,
+          "mission": "M10",
+          "mission_kind": "main",
+          "object": "test2",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "ye"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 78,
+          "kind": "support_work",
+          "day": 10,
+          "mission": "M10",
+          "actor": "lin"
+        },
+        {
+          "seq": 79,
+          "kind": "recruit",
+          "day": 10,
+          "actor": "he"
+        },
+        {
+          "seq": 80,
+          "kind": "mission_settled",
+          "day": 10,
+          "mission": "M10",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 81,
+          "kind": "story_choice",
+          "day": 10,
+          "actor": "xu",
+          "node": "P_xu_2",
+          "choice": "bounded"
+        },
+        {
+          "seq": 82,
+          "kind": "training",
+          "day": 10,
+          "actors": [
+            "he",
+            "ye"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 83,
+          "kind": "assignment",
+          "day": 11,
+          "mission": "M11",
+          "mission_kind": "main",
+          "actors": [
+            "he",
+            "xu",
+            "chen"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 84,
+          "kind": "objective_completed",
+          "day": 11,
+          "mission": "M11",
+          "mission_kind": "main",
+          "object": "cut",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "he"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 85,
+          "kind": "objective_completed",
+          "day": 11,
+          "mission": "M11",
+          "mission_kind": "main",
+          "object": "lock",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "light_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu",
+            "chen"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 86,
+          "kind": "support_work",
+          "day": 11,
+          "mission": "M11",
+          "actor": "lin"
+        },
+        {
+          "seq": 87,
+          "kind": "mission_settled",
+          "day": 11,
+          "mission": "M11",
+          "mission_kind": "main",
+          "actors": [
+            "he",
+            "xu",
+            "chen"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 88,
+          "kind": "retreat_promise",
+          "day": 11,
+          "mission": "M11",
+          "kept": true
+        },
+        {
+          "seq": 89,
+          "kind": "story_choice",
+          "day": 11,
+          "actor": "he",
+          "node": "P_he_1",
+          "choice": "name"
+        },
+        {
+          "seq": 90,
+          "kind": "story_choice",
+          "day": 11,
+          "actor": "su",
+          "node": "P_su_2",
+          "choice": "rota"
+        },
+        {
+          "seq": 91,
+          "kind": "training",
+          "day": 11,
+          "actors": [
+            "he",
+            "ye"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 92,
+          "kind": "assignment",
+          "day": 12,
+          "mission": "M12",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "he",
+            "xu"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 93,
+          "kind": "objective_completed",
+          "day": 12,
+          "mission": "M12",
+          "mission_kind": "main",
+          "object": "backup",
+          "type": "channel",
+          "tags": [
+            "channel",
+            "objective"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 94,
+          "kind": "objective_completed",
+          "day": 12,
+          "mission": "M12",
+          "mission_kind": "main",
+          "object": "drive",
+          "type": "cargo",
+          "tags": [
+            "cargo",
+            "objective"
+          ],
+          "contributors": [
+            "he"
+          ],
+          "primary_contributor": "he"
+        },
+        {
+          "seq": 95,
+          "kind": "support_work",
+          "day": 12,
+          "mission": "M12",
+          "actor": "lin"
+        },
+        {
+          "seq": 96,
+          "kind": "mission_settled",
+          "day": 12,
+          "mission": "M12",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "he",
+            "xu"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 97,
+          "kind": "retreat_promise",
+          "day": 12,
+          "mission": "M12",
+          "kept": true
+        },
+        {
+          "seq": 98,
+          "kind": "story_choice",
+          "day": 12,
+          "actor": "chen",
+          "node": "P_chen_2",
+          "choice": "fund"
+        },
+        {
+          "seq": 99,
+          "kind": "payment",
+          "day": 12,
+          "purpose": "chen_compensation",
+          "amount": 8
+        },
+        {
+          "seq": 100,
+          "kind": "known_information",
+          "day": 12,
+          "actor": "ye",
+          "fact": "chen_signed_responsibility"
+        },
+        {
+          "seq": 101,
+          "kind": "short_scene",
+          "day": 12,
+          "node": "R03"
+        },
+        {
+          "seq": 102,
+          "kind": "training",
+          "day": 12,
+          "actors": [
+            "he",
+            "ye"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 103,
+          "kind": "assignment",
+          "day": 13,
+          "mission": "M13",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 104,
+          "kind": "objective_completed",
+          "day": 13,
+          "mission": "M13",
+          "mission_kind": "main",
+          "object": "cut",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "su"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 105,
+          "kind": "objective_completed",
+          "day": 13,
+          "mission": "M13",
+          "mission_kind": "main",
+          "object": "log",
+          "type": "work",
+          "tags": [
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "ye"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 106,
+          "kind": "support_work",
+          "day": 13,
+          "mission": "M13",
+          "actor": "lin"
+        },
+        {
+          "seq": 107,
+          "kind": "recruit",
+          "day": 13,
+          "actor": "mo"
+        },
+        {
+          "seq": 108,
+          "kind": "mission_settled",
+          "day": 13,
+          "mission": "M13",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "ye",
+            "su"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 109,
+          "kind": "short_scene",
+          "day": 13,
+          "node": "R08"
+        },
+        {
+          "seq": 110,
+          "kind": "short_scene",
+          "day": 13,
+          "node": "R11"
+        },
+        {
+          "seq": 111,
+          "kind": "training",
+          "day": 13,
+          "actors": [
+            "mo",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 112,
+          "kind": "assignment",
+          "day": 14,
+          "mission": "M14",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "mo",
+            "chen"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 113,
+          "kind": "objective_completed",
+          "day": 14,
+          "mission": "M14",
+          "mission_kind": "main",
+          "object": "meds",
+          "type": "cargo",
+          "tags": [
+            "cargo",
+            "objective"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 114,
+          "kind": "support_work",
+          "day": 14,
+          "mission": "M14",
+          "actor": "lin"
+        },
+        {
+          "seq": 115,
+          "kind": "mission_settled",
+          "day": 14,
+          "mission": "M14",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "mo",
+            "chen"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 116,
+          "kind": "retreat_promise",
+          "day": 14,
+          "mission": "M14",
+          "kept": true
+        },
+        {
+          "seq": 117,
+          "kind": "story_choice",
+          "day": 14,
+          "actor": "mo",
+          "node": "P_mo_1",
+          "choice": "classify"
+        },
+        {
+          "seq": 118,
+          "kind": "story_choice",
+          "day": 14,
+          "actor": "ye",
+          "node": "P_ye_2",
+          "choice": "audit"
+        },
+        {
+          "seq": 119,
+          "kind": "training",
+          "day": 14,
+          "actors": [
+            "he",
+            "mo"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 120,
+          "kind": "assignment",
+          "day": 15,
+          "mission": "M15",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 121,
+          "kind": "objective_completed",
+          "day": 15,
+          "mission": "M15",
+          "mission_kind": "main",
+          "object": "north",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "su",
+            "he"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 122,
+          "kind": "casualty_saved",
+          "day": 15,
+          "mission": "M15",
+          "mission_kind": "main",
+          "object": "north",
+          "contributors": [
+            "su",
+            "he"
+          ]
+        },
+        {
+          "seq": 123,
+          "kind": "support_work",
+          "day": 15,
+          "mission": "M15",
+          "actor": "lin"
+        },
+        {
+          "seq": 124,
+          "kind": "mission_settled",
+          "day": 15,
+          "mission": "M15",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 125,
+          "kind": "short_scene",
+          "day": 15,
+          "node": "R05"
+        },
+        {
+          "seq": 126,
+          "kind": "short_scene",
+          "day": 15,
+          "node": "R07"
+        },
+        {
+          "seq": 127,
+          "kind": "training",
+          "day": 15,
+          "actors": [
+            "mo",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 128,
+          "kind": "assignment",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 129,
+          "kind": "objective_completed",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "object": "lane",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu",
+            "chen"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 130,
+          "kind": "objective_completed",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "object": "people",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "mo"
+          ],
+          "primary_contributor": "mo"
+        },
+        {
+          "seq": 131,
+          "kind": "casualty_saved",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "object": "people",
+          "contributors": [
+            "mo"
+          ]
+        },
+        {
+          "seq": 132,
+          "kind": "support_work",
+          "day": 16,
+          "mission": "M16",
+          "actor": "lin"
+        },
+        {
+          "seq": 133,
+          "kind": "recruit",
+          "day": 16,
+          "actor": "jiang"
+        },
+        {
+          "seq": 134,
+          "kind": "mission_settled",
+          "day": 16,
+          "mission": "M16",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 135,
+          "kind": "retreat_promise",
+          "day": 16,
+          "mission": "M16",
+          "kept": true
+        },
+        {
+          "seq": 136,
+          "kind": "story_choice",
+          "day": 16,
+          "actor": "he",
+          "node": "P_he_2",
+          "choice": "delegate"
+        },
+        {
+          "seq": 137,
+          "kind": "ending_preference",
+          "day": 16,
+          "actor": "lin",
+          "choice": "integrated"
+        },
+        {
+          "seq": 138,
+          "kind": "training",
+          "day": 16,
+          "actors": [
+            "jiang",
+            "mo"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 139,
+          "kind": "assignment",
+          "day": 17,
+          "mission": "M17",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 140,
+          "kind": "objective_completed",
+          "day": 17,
+          "mission": "M17",
+          "mission_kind": "main",
+          "object": "repair1",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 141,
+          "kind": "objective_completed",
+          "day": 17,
+          "mission": "M17",
+          "mission_kind": "main",
+          "object": "repair2",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "ye",
+            "he",
+            "su"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 142,
+          "kind": "support_work",
+          "day": 17,
+          "mission": "M17",
+          "actor": "lin"
+        },
+        {
+          "seq": 143,
+          "kind": "mission_settled",
+          "day": 17,
+          "mission": "M17",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 144,
+          "kind": "story_choice",
+          "day": 17,
+          "actor": "jiang",
+          "node": "P_jiang_1",
+          "choice": "wages"
+        },
+        {
+          "seq": 145,
+          "kind": "ending_preference",
+          "day": 17,
+          "actor": "xu",
+          "choice": "integrated"
+        },
+        {
+          "seq": 146,
+          "kind": "training",
+          "day": 17,
+          "actors": [
+            "jiang",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 147,
+          "kind": "assignment",
+          "day": 18,
+          "mission": "M18",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 148,
+          "kind": "objective_completed",
+          "day": 18,
+          "mission": "M18",
+          "mission_kind": "main",
+          "object": "relay",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "xu",
+            "mo"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 149,
+          "kind": "objective_completed",
+          "day": 18,
+          "mission": "M18",
+          "mission_kind": "main",
+          "object": "broadcast",
+          "type": "channel",
+          "tags": [
+            "channel",
+            "objective"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 150,
+          "kind": "support_work",
+          "day": 18,
+          "mission": "M18",
+          "actor": "lin"
+        },
+        {
+          "seq": 151,
+          "kind": "mission_settled",
+          "day": 18,
+          "mission": "M18",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 152,
+          "kind": "retreat_promise",
+          "day": 18,
+          "mission": "M18",
+          "kept": true
+        },
+        {
+          "seq": 153,
+          "kind": "story_choice",
+          "day": 18,
+          "actor": "mo",
+          "node": "P_mo_2",
+          "choice": "redact"
+        },
+        {
+          "seq": 154,
+          "kind": "public_record_release",
+          "day": 18,
+          "privacy": "redacted"
+        },
+        {
+          "seq": 155,
+          "kind": "ending_preference",
+          "day": 18,
+          "actor": "su",
+          "choice": "integrated"
+        },
+        {
+          "seq": 156,
+          "kind": "training",
+          "day": 18,
+          "actors": [
+            "jiang",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 157,
+          "kind": "assignment",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 158,
+          "kind": "objective_completed",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "object": "patient",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "ye",
+            "su"
+          ],
+          "primary_contributor": "ye"
+        },
+        {
+          "seq": 159,
+          "kind": "casualty_saved",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "object": "patient",
+          "contributors": [
+            "ye",
+            "su"
+          ]
+        },
+        {
+          "seq": 160,
+          "kind": "objective_completed",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "object": "shelter",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "he",
+            "ye"
+          ],
+          "primary_contributor": "he"
+        },
+        {
+          "seq": 161,
+          "kind": "support_work",
+          "day": 19,
+          "mission": "M19",
+          "actor": "lin"
+        },
+        {
+          "seq": 162,
+          "kind": "mission_settled",
+          "day": 19,
+          "mission": "M19",
+          "mission_kind": "main",
+          "actors": [
+            "su",
+            "ye",
+            "he"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 163,
+          "kind": "ending_preference",
+          "day": 19,
+          "actor": "chen",
+          "choice": "integrated"
+        },
+        {
+          "seq": 164,
+          "kind": "short_scene",
+          "day": 19,
+          "node": "R04"
+        },
+        {
+          "seq": 165,
+          "kind": "training",
+          "day": 19,
+          "actors": [
+            "jiang",
+            "mo"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 166,
+          "kind": "assignment",
+          "day": 20,
+          "mission": "M20",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 167,
+          "kind": "objective_completed",
+          "day": 20,
+          "mission": "M20",
+          "mission_kind": "main",
+          "object": "west",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "chen",
+            "mo"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 168,
+          "kind": "support_work",
+          "day": 20,
+          "mission": "M20",
+          "actor": "lin"
+        },
+        {
+          "seq": 169,
+          "kind": "mission_settled",
+          "day": 20,
+          "mission": "M20",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "chen",
+            "mo"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 170,
+          "kind": "retreat_promise",
+          "day": 20,
+          "mission": "M20",
+          "kept": true
+        },
+        {
+          "seq": 171,
+          "kind": "ending_preference",
+          "day": 20,
+          "actor": "he",
+          "choice": "professional"
+        },
+        {
+          "seq": 172,
+          "kind": "story_choice",
+          "day": 20,
+          "actor": "jiang",
+          "node": "P_jiang_2",
+          "choice": "settle"
+        },
+        {
+          "seq": 173,
+          "kind": "payment",
+          "day": 20,
+          "purpose": "jiang_wages",
+          "amount": 6
+        },
+        {
+          "seq": 174,
+          "kind": "evidence_verified",
+          "day": 20,
+          "id": "E_ORDER",
+          "source": "public_review"
+        },
+        {
+          "seq": 175,
+          "kind": "assignment",
+          "day": 21,
+          "mission": "M21",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "su",
+            "ye"
+          ],
+          "support": "xu",
+          "reserves": 0
+        },
+        {
+          "seq": 176,
+          "kind": "objective_completed",
+          "day": 21,
+          "mission": "M21",
+          "mission_kind": "main",
+          "object": "route",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "heavy_obstacle",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "lin",
+            "su",
+            "ye"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 177,
+          "kind": "support_work",
+          "day": 21,
+          "mission": "M21",
+          "actor": "xu"
+        },
+        {
+          "seq": 178,
+          "kind": "mission_settled",
+          "day": 21,
+          "mission": "M21",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "su",
+            "ye"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 179,
+          "kind": "ending_preference",
+          "day": 21,
+          "actor": "ye",
+          "choice": "professional"
+        },
+        {
+          "seq": 180,
+          "kind": "short_scene",
+          "day": 21,
+          "node": "R09"
+        },
+        {
+          "seq": 181,
+          "kind": "training",
+          "day": 21,
+          "actors": [
+            "jiang",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 182,
+          "kind": "assignment",
+          "day": 22,
+          "mission": "M22",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "he",
+            "mo"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 183,
+          "kind": "objective_completed",
+          "day": 22,
+          "mission": "M22",
+          "mission_kind": "main",
+          "object": "handover",
+          "type": "channel",
+          "tags": [
+            "channel",
+            "objective"
+          ],
+          "contributors": [
+            "chen"
+          ],
+          "primary_contributor": "chen"
+        },
+        {
+          "seq": 184,
+          "kind": "support_work",
+          "day": 22,
+          "mission": "M22",
+          "actor": "lin"
+        },
+        {
+          "seq": 185,
+          "kind": "mission_settled",
+          "day": 22,
+          "mission": "M22",
+          "mission_kind": "main",
+          "actors": [
+            "chen",
+            "he",
+            "mo"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        },
+        {
+          "seq": 186,
+          "kind": "short_scene",
+          "day": 22,
+          "node": "R10"
+        },
+        {
+          "seq": 187,
+          "kind": "short_scene",
+          "day": 22,
+          "node": "R12"
+        },
+        {
+          "seq": 188,
+          "kind": "evidence_verified",
+          "day": 22,
+          "id": "E_MAINTENANCE",
+          "source": "public_review"
+        },
+        {
+          "seq": 189,
+          "kind": "known_information",
+          "day": 22,
+          "actor": "ye",
+          "fact": "maintenance_audit"
+        },
+        {
+          "seq": 190,
+          "kind": "training",
+          "day": 22,
+          "actors": [
+            "jiang",
+            "mo"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 191,
+          "kind": "assignment",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "su",
+            "ye"
+          ],
+          "support": "lin",
+          "reserves": 0
+        },
+        {
+          "seq": 192,
+          "kind": "objective_completed",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "object": "r1",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "xu"
+          ],
+          "primary_contributor": "xu"
+        },
+        {
+          "seq": 193,
+          "kind": "casualty_saved",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "object": "r1",
+          "contributors": [
+            "xu"
+          ]
+        },
+        {
+          "seq": 194,
+          "kind": "objective_completed",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "object": "r2",
+          "type": "rescue",
+          "tags": [
+            "objective",
+            "rescue"
+          ],
+          "contributors": [
+            "su"
+          ],
+          "primary_contributor": "su"
+        },
+        {
+          "seq": 195,
+          "kind": "casualty_saved",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "object": "r2",
+          "contributors": [
+            "su"
+          ]
+        },
+        {
+          "seq": 196,
+          "kind": "support_work",
+          "day": 23,
+          "mission": "M23",
+          "actor": "lin"
+        },
+        {
+          "seq": 197,
+          "kind": "mission_settled",
+          "day": 23,
+          "mission": "M23",
+          "mission_kind": "main",
+          "actors": [
+            "xu",
+            "su",
+            "ye"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": true,
+          "result": "success"
+        },
+        {
+          "seq": 198,
+          "kind": "retreat_promise",
+          "day": 23,
+          "mission": "M23",
+          "kept": true
+        },
+        {
+          "seq": 199,
+          "kind": "ending_preference",
+          "day": 23,
+          "actor": "jiang",
+          "choice": "integrated"
+        },
+        {
+          "seq": 200,
+          "kind": "ending_preference",
+          "day": 23,
+          "actor": "mo",
+          "choice": "integrated"
+        },
+        {
+          "seq": 201,
+          "kind": "evidence_verified",
+          "day": 23,
+          "id": "E_WARNING",
+          "source": "public_review"
+        },
+        {
+          "seq": 202,
+          "kind": "training",
+          "day": 23,
+          "actors": [
+            "jiang",
+            "he"
+          ],
+          "protocol": null
+        },
+        {
+          "seq": 203,
+          "kind": "assignment",
+          "day": 24,
+          "mission": "M24",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "chen",
+            "he"
+          ],
+          "support": "xu",
+          "reserves": 0
+        },
+        {
+          "seq": 204,
+          "kind": "objective_completed",
+          "day": 24,
+          "mission": "M24",
+          "mission_kind": "main",
+          "object": "bus",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "lin",
+            "chen"
+          ],
+          "primary_contributor": "lin"
+        },
+        {
+          "seq": 205,
+          "kind": "objective_completed",
+          "day": 24,
+          "mission": "M24",
+          "mission_kind": "main",
+          "object": "auth",
+          "type": "work",
+          "tags": [
+            "engineering",
+            "objective",
+            "work"
+          ],
+          "contributors": [
+            "he"
+          ],
+          "primary_contributor": "he"
+        },
+        {
+          "seq": 206,
+          "kind": "support_work",
+          "day": 24,
+          "mission": "M24",
+          "actor": "xu"
+        },
+        {
+          "seq": 207,
+          "kind": "mission_settled",
+          "day": 24,
+          "mission": "M24",
+          "mission_kind": "main",
+          "actors": [
+            "lin",
+            "chen",
+            "he"
+          ],
+          "all_extracted": true,
+          "xu_standing_on_exit": false,
+          "result": "success"
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "48 simulated main battles actually completed",
+    "combat contributions mapped to actual assigned characters",
+    "camp costs/fatigue use the same ledger",
+    "personal story proof not synthesized from victory",
+    "final route eligibility checked from actual world/evidence",
+    "no runtime development performed"
+  ]
+}

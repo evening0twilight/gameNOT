@@ -1,0 +1,188 @@
+{
+  "checks": [
+    "lin actual evidence completes obligation",
+    "lin empty evidence cannot complete obligation",
+    "lin missing required receipt 0 rejects completion",
+    "lin unrelated pre-promise deeds cannot backfill obligation",
+    "xu actual evidence completes obligation",
+    "xu empty evidence cannot complete obligation",
+    "xu missing required receipt 0 rejects completion",
+    "xu missing required receipt 1 rejects completion",
+    "xu unrelated pre-promise deeds cannot backfill obligation",
+    "su actual evidence completes obligation",
+    "su empty evidence cannot complete obligation",
+    "su missing required receipt 0 rejects completion",
+    "su missing required receipt 1 rejects completion",
+    "su missing required receipt 2 rejects completion",
+    "su unrelated pre-promise deeds cannot backfill obligation",
+    "chen actual evidence completes obligation",
+    "chen empty evidence cannot complete obligation",
+    "chen missing required receipt 0 rejects completion",
+    "chen missing required receipt 1 rejects completion",
+    "chen missing required receipt 2 rejects completion",
+    "chen unrelated pre-promise deeds cannot backfill obligation",
+    "ye actual evidence completes obligation",
+    "ye empty evidence cannot complete obligation",
+    "ye missing required receipt 0 rejects completion",
+    "ye missing required receipt 1 rejects completion",
+    "he actual evidence completes obligation",
+    "he empty evidence cannot complete obligation",
+    "he missing required receipt 0 rejects completion",
+    "he missing required receipt 1 rejects completion",
+    "he missing required receipt 2 rejects completion",
+    "he unrelated pre-promise deeds cannot backfill obligation",
+    "mo actual evidence completes obligation",
+    "mo empty evidence cannot complete obligation",
+    "mo missing required receipt 0 rejects completion",
+    "mo unrelated pre-promise deeds cannot backfill obligation",
+    "jiang actual evidence completes obligation",
+    "jiang empty evidence cannot complete obligation",
+    "jiang missing required receipt 0 rejects completion",
+    "jiang unrelated pre-promise deeds cannot backfill obligation",
+    "xu promise and retreat must be same mission",
+    "he cooperation cannot combine unrelated missions",
+    "duplicate contributor is not two people",
+    "mo later unredacted release invalidates promise",
+    "jiang waits until explicit final audit day",
+    "jiang cannot substitute another payment purpose",
+    "later betrayal changes an earlier warm ending",
+    "later actual restitution can restore the ending",
+    "withdrawal always overrides restored relationship",
+    "professional choice respected even if proof obtained"
+  ],
+  "passed_count": 49,
+  "valid_examples": {
+    "lin": [
+      {
+        "kind": "casualty_saved",
+        "seq": 11,
+        "mission": "M09",
+        "mission_kind": "main",
+        "contributors": [
+          "lin",
+          "su"
+        ]
+      }
+    ],
+    "xu": [
+      {
+        "kind": "mission_settled",
+        "seq": 11,
+        "mission": "M11",
+        "actors": [
+          "xu"
+        ],
+        "xu_standing_on_exit": true
+      },
+      {
+        "kind": "retreat_promise",
+        "seq": 12,
+        "mission": "M11",
+        "kept": true
+      }
+    ],
+    "su": [
+      {
+        "kind": "assignment",
+        "seq": 11,
+        "mission": "M12",
+        "mission_kind": "main",
+        "day": 12,
+        "support": "chen"
+      },
+      {
+        "kind": "assignment",
+        "seq": 12,
+        "mission": "M13",
+        "mission_kind": "main",
+        "day": 13,
+        "support": null
+      },
+      {
+        "kind": "support_work",
+        "seq": 13,
+        "mission": "M12",
+        "actor": "chen"
+      }
+    ],
+    "chen": [
+      {
+        "kind": "payment",
+        "seq": 11,
+        "purpose": "chen_compensation",
+        "amount": 8
+      },
+      {
+        "kind": "objective_completed",
+        "seq": 12,
+        "mission_kind": "main",
+        "type": "work",
+        "tags": [
+          "engineering"
+        ],
+        "contributors": [
+          "chen"
+        ]
+      },
+      {
+        "kind": "known_information",
+        "seq": 13,
+        "actor": "ye",
+        "fact": "chen_signed_responsibility"
+      }
+    ],
+    "ye": [
+      {
+        "kind": "evidence_verified",
+        "seq": 4,
+        "id": "E_MAINTENANCE"
+      },
+      {
+        "kind": "known_information",
+        "seq": 11,
+        "actor": "ye",
+        "fact": "maintenance_audit"
+      }
+    ],
+    "he": [
+      {
+        "kind": "mission_settled",
+        "seq": 11,
+        "mission": "M17",
+        "actors": [
+          "he",
+          "su"
+        ],
+        "all_extracted": true
+      },
+      {
+        "kind": "objective_completed",
+        "seq": 12,
+        "mission": "M17",
+        "primary_contributor": "su"
+      },
+      {
+        "kind": "protect_or_rescue",
+        "seq": 13,
+        "mission": "M17",
+        "actor": "he"
+      }
+    ],
+    "mo": [
+      {
+        "kind": "public_record_release",
+        "seq": 11,
+        "privacy": "redacted"
+      }
+    ],
+    "jiang": [
+      {
+        "kind": "payment",
+        "seq": 11,
+        "purpose": "jiang_wages",
+        "amount": 6
+      }
+    ]
+  },
+  "boundary": "Receipt authenticity, actor authority and atomic issue are runtime requirements; this reference evaluates supplied receipts, not an implemented event bus."
+}

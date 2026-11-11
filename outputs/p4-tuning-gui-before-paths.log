@@ -1,0 +1,13 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M3
+
+GUI_EXTERNAL_DISPLAY: screen=1 primary=0 total=2
+PROJECT_BOOT_OK: P4 campaign UI
+ERROR: Parse JSON failed. Error at line 0: Unknown error getting token
+   at: parse_string (core/io/json.cpp:629)
+   GDScript backtrace (most recent call first):
+       [0] launch (res://tests/p4_tuning_gui_replay.gd:9)
+SCRIPT ERROR: Trying to assign value of type 'Nil' to a variable of type 'Array'.
+          at: launch (res://tests/p4_tuning_gui_replay.gd:9)
+          GDScript backtrace (most recent call first):
+              [0] launch (res://tests/p4_tuning_gui_replay.gd:9)

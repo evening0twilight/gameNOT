@@ -1,0 +1,845 @@
+{
+  "scope": "Isolated legal-state fixtures; not proof of reaching every fixture during a whole mission. Offline design scripts only.",
+  "passed_count": 115,
+  "checks": [
+    "lin_1 executes without AP minting",
+    "lin_1 really stabilizes",
+    "lin_3 executes without AP minting",
+    "lin_3 really stabilizes",
+    "lin_5 executes without AP minting",
+    "lin_5 really stabilizes",
+    "xu_1 executes without AP minting",
+    "rope reached declared dry landing",
+    "xu_3 executes without AP minting",
+    "pull preserves recipient AP",
+    "xu_5 executes without AP minting",
+    "anchor actually exists",
+    "su_1 executes without AP minting",
+    "mark actually exists",
+    "su_3 executes without AP minting",
+    "coordination changes move budget",
+    "su_5 executes without AP minting",
+    "alternate exit added",
+    "chen_1 executes without AP minting",
+    "chen_1 stops current intent",
+    "chen_3 executes without AP minting",
+    "reinforcement really adds3 protection",
+    "chen_5 executes without AP minting",
+    "reset completes engineering target",
+    "ye_1 executes without AP minting",
+    "ye_1 stops current intent",
+    "ye_3 executes without AP minting",
+    "two insulation cells exist",
+    "ye_5 executes without AP minting",
+    "demolition contributes2 work",
+    "he_1 executes without AP minting",
+    "temporary barrier has3HP",
+    "he_3 executes without AP minting",
+    "safe carrying budget3",
+    "he_5 executes without AP minting",
+    "two distinct shields applied",
+    "mo_1 executes without AP minting",
+    "remote shutdown actual work is real",
+    "mo_3 executes without AP minting",
+    "decoy waits until next round",
+    "mo_5 executes without AP minting",
+    "pending wave canceled",
+    "jiang_1 executes without AP minting",
+    "transfer neither doubles nor delivers casualty",
+    "jiang_3 executes without AP minting",
+    "supply heals and consumes actual dose",
+    "jiang_5 executes without AP minting",
+    "route rubble actually removed",
+    "crowbar has executable use",
+    "crowbar adds work",
+    "medkit has executable use",
+    "medkit requires and consumes dose",
+    "winch has executable use",
+    "shield has executable use",
+    "foam has executable use",
+    "foam spans three environment resolutions",
+    "insulation has executable use",
+    "battery has executable use",
+    "battery adds work",
+    "scanner has executable use",
+    "probe provides real shutdown work",
+    "beacon has executable use",
+    "cutter has executable use",
+    "cutter adds work",
+    "stretcher has executable use",
+    "stretcher carrying3",
+    "extinguisher has executable use",
+    "extinguisher clears existing area",
+    "relay_carry refusal leaves all AP and objects unchanged",
+    "relay_carry charges both actors",
+    "relay moves actual recipient while preserving cargo identity",
+    "relay_carry cannot repeat same pair in same round",
+    "protected_work refusal leaves all AP and objects unchanged",
+    "protected_work charges both actors",
+    "protected work3 does not stack L2 bonus",
+    "protected_work cannot repeat same pair in same round",
+    "mutual_cover refusal leaves all AP and objects unchanged",
+    "mutual_cover charges both actors",
+    "cover blocks only one machine hit",
+    "mutual_cover cannot repeat same pair in same round",
+    "coordinated_pull refusal leaves all AP and objects unchanged",
+    "coordinated_pull charges both actors",
+    "heavy unit actually moves",
+    "coordinated_pull cannot repeat same pair in same round",
+    "carrying rope needs deployed anchor",
+    "anchor exception makes carrying rope legal",
+    "same machine cannot be stunlocked next round",
+    "control returns at D+2 rounds",
+    "controller reset cannot fabricate evidence",
+    "handoff specialty respects the same relationship boundary as protocol",
+    "cover is consumed once, not permanent invulnerability",
+    "insulation blocks electricity but not fire",
+    "shield really intercepts beam before actor",
+    "scout follows locked footprint after player moves",
+    "welder odd round has no attack",
+    "welder retains charged facing next round",
+    "hauler pushes actual actor and stops at two rail steps",
+    "relay warns before spawning",
+    "relay new unit has no unannounced same-round attack",
+    "skimmer connected component damages actor once",
+    "standard downed hero stabilization grants only one extra round",
+    "real transport retrieves injured hero without reviving",
+    "hard downed hero stabilization grants only one extra round",
+    "hard expiry while carried clears cargo and withdraws casualty",
+    "movement support cannot stack carrying above3",
+    "expired optional target cannot be revived by completion receipt",
+    "a bare safeguard flag never overrides refusal",
+    "protector moving away invalidates condition",
+    "learned protocol unavailable below actual mutual trust threshold",
+    "heavy basic push needs second AP",
+    "two paid same-direction pushes move heavy enemy",
+    "heavy push progress does not survive round end",
+    "standard retreat preserves completed goal and basic continuation",
+    "hard retreat preserves completed goal and basic continuation",
+    "all24specialties12equipment4protocols covered"
+  ],
+  "coverage": [
+    {
+      "id": "lin_1",
+      "scope": "controlled_fixture",
+      "meaning": "1AP在两格范围稳定，独立基础办法需走近后稳定",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "lin_1",
+          "actor": 0,
+          "target": "r1",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "lin_3",
+      "scope": "controlled_fixture",
+      "meaning": "移动1格并稳定，1AP；基础移动＋稳定2AP",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "lin_3",
+          "actor": 0,
+          "target": "r1",
+          "destination": [
+            2,
+            3
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "lin_5",
+      "scope": "controlled_fixture",
+      "meaning": "1AP稳定两个不同对象，基础需要2AP",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "lin_5",
+          "actor": 0,
+          "target": [
+            "r1",
+            "r2"
+          ],
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "xu_1",
+      "scope": "controlled_fixture",
+      "meaning": "1AP跨单格障碍；可沿已有普通道路绕行",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "xu_1",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            4,
+            4
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "xu_3",
+      "scope": "controlled_fixture",
+      "meaning": "转移一格位置，付的是许舟AP，受拉者保留AP",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "xu_3",
+          "actor": 0,
+          "target": 1,
+          "destination": [
+            3,
+            4
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "xu_5",
+      "scope": "controlled_fixture",
+      "meaning": "锚点提供明确的携带跨越例外，不是全体免费移动",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "xu_5",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            3
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "su_1",
+      "scope": "controlled_fixture",
+      "meaning": "分担前排攻击AP；标记后下一击3，合计不声称比连续两次基础攻击总伤更高",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "su_1",
+          "actor": 0,
+          "target": "unit",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "su_3",
+      "scope": "controlled_fixture",
+      "meaning": "给队友移动预算+1，不增AP，多个来源取最大",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "su_3",
+          "actor": 0,
+          "target": 1,
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "su_5",
+      "scope": "controlled_fixture",
+      "meaning": "打开地图既定第二出口，改变搬运返程",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "su_5",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            5
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "chen_1",
+      "scope": "controlled_fixture",
+      "meaning": "本轮停止威胁，目标下个整轮免疫临时控制",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "chen_1",
+          "actor": 0,
+          "target": "unit",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "chen_3",
+      "scope": "controlled_fixture",
+      "meaning": "给存活设备3保护，不能复原已毁设备",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "chen_3",
+          "actor": 0,
+          "target": "task",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "chen_5",
+      "scope": "controlled_fixture",
+      "meaning": "断电后的两工量工程1AP完成；不能加速取证",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "completed",
+          "target": "task"
+        },
+        {
+          "round": 1,
+          "action": "chen_5",
+          "actor": 0,
+          "target": "task",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "ye_1",
+      "scope": "controlled_fixture",
+      "meaning": "本轮停止威胁，目标下个整轮免疫临时控制",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "ye_1",
+          "actor": 0,
+          "target": "unit",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "ye_3",
+      "scope": "controlled_fixture",
+      "meaning": "铺两格绝缘，挡电不挡火，不改变深水通行",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "ye_3",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            2
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "ye_5",
+      "scope": "controlled_fixture",
+      "meaning": "2工量静音拆障，与切割器的噪音风险不同",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "ye_5",
+          "actor": 0,
+          "target": "task",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "he_1",
+      "scope": "controlled_fixture",
+      "meaning": "临时屏障截断射线，替代绕开或停机",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "he_1",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            3
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "he_3",
+      "scope": "controlled_fixture",
+      "meaning": "搬运预算3，释放担架的支援装备槽",
+      "ap": 0,
+      "log": []
+    },
+    {
+      "id": "he_5",
+      "scope": "controlled_fixture",
+      "meaning": "两名队友各挡一次机器2伤害，不能挡电火",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "he_5",
+          "actor": 0,
+          "target": [
+            1,
+            2
+          ],
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "mo_1",
+      "scope": "controlled_fixture",
+      "meaning": "4格内直接给停机开关1工量；不生成资料或额外AP",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "mo_1",
+          "actor": 0,
+          "target": "task",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "mo_3",
+      "scope": "controlled_fixture",
+      "meaning": "只改变下轮选敌，当前预告不追踪改写",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "mo_3",
+          "actor": 0,
+          "target": "unit",
+          "destination": [
+            2,
+            5
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "mo_5",
+      "scope": "controlled_fixture",
+      "meaning": "取消未生成波次，不删除已生成敌人",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "mo_5",
+          "actor": 0,
+          "target": "unit",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "jiang_1",
+      "scope": "controlled_fixture",
+      "meaning": "1AP交接，接收者0AP，不能直接记已救出",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "jiang_1",
+          "actor": 0,
+          "target": 1,
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "jiang_3",
+      "scope": "controlled_fixture",
+      "meaning": "用已打包药剂远程补给，无免费库存；医疗实例不要求医疗包占槽",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "jiang_3",
+          "actor": 0,
+          "target": 1,
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "jiang_5",
+      "scope": "controlled_fixture",
+      "meaning": "长期去除一格碎石，单次经过不一定赚AP，适合反复转运",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "jiang_5",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            3
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "crowbar",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "crowbar",
+          "actor": 0,
+          "target": "task",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "medkit",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "medkit",
+          "actor": 0,
+          "target": 1,
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "winch",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 2,
+      "log": [
+        {
+          "round": 1,
+          "action": "winch",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            3
+          ],
+          "ap_left": 0
+        }
+      ]
+    },
+    {
+      "id": "shield",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "shield",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            3
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "foam",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "foam",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            3
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "insulation",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "insulation",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            3
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "battery",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "battery",
+          "actor": 0,
+          "target": "task",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "scanner",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "scanner",
+          "actor": 0,
+          "target": "task",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "beacon",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "beacon",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            5
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "cutter",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "cutter",
+          "actor": 0,
+          "target": "task",
+          "destination": null,
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "stretcher",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 0,
+      "log": []
+    },
+    {
+      "id": "extinguisher",
+      "scope": "controlled_fixture",
+      "meaning": "受控动作效果；全关装备对比另见战术矩阵",
+      "ap": 1,
+      "log": [
+        {
+          "round": 1,
+          "action": "extinguisher",
+          "actor": 0,
+          "target": null,
+          "destination": [
+            2,
+            3
+          ],
+          "ap_left": 1
+        }
+      ]
+    },
+    {
+      "id": "relay_carry",
+      "scope": "controlled_fixture",
+      "meaning": "关系拒绝→提供保障→真实行动；基础办法仍独立存在",
+      "ap": 2,
+      "log": [
+        {
+          "round": 1,
+          "action": "explicit_agreement",
+          "actors": [
+            0,
+            1
+          ],
+          "scope": "relay_carry"
+        },
+        {
+          "round": 1,
+          "action": "relay_carry",
+          "actors": [
+            0,
+            1
+          ],
+          "target": "task"
+        }
+      ]
+    },
+    {
+      "id": "protected_work",
+      "scope": "controlled_fixture",
+      "meaning": "关系拒绝→提供保障→真实行动；基础办法仍独立存在",
+      "ap": 3,
+      "log": [
+        {
+          "round": 1,
+          "action": "prepare_safety",
+          "actor": 2,
+          "at": [
+            1,
+            4
+          ],
+          "ap_left": 1,
+          "protected": 0
+        },
+        {
+          "round": 1,
+          "action": "protected_work",
+          "actors": [
+            0,
+            1
+          ],
+          "target": "task"
+        }
+      ]
+    },
+    {
+      "id": "mutual_cover",
+      "scope": "controlled_fixture",
+      "meaning": "关系拒绝→提供保障→真实行动；基础办法仍独立存在",
+      "ap": 3,
+      "log": [
+        {
+          "round": 1,
+          "action": "prepare_safety",
+          "actor": 2,
+          "at": [
+            1,
+            4
+          ],
+          "ap_left": 1,
+          "protected": 0
+        },
+        {
+          "round": 1,
+          "action": "mutual_cover",
+          "actors": [
+            0,
+            1
+          ],
+          "target": "task"
+        }
+      ]
+    },
+    {
+      "id": "coordinated_pull",
+      "scope": "controlled_fixture",
+      "meaning": "关系拒绝→提供保障→真实行动；基础办法仍独立存在",
+      "ap": 2,
+      "log": [
+        {
+          "round": 1,
+          "action": "explicit_agreement",
+          "actors": [
+            0,
+            1
+          ],
+          "scope": "coordinated_pull"
+        },
+        {
+          "round": 1,
+          "action": "coordinated_pull",
+          "actors": [
+            0,
+            1
+          ],
+          "target": "unit"
+        }
+      ]
+    }
+  ]
+}

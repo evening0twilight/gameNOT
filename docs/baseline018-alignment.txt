@@ -1,0 +1,202 @@
+复查更正（2026-11-06）：整体实现完成/对齐结论已撤回，发现新的实质实现缺口。当前状态见 baseline018-product-reassessment.txt。以下保留上轮修复及证据，不作为当前完成声明。
+
+0.18定稿对齐 · 逐项修正与证据
+唯一规则：game/data/final_design/design_manifest.json → release_baseline.json
+初始审计保留finding字段；以下列出此次实现修正。Windows和真人验收仍独立待办。
+
+F01 开局与阶段 [implemented_locally_verified]
+原偏差：新局直接deploy M01；缺主菜单、正式简报/编队阶段与夜间确认
+依据：player_flow / release_scope.screens
+现已修正：标题、新局、持久化出勤准备、夜间确认；D24直接终局。
+证据：baseline018_ui; baseline018_campaign
+
+F02 人物加入 [implemented_locally_verified]
+原偏差：按日期在指定任务前开放；没有结算入队事实、入队介绍与职业用途引导
+依据：requirements.CHAR-01 / economy.growth.new_recruit
+现已修正：以对应主线结算记录加入；失败仍加入，介绍/档案/编队接入。同日支线可使用新成员。
+证据：baseline018_tests; baseline018_linked_campaign
+
+F03 培养与阵容 [implemented_locally_verified]
+原偏差：缺独立角色成长页、完整技能升级说明、下一次出勤疲劳/项目取舍对照；出发页无L2/装备整合
+依据：growth.training / training / release_scope.screens
+现已修正：人物页列等级阈值/专长/训练阶段，比较训练、休息、治疗、夜间恢复和下一次计划；配装与L2倾向纳入草案。
+证据：p3_rules_tests; baseline018_linked_campaign; journey-day06.png
+
+F04 关系入口 [implemented_locally_verified]
+原偏差：约定按钮硬编码对象；缺任意人物对、双向事实、资格不足原因与具体保障
+依据：growth.positive_relationships / experience.current_context_help
+现已修正：任意已加入人物对及领队的有向关系、双向事实、约定、保障和补救入口。
+证据：p4_history_tests; journey-day18.png
+
+F05 评价唯一入口 [implemented_locally_verified]
+原偏差：共同贡献固定+2；缺同源事件/违约资格排除、在意者+1、相关普通记忆宽慰及单任务额度
+依据：experience.appraisal / integration.attribution_detail
+现已修正：统一Appraisal入口；删除旧重复奖励入口；以任务+目标/决定归根，独立贡献与同目标信用分别计算，并排除相关违约。
+证据：baseline018_tests; p3_rules_tests; baseline018_linked_campaign
+
+F06 压力与自责 [implemented_locally_verified]
+原偏差：self_load仅恢复不增长；缺按性格、事实、知情、自主归责的评价与可读原因
+依据：experience.appraisal
+现已修正：压力、自责分离；按实际失败/伤势/超约/暴露/控制感和性格结算，夜间/休息/真实支持恢复，显示担忧与过载。
+证据：baseline018_tests; p3_rules_tests
+
+F07 知识与修订 [implemented_locally_verified]
+原偏差：缺待核实解释、首次知情与责任修订/纠错的数据及界面；不能把事实、推测混为一条关系值
+依据：integration.attribution_detail / experience.appraisal
+现已修正：待核实解释按方向限额；记录发生日与首次知情日；迟到旧事不构成近期连续违约，责任变更按原实际损失纠正。
+证据：baseline018_edges; p3_rules_tests
+
+F08 冲突与修复 [implemented_locally_verified]
+原偏差：缺第三次独立明确失约升级、场景队列/冷却的实际接线和任意方向认责/补救入口
+依据：progression_relationship / coordination.conflict_queue
+现已修正：第三次近期独立明确违约升级；无向人物对冷却、每任务一次长提示，其余留日志；任意方向认责/预约/凭后续证据补救。
+证据：baseline018_tests; baseline018_edges; p4_history_tests
+
+F09 四项协作 [implemented_locally_verified]
+原偏差：coordinated_pull未实现；关系保障仅覆盖部分人物/协议；需要四协议完整预览与普通替代
+依据：progression_relationship.protocols / situational_cooperation
+现已修正：四种协作均可用，牵引双方各1AP；按人物/风险检查真实保障，第三人保护可指定保护作业或交叉掩护；预览列普通替代。
+证据：p1_systems_tests; p3_specialties_tests; baseline018_edges
+
+F10 共同带教 [implemented_locally_verified]
+原偏差：资格按累计任务计数，没有排除涉及双方的违约；UI只列可做项目没有解释不足条件
+依据：growth.positive_relationships
+现已修正：带教资格与实际收益说明，双方两场有效贡献、同意/约定/阶段/疲劳/项目/物资检查；实际收益不高于普通训练时不提供。
+证据：baseline018_linked_campaign; p3_rules_tests
+
+F11 改派接应 [implemented_locally_verified]
+原偏差：R04/R10合作后东侧出口改派、2物资、后勤机会成本与草案取消均未接入
+依据：growth.positive_relationships.dispatch
+现已修正：R04/R10与真实共同贡献解锁付费接应；实际出发替换普通出口，草案免费取消，后勤不再额外给1物资。
+证据：baseline018_linked_campaign; journey-day19.png
+
+F12 四处现场操作 [implemented_locally_verified]
+原偏差：M05累计排水、M10同步确认、M21连续值守、S11序列切换缺运行时状态和操作入口
+依据：field_operations.services
+现已修正：M05累计、M10同步、M21连续、S11序列的站位/AP/供电/受击中断与收益接线。
+证据：baseline018_field_paths; baseline018_tests
+
+F13 两处后勤设施 [implemented_locally_verified]
+原偏差：M05/M10设施保全/修复、限期两次外部协助未实现；十二处设备事实未完整留存
+依据：field_operations.investments / maintenance_rules / asset_registry
+现已修正：12处设备记录、M05/M10保全资格、付费修复、次日生效、窗口/两次协助及实际恢复回执。
+证据：baseline018_edges; baseline018_campaign
+
+F14 专长边界 [implemented_locally_verified]
+原偏差：许舟低于5级的实际锚点携带例外缺失；被动/剩余次数与场景用途需要在人物页区分
+依据：combat.carrying_exception / abilities
+现已修正：许舟携带锚点例外按实际部署检查；专长级别/次数/被动区分保留；人物页可查。
+证据：p1_systems_tests; p3_specialties_tests
+
+F15 同格目标和放下 [implemented_locally_verified]
+原偏差：地图同格选第一个对象；drop只能放自己格，未提供邻接合法格和对象ID选择
+依据：combat.actions / resolution_amendments.occupied_overlay
+现已修正：同格多对象含专长按ID选择，放下可选择自己或相邻合法格，零奖励。
+证据：p4_tests; baseline018_ui
+
+F16 结算顺序与护盾 [implemented_locally_verified]
+原偏差：火环境在运输/持续进度之后；机器cover用于水电；对象被携带者失能后可能在同源攻击中重复受伤
+依据：combat.turn_order / environment_damage_order / resolution_amendments
+现已修正：机器→环境→目标进度→期限；水火取较大值、绝缘不防火、机器掩护不防电；同源伤害不重复击中刚落下的携带物。
+证据：baseline018_edges; p1_systems_tests; p4_tests
+
+F17 持续目标供电 [implemented_locally_verified]
+原偏差：channel没有独立电源条件；永久里程碑/持续保全/失去的显示与奖励需一致
+依据：combat.objective_machine / result_dimensions
+现已修正：持续目标读电源条件；永久里程碑、送达、持续保全和失去分开判断，失去的目标不发保全收益。
+证据：p3_rules_tests; baseline018_field_paths; baseline018_campaign
+
+F18 回到0.18数值 [implemented_locally_verified]
+原偏差：新周目默认放松、严峻伤害+1、放松额外对象期限+2偏离0.18；当前授权要求按0.18
+依据：combat.difficulty / player_flow.difficulty
+现已修正：新周目标准默认；放松+3总轮数/伤害-1最低1，不延长独立目标期限；严峻不加机器伤害。旧在途任务保留旧版。
+证据：baseline018_guidance; baseline018_matrix
+
+F19 剧情入口与摘要 [implemented_locally_verified]
+原偏差：正文可读但缺摘要后选项、首次见面、已解锁未发生日志占位、D23统一待办提醒
+依据：stories.scheduler / experience.visual_policy.first_contact
+现已修正：首次见面、剧情摘要与展开原文、未发生日志占位；D23统一待办/终局路线提醒。
+证据：p3_rules_tests; baseline018_ui; baseline018_linked_campaign
+
+F20 人物尾声 [implemented_locally_verified]
+原偏差：医疗离队直接continue掩盖已选职业/曾履约；pending合同未标记医疗中断；需四层独立结语
+依据：stories.ending_resolution / integration.missing_actor
+现已修正：在场、职业/生活方向、曾履约/医疗中断/违约、各方向关系独立显示；医疗退出不掩盖职业或已履约事实。
+证据：p3_story_proofs; baseline018_linked_campaign; journey-day24.png
+
+F21 支线待办 [implemented_locally_verified]
+原偏差：缺明确延期/主动放弃记录和过期展示；不应把未做当已尝试
+依据：player_flow.side_decisions
+现已修正：支线可暂缓、主动放弃并记录；过期、未尝试、已尝试分开；不自动补发结果。
+证据：p3_rules_tests; profile-few_sides
+
+F22 十槽与阶段存档 [implemented_locally_verified]
+原偏差：只有一个manual.json；缺10槽、空槽默认、覆盖其他周目确认、准备页稳定状态保存
+依据：player_flow.persistence / release_scope.screens
+现已修正：10个手动槽、覆盖确认与备份；读取旧manual.json；出勤草案可保存，稳定阶段严格验证。
+证据：p4_tests; baseline018_tests; baseline018_ui
+
+F23 设置与暂停 [implemented_locally_verified]
+原偏差：缺动画速度、减少动态、真正暂停/回主菜单；当前只有两个音乐循环且无交叉淡入淡出
+依据：player_readiness.pacing / release_scope.assets
+现已修正：动画速度、减少动态、动画中Esc暂停/空格跳过、回标题；六个独立循环交叉淡入淡出，音效时间线跟随动作。
+证据：p4_feedback_tests; baseline018-native-host.json; baseline018-journey-review.json
+
+F24 人物表现素材 [implemented_locally_verified]
+原偏差：人物立绘只有部分单套静态画像；缺8人现场/日常与8表情接线；需保留既定外形
+依据：release_scope.assets / experience.visual_policy
+现已修正：8套人物图集各2服装+8表情，实际用于准备/人物/剧情/终局；来源与生成提示已登记。
+证据：baseline018-portrait-prompts.json; baseline018-journey-review.json; asset-register.csv
+
+F25 行动结果说明 [implemented_locally_verified]
+原偏差：预览仅AP/资源和部分数字；缺真实风险保障原因、各方AP与已知责任、下一动作条件；结果缺XP/关系原因卡
+依据：player_readiness.preview / experience.replay_structure.feedback
+现已修正：基础动作可打开完整预览；各方AP/生命、目标变化、已知风险、真实保障、责任依据、XP/资源逐项说明；撤退列具体失能者。
+证据：p4_tests; p4_feedback_tests; baseline018_ui
+
+F26 内容验证 [implemented_locally_verified]
+原偏差：运行时目录只检查基础ID/格和直接自引用；需全域引用、循环前置、技能/装备/剧情/四服务的构建验证
+依据：acceptance.D01 / TECH-02
+现已修正：目录检查全域角色/技能/装备/敌人/剧情引用与循环前置、四服务、设备、目标与奖励；冻结投影逐字核对。
+证据：content_catalog_tests; baseline018_edges; baseline018-checks.json
+
+F27 新状态兼容 [implemented_locally_verified]
+原偏差：新增入队/准备/服务/评价/接应状态必须纳入版本迁移与撤销/存档校验；旧档不能凭空重发收益
+依据：persistence_inventory / player_flow.persistence
+现已修正：runtime_revision7兼容2–6；新字段和撤销快照纳入验证；旧档迁移不虚构服务/归因/收益；损坏嵌套状态拒绝。
+证据：p1_tests; p4_tests; baseline018_guidance; baseline018_edges
+
+F28 人员状态与队伍规划 [implemented_locally_verified]
+原偏差：缺持续可见的已加入/未遇到/伤势/医疗离队/后勤与出勤比较；不能默认三人名单替代队伍管理
+依据：campaign.one_state / release_scope.screens
+现已修正：已加入/未遇到/休养/医疗离队/出勤/后勤可查；营地计划与次日草案共享，实际出发重查资格。
+证据：baseline018_linked_campaign; profile-injury_rotation; baseline018_ui
+
+F29 具体救援后果 [implemented_locally_verified]
+原偏差：最后站立者离场/严峻超时的具体对象需在确认页集中说明，包含送达而非只稳定/携带
+依据：combat.objective_machine.deadline / player_readiness.preview
+现已修正：回合结束/撤退/最后离场预览列失能者名字、送达状态、期限和本次行动后的伤势/永久离队。
+证据：p4_tests; baseline018_ui
+
+F30 收益与投资比较 [implemented_locally_verified]
+原偏差：需逐项呈现基础报酬/实物/后勤/课程和实际恢复，不把潜在收益当作必得；工具退款仍保留
+依据：economy / field_operations.maintenance_rules
+现已修正：基础报酬、目标收益、响应员费用、后勤及经验分别列出；培养与设施恢复显示实际变化，保留工具退款规则。
+证据：p4_tests; baseline018_linked_campaign; baseline018_edges
+
+F31 自动保存时的输入延迟 [implemented_locally_verified]
+原偏差：最终原生检查发现部分操作输入延迟超过目标；写入后重复解析并复制整份撤销历史。
+现已修正：提交前验证状态；临时文件落盘后按字节摘要校验，保留原子替换/备份及坏档拒绝，去掉重复解析和全状态复制。本机112次输入P95约61ms；仍不代替Windows参考机。
+证据：outputs/baseline018-native-host-final.json; outputs/baseline018-check-storage-final-p1_tests.log; outputs/baseline018-check-storage-final-baseline018_linked_campaign.log
+
+V01 Windows性能 [external_validation_pending]
+原偏差：用户明确稍后在Windows实测；本机与跨平台导出不能标为Windows通过
+依据：acceptance.R07
+
+V02 真实体验验收 [external_validation_pending]
+原偏差：5名新人/一章选择/完整周目/审美听感的真人证据尚不存在，不能自动生成或替代
+依据：acceptance.H01 H02 H03 H04 R08
+
+所有tests标识对应game/tests/；运行日志与路径证据在outputs/baseline018-*。
+implementation_complete现为false；新发现实现缺口尚未修复，release_ready仍为false。
+未做：Windows原生验收、五名新人/完整周目体验研究、用户美术与听感认可、对外发布。

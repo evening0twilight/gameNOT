@@ -1,0 +1,56 @@
+{
+  "scope": "Rejected candidate: assistance occupied participant project slots; the reference scheduler filled at most one training project even when two legal project slots were open.",
+  "scenarios": [
+    {
+      "name": "固定阵容拆除，不维修",
+      "training": 16,
+      "total_xp": 576,
+      "external": {
+        "uses": {
+          "M10": 2
+        },
+        "days": [
+          11,
+          12
+        ],
+        "fatigue_recovered": 48,
+        "stress_recovered": 0
+      }
+    },
+    {
+      "name": "固定阵容拆除，及时维修并使用",
+      "training": 14,
+      "total_xp": 561,
+      "external": {
+        "uses": {
+          "M05": 2,
+          "M10": 2
+        },
+        "days": [
+          6,
+          7,
+          11,
+          12
+        ],
+        "fatigue_recovered": 96,
+        "stress_recovered": 2.0
+      }
+    },
+    {
+      "name": "固定阵容拆除，过期后才公益修复",
+      "training": 15,
+      "total_xp": 570,
+      "external": {
+        "uses": {
+          "M10": 2
+        },
+        "days": [
+          11,
+          12
+        ],
+        "fatigue_recovered": 48,
+        "stress_recovered": 0
+      }
+    }
+  ]
+}

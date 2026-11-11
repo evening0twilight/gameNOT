@@ -1,0 +1,17 @@
+普通轮换，不使用外部休整 24 0 {'credits': 622, 'supplies': 19, 'parts': 50} {'service_delivered': 0, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {}, 'days': [], 'fatigue_recovered': 0, 'stress_recovered': 0}
+普通轮换，按需使用保全设施 24 0 {'credits': 622, 'supplies': 17, 'parts': 50} {'service_delivered': 0, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+偏好阵容，一次搭档训练 24 0 {'credits': 584, 'supplies': 43, 'parts': 47} {'service_delivered': 3, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+专业人员轮换，按需使用后勤 24 0 {'credits': 602, 'supplies': 39, 'parts': 48} {'service_delivered': 2, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+固定阵容拆除，不维修 24 0 {'credits': 622, 'supplies': 43, 'parts': 50} {'service_delivered': 3, 'intact': 1, 'repaired': 0, 'repair_projects': 0} {'uses': {'M10': 2}, 'days': [11, 12], 'fatigue_recovered': 48, 'stress_recovered': 0}
+固定阵容拆除，及时维修并使用 24 0 {'credits': 622, 'supplies': 43, 'parts': 50} {'service_delivered': 3, 'intact': 1, 'repaired': 1, 'repair_projects': 1} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+固定阵容拆除，过期后才公益修复 24 0 {'credits': 622, 'supplies': 43, 'parts': 50} {'service_delivered': 3, 'intact': 1, 'repaired': 1, 'repair_projects': 1} {'uses': {'M10': 2}, 'days': [11, 12], 'fatigue_recovered': 48, 'stress_recovered': 0}
+完整36关，按需合作和后勤 24 12 {'credits': 776, 'supplies': 42, 'parts': 59} {'service_delivered': 3, 'intact': 4, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+最高难度连续失误后继续 24 0 {'credits': 504, 'supplies': 14, 'parts': 39} {'service_delivered': 2, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 1, 'M10': 2}, 'days': [6, 11, 12], 'fatigue_recovered': 60, 'stress_recovered': 0}
+真实养成后，在M06使用接力争取档案 24 0 {'credits': 584, 'supplies': 44, 'parts': 47} {'service_delivered': 3, 'intact': 3, 'repaired': 0, 'repair_projects': 0} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+高出勤且偏好固定阵容，不维修 24 12 {'credits': 814, 'supplies': 64, 'parts': 62} {'service_delivered': 3, 'intact': 2, 'repaired': 0, 'repair_projects': 0} {'uses': {'M10': 2}, 'days': [11, 12], 'fatigue_recovered': 48, 'stress_recovered': 0}
+高出勤且偏好固定阵容，及时维修 24 12 {'credits': 814, 'supplies': 64, 'parts': 62} {'service_delivered': 3, 'intact': 2, 'repaired': 1, 'repair_projects': 1} {'uses': {'M05': 2, 'M10': 2}, 'days': [6, 7, 11, 12], 'fatigue_recovered': 96, 'stress_recovered': 2.0}
+0.11 player-choice checks: 135
+Built0.11 player-choice review,36-map table and current-design section.
+Wrote final design report: 391519 characters
+Authored0.11:4distinct field tasks,8removed waits,2finite support investments,2basic guards and2advanced actions learned with ordinary pair training.
+0.11 artifact checks: 87

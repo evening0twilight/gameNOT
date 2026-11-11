@@ -1,0 +1,296 @@
+{
+  "human_acceptance": false,
+  "kind": "automated rendered reducer replay; persistence is tested separately by the packaged native runner",
+  "platform": "macOS",
+  "records": [
+    {
+      "actions": 47,
+      "mission": "M01",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 35,
+      "mission": "M02",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 39,
+      "mission": "M03",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 34,
+      "mission": "M04",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 30,
+      "mission": "M05",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 44,
+      "mission": "M06",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 40,
+      "mission": "M07",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 33,
+      "mission": "M08",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 45,
+      "mission": "M09",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 30,
+      "mission": "M10",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 32,
+      "mission": "M11",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 31,
+      "mission": "M12",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 36,
+      "mission": "M13",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 29,
+      "mission": "M14",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 32,
+      "mission": "M15",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 39,
+      "mission": "M16",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 37,
+      "mission": "M17",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 27,
+      "mission": "M18",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 35,
+      "mission": "M19",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 26,
+      "mission": "M20",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 30,
+      "mission": "M21",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 27,
+      "mission": "M22",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 48,
+      "mission": "M23",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 48,
+      "mission": "M24",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 25,
+      "mission": "S01",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 32,
+      "mission": "S02",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 40,
+      "mission": "S03",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 29,
+      "mission": "S04",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 39,
+      "mission": "S05",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 37,
+      "mission": "S06",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 31,
+      "mission": "S07",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 31,
+      "mission": "S08",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 25,
+      "mission": "S09",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 24,
+      "mission": "S10",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 24,
+      "mission": "S11",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    },
+    {
+      "actions": 30,
+      "mission": "S12",
+      "ok": true,
+      "outcome": "success",
+      "primary": 0,
+      "screen": 1
+    }
+  ],
+  "windows_acceptance": false
+}

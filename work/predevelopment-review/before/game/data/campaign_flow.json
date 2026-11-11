@@ -1,0 +1,71 @@
+{
+  "schema_version": 1,
+  "status": "state_contract_not_controller_implementation",
+  "start": "briefing",
+  "terminal": "ending",
+  "max_main_days": 24,
+  "transitions": [
+    {
+      "from": "briefing",
+      "to": "assignment",
+      "on": "acknowledge_briefing"
+    },
+    {
+      "from": "assignment",
+      "to": "main_mission",
+      "on": "valid_deployment"
+    },
+    {
+      "from": "main_mission",
+      "to": "main_settlement",
+      "on": "success_or_partial_or_failure_or_retreat"
+    },
+    {
+      "from": "main_settlement",
+      "to": "side_offer",
+      "on": "commit_unique_main_result_when_current_day_less_than_24"
+    },
+    {
+      "from": "main_settlement",
+      "to": "ending",
+      "on": "commit_unique_main_result_when_current_day_equals_24"
+    },
+    {
+      "from": "side_offer",
+      "to": "side_mission",
+      "on": "accept_available_side_and_valid_deployment"
+    },
+    {
+      "from": "side_offer",
+      "to": "camp",
+      "on": "decline_or_no_offer"
+    },
+    {
+      "from": "side_mission",
+      "to": "side_settlement",
+      "on": "success_or_partial_or_failure_or_retreat"
+    },
+    {
+      "from": "side_settlement",
+      "to": "camp",
+      "on": "commit_unique_side_result"
+    },
+    {
+      "from": "camp",
+      "to": "night",
+      "on": "confirm_valid_evening_assignments"
+    },
+    {
+      "from": "night",
+      "to": "briefing",
+      "on": "next_day_when_current_day_less_than_24"
+    }
+  ],
+  "required_recovery_paths": {
+    "insufficient_crew": "temporary_responders",
+    "insufficient_supplies": "community_basic_care_free_actions_and_automatic_recovery",
+    "unavailable_personal_arc_actor": "absent_role_fallback",
+    "failed_final_objective": "evacuation_ending",
+    "unresolved_grievance": "alternative_actions_or_formal_protocol"
+  }
+}

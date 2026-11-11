@@ -1,0 +1,2722 @@
+{
+  "contacts": {
+    "lin": {
+      "entrance": "她把医嘱夹摊在桌上，先圈出能抬担架的通道。",
+      "line": "先稳定，再搬运。我能隔两格处理伤势；离得再近些，其他人也能做。别让所有人都挤在伤员旁边。",
+      "everyday": "炉子上还有汤。先回来的人别全喝完，给最后一班留一碗。",
+      "use": "远距稳定伤员，让另一名队员直接接手搬运。",
+      "tradeoff": "林岚先稳定，队友搬运；也可以先停机，再让普通队员近身救援。",
+      "opportunities": [
+        "M01",
+        "M06"
+      ]
+    },
+    "xu": {
+      "entrance": "许舟拉紧锁扣，旧接收器响了一下。他关掉杂音，指向图上的断口。",
+      "line": "隔一格障碍，我能把自己送过去。落脚必须是干地；要带人回来，先把锚点和接应说清楚。",
+      "everyday": "收音机还差一颗螺丝。等回来了，我给你们播个不漏字的天气预报。",
+      "use": "越过一格障碍到干地，节省绕路；携人时另查锚点与等级。",
+      "tradeoff": "让许舟先到远侧处理，其他人走普通路线；抛索次数有限，不是全队传送。",
+      "opportunities": [
+        "M01",
+        "M08"
+      ]
+    },
+    "su": {
+      "entrance": "苏棠把三张排班便签分开，没有把空白处都写上自己的名字。",
+      "line": "机器的攻击先看预告。我可以标出重点，大家集中破拆；但下一班谁接手，现在就说。",
+      "everyday": "物资箱上的大字是我写的。标签可以夸张，值班时长不行。",
+      "use": "标记一台机器，让本轮的集中攻击更有效。",
+      "tradeoff": "安排多人破拆时用标记；若只想安全通过，也可操作普通停机开关。",
+      "opportunities": [
+        "M03",
+        "M09"
+      ]
+    },
+    "chen": {
+      "entrance": "陈砚先听了一遍设备的异响，再把手工具按顺序放好。",
+      "line": "我能让这台机器停一轮，给人留出施工时间。只是暂时断路，不等于它已经修好。",
+      "everyday": "别把那个饭盒斜着放。它漏汤的本事，比机器漏电还准。",
+      "use": "在关键轮暂停机器，为工位操作和搬运争取时间。",
+      "tradeoff": "断路换来一轮窗口；永久停机仍要开关，需保留供电的工作另作安排。",
+      "opportunities": [
+        "M05",
+        "M10"
+      ]
+    },
+    "ye": {
+      "entrance": "叶禾扣上明黄色手套扣，把危险输出和供电线路分别描出来。",
+      "line": "这两条不是一回事。我能隔离机器的危险输出，留下供电。别为了安静，把还在工作的设备一起关了。",
+      "everyday": "工具有名字。这个叫“不许乱借”——开玩笑的，用完放回来就行。",
+      "use": "隔离危险输出而保留供电，适合需要通电工作的现场。",
+      "tradeoff": "她的隔离要2AP、每任务1次；普通停机更便宜，但会切断相应供电。",
+      "opportunities": [
+        "M10",
+        "M17"
+      ]
+    },
+    "he": {
+      "entrance": "贺鸣先找出口，才把折叠屏障放到桌边。",
+      "line": "人要往哪里走，先定好。我能挡住直射的一段路；爆炸和水里的电，别指望这块盾。",
+      "everyday": "衣扣是女儿挑的。颜色亮点也好，补衣服时不容易丢。",
+      "use": "把屏障放在机器直射线上，保护需要停留的队友。",
+      "tradeoff": "架盾需要空的邻接干地，也会挡路；绕开预告或使用普通盾板仍是选择。",
+      "opportunities": [
+        "M12",
+        "M22"
+      ]
+    },
+    "mo": {
+      "entrance": "莫遥翻过旧牌套，只把能核实的开关位置放到地图上。",
+      "line": "已知的停机开关，我可以在五格内操作。未核实的部分我会标出来，别把猜测写成结论。",
+      "everyday": "这次钥匙带了。你不用用这种眼神看我，我已经摸过两遍口袋。",
+      "use": "远程操作已知停机开关，减少接近危险区域的路程。",
+      "tradeoff": "只适用于停机开关，不代替救人、证据和主目标操作；普通队员仍能近身开关。",
+      "opportunities": [
+        "M14",
+        "M17"
+      ]
+    },
+    "jiang": {
+      "entrance": "江朔把货物和乘客分列两栏，抬头确认接收者的名字。",
+      "line": "先说谁接、接什么。我能把东西交给空手的自愿队友；交过去不算送达，最后还是得走到出口。",
+      "everyday": "船名最好别太长。喊到最后两个字，船都开走了。",
+      "use": "沿清楚的干地交接搬运物，减少交接和折返的开销。",
+      "tradeoff": "交接需要指定接收者与通路；普通放下再拿起免费/1AP，也可能更合适。",
+      "opportunities": [
+        "M17",
+        "M23"
+      ]
+    }
+  },
+  "scenes": {
+    "P_lin_1": {
+      "location": "clinic",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "focused"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "doubtful"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "doubtful"
+            }
+          }
+        ],
+        "choices.private": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          }
+        ],
+        "choices.share": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_lin_2": {
+      "location": "clinic",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "focused"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          }
+        ],
+        "choices.rotation": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          }
+        ],
+        "choices.independent": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_lin_3": {
+      "location": "clinic",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "focused"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          }
+        ],
+        "choices.integrated": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched"
+            }
+          }
+        ],
+        "choices.professional": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          }
+        ],
+        "choices.new_life": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_xu_1": {
+      "location": "dock",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "focused"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "doubtful"
+            }
+          }
+        ],
+        "choices.record": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          }
+        ],
+        "choices.testimony": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_xu_2": {
+      "location": "dock",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "focused"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          }
+        ],
+        "choices.bounded": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          }
+        ],
+        "choices.solo": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_xu_3": {
+      "location": "dock",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "focused"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          }
+        ],
+        "choices.integrated": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "touched"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "touched"
+            }
+          }
+        ],
+        "choices.professional": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          }
+        ],
+        "choices.new_life": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_su_1": {
+      "location": "office",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "focused"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "doubtful"
+            }
+          }
+        ],
+        "choices.list": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          }
+        ],
+        "choices.listen": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_su_2": {
+      "location": "office",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "focused"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          }
+        ],
+        "choices.rota": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          }
+        ],
+        "choices.specialist": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_su_3": {
+      "location": "office",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "focused"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          }
+        ],
+        "choices.integrated": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched"
+            }
+          }
+        ],
+        "choices.professional": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          }
+        ],
+        "choices.new_life": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_chen_1": {
+      "location": "factory",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "focused"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "doubtful"
+            }
+          }
+        ],
+        "choices.copy": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          }
+        ],
+        "choices.explain": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_chen_2": {
+      "location": "factory",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "focused"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          }
+        ],
+        "choices.fund": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          }
+        ],
+        "choices.duty": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_chen_3": {
+      "location": "factory",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "focused"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          }
+        ],
+        "choices.integrated": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "touched"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "touched"
+            }
+          }
+        ],
+        "choices.professional": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          }
+        ],
+        "choices.new_life": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_ye_1": {
+      "location": "factory",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "focused"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "doubtful"
+            }
+          }
+        ],
+        "choices.retain": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          }
+        ],
+        "choices.compare": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_ye_2": {
+      "location": "factory",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "focused"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          }
+        ],
+        "choices.audit": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          }
+        ],
+        "choices.boundary": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_ye_3": {
+      "location": "factory",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "focused"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          }
+        ],
+        "choices.integrated": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "touched"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "touched"
+            }
+          }
+        ],
+        "choices.professional": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          }
+        ],
+        "choices.new_life": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_he_1": {
+      "location": "shelter",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "focused"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "doubtful"
+            }
+          }
+        ],
+        "choices.name": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          }
+        ],
+        "choices.route": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_he_2": {
+      "location": "shelter",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "focused"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          }
+        ],
+        "choices.delegate": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          }
+        ],
+        "choices.discipline": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_he_3": {
+      "location": "shelter",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "focused"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          }
+        ],
+        "choices.integrated": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "touched"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "touched"
+            }
+          }
+        ],
+        "choices.professional": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          }
+        ],
+        "choices.new_life": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_mo_1": {
+      "location": "old_town",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "focused"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "doubtful"
+            }
+          }
+        ],
+        "choices.classify": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          }
+        ],
+        "choices.verify": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_mo_2": {
+      "location": "old_town",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "focused"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          }
+        ],
+        "choices.redact": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          }
+        ],
+        "choices.independent": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_mo_3": {
+      "location": "old_town",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "focused"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          }
+        ],
+        "choices.integrated": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "touched"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "touched"
+            }
+          }
+        ],
+        "choices.professional": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          }
+        ],
+        "choices.new_life": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_jiang_1": {
+      "location": "dock",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "focused"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "doubtful"
+            }
+          }
+        ],
+        "choices.wages": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          }
+        ],
+        "choices.family": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_jiang_2": {
+      "location": "dock",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "focused"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          }
+        ],
+        "choices.settle": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          }
+        ],
+        "choices.negotiate": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "P_jiang_3": {
+      "location": "dock",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "focused"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          }
+        ],
+        "choices.integrated": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "touched"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "touched"
+            }
+          }
+        ],
+        "choices.professional": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          }
+        ],
+        "choices.new_life": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R01": {
+      "location": "gate",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "doubtful",
+              "xu": "determined"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "lin": "doubtful",
+              "xu": "determined"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched",
+              "xu": "touched"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "lin": "touched",
+              "xu": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "lin": "determined",
+              "xu": "determined"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined",
+              "xu": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R02": {
+      "location": "factory",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "chen": "focused",
+              "ye": "anger"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "focused",
+              "ye": "anger"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "touched",
+              "ye": "touched"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "chen": "touched",
+              "ye": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "chen": "determined",
+              "ye": "determined"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined",
+              "ye": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R03": {
+      "location": "office",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined",
+              "he": "focused"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "xu": "determined",
+              "he": "focused"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "xu": "touched",
+              "he": "touched"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "touched",
+              "he": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined",
+              "he": "determined"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "xu": "determined",
+              "he": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R04": {
+      "location": "office",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "tired",
+              "jiang": "focused"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "su": "tired",
+              "jiang": "focused"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "su": "touched",
+              "jiang": "touched"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched",
+              "jiang": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined",
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "su": "determined",
+              "jiang": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R05": {
+      "location": "factory",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "doubtful",
+              "chen": "focused"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "mo": "doubtful",
+              "chen": "focused"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "touched",
+              "chen": "touched"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "mo": "touched",
+              "chen": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "mo": "determined",
+              "chen": "determined"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "determined",
+              "chen": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R06": {
+      "location": "clinic",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "tired",
+              "su": "determined"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "lin": "tired",
+              "su": "determined"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched",
+              "su": "touched"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "lin": "touched",
+              "su": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "lin": "determined",
+              "su": "determined"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "determined",
+              "su": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R07": {
+      "location": "old_town",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "anger",
+              "mo": "focused"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "ye": "anger",
+              "mo": "focused"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "touched",
+              "mo": "touched"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "ye": "touched",
+              "mo": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "ye": "determined",
+              "mo": "determined"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined",
+              "mo": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R08": {
+      "location": "shelter",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "focused",
+              "lin": "determined"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "he": "focused",
+              "lin": "determined"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "touched",
+              "lin": "touched"
+            }
+          },
+          {
+            "speaker": "lin",
+            "expressions": {
+              "he": "touched",
+              "lin": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "he": "determined",
+              "lin": "determined"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "determined",
+              "lin": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R09": {
+      "location": "dock",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "xu": "focused",
+              "jiang": "doubtful"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "focused",
+              "jiang": "doubtful"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "xu": "touched",
+              "jiang": "touched"
+            }
+          },
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "touched",
+              "jiang": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "determined",
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "xu": "determined",
+              "jiang": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R10": {
+      "location": "office",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "doubtful",
+              "mo": "focused"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "su": "doubtful",
+              "mo": "focused"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "su": "touched",
+              "mo": "touched"
+            }
+          },
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched",
+              "mo": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "determined",
+              "mo": "determined"
+            }
+          },
+          {
+            "speaker": "mo",
+            "expressions": {
+              "su": "determined",
+              "mo": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R11": {
+      "location": "factory",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "focused",
+              "he": "determined"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "chen": "focused",
+              "he": "determined"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "touched",
+              "he": "touched"
+            }
+          },
+          {
+            "speaker": "he",
+            "expressions": {
+              "chen": "touched",
+              "he": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "chen": "determined",
+              "he": "determined"
+            }
+          },
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "determined",
+              "he": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "R12": {
+      "location": "dock",
+      "tone": "grave",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "doubtful",
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "ye": "doubtful",
+              "jiang": "determined"
+            }
+          }
+        ],
+        "choices.agreement": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "ye": "touched",
+              "jiang": "touched"
+            }
+          },
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "touched",
+              "jiang": "touched"
+            }
+          }
+        ],
+        "choices.distance": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "determined",
+              "jiang": "determined"
+            }
+          },
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "ye": "determined",
+              "jiang": "determined"
+            }
+          }
+        ]
+      }
+    },
+    "L01": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L02": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L03": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L04": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L05": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L06": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L07": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L08": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L09": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L10": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "xu",
+            "expressions": {
+              "xu": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L11": {
+      "location": "roof",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L12": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "chen",
+            "expressions": {
+              "chen": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L13": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "ye",
+            "expressions": {
+              "ye": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L14": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "he",
+            "expressions": {
+              "he": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L15": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "mo",
+            "expressions": {
+              "mo": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L16": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "jiang",
+            "expressions": {
+              "jiang": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L17": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "su",
+            "expressions": {
+              "su": "touched"
+            }
+          }
+        ]
+      }
+    },
+    "L18": {
+      "location": "office",
+      "tone": "daily",
+      "directions": {
+        "opening": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "light"
+            }
+          }
+        ],
+        "choices.a": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched"
+            }
+          }
+        ],
+        "choices.b": [
+          {
+            "speaker": "lin",
+            "expressions": {
+              "lin": "touched"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "injured_life": {
+    "L01": "林岚靠在休养处的椅背上，问起夜班有没有喝上热汤：“盐淡一点也没关系，明天还能调。”",
+    "L02": "许舟把收音机放在床头，压低声音播报天气。最后几个字被底噪吞掉，他自己先笑了。",
+    "L03": "苏棠指着别人送来的物资箱：“那个标签是我写的。看清楚，是公用，不是公然失踪。”",
+    "L04": "陈砚让人把饭盒平放在床头：“这个不能斜。修设备之前，我得先弄懂这盒汤。”",
+    "L05": "叶禾坐在休养处，亮色鞋带搭在床边：“等恢复了再换。现在别给我排现场。”",
+    "L06": "贺鸣在休养处看女儿发来的舞步说明：“今天先研究，站起来练要等医生点头。”",
+    "L07": "莫遥翻看相机里的旧广告牌：“这块牌子拆之前，最后一次亮起来是什么时候呢？”",
+    "L08": "江朔靠着枕头，继续争论船名：“四个字已经够了。再长，喊人都来不及。”",
+    "L09": "林岚翻着床头的旧食谱：“这一页少了最后一步。等手养好，我试试能不能补出来。”",
+    "L10": "许舟把咖啡口味写在床头纸条上：“我的先改温水。其他人的别跟着我改。”",
+    "L11": "苏棠在休养处看屋顶电影的片单：“我这次先看简介。片子别因为我没到就不放。”",
+    "L12": "陈砚望着床边的小盆栽：“别浇太多。它比我更不喜欢被照顾过头。”",
+    "L13": "叶禾看着送来报平安的玩具照片：“这次先不拆。让孩子玩够了再送修。”",
+    "L14": "贺鸣摸了摸衣服上的旧补缝：“先放着，等恢复了再补。针线盒别挪远。”",
+    "L15": "莫遥确认床头的钥匙：“今天没有忘。你们回去别把备用的也锁进屋里。”",
+    "L16": "江朔读着甜点配方：“材料少点没事，顺序不能乱。今天我只负责说，你们做。”",
+    "L17": "苏棠把值班表合上：“这半小时没有安排。不是待命，也不用随时喊我。”",
+    "L18": "林岚看向休养处的窗外：“晴了。今天先看着，等好了再出去走走。”"
+  },
+  "injured_life_choices": {
+    "L01": {
+      "a": [
+        "林岚：那就请当班的人盛进保温杯，写上是谁的。留汤不是必须加班的暗号。"
+      ],
+      "b": [
+        "林岚：好，先吃。夜班那份请他们另留，我今天不值班。"
+      ]
+    },
+    "L03": {
+      "a": [
+        "苏棠：你写名字，请值班的人贴。别把贺鸣的针线盒写成急救包。"
+      ],
+      "b": [
+        "苏棠：旧名能查到人就够了。对应关系写在背面，方便大家找。"
+      ]
+    },
+    "L04": {
+      "a": [
+        "陈砚：先用新的吧。旧圈留着，等我恢复了再量尺寸。"
+      ],
+      "b": [
+        "陈砚：那就请他们把没漏的那格分出来。下次得换个真的不漏的。"
+      ]
+    },
+    "L06": {
+      "a": [
+        "贺鸣：等我恢复了，你站前面，我跟着学。别笑——算了，笑也行。"
+      ],
+      "b": [
+        "贺鸣：先告诉她我在认真看。练好了再拍，不假装现在已经会了。"
+      ]
+    },
+    "L09": {
+      "a": [
+        "林岚：等我恢复了先做一小锅。不能因为怀念就逼大家吃完。"
+      ],
+      "b": [
+        "林岚：承认了。今晚请他们换一道能做好的，食谱先留着。"
+      ]
+    },
+    "L11": {
+      "a": [
+        "苏棠：你们挑个不漏雨的位置。我这次先在休养处看片单，没人点名。"
+      ],
+      "b": [
+        "苏棠：好，今晚都安静休息。好笑的段落明天想听再讲。"
+      ]
+    },
+    "L12": {
+      "a": [
+        "陈砚：放床边正好，不挡路。托盘请帮我擦干，别让下一位踩到水。"
+      ],
+      "b": [
+        "陈砚：浇水次数写下来。别因为是我的东西，就非得等我好了才照顾。"
+      ]
+    },
+    "L15": {
+      "a": [
+        "莫遥：备用钥匙仍要登记借还。不能因为我在休养，就让谁都能进。"
+      ],
+      "b": [
+        "莫遥：那就等对方回来。我今天留在休养处，不用另找人送我过去。"
+      ]
+    },
+    "L16": {
+      "a": [
+        "江朔：那就请大家按班留好，别让晚回来的人只剩盒子。"
+      ],
+      "b": [
+        "江朔：这盒写上名字。公用那份请他们另分，不从别人那份里扣。"
+      ]
+    },
+    "L18": {
+      "a": [
+        "林岚：以后想种点能吃的东西。先把手养好，再从不容易死的开始。"
+      ],
+      "b": [
+        "林岚：先解决今晚吧。请值班的人在汤里加点面，算一道新菜。"
+      ]
+    }
+  },
+  "recovery_openings": {
+    "P_lin_1": "床边的杯子压着交班单。林岚示意你把纸拿近些，水洇开的两个名字仍看不清。",
+    "P_lin_2": "交班表摊在床边的小桌上。林岚没有在今天的值班栏签字，先指向下一班的接替人。",
+    "P_lin_3": "诊所的备用钥匙放在床头。林岚让值班人带来交班记录，翻到空着的一栏。",
+    "P_xu_1": "旧接收器摆在床边，旋钮停在没有信号的位置。许舟看了一会儿，先说起那段空白。",
+    "P_xu_2": "许舟靠着枕头读完出勤记录，把铅笔停在撤离时间旁。",
+    "P_xu_3": "床头放着一张船队申请表。许舟把它压在旧电台下面，让你先坐。",
+    "P_su_1": "苏棠摘下耳机，指了指床边的通话抄件。几条记录之间留着很宽的空白。",
+    "P_su_2": "休养室门外有人接起值班电话。苏棠听了一会儿，把轮班表推到你面前。",
+    "P_su_3": "铃声从走廊传来，又被值班人接起。苏棠把手从床头的耳机旁收回来。",
+    "P_chen_1": "工具包放在病床下，旧名牌的针孔仍清楚可见。陈砚让你拿出其中的记录夹。",
+    "P_chen_2": "陈砚靠在床头核对设备编号。纸上划了几道线，最后都停在复核人的签名栏。",
+    "P_chen_3": "小盆栽被搬到病房窗边。陈砚从床边拿起交接表，先确认了今晚谁值班。",
+    "P_ye_1": "防水袋放在叶禾床边，里面的复印件折痕很深。她指着父亲留下的一行笔迹。",
+    "P_ye_2": "叶禾把两份设备记录并排放在床边，编号用不同颜色圈出。",
+    "P_ye_3": "修好的小玩具暂放在床头。叶禾没有去碰，先看完你带来的工作记录。",
+    "P_he_1": "贺鸣的重外套挂在休养室门后，暗红内衬露出一角。他示意你坐到床边。",
+    "P_he_2": "一份保护方案摊在床边小桌上。贺鸣先问现场的人有没有看过，再慢慢往下读。",
+    "P_he_3": "女儿挑的衣扣放在针线盒里。贺鸣合上盒盖，接过最终交班的安排。",
+    "P_mo_1": "反扣的旧牌套放在床头柜上。莫遥把资料夹拉近，先问这份抄件会交给谁。",
+    "P_mo_2": "床边小桌上摆着完整件和公开件。莫遥让你把两份材料分开放好。",
+    "P_mo_3": "病房的小桌上有两份材料，封存件压在文件夹下面。莫遥示意你先看公开稿。",
+    "P_jiang_1": "工钱簿放在江朔膝旁，他用手指压着尚未签收的那一页。",
+    "P_jiang_2": "江朔靠在床头核对船次表，工时栏比货物栏圈得更多。",
+    "P_jiang_3": "床边放着写给家人的信。江朔把信收好，接过这一轮的工资账目。"
+  },
+  "recovery_close": {
+    "lin": "林岚把这项安排留在床边的交班夹里。门外的值班人接过了今晚的名单。",
+    "xu": "许舟让你把这几句话记在夹板上，日期写在旁边。电台由今晚的接班人带走。",
+    "su": "苏棠把谈妥的部分圈出来，交给门外的值班人，然后将耳机留在桌上。",
+    "chen": "陈砚核对完纸上的编号，把记录留给接班人。工具包仍收在病床下。",
+    "ye": "叶禾把这一页折好，放回床边的防水袋，另留一张抄件给你。",
+    "he": "贺鸣将签过的安排放在床头，提醒你交给实际接班的人。",
+    "mo": "莫遥将谈妥的内容留在相应文件夹里，完整件仍合着，放在床头。",
+    "jiang": "江朔核对完这一页，把账本留在床边；当天的调度由接班人继续。"
+  },
+  "letters": {
+    "L01": "林岚在信里写，今天的汤还是少放了盐。她把那份不太完整的食谱夹在后面，叮嘱夜班的保温杯写清名字。",
+    "L02": "许舟寄来一张手写的天气播报，最后一行是“本台现在进入静音时段”。纸角画着一只收音机。",
+    "L03": "苏棠在信里附了公用物品的标签清单，杯子的三个旧外号也都保留在旁边。“找得到就好。”",
+    "L04": "陈砚的信里夹着一张密封圈尺寸图。他说换了新饭盒，旧的暂时只装不会漏的东西。",
+    "L05": "叶禾在信里提到亮色鞋带：“鞋还结实，补好比换新舒服。”信封上也画了一个小鞋结。",
+    "L06": "贺鸣写道，舞蹈录像的后半段还在练。他答应等学会了再给家里发去，没有把慢半拍的地方剪掉。",
+    "L07": "莫遥寄来一张旧街区照片，广告牌下面露着更旧的字。她在背面写了还记得的店名，不确定的年份留着空白。",
+    "L08": "江朔在信里列了好几个船名，最长的写了两行。末尾补了一句：无线电里还是用短号。",
+    "L09": "林岚又抄来一段食谱，在“少许”旁边画了问号。她说下次先做一小锅，不好吃就换一道。",
+    "L10": "许舟在信的末尾问起咖啡口味。他写道，记错了可以改，人又不是设好就不能改的电台。",
+    "L11": "苏棠寄来一张片单，说等风小些再看屋顶电影。她在下面写着：想睡觉的人不用来，不点名。",
+    "L12": "陈砚在信里写了盆栽的浇水次数，另画出窗边有光的位置。他请值班的人顺路照看，不必等他回来。",
+    "L13": "叶禾的信里附着玩具说明，字写得很大，还画了小图。她说如果声音不好听，下次再调。",
+    "L14": "贺鸣寄来的照片上，外套补缝仍看得很清楚。他在背面写道：结实就行，漂亮的针脚以后再练。",
+    "L15": "莫遥在信中补了一条备用钥匙的借还登记办法。她承认自己又忘了一次，仍坚持每次要留记录。",
+    "L16": "江朔在信里说，甜点分得不太均匀。他已经替晚班留好那份，盒子上写了名字。",
+    "L17": "苏棠在信里提到一段没安排的半小时。她喝了温水，没有戴耳机，也没有找什么事来填满它。",
+    "L18": "林岚写道，今天终于放晴，袖口也干了。她想以后种点能吃的东西，先从不容易养死的开始。",
+    "R01": "值班簿记下：林岚和许舟这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R02": "值班簿记下：陈砚和叶禾这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R03": "值班簿记下：许舟和贺鸣这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R04": "值班簿记下：苏棠和江朔这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R05": "值班簿记下：莫遥和陈砚这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R06": "值班簿记下：林岚和苏棠这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R07": "值班簿记下：叶禾和莫遥这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R08": "值班簿记下：贺鸣和林岚这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R09": "值班簿记下：许舟和江朔这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R10": "值班簿记下：苏棠和莫遥这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R11": "值班簿记下：陈砚和贺鸣这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。",
+    "R12": "值班簿记下：叶禾和江朔这次没能同席。这项协商暂时留空，原有职责仍按已经确认的安排交接。"
+  }
+}

@@ -1,0 +1,5625 @@
+[
+  {
+    "route": "default",
+    "mission": "M01",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "map"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "map"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M01",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "map"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 32,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "map"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M01",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "map"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 12,
+    "ap": 40,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "map"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M01",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "map"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 37,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "map"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M02",
+    "goals": [
+      "cut",
+      "power"
+    ],
+    "extra": [
+      "spare"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 12,
+    "ap": 38,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "power",
+      "spare"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M02",
+    "goals": [
+      "cut",
+      "power"
+    ],
+    "extra": [
+      "spare"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 38,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "power",
+      "spare"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M02",
+    "goals": [
+      "cut",
+      "power"
+    ],
+    "extra": [
+      "spare"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 12,
+    "ap": 43,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "power",
+      "spare"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M02",
+    "goals": [
+      "cut",
+      "power"
+    ],
+    "extra": [
+      "spare"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 12,
+    "ap": 46,
+    "damage": 4,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "power",
+      "spare"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M03",
+    "goals": [
+      "crate",
+      "door"
+    ],
+    "extra": [
+      "parts"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 13,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "door",
+      "crate",
+      "parts"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M03",
+    "goals": [
+      "crate",
+      "door"
+    ],
+    "extra": [
+      "parts"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 13,
+    "ap": 34,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "door",
+      "crate",
+      "parts"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M03",
+    "goals": [
+      "crate",
+      "door"
+    ],
+    "extra": [
+      "parts"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 13,
+    "ap": 36,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "door",
+      "crate",
+      "parts"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M03",
+    "goals": [
+      "crate",
+      "door"
+    ],
+    "extra": [
+      "parts"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 13,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "door",
+      "crate",
+      "parts"
+    ],
+    "lost": [
+      "M03_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M04",
+    "goals": [
+      "brace1",
+      "brace2",
+      "worker"
+    ],
+    "extra": [
+      "rail"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 15,
+    "ap": 42,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "brace1",
+      "brace2",
+      "worker",
+      "rail"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M04",
+    "goals": [
+      "brace1",
+      "brace2",
+      "worker"
+    ],
+    "extra": [
+      "rail"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 15,
+    "ap": 40,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "brace1",
+      "brace2",
+      "worker",
+      "rail"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M04",
+    "goals": [
+      "brace1",
+      "brace2",
+      "worker"
+    ],
+    "extra": [
+      "rail"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 15,
+    "ap": 50,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "brace1",
+      "brace2",
+      "worker",
+      "rail"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M04",
+    "goals": [
+      "brace1",
+      "brace2",
+      "worker"
+    ],
+    "extra": [
+      "rail"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 15,
+    "ap": 36,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "brace1",
+      "brace2",
+      "worker",
+      "rail"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M05",
+    "goals": [
+      "isolate",
+      "pump"
+    ],
+    "extra": [
+      "module"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 13,
+    "ap": 44,
+    "damage": 4,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "pump",
+      "module"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M05",
+    "goals": [
+      "isolate",
+      "pump"
+    ],
+    "extra": [
+      "module"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 13,
+    "ap": 36,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": false,
+    "secured": [
+      "isolate",
+      "module"
+    ],
+    "lost": [
+      "pump",
+      "M05_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M05",
+    "goals": [
+      "isolate",
+      "pump"
+    ],
+    "extra": [
+      "module"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 13,
+    "ap": 37,
+    "damage": 6,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "pump",
+      "module"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M05",
+    "goals": [
+      "isolate",
+      "pump"
+    ],
+    "extra": [
+      "module"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 13,
+    "ap": 36,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": false,
+    "secured": [
+      "isolate",
+      "module"
+    ],
+    "lost": [
+      "pump",
+      "M05_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M06",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "asset"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 15,
+    "ap": 41,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "asset"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M06",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "asset"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 15,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "asset"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M06",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "asset"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 15,
+    "limit": 15,
+    "ap": 79,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "asset"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M06",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "asset"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 15,
+    "ap": 41,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "asset"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M07",
+    "goals": [
+      "cut",
+      "worker"
+    ],
+    "extra": [
+      "serial"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 14,
+    "ap": 40,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "worker",
+      "serial"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M07",
+    "goals": [
+      "cut",
+      "worker"
+    ],
+    "extra": [
+      "serial"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 14,
+    "ap": 35,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "worker",
+      "serial"
+    ],
+    "lost": [
+      "M07_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M07",
+    "goals": [
+      "cut",
+      "worker"
+    ],
+    "extra": [
+      "serial"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 14,
+    "ap": 44,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "worker",
+      "serial"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M07",
+    "goals": [
+      "cut",
+      "worker"
+    ],
+    "extra": [
+      "serial"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 14,
+    "ap": 44,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "worker",
+      "serial"
+    ],
+    "lost": [
+      "M07_enemy1_cut",
+      "M07_enemy2_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M08",
+    "goals": [
+      "block1",
+      "block2",
+      "truck"
+    ],
+    "extra": [
+      "alt"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 12,
+    "limit": 16,
+    "ap": 45,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "block1",
+      "block2",
+      "truck",
+      "alt"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M08",
+    "goals": [
+      "block1",
+      "block2",
+      "truck"
+    ],
+    "extra": [
+      "alt"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 11,
+    "limit": 16,
+    "ap": 40,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "block1",
+      "block2",
+      "truck",
+      "alt"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M08",
+    "goals": [
+      "block1",
+      "block2",
+      "truck"
+    ],
+    "extra": [
+      "alt"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 11,
+    "limit": 16,
+    "ap": 50,
+    "damage": 4,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "block1",
+      "block2",
+      "truck",
+      "alt"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M08",
+    "goals": [
+      "block1",
+      "block2",
+      "truck"
+    ],
+    "extra": [
+      "alt"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 16,
+    "ap": 35,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "block1",
+      "block2",
+      "truck",
+      "alt"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M09",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "med"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 15,
+    "ap": 40,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "med"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M09",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "med"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 15,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "med"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M09",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "med"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 12,
+    "limit": 15,
+    "ap": 52,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "med"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M09",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "med"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 15,
+    "ap": 37,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "med"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M10",
+    "goals": [
+      "test1",
+      "test2"
+    ],
+    "extra": [
+      "meeting"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 13,
+    "ap": 32,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "test1",
+      "test2",
+      "meeting"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M10",
+    "goals": [
+      "test1",
+      "test2"
+    ],
+    "extra": [
+      "meeting"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 13,
+    "ap": 30,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "test1",
+      "test2",
+      "meeting"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M10",
+    "goals": [
+      "test1",
+      "test2"
+    ],
+    "extra": [
+      "meeting"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 13,
+    "ap": 39,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "test1",
+      "test2",
+      "meeting"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M10",
+    "goals": [
+      "test1",
+      "test2"
+    ],
+    "extra": [
+      "meeting"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 13,
+    "ap": 30,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "test1",
+      "test2",
+      "meeting"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M11",
+    "goals": [
+      "cut",
+      "lock"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "lock",
+      "e"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M11",
+    "goals": [
+      "cut",
+      "lock"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "lock",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M11",
+    "goals": [
+      "cut",
+      "lock"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 14,
+    "ap": 42,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "lock",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M11",
+    "goals": [
+      "cut",
+      "lock"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 14,
+    "ap": 38,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "lock",
+      "e"
+    ],
+    "lost": [
+      "M11_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M12",
+    "goals": [
+      "backup",
+      "drive"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 15,
+    "ap": 36,
+    "damage": 4,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "backup",
+      "drive",
+      "e"
+    ],
+    "lost": [],
+    "controls": 3,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M12",
+    "goals": [
+      "backup",
+      "drive"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 15,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "backup",
+      "drive",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M12",
+    "goals": [
+      "backup",
+      "drive"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 15,
+    "ap": 46,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "backup",
+      "drive",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M12",
+    "goals": [
+      "backup",
+      "drive"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 15,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "backup",
+      "drive",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M13",
+    "goals": [
+      "cut",
+      "log"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 14,
+    "ap": 37,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "log",
+      "e"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M13",
+    "goals": [
+      "cut",
+      "log"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "log",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M13",
+    "goals": [
+      "cut",
+      "log"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 14,
+    "ap": 45,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "log",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M13",
+    "goals": [
+      "cut",
+      "log"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 32,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "log",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M14",
+    "goals": [
+      "meds"
+    ],
+    "extra": [
+      "cold",
+      "ledger"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "meds",
+      "cold",
+      "ledger"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M14",
+    "goals": [
+      "meds"
+    ],
+    "extra": [
+      "cold",
+      "ledger"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 26,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "meds",
+      "cold",
+      "ledger"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M14",
+    "goals": [
+      "meds"
+    ],
+    "extra": [
+      "cold",
+      "ledger"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 39,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "meds",
+      "cold",
+      "ledger"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M14",
+    "goals": [
+      "meds"
+    ],
+    "extra": [
+      "cold",
+      "ledger"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 32,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "meds",
+      "cold",
+      "ledger"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M14",
+    "goals": [
+      "cold"
+    ],
+    "extra": [
+      "ledger",
+      "meds"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 32,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "meds",
+      "cold",
+      "ledger"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M14",
+    "goals": [
+      "cold"
+    ],
+    "extra": [
+      "ledger",
+      "meds"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 26,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "meds",
+      "cold",
+      "ledger"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M14",
+    "goals": [
+      "cold"
+    ],
+    "extra": [
+      "ledger",
+      "meds"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 40,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "meds",
+      "cold",
+      "ledger"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M14",
+    "goals": [
+      "cold"
+    ],
+    "extra": [
+      "ledger",
+      "meds"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "meds",
+      "cold",
+      "ledger"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "north"
+    ],
+    "extra": [
+      "east",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 41,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "north"
+    ],
+    "extra": [
+      "east",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 29,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "north"
+    ],
+    "extra": [
+      "east",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 12,
+    "ap": 49,
+    "damage": 6,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "north"
+    ],
+    "extra": [
+      "east",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 35,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "east"
+    ],
+    "extra": [
+      "north",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 40,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "east"
+    ],
+    "extra": [
+      "north",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 29,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "east"
+    ],
+    "extra": [
+      "north",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 12,
+    "ap": 52,
+    "damage": 6,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "east"
+    ],
+    "extra": [
+      "north",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 28,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "west"
+    ],
+    "extra": [
+      "east",
+      "north"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 38,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "west"
+    ],
+    "extra": [
+      "east",
+      "north"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 29,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "west"
+    ],
+    "extra": [
+      "east",
+      "north"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 12,
+    "ap": 53,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M15",
+    "goals": [
+      "west"
+    ],
+    "extra": [
+      "east",
+      "north"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 36,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "north",
+      "east",
+      "west"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M16",
+    "goals": [
+      "lane",
+      "people"
+    ],
+    "extra": [
+      "goods"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 15,
+    "ap": 44,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "lane",
+      "people",
+      "goods"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M16",
+    "goals": [
+      "lane",
+      "people"
+    ],
+    "extra": [
+      "goods"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 15,
+    "ap": 37,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "lane",
+      "people",
+      "goods"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 2
+  },
+  {
+    "route": "default",
+    "mission": "M16",
+    "goals": [
+      "lane",
+      "people"
+    ],
+    "extra": [
+      "goods"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 12,
+    "limit": 15,
+    "ap": 52,
+    "damage": 4,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "lane",
+      "people",
+      "goods"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M16",
+    "goals": [
+      "lane",
+      "people"
+    ],
+    "extra": [
+      "goods"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 15,
+    "ap": 38,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "lane",
+      "people",
+      "goods"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 2
+  },
+  {
+    "route": "default",
+    "mission": "M17",
+    "goals": [
+      "repair2"
+    ],
+    "extra": [
+      "e",
+      "repair1"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 15,
+    "ap": 40,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "repair1",
+      "repair2",
+      "e"
+    ],
+    "lost": [],
+    "controls": 3,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M17",
+    "goals": [
+      "repair2"
+    ],
+    "extra": [
+      "e",
+      "repair1"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 15,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "repair1",
+      "repair2",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M17",
+    "goals": [
+      "repair2"
+    ],
+    "extra": [
+      "e",
+      "repair1"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 15,
+    "ap": 43,
+    "damage": 5,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "repair1",
+      "repair2",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M17",
+    "goals": [
+      "repair2"
+    ],
+    "extra": [
+      "e",
+      "repair1"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 15,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "repair1",
+      "repair2",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M17",
+    "goals": [
+      "isolate"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 15,
+    "ap": 36,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "e"
+    ],
+    "lost": [],
+    "controls": 3,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M17",
+    "goals": [
+      "isolate"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 15,
+    "ap": 26,
+    "damage": 3,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M17",
+    "goals": [
+      "isolate"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 15,
+    "ap": 39,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M17",
+    "goals": [
+      "isolate"
+    ],
+    "extra": [
+      "e"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 15,
+    "ap": 26,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "e"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M18",
+    "goals": [
+      "broadcast",
+      "relay"
+    ],
+    "extra": [
+      "backup"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 15,
+    "ap": 39,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "relay",
+      "broadcast",
+      "backup"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M18",
+    "goals": [
+      "broadcast",
+      "relay"
+    ],
+    "extra": [
+      "backup"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 15,
+    "ap": 32,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "relay",
+      "broadcast",
+      "backup"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M18",
+    "goals": [
+      "broadcast",
+      "relay"
+    ],
+    "extra": [
+      "backup"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 15,
+    "ap": 45,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "relay",
+      "broadcast",
+      "backup"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M18",
+    "goals": [
+      "broadcast",
+      "relay"
+    ],
+    "extra": [
+      "backup"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 15,
+    "ap": 25,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "relay",
+      "broadcast",
+      "backup"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M19",
+    "goals": [
+      "patient",
+      "shelter"
+    ],
+    "extra": [
+      "device"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 15,
+    "ap": 40,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "patient",
+      "shelter",
+      "device"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M19",
+    "goals": [
+      "patient",
+      "shelter"
+    ],
+    "extra": [
+      "device"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 15,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "patient",
+      "shelter",
+      "device"
+    ],
+    "lost": [
+      "M19_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M19",
+    "goals": [
+      "patient",
+      "shelter"
+    ],
+    "extra": [
+      "device"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 15,
+    "ap": 46,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "patient",
+      "shelter",
+      "device"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M19",
+    "goals": [
+      "patient",
+      "shelter"
+    ],
+    "extra": [
+      "device"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 15,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "patient",
+      "shelter",
+      "device"
+    ],
+    "lost": [
+      "M19_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M20",
+    "goals": [
+      "west"
+    ],
+    "extra": [
+      "east",
+      "transfer"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 13,
+    "ap": 35,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "transfer"
+    ],
+    "lost": [],
+    "controls": 3,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M20",
+    "goals": [
+      "west"
+    ],
+    "extra": [
+      "east",
+      "transfer"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 13,
+    "ap": 26,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "transfer"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M20",
+    "goals": [
+      "west"
+    ],
+    "extra": [
+      "east",
+      "transfer"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 13,
+    "ap": 42,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "transfer"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M20",
+    "goals": [
+      "west"
+    ],
+    "extra": [
+      "east",
+      "transfer"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 13,
+    "ap": 32,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "transfer"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M20",
+    "goals": [
+      "east"
+    ],
+    "extra": [
+      "transfer",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 13,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "transfer"
+    ],
+    "lost": [],
+    "controls": 3,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M20",
+    "goals": [
+      "east"
+    ],
+    "extra": [
+      "transfer",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 13,
+    "ap": 30,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "transfer"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M20",
+    "goals": [
+      "east"
+    ],
+    "extra": [
+      "transfer",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 13,
+    "ap": 43,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "transfer"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M20",
+    "goals": [
+      "east"
+    ],
+    "extra": [
+      "transfer",
+      "west"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 13,
+    "ap": 30,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "transfer"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M21",
+    "goals": [
+      "route"
+    ],
+    "extra": [
+      "e",
+      "marker"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "route",
+      "e",
+      "marker"
+    ],
+    "lost": [],
+    "controls": 3,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M21",
+    "goals": [
+      "route"
+    ],
+    "extra": [
+      "e",
+      "marker"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 32,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "route",
+      "e",
+      "marker"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M21",
+    "goals": [
+      "route"
+    ],
+    "extra": [
+      "e",
+      "marker"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 14,
+    "ap": 51,
+    "damage": 6,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "route",
+      "e",
+      "marker"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M21",
+    "goals": [
+      "route"
+    ],
+    "extra": [
+      "e",
+      "marker"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "route",
+      "e",
+      "marker"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M22",
+    "goals": [
+      "handover"
+    ],
+    "extra": [
+      "e",
+      "privacy"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "handover",
+      "e",
+      "privacy"
+    ],
+    "lost": [],
+    "controls": 3,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M22",
+    "goals": [
+      "handover"
+    ],
+    "extra": [
+      "e",
+      "privacy"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 32,
+    "damage": 3,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "handover",
+      "e",
+      "privacy"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M22",
+    "goals": [
+      "handover"
+    ],
+    "extra": [
+      "e",
+      "privacy"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 14,
+    "ap": 47,
+    "damage": 3,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "handover",
+      "e",
+      "privacy"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M22",
+    "goals": [
+      "handover"
+    ],
+    "extra": [
+      "e",
+      "privacy"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 14,
+    "ap": 29,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "handover",
+      "e",
+      "privacy"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "M23",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "rebuild"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 13,
+    "limit": 16,
+    "ap": 63,
+    "damage": 4,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "rebuild"
+    ],
+    "lost": [],
+    "controls": 3,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M23",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "rebuild"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 16,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "rebuild"
+    ],
+    "lost": [
+      "M23_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M23",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "rebuild"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 14,
+    "limit": 16,
+    "ap": 70,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "rebuild"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "M23",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "rebuild"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 16,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "rebuild"
+    ],
+    "lost": [
+      "M23_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "shared_control",
+    "mission": "M24",
+    "goals": [
+      "auth",
+      "bus"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 17,
+    "ap": 45,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "bus",
+      "auth",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 4,
+    "spawned": 0
+  },
+  {
+    "route": "shared_control",
+    "mission": "M24",
+    "goals": [
+      "auth",
+      "bus"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 17,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "bus",
+      "auth",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "shared_control",
+    "mission": "M24",
+    "goals": [
+      "auth",
+      "bus"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 17,
+    "ap": 44,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "bus",
+      "auth",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "shared_control",
+    "mission": "M24",
+    "goals": [
+      "auth",
+      "bus"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 17,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "bus",
+      "auth",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "distributed_rebuild",
+    "mission": "M24",
+    "goals": [
+      "east",
+      "west"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 17,
+    "ap": 41,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 4,
+    "spawned": 0
+  },
+  {
+    "route": "distributed_rebuild",
+    "mission": "M24",
+    "goals": [
+      "east",
+      "west"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 17,
+    "ap": 29,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "distributed_rebuild",
+    "mission": "M24",
+    "goals": [
+      "east",
+      "west"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 17,
+    "ap": 48,
+    "damage": 3,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "distributed_rebuild",
+    "mission": "M24",
+    "goals": [
+      "east",
+      "west"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 17,
+    "ap": 30,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "west",
+      "east",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "evacuation",
+    "mission": "M24",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 17,
+    "ap": 51,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 4,
+    "spawned": 0
+  },
+  {
+    "route": "evacuation",
+    "mission": "M24",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 17,
+    "ap": 35,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 2
+  },
+  {
+    "route": "evacuation",
+    "mission": "M24",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 11,
+    "limit": 17,
+    "ap": 63,
+    "damage": 3,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "evacuation",
+    "mission": "M24",
+    "goals": [
+      "r1",
+      "r2"
+    ],
+    "extra": [
+      "archive"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 17,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "r1",
+      "r2",
+      "archive"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "S01",
+    "goals": [
+      "engine"
+    ],
+    "extra": [
+      "tickets"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 10,
+    "ap": 35,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "engine",
+      "tickets"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S01",
+    "goals": [
+      "engine"
+    ],
+    "extra": [
+      "tickets"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 10,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "engine",
+      "tickets"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S01",
+    "goals": [
+      "engine"
+    ],
+    "extra": [
+      "tickets"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 10,
+    "ap": 42,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "engine",
+      "tickets"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S01",
+    "goals": [
+      "engine"
+    ],
+    "extra": [
+      "tickets"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 10,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "engine",
+      "tickets"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S02",
+    "goals": [
+      "med"
+    ],
+    "extra": [
+      "books"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 11,
+    "ap": 26,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "med",
+      "books"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S02",
+    "goals": [
+      "med"
+    ],
+    "extra": [
+      "books"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 11,
+    "ap": 26,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "med",
+      "books"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S02",
+    "goals": [
+      "med"
+    ],
+    "extra": [
+      "books"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 11,
+    "ap": 40,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "med",
+      "books"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S02",
+    "goals": [
+      "med"
+    ],
+    "extra": [
+      "books"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 11,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "med",
+      "books"
+    ],
+    "lost": [
+      "S02_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S02",
+    "goals": [
+      "books"
+    ],
+    "extra": [
+      "med"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 11,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "med",
+      "books"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S02",
+    "goals": [
+      "books"
+    ],
+    "extra": [
+      "med"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 11,
+    "ap": 27,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "med",
+      "books"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S02",
+    "goals": [
+      "books"
+    ],
+    "extra": [
+      "med"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 11,
+    "ap": 37,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "med",
+      "books"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S02",
+    "goals": [
+      "books"
+    ],
+    "extra": [
+      "med"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 11,
+    "ap": 27,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "med",
+      "books"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S03",
+    "goals": [
+      "cut",
+      "passenger"
+    ],
+    "extra": [],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "passenger"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S03",
+    "goals": [
+      "cut",
+      "passenger"
+    ],
+    "extra": [],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "passenger"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S03",
+    "goals": [
+      "cut",
+      "passenger"
+    ],
+    "extra": [],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 38,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "passenger"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S03",
+    "goals": [
+      "cut",
+      "passenger"
+    ],
+    "extra": [],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "cut",
+      "passenger"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S04",
+    "goals": [
+      "seed"
+    ],
+    "extra": [
+      "rack"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 11,
+    "ap": 27,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "seed",
+      "rack"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S04",
+    "goals": [
+      "seed"
+    ],
+    "extra": [
+      "rack"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 11,
+    "ap": 25,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "seed",
+      "rack"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S04",
+    "goals": [
+      "seed"
+    ],
+    "extra": [
+      "rack"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 11,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "seed",
+      "rack"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S04",
+    "goals": [
+      "seed"
+    ],
+    "extra": [
+      "rack"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 11,
+    "ap": 24,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "seed",
+      "rack"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S04",
+    "goals": [
+      "rack"
+    ],
+    "extra": [
+      "seed"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 11,
+    "ap": 24,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "seed",
+      "rack"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S04",
+    "goals": [
+      "rack"
+    ],
+    "extra": [
+      "seed"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 11,
+    "ap": 24,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "seed",
+      "rack"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S04",
+    "goals": [
+      "rack"
+    ],
+    "extra": [
+      "seed"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 11,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "seed",
+      "rack"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S04",
+    "goals": [
+      "rack"
+    ],
+    "extra": [
+      "seed"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 11,
+    "ap": 26,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "seed",
+      "rack"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S05",
+    "goals": [
+      "cloth",
+      "isolate"
+    ],
+    "extra": [],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 35,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "cloth"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S05",
+    "goals": [
+      "cloth",
+      "isolate"
+    ],
+    "extra": [],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "cloth"
+    ],
+    "lost": [
+      "S05_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S05",
+    "goals": [
+      "cloth",
+      "isolate"
+    ],
+    "extra": [],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 36,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "cloth"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S05",
+    "goals": [
+      "cloth",
+      "isolate"
+    ],
+    "extra": [],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "isolate",
+      "cloth"
+    ],
+    "lost": [
+      "S05_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S06",
+    "goals": [
+      "locate",
+      "resident"
+    ],
+    "extra": [
+      "meal"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "locate",
+      "resident",
+      "meal"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S06",
+    "goals": [
+      "locate",
+      "resident"
+    ],
+    "extra": [
+      "meal"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 35,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "locate",
+      "resident",
+      "meal"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S06",
+    "goals": [
+      "locate",
+      "resident"
+    ],
+    "extra": [
+      "meal"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 10,
+    "limit": 12,
+    "ap": 49,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "locate",
+      "resident",
+      "meal"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S06",
+    "goals": [
+      "locate",
+      "resident"
+    ],
+    "extra": [
+      "meal"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "locate",
+      "resident",
+      "meal"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S07",
+    "goals": [
+      "clerk"
+    ],
+    "extra": [
+      "copy"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 30,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "clerk",
+      "copy"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S07",
+    "goals": [
+      "clerk"
+    ],
+    "extra": [
+      "copy"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 29,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "clerk",
+      "copy"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 2
+  },
+  {
+    "route": "default",
+    "mission": "S07",
+    "goals": [
+      "clerk"
+    ],
+    "extra": [
+      "copy"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 32,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "clerk",
+      "copy"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S07",
+    "goals": [
+      "clerk"
+    ],
+    "extra": [
+      "copy"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 27,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "clerk",
+      "copy"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 1
+  },
+  {
+    "route": "default",
+    "mission": "S08",
+    "goals": [
+      "luggage"
+    ],
+    "extra": [
+      "tools"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "luggage",
+      "tools"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S08",
+    "goals": [
+      "luggage"
+    ],
+    "extra": [
+      "tools"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 25,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "luggage",
+      "tools"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S08",
+    "goals": [
+      "luggage"
+    ],
+    "extra": [
+      "tools"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 9,
+    "limit": 12,
+    "ap": 42,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "luggage",
+      "tools"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S08",
+    "goals": [
+      "luggage"
+    ],
+    "extra": [
+      "tools"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 26,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "luggage",
+      "tools"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S08",
+    "goals": [
+      "tools"
+    ],
+    "extra": [
+      "luggage"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 29,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "luggage",
+      "tools"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S08",
+    "goals": [
+      "tools"
+    ],
+    "extra": [
+      "luggage"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 26,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "luggage",
+      "tools"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S08",
+    "goals": [
+      "tools"
+    ],
+    "extra": [
+      "luggage"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 35,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "luggage",
+      "tools"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S08",
+    "goals": [
+      "tools"
+    ],
+    "extra": [
+      "luggage"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 33,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "luggage",
+      "tools"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S09",
+    "goals": [
+      "class"
+    ],
+    "extra": [
+      "books"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 31,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "class",
+      "books"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S09",
+    "goals": [
+      "class"
+    ],
+    "extra": [
+      "books"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 28,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "class",
+      "books"
+    ],
+    "lost": [
+      "S09_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S09",
+    "goals": [
+      "class"
+    ],
+    "extra": [
+      "books"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 34,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "class",
+      "books"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S09",
+    "goals": [
+      "class"
+    ],
+    "extra": [
+      "books"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 29,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "class",
+      "books"
+    ],
+    "lost": [
+      "S09_enemy1_cut"
+    ],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S10",
+    "goals": [
+      "light"
+    ],
+    "extra": [
+      "chart"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 12,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "light",
+      "chart"
+    ],
+    "lost": [],
+    "controls": 2,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S10",
+    "goals": [
+      "light"
+    ],
+    "extra": [
+      "chart"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 12,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "light",
+      "chart"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S10",
+    "goals": [
+      "light"
+    ],
+    "extra": [
+      "chart"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 36,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "light",
+      "chart"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S10",
+    "goals": [
+      "light"
+    ],
+    "extra": [
+      "chart"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 12,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "light",
+      "chart"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S11",
+    "goals": [
+      "wire"
+    ],
+    "extra": [
+      "cold"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 12,
+    "ap": 25,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "wire",
+      "cold"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S11",
+    "goals": [
+      "wire"
+    ],
+    "extra": [
+      "cold"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 12,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "wire",
+      "cold"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S11",
+    "goals": [
+      "wire"
+    ],
+    "extra": [
+      "cold"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 6,
+    "limit": 12,
+    "ap": 32,
+    "damage": 4,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "wire",
+      "cold"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S11",
+    "goals": [
+      "wire"
+    ],
+    "extra": [
+      "cold"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 5,
+    "limit": 12,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "wire",
+      "cold"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S12",
+    "goals": [
+      "box"
+    ],
+    "extra": [
+      "photo"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "controls",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 27,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "box",
+      "photo"
+    ],
+    "lost": [],
+    "controls": 1,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S12",
+    "goals": [
+      "box"
+    ],
+    "extra": [
+      "photo"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "rush",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 28,
+    "damage": 0,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "box",
+      "photo"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S12",
+    "goals": [
+      "box"
+    ],
+    "extra": [
+      "photo"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "attack",
+    "gear": {},
+    "level": 1,
+    "rounds": 8,
+    "limit": 12,
+    "ap": 35,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "box",
+      "photo"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  },
+  {
+    "route": "default",
+    "mission": "S12",
+    "goals": [
+      "box"
+    ],
+    "extra": [
+      "photo"
+    ],
+    "difficulty": "standard",
+    "variant": "A",
+    "style": "optional_first",
+    "gear": {},
+    "level": 1,
+    "rounds": 7,
+    "limit": 12,
+    "ap": 27,
+    "damage": 2,
+    "healthy_extracted": 3,
+    "downed": 0,
+    "success": true,
+    "secured": [
+      "box",
+      "photo"
+    ],
+    "lost": [],
+    "controls": 0,
+    "spawned": 0
+  }
+]

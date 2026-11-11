@@ -1,0 +1,80 @@
+{
+  "status": "passed_user_report",
+  "target_confirmed_by_user": "Windows 11 x64 / keyboard mouse / zh_CN",
+  "device_available": true,
+  "cpu": "AMD Ryzen 5 5600",
+  "gpu": "MSI GeForce RTX 5060 Ti 8G INSPIRE 2X",
+  "driver": null,
+  "ram_gb": 16,
+  "windows_build": null,
+  "build_receipt_sha256": null,
+  "checks": {
+    "boot_offline_standard_user": "pending",
+    "chinese_and_space_paths": "pending",
+    "dpi_resolution_font_sizes": "pending",
+    "keyboard_mouse_audio": "pending",
+    "save_restore_failure_recovery": "pending_user_device_test",
+    "m01_camp_save_m02": "pending_user_device_test",
+    "r07_reference_8gb_performance": "pending",
+    "specialties_relationships_undo": "pending_user_device_test",
+    "external_display_window_routing": "pending_user_device_test"
+  },
+  "logs_and_observations": [
+    "2026-11-05 用户明确报告 Windows 通过并授权进入 P2；保留未提供的逐项测量为空，不推定8GB最低配置性能达标。"
+  ],
+  "vram_gb": 8,
+  "storage_capacity_tb_approx": 1,
+  "storage_type": "SSD",
+  "free_storage_gb": null,
+  "display_resolution": "2560x1440 (both monitors)",
+  "configuration_source": "User report, 2026-11-04; not measured on device",
+  "test_role": "Primary Windows functional test machine; not an 8GB RAM minimum-spec reference",
+  "ram_configuration": "ASUS TUF x Asgard DDR4-3600, 2 x 8GB (user reported; operating speed not verified)",
+  "motherboard": "Gigabyte B550M-K DDR4",
+  "wireless": "MediaTek Wi-Fi 6 (exact adapter model unknown)",
+  "os": "Windows 11",
+  "display_report_raw": "显示器有180和320hx",
+  "display_refresh_hz_interpretation": [
+    180,
+    320
+  ],
+  "display_refresh_interpretation_confirmed": true,
+  "displays": [
+    {
+      "resolution": "2560x1440",
+      "refresh_hz": 180
+    },
+    {
+      "resolution": "2560x1440",
+      "refresh_hz": 320
+    }
+  ],
+  "required_display_tests": [
+    {
+      "resolution": "1920x1080",
+      "purpose": "Mandatory functional/UI/performance acceptance; include laptop device when available",
+      "status": "pending"
+    },
+    {
+      "resolution": "2560x1440",
+      "refresh_hz": [
+        180,
+        320
+      ],
+      "purpose": "Native monitor layout, frame limiting, VSync and monitor switching",
+      "status": "pending"
+    },
+    {
+      "resolution": "1280x720",
+      "purpose": "Minimum window layout and readable controls",
+      "status": "pending"
+    }
+  ],
+  "user_report": {
+    "date": "2026-11-05",
+    "statement": "windows过了",
+    "scope": "P1 Windows test reported passed by user; individual checklist measurements not supplied",
+    "build_candidate": "build/night-tide-windows-p1-visual.zip",
+    "build_identity_confirmed": false
+  }
+}

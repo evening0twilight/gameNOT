@@ -1,0 +1,61 @@
+{
+  "method": "Six original deterministic musical loops. No external samples or copied melody.",
+  "sample_rate": 22050,
+  "assets": [
+    {
+      "path": "game/assets/audio018/title.wav",
+      "sha256": "dbc67a110b3b77c27cf8326a957bcea6d569bd71cf45e6ed54ead9881512b633",
+      "seconds": 24,
+      "peak": 0.096394280798543,
+      "rms": 0.024596075224497794,
+      "seam_difference": 0,
+      "context": "title"
+    },
+    {
+      "path": "game/assets/audio018/briefing.wav",
+      "sha256": "d376b60d9366f0ee79524c86b413dd9e194e6d517266b1759a8095ada9f5ad18",
+      "seconds": 24,
+      "peak": 0.09508142403722189,
+      "rms": 0.024449516820651877,
+      "seam_difference": 0,
+      "context": "briefing"
+    },
+    {
+      "path": "game/assets/audio018/battle.wav",
+      "sha256": "073b270db319f036f3f4e6e3add14f418e4de9cbc0f112322448272131bb8104",
+      "seconds": 24,
+      "peak": 0.08416745894597069,
+      "rms": 0.023617606661737487,
+      "seam_difference": 0,
+      "context": "battle"
+    },
+    {
+      "path": "game/assets/audio018/camp.wav",
+      "sha256": "22324fffb09487991cfece39ad2ed778bdaae78954cb60a840313b198606519c",
+      "seconds": 24,
+      "peak": 0.1005290339218576,
+      "rms": 0.025080171403304746,
+      "seam_difference": 0,
+      "context": "camp"
+    },
+    {
+      "path": "game/assets/audio018/story.wav",
+      "sha256": "de675aa9c71ec81d166e14b838e8627ef6b496b5db78108d516b25c49537e917",
+      "seconds": 24,
+      "peak": 0.08718684938416967,
+      "rms": 0.02426002852222291,
+      "seam_difference": 0,
+      "context": "story"
+    },
+    {
+      "path": "game/assets/audio018/ending.wav",
+      "sha256": "e0b402ed3eb200c1f9f5d3a1329ce059c1ee4069914c9bdb05c20a24c717f9c8",
+      "seconds": 24,
+      "peak": 0.10241797879810771,
+      "rms": 0.024260331590133858,
+      "seam_difference": 0,
+      "context": "ending"
+    }
+  ],
+  "review": "Signal integrity checked; subjective listening acceptance pending."
+}

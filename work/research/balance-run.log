@@ -1,0 +1,304 @@
+{
+  "model_version": "0.1-design-probe",
+  "date": "2026-10-31",
+  "limitations": [
+    "Synthetic inputs, not player behaviour or win rates",
+    "No economy, roster, full map, story selector or engine integration",
+    "Feasibility only at mission entry; does not rescue later bad choices",
+    "No verification of fun, willingness to pay or long-run optimal teams"
+  ],
+  "checks": [
+    "leader decision does not blame uninvolved teammate",
+    "relationships remain directional",
+    "replayed event is not applied twice",
+    "unobserved event cannot cause mind-reading resentment",
+    "later discovery applies event once",
+    "100 apologies cannot farm trust or clear memory",
+    "wrong restitution cannot erase a different injury",
+    "wrong restitution is rejected even after acknowledgement",
+    "hurt then repair cannot farm trust",
+    "same cooperation cannot be farmed",
+    "one restitution action cannot pay for multiple harms",
+    "serious unresolved memory retains a floor",
+    "ordinary memory fades without infinite accumulation",
+    "stress alone does not blame a teammate",
+    "hysteresis stops threshold chatter",
+    "repeated harm/repair remains worse than benign relationship",
+    "harm/repair cannot farm any starting trust level 0..100",
+    "100 event streams x 100 days stay bounded",
+    "same seed reproduces mission",
+    "difficulty comparison holds weather and equipment budget constant"
+  ],
+  "trajectories": [
+    {
+      "serious": false,
+      "days": [
+        0,
+        3,
+        6,
+        12,
+        24
+      ],
+      "untreated": [
+        12.0,
+        6.0,
+        3.0,
+        0.75,
+        0.05
+      ],
+      "repaired_at_day_0": [
+        5.4,
+        2.7,
+        1.35,
+        0.34,
+        0.02
+      ]
+    },
+    {
+      "serious": true,
+      "days": [
+        0,
+        3,
+        6,
+        12,
+        24
+      ],
+      "untreated": [
+        32.0,
+        27.24,
+        23.57,
+        18.55,
+        13.8
+      ],
+      "repaired_at_day_0": [
+        14.4,
+        11.1,
+        8.56,
+        5.09,
+        1.8
+      ]
+    }
+  ],
+  "mission_sweep": [
+    {
+      "difficulty": "relaxed",
+      "strained": false,
+      "candidates": 1000,
+      "rejected_no_rescue_plan": 0,
+      "rejection_seed_examples": [],
+      "accepted": 1000,
+      "accepted_with_only_one_pareto_outcome": 7,
+      "frontier_tool_presence": {
+        "crowbar": 751,
+        "none": 1000
+      }
+    },
+    {
+      "difficulty": "relaxed",
+      "strained": true,
+      "candidates": 1000,
+      "rejected_no_rescue_plan": 0,
+      "rejection_seed_examples": [],
+      "accepted": 1000,
+      "accepted_with_only_one_pareto_outcome": 23,
+      "frontier_tool_presence": {
+        "crowbar": 751,
+        "none": 1000,
+        "winch": 312
+      }
+    },
+    {
+      "difficulty": "standard",
+      "strained": false,
+      "candidates": 1000,
+      "rejected_no_rescue_plan": 7,
+      "rejection_seed_examples": [
+        259,
+        475,
+        568,
+        880,
+        913
+      ],
+      "accepted": 993,
+      "accepted_with_only_one_pareto_outcome": 114,
+      "frontier_tool_presence": {
+        "crowbar": 751,
+        "none": 972
+      }
+    },
+    {
+      "difficulty": "standard",
+      "strained": true,
+      "candidates": 1000,
+      "rejected_no_rescue_plan": 26,
+      "rejection_seed_examples": [
+        37,
+        67,
+        72,
+        78,
+        90
+      ],
+      "accepted": 974,
+      "accepted_with_only_one_pareto_outcome": 134,
+      "frontier_tool_presence": {
+        "crowbar": 748,
+        "none": 922,
+        "winch": 312
+      }
+    },
+    {
+      "difficulty": "hard",
+      "strained": false,
+      "candidates": 1000,
+      "rejected_no_rescue_plan": 63,
+      "rejection_seed_examples": [
+        14,
+        37,
+        56,
+        67,
+        72
+      ],
+      "accepted": 937,
+      "accepted_with_only_one_pareto_outcome": 193,
+      "frontier_tool_presence": {
+        "crowbar": 730,
+        "none": 856
+      }
+    },
+    {
+      "difficulty": "hard",
+      "strained": true,
+      "candidates": 1000,
+      "rejected_no_rescue_plan": 107,
+      "rejection_seed_examples": [
+        14,
+        19,
+        37,
+        42,
+        56
+      ],
+      "accepted": 893,
+      "accepted_with_only_one_pareto_outcome": 199,
+      "frontier_tool_presence": {
+        "crowbar": 696,
+        "none": 743,
+        "winch": 312
+      }
+    }
+  ],
+  "sensitivity": [
+    {
+      "severity_multiplier": 0.75,
+      "ordinary_half_life": 2.0,
+      "active_band_days": [],
+      "note": "band is not a count of disputes; encounter gates/cooldowns are not implemented"
+    },
+    {
+      "severity_multiplier": 0.75,
+      "ordinary_half_life": 3.0,
+      "active_band_days": [
+        6,
+        7,
+        8
+      ],
+      "note": "band is not a count of disputes; encounter gates/cooldowns are not implemented"
+    },
+    {
+      "severity_multiplier": 0.75,
+      "ordinary_half_life": 5.0,
+      "active_band_days": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "note": "band is not a count of disputes; encounter gates/cooldowns are not implemented"
+    },
+    {
+      "severity_multiplier": 1.0,
+      "ordinary_half_life": 2.0,
+      "active_band_days": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "note": "band is not a count of disputes; encounter gates/cooldowns are not implemented"
+    },
+    {
+      "severity_multiplier": 1.0,
+      "ordinary_half_life": 3.0,
+      "active_band_days": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "note": "band is not a count of disputes; encounter gates/cooldowns are not implemented"
+    },
+    {
+      "severity_multiplier": 1.0,
+      "ordinary_half_life": 5.0,
+      "active_band_days": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "note": "band is not a count of disputes; encounter gates/cooldowns are not implemented"
+    },
+    {
+      "severity_multiplier": 1.25,
+      "ordinary_half_life": 2.0,
+      "active_band_days": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "note": "band is not a count of disputes; encounter gates/cooldowns are not implemented"
+    },
+    {
+      "severity_multiplier": 1.25,
+      "ordinary_half_life": 3.0,
+      "active_band_days": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "note": "band is not a count of disputes; encounter gates/cooldowns are not implemented"
+    },
+    {
+      "severity_multiplier": 1.25,
+      "ordinary_half_life": 5.0,
+      "active_band_days": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "note": "band is not a count of disputes; encounter gates/cooldowns are not implemented"
+    }
+  ]
+}

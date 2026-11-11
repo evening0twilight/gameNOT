@@ -1,0 +1,106 @@
+{
+  "version": "0.6-system-audit",
+  "body_vs_relationship": "身体恢复只改变身体状态；不自动清除、增加或翻倍人际怨气。伤势可造成个人压力，怨气需要针对某人的已知、可归责事件。",
+  "no_auto_resentment": [
+    "同队出勤",
+    "在已知风险下诚实执行任务但失利",
+    "资源不足而未承诺能立即治疗",
+    "正常等待免费恢复",
+    "已解释并获得同意的改约"
+  ],
+  "attribution": "隐瞒风险、违背明确接应/治疗约定、未经同意追加承担等才建立有向记忆。队长作出决定不能默认让执行队员背责；只知道结果但不知道责任时保留未知，不凭空读心。",
+  "one_incident": "同一事件即使同时造成受伤、撤离失败和延迟治疗，也不重复创建三份同义怨气；严重后果用于该事件的严重度/性质，个人压力另有上限。",
+  "repeated_breach_escalation": {
+    "id": "persistent_breach",
+    "category": "promise",
+    "severity": 18,
+    "trust_loss": 12,
+    "serious": true,
+    "conditions": [
+      "观察者已知同一责任对象的行为",
+      "连续3个值勤日窗口内，第三次独立明确承诺被违背",
+      "三个承诺/事件ID不同，同一失约不能通过重复点击或重复结算计数",
+      "每次均有真实责任份额；事故或医疗中断不计",
+      "第三次行动提交前明确预告会被视为持续失信"
+    ],
+    "effect": "将第三次事件以严重记忆登记一次，不同时再加一份普通记忆；此前事件保留。不是普通拌嘴自动升级，也不暗改阈值。"
+  },
+  "thresholds": "Q=R+0.25*max(压力-40,0)，封顶100。45戒备、65相关条件合作、80达到冲突资格；还需相关情境和已提示。100没有额外强制动作，不随机伤害队友、不删除装备、不因关系强制医疗离队。",
+  "at_max": "本队每任务最多一次长冲突，限制仍在对应行动预览中持续显示。玩家可以提供真实保障、换职责/搭档、走基础独立办法、放弃额外目标或撤退；不能靠反复点确认刷出合作。爆发不会自动清零怨气。",
+  "recovery": "休息降低个人压力，普通事件随时间变淡；具体认责、实质补救和后续守约作用于各自事件；历史旧怨需相关历史处理。亲近、专业信任与怨气分别保留，不强制所有人和好。",
+  "known_remaining_audit": "本轮已明确满值、归责与冷却的修订并增加参考检查；见system_audit_contract.json与outputs/system-audit-results.json。仍未证明完整战斗与实际游玩平衡。",
+  "reference_examples": {
+    "conditions": "三个不同日、三个不同已知承诺、同一方向；敏感度1.25、责任1、压力10；不含任务后其他事件或实际战斗。",
+    "old_rule_old_grudge42": [
+      {
+        "day": 1,
+        "before": 42,
+        "new_strength": 19.71,
+        "serious": false,
+        "resentment": 61.71
+      },
+      {
+        "day": 2,
+        "before": 57.64,
+        "new_strength": 24.05,
+        "serious": false,
+        "resentment": 66
+      },
+      {
+        "day": 3,
+        "before": 66,
+        "new_strength": 27.95,
+        "serious": false,
+        "resentment": 66
+      }
+    ],
+    "new_rule_old_grudge42": [
+      {
+        "day": 1,
+        "before": 42,
+        "new_strength": 19.71,
+        "serious": false,
+        "resentment": 61.71
+      },
+      {
+        "day": 2,
+        "before": 57.64,
+        "new_strength": 24.05,
+        "serious": false,
+        "resentment": 66
+      },
+      {
+        "day": 3,
+        "before": 66,
+        "new_strength": 40,
+        "serious": true,
+        "resentment": 100
+      }
+    ],
+    "new_rule_no_old_grudge": [
+      {
+        "day": 1,
+        "before": 0,
+        "new_strength": 15.37,
+        "serious": false,
+        "resentment": 15.37
+      },
+      {
+        "day": 2,
+        "before": 12.2,
+        "new_strength": 17.11,
+        "serious": false,
+        "resentment": 24
+      },
+      {
+        "day": 3,
+        "before": 23.27,
+        "new_strength": 28.87,
+        "serious": true,
+        "resentment": 52.14
+      }
+    ]
+  },
+  "numeric_authority": "system_audit_contract.json / memory_budget",
+  "reference_examples_scope": "以下为0.5原始反例，保留用于说明修订原因；当前0.6数值以outputs/system-audit-results.json为准"
+}

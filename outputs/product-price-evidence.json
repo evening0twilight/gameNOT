@@ -1,0 +1,92 @@
+[
+  {
+    "id": 2026000,
+    "region": "us",
+    "url": "https://store.steampowered.com/api/appdetails?appids=2026000&cc=us&l=english",
+    "success": true,
+    "name": "Our Adventurer Guild",
+    "price": {
+      "currency": "USD",
+      "initial": 1499,
+      "final": 1499,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "$14.99"
+    }
+  },
+  {
+    "id": 1043810,
+    "region": "us",
+    "url": "https://store.steampowered.com/api/appdetails?appids=1043810&cc=us&l=english",
+    "success": true,
+    "name": "Tactical Breach Wizards",
+    "price": {
+      "currency": "USD",
+      "initial": 1999,
+      "final": 1999,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "$19.99"
+    }
+  },
+  {
+    "id": 763890,
+    "region": "us",
+    "url": "https://store.steampowered.com/api/appdetails?appids=763890&cc=us&l=english",
+    "success": true,
+    "name": "Wildermyth",
+    "price": {
+      "currency": "USD",
+      "initial": 2499,
+      "final": 2499,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "$24.99"
+    }
+  },
+  {
+    "id": 2026000,
+    "region": "cn",
+    "url": "https://store.steampowered.com/api/appdetails?appids=2026000&cc=cn&l=english",
+    "success": true,
+    "name": "Our Adventurer Guild",
+    "price": {
+      "currency": "CNY",
+      "initial": 5800,
+      "final": 5800,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "¥ 58.00"
+    }
+  },
+  {
+    "id": 1043810,
+    "region": "cn",
+    "url": "https://store.steampowered.com/api/appdetails?appids=1043810&cc=cn&l=english",
+    "success": true,
+    "name": "Tactical Breach Wizards",
+    "price": {
+      "currency": "CNY",
+      "initial": 7600,
+      "final": 7600,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "¥ 76.00"
+    }
+  },
+  {
+    "id": 763890,
+    "region": "cn",
+    "url": "https://store.steampowered.com/api/appdetails?appids=763890&cc=cn&l=english",
+    "success": true,
+    "name": "Wildermyth",
+    "price": {
+      "currency": "CNY",
+      "initial": 8000,
+      "final": 8000,
+      "discount_percent": 0,
+      "initial_formatted": "",
+      "final_formatted": "¥ 80.00"
+    }
+  }
+]

@@ -1,0 +1,3337 @@
+{
+  "version": "0.6-system-audit",
+  "personal_nodes": [
+    {
+      "id": "P_lin_1",
+      "actor": "lin",
+      "stage": 1,
+      "title": "未寄出的交班单",
+      "earliest_day": 2,
+      "latest_day": 23,
+      "requires_resolved": [],
+      "opening": "林岚把旧交班单压在杯子下面：“那天不是没人下过撤离令，是我直到最后才知道门已经关了。”",
+      "project_cost": 0,
+      "participants": [
+        "lin"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "private",
+          "label": "先让她决定交班单向谁公开",
+          "response": "保留私人边界；目前不向许舟同步，后续可明确授权。",
+          "set_flags": [
+            "lin.disclosure.private"
+          ],
+          "credits": 0
+        },
+        {
+          "id": "share",
+          "label": "征得同意后安排双方核对",
+          "response": "公开的是行动时间线，不要求她接受道歉；许舟知道她实际缺失的信息。",
+          "set_flags": [
+            "lin.disclosure.share"
+          ],
+          "credits": 0
+        }
+      ],
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_lin_2",
+      "actor": "lin",
+      "stage": 2,
+      "title": "谁替谁签了字",
+      "earliest_day": 9,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_lin_1"
+      ],
+      "opening": "新的病房转运排班又把她放在最后：“我可以留下。但这次，你要先告诉我谁来接，什么时候不再等。”",
+      "project_cost": 1,
+      "participants": [
+        "lin"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "rotation",
+          "label": "制定轮换与明确接应",
+          "response": "制定明确接应职责；后续同一主线伤员由至少两位队员实际完成救援，其中至少一位不是林岚。撤离时限如另作明确约定，按独立承诺处理。",
+          "credits": 0,
+          "set_flags": [
+            "lin.plan.rotation"
+          ],
+          "creates_contract": true,
+          "verification": "M09.r1被救出，且至少两个不同角色对其稳定/搬运/接应有贡献；其中一人不是lin。若任务已过去，用下一次含rescue的主任务实际达成同条件。不得回刷。",
+          "latest_creation_day": 22
+        },
+        {
+          "id": "independent",
+          "label": "给她保留独立处置权限",
+          "response": "无资源费；可以继续独立工作；不发放双方修复凭据。",
+          "credits": 0,
+          "set_flags": [
+            "lin.plan.independent"
+          ],
+          "creates_contract": false,
+          "verification": "explicit professional boundary; no restorative proof fabricated"
+        }
+      ],
+      "fallback_if_unaffordable": "第二项无资金成本且有完整职业/专业结局；不允许欠款或先领修复奖励再取消付款。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_lin_3",
+      "actor": "lin",
+      "stage": 3,
+      "title": "把最后一班交给别人",
+      "earliest_day": 16,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_lin_2"
+      ],
+      "opening": "她把诊所钥匙放在桌上：“我不需要你保证再也不会出事。我需要下一次不用一个人守到最后。”",
+      "project_cost": 0,
+      "participants": [
+        "lin"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "integrated",
+          "label": "重新建立有边界的信任",
+          "requires": [
+            "lin.contract_verified"
+          ],
+          "response": "林岚没有说“算了”。她重新填了一张所有人都能看见的交班单。",
+          "set_flags": [
+            "lin.ending.integrated"
+          ]
+        },
+        {
+          "id": "professional",
+          "label": "保留专业距离",
+          "requires": [],
+          "response": "双方明确保留边界；可以继续一起完成基础工作，不宣称旧事已经原谅。",
+          "set_flags": [
+            "lin.ending.professional"
+          ]
+        },
+        {
+          "id": "new_life",
+          "label": "战役结束后回到社区诊所",
+          "requires": [],
+          "response": "决定在本轮救援结束后执行；当前队伍仍可正常出勤，普通难度不会突然失去培养角色。",
+          "set_flags": [
+            "lin.ending.new_life"
+          ]
+        }
+      ],
+      "unmet_condition_dialogue": "如果尚未兑现约定，角色直接指出缺少的那件具体行动；可等到23日再谈，或选择专业距离/未来生活。不会展示虚假的已经和好台词。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_xu_1",
+      "actor": "xu",
+      "stage": 1,
+      "title": "坏掉的接收器",
+      "earliest_day": 3,
+      "latest_day": 23,
+      "requires_resolved": [],
+      "opening": "许舟试着修旧接收器：“里面没有完整录音。缺的十七秒，我也补不出来。”",
+      "project_cost": 0,
+      "participants": [
+        "xu"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "record",
+          "label": "如实登记缺失片段",
+          "response": "记录证据边界，不替任何人补一句不存在的命令。",
+          "set_flags": [
+            "xu.disclosure.record"
+          ],
+          "credits": 0
+        },
+        {
+          "id": "testimony",
+          "label": "先分别保存当事人口述",
+          "response": "口述标注未核实；对外不把它当技术证据。",
+          "set_flags": [
+            "xu.disclosure.testimony"
+          ],
+          "credits": 0
+        }
+      ],
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_xu_2",
+      "actor": "xu",
+      "stage": 2,
+      "title": "没有录下来的十七秒",
+      "earliest_day": 10,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_xu_1"
+      ],
+      "opening": "他主动申请去最危险的一端：“这次让我证明。”队伍需要的是可靠行动，不是另一场偿还式冒险。",
+      "project_cost": 1,
+      "participants": [
+        "xu"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "bounded",
+          "label": "给任务范围与停止条件",
+          "response": "无资源费；接受的撤离期限一旦接近，需放弃未承诺的额外目标或先得到改约同意。",
+          "credits": 0,
+          "set_flags": [
+            "xu.plan.bounded"
+          ],
+          "creates_contract": true,
+          "verification": "下一主任务有明确承诺截止轮；xu出勤且未失能，玩家在约定轮或之前发出撤离并且不触发违约。失败救援也可证明守约，成功却违约不可。",
+          "latest_creation_day": 22
+        },
+        {
+          "id": "solo",
+          "label": "安排独立的基础岗位",
+          "response": "无资源费；不强迫与林岚使用高级协议；他的贡献仍正常获得经验。",
+          "credits": 0,
+          "set_flags": [
+            "xu.plan.solo"
+          ],
+          "creates_contract": false,
+          "verification": "explicit professional boundary; no restorative proof fabricated"
+        }
+      ],
+      "fallback_if_unaffordable": "第二项无资金成本且有完整职业/专业结局；不允许欠款或先领修复奖励再取消付款。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_xu_3",
+      "actor": "xu",
+      "stage": 3,
+      "title": "一次按时撤离",
+      "earliest_day": 17,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_xu_2"
+      ],
+      "opening": "撤离记录上第一次没有他擅自延长的时间：“按时回来，好像也算把事情做好。”",
+      "project_cost": 0,
+      "participants": [
+        "xu"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "integrated",
+          "label": "以守约建立新的可靠性",
+          "requires": [
+            "xu.contract_verified"
+          ],
+          "response": "旧接收器没有变成无罪证明。他留下的是下一次可以验证的约定。",
+          "set_flags": [
+            "xu.ending.integrated"
+          ]
+        },
+        {
+          "id": "professional",
+          "label": "做有边界的独立行动员",
+          "requires": [],
+          "response": "双方明确保留边界；可以继续一起完成基础工作，不宣称旧事已经原谅。",
+          "set_flags": [
+            "xu.ending.professional"
+          ]
+        },
+        {
+          "id": "new_life",
+          "label": "战役结束后去新的队伍",
+          "requires": [],
+          "response": "决定在本轮救援结束后执行；当前队伍仍可正常出勤，普通难度不会突然失去培养角色。",
+          "set_flags": [
+            "xu.ending.new_life"
+          ]
+        }
+      ],
+      "unmet_condition_dialogue": "如果尚未兑现约定，角色直接指出缺少的那件具体行动；可等到23日再谈，或选择专业距离/未来生活。不会展示虚假的已经和好台词。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_su_1",
+      "actor": "su",
+      "stage": 1,
+      "title": "无人接听",
+      "earliest_day": 4,
+      "latest_day": 23,
+      "requires_resolved": [],
+      "opening": "苏棠把三份同一时段的值班表翻给你看：“他们都说只是再帮一下。可这三下，是同一个晚上。”",
+      "project_cost": 0,
+      "participants": [
+        "su"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "list",
+          "label": "逐项核对她实际承担的工作",
+          "response": "确认工作事实，不替任何人立刻认错。",
+          "set_flags": [
+            "su.disclosure.list"
+          ],
+          "credits": 0
+        },
+        {
+          "id": "listen",
+          "label": "先听她说完再谈排班",
+          "response": "她保留不公开私事的权利，工作统计仍能以后补。",
+          "set_flags": [
+            "su.disclosure.listen"
+          ],
+          "credits": 0
+        }
+      ],
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_su_2",
+      "actor": "su",
+      "stage": 2,
+      "title": "总有人说你最合适",
+      "earliest_day": 11,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_su_1"
+      ],
+      "opening": "所有人都习惯在争执时叫她。“如果我今天不接，你会让谁接？”",
+      "project_cost": 1,
+      "participants": [
+        "su"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "rota",
+          "label": "建立额外调解轮值",
+          "response": "无资源费；接下来两个值勤日不指定苏棠做后勤，并由其他可用者承担一次后勤。",
+          "credits": 0,
+          "set_flags": [
+            "su.plan.rota"
+          ],
+          "creates_contract": true,
+          "verification": "约定后的两个主任务均未把su放后勤，且至少一个其他主角有support_work receipt；即使其他任务失败也成立。无人可用则协议未履行，不能凭空成功。",
+          "latest_creation_day": 21
+        },
+        {
+          "id": "specialist",
+          "label": "保留她的专业调度但取消默认额外调解",
+          "response": "无资源费；她可照常出勤，额外关系谈话不把她自动加入。",
+          "credits": 0,
+          "set_flags": [
+            "su.plan.specialist"
+          ],
+          "creates_contract": false,
+          "verification": "explicit professional boundary; no restorative proof fabricated"
+        }
+      ],
+      "fallback_if_unaffordable": "第二项无资金成本且有完整职业/专业结局；不允许欠款或先领修复奖励再取消付款。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_su_3",
+      "actor": "su",
+      "stage": 3,
+      "title": "不接这一次电话",
+      "earliest_day": 18,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_su_2"
+      ],
+      "opening": "轮值表旁留出了一格休息：“我现在能听见电话响，也能等当班的人先接。”",
+      "project_cost": 0,
+      "participants": [
+        "su"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "integrated",
+          "label": "建立由多人承担的轮值制度",
+          "requires": [
+            "su.contract_verified"
+          ],
+          "response": "少接一个电话没有让她变得冷漠。她终于不必独自证明救援站还在工作。",
+          "set_flags": [
+            "su.ending.integrated"
+          ]
+        },
+        {
+          "id": "professional",
+          "label": "专注专业调度岗位",
+          "requires": [],
+          "response": "双方明确保留边界；可以继续一起完成基础工作，不宣称旧事已经原谅。",
+          "set_flags": [
+            "su.ending.professional"
+          ]
+        },
+        {
+          "id": "new_life",
+          "label": "战役结束后休假再归队",
+          "requires": [],
+          "response": "决定在本轮救援结束后执行；当前队伍仍可正常出勤，普通难度不会突然失去培养角色。",
+          "set_flags": [
+            "su.ending.new_life"
+          ]
+        }
+      ],
+      "unmet_condition_dialogue": "如果尚未兑现约定，角色直接指出缺少的那件具体行动；可等到23日再谈，或选择专业距离/未来生活。不会展示虚假的已经和好台词。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_chen_1",
+      "actor": "chen",
+      "stage": 1,
+      "title": "验收附页",
+      "earliest_day": 5,
+      "latest_day": 23,
+      "requires_resolved": [],
+      "opening": "陈砚指出验收附页上的一行字：“我写了要整改。”停顿之后，他承认自己仍然签了字。",
+      "project_cost": 0,
+      "participants": [
+        "chen"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "copy",
+          "label": "保留完整附页及签名",
+          "response": "保留条件与责任两部分，不剪掉有利或不利内容。",
+          "set_flags": [
+            "chen.disclosure.copy"
+          ],
+          "credits": 0
+        },
+        {
+          "id": "explain",
+          "label": "先要求他逐条解释可验证的事实",
+          "response": "没有证据的部分标为个人陈述，不当场定罪或免责。",
+          "set_flags": [
+            "chen.disclosure.explain"
+          ],
+          "credits": 0
+        }
+      ],
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_chen_2",
+      "actor": "chen",
+      "stage": 2,
+      "title": "署名人的责任",
+      "earliest_day": 12,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_chen_1"
+      ],
+      "opening": "叶禾问：“修好这台机器，就能补上我家那几年吗？”工坊安静下来。",
+      "project_cost": 1,
+      "participants": [
+        "chen"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "fund",
+          "label": "公开说明签字责任并设维修补偿专项",
+          "response": "支付8资金，一次性进入社区专项；未来成功完成一个work目标且陈砚有实际贡献，才算实质行动。",
+          "credits": 8,
+          "set_flags": [
+            "chen.plan.fund"
+          ],
+          "creates_contract": true,
+          "verification": "付清专项后，下一次主任务chen参与完成一个work目标；且公开说明获得Ye已知信息回执。叶禾缺席可收信确认，不要求她原谅。",
+          "latest_creation_day": 20
+        },
+        {
+          "id": "duty",
+          "label": "严格执行新验收，不承诺当前付不起的补偿",
+          "response": "无资源费；每次危险工作先完成断电/保护，未来仍可另议补偿；不送同等历史修复。",
+          "credits": 0,
+          "set_flags": [
+            "chen.plan.duty"
+          ],
+          "creates_contract": false,
+          "verification": "explicit professional boundary; no restorative proof fabricated"
+        }
+      ],
+      "fallback_if_unaffordable": "第二项无资金成本且有完整职业/专业结局；不允许欠款或先领修复奖励再取消付款。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor",
+        "fund": [
+          "payment(purpose=chen_compensation,credits=8)",
+          "known_information(actor=ye,fact=chen_signed_responsibility) after written notice delivered; no forgiveness implied"
+        ]
+      }
+    },
+    {
+      "id": "P_chen_3",
+      "actor": "chen",
+      "stage": 3,
+      "title": "亲手拆掉的铭牌",
+      "earliest_day": 19,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_chen_2"
+      ],
+      "opening": "旧铭牌拆下来了。陈砚这次没有把签名藏在技术说明后面。",
+      "project_cost": 0,
+      "participants": [
+        "chen"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "integrated",
+          "label": "承担责任并参与长期补偿",
+          "requires": [
+            "chen.contract_verified"
+          ],
+          "response": "附页没有替他抹去签名，签名也没有抹去整改警告。两件事终于可以一起被记录。",
+          "set_flags": [
+            "chen.ending.integrated"
+          ]
+        },
+        {
+          "id": "professional",
+          "label": "保持严格履职与专业距离",
+          "requires": [],
+          "response": "双方明确保留边界；可以继续一起完成基础工作，不宣称旧事已经原谅。",
+          "set_flags": [
+            "chen.ending.professional"
+          ]
+        },
+        {
+          "id": "new_life",
+          "label": "战役结束后转幕后维修",
+          "requires": [],
+          "response": "决定在本轮救援结束后执行；当前队伍仍可正常出勤，普通难度不会突然失去培养角色。",
+          "set_flags": [
+            "chen.ending.new_life"
+          ]
+        }
+      ],
+      "unmet_condition_dialogue": "如果尚未兑现约定，角色直接指出缺少的那件具体行动；可等到23日再谈，或选择专业距离/未来生活。不会展示虚假的已经和好台词。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_ye_1",
+      "actor": "ye",
+      "stage": 1,
+      "title": "工具箱里的复印件",
+      "earliest_day": 8,
+      "latest_day": 23,
+      "requires_resolved": [],
+      "opening": "叶禾带来的复印件已经折白了边：“我不是不愿意听解释，我不想再只拿到解释。”",
+      "project_cost": 0,
+      "participants": [
+        "ye"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "retain",
+          "label": "把她的副本作为独立材料留存",
+          "response": "不让陈砚改写她的记录；来历与未核实处清楚标记。",
+          "set_flags": [
+            "ye.disclosure.retain"
+          ],
+          "credits": 0
+        },
+        {
+          "id": "compare",
+          "label": "征求同意后对照完整原件",
+          "response": "只公开与事故有关的页；获得可核查清单。",
+          "set_flags": [
+            "ye.disclosure.compare"
+          ],
+          "credits": 0
+        }
+      ],
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_ye_2",
+      "actor": "ye",
+      "stage": 2,
+      "title": "修好机器不是赔偿",
+      "earliest_day": 14,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_ye_1"
+      ],
+      "opening": "新的维护记录和旧文件有几处不同。她需要的是核对，不是被要求为了团队大局放下。",
+      "project_cost": 1,
+      "participants": [
+        "ye"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "audit",
+          "label": "用一次独立核查核对维护责任",
+          "response": "无物资费，本节点占1项目；需要已获得E_MAINTENANCE；未取得时可登记等候，凭据到达后自动核查。",
+          "credits": 0,
+          "set_flags": [
+            "ye.plan.audit"
+          ],
+          "creates_contract": true,
+          "verification": "E_MAINTENANCE实际取得，且ye已接收核查摘要。此动作只证明新事实已知；历史修复另需陈砚补救和后续安全合作，不由她单方面完成。",
+          "latest_creation_day": 23
+        },
+        {
+          "id": "boundary",
+          "label": "保留质疑并明确独立作业边界",
+          "response": "无资源费；维持专业合作，不要求与陈砚装备危险联合协议。",
+          "credits": 0,
+          "set_flags": [
+            "ye.plan.boundary"
+          ],
+          "creates_contract": false,
+          "verification": "explicit professional boundary; no restorative proof fabricated"
+        }
+      ],
+      "fallback_if_unaffordable": "第二项无资金成本且有完整职业/专业结局；不允许欠款或先领修复奖励再取消付款。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor",
+        "audit": [
+          "known_information(actor=ye,fact=maintenance_audit) only when E_MAINTENANCE is verified"
+        ]
+      }
+    },
+    {
+      "id": "P_ye_3",
+      "actor": "ye",
+      "stage": 3,
+      "title": "允许新的证据存在",
+      "earliest_day": 21,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_ye_2"
+      ],
+      "opening": "她把新证据夹在旧纸后面：“这张纸说明了新的事，不会让以前的事没发生。”",
+      "project_cost": 0,
+      "participants": [
+        "ye"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "integrated",
+          "label": "继续追责，同时允许受约束的合作",
+          "requires": [
+            "ye.contract_verified"
+          ],
+          "response": "她没有把复印件扔掉。工具箱里多了新的隔层，容得下不同年代的证据。",
+          "set_flags": [
+            "ye.ending.integrated"
+          ]
+        },
+        {
+          "id": "professional",
+          "label": "承认专业能力但长期保持距离",
+          "requires": [],
+          "response": "双方明确保留边界；可以继续一起完成基础工作，不宣称旧事已经原谅。",
+          "set_flags": [
+            "ye.ending.professional"
+          ]
+        },
+        {
+          "id": "new_life",
+          "label": "战役结束后另组社区维修队",
+          "requires": [],
+          "response": "决定在本轮救援结束后执行；当前队伍仍可正常出勤，普通难度不会突然失去培养角色。",
+          "set_flags": [
+            "ye.ending.new_life"
+          ]
+        }
+      ],
+      "unmet_condition_dialogue": "如果尚未兑现约定，角色直接指出缺少的那件具体行动；可等到23日再谈，或选择专业距离/未来生活。不会展示虚假的已经和好台词。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_he_1",
+      "actor": "he",
+      "stage": 1,
+      "title": "从未撤销的名单",
+      "earliest_day": 11,
+      "latest_day": 23,
+      "requires_resolved": [],
+      "opening": "贺鸣的名单上有一个名字一直没有划掉：“我下的撤退令。这个事实，不该因为大多数人活着就不提。”",
+      "project_cost": 0,
+      "participants": [
+        "he"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "name",
+          "label": "允许他保留失踪者的名字与不确定性",
+          "response": "不擅自宣布死亡或写一个并无证据的团圆。",
+          "set_flags": [
+            "he.disclosure.name"
+          ],
+          "credits": 0
+        },
+        {
+          "id": "route",
+          "label": "一起重看当时的撤退路线",
+          "response": "区分当时信息与事后判断，避免全知式责怪。",
+          "set_flags": [
+            "he.disclosure.route"
+          ],
+          "credits": 0
+        }
+      ],
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_he_2",
+      "actor": "he",
+      "stage": 2,
+      "title": "保护与替人决定",
+      "earliest_day": 16,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_he_1"
+      ],
+      "opening": "年轻人说想自己决定风险。他反问：“如果你回不来，谁替你收拾？”这次需要区分保护和代替决定。",
+      "project_cost": 1,
+      "participants": [
+        "he"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "delegate",
+          "label": "明确安全边界后把行动授权交给队员",
+          "response": "无资源费；下一主任务he与另一人出勤，另一人完成目标，he不被安排替其完成全部目标。",
+          "credits": 0,
+          "set_flags": [
+            "he.plan.delegate"
+          ],
+          "creates_contract": true,
+          "verification": "下一主任务he出勤并参与保护/救援，另一队员独立完成至少一个work或rescue里程碑且安全退出；无需指定许舟。",
+          "latest_creation_day": 22
+        },
+        {
+          "id": "discipline",
+          "label": "维持统一撤离口令",
+          "response": "无资源费；清楚告知出发前的限制，提供独立行动岗位，不承诺自由后再收回。",
+          "credits": 0,
+          "set_flags": [
+            "he.plan.discipline"
+          ],
+          "creates_contract": false,
+          "verification": "explicit professional boundary; no restorative proof fabricated"
+        }
+      ],
+      "fallback_if_unaffordable": "第二项无资金成本且有完整职业/专业结局；不允许欠款或先领修复奖励再取消付款。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_he_3",
+      "actor": "he",
+      "stage": 3,
+      "title": "把指挥权交出去",
+      "earliest_day": 20,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_he_2"
+      ],
+      "opening": "他站在出口旁，没有抢过别人的无线电：“位置我守着，下一步你自己报。”",
+      "project_cost": 0,
+      "participants": [
+        "he"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "integrated",
+          "label": "成为能交出控制权的保障者",
+          "requires": [
+            "he.contract_verified"
+          ],
+          "response": "他仍然会担心。不同的是，这份担心终于不再自动变成别人的命令。",
+          "set_flags": [
+            "he.ending.integrated"
+          ]
+        },
+        {
+          "id": "professional",
+          "label": "维持事先说明的严格纪律",
+          "requires": [],
+          "response": "双方明确保留边界；可以继续一起完成基础工作，不宣称旧事已经原谅。",
+          "set_flags": [
+            "he.ending.professional"
+          ]
+        },
+        {
+          "id": "new_life",
+          "label": "战役结束后转向避难所",
+          "requires": [],
+          "response": "决定在本轮救援结束后执行；当前队伍仍可正常出勤，普通难度不会突然失去培养角色。",
+          "set_flags": [
+            "he.ending.new_life"
+          ]
+        }
+      ],
+      "unmet_condition_dialogue": "如果尚未兑现约定，角色直接指出缺少的那件具体行动；可等到23日再谈，或选择专业距离/未来生活。不会展示虚假的已经和好台词。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_mo_1",
+      "actor": "mo",
+      "stage": 1,
+      "title": "离线日志",
+      "earliest_day": 14,
+      "latest_day": 23,
+      "requires_resolved": [],
+      "opening": "莫遥拿出离线日志：“这段我亲眼看过。这段是别人转给我的。别把它们说成一样。”",
+      "project_cost": 0,
+      "participants": [
+        "mo"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "classify",
+          "label": "按亲历与转述分别登记",
+          "response": "来源清楚；不把所有记录自动算作已核实证据。",
+          "set_flags": [
+            "mo.disclosure.classify"
+          ],
+          "credits": 0
+        },
+        {
+          "id": "verify",
+          "label": "先核查技术签名再讨论公开",
+          "response": "没有签名页就等待，不逼她捏造完整结论。",
+          "set_flags": [
+            "mo.disclosure.verify"
+          ],
+          "credits": 0
+        }
+      ],
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_mo_2",
+      "actor": "mo",
+      "stage": 2,
+      "title": "一个名字的代价",
+      "earliest_day": 18,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_mo_1"
+      ],
+      "opening": "公开日志会带出一个与错误决策无关的同事姓名。隐去姓名，不等于隐去控制指令。",
+      "project_cost": 1,
+      "participants": [
+        "mo"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "redact",
+          "label": "承诺只公开必要信息并脱敏",
+          "response": "无资源费；下一次公开记录选择redacted，或完成M22.privacy；技术证据完整保留。",
+          "credits": 0,
+          "set_flags": [
+            "mo.plan.redact"
+          ],
+          "creates_contract": true,
+          "verification": "存在public_record_release receipt且privacy=redacted，或M22.privacy完成。公开未脱敏版本会永久使本次承诺失败；事后删帖不能伪造未发生。",
+          "latest_creation_day": 23
+        },
+        {
+          "id": "independent",
+          "label": "将原件交独立核查机构，暂缓公开",
+          "response": "无资源费；不立刻增加公开信任，也不阻断共同控制资格中的技术核实。",
+          "credits": 0,
+          "set_flags": [
+            "mo.plan.independent"
+          ],
+          "creates_contract": false,
+          "verification": "explicit professional boundary; no restorative proof fabricated"
+        }
+      ],
+      "fallback_if_unaffordable": "第二项无资金成本且有完整职业/专业结局；不允许欠款或先领修复奖励再取消付款。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor",
+        "redact": [
+          "public_record_release(privacy=redacted) on next chosen public release; may be made from existing record after commitment, no resource reward"
+        ]
+      }
+    },
+    {
+      "id": "P_mo_3",
+      "actor": "mo",
+      "stage": 3,
+      "title": "能够公开的部分",
+      "earliest_day": 23,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_mo_2"
+      ],
+      "opening": "对外的材料上保留了证据来源，也保留了核实范围：“我能保证的，就是这些。”",
+      "project_cost": 0,
+      "participants": [
+        "mo"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "integrated",
+          "label": "参与公开技术审计",
+          "requires": [
+            "mo.contract_verified"
+          ],
+          "response": "她没有交出每个人的全部生活。她交出的是足够承担责任的、能够核实的那部分。",
+          "set_flags": [
+            "mo.ending.integrated"
+          ]
+        },
+        {
+          "id": "professional",
+          "label": "留在有限互信的队伍",
+          "requires": [],
+          "response": "双方明确保留边界；可以继续一起完成基础工作，不宣称旧事已经原谅。",
+          "set_flags": [
+            "mo.ending.professional"
+          ]
+        },
+        {
+          "id": "new_life",
+          "label": "战役结束后离队并继续技术协助",
+          "requires": [],
+          "response": "决定在本轮救援结束后执行；当前队伍仍可正常出勤，普通难度不会突然失去培养角色。",
+          "set_flags": [
+            "mo.ending.new_life"
+          ]
+        }
+      ],
+      "unmet_condition_dialogue": "如果尚未兑现约定，角色直接指出缺少的那件具体行动；可等到23日再谈，或选择专业距离/未来生活。不会展示虚假的已经和好台词。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_jiang_1",
+      "actor": "jiang",
+      "stage": 1,
+      "title": "未结的工钱",
+      "earliest_day": 17,
+      "latest_day": 23,
+      "requires_resolved": [],
+      "opening": "江朔把拖欠清单和家人的旧短信放在一起：“我以前总觉得，再送完这一趟就来得及。”",
+      "project_cost": 0,
+      "participants": [
+        "jiang"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "wages",
+          "label": "先核对欠款与物资归属",
+          "response": "没有授权不挪用工人工具，不用悲伤故事替代账本。",
+          "set_flags": [
+            "jiang.disclosure.wages"
+          ],
+          "credits": 0
+        },
+        {
+          "id": "family",
+          "label": "先让他处理家人的联系",
+          "response": "不扣忠诚；生活选择不是对救援队的背叛。",
+          "set_flags": [
+            "jiang.disclosure.family"
+          ],
+          "credits": 0
+        }
+      ],
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    },
+    {
+      "id": "P_jiang_2",
+      "actor": "jiang",
+      "stage": 2,
+      "title": "最后一艘空船",
+      "earliest_day": 20,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_jiang_1"
+      ],
+      "opening": "一艘船装不下所有物资。不能等船开了再告诉工人，他们的生活用品被当成最低优先级。",
+      "project_cost": 1,
+      "participants": [
+        "jiang"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "settle",
+          "label": "结清一次明确拖欠并公示优先级",
+          "response": "支付6资金给社区运输工人，获得收据；下一次cargo目标不以未告知改约方式挤掉已承诺人员。",
+          "credits": 6,
+          "set_flags": [
+            "jiang.plan.settle"
+          ],
+          "creates_contract": true,
+          "verification": "实际支付6资金且获得工资收据；后续任务未发生与该事项同ID的priority_promise_breach。到第23日核对，不能用其他对象的付款顶替。",
+          "latest_creation_day": 23
+        },
+        {
+          "id": "negotiate",
+          "label": "明确当前资金限制并重新约定",
+          "response": "无资源费；工人同意后延期，不当作已经结清；保留独立合作关系。",
+          "credits": 0,
+          "set_flags": [
+            "jiang.plan.negotiate"
+          ],
+          "creates_contract": false,
+          "verification": "explicit professional boundary; no restorative proof fabricated"
+        }
+      ],
+      "fallback_if_unaffordable": "第二项无资金成本且有完整职业/专业结局；不允许欠款或先领修复奖励再取消付款。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor",
+        "settle": [
+          "payment(purpose=jiang_wages,credits=6)"
+        ]
+      }
+    },
+    {
+      "id": "P_jiang_3",
+      "actor": "jiang",
+      "stage": 3,
+      "title": "留下来的理由",
+      "earliest_day": 23,
+      "latest_day": 23,
+      "requires_resolved": [
+        "P_jiang_2"
+      ],
+      "opening": "这一次结算单送到了，消息也按时回了。他仍要决定之后把生活放在哪里。",
+      "project_cost": 0,
+      "participants": [
+        "jiang"
+      ],
+      "required_peer": null,
+      "absent": "暂时重伤：营地短谈/来信照常，不需战斗出勤；永久医疗离队：不再安排现场执行，已有选择转为书信结语且不补完成凭据。对方缺席仅用其已授权书面陈述，不替他发言。",
+      "defer": "可推迟到第23日晚；不凭空扣好感。最终仍未读：用未解决/专业现状结语，不判作公开羞辱。",
+      "receipt_scope": "node_id once; stable choice flag; loading and replaying UI never awards again",
+      "choices": [
+        {
+          "id": "integrated",
+          "label": "经营共同所有的运输站",
+          "requires": [
+            "jiang.contract_verified"
+          ],
+          "response": "不是每一笔遗憾都能结清。但这一次，他没有再拿下一趟航程代替答复。",
+          "set_flags": [
+            "jiang.ending.integrated"
+          ]
+        },
+        {
+          "id": "professional",
+          "label": "成为独立合作伙伴",
+          "requires": [],
+          "response": "双方明确保留边界；可以继续一起完成基础工作，不宣称旧事已经原谅。",
+          "set_flags": [
+            "jiang.ending.professional"
+          ]
+        },
+        {
+          "id": "new_life",
+          "label": "战役结束后选择家人与另一座城",
+          "requires": [],
+          "response": "决定在本轮救援结束后执行；当前队伍仍可正常出勤，普通难度不会突然失去培养角色。",
+          "set_flags": [
+            "jiang.ending.new_life"
+          ]
+        }
+      ],
+      "unmet_condition_dialogue": "如果尚未兑现约定，角色直接指出缺少的那件具体行动；可等到23日再谈，或选择专业距离/未来生活。不会展示虚假的已经和好台词。",
+      "after_choice_receipts": {
+        "always": [
+          "story_choice(node_id,actor,choice_id)"
+        ],
+        "stage2": "create_contract(actor,choice_id,created_after_command_index) only for creates_contract; payments atomic; declaration and consent known_information emitted to actual participating/consenting roles",
+        "stage3": "store explicit ending preference; never set proof or revive actor"
+      }
+    }
+  ],
+  "relationship_nodes": [
+    {
+      "id": "R01",
+      "actors": [
+        "lin",
+        "xu"
+      ],
+      "earliest_day": 6,
+      "latest_day": 23,
+      "title": "最后的接应",
+      "opening": "林岚要求先说清谁留在出口。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "写下撤离轮次",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "independent_anchor"
+        },
+        {
+          "id": "distance",
+          "label": "各自独立行动",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "dangerous_joint",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    },
+    {
+      "id": "R02",
+      "actors": [
+        "chen",
+        "ye"
+      ],
+      "earliest_day": 9,
+      "latest_day": 23,
+      "title": "谁来碰开关",
+      "opening": "叶禾不愿在带电线路上只听一句相信我。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "先断电再合作",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "power_off"
+        },
+        {
+          "id": "distance",
+          "label": "分别处理不同装置",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "dangerous_joint",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    },
+    {
+      "id": "R03",
+      "actors": [
+        "xu",
+        "he"
+      ],
+      "earliest_day": 12,
+      "latest_day": 23,
+      "title": "口令之外",
+      "opening": "许舟要求把停止条件和自主范围一起说清。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "预先划清授权",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "explicit_authority"
+        },
+        {
+          "id": "distance",
+          "label": "保持统一口令但分岗",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "partner_motion",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    },
+    {
+      "id": "R04",
+      "actors": [
+        "su",
+        "jiang"
+      ],
+      "earliest_day": 17,
+      "latest_day": 23,
+      "title": "轮到谁留下",
+      "opening": "江朔发现额外搬运又默认交给苏棠协调。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "另设轮值",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "named_receiver"
+        },
+        {
+          "id": "distance",
+          "label": "减少承诺只做当班",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "handoff",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。另可安排东侧接应，一人出勤一人后勤，支付实际成本。"
+    },
+    {
+      "id": "R05",
+      "actors": [
+        "mo",
+        "chen"
+      ],
+      "earliest_day": 15,
+      "latest_day": 23,
+      "title": "签名与转述",
+      "opening": "陈砚追问哪些日志是亲眼见过的。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "按来源逐条核实",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "source_labeled"
+        },
+        {
+          "id": "distance",
+          "label": "先保存再等证据",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "information",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    },
+    {
+      "id": "R06",
+      "actors": [
+        "lin",
+        "su"
+      ],
+      "earliest_day": 3,
+      "latest_day": 23,
+      "title": "谁也不值最后一班",
+      "opening": "两个可靠的人都习惯把自己放到最后。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "一起学习接力搬运",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "rest_boundary"
+        },
+        {
+          "id": "distance",
+          "label": "各自休息，日后再学",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "handoff",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    },
+    {
+      "id": "R07",
+      "actors": [
+        "ye",
+        "mo"
+      ],
+      "earliest_day": 15,
+      "latest_day": 23,
+      "title": "复印件的背面",
+      "opening": "叶禾想公开名字，莫遥指出其中有无关人员。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "保留责任事实并脱敏",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "redacted"
+        },
+        {
+          "id": "distance",
+          "label": "暂缓公开交独立核查",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "information",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    },
+    {
+      "id": "R08",
+      "actors": [
+        "he",
+        "lin"
+      ],
+      "earliest_day": 12,
+      "latest_day": 23,
+      "title": "保护不是接管",
+      "opening": "贺鸣想替林岚决定谁先走。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "由患者状态决定优先级",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "triage_order"
+        },
+        {
+          "id": "distance",
+          "label": "明确由当班医护判断",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "dangerous_joint",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    },
+    {
+      "id": "R09",
+      "actors": [
+        "xu",
+        "jiang"
+      ],
+      "earliest_day": 18,
+      "latest_day": 23,
+      "title": "多带一箱",
+      "opening": "许舟提出多跑一次，江朔指向已承诺的发船时间。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "先取得改约同意",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "deadline_confirmed"
+        },
+        {
+          "id": "distance",
+          "label": "放弃额外货物",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "handoff",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    },
+    {
+      "id": "R10",
+      "actors": [
+        "su",
+        "mo"
+      ],
+      "earliest_day": 19,
+      "latest_day": 23,
+      "title": "没有接通的电话",
+      "opening": "苏棠担心未接通的呼叫，莫遥区分已确认与未知。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "逐项登记而不编结果",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "unknown_preserved"
+        },
+        {
+          "id": "distance",
+          "label": "先休息，次日核查",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "information",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。另可安排东侧接应，一人出勤一人后勤，支付实际成本。"
+    },
+    {
+      "id": "R11",
+      "actors": [
+        "chen",
+        "he"
+      ],
+      "earliest_day": 13,
+      "latest_day": 23,
+      "title": "修好以后谁负责",
+      "opening": "陈砚愿意修设备，贺鸣追问交接后的维护。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "写入负责人和期限",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "maintenance_owner"
+        },
+        {
+          "id": "distance",
+          "label": "只承诺本次修复",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "dangerous_joint",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    },
+    {
+      "id": "R12",
+      "actors": [
+        "ye",
+        "jiang"
+      ],
+      "earliest_day": 21,
+      "latest_day": 23,
+      "title": "箱子是谁的",
+      "opening": "工具既是救援设备也是工人的私人物品。",
+      "project_cost": 0,
+      "choices": [
+        {
+          "id": "agreement",
+          "label": "取得同意再借用",
+          "effect": "记录双方已知的具体约定；后续真实履约才生成信任，不因选了这句话直接加数值。",
+          "guard": "property_consent"
+        },
+        {
+          "id": "distance",
+          "label": "用公共基础工具替代",
+          "effect": "明确专业边界，不自动扣信任，也不伪造亲近。"
+        }
+      ],
+      "relevant_tag": "handoff",
+      "absent": "任一永久离队则不生成双人现场，写已发生事实的单人通信；没有对应事实不编修复。",
+      "scheduling": "免费短谈占当晚短谈次数；保存agreement/distance选择，不直接加信任、经验或学习技能。",
+      "absence_rule": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+      "positive_payoff": "符合两次真实合作与当前关系条件后可带教；不强迫亲密。"
+    }
+  ],
+  "community_nodes": [
+    {
+      "id": "C01",
+      "source": "M01",
+      "title": "最后一班渡轮：回访",
+      "trigger": "主线结算后一次",
+      "facts": "码头路线得以登记；错过者由后续市级撤离接管",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C02",
+      "source": "M02",
+      "title": "诊所的备用电：回访",
+      "trigger": "主线结算后一次",
+      "facts": "诊所是否保留稳定电源影响后续医疗现场",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C03",
+      "source": "M03",
+      "title": "被锁住的仓库：回访",
+      "trigger": "主线结算后一次",
+      "facts": "公共工具登记完成，失败仍能用初始基础工具",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C04",
+      "source": "M04",
+      "title": "高架桥下：回访",
+      "trigger": "主线结算后一次",
+      "facts": "陈砚按社区派驻安排在结算后加入，并非任务救出的唯一人质",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C05",
+      "source": "M05",
+      "title": "旧泵房来电：回访",
+      "trigger": "主线结算后一次",
+      "facts": "决定下一次涨潮时的额外可用道路",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C06",
+      "source": "M06",
+      "title": "第一次涨潮：回访",
+      "trigger": "主线结算后一次",
+      "facts": "首章结算已救出的居民，不追溯抹去成功",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C07",
+      "source": "M07",
+      "title": "工具箱的名字：回访",
+      "trigger": "主线结算后一次",
+      "facts": "叶禾通过轮调加入；旧案线索不自动等于她原谅陈砚",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C08",
+      "source": "M08",
+      "title": "断开的补给线：回访",
+      "trigger": "主线结算后一次",
+      "facts": "工坊地区的恢复状态形成后续作业优势",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C09",
+      "source": "M09",
+      "title": "屋顶上的病房：回访",
+      "trigger": "主线结算后一次",
+      "facts": "未达成的额外目标影响当地恢复叙述，不取消基础医疗",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C10",
+      "source": "M10",
+      "title": "撤离预案：回访",
+      "trigger": "主线结算后一次",
+      "facts": "贺鸣按事先协调于任务后加入；意见与指令分开记录",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C11",
+      "source": "M11",
+      "title": "需要签字的门：回访",
+      "trigger": "主线结算后一次",
+      "facts": "核对设备事故，不用一份文件免除所有人责任",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C12",
+      "source": "M12",
+      "title": "闸下的记录：回访",
+      "trigger": "主线结算后一次",
+      "facts": "封闸历史进入可核查阶段；失败可在后续公共副本处补查",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C13",
+      "source": "M13",
+      "title": "会说谎的日志：回访",
+      "trigger": "主线结算后一次",
+      "facts": "莫遥完成派驻交接，关键资料不绑定她必须在队",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C14",
+      "source": "M14",
+      "title": "冷库里的电池：回访",
+      "trigger": "主线结算后一次",
+      "facts": "明确告诉玩家无法全拿时的取舍，不把两种合理方案都写成错",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C15",
+      "source": "M15",
+      "title": "三条同时响起的电话：回访",
+      "trigger": "主线结算后一次",
+      "facts": "未签承诺的第三处求援不自动让全队怨恨队长",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C16",
+      "source": "M16",
+      "title": "没有空位的船：回访",
+      "trigger": "主线结算后一次",
+      "facts": "江朔按合作约定加入，轮换能力增加但基本食宿成本不增加",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C17",
+      "source": "M17",
+      "title": "修复或拆除：回访",
+      "trigger": "主线结算后一次",
+      "facts": "方案改变地方设施状态，均能继续主线",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C18",
+      "source": "M18",
+      "title": "广播塔的盲区：回访",
+      "trigger": "主线结算后一次",
+      "facts": "第四章前显示各地区的实际状况与可改进项",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C19",
+      "source": "M19",
+      "title": "警戒水位：回访",
+      "trigger": "主线结算后一次",
+      "facts": "进入最后一轮风暴准备；这里不是“只剩一夜”后又过六天",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C20",
+      "source": "M20",
+      "title": "两座避难所：回访",
+      "trigger": "主线结算后一次",
+      "facts": "集中资源或分散布局都有清楚收益，另开放公共记录核查",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C21",
+      "source": "M21",
+      "title": "旧路与新桥：回访",
+      "trigger": "主线结算后一次",
+      "facts": "若旧路失败仍有最终撤离模板，失去的是效率与额外收益",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C22",
+      "source": "M22",
+      "title": "最后一份记录：回访",
+      "trigger": "主线结算后一次",
+      "facts": "最终路线条件进入明示阶段，仍允许一次公共核查",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C23",
+      "source": "M23",
+      "title": "撤离顺序：回访",
+      "trigger": "主线结算后一次",
+      "facts": "最后一次支线与营地整备，提示明天进入终局",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角"
+    },
+    {
+      "id": "C24",
+      "source": "M24",
+      "title": "天亮以前：回访",
+      "trigger": "主线结算后一次",
+      "facts": "任务结算立即组装结局；失利也有完整的撤离收束",
+      "variants": {
+        "success": "呈现该关已完成的必要目标与具体获救名单；不自动宣称所有额外目标都完成。",
+        "partial": "同时列已做到与没做到的事项；回访者回应具体损失，避免一律斥责玩家。",
+        "failed": "说明地方后果与接下来的接管安排，不补发本关成果。"
+      },
+      "choices": [
+        {
+          "id": "publish",
+          "label": "公开经核实的任务摘要",
+          "effect": "设置community_report.public=true；不包含私人信息；无金钱和好感奖励。"
+        },
+        {
+          "id": "archive",
+          "label": "先留在内部交接记录",
+          "effect": "设置community_report.public=false；技术证据仍保留，不阻断世界路线。"
+        }
+      ],
+      "project_cost": 0,
+      "queue": "任务结算页展示，不占夜间人物窗口",
+      "absent": "由社区联络员传达，不要求特定主角",
+      "delivery": "ending_archive_no_camp_no_extra_rewards"
+    }
+  ],
+  "recovery_nodes": [
+    {
+      "id": "L01",
+      "actor": "lin",
+      "title": "热汤",
+      "earliest_day": 2,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "留一碗给夜班"
+        },
+        {
+          "id": "b",
+          "label": "自己先吃"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "care"
+    },
+    {
+      "id": "L02",
+      "actor": "xu",
+      "title": "天气播报",
+      "earliest_day": 2,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "听完模仿"
+        },
+        {
+          "id": "b",
+          "label": "请他关小声休息"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "humor"
+    },
+    {
+      "id": "L03",
+      "actor": "su",
+      "title": "公用物品标签",
+      "earliest_day": 2,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "一起贴标签"
+        },
+        {
+          "id": "b",
+          "label": "保留旧名字"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "humor"
+    },
+    {
+      "id": "L04",
+      "actor": "chen",
+      "title": "漏汤的饭盒",
+      "earliest_day": 5,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "帮他找密封圈"
+        },
+        {
+          "id": "b",
+          "label": "分享自己的盒饭"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "care"
+    },
+    {
+      "id": "L05",
+      "actor": "ye",
+      "title": "亮色鞋带",
+      "earliest_day": 8,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "问名字由来"
+        },
+        {
+          "id": "b",
+          "label": "一起修旧鞋"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "craft"
+    },
+    {
+      "id": "L06",
+      "actor": "he",
+      "title": "练习的舞步",
+      "earliest_day": 11,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "陪他练一段"
+        },
+        {
+          "id": "b",
+          "label": "替他录给家人"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "family"
+    },
+    {
+      "id": "L07",
+      "actor": "mo",
+      "title": "旧广告牌",
+      "earliest_day": 14,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "看看照片"
+        },
+        {
+          "id": "b",
+          "label": "讲讲街区过去"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "memory"
+    },
+    {
+      "id": "L08",
+      "actor": "jiang",
+      "title": "船名争论",
+      "earliest_day": 17,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "给新船起长名字"
+        },
+        {
+          "id": "b",
+          "label": "坚持短名字"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "humor"
+    },
+    {
+      "id": "L09",
+      "actor": "lin",
+      "title": "不完整的食谱",
+      "earliest_day": 3,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "照记忆尝试"
+        },
+        {
+          "id": "b",
+          "label": "承认今天做不出来"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "craft"
+    },
+    {
+      "id": "L10",
+      "actor": "xu",
+      "title": "咖啡口味",
+      "earliest_day": 3,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "谢谢他记得"
+        },
+        {
+          "id": "b",
+          "label": "告诉他口味换了"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "care"
+    },
+    {
+      "id": "L11",
+      "actor": "su",
+      "title": "屋顶电影",
+      "earliest_day": 3,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "参加放映"
+        },
+        {
+          "id": "b",
+          "label": "安静休息"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "leisure"
+    },
+    {
+      "id": "L12",
+      "actor": "chen",
+      "title": "小盆栽",
+      "earliest_day": 6,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "挪到有光的地方"
+        },
+        {
+          "id": "b",
+          "label": "请别人代养"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "care"
+    },
+    {
+      "id": "L13",
+      "actor": "ye",
+      "title": "修好的玩具",
+      "earliest_day": 9,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "送还孩子"
+        },
+        {
+          "id": "b",
+          "label": "补写使用说明"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "craft"
+    },
+    {
+      "id": "L14",
+      "actor": "he",
+      "title": "缝补痕迹",
+      "earliest_day": 12,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "留着显眼的线"
+        },
+        {
+          "id": "b",
+          "label": "换成更结实的针脚"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "craft"
+    },
+    {
+      "id": "L15",
+      "actor": "mo",
+      "title": "忘带的钥匙",
+      "earliest_day": 15,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "帮她登记备用钥匙"
+        },
+        {
+          "id": "b",
+          "label": "先一起等值班人"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "humor"
+    },
+    {
+      "id": "L16",
+      "actor": "jiang",
+      "title": "简单的甜点",
+      "earliest_day": 18,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "分给轮班的人"
+        },
+        {
+          "id": "b",
+          "label": "留一份给家人"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "family"
+    },
+    {
+      "id": "L17",
+      "actor": "su",
+      "title": "没安排的半小时",
+      "earliest_day": 3,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "一起坐一会"
+        },
+        {
+          "id": "b",
+          "label": "让她独自待着"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "rest"
+    },
+    {
+      "id": "L18",
+      "actor": "lin",
+      "title": "天气转晴",
+      "earliest_day": 3,
+      "trigger": "当事人在营地且本次未读；不在同晚紧接其严重冲突强插笑话",
+      "choices": [
+        {
+          "id": "a",
+          "label": "谈以后想做的事"
+        },
+        {
+          "id": "b",
+          "label": "先聊今晚吃什么"
+        }
+      ],
+      "effect": "尊重选择的短谈给该角色对leader亲近+3，一次；不改变旧怨、专业信任、压力或AP。两项都是可接受回应。",
+      "project_cost": 0,
+      "absence": "永久离队改为来信近况，无亲近奖励；临时重伤仍可参与",
+      "category": "hope"
+    }
+  ],
+  "chapter_nodes": [
+    {
+      "id": "K01",
+      "source": "M03",
+      "title": "货仓交接",
+      "condition": {
+        "objective": "crate",
+        "state": "completed_or_saved"
+      },
+      "true_text": "物资签收",
+      "false_text": "补记未到物资",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K02",
+      "source": "M04",
+      "title": "桥下名单",
+      "condition": {
+        "objective": "worker",
+        "state": "completed_or_saved"
+      },
+      "true_text": "维修员回信",
+      "false_text": "缺席席位",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K03",
+      "source": "M06",
+      "title": "第一轮潮后",
+      "condition": {
+        "objective": "r1",
+        "state": "completed_or_saved"
+      },
+      "true_text": "获救名单",
+      "false_text": "继续寻找",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K04",
+      "source": "M06",
+      "title": "档案的去处",
+      "condition": {
+        "objective": "asset",
+        "state": "completed_or_saved"
+      },
+      "true_text": "修复档案",
+      "false_text": "整理口述",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K05",
+      "source": "M08",
+      "title": "运输恢复",
+      "condition": {
+        "objective": "truck",
+        "state": "completed_or_saved"
+      },
+      "true_text": "补给到站",
+      "false_text": "调整配给",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K06",
+      "source": "M09",
+      "title": "屋顶之后",
+      "condition": {
+        "objective": "r2",
+        "state": "completed_or_saved"
+      },
+      "true_text": "病人转院",
+      "false_text": "空出的病床",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K07",
+      "source": "M10",
+      "title": "预案演练",
+      "condition": {
+        "objective": "meeting",
+        "state": "completed_or_saved"
+      },
+      "true_text": "第二集合点",
+      "false_text": "一条明确出口",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K08",
+      "source": "M12",
+      "title": "缺失的签名",
+      "condition": {
+        "objective": "e",
+        "state": "completed_or_saved"
+      },
+      "true_text": "原始签名",
+      "false_text": "等待公共副本",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K09",
+      "source": "M14",
+      "title": "药品之后",
+      "condition": {
+        "objective": "meds",
+        "state": "completed_or_saved"
+      },
+      "true_text": "移动诊疗",
+      "false_text": "固定冷藏或损失",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K10",
+      "source": "M15",
+      "title": "三户人家",
+      "condition": {
+        "objective": "east",
+        "state": "completed_or_saved"
+      },
+      "true_text": "东楼回访",
+      "false_text": "东楼缺席",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K11",
+      "source": "M16",
+      "title": "下船的人",
+      "condition": {
+        "objective": "people",
+        "state": "completed_or_saved"
+      },
+      "true_text": "居民安置",
+      "false_text": "运输损失",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K12",
+      "source": "M17",
+      "title": "旧泵房的未来",
+      "condition": {
+        "objective": "repair2",
+        "state": "completed_or_saved"
+      },
+      "true_text": "继续排水",
+      "false_text": "隔离或未完成",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K13",
+      "source": "M18",
+      "title": "广播结束",
+      "condition": {
+        "objective": "broadcast",
+        "state": "completed_or_saved"
+      },
+      "true_text": "收到确认",
+      "false_text": "无回应记录",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K14",
+      "source": "M19",
+      "title": "最后的病房",
+      "condition": {
+        "objective": "patient",
+        "state": "completed_or_saved"
+      },
+      "true_text": "稳定转运",
+      "false_text": "长期接管",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K15",
+      "source": "M20",
+      "title": "避难所布局",
+      "condition": {
+        "objective": "east",
+        "state": "completed_or_saved"
+      },
+      "true_text": "东所保留",
+      "false_text": "集中或损失",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K16",
+      "source": "M21",
+      "title": "去往码头",
+      "condition": {
+        "objective": "route",
+        "state": "completed_or_saved"
+      },
+      "true_text": "主路开放",
+      "false_text": "应急接驳",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K17",
+      "source": "M22",
+      "title": "公开的范围",
+      "condition": {
+        "objective": "privacy",
+        "state": "completed_or_saved"
+      },
+      "true_text": "脱敏版本",
+      "false_text": "等待处理",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    },
+    {
+      "id": "K18",
+      "source": "M23",
+      "title": "重建的起点",
+      "condition": {
+        "objective": "rebuild",
+        "state": "completed_or_saved"
+      },
+      "true_text": "材料随船",
+      "false_text": "轻装撤离",
+      "effect": "只读取已经结算的地方事实；不再次发资源、不反向改角色记忆。",
+      "delivery": "章末/终局摘要；多个片段按任务顺序组合，失去的居民不在后续背景中重新出现。"
+    }
+  ],
+  "profiles": {
+    "lin": {
+      "days": [
+        2,
+        9,
+        16
+      ],
+      "peer": "xu",
+      "proof": {
+        "mission": "M09",
+        "objective": "r1",
+        "kind": "saved"
+      },
+      "opening": [
+        "林岚把旧交班单压在杯子下面：“那天不是没人下过撤离令，是我直到最后才知道门已经关了。”",
+        "新的病房转运排班又把她放在最后：“我可以留下。但这次，你要先告诉我谁来接，什么时候不再等。”",
+        "她把诊所钥匙放在桌上：“我不需要你保证再也不会出事。我需要下一次不用一个人守到最后。”"
+      ],
+      "first": [
+        [
+          "private",
+          "先让她决定交班单向谁公开",
+          "保留私人边界；目前不向许舟同步，后续可明确授权。"
+        ],
+        [
+          "share",
+          "征得同意后安排双方核对",
+          "公开的是行动时间线，不要求她接受道歉；许舟知道她实际缺失的信息。"
+        ]
+      ],
+      "commitment": [
+        [
+          "rotation",
+          "制定轮换与明确接应",
+          "无资源费；下一次接应任务须把林岚以外的人设为救援执行者，且按已设期限撤离。"
+        ],
+        [
+          "independent",
+          "给她保留独立处置权限",
+          "无资源费；可以继续独立工作；不发放双方修复凭据。"
+        ]
+      ],
+      "verification": "M09.r1被救出，且至少两个不同角色对其稳定/搬运/接应有贡献；其中一人不是lin。若任务已过去，用下一次含rescue的主任务实际达成同条件。不得回刷。",
+      "close": [
+        "重新建立有边界的信任",
+        "保留专业距离",
+        "战役结束后回到社区诊所"
+      ],
+      "line": "林岚没有说“算了”。她重新填了一张所有人都能看见的交班单。"
+    },
+    "xu": {
+      "days": [
+        3,
+        10,
+        17
+      ],
+      "peer": "lin",
+      "proof": {
+        "mission": "M12",
+        "objective": "drive",
+        "kind": "completed"
+      },
+      "opening": [
+        "许舟试着修旧接收器：“里面没有完整录音。缺的十七秒，我也补不出来。”",
+        "他主动申请去最危险的一端：“这次让我证明。”队伍需要的是可靠行动，不是另一场偿还式冒险。",
+        "撤离记录上第一次没有他擅自延长的时间：“按时回来，好像也算把事情做好。”"
+      ],
+      "first": [
+        [
+          "record",
+          "如实登记缺失片段",
+          "记录证据边界，不替任何人补一句不存在的命令。"
+        ],
+        [
+          "testimony",
+          "先分别保存当事人口述",
+          "口述标注未核实；对外不把它当技术证据。"
+        ]
+      ],
+      "commitment": [
+        [
+          "bounded",
+          "给任务范围与停止条件",
+          "无资源费；接受的撤离期限一旦接近，需放弃未承诺的额外目标或先得到改约同意。"
+        ],
+        [
+          "solo",
+          "安排独立的基础岗位",
+          "无资源费；不强迫与林岚使用高级协议；他的贡献仍正常获得经验。"
+        ]
+      ],
+      "verification": "下一主任务有明确承诺截止轮；xu出勤且未失能，玩家在约定轮或之前发出撤离并且不触发违约。失败救援也可证明守约，成功却违约不可。",
+      "close": [
+        "以守约建立新的可靠性",
+        "做有边界的独立行动员",
+        "战役结束后去新的队伍"
+      ],
+      "line": "旧接收器没有变成无罪证明。他留下的是下一次可以验证的约定。"
+    },
+    "su": {
+      "days": [
+        4,
+        11,
+        18
+      ],
+      "peer": null,
+      "proof": {
+        "mission": "M18",
+        "objective": "broadcast",
+        "kind": "completed"
+      },
+      "opening": [
+        "苏棠把三份同一时段的值班表翻给你看：“他们都说只是再帮一下。可这三下，是同一个晚上。”",
+        "所有人都习惯在争执时叫她。“如果我今天不接，你会让谁接？”",
+        "轮值表旁留出了一格休息：“我现在能听见电话响，也能等当班的人先接。”"
+      ],
+      "first": [
+        [
+          "list",
+          "逐项核对她实际承担的工作",
+          "确认工作事实，不替任何人立刻认错。"
+        ],
+        [
+          "listen",
+          "先听她说完再谈排班",
+          "她保留不公开私事的权利，工作统计仍能以后补。"
+        ]
+      ],
+      "commitment": [
+        [
+          "rota",
+          "建立额外调解轮值",
+          "无资源费；接下来两个值勤日不指定苏棠做后勤，并由其他可用者承担一次后勤。"
+        ],
+        [
+          "specialist",
+          "保留她的专业调度但取消默认额外调解",
+          "无资源费；她可照常出勤，额外关系谈话不把她自动加入。"
+        ]
+      ],
+      "verification": "约定后的两个主任务均未把su放后勤，且至少一个其他主角有support_work receipt；即使其他任务失败也成立。无人可用则协议未履行，不能凭空成功。",
+      "close": [
+        "建立由多人承担的轮值制度",
+        "专注专业调度岗位",
+        "战役结束后休假再归队"
+      ],
+      "line": "少接一个电话没有让她变得冷漠。她终于不必独自证明救援站还在工作。"
+    },
+    "chen": {
+      "days": [
+        5,
+        12,
+        19
+      ],
+      "peer": "ye",
+      "proof": {
+        "mission": "M11",
+        "objective": "e",
+        "kind": "completed"
+      },
+      "opening": [
+        "陈砚指出验收附页上的一行字：“我写了要整改。”停顿之后，他承认自己仍然签了字。",
+        "叶禾问：“修好这台机器，就能补上我家那几年吗？”工坊安静下来。",
+        "旧铭牌拆下来了。陈砚这次没有把签名藏在技术说明后面。"
+      ],
+      "first": [
+        [
+          "copy",
+          "保留完整附页及签名",
+          "保留条件与责任两部分，不剪掉有利或不利内容。"
+        ],
+        [
+          "explain",
+          "先要求他逐条解释可验证的事实",
+          "没有证据的部分标为个人陈述，不当场定罪或免责。"
+        ]
+      ],
+      "commitment": [
+        [
+          "fund",
+          "公开说明签字责任并设维修补偿专项",
+          "支付8资金，一次性进入社区专项；未来成功完成一个work目标且陈砚有实际贡献，才算实质行动。"
+        ],
+        [
+          "duty",
+          "严格执行新验收，不承诺当前付不起的补偿",
+          "无资源费；每次危险工作先完成断电/保护，未来仍可另议补偿；不送同等历史修复。"
+        ]
+      ],
+      "verification": "付清专项后，下一次主任务chen参与完成一个work目标；且公开说明获得Ye已知信息回执。叶禾缺席可收信确认，不要求她原谅。",
+      "close": [
+        "承担责任并参与长期补偿",
+        "保持严格履职与专业距离",
+        "战役结束后转幕后维修"
+      ],
+      "line": "附页没有替他抹去签名，签名也没有抹去整改警告。两件事终于可以一起被记录。"
+    },
+    "ye": {
+      "days": [
+        8,
+        14,
+        21
+      ],
+      "peer": "chen",
+      "proof": {
+        "mission": "M17",
+        "objective": "e",
+        "kind": "completed"
+      },
+      "opening": [
+        "叶禾带来的复印件已经折白了边：“我不是不愿意听解释，我不想再只拿到解释。”",
+        "新的维护记录和旧文件有几处不同。她需要的是核对，不是被要求为了团队大局放下。",
+        "她把新证据夹在旧纸后面：“这张纸说明了新的事，不会让以前的事没发生。”"
+      ],
+      "first": [
+        [
+          "retain",
+          "把她的副本作为独立材料留存",
+          "不让陈砚改写她的记录；来历与未核实处清楚标记。"
+        ],
+        [
+          "compare",
+          "征求同意后对照完整原件",
+          "只公开与事故有关的页；获得可核查清单。"
+        ]
+      ],
+      "commitment": [
+        [
+          "audit",
+          "用一次独立核查核对维护责任",
+          "无物资费，本节点占1项目；需要已获得E_MAINTENANCE；未取得时可登记等候，凭据到达后自动核查。"
+        ],
+        [
+          "boundary",
+          "保留质疑并明确独立作业边界",
+          "无资源费；维持专业合作，不要求与陈砚装备危险联合协议。"
+        ]
+      ],
+      "verification": "E_MAINTENANCE实际取得，且ye已接收核查摘要。此动作只证明新事实已知；历史修复另需陈砚补救和后续安全合作，不由她单方面完成。",
+      "close": [
+        "继续追责，同时允许受约束的合作",
+        "承认专业能力但长期保持距离",
+        "战役结束后另组社区维修队"
+      ],
+      "line": "她没有把复印件扔掉。工具箱里多了新的隔层，容得下不同年代的证据。"
+    },
+    "he": {
+      "days": [
+        11,
+        16,
+        20
+      ],
+      "peer": "xu",
+      "proof": {
+        "mission": "M10",
+        "objective": "meeting",
+        "kind": "completed"
+      },
+      "opening": [
+        "贺鸣的名单上有一个名字一直没有划掉：“我下的撤退令。这个事实，不该因为大多数人活着就不提。”",
+        "年轻人说想自己决定风险。他反问：“如果你回不来，谁替你收拾？”这次需要区分保护和代替决定。",
+        "他站在出口旁，没有抢过别人的无线电：“位置我守着，下一步你自己报。”"
+      ],
+      "first": [
+        [
+          "name",
+          "允许他保留失踪者的名字与不确定性",
+          "不擅自宣布死亡或写一个并无证据的团圆。"
+        ],
+        [
+          "route",
+          "一起重看当时的撤退路线",
+          "区分当时信息与事后判断，避免全知式责怪。"
+        ]
+      ],
+      "commitment": [
+        [
+          "delegate",
+          "明确安全边界后把行动授权交给队员",
+          "无资源费；下一主任务he与另一人出勤，另一人完成目标，he不被安排替其完成全部目标。"
+        ],
+        [
+          "discipline",
+          "维持统一撤离口令",
+          "无资源费；清楚告知出发前的限制，提供独立行动岗位，不承诺自由后再收回。"
+        ]
+      ],
+      "verification": "下一主任务he出勤并参与保护/救援，另一队员独立完成至少一个work或rescue里程碑且安全退出；无需指定许舟。",
+      "close": [
+        "成为能交出控制权的保障者",
+        "维持事先说明的严格纪律",
+        "战役结束后转向避难所"
+      ],
+      "line": "他仍然会担心。不同的是，这份担心终于不再自动变成别人的命令。"
+    },
+    "mo": {
+      "days": [
+        14,
+        18,
+        23
+      ],
+      "peer": "chen",
+      "proof": {
+        "mission": "M22",
+        "objective": "privacy",
+        "kind": "completed"
+      },
+      "opening": [
+        "莫遥拿出离线日志：“这段我亲眼看过。这段是别人转给我的。别把它们说成一样。”",
+        "公开日志会带出一个与错误决策无关的同事姓名。隐去姓名，不等于隐去控制指令。",
+        "对外的材料上保留了证据来源，也保留了核实范围：“我能保证的，就是这些。”"
+      ],
+      "first": [
+        [
+          "classify",
+          "按亲历与转述分别登记",
+          "来源清楚；不把所有记录自动算作已核实证据。"
+        ],
+        [
+          "verify",
+          "先核查技术签名再讨论公开",
+          "没有签名页就等待，不逼她捏造完整结论。"
+        ]
+      ],
+      "commitment": [
+        [
+          "redact",
+          "承诺只公开必要信息并脱敏",
+          "无资源费；下一次公开记录选择redacted，或完成M22.privacy；技术证据完整保留。"
+        ],
+        [
+          "independent",
+          "将原件交独立核查机构，暂缓公开",
+          "无资源费；不立刻增加公开信任，也不阻断共同控制资格中的技术核实。"
+        ]
+      ],
+      "verification": "存在public_record_release receipt且privacy=redacted，或M22.privacy完成。公开未脱敏版本会永久使本次承诺失败；事后删帖不能伪造未发生。",
+      "close": [
+        "参与公开技术审计",
+        "留在有限互信的队伍",
+        "战役结束后离队并继续技术协助"
+      ],
+      "line": "她没有交出每个人的全部生活。她交出的是足够承担责任的、能够核实的那部分。"
+    },
+    "jiang": {
+      "days": [
+        17,
+        20,
+        23
+      ],
+      "peer": "su",
+      "proof": {
+        "mission": "S08",
+        "objective": "luggage",
+        "kind": "completed"
+      },
+      "opening": [
+        "江朔把拖欠清单和家人的旧短信放在一起：“我以前总觉得，再送完这一趟就来得及。”",
+        "一艘船装不下所有物资。不能等船开了再告诉工人，他们的生活用品被当成最低优先级。",
+        "这一次结算单送到了，消息也按时回了。他仍要决定之后把生活放在哪里。"
+      ],
+      "first": [
+        [
+          "wages",
+          "先核对欠款与物资归属",
+          "没有授权不挪用工人工具，不用悲伤故事替代账本。"
+        ],
+        [
+          "family",
+          "先让他处理家人的联系",
+          "不扣忠诚；生活选择不是对救援队的背叛。"
+        ]
+      ],
+      "commitment": [
+        [
+          "settle",
+          "结清一次明确拖欠并公示优先级",
+          "支付6资金给社区运输工人，获得收据；下一次cargo目标不以未告知改约方式挤掉已承诺人员。"
+        ],
+        [
+          "negotiate",
+          "明确当前资金限制并重新约定",
+          "无资源费；工人同意后延期，不当作已经结清；保留独立合作关系。"
+        ]
+      ],
+      "verification": "实际支付6资金且获得工资收据；后续任务未发生与该事项同ID的priority_promise_breach。到第23日核对，不能用其他对象的付款顶替。",
+      "close": [
+        "经营共同所有的运输站",
+        "成为独立合作伙伴",
+        "战役结束后选择家人与另一座城"
+      ],
+      "line": "不是每一笔遗憾都能结清。但这一次，他没有再拿下一趟航程代替答复。"
+    }
+  },
+  "scheduler": {
+    "camp_short_scenes": 2,
+    "priority": [
+      "用户主动打开已解锁人物节点",
+      "到第23日仍待处理的个人收束",
+      "兑现已触发冲突后果",
+      "关系短谈",
+      "生活场景"
+    ],
+    "project_cost": "个人线第2段各占1项目；其他个人节点、关系短谈和生活短谈不占项目，但每晚至多2段。玩家可跳过对白读摘要并照常选择；所有已解锁未读内容在日志保留，到23日最后提醒。",
+    "chapter_community": "在任务结算和章末摘要展示，不挤占营地短谈。每晚最多一次高强度冲突；后果先记账，延后的是长对白。",
+    "unresolved": "未选/延期/条件未兑现均是合法状态。第23日晚先允许处理，确认进入第24日时再生成未解决状态，之后不返场刷条件。",
+    "late_arc": "已到earliest且前节点已读，同晚第二窗口可读下一节点；3段至少占两晚。所有人物都有足够加入后窗口。",
+    "guardrails": "免费短谈不提供训练/治疗效果；来自已读节点的亲近只发一次；资料核查、实际补救项目仍真实占用资源和时间。"
+  },
+  "ending_resolution": {
+    "priority": [
+      "permanent_medical_withdrawal",
+      "later_unrepaired_relevant_breach_overrides_integrated",
+      "explicit_stage3_choice",
+      "verified_contract_without_stage3 -> professional_with_progress",
+      "unverified_or_unread -> professional_unresolved"
+    ],
+    "career_change": "new_life只发生终战后的尾声；普通模式不会提前强制离队。",
+    "loss_overlay": "已失去的居民、损坏设施、角色离队优先覆盖轻松对白；没有复活与自动遗忘。",
+    "not_a_score": "不以善恶总分判定统一好结局；三类人物结局是合作方式/生活方向，世界成果独立计算。"
+  },
+  "audit_rules": {
+    "su": "必须是承诺后的两次不同主任务；都没有派苏棠后勤，且至少一次其他正式成员有该主任务真实support_work回执。支线、仅安排却未完成的后勤不算。",
+    "xu": "同一次任务中实际站立撤出且明确守约；缺少kept_deadline时是未知/无凭据，不默认为true。任务成功也不等于按承诺时间撤离。",
+    "he": "实际保护、他人主要贡献、全员被带回必须是同一任务。被救回的重伤者也算带回；“全员撤出”不等于“无人受伤”。最高难度失去一人则不成立。",
+    "lin": "轮换计划只验证同一主任务伤员的至少两位真实贡献者，至少一位非林岚；交接职责可由稳定/搬运/交付/真实防护承担。原文字提到的撤离期限改为单独自愿承诺；不暗加验证器没有的条件。",
+    "latest_plan": "苏棠最迟D21；陈砚最迟D20（M22只有记录类work，M23没有工程施工）；林岚/许舟/贺鸣D22；叶禾/莫遥/江朔D23。晚读保留专业选择。",
+    "plan_cost": "第二段两种选择都仍占一个真实个人安排项目；免费职业分支是零资金，不是零项目。进入界面不扣，确认才占用，不能取消后保留付款/凭据。",
+    "achievement_and_duty": "曾兑现的个人计划与后续持续义务分开。兑现后受伤不抹掉履约；若泄露隐私/再违背人员优先，保留“曾兑现”，另写“后续违约”。永久医疗离队只中断未完成执行，不凭空改成恶意背约。",
+    "directional_coda": "presence→已选职业/康复→计划完成情况→每个具体方向的未解决事件。一次针对陈砚的补救不能清掉林岚对队长的另一事件。职业选择不会被一个笼统“关系破裂”标签覆盖。",
+    "absent_scene": "永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。",
+    "final_cutoff": "23日晚是最后营地与新个人计划窗口，24日只处理当场已存在承诺和世界目标。M24社区回访/章节后果以结局档案呈现，不再占不存在的第24晚或补发项目。",
+    "route": "M24前锁路线及其必需目标。shared_control须实际地区和>=10且两种不同证据；M17隔离永久上限2按实值扣截。其他路线对象不用于补这条路线。失利转代价明确的撤离后记，已送达者不倒扣。"
+  }
+}

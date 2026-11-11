@@ -1,0 +1,38 @@
+{
+  "method": "Built-in image_gen using existing character identity references; original outputs copied byte-for-byte",
+  "prompts": "docs/p4-motion-prompts.json",
+  "animation": "Four gait samples (two principal alternating poses), crouched preparation, extended follow-through; runtime mirroring, lean, lunge, recoil and carry composition. Not a full eight-direction animation library.",
+  "assets": [
+    {
+      "path": "game/assets/motion_p4/crew_a.png",
+      "source": "/Users/a1-6/.codex/generated_images/01a1ac08-c320-7711-a214-1551f3ce968c/exec-fc8a7e6e-9c5c-4bc9-8fce-7ca3965d1dfb.png",
+      "sha256": "12dc07b164ad6802bdfe5218871adb3667bf1a6ddf1d2583c8da945c6254c040",
+      "size": [
+        1536,
+        1024
+      ],
+      "grid": [
+        6,
+        4
+      ],
+      "actual_alpha_verified": true,
+      "postprocessing": "None; runtime AtlasTexture views only"
+    },
+    {
+      "path": "game/assets/motion_p4/crew_b.png",
+      "source": "/Users/a1-6/.codex/generated_images/01a1ac08-c320-7711-a214-1551f3ce968c/exec-76010544-a500-43fa-97f2-b39d74fe37e4.png",
+      "sha256": "b10dca459fff153007445a48b273b043ee59ed6b6fd8bef84ccbdcc3622adaf6",
+      "size": [
+        1536,
+        1024
+      ],
+      "grid": [
+        6,
+        4
+      ],
+      "actual_alpha_verified": true,
+      "postprocessing": "None; runtime AtlasTexture views only"
+    }
+  ],
+  "human_art_motion_acceptance": false
+}

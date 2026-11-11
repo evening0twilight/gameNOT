@@ -1,0 +1,62 @@
+夜潮事务所 0.18 — P1 正式开发交接
+日期：2026-11-04
+仓库：/Users/a1-6/projects/person/gameNOT
+
+最新用户授权
+“按这个方案继续，先把Windows导出环境补齐，再开始P1；开始P1用新对话，在同一个最终项目里打通
+战斗→结算→营地→存读档→下一任务。”
+本文件由技术准备对话写入；新P1对话仅在当前工程Windows导出验证完成后启动。
+用户已经批准P1，不需再以技术讨论未结束为由反复询问是否可以编码。
+沿用本地仓库和现有工作目录，不建worktree、不新建演示工程、不自动commit/push或远程发布。
+
+必须先读
+README.md、docs/technical-decisions.txt、docs/engineering-reference-review.txt、
+docs/contracts/runtime-v1.json、docs/windows-test-record.json、docs/windows-export-validation.json（启动前生成），
+game/data/final_design/design_manifest.json及其唯一release_baseline.json。
+32领域、33导出投影；不要把旧报告或较新文件名当作规则权威；投影不单独编辑。
+0.18冻结基线中的design_only/formal_development_authorized=false是历史状态，最新用户授权已覆盖。
+
+真实现状
+现有Godot工程仅有开发入口、旧关系模块、schema1准备存档和33项基础测试；完整战斗/营地尚未实现。
+1174项规则是Python参考回归，1630项是冻结设计检查，不代表正式运行时已完成。
+原work/predevelopment-review/verify.py要求运行时hash不变，因此正式开发后不能作为当前源码准入。
+日常入口python3 tools/check.py --engine；原检查保留为冻结证据，不为了让它变绿而伪造历史hash。
+历史大JSON已压缩；新入口自动恢复，验证后可用python3 tools/evidence.py --prune清理重复原件。
+禁止重跑历史apply_design/rebuild/sync脚本重新覆盖当前基线。
+
+P1交付范围（所有成果留在最终产品）
+按0.18真实M01/M02地图和角色数据，实现可操作的M01战斗→唯一结算→营地成长/关系→保存加载→M02。
+同一正式内核：命令、状态revision、纯reduce、统一预览执行、事件账本和快照恢复。
+必须包括有代表性的失败/撤退继续、无AP出路、错误操作原子拒绝、重复结算幂等。
+实现所需的正式界面，不继续用纯文字输出或独立网页作为可玩闭环的替代。
+暂用可追溯的工程内占位资源；正式代表美术审美仍须用户确认后批量，不擅自采购或扩大范围。
+不要求P1一次做完36图/96剧情，但接口与状态不能专写M01后推倒重来。
+先核查当前规则及真正需要的字段，制定具体步骤后直接开发，不重新启动无限产品审查。
+
+产品边界
+离线单机、无实时AI、固定2D8×8救援、3人各2AP；8角色/24主线+12支线/24日23夜。
+失败继续到结局；常规仅重伤，严峻仅明示期限与救援失败等条件触发永久医疗离队。
+关系冲突不剥夺基础行动；训练/共同带教/接应的效果从实际行为与事件核验。
+状态完整性遵守persistence_inventory；schema1准备容器不能伪装完整schema2战役存档。
+
+平台与执行规范
+Godot4.7.2 standard/GDScript/Compatibility锁定；macOS M3 16GB开发。
+Windows11 x64/键鼠/简体中文首发已确认；Windows导出成功不是Windows实机验收。
+测试机R5 5600+微星5060Ti8GB+双通道DDR4 16GB+SSD，两屏均2560×1440、180/320Hz。
+必须支持1920×1080及1280×720窗口布局，三档字体，避免高刷新率改变动画/规则速度。
+8GB系统参考机、30/40系及AMD/Intel兼容验证后续安排，不以主机通过冒充最低配置验收。
+Mac当前磁盘约26GiB余量，不无意义下载巨大依赖；无本地AI模型、Docker、Unity或.NET需要。
+
+验收
+纯规则夹具：预览不修改状态、同输入执行结果一致、陈旧revision拒绝、AP/库存/账本原子性。
+集成：真实M01成功及失败路径→结算只一次→营地可操作→存读恢复→M02可继续。
+存档：稳定阶段往返、RNG字符串精度、坏档/未知版本/写入失败、有效旧档与backup保留、恢复不重复奖励。
+表现：结束动画/跳过/重进场景不重放规则；窗口缩放/取消/退出路径可用。
+跑适当Godot与参考回归，实际导出Windows包，并记录做过和未做过的验证。
+本机GUI可用时检查真实交互和关键画面，不把headless通过当玩家已可操作。
+完整发布的R01-R08/H01-H04仍待后续，不声称P1就是完整游戏。
+
+仓库状态
+根Git目前仅原README已跟踪，迁入文件及本次工具文档多为未提交；不要重置或清理掉它们。
+game内空嵌套.git已移到archives/local备份。保留根仓库，所有正式成果在game/。
+技术准备未写正式玩法、未commit/push。新对话可以直接按最新授权进入P1。

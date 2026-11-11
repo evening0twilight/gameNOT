@@ -1,0 +1,195 @@
+夜潮事务所 0.18 — 技术决策与生产规范
+2026-11-04；状态：技术准备已落地，尚未开始正式玩法实现。
+
+1. 决策与依据
+采用 Godot 4.7.2 stable 标准版、带静态类型的 GDScript、Compatibility 渲染。
+本地实际版本为 4.7.2.stable.official.ed1daf0bf。官方发布页确认该版本于
+2026-08-18 发布。此版本固定用于编辑、测试与导出；不追随 latest 自动更新。
+2D 8×8、3人2AP、离线回合制不需要新增 C#、GDExtension 或3D渲染依赖。
+沿用已有场景和数据，纯规则与界面分离即可承载现有范围；换引擎目前没有收益证据。
+Compatibility 使用 OpenGL 路径，覆盖范围较适合本产品；这不是性能达标证明。
+
+开发主机：已核验 macOS 26.5.2 / arm64；Python 3.14.7。
+用户在本次技术讨论明确确认：Windows 11 x64、键鼠、简体中文首发；已有Windows电脑可测。
+macOS仅作开发与冒烟环境；不把macOS发行、ARM Windows、网页、移动端、手柄加入首发。
+用户确认的是平台与可用设备；具体CPU/GPU/内存尚未采集，不宣称已有8GB参考机。
+不采购设备、证书或云服务。现阶段开发构建不签名；发行渠道/签名成本届时单独决定。
+
+官方依据（2026-11-04核查）：
+https://godotengine.org/download/archive/4.7.2-stable/
+https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_windows.html
+https://docs.godotengine.org/en/stable/about/system_requirements.html
+https://api.github.com/repos/godotengine/godot-builds/releases/tags/4.7.2-stable
+stable文档会随官方更新；版本锁以本仓库lock为准。系统要求是引擎参考值，不能作为本游戏最低配置。
+
+2. 工具与依赖
+唯一工具版本清单：tools/toolchain.lock.json。
+本地引擎可执行文件SHA256用于完整性追踪；它不是独立的官方包验签结论。
+官方Linux/Windows/导出模板下载的SHA256来自官方godot-builds release API，下载器逐个核对。
+Python只用标准库；游戏没有外部运行时插件。work/research/venv是历史研究环境，不是构建依赖。
+先用现有Godot编辑器、系统终端和任意文本编辑器，不强制换IDE，不安装格式化服务。
+升级引擎必须独立变更：更新锁和模板、跑全检查、旧档迁移及Windows回归，记录原因和回退版本。
+Python修订版本更新同样改锁后验证；不引入无实际用途的requirements包。
+引擎、模板、下载包、.godot缓存、凭据、生成构建均不入Git。
+
+3. 目录与依赖方向
+游戏根为game/，唯一产品工程为game/project.godot。
+game/data/final_design/design_manifest.json -> release_baseline.json是唯一0.18规则入口。
+manifest.generated_views列出的JSON是导出投影，不可手改；修改基线后运行
+python3 work/predevelopment-review/export_views.py，并同步期望夹具、手册和决策。
+32个领域、36地图、96场景使用同一数据契约，不写每关一套规则。
+
+game/scripts/domain/：无节点树、输入、音视频、文件IO的纯规则与状态转换。
+game/scripts/app/：流程协调、命令提交、阶段切换、单一状态所有者。
+game/scripts/infrastructure/（按需创建）：数据载入、存档、平台与日志适配。
+game/scripts/presentation/、game/scenes/（按需创建）：界面、棋盘、表现；只读快照、提交命令。
+game/assets/（按需创建）：实际产品资源；素材清单见docs/asset-register.csv。
+game/tests/：Godot规则、集成、持久化和契约测试；tools/：仓库验证与构建工具。
+work/：离线Python裁判和历史证据，禁止成为产品运行时依赖。
+outputs/：设计阅读页与既有检查证据；build/：可重建测试产物；archives/evidence/：压缩历史证据。
+依赖：presentation -> app -> domain；infrastructure实现app需要的持久化/载入边界。
+不得反向由domain访问UI；不使用全局单例堆放各模块可任意写入的Dictionary。
+现有save_store.gd在domain目录但实际做IO，是旧准备模块；P1迁入infrastructure并补迁移测试。
+现有relationship_rules.gd只有旧关系模型，不能当0.18完整实现直接验收。
+
+4. 状态、命令、统一预览执行和事件账本
+接口详细定义见docs/contracts/runtime-v1.json；这是下一阶段实现约束，不是已实现API。
+CampaignState唯一写入者为app层Session；子域battle/actors/inventory/social/story/tutorial共用revision。
+所有运行时内容先通过ID/范围/引用/地图维度/重复ID/有限数值校验，再生成不可变目录。
+JSON外部输入一律验证类型，不依赖Dictionary默认值把缺字段变成合法规则。
+
+reduce(snapshot, command, content) -> Result。预览与执行调用同一个纯函数。
+预览在深复制状态上运行，不消耗真实RNG、不写资源/账本/存档，不发可产生副作用的信号。
+预览返回合法性、逐项成本、结果、已知风险与预期revision；UI不另算AP/伤害/关系。
+执行先检查expected_revision和唯一command_id，再计算候选状态；陈旧预览拒绝并刷新。
+遇到实质风险变化按0.18重新确认，基础行动不因关系被剥夺。
+成功先完成候选快照和事件的持久化事务，再发布新的内存状态与表现事件。
+任何预检/写盘失败不改变AP、资源、RNG、事件序号、记忆或任务结算标记。
+动画、跳过、读档、界面重建均不触发规则执行。输入重复点击由command_id返回原结果。
+只允许稳定动作边界保存；动画期间状态已提交，恢复时可直接呈现稳定结果。
+
+账本是事实记录，状态快照是恢复入口；不在读档时把全部事件重放一遍再发奖励。
+事件字段遵守integration.receipt_schema；事件ID沿用campaign/mission/command_index/type/object。
+新增seq用于排序；同命令同类型同对象须合并为一条事实，不靠遍历顺序制造重复ID。
+root_decision_id归并同一决定的多项后果；observer_ids与information_scope控制知情范围。
+同一campaign/mission只结算一次，奖励、经验、加入、证据与人物核验同一事务提交。
+social为情绪/记忆权威，营地仅显示投影；账本/快照两者均不得被UI独立写入。
+规范化哈希按对象键排序、集合转有序数组；路径/并列目标按稳定ID排序。
+AP/格坐标/资源等用整数；有向关系权重有界且拒绝NaN/Inf，浮点比较按明确容差。
+RNG保存seed和state的十进制字符串，避免JSON浮点丢失64位精度；不依赖系统时间/字典顺序。
+不同引擎版本不承诺相同随机序列，跨引擎读档须走明确迁移策略。
+
+5. 存档契约
+产品存档schema从2开始；现有schema=1是准备容器，不能静默当正式周目读取。
+正式路径user://saves/<slot_id>/，元数据与完整状态同一快照封装，不分散多文件事务。
+包括format/schema_version/content_version/content_sha256/engine_version/campaign_id/revision、
+状态、账本seq和去重集合、rng、校验和。每个字段的具体0.18清单以persistence_inventory.snapshot为准。
+清单中的training_completed、首次工量/AP转交标记、难度部署快照、记忆、剧情、教程均不可遗漏。
+偏好设置与通关解锁档案分开；新周目不继承等级/资源。
+
+写入流程：候选序列化到同目录.tmp -> flush/close -> 重新解析并校验 -> 保留有效.bak ->
+替换当前槽 -> 返回成功，再提交内存；失败保留之前有效档并返回可重试错误。
+加载先校验尺寸上限（初始64MiB工程保护值，超限明确报错，不截断）、结构、schema、内容指纹、
+全部ID和状态不变量，再构造临时状态，全部成功才替换Session。
+正式实现须测试在backup切换后崩溃的恢复：主档缺失/损坏时保留并提供有效备份恢复。
+未知较新schema拒绝读取且不覆盖；旧正式schema用逐版本纯迁移函数并保留原件。
+准备schema1提示“开发准备档不兼容”，不虚构可恢复战役。
+内容变更须提供旧内容到新内容ID映射或明确拒绝；不能只改版本号绕过校验。
+校验和只检测损坏，不声称防作弊。flush/rename不等于掉电耐久证明，Windows故障注入必须实测。
+
+6. 编码与资源规范
+UTF-8、LF、文件末尾换行；GDScript用tab、显式类型、snake_case文件/方法/变量、PascalCase类。
+新代码一函数一职责，公共接口说明输入、输出、失败语义和是否产生副作用。
+不引入“返回空字典代表所有错误”；统一Result及error_code，用户可见错误翻译成明确中文原因。
+断言用于开发不变量，不能替代坏档/缺文件/非法输入的产品错误处理。
+捕获文件/解析失败并向上报告；禁止吞异常、print后仍标记成功。
+日志记录build/content/revision/command/event/error；默认不输出全量存档或私有机器路径。
+源文件与资源路径用ASCII snake_case，显示名可中文；保持大小写一致，避免Windows/macOS差异。
+Godot .uid、.tscn、.tres、.import资源设置须跟踪；.godot导入缓存不跟踪。
+当前无需为“代码整洁”重写历史探针；只约束新实现，改旧工具必须保留回归证据。
+
+美术源文件与导出文件分开管理；产品只放必要导出资源，超大源文件另作可验证归档。
+2D使用可复用角色标记/地点套件，不做3D和骨骼流程。字体必须有简体中文覆盖及许可文件。
+一般插画默认线性采样；只有明确像素素材才用nearest。纹理先≤2048，例外记录实际显存收益。
+短音效WAV，音乐OGG；避免将无损音乐母版打包到产品。具体压缩以Windows听测为准。
+1440×900设计基准，容器/锚点布局；1280×720/1080p/1440p及三档字号测试，不用固定像素裁切正文。
+禁止信息只靠颜色；交互须有确认/取消/无法行动时的出路。
+每个素材登记ID、作者/来源、许可与证据、修改、用途、状态；生成素材另记工具/模型/日期/原始产物。
+未验证授权的占位资源不能标记release-approved。代表人物/棋子/场景用户审美确认后再批量制作。
+
+7. Git与证据归档
+沿用当前仓库与工作目录；不新建worktree。不自动commit/push，不改远程。
+核查发现game/.git为空嵌套仓库（0提交、0跟踪文件、无远程）；已可逆移至
+archives/local/game-git-metadata-20261104，防止外层仓库漏收游戏源码。
+目前Git只跟踪原README；其余迁入文件尚未提交，不能把本地存在当作远端备份。
+后续功能分支默认codex/<topic>；每次提交围绕单一可回退变更，提交说明包含验证和限制。
+技术准备、设计变更、玩法实现、素材批次尽量分别提交；不提交凭据、存档、引擎或构建。
+小型源码/基线/夹具/当前HTML直接Git跟踪。大于1MiB的既有JSON证据使用确定性gzip和SHA256清单。
+archives/evidence/manifest.json列原路径、原尺寸、原哈希、压缩包哈希；压缩包应随源码提交。
+历史清理后只保留压缩证据；原件按精确路径忽略，tools/evidence.py按需恢复且拒绝覆盖内容不同的文件。
+运行python3 tools/evidence.py --prune会先校验全部压缩包与现存原件，再删除重复原件。
+旧研究venv、浏览器chrome-profile及Python缓存已清理；当前工具仅依赖Python标准库。
+这不是LFS：当前压缩总量可控，无需新增LFS服务/计费/安装要求；以后大型素材再独立评估。
+不能笼统忽略outputs或work：当前检查会读取历史JSON、Python和before快照。
+旧382个云端占位仍在旧位置，迁移报告为索引，不把它们声称为已备份或阻塞当前回归。
+迁移报告是历史时点证明，不随工程正常修改重写。不要执行旧rebuild/apply_design/sync补丁脚本。
+
+8. 测试、构建与CI
+常规开发入口：python3 tools/check.py --engine（GODOT环境变量可指定同版本可执行文件）。
+纯设计入口：python3 tools/check.py。自动恢复归档 -> 检查33投影视图 -> 1174条现有Python参考回归。
+原冻结检查：python3 work/predevelopment-review/verify.py；本次仍通过1630项。
+原检查包含“正式源码未变/未授权”等冻结证据断言；未来玩法变化后不再用它作为当前代码准入。
+新入口不声称包含原1630项：未来增补当前内容/集成检查必须写在新工具和Godot测试中。
+参考回归当前锁定1174成功标记；合理新增测试时更新标记与证据，不靠固定数量代替检查内容。
+
+本次Godot检查33项只覆盖旧关系与保存容器；解析导入和入口启动单独检查。
+P1开始增加同输入/同输出JSON夹具，对比Python参考与GDScript，重点测预览=执行、拒绝原子性、
+结算幂等、坏档/写入失败恢复、稳定阶段往返、seed恢复与非法版本。
+集成测试必须在同一正式工程走M01 -> 结算 -> 营地成长/关系 -> 存读 -> M02及失败继续。
+不以复制实现公式的测试冒充独立验证，不为纯文案新增无意义单元测试。
+
+本次导出状态：GitHub下载TLS失败；官方镜像可连通，但1.2GB模板未下载完整，
+本轮停止下载并保留约147MB可续传partial；未安装模板，未产出exe，未验证导出preset。
+bootstrap支持续传并在全包哈希匹配后才安装；不将部分包当成可用模板。
+Windows工具准备：python3 tools/bootstrap.py templates（仅安装x64 debug/release及版本信息）。
+Windows机器需要编辑器时：python tools/bootstrap.py windows；设置GODOT到下载的console可执行文件。
+导出：python3 tools/build_windows.py；生成build/windows/night-tide.exe、night-tide.pck与build-receipt.json。
+带上exe和pck一起复制到Windows；build目录不是可发布版本，不自动上传。
+导出preset包含JSON，排除tests/docs；输出是x86_64、独立PCK、无签名的开发构建。
+新增资产后检查PCK清单，不能将许可私有凭据或研究文档打包。
+
+.github/workflows/validate.yml配置PR/手动检查：固定action提交、只读权限、无secrets、20分钟限制，
+Python固定版本，下载哈希锁定引擎/模板，运行相同测试并导出Windows。没有部署/发布任务。
+本次不推送，所以远程CI未运行；首次推送后必须看到实际绿灯才称CI通过。
+CI Linux导出只证明构建流程，不能代替Windows图形、输入、文件锁、中文路径或性能验收。
+
+9. Windows实机记录与验收阶段
+用户已有Windows 11 x64电脑；首次构建交接时用docs/windows-test-record.json填写实际配置与结果。
+检查中文用户名/含空格路径、无管理员权限运行、首次导入字体、键鼠、窗口缩放/高DPI、音量、
+离线启动、存档权限、覆盖/备份/中断恢复、正常退出和重新启动；发现崩溃保留日志和对应构建哈希。
+当前入口构建只能验启动；完整战役不存在，不能勾选战斗/营地/存读全链通过。
+R07保留0.18标准：记录CPU/GPU/内存的Win11 x64 8GB参考机、1080p稳定场景95%帧≤16.7ms、
+冷启动≤10秒、输入反馈≤100ms、连续2小时内存无持续增长。没有8GB参考机时该项保持待验。
+WinARM虚拟机/Wine可作补充，不替代x64目标实机。最低配置必须由完整产品实测产生。
+
+P1：正式内核和持久化；R01/R03/R04在M01-M02范围建立证据，不宣称全36关通过。
+P2：第一章与代表素材；扩展R02/R06/R08，开展H01新人试玩，用户确认美术标准。
+P3：全四章/36图/96场景；R01-R05覆盖全内容，H02/H03记录真实选择与完整周目。
+P4：R01-R08及H01-H04全部实证通过、阻断缺陷为零才达到发布准备。
+D01-D06属于设计准入；108局/3420战是既有离线证据，本次核对而未重跑整局，不是真人胜率。
+
+10. 开工前状态
+用户已授权后续同一项目开发；本阶段只完成技术准备，等待用户技术讨论结束后再开始P1。
+没有已知产品范围或引擎选型阻碍。Windows设备存在；具体配置与运行结果是实机验收待办。
+正式存档schema2、统一reduce接口及完整玩法均是待实现工作，不把本文件写成实现完成声明。
+先实现留在最终产品中的M01到M02闭环，不另建可丢弃演示，不重新开启大范围产品设计。
+
+11. 外部资料复核与硬件更新（2026-11-04）
+详细来源、采纳/拒绝理由、skill审查及硬件矩阵见engineering-reference-review.txt。
+新增check_repository.py已接入常规检查；场景私有资源可按功能就近放置，共享资源集中管理。
+用户Windows为5060Ti 8GB显存/16GB内存/约1TB磁盘，是主测试机，不能替代8GB系统内存参考机。
+
+12. Windows导出完成与P1授权（2026-11-04）
+先前模板未完成状态现已解决：官方全包SHA256匹配，Windows x64 debug/release模板已安装。
+实际导出exe/pck，通过PE x64检查及macOS空目录独立资源包启动，详见windows-export-validation.json。
+Windows实机/性能和远程CI仍未验收。用户明确授权在新对话开始P1，旧“等待技术讨论结束”门禁已解除。

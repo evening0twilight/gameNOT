@@ -1,0 +1,24 @@
+{
+  "version": "0.17-training-value",
+  "stage": "design_only",
+  "domains": {
+    "battle": "combat.json",
+    "active_scope": "production_scope.json",
+    "growth_and_positive_plans": "growth_identity_contract.json",
+    "emotion": "progression_relationship.json",
+    "inventory": "equipment.json",
+    "facilities": "facilities.json",
+    "boards": "boards.json",
+    "stories": "stories.json",
+    "campaign": "whole_campaign_contract.json",
+    "integration": "integration.json",
+    "guidance": "player_experience_contract.json",
+    "audit_and_persistence": "full_audit_contract.json",
+    "player_readiness": "player_ready_contract.json",
+    "economy": "../campaign_economy_contract.json",
+    "authored_dialogue": "character_scripts.json",
+    "ordinary_play_review": "ordinary_player_contract.json",
+    "training_value": "training_value_contract.json"
+  },
+  "precedence": "当前领域文件优先；历史补丁只在当前领域明确引用的部分有效。retired条目和历史报告不重新激活能力。"
+}

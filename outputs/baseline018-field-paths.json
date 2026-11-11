@@ -1,0 +1,1837 @@
+[
+	{
+		"actions": [
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						2,
+						5
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						5
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						4
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						3
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						2
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						4
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 1
+			},
+			{
+				"actor": "xu",
+				"kind": "interact",
+				"payload": {
+					"target": "isolate"
+				},
+				"round": 2
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						5,
+						1
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						4,
+						3
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						6,
+						2
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						5,
+						3
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						4,
+						3
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "interact",
+				"payload": {
+					"target": "pump"
+				},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						6,
+						3
+					]
+				},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "service_watch",
+				"payload": {
+					"post": 0
+				},
+				"round": 4
+			},
+			{
+				"actor": "su",
+				"kind": "attack",
+				"payload": {
+					"target": "M05_enemy1"
+				},
+				"round": 4
+			},
+			{
+				"actor": "su",
+				"kind": "attack",
+				"payload": {
+					"target": "M05_enemy1"
+				},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "service_watch",
+				"payload": {
+					"post": 0
+				},
+				"round": 5
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 5
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						5,
+						5
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						5
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						6,
+						5
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						2,
+						5
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						5
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						5
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 6
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						6
+					]
+				},
+				"round": 7
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						7
+					]
+				},
+				"round": 7
+			},
+			{
+				"actor": "lin",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 7
+			},
+			{
+				"actor": "xu",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 7
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						5
+					]
+				},
+				"round": 7
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						6
+					]
+				},
+				"round": 7
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 7
+			},
+			{
+				"actor": "su",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 8
+			}
+		],
+		"mission": "M05",
+		"party": [
+			"lin",
+			"xu",
+			"su"
+		],
+		"result": {
+			"all_extracted": true,
+			"authored_work": [
+				{
+					"id": "isolate",
+					"interaction_tags": [
+						"engineering",
+						"objective",
+						"work"
+					],
+					"kind": "work"
+				},
+				{
+					"id": "pump",
+					"interaction_tags": [
+						"engineering",
+						"objective",
+						"power_socket",
+						"work"
+					],
+					"kind": "work"
+				},
+				{
+					"id": "module",
+					"interaction_tags": [
+						"engineering",
+						"objective",
+						"work"
+					],
+					"kind": "work"
+				}
+			],
+			"contributions": {
+				"isolate": [
+					"xu"
+				],
+				"pump": [
+					"lin"
+				]
+			},
+			"day": 5.0,
+			"difficulty": "standard",
+			"facts": {
+				"M05_enemy1_cut": "unresolved",
+				"isolate": "completed",
+				"module": "unresolved",
+				"pump": "completed"
+			},
+			"field_service": {
+				"contributors": [
+					"lin"
+				],
+				"done": true,
+				"failed": false,
+				"history": [
+					{
+						"operators": [],
+						"powered": true,
+						"round": 1,
+						"ticks": 0,
+						"valid": false
+					},
+					{
+						"operators": [],
+						"powered": true,
+						"round": 2,
+						"ticks": 0,
+						"valid": false
+					},
+					{
+						"operators": [],
+						"powered": true,
+						"round": 3,
+						"ticks": 0,
+						"valid": false
+					},
+					{
+						"operators": [
+							"lin"
+						],
+						"powered": true,
+						"round": 4,
+						"ticks": 1,
+						"valid": true
+					},
+					{
+						"operators": [
+							"lin"
+						],
+						"powered": true,
+						"round": 5,
+						"ticks": 2,
+						"valid": true
+					}
+				],
+				"ticks": 2
+			},
+			"injured": [],
+			"mission": "M05",
+			"outcome": "success",
+			"promise": {},
+			"protection": [],
+			"recruits": [],
+			"rescues": {},
+			"revision": 38,
+			"reward": {
+				"credits": 10.0,
+				"parts": 1.0,
+				"supplies": 1.0
+			},
+			"reward_rows": [
+				{
+					"reason": "任务基础结算",
+					"resources": {
+						"credits": 10.0,
+						"parts": 1.0,
+						"supplies": 1.0
+					}
+				}
+			],
+			"roster": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"standing": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"support": "",
+			"variant": "A",
+			"withdrawn": [],
+			"xp_receipts": {
+				"lin": {
+					"after": 17,
+					"before": 12,
+					"source": "main"
+				},
+				"su": {
+					"after": 17,
+					"before": 12,
+					"source": "main"
+				},
+				"xu": {
+					"after": 17,
+					"before": 12,
+					"source": "main"
+				}
+			}
+		},
+		"round": 8,
+		"setup": "isolated initial trio L2, only reducer actions after deployment; no completions or teleport injection"
+	},
+	{
+		"actions": [
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						1,
+						4
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						5
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						4
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						2,
+						2
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						2
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						3
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						5,
+						2
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						6,
+						2
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "su",
+				"kind": "interact",
+				"payload": {
+					"target": "test1"
+				},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "service_watch",
+				"payload": {
+					"post": 0
+				},
+				"round": 2
+			},
+			{
+				"actor": "xu",
+				"kind": "service_watch",
+				"payload": {
+					"post": 1
+				},
+				"round": 2
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						6,
+						3
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "interact",
+				"payload": {
+					"target": "test2"
+				},
+				"round": 3
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						2
+					]
+				},
+				"round": 3
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						3
+					]
+				},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						2,
+						2
+					]
+				},
+				"round": 3
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						2
+					]
+				},
+				"round": 3
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						2,
+						5
+					]
+				},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						5,
+						2
+					]
+				},
+				"round": 4
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						5
+					]
+				},
+				"round": 4
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						6
+					]
+				},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						6,
+						1
+					]
+				},
+				"round": 4
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						7
+					]
+				},
+				"round": 4
+			},
+			{
+				"actor": "su",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 5
+			},
+			{
+				"actor": "xu",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 5
+			}
+		],
+		"mission": "M10",
+		"party": [
+			"lin",
+			"xu",
+			"su"
+		],
+		"result": {
+			"all_extracted": true,
+			"authored_work": [
+				{
+					"id": "test1",
+					"interaction_tags": [
+						"engineering",
+						"objective",
+						"work"
+					],
+					"kind": "work"
+				},
+				{
+					"id": "test2",
+					"interaction_tags": [
+						"engineering",
+						"objective",
+						"work"
+					],
+					"kind": "work"
+				},
+				{
+					"id": "meeting",
+					"interaction_tags": [
+						"objective",
+						"work"
+					],
+					"kind": "work"
+				}
+			],
+			"contributions": {
+				"test1": [
+					"su"
+				],
+				"test2": [
+					"lin"
+				]
+			},
+			"day": 10.0,
+			"difficulty": "standard",
+			"facts": {
+				"M10_enemy1_cut0": "unresolved",
+				"M10_enemy1_cut1": "unresolved",
+				"meeting": "unresolved",
+				"test1": "completed",
+				"test2": "completed"
+			},
+			"field_service": {
+				"contributors": [
+					"lin",
+					"xu"
+				],
+				"done": true,
+				"failed": false,
+				"history": [
+					{
+						"operators": [],
+						"powered": true,
+						"round": 1,
+						"ticks": 0,
+						"valid": false
+					},
+					{
+						"operators": [
+							"lin",
+							"xu"
+						],
+						"powered": true,
+						"round": 2,
+						"ticks": 1,
+						"valid": true
+					}
+				],
+				"ticks": 1
+			},
+			"injured": [],
+			"mission": "M10",
+			"outcome": "success",
+			"promise": {},
+			"protection": [],
+			"recruits": [
+				"he"
+			],
+			"rescues": {},
+			"revision": 30,
+			"reward": {
+				"credits": 10.0,
+				"parts": 1.0,
+				"supplies": 1.0
+			},
+			"reward_rows": [
+				{
+					"reason": "任务基础结算",
+					"resources": {
+						"credits": 10.0,
+						"parts": 1.0,
+						"supplies": 1.0
+					}
+				}
+			],
+			"roster": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"standing": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"support": "",
+			"variant": "A",
+			"withdrawn": [],
+			"xp_receipts": {
+				"lin": {
+					"after": 17,
+					"before": 12,
+					"source": "main"
+				},
+				"su": {
+					"after": 17,
+					"before": 12,
+					"source": "main"
+				},
+				"xu": {
+					"after": 17,
+					"before": 12,
+					"source": "main"
+				}
+			}
+		},
+		"round": 5,
+		"setup": "isolated initial trio L2, only reducer actions after deployment; no completions or teleport injection"
+	},
+	{
+		"actions": [
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						1,
+						4
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						5
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						4
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						2,
+						2
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						4,
+						3
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						3
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						4,
+						2
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "xu",
+				"kind": "service_watch",
+				"payload": {
+					"post": 1
+				},
+				"round": 2
+			},
+			{
+				"actor": "su",
+				"kind": "interact",
+				"payload": {
+					"target": "route"
+				},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "service_watch",
+				"payload": {
+					"post": 0
+				},
+				"round": 2
+			},
+			{
+				"actor": "su",
+				"kind": "interact",
+				"payload": {
+					"target": "route"
+				},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "service_watch",
+				"payload": {
+					"post": 0
+				},
+				"round": 3
+			},
+			{
+				"actor": "xu",
+				"kind": "service_watch",
+				"payload": {
+					"post": 1
+				},
+				"round": 3
+			},
+			{
+				"actor": "su",
+				"kind": "interact",
+				"payload": {
+					"target": "route"
+				},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "protocol",
+				"payload": {
+					"consent": true,
+					"partner": "xu",
+					"protocol": "mutual_cover"
+				},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "service_watch",
+				"payload": {
+					"post": 0
+				},
+				"round": 4
+			},
+			{
+				"actor": "xu",
+				"kind": "service_watch",
+				"payload": {
+					"post": 1
+				},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "protocol",
+				"payload": {
+					"consent": true,
+					"partner": "xu",
+					"protocol": "mutual_cover"
+				},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						6,
+						1
+					]
+				},
+				"round": 5
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						5
+					]
+				},
+				"round": 5
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						2,
+						5
+					]
+				},
+				"round": 5
+			},
+			{
+				"actor": "lin",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 5
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						5
+					]
+				},
+				"round": 5
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						6
+					]
+				},
+				"round": 5
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 5
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						7
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "su",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 6
+			},
+			{
+				"actor": "xu",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 6
+			}
+		],
+		"mission": "M21",
+		"party": [
+			"lin",
+			"xu",
+			"su"
+		],
+		"result": {
+			"all_extracted": true,
+			"authored_work": [
+				{
+					"id": "route",
+					"interaction_tags": [
+						"engineering",
+						"heavy_obstacle",
+						"objective",
+						"work"
+					],
+					"kind": "work"
+				},
+				{
+					"id": "e",
+					"interaction_tags": [
+						"objective",
+						"work"
+					],
+					"kind": "work"
+				},
+				{
+					"id": "marker",
+					"interaction_tags": [
+						"objective",
+						"work"
+					],
+					"kind": "work"
+				}
+			],
+			"contributions": {
+				"route": [
+					"su"
+				]
+			},
+			"day": 21.0,
+			"difficulty": "standard",
+			"facts": {
+				"M21_enemy1_cut": "unresolved",
+				"M21_enemy2_cut0": "unresolved",
+				"M21_enemy2_cut1": "unresolved",
+				"e": "unresolved",
+				"marker": "unresolved",
+				"route": "completed"
+			},
+			"field_service": {
+				"contributors": [
+					"lin",
+					"xu"
+				],
+				"done": true,
+				"failed": false,
+				"history": [
+					{
+						"operators": [],
+						"powered": true,
+						"round": 1,
+						"ticks": 0,
+						"valid": false
+					},
+					{
+						"operators": [
+							"xu",
+							"lin"
+						],
+						"powered": true,
+						"round": 2,
+						"ticks": 0,
+						"valid": false
+					},
+					{
+						"operators": [
+							"lin",
+							"xu"
+						],
+						"powered": true,
+						"round": 3,
+						"ticks": 1,
+						"valid": true
+					},
+					{
+						"operators": [
+							"lin",
+							"xu"
+						],
+						"powered": true,
+						"round": 4,
+						"ticks": 2,
+						"valid": true
+					}
+				],
+				"ticks": 2
+			},
+			"injured": [],
+			"mission": "M21",
+			"outcome": "success",
+			"promise": {},
+			"protection": [],
+			"recruits": [],
+			"rescues": {},
+			"revision": 32,
+			"reward": {
+				"credits": 10.0,
+				"parts": 1.0,
+				"supplies": 1.0
+			},
+			"reward_rows": [
+				{
+					"reason": "任务基础结算",
+					"resources": {
+						"credits": 10.0,
+						"parts": 1.0,
+						"supplies": 1.0
+					}
+				}
+			],
+			"roster": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"standing": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"support": "",
+			"variant": "A",
+			"withdrawn": [],
+			"xp_receipts": {
+				"lin": {
+					"after": 17,
+					"before": 12,
+					"source": "main"
+				},
+				"su": {
+					"after": 17,
+					"before": 12,
+					"source": "main"
+				},
+				"xu": {
+					"after": 17,
+					"before": 12,
+					"source": "main"
+				}
+			}
+		},
+		"round": 6,
+		"setup": "isolated initial trio L2, only reducer actions after deployment; no completions or teleport injection"
+	},
+	{
+		"actions": [
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						1,
+						4
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						2,
+						4
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						4,
+						5
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						3
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						3,
+						2
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						4,
+						2
+					]
+				},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 1
+			},
+			{
+				"actor": "lin",
+				"kind": "interact",
+				"payload": {
+					"target": "wire"
+				},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						5,
+						2
+					]
+				},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 2
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						6,
+						2
+					]
+				},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "service_watch",
+				"payload": {
+					"post": 0
+				},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 3
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						6,
+						3
+					]
+				},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "service_watch",
+				"payload": {
+					"post": 0
+				},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 4
+			},
+			{
+				"actor": "lin",
+				"kind": "service_watch",
+				"payload": {
+					"post": 0
+				},
+				"round": 5
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 5
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						5,
+						4
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						1,
+						2
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						4,
+						5
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						4,
+						6
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						4
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						2,
+						6
+					]
+				},
+				"round": 6
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 6
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						1,
+						6
+					]
+				},
+				"round": 7
+			},
+			{
+				"actor": "xu",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						6
+					]
+				},
+				"round": 7
+			},
+			{
+				"actor": "su",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						7
+					]
+				},
+				"round": 7
+			},
+			{
+				"actor": "xu",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 7
+			},
+			{
+				"actor": "su",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 7
+			},
+			{
+				"actor": "lin",
+				"kind": "move",
+				"payload": {
+					"cell": [
+						0,
+						6
+					]
+				},
+				"round": 7
+			},
+			{
+				"actor": "lin",
+				"kind": "end_round",
+				"payload": {},
+				"round": 7
+			},
+			{
+				"actor": "lin",
+				"kind": "leave_site",
+				"payload": {},
+				"round": 8
+			}
+		],
+		"mission": "S11",
+		"party": [
+			"lin",
+			"xu",
+			"su"
+		],
+		"result": {
+			"all_extracted": true,
+			"authored_work": [
+				{
+					"id": "wire",
+					"interaction_tags": [
+						"engineering",
+						"objective",
+						"power_socket",
+						"work"
+					],
+					"kind": "work"
+				},
+				{
+					"id": "cold",
+					"interaction_tags": [
+						"engineering",
+						"objective",
+						"power_socket",
+						"work"
+					],
+					"kind": "work"
+				}
+			],
+			"contributions": {
+				"wire": [
+					"lin"
+				]
+			},
+			"day": 22.0,
+			"difficulty": "standard",
+			"facts": {
+				"S11_enemy1_cut": "lost",
+				"cold": "unresolved",
+				"wire": "completed"
+			},
+			"field_service": {
+				"contributors": [
+					"lin"
+				],
+				"done": true,
+				"failed": false,
+				"history": [
+					{
+						"operators": [],
+						"powered": true,
+						"round": 1,
+						"ticks": 0,
+						"valid": false
+					},
+					{
+						"operators": [],
+						"powered": true,
+						"round": 2,
+						"ticks": 0,
+						"valid": false
+					},
+					{
+						"operators": [
+							"lin"
+						],
+						"powered": true,
+						"round": 3,
+						"ticks": 1,
+						"valid": true
+					},
+					{
+						"operators": [
+							"lin"
+						],
+						"powered": true,
+						"round": 4,
+						"ticks": 1,
+						"valid": false
+					},
+					{
+						"operators": [
+							"lin"
+						],
+						"powered": true,
+						"round": 5,
+						"ticks": 2,
+						"valid": true
+					}
+				],
+				"ticks": 2
+			},
+			"injured": [],
+			"mission": "S11",
+			"outcome": "success",
+			"promise": {},
+			"protection": [],
+			"recruits": [],
+			"rescues": {},
+			"revision": 33,
+			"reward": {
+				"credits": 6.0,
+				"parts": 0.0,
+				"supplies": 0.0
+			},
+			"reward_rows": [
+				{
+					"reason": "任务基础结算",
+					"resources": {
+						"credits": 6.0,
+						"parts": 0.0,
+						"supplies": 0.0
+					}
+				}
+			],
+			"roster": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"standing": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"support": "",
+			"variant": "A",
+			"withdrawn": [],
+			"xp_receipts": {
+				"lin": {
+					"after": 15,
+					"before": 12,
+					"source": "side"
+				},
+				"su": {
+					"after": 15,
+					"before": 12,
+					"source": "side"
+				},
+				"xu": {
+					"after": 15,
+					"before": 12,
+					"source": "side"
+				}
+			}
+		},
+		"round": 8,
+		"setup": "isolated initial trio L2, only reducer actions after deployment; no completions or teleport injection"
+	}
+]

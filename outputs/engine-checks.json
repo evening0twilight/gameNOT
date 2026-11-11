@@ -1,0 +1,155 @@
+{
+  "curve_samples": [
+    {
+      "initial_grudge": 0.0,
+      "points": [
+        {
+          "pressure": 5.0,
+          "resentment": 0.0,
+          "step": 0
+        },
+        {
+          "band": "calm",
+          "pressure": 18.8,
+          "resentment": 13.8,
+          "step": 1
+        },
+        {
+          "band": "calm",
+          "pressure": 34.211270336,
+          "resentment": 29.211270336,
+          "step": 2
+        },
+        {
+          "band": "guarded",
+          "pressure": 51.9017199432389,
+          "resentment": 46.9017199432389,
+          "step": 3
+        },
+        {
+          "band": "conditional",
+          "pressure": 72.9988317612704,
+          "resentment": 67.9988317612704,
+          "step": 4
+        }
+      ]
+    },
+    {
+      "initial_grudge": 42.0,
+      "points": [
+        {
+          "pressure": 47.0,
+          "resentment": 42.0,
+          "step": 0
+        },
+        {
+          "band": "guarded",
+          "pressure": 64.69195186688,
+          "resentment": 59.69195186688,
+          "step": 1
+        },
+        {
+          "band": "rupture",
+          "pressure": 86.6077481301708,
+          "resentment": 81.6077481301708,
+          "step": 2
+        },
+        {
+          "band": "rupture",
+          "pressure": 100.0,
+          "resentment": 100.0,
+          "step": 3
+        },
+        {
+          "band": "rupture",
+          "pressure": 100.0,
+          "resentment": 100.0,
+          "step": 4
+        }
+      ]
+    },
+    {
+      "initial_grudge": 55.0,
+      "points": [
+        {
+          "pressure": 60.0,
+          "resentment": 55.0,
+          "step": 0
+        },
+        {
+          "band": "rupture",
+          "pressure": 80.7689103,
+          "resentment": 75.7689103,
+          "step": 1
+        },
+        {
+          "band": "rupture",
+          "pressure": 100.0,
+          "resentment": 100.0,
+          "step": 2
+        },
+        {
+          "band": "rupture",
+          "pressure": 100.0,
+          "resentment": 100.0,
+          "step": 3
+        },
+        {
+          "band": "rupture",
+          "pressure": 100.0,
+          "resentment": 100.0,
+          "step": 4
+        }
+      ]
+    }
+  ],
+  "engine": {
+    "build": "official",
+    "hash": "ed1daf0bf001b61586d9930840f2f1394092c079",
+    "hex": 263938,
+    "major": 4,
+    "minor": 7,
+    "patch": 2,
+    "status": "stable",
+    "string": "4.7.2-stable (official)",
+    "timestamp": 0
+  },
+  "failures": [],
+  "passed": [
+    "historical resentment exists at new game",
+    "new game already displays the historical grievance band",
+    "same provocation grows faster with relevant old grievance",
+    "pure transition preserves original input",
+    "duplicate event is idempotent",
+    "unknown actions do not cause telepathy",
+    "leader order does not blame innocent teammate",
+    "directional relationship is respected",
+    "invalid responsibility split rejected",
+    "stress alone does not create interpersonal grievance",
+    "hysteresis keeps warning state below entry threshold",
+    "same pressure does not prematurely enter state",
+    "threshold alone cannot cause unannounced outburst",
+    "unrelated action cannot trigger outburst",
+    "qualified redline can trigger outburst",
+    "same mission does not repeatedly trigger outburst",
+    "next day respects cooldown",
+    "later relevant mission can trigger unresolved conflict",
+    "acknowledgement cannot be spammed",
+    "wrong repair cannot erase specific memory",
+    "repair token cannot be replayed",
+    "hurt-repair cannot farm trust at any initial value 0..100",
+    "time alone does not erase historical grievance",
+    "history repair is staged and irreversible by repeat",
+    "cannot skip directly to forgiveness",
+    "history repair does not delete later incident memories",
+    "50 seeded histories x 60 days remain bounded",
+    "save write succeeds",
+    "save preserves relationship totals",
+    "saved RNG state restores next random value",
+    "second save creates backup",
+    "corrupt save is rejected",
+    "saving over corruption preserves valid backup"
+  ],
+  "passed_count": 33,
+  "scope": "relationship rules and preparation save container only; no complete combat or campaign"
+}

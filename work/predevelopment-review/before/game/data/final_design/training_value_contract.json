@@ -1,0 +1,26 @@
+{
+  "version": "0.17-training-value",
+  "formal_development": false,
+  "normal": "阶段训练：每人1物资，1–2人合用1项目，各+min(12,100-当前经验)、+6疲劳，同人每晚仍限1项目。每章开放1个训练阶段，未用阶段保留可后补；入队前章节不补发，已体现在入队基础经验。普通训练与关系带教共用学员阶段，满100经验不收款，不能在第24日虚构营地。",
+  "mentorship": "共同带教：1项目、2物资，两人各+6疲劳；学员+min(24,导师经验−学员经验,100−学员经验)，导师不获经验。仅实际收益高于此刻普通训练时提供。消耗学员1个训练阶段，且每学员每章最多1次带教。仍需已有关系约定、两次真实共同任务贡献与当前同意；不发好感，不修复旧怨，不教授导师专属技能。",
+  "natural_growth_unchanged": [
+    "main XP 5/3/1",
+    "side XP 3/1/0",
+    "support XP2",
+    "levels0/12/28/48/72/100",
+    "recruit chapter floors0/12/28/48"
+  ],
+  "intent": "Buy earlier deployable capability, not more mandatory nights. Natural growth stays fully viable.",
+  "stage_topics": [
+    "基础动作与风险演练",
+    "复杂地形及设备处置",
+    "多点任务与交接",
+    "撤离与应急复盘"
+  ],
+  "topics_are": "章节课程名称，不是新技能树或额外能力门锁；未用课程可补做。",
+  "review_status": "Current finite offline review; not human playtest",
+  "fatigue_preview": "显示当前疲劳、训练+6、已知夜间恢复、下次计划任务消耗；如果本可专门恢复，还显示放弃的-12。换人/改项目后重新计算，不承诺未知事件后的状态。",
+  "injury_and_save": "普通重伤保留经验与已用阶段，休养恢复后可继续；最高难度永久离队不把培养转移给其他人。已完成训练不单独返现；完整读档须恢复XP/阶段/资源/回执的一致时间点。",
+  "investment_scope": "课程不强制买满；即时学习本人高阶能力只是可用机会，不保证每种路线都有战术增益。未计划启用或已自然及时跨级者可以完整保留阶段。",
+  "mentor_recommendation": "只有实际增益高于普通训练才提供；并列展示普通/带教实际跨级及导师当晚代价，不以最大经验数字默认选带教。"
+}

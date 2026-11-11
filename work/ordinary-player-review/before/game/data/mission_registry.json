@@ -1,0 +1,838 @@
+[
+  {
+    "id": "M01",
+    "title": "最后一班渡轮",
+    "chapter": 1,
+    "day": 1,
+    "kind": "main",
+    "location": "渡轮",
+    "objective": "前舱居民 / 后舱居民",
+    "prerequisite_resolved": [],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "map",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M01",
+    "board_ref": "final_design/boards.json#M01"
+  },
+  {
+    "id": "M02",
+    "title": "诊所的备用电",
+    "chapter": 1,
+    "day": 2,
+    "kind": "main",
+    "location": "诊所",
+    "objective": "切断错误回路 / 手摇恢复诊所电源",
+    "prerequisite_resolved": [
+      "M01"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "spare",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M02",
+    "board_ref": "final_design/boards.json#M02"
+  },
+  {
+    "id": "M03",
+    "title": "被锁住的仓库",
+    "chapter": 1,
+    "day": 3,
+    "kind": "main",
+    "location": "仓库",
+    "objective": "打开货仓锁 / 转运救援箱",
+    "prerequisite_resolved": [
+      "M02"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "parts",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M03",
+    "board_ref": "final_design/boards.json#M03"
+  },
+  {
+    "id": "M04",
+    "title": "高架桥下",
+    "chapter": 1,
+    "day": 4,
+    "kind": "main",
+    "location": "桥梁",
+    "objective": "北桥加固 / 南桥加固 / 接维修员离开",
+    "prerequisite_resolved": [
+      "M03"
+    ],
+    "recruits": [
+      "chen"
+    ],
+    "failure_continues": true,
+    "optional_objective": "rail",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M04",
+    "board_ref": "final_design/boards.json#M04"
+  },
+  {
+    "id": "M05",
+    "title": "旧泵房来电",
+    "chapter": 1,
+    "day": 5,
+    "kind": "main",
+    "location": "泵站",
+    "objective": "隔离失控泵 / 启动排水",
+    "prerequisite_resolved": [
+      "M04"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "module",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M05",
+    "board_ref": "final_design/boards.json#M05"
+  },
+  {
+    "id": "M06",
+    "title": "第一次涨潮",
+    "chapter": 1,
+    "day": 6,
+    "kind": "main",
+    "location": "闸门",
+    "objective": "接应老人 / 接应儿童",
+    "prerequisite_resolved": [
+      "M05"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "asset",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M06",
+    "board_ref": "final_design/boards.json#M06"
+  },
+  {
+    "id": "M07",
+    "title": "工具箱的名字",
+    "chapter": 2,
+    "day": 7,
+    "kind": "main",
+    "location": "工厂",
+    "objective": "切断作业电源 / 接出维修员",
+    "prerequisite_resolved": [
+      "M06"
+    ],
+    "recruits": [
+      "ye"
+    ],
+    "failure_continues": true,
+    "optional_objective": "serial",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M07",
+    "board_ref": "final_design/boards.json#M07"
+  },
+  {
+    "id": "M08",
+    "title": "断开的补给线",
+    "chapter": 2,
+    "day": 8,
+    "kind": "main",
+    "location": "仓库",
+    "objective": "清除西障碍 / 清除东障碍 / 护送补给车",
+    "prerequisite_resolved": [
+      "M07"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "alt",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M08",
+    "board_ref": "final_design/boards.json#M08"
+  },
+  {
+    "id": "M09",
+    "title": "屋顶上的病房",
+    "chapter": 2,
+    "day": 9,
+    "kind": "main",
+    "location": "住宅",
+    "objective": "转移呼吸机病人 / 转移行动受限病人",
+    "prerequisite_resolved": [
+      "M08"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "med",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M09",
+    "board_ref": "final_design/boards.json#M09"
+  },
+  {
+    "id": "M10",
+    "title": "撤离预案",
+    "chapter": 2,
+    "day": 10,
+    "kind": "main",
+    "location": "桥梁",
+    "objective": "测试南向出口 / 测试返向入口",
+    "prerequisite_resolved": [
+      "M09"
+    ],
+    "recruits": [
+      "he"
+    ],
+    "failure_continues": true,
+    "optional_objective": "meeting",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M10",
+    "board_ref": "final_design/boards.json#M10"
+  },
+  {
+    "id": "M11",
+    "title": "需要签字的门",
+    "chapter": 2,
+    "day": 11,
+    "kind": "main",
+    "location": "工厂",
+    "objective": "切断工业门动力 / 解除工业门",
+    "prerequisite_resolved": [
+      "M10"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "e",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M11",
+    "board_ref": "final_design/boards.json#M11"
+  },
+  {
+    "id": "M12",
+    "title": "闸下的记录",
+    "chapter": 2,
+    "day": 12,
+    "kind": "main",
+    "location": "闸门",
+    "objective": "持续备份记录 / 带出备份盘",
+    "prerequisite_resolved": [
+      "M11"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "e",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M12",
+    "board_ref": "final_design/boards.json#M12"
+  },
+  {
+    "id": "M13",
+    "title": "会说谎的日志",
+    "chapter": 3,
+    "day": 13,
+    "kind": "main",
+    "location": "控制站",
+    "objective": "隔离故障节点 / 日志安全下线",
+    "prerequisite_resolved": [
+      "M12"
+    ],
+    "recruits": [
+      "mo"
+    ],
+    "failure_continues": true,
+    "optional_objective": "e",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M13",
+    "board_ref": "final_design/boards.json#M13"
+  },
+  {
+    "id": "M14",
+    "title": "冷库里的电池",
+    "chapter": 3,
+    "day": 14,
+    "kind": "main",
+    "location": "仓库",
+    "objective": "转移冷库药品 / 恢复冷库电源",
+    "prerequisite_resolved": [
+      "M13"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "meds+cold、ledger",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M14",
+    "board_ref": "final_design/boards.json#M14"
+  },
+  {
+    "id": "M15",
+    "title": "三条同时响起的电话",
+    "chapter": 3,
+    "day": 15,
+    "kind": "main",
+    "location": "住宅",
+    "objective": "北楼求援 / 东楼求援 / 西楼求援",
+    "prerequisite_resolved": [
+      "M14"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "any_two、all_three",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M15",
+    "board_ref": "final_design/boards.json#M15"
+  },
+  {
+    "id": "M16",
+    "title": "没有空位的船",
+    "chapter": 3,
+    "day": 16,
+    "kind": "main",
+    "location": "渡轮",
+    "objective": "清运输通道 / 带居民登船",
+    "prerequisite_resolved": [
+      "M15"
+    ],
+    "recruits": [
+      "jiang"
+    ],
+    "failure_continues": true,
+    "optional_objective": "goods",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M16",
+    "board_ref": "final_design/boards.json#M16"
+  },
+  {
+    "id": "M17",
+    "title": "修复或拆除",
+    "chapter": 3,
+    "day": 17,
+    "kind": "main",
+    "location": "泵站",
+    "objective": "重建泵机控制 / 封闭危险支路",
+    "prerequisite_resolved": [
+      "M16"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "e",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M17",
+    "board_ref": "final_design/boards.json#M17"
+  },
+  {
+    "id": "M18",
+    "title": "广播塔的盲区",
+    "chapter": 3,
+    "day": 18,
+    "kind": "main",
+    "location": "广播塔",
+    "objective": "解除广播干扰 / 持续发出通告",
+    "prerequisite_resolved": [
+      "M17"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "backup",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M18",
+    "board_ref": "final_design/boards.json#M18"
+  },
+  {
+    "id": "M19",
+    "title": "警戒水位",
+    "chapter": 4,
+    "day": 19,
+    "kind": "main",
+    "location": "诊所",
+    "objective": "转移高危病人 / 加固临时集合点",
+    "prerequisite_resolved": [
+      "M18"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "device",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M19",
+    "board_ref": "final_design/boards.json#M19"
+  },
+  {
+    "id": "M20",
+    "title": "两座避难所",
+    "chapter": 4,
+    "day": 20,
+    "kind": "main",
+    "location": "避难所",
+    "objective": "西避难所防护 / 东避难所防护",
+    "prerequisite_resolved": [
+      "M19"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "west+east、transfer",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M20",
+    "board_ref": "final_design/boards.json#M20"
+  },
+  {
+    "id": "M21",
+    "title": "旧路与新桥",
+    "chapter": 4,
+    "day": 21,
+    "kind": "main",
+    "location": "桥梁",
+    "objective": "恢复最终撤离线",
+    "prerequisite_resolved": [
+      "M20"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "e、marker",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M21",
+    "board_ref": "final_design/boards.json#M21"
+  },
+  {
+    "id": "M22",
+    "title": "最后一份记录",
+    "chapter": 4,
+    "day": 22,
+    "kind": "main",
+    "location": "控制站",
+    "objective": "完成终端交接",
+    "prerequisite_resolved": [
+      "M21"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "e、privacy",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M22",
+    "board_ref": "final_design/boards.json#M22"
+  },
+  {
+    "id": "M23",
+    "title": "撤离顺序",
+    "chapter": 4,
+    "day": 23,
+    "kind": "main",
+    "location": "渡轮",
+    "objective": "优先组登船 / 第二组登船",
+    "prerequisite_resolved": [
+      "M22"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "rebuild",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M23",
+    "board_ref": "final_design/boards.json#M23"
+  },
+  {
+    "id": "M24",
+    "title": "天亮以前",
+    "chapter": 4,
+    "day": 24,
+    "kind": "main",
+    "location": "主闸",
+    "objective": "切断错误总线 / 交接公开权限",
+    "prerequisite_resolved": [
+      "M23"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "archive",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      20,
+      25
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "contract_ref": "campaign_world_contract.json#M24",
+    "board_ref": "final_design/boards.json#M24"
+  },
+  {
+    "id": "S01",
+    "title": "维修船票",
+    "chapter": 1,
+    "day": 2,
+    "kind": "side",
+    "location": "渡轮",
+    "objective": "修好联络船",
+    "prerequisite_resolved": [
+      "M02"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "tickets",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 3,
+    "board_ref": "final_design/boards.json#S01"
+  },
+  {
+    "id": "S02",
+    "title": "旧书与药箱",
+    "chapter": 1,
+    "day": 4,
+    "kind": "side",
+    "location": "诊所",
+    "objective": "药箱 / 旧书",
+    "prerequisite_resolved": [
+      "M04"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "both",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 5,
+    "board_ref": "final_design/boards.json#S02"
+  },
+  {
+    "id": "S03",
+    "title": "电梯里的灯",
+    "chapter": 1,
+    "day": 6,
+    "kind": "side",
+    "location": "仓库",
+    "objective": "断开电梯驱动 / 接出电梯乘客",
+    "prerequisite_resolved": [
+      "M06"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "无",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 7,
+    "board_ref": "final_design/boards.json#S03"
+  },
+  {
+    "id": "S04",
+    "title": "屋顶菜园",
+    "chapter": 2,
+    "day": 8,
+    "kind": "side",
+    "location": "工厂",
+    "objective": "菜园种箱 / 固定灌溉架",
+    "prerequisite_resolved": [
+      "M08"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "both",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 9,
+    "board_ref": "final_design/boards.json#S04"
+  },
+  {
+    "id": "S05",
+    "title": "剩余的绝缘布",
+    "chapter": 2,
+    "day": 10,
+    "kind": "side",
+    "location": "仓库",
+    "objective": "隔离配电柜 / 带回绝缘布",
+    "prerequisite_resolved": [
+      "M10"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "无",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 11,
+    "board_ref": "final_design/boards.json#S05"
+  },
+  {
+    "id": "S06",
+    "title": "一份未送达的饭",
+    "chapter": 2,
+    "day": 12,
+    "kind": "side",
+    "location": "住宅",
+    "objective": "确认住户位置 / 接出住户",
+    "prerequisite_resolved": [
+      "M12"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "meal",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 13,
+    "board_ref": "final_design/boards.json#S06"
+  },
+  {
+    "id": "S07",
+    "title": "失联的记录员",
+    "chapter": 3,
+    "day": 14,
+    "kind": "side",
+    "location": "控制站",
+    "objective": "救出记录员",
+    "prerequisite_resolved": [
+      "M14"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "copy",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 15,
+    "board_ref": "final_design/boards.json#S07"
+  },
+  {
+    "id": "S08",
+    "title": "工人的行李",
+    "chapter": 3,
+    "day": 16,
+    "kind": "side",
+    "location": "仓库",
+    "objective": "工人行李 / 工作工具箱",
+    "prerequisite_resolved": [
+      "M16"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "both",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 17,
+    "board_ref": "final_design/boards.json#S08"
+  },
+  {
+    "id": "S09",
+    "title": "临时课堂",
+    "chapter": 3,
+    "day": 18,
+    "kind": "side",
+    "location": "住宅",
+    "objective": "加固临时教室",
+    "prerequisite_resolved": [
+      "M18"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "books",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 19,
+    "board_ref": "final_design/boards.json#S09"
+  },
+  {
+    "id": "S10",
+    "title": "备用引航灯",
+    "chapter": 4,
+    "day": 20,
+    "kind": "side",
+    "location": "诊所",
+    "objective": "修复备用引航灯",
+    "prerequisite_resolved": [
+      "M20"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "chart",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 21,
+    "board_ref": "final_design/boards.json#S10"
+  },
+  {
+    "id": "S11",
+    "title": "留给诊所的电",
+    "chapter": 4,
+    "day": 22,
+    "kind": "side",
+    "location": "避难所",
+    "objective": "诊所后备供电",
+    "prerequisite_resolved": [
+      "M22"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "cold",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 23,
+    "board_ref": "final_design/boards.json#S11"
+  },
+  {
+    "id": "S12",
+    "title": "不能沉下去的箱子",
+    "chapter": 4,
+    "day": 23,
+    "kind": "side",
+    "location": "桥梁",
+    "objective": "社区名册箱",
+    "prerequisite_resolved": [
+      "M23"
+    ],
+    "recruits": [],
+    "failure_continues": true,
+    "optional_objective": "photo",
+    "baseline_fallback": "已定义通用停机开关、目标坐标与基础搬运/互动路径；具体见board_ref",
+    "target_minutes": [
+      15,
+      20
+    ],
+    "status": "coordinate_board_and_objective_contract_authored_runtime_pending",
+    "offer_expires_day": 23,
+    "board_ref": "final_design/boards.json#S12"
+  }
+]

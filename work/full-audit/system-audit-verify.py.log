@@ -1,0 +1,31 @@
+{
+  "checks": 89,
+  "properties": {
+    "relationship_transitions": 8000,
+    "band_states": 40804
+  },
+  "examples": [
+    {
+      "id": "saturation",
+      "old_before": 100,
+      "old_after": 100,
+      "new_before": 100.0,
+      "new_after": 86.9796,
+      "new_active": [
+        17.1633,
+        17.1633,
+        10.6531
+      ]
+    },
+    {
+      "id": "repeated_breach",
+      "resentment": [
+        61.7111,
+        66.0,
+        100.0
+      ],
+      "trust": 72
+    }
+  ],
+  "runtime_unchanged": true
+}

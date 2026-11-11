@@ -1,0 +1,272 @@
+{
+  "levels": {
+    "thresholds": [
+      0,
+      12,
+      28,
+      48,
+      72,
+      100
+    ],
+    "L1": "获得本人的第一个专长",
+    "L2": "选耐心施工（每任务第一次通用交互+1工量）或稳步移动（每任务第一次未搬运移动预算+1）",
+    "L3": "第二专长，固定保留两项，不另做三选二配装",
+    "L4": "基础HP+1",
+    "L5": "强化本人的一项现有专长用途，见growth_identity_contract.level5；不再统一增加一次使用次数，不增加第三个技能按钮。",
+    "L6": "基础HP+1；获得另一项L2被动，两种各每任务一次，不同时重复触发同一交互",
+    "respec": "营地免费切换L2选择。每人固定两项专长；不重置HP、次数、关系或任务状态；任务内锁定。",
+    "new_recruit": "使用加入任务所属章节的经验底线0/12/28/48；仍未达到100不强制满级。"
+  },
+  "protocols": [
+    {
+      "id": "relay_carry",
+      "name": "接力搬运",
+      "tags": [
+        "handoff"
+      ],
+      "cost": "双方各1AP，邻接；一人携带一人空手",
+      "effect": "交接后接收者立即沿合法路径移动最多3地形代价，总预算不受担架等再加成；每对每轮一次。",
+      "baseline": "原携带者drop0，接收者pickup1，再move1；协议减少原地交换后的人力占用差异，不刷信任。"
+    },
+    {
+      "id": "protected_work",
+      "name": "保护作业",
+      "tags": [
+        "dangerous_joint"
+      ],
+      "cost": "双方各1AP，彼此邻接，执行者邻接目标",
+      "effect": "双方各1AP提供3工量，执行者获一次机器伤害-2至下轮开始；每人物对每轮一次，不叠加L2施工，不跳前置或专门步骤。",
+      "baseline": "三次普通交互；未消费L2施工时可用两次普通交互达成3工量，但没有附加护盾。"
+    },
+    {
+      "id": "mutual_cover",
+      "name": "交叉掩护",
+      "tags": [
+        "dangerous_joint"
+      ],
+      "cost": "双方各1AP，距离<=2",
+      "effect": "两人各得一次机器伤害-2至下轮，不防水火；同角色同类护盾取最大。",
+      "baseline": "躲开预告、拆敌或用屏障；保护不是基础移动的前提。"
+    },
+    {
+      "id": "coordinated_pull",
+      "name": "协同牵引",
+      "tags": [
+        "partner_motion"
+      ],
+      "cost": "双方各1AP，邻接同一重型机器",
+      "effect": "直接把重机推移一格，替代同轮两次基本推移；可选择任意空合法方向，不能推入X。",
+      "baseline": "两次基本推移总2AP，只能沿推手相反方向。"
+    }
+  ],
+  "protocol_training": "四项协作无需学习且无统一60信任门槛，仍检查具体风险与关系保障。普通训练按training_rule；共同带教按growth_identity_contract，不额外发好感。",
+  "relationship_commit": "负面记忆与限制在触发行动前预览，提交后即时影响未来动作，绝不反改已提交的动作。正向共同贡献在任务结算时按有向对发一次，单任务上限+4信任；不能当场互相搬运刷出协议。亲近不增加伤害或命中。",
+  "stress": {
+    "range": [
+      0,
+      100
+    ],
+    "initial": 10,
+    "own_downing": 8,
+    "witness_downing_each_unique_actor": 4,
+    "known_mandatory_target_lost": 4,
+    "negative_gain_cap_per_mission": 12,
+    "meaningful_rescue_relief_cap": 4,
+    "night": -8,
+    "dedicated_rest_extra": -16,
+    "effect": "仅影响情绪与关系事件放大，不减少AP、不使基础动作随机失败。同一后果给压力，不再额外给疲劳；疲劳只按工作排班。"
+  },
+  "memory_events": [
+    {
+      "id": "promise_breach",
+      "severity": 12,
+      "trust_loss": 8,
+      "category": "promise",
+      "trigger": "玩家确认违背仍有效且当事人已知的具体承诺；单承诺一次；已提前同意的改约不是违约"
+    },
+    {
+      "id": "risk_concealment",
+      "severity": 16,
+      "trust_loss": 10,
+      "category": "promise",
+      "trigger": "知道真实风险后选择隐瞒，并据此要求危险联合行动；不是缺少玩家尚未知的信息"
+    },
+    {
+      "id": "unfair_assignment",
+      "severity": 8,
+      "trust_loss": 4,
+      "category": "fairness",
+      "trigger": "已约定轮值上限后再次要求额外关系服务；普通战斗派遣疲劳高不自动算不公"
+    },
+    {
+      "id": "public_blame",
+      "severity": 12,
+      "trust_loss": 6,
+      "category": "humiliation",
+      "trigger": "对白中明确把未核实罪责公开归给某人；查看资料不是羞辱"
+    },
+    {
+      "id": "honest_failure",
+      "severity": 0,
+      "trust_loss": 0,
+      "category": "promise",
+      "trigger": "如实报告风险、按约努力但任务失败；不自动惩罚所有关系"
+    },
+    {
+      "id": "persistent_breach",
+      "severity": 18,
+      "trust_loss": 12,
+      "category": "promise",
+      "serious": true,
+      "trigger": "连续3个值勤日内第三次独立、知情、明确同类失约；三个事件和承诺ID不同；第三次提交前预告持续失信；事故和医疗中断不计；同一次事件不重复登记普通记忆。"
+    }
+  ],
+  "responsibility": {
+    "canonical_key": "campaign / root_decision_id / observer / responsible_target。对同一决定的受伤、撤离失败、治疗延迟只是后果列表，合并为一次事件；不同观察者可以各自建立一个有向记忆。",
+    "shares": "队长单独决策：leader=1、被指派执行者=0。已知风险且自愿主动提出并获队长批准：leader=.5、提议者=.5。责任份额总和<=1；不能用后来的受伤结果推断执行者主动提议。",
+    "unknown": "未获知责任只记未知事实与个人压力，不扣某人的信任；后来知情只建立一次记忆，以首次知情日衰减。新的隐瞒是另一次选择，可成为不同事件；重复发现同一材料不是新事件。",
+    "late_revision": "同一事件后来明确责任或严重后果，更新原条目而不另建重复记忆；计算同一初始状态下的新旧目标幅度之差，只补正向差额，信任同样只补扣差额。责任被证据撤销则撤销该错误条目并退其实际损失；这属于纠错，不发道歉奖励。压缩过的旧权重不借修订恢复。",
+    "repeat": "3个连续值勤日定义为当前D及D-1/D-2；第三个不同的已知、明确、可归责承诺被主动违背且提交前已预告，升级为18强度/12信任损失的一条严重记忆。第四次仍满足窗口可再次为严重事件；同一承诺、事故、医疗中断、迟来的三份旧材料不冒充三次当场失信。",
+    "leader_scope": "现场合作检查观察者→搭档和观察者→队长两方向；任一处于条件合作及以上，都按当前动作的相关风险要求保障。对队长的不满不转嫁为对搭档扣分；基础行动保持可控。"
+  },
+  "restrictions": {
+    "lin": "对责任对象的dangerous_joint要求独立锚点/第三人保护；基础救援不受限",
+    "xu": "对责任对象的partner_motion要求任务前明确授权；可改为自主移动",
+    "su": "对责任对象的handoff要求先确认接应位置；额外营地调解可拒绝，基础班次不拒绝",
+    "chen": "dangerous_joint要求断电或加固；不签不实安全保证，通用交互仍可进行",
+    "ye": "对责任对象的dangerous_joint要求断电/绝缘；可独立操作",
+    "he": "危险协作需有效出口与救援期限；不剥夺别人控制权",
+    "mo": "拒绝公开无关私人信息，战术公开情报不扣留；无基础战斗限制",
+    "jiang": "handoff前确认人员/货物优先级；不偷拿物资"
+  },
+  "restriction_rules": "保存有向关系阶段，进入45/65/80，退出<35/<50/<60。现场检查对搭档与对队长两方向，任一阶段>=条件合作才按相关动作/风险要求真实保障；长场景冷却不取消条件，基础动作始终可用。",
+  "repair": "认责只修该记忆一次(.85)；实质补救只一次(.45并去严重残余下限)，返还min(4,实际信任损失/2)；新守约另走任务贡献上限。旧怨的6/12/12修复只用于有证据的相关阶段，不是所有人物故事自动减怨。",
+  "history_story_rule": "涉及双方历史的认责记录、实际补救、后续守约各产生一个稳定token；另一方缺席可记录证据但不立即改变其已知关系。回队/来信确认后生效；永久离队则只记叙事事实，不为刷数值召回。",
+  "situational_cooperation": {
+    "lin": {
+      "protocol_tags": [
+        "dangerous_joint"
+      ],
+      "when": [
+        "fall"
+      ],
+      "required_any": [
+        "independent_anchor",
+        "third_person_protection"
+      ]
+    },
+    "xu": {
+      "protocol_tags": [
+        "partner_motion"
+      ],
+      "when": [
+        "any"
+      ],
+      "required_any": [
+        "explicit_authority"
+      ]
+    },
+    "su": {
+      "protocol_tags": [
+        "handoff"
+      ],
+      "when": [
+        "any"
+      ],
+      "required_any": [
+        "named_receiver"
+      ]
+    },
+    "chen": {
+      "protocol_tags": [
+        "dangerous_joint"
+      ],
+      "when": [
+        "electrical"
+      ],
+      "required_any": [
+        "power_off",
+        "reinforced_and_insulated"
+      ]
+    },
+    "ye": {
+      "protocol_tags": [
+        "dangerous_joint"
+      ],
+      "when": [
+        "electrical"
+      ],
+      "required_any": [
+        "power_off",
+        "insulated"
+      ]
+    },
+    "he": {
+      "protocol_tags": [
+        "dangerous_joint"
+      ],
+      "when": [
+        "any"
+      ],
+      "required_all": [
+        "valid_exit",
+        "retrieval_deadline_known"
+      ]
+    },
+    "mo": {
+      "protocol_tags": [],
+      "when": [],
+      "required_any": []
+    },
+    "jiang": {
+      "protocol_tags": [
+        "handoff"
+      ],
+      "when": [
+        "any"
+      ],
+      "required_any": [
+        "declared_personnel_cargo_priority"
+      ]
+    }
+  },
+  "situational_rule": "保存有向关系阶段，进入45/65/80，退出<35/<50/<60。现场检查对搭档与对队长两方向，任一阶段>=条件合作才按相关动作/风险要求真实保障；长场景冷却不取消条件，基础动作始终可用。",
+  "relationship_edge_cases_ref": "relationship_edge_cases.json",
+  "repeated_breach_escalation": {
+    "id": "persistent_breach",
+    "category": "promise",
+    "severity": 18,
+    "trust_loss": 12,
+    "serious": true,
+    "conditions": [
+      "观察者已知同一责任对象的行为",
+      "当前日D及D-1/D-2窗口内，第三次独立明确承诺被违背",
+      "三个承诺/事件ID不同，同一失约不能通过重复点击或重复结算计数",
+      "每次均有真实责任份额；事故或医疗中断不计",
+      "第三次行动提交前明确预告会被视为持续失信"
+    ],
+    "effect": "将第三次事件以严重记忆登记一次，不同时再加一份普通记忆；此前事件保留。不是普通拌嘴自动升级，也不暗改阈值。"
+  },
+  "version": "0.17-training-value",
+  "memory_model": {
+    "rule": "事实档案与当前情绪分开。保存全部事故、实际责任、首次知情日、实际信任损失与修复状态；只有已分配的活跃权重参与R。R=G+活跃记忆值，不再先累计到几百再只显示100。",
+    "allocation": "新事件先算原始强度。普通同类只保留当前最强3条参与数值，其余永久转事实档案；超过24时按比例缩减这3条的已分配幅度。全部活跃记忆超过100-G时，再同比缩减所有活跃幅度，使真实总值等于上限。缩减不可逆，不在后续修复、衰减或降低G时补回。",
+    "meaning": "满值时新恶意仍留下事实、信任损失和具体未解决事项；不会积攒不可见的额外怨气，也不借冷却删除事实。记忆权重被压缩不代表已经原谅。",
+    "decay": "普通：A×stage×2^(-age/3)。严重：A×stage×[floor+(1-floor)×2^(-age/8)]；未实质补救floor=.35，补救后0；stage=1/.85/.45。A是缩减后的幅度，年龄从首次知情日计算；不在认责时重新起算。",
+    "repair": "认责和实质补救各一次，stage按原幅度取值。补救只退min(4,实际信任损失/2)。补救必须引用同一方向与原事件ID；不能用无关任务覆盖旧事。不因为其他记忆被处理，让已归档的负面权重重新出现。",
+    "repair_access": "每天营地可在关系页对一名对象的一条事件认责，计1个免费短谈，不占重点项目；已认责不重复占窗口。承诺类补救是重新约定同范围安排并在后续实际守约；不公类是责任方承担真实班次；羞辱类是同公开范围更正（计1个重点项目，可同项目纠正同一原发言的全部受影响方向）。无资金门槛，不要求T>=60。不可逆损失不能被“补救”复原。",
+    "history": "旧怨仍走原6/12/12相关事实链；不与同一旧事故重复创建新记忆。历史G下降不会给其他记忆扩容反弹。",
+    "display": "关系页显示G、各活跃来源当前值、衰减/认责/补救预计变化、已压缩/归档状态与仍未解决事实。总值100时没有隐藏负债。数值下降与“伤害是否处理”分开呈现。"
+  },
+  "conflict_state": {
+    "hysteresis": "进入45/65/80；退出分别<35/<50/<60，严格小于；R<25直接平静。保存阶段，不能每次仅用Q>=65计算，否则修复后会突然提前解锁。",
+    "cooldown": "长场景冷却按无向人物对（含队长）记录；D触发后最早D+2再次触发。一任务全队至多1次长冲突。数值、持续条件、已知事实不受场景冷却保护。",
+    "no_delayed_ambush": "到期不会自动播放。再次长冲突必须有新的相关违约/新的危险合作请求与可见预告；换地图或反复打开按钮本身不触发。其他高怨人物继续显示条件，不排成长队中断。",
+    "atomic_action": "预览→确认→完整动作→影响后续行动。不得扣完双方AP再因新关系状态取消本次已承诺动作。迟到的命令因状态版本过期整体拒绝，不扣资源。",
+    "at100": "100与80处于同一最高阶段；没有额外友伤、偷物、随机失控或关系性强制离队。满足实际保障、改用其他搭档/独立行动、放弃可选目标、撤退均可继续。"
+  },
+  "specialty_relationship_scope": "关系条件同样检查xu_3/su_3的partner_motion和jiang_1的handoff；其他基础行动不受此扩展。没有因为技能按钮换名而默许相同合作。",
+  "production_scope_ref": "production_scope.json",
+  "positive_relationships_ref": "growth_identity_contract.json",
+  "training_rule": "阶段训练：每人1物资，1–2人合用1项目，各+min(12,100-当前经验)、+6疲劳，同人每晚仍限1项目。每章开放1个训练阶段，未用阶段保留可后补；入队前章节不补发，已体现在入队基础经验。普通训练与关系带教共用学员阶段，满100经验不收款，不能在第24日虚构营地。"
+}

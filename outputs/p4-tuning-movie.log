@@ -1,0 +1,16 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M3
+
+Movie Maker mode enabled, recording movie in 1280×720 @ 30 FPS...
+WARNING: Current available space on disk is low (6.30 GiB). MovieWriter will fail during movie recording if the disk runs out of available space.
+     at: begin (servers/movie_writer/movie_writer.cpp:117)
+GUI_EXTERNAL_DISPLAY: screen=1 primary=0 total=2
+PROJECT_BOOT_OK: P4 campaign UI
+FEEDBACK_MOVIE_OK: 10 legal actions
+--------------------------------------------------------------------------------
+Done recording movie at path: /Users/a1-6/projects/person/gameNOT/game/../outputs/p4-tuning-runtime.avi
+850 frames at 30 FPS (movie length: 00:00:28:10), recorded in 00:01:28 (31% of real-time speed).
+CPU render time: 6.22 seconds (average: 7.32 ms/frame)
+GPU render time: 0.00 seconds (average: 0.00 ms/frame)
+Encoding time: 25.79 seconds (average: 30.34 ms/frame)
+--------------------------------------------------------------------------------

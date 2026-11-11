@@ -1,0 +1,23 @@
+{
+  "version": "0.18-predevelopment",
+  "confirmed_by_user": "2026-10-31",
+  "campaign": "Continue to a complete ending after mistakes; lose resources, opportunities and favourable outcomes.",
+  "ordinary_and_standard_loss": "Recoverable serious injury; no involuntary permanent loss during the campaign.",
+  "highest_difficulty_loss": "Permanent medical withdrawal may follow failure to retrieve an incapacitated hero before the visibly announced deadline; disclose at difficulty selection and before the specific irreversible action.",
+  "loss_is_not_random_death": true,
+  "provenance": {
+    "user_confirmed": [
+      "failure_continues_with_losses",
+      "recoverable_injury_below_highest_difficulty",
+      "highest_difficulty_may_allow_permanent_departure_with_disclosure",
+      "basic_action_control_retained"
+    ],
+    "designer_operational_choices": [
+      "medical_withdrawal_after_announced_rescue_deadline",
+      "manual_saves_on_all_difficulties",
+      "no_random_death_roll"
+    ]
+  },
+  "conflict_agency": "Characters may refuse a specific cooperation or request safeguards. All legal basic actions remain player-controlled.",
+  "save_policy": "Manual saves and stage backups remain available at every difficulty; highest difficulty does not imply ironman."
+}

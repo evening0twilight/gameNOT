@@ -1,0 +1,387 @@
+[
+  {
+    "id": "CORE-01",
+    "title": "完整战役状态流",
+    "flow": "新游戏→值勤计划→任务→结算→营地→下一日→结局",
+    "acceptance": "每种失败结果也有可达后继，不依赖成功才能推进",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D02",
+      "R02"
+    ]
+  },
+  {
+    "id": "CORE-02",
+    "title": "任务与回合操作",
+    "flow": "3 人，8×8 为主的棋盘，每人每轮 2 AP",
+    "acceptance": "移动、基础攻击、稳定、搬运、互动、撤离都有明确合法性",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R01",
+      "R06"
+    ]
+  },
+  {
+    "id": "CORE-03",
+    "title": "预告与结算",
+    "flow": "玩家阶段→锁定敌人动作→环境→目标检查→下一轮",
+    "acceptance": "预告使用与实际结算相同的数据；不暗改目标",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R01"
+    ]
+  },
+  {
+    "id": "CORE-04",
+    "title": "空间与资源",
+    "flow": "位置、视线、掩体、水、电、出口",
+    "acceptance": "移动寻路考虑实际地形代价；碰撞不重复结算",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D04",
+      "R02"
+    ]
+  },
+  {
+    "id": "CORE-05",
+    "title": "撤退与伤势",
+    "flow": "普通与标准：重伤后恢复；严峻：明确救援期限内未救回可永久医疗离队",
+    "acceptance": "难度选择与不可逆行动前均提示；仍能安排合法基础行动；离队不丢主线关键物品",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R03"
+    ]
+  },
+  {
+    "id": "REL-01",
+    "title": "有向旧怨",
+    "flow": "开局历史→旧怨锚点→同类事件非线性放大",
+    "acceptance": "相同刺激下有旧怨者增长更快；反方向不自动复制",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D05"
+    ]
+  },
+  {
+    "id": "REL-02",
+    "title": "事件归责",
+    "flow": "已知事件→责任份额→记忆与信任",
+    "acceptance": "责任份额≤1；未知、重复与无责事件不错误加怨",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D05",
+      "R05"
+    ]
+  },
+  {
+    "id": "REL-03",
+    "title": "爆发闭环",
+    "flow": "平静→戒备→条件合作→冲突→协议/分开/补救",
+    "acceptance": "有上下阈值、情境门槛与冷却；绝不随机杀伤队友",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D05",
+      "R03"
+    ]
+  },
+  {
+    "id": "REL-04",
+    "title": "修复与重复刺激",
+    "flow": "认责→实质补救→未来守约",
+    "acceptance": "道歉不能刷，低信任边界不能刷，旧怨不靠休息直接归零",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D05"
+    ]
+  },
+  {
+    "id": "REL-05",
+    "title": "正向关系",
+    "flow": "信任+训练→联合动作；亲近→人物交流与主动支持",
+    "acceptance": "至少四种通用合作协议；低亲近仍可专业合作",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D03",
+      "H02"
+    ]
+  },
+  {
+    "id": "CHAR-01",
+    "title": "招募与缺席",
+    "flow": "8 人，3 人初始，5 人按章节加入",
+    "acceptance": "规定主线节点结算后加入，不以胜利为条件；缺席时重要目标有通用基础动作替代",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R03",
+      "R05"
+    ]
+  },
+  {
+    "id": "CHAR-02",
+    "title": "成长",
+    "flow": "经验→等级 1–6→专长与配置",
+    "acceptance": "新招募有章节经验底线；不靠无限支线刷级",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D03",
+      "H02"
+    ]
+  },
+  {
+    "id": "CHAR-03",
+    "title": "身体与情绪",
+    "flow": "HP/伤势/疲劳/压力→派遣限制与情绪展示",
+    "acceptance": "不让同一事件在多个状态上重复施加等价惩罚",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D05",
+      "R05"
+    ]
+  },
+  {
+    "id": "CHAR-04",
+    "title": "人物内容",
+    "flow": "每人三段个人线，稳定人格与个人目标",
+    "acceptance": "缺席分支有补写或摘要；不要求每个人最终和好",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R05",
+      "R08"
+    ]
+  },
+  {
+    "id": "ECO-01",
+    "title": "资源账本",
+    "flow": "资金/通用物资/零件→任务、恢复、升级→能力",
+    "acceptance": "无负库存、重复结算或买卖套利",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D04",
+      "R04"
+    ]
+  },
+  {
+    "id": "ECO-02",
+    "title": "基地建设",
+    "flow": "4 个设施，各 2 次升级",
+    "acceptance": "升级改变可用办法；有限资源使单局存在投资取舍",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D04",
+      "H03"
+    ]
+  },
+  {
+    "id": "ECO-03",
+    "title": "经济恢复",
+    "flow": "零库存或伤员不足→社区常规照护、免费基础动作与借调补位→下一次值勤",
+    "acceptance": "无按人数征收的食宿费用；主线结算含一次基础补助；借调不需预付款；保底不恢复丢失的机会与好结果",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D02",
+      "R02"
+    ]
+  },
+  {
+    "id": "WORLD-01",
+    "title": "世界后果",
+    "flow": "任务结果→地区状态/社区信用→后续配置",
+    "acceptance": "失败改变代价而非直接把全部主线锁死",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D02",
+      "R02"
+    ]
+  },
+  {
+    "id": "WORLD-02",
+    "title": "日程",
+    "flow": "24 个主线值勤日与有限可选任务",
+    "acceptance": "支线窗口两日且不越过第 23 日；每日最多一次支线；夜间两项安排；每个任务只结算一次；终战后直接进入结局",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D02",
+      "R05"
+    ]
+  },
+  {
+    "id": "EVENT-01",
+    "title": "叙事调度",
+    "flow": "强制后果优先→条件过滤→可选权重",
+    "acceptance": "无匹配不强塞事件；固定种子和版本可重现",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R05",
+      "R06"
+    ]
+  },
+  {
+    "id": "EVENT-02",
+    "title": "信息与秘密",
+    "flow": "世界真相、角色已知、玩家已知分层",
+    "acceptance": "不靠角色读心触发怨气；重要证据有多个可达来源",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D05",
+      "R05"
+    ]
+  },
+  {
+    "id": "END-01",
+    "title": "结局",
+    "flow": "世界路线×社区结果×人物状态→结局片段",
+    "acceptance": "第 24 日前判定可选路线；证据有任务和核查来源；终战失败进入撤离；缺席角色也有结局回退",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D05",
+      "R05"
+    ]
+  },
+  {
+    "id": "REPLAY-01",
+    "title": "第二轮",
+    "flow": "固定人物+可信开局变体+投入与任务变化",
+    "acceptance": "不重置人格，不强制刷周目看真结局",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D02",
+      "H02"
+    ]
+  },
+  {
+    "id": "DIFF-01",
+    "title": "难度",
+    "flow": "从容/标准/严峻控制外部压力",
+    "acceptance": "人格与叙事条件不随难度变；最高难度的永久医疗离队在选择时披露；不默认强制铁人存档",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R03"
+    ]
+  },
+  {
+    "id": "UI-01",
+    "title": "操作界面",
+    "flow": "任务简报/战术/队伍/关系/营地/结局",
+    "acceptance": "关键行动预览消耗、后果、责任与可撤销边界",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R06",
+      "H01"
+    ]
+  },
+  {
+    "id": "UI-02",
+    "title": "可访问性",
+    "flow": "字号、字幕、色形双编码、速度、减少动态",
+    "acceptance": "1280×720 与 1920×1080 验收；不只靠颜色表达威胁",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R06",
+      "R08"
+    ]
+  },
+  {
+    "id": "SAVE-01",
+    "title": "存档",
+    "flow": "槽位+版本+随机状态+命令记录",
+    "acceptance": "临时文件写入成功后换名；保留上一份完整存档",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R04"
+    ]
+  },
+  {
+    "id": "SAVE-02",
+    "title": "恢复与迁移",
+    "flow": "坏档/版本不符→报错/备份/迁移",
+    "acceptance": "坏档和未知版本保留原文件并可回退备份/返回；首发不承诺兼容设计探针旧档。以后新增迁移要单独验收。",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R04"
+    ]
+  },
+  {
+    "id": "TECH-01",
+    "title": "可复现规则",
+    "flow": "纯规则模块+数据表+表现层",
+    "acceptance": "同版本/种子/命令序列得到相同状态",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R01",
+      "R04"
+    ]
+  },
+  {
+    "id": "TECH-02",
+    "title": "内容检查",
+    "flow": "稳定 ID、前置、引用、分支与缺席条件",
+    "acceptance": "构建时检查悬空引用、循环依赖、不可达主线",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D01"
+    ]
+  },
+  {
+    "id": "TECH-03",
+    "title": "性能与平台",
+    "flow": "Godot 4 标准版/2D/桌面客户端",
+    "acceptance": "目标 Windows；macOS 开发验证不冒充 Windows 实机通过",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R07"
+    ]
+  },
+  {
+    "id": "ASSET-01",
+    "title": "资产规范",
+    "flow": "角色头像/表情/棋子/地图/音效/字体",
+    "acceptance": "统一风格、透明边缘、命名、许可与替换尺寸",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R08"
+    ]
+  },
+  {
+    "id": "AUDIO-01",
+    "title": "声音反馈",
+    "flow": "环境/战术提示/情绪/音乐分轨",
+    "acceptance": "关键信息同时有视觉提示；音量独立设置",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "R08"
+    ]
+  },
+  {
+    "id": "QA-01",
+    "title": "自动与人工验证",
+    "flow": "单元/整章回归/内容遍历/真人体验",
+    "acceptance": "规则通过不等于有趣；记录不同玩家的真实行为",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "H01",
+      "H02",
+      "H03",
+      "H04"
+    ]
+  },
+  {
+    "id": "SCOPE-01",
+    "title": "正式版范围",
+    "flow": "8 人/4 章/24 主线/12 支线候选/6 敌人原型",
+    "acceptance": "内容数量是生产预算，不是假装已经制作完成",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D06"
+    ]
+  },
+  {
+    "id": "SCOPE-02",
+    "title": "商业边界",
+    "flow": "完整买断；暂定国区 68 元/美区 14.99 美元",
+    "acceptance": "无付费抽卡或关系修复；发行另开对话",
+    "status": "design_defined_runtime_acceptance_pending",
+    "acceptance_ids": [
+      "D06"
+    ]
+  }
+]

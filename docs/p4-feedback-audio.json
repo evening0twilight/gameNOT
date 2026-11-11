@@ -1,0 +1,51 @@
+{
+  "method": "Original deterministic synthesis: filtered noise footsteps, cloth, impacts, tool strikes and harmonic rescue cues. No external samples.",
+  "assets": [
+    {
+      "path": "game/assets/audio_feedback/move.wav",
+      "duration": 0.13,
+      "sha256": "642f124a88c27f85220cfbc028519b3df767c39b94b72bb02402cdb13f33e181"
+    },
+    {
+      "path": "game/assets/audio_feedback/attack.wav",
+      "duration": 0.32,
+      "sha256": "237496733cf888b6191d80250042968c32e04be03bf6c8845ce68ce1c6907e00"
+    },
+    {
+      "path": "game/assets/audio_feedback/push.wav",
+      "duration": 0.3,
+      "sha256": "6f9e35bb8bc842876e291f197e51c315edf1418fca00e8a6af1d5dc74dbc83e2"
+    },
+    {
+      "path": "game/assets/audio_feedback/work.wav",
+      "duration": 0.32,
+      "sha256": "0d95e440ba9ba277e0363bf0cd34e1af9dd89383b053201219ac72d5e14206b3"
+    },
+    {
+      "path": "game/assets/audio_feedback/pickup.wav",
+      "duration": 0.3,
+      "sha256": "c16304f1368813d39ee077829a696465a257a24156a1213d320e319c0c6bc323"
+    },
+    {
+      "path": "game/assets/audio_feedback/drop.wav",
+      "duration": 0.22,
+      "sha256": "5c9623e6803fbbc0d46b54fd682863b70545f74d9180bd26a5408dabfea62615"
+    },
+    {
+      "path": "game/assets/audio_feedback/stabilize.wav",
+      "duration": 0.48,
+      "sha256": "ed6a351d50571f4012497cfa6193709618a487e5610b811ed8eb0d6f8e769830"
+    },
+    {
+      "path": "game/assets/audio_feedback/extract.wav",
+      "duration": 0.5,
+      "sha256": "6126c18a25e7483d7941a06a970001a8de6e80ddb591d0c1e3950c00f9d4eff4"
+    },
+    {
+      "path": "game/assets/audio_feedback/injury.wav",
+      "duration": 0.28,
+      "sha256": "2432e29983547236f09a0d725c0922a075b50195dfe4aae8da265044f47a2f63"
+    }
+  ],
+  "listening_acceptance": false
+}

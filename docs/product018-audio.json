@@ -1,0 +1,34 @@
+{
+  "method": "Three additional original deterministic loops; combined with camp, battle and ending from audio018 for six intended contexts. No external samples.",
+  "sample_rate": 22050,
+  "assets": [
+    {
+      "path": "game/assets/product018/audio/daily.wav",
+      "sha256": "0c2d413caddd6f68fbf2d75e9cb262fdb05cab1ccf6e30e517fe5911a84661ec",
+      "seconds": 48,
+      "peak": 0.10366221827561184,
+      "rms": 0.024845449340900425,
+      "seam_difference": 0,
+      "context": "daily"
+    },
+    {
+      "path": "game/assets/product018/audio/grave.wav",
+      "sha256": "5975eee809dc5ffc7c5aa7d07874564710825ecf87ca67e91fd82bbfa3d14d1c",
+      "seconds": 48,
+      "peak": 0.0902559196147666,
+      "rms": 0.023736480665449602,
+      "seam_difference": 0,
+      "context": "grave"
+    },
+    {
+      "path": "game/assets/product018/audio/battle_high.wav",
+      "sha256": "17d8fd54b858f22a5dff0d35dc35800e33985f1bd1c79e202a995e05909c318e",
+      "seconds": 48,
+      "peak": 0.10445993101550406,
+      "rms": 0.025068788982332276,
+      "seam_difference": 0,
+      "context": "battle_high"
+    }
+  ],
+  "review": "Signal integrity checked; subjective listening acceptance pending."
+}

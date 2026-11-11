@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-31",
+  "overall_status": "COORDINATE_BOARDS_AND_BRANCH_RULES_AUTHORED; REFERENCE_CHECKS_PASS; FULL_RUNTIME_AND_PLAYER_VALIDATION_PENDING",
+  "scope": "Cross-system design audit; not a complete campaign playthrough",
+  "findings": [
+    {
+      "id": "L01",
+      "issue": "Final mission was followed by an optional mission and ordinary camp progression.",
+      "status": "specified_and_data_corrected_not_runtime_integrated",
+      "resolution": "Move S12 to day 23; settle day-24 main mission directly into endings. Day-23 camp is the final ordinary preparation window."
+    },
+    {
+      "id": "L02",
+      "issue": "Advanced cooperation needs trust >=60, but meaningful cooperation rewards lacked a clear trust-independent entry path.",
+      "status": "specified_not_runtime_integrated",
+      "resolution": "Basic-action contributions to shared objectives or recorded promises can earn trust without an advanced protocol. Presence alone does not count; issue reward receipts from actual mission evidence."
+    },
+    {
+      "id": "L03",
+      "issue": "Recovery economy is not fully defined: partial-outcome supply rewards, relief amount, temporary responder costs and last-resort shortfall resolution are missing.",
+      "status": "DESIGN_CONTRACT_DEFINED_PAPER_ACCOUNTING_CHECKED",
+      "evidence": "At 8 crew, upkeep is 5 supplies. Partial cash reward 12 buys 3 supplies; maximum support adds 1. If failure gives no supplies, this is still short before treatment. Failure supply rewards are currently unspecified, so this is a conditional counterexample, not a measured campaign failure rate.",
+      "exit_criterion": "Define outcome-by-outcome transfers and recovery alternatives; walk a low-resource, injured-roster state through at least two consecutive duty days without undocumented grants, negative inventory or an unavailable action.",
+      "resolution": "No daily food tax; explicit result rewards, free ordinary recovery, mission-scoped community responder terms and two-failure recovery trace. See campaign_economy_contract.json."
+    },
+    {
+      "id": "L04",
+      "issue": "The per-squad conflict cap exists in data but the rule module only tracks each directional relationship independently. Multiple simultaneous conflicts and main-versus-side staffing/receipts lack an integrated scheduler.",
+      "status": "DESIGN_CONTRACT_DEFINED_RUNTIME_INTEGRATION_PENDING",
+      "exit_criterion": "Specify deterministic queue priority, persistent restrictions, opportunity costs and locks per phase; demonstrate two conflicting pairs plus a repeated side deployment without double rewards or double-booked actors.",
+      "resolution": "Deterministic conflict ordering, visible persistent restrictions, one extended interruption budget, phase-scoped assignments, atomic receipts and two evening projects. See campaign_coordination_contract.json."
+    },
+    {
+      "id": "L05",
+      "issue": "Mission references and graph edges are valid, but district/evidence initial states and per-mission effects do not yet prove ending predicates or character-absence variants reachable.",
+      "status": "DESIGN_STATE_PATHS_DEFINED_AND_PAPER_TRACED",
+      "exit_criterion": "Provide an authored state trace to each intended world ending, plus missing-character and missed-evidence traces; every required flag has an available producer.",
+      "resolution": "Initial districts, all 24 mission deltas, three evidence producers and fallback review windows, route preconditions before final commitment, all-failure coda. Concrete maps/text still require implementation and testing."
+    },
+    {
+      "id": "L06",
+      "issue": "Fixed-team, rotation, equipment-first and relationship-investment strategies have not been compared in the combined game.",
+      "status": "SCHEDULING_TRADEOFF_TRACED; COMBAT_BALANCE_AND_HUMAN_EXPERIENCE_UNVALIDATED",
+      "exit_criterion": "After complete rules integration, compare identical starting states and seeds, resource costs and outcomes; observe human play. Isolated relationship checks cannot establish this.",
+      "resolution": "Fixed and rotating rosters checked with fatigue, XP, supplies, purchases and camp budgets. Outcomes supplied as success; no optimality or win-rate claim."
+    },
+    {
+      "id": "L07",
+      "issue": "Permanent-death preference remains undecided; current default is recoverable serious injury and signalled permanent departure.",
+      "status": "USER_CONFIRMED",
+      "exit_criterion": "Confirm before authoring permanent-loss character branches; technical design should represent presence/loss states without assuming all characters always exist.",
+      "resolution": "User: continue after mistakes; ordinary and standard recoverable injury; highest difficulty permits disclosed permanent departure; basic actions stay under player control."
+    }
+  ],
+  "production_readiness": "Core cross-system contracts can guide implementation. Do not present the paper traces as a finished game, verified tactical feasibility or proof of player enjoyment.",
+  "current_revision": "0.11-player-choice-review",
+  "current_design_authority": "data/final_design/",
+  "revision_resolutions": [
+    [
+      "隐藏危险与完整预告",
+      "天气简报和开战后的危险预告免费公开；原扫描仪改为远程停机探针，付费收益为合法的远程1工量。"
+    ],
+    [
+      "三套养成只加伤害",
+      "等级解锁办法，装备改变路线/工量，关系改变协作方式；基本攻击不随等级倍增。"
+    ],
+    [
+      "为看故事挤掉全部恢复",
+      "短谈每晚两段免费；只有实质决定占项目；8条个人线的关键项目合计8个。"
+    ],
+    [
+      "人物收束全挤在最后三天",
+      "调整第三段开放日并排出36段个人/重点关系的可用日历；不保证所有额外生活短谈一周目读完。"
+    ],
+    [
+      "设备不开就无法救人、救不到人就缺技能",
+      "各关都有通用交互与停机开关；角色加入按主任务结算，不以成功为条件。"
+    ],
+    [
+      "低信任无法合作就永远不涨信任",
+      "基础贡献也能产生守约凭据；只有高级协议需要双方60信任。"
+    ],
+    [
+      "互相搬运刷信用和AP",
+      "同目标贡献去重；信任在任务结算发；所有协议支付双方AP，放下不触发奖励。"
+    ],
+    [
+      "M17修复和隔离收益完全相同",
+      "隔离更近工量更少，但失去排水恢复并降低地区上限；修复保留完整设施潜力。"
+    ],
+    [
+      "缺席人物仍在过场说话",
+      "明确临时伤势、永久医疗离队、战役后换职业三种状态；现场、来信、尾声分别处理。"
+    ],
+    [
+      "证据原件与后期公共副本等价",
+      "早得事实可提前履约；晚核查仅补路线资格，不撤销已经违约或错过的人物选择。"
+    ],
+    [
+      "工厂北侧资料被墙与两台机器封死",
+      "增加一个实际可走的侧门，路径检查覆盖所有任务对象，未用“默认有路”替代。"
+    ],
+    [
+      "有工具但缺少合法目标",
+      "每关增加显式漏口，轻/重障碍与电源插口加类型，后期关卡加入灭火器开放后可用的火源。"
+    ],
+    [
+      "学习协议被现场条件一并锁死",
+      "学习与使用分开；现场按动作标签、危险类型和实际保障判断。"
+    ],
+    [
+      "关系破裂覆盖职业选择",
+      "职业去向与关系后记分开存储，避免一个结局标签包办所有后果。"
+    ]
+  ],
+  "prior_findings_note": "Earlier finding records describe the historical v0.2/v0.3 audit; current content status is specified in final_design and revision_resolutions.",
+  "whole_campaign_contract": "data/final_design/whole_campaign_contract.json",
+  "latest_resolutions": [
+    "Separate epilogue career from relationship overlays",
+    "Separate protocol learning from situational field permissions",
+    "Explicit target tags, flood sources and post-unlock fire encounters",
+    "Single settlement source for money, XP, world, injuries and contributions",
+    "Preserve crafted/packed/consumed/returned inventory conservation"
+  ],
+  "formal_development": "deferred_by_user",
+  "player_experience_contract": "data/final_design/player_experience_contract.json",
+  "player_experience_scope": "Offline evaluation adapter and guide-contract checks. M01 acceptance uses existing actual tactical results; twoM06full-map runs feed appraisal under an explicitly stipulated voluntary promise. Does not test a real tutorial interface, generated artwork, clinical psychology, all36maps with new appraisal or human enjoyment.",
+  "integrated_review_contract": "data/final_design/integrated_review_contract.json",
+  "integrated_review_scope": "具名阵容战术、评价所有者、整局资源、帮助调度和防刷取的离线整合；不声称真人可玩性通过。",
+  "approach_review_contract": "data/final_design/approach_review_contract.json",
+  "player_choice_contract": "data/final_design/player_choice_contract.json",
+  "design_version": "0.15-player-ready",
+  "latest_review": "../../outputs/full-audit-review.html",
+  "authored_this_revision": [
+    "全域规则与覆盖审查",
+    "装备、医疗、工坊投资修正",
+    "关系归责与重新协商",
+    "存档状态清单和拒绝操作原子性"
+  ],
+  "player_ready_review": "../../outputs/player-ready-review.html",
+  "authored_scripts": "../../outputs/character-script-final.html",
+  "formal_development_started": false
+}

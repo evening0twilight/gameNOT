@@ -1,0 +1,65 @@
+# Local engine distributions and editor-generated caches
+/work/toolchain/
+**/.godot/
+**/__pycache__/
+*.py[cod]
+.DS_Store
+
+# Local build products; platform/export policy will be decided in technical setup
+/build/
+/dist/
+
+# Reproducible caches, local reports and credentials
+**/venv/
+**/.venv/
+/game/.godot/
+/game/docs/engine-checks.json
+/game/.godot/export_credentials.cfg
+/.env
+/.env.*
+!/.env.example
+/archives/local/
+
+# Byte-identical originals restored by tools/evidence.py
+/outputs/approach-campaign-results.json
+/outputs/approach-matrix-results.json
+/outputs/cooperation-frontier-challenge.json
+/outputs/cooperation-value-campaign.json
+/outputs/cooperation-value-matrix.json
+/outputs/growth-identity-campaigns.json
+/outputs/growth-identity-field.json
+/outputs/growth-identity-matrix.json
+/outputs/growth-identity-pre-upgrade-campaigns.json
+/outputs/growth-identity-pre-upgrade.json
+/outputs/integrated-campaign-results.json
+/outputs/integrated-party-before-mo.json
+/outputs/integrated-party-matrix.json
+/outputs/ordinary-player-after-campaigns.json
+/outputs/ordinary-player-after-routes.json
+/outputs/ordinary-player-before-campaigns.json
+/outputs/ordinary-player-before-routes.json
+/outputs/ordinary-player-growth.json
+/outputs/player-choice-campaign-results.json
+/outputs/player-choice-matrix-results.json
+/outputs/player-ready-campaigns.json
+/outputs/player-ready-matrix.json
+/outputs/predevelopment-campaigns.json
+/outputs/tactical-full-witnesses.json
+/outputs/tactical-matrix-results.json
+/outputs/training-campaigns.json
+/outputs/training-general-campaigns.json
+/outputs/training-mentorship-18.json
+/outputs/training-mentorship.json
+/outputs/training-planned.json
+/outputs/training-screen-initial.json
+/outputs/training-screen.json
+/outputs/training-specialty.json
+/work/approach-review/v09-matrix.json
+
+# Disposable browser profiles from historical preview generation
+**/chrome-profile/
+/work/research/chrome-check/
+
+# Uncompressed capture intermediates; MP4 previews and receipts remain tracked.
+/outputs/*.avi
+/outputs/product018-motion-frames/

@@ -1,0 +1,8 @@
+{
+  "witnesses_replayed": 276,
+  "player_commands_checked": 7392,
+  "enemy_environment_steps_replayed": 1314,
+  "strategy_policy_called": false,
+  "result": "PASS",
+  "boundary": "Independent command legality/replay, same authored rule model; not independent human play or production implementation."
+}

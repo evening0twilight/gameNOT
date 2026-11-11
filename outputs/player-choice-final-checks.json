@@ -1,0 +1,25 @@
+{
+  "version": "0.11",
+  "passed_count": 87,
+  "result": "PASS",
+  "runtime_unchanged": true,
+  "design_sha256": {
+    "facilities.json": "85d32c889a5835d385bfe4decc3bbcbc94c638c2a33d35967e004c29ef7b97c4",
+    "integrated_review_contract.json": "10187719d53255a03292020e3807e178214ca249bb2f91705f56589e4ace7aac",
+    "tactical_review_contract.json": "c050d86adf6cb5a4ee018bb702407f7a71b050f56d24ab98ab3e718dbf26061d",
+    "boards.json": "d895aca21b760fb1d71cb86f73f9c7fc8eaa6d81bd92ab3104c0eec3b5a8d5a0",
+    "player_experience_contract.json": "584dcc38ebd7edaf6be455b53322ccf458e80a85c8dca3d777ce1a51f0eed086",
+    "whole_campaign_contract.json": "81ec19b1c2e675a48e2b95eb7a16ae861de739aee338e29fda8771b3beb2a9c3",
+    "stories.json": "932e3f68d1d71869a7bc3ea0b20b8a3595182f6c47af84a907154e9d240a84ee",
+    "player_choice_contract.json": "bc9268a91bdf3c62bdc9c5bb5a2efd49e2158f1318f1b95b32bfc23cb4de115c",
+    "relationship_edge_cases.json": "236e4d89ce6564137907f201f954c61507eb7c87cbb676ebf9ff881c1959e2d4",
+    "enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+    "system_audit_contract.json": "91cea80e9470cb0a64682122907fc61e36be29298c67c1d9b6320b4886c62e5b",
+    "approach_review_contract.json": "591b52f30a343dc121d891594ff9e73ad90e438d88fd0892b0cd6cf48c81613a",
+    "integration.json": "a059262d30e93632905c4dbe26d5bd5a2fab48993f740e87ed063291ec3750f2",
+    "abilities.json": "13450f76969357843fe8ba083750cba9bddabf1889357efe9164396910d41534",
+    "combat.json": "4c5f771601ad794354c82ddce0ac5760c7a63ddab4a9bcb74d6f1f5267b4a686",
+    "equipment.json": "5b75dc1a307ef29be31ebf35f65874a08868c4d0ee84045c7280db2086b8a609",
+    "progression_relationship.json": "018979600157e15e87245f11021932c33e4866fd64bffa05d823fcab5f8b9d37"
+  }
+}

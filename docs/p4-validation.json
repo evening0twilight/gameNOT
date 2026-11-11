@@ -1,0 +1,571 @@
+{
+  "date": "2026-11-06",
+  "scope": "P4 product acceptance candidate; no release approval",
+  "p3_user_acceptance": {
+    "date": "2026-11-06",
+    "user_statement": "通过，进入下一阶段吧。",
+    "phase_acceptance": "P3 accepted by user",
+    "next_phase_authorized": "P4",
+    "accepted_package_sha256": "ce7c6cb849394567475d959bedd51af49c9f595f0004ffd641829bcc79ec47c9",
+    "measurement_detail": "User gave stage approval; no individual hardware, DPI, performance or multi-player measurements were supplied."
+  },
+  "test_markers": [
+    "RULE CHECKS 1172",
+    "TEST_RESULTS: 33 passed, 0 failed",
+    "CONTENT_TEST_RESULTS: failures=0",
+    "P1_TEST_RESULTS: 166 passed, 0 failed",
+    "P1_SYSTEMS_RESULTS: 179 passed, 0 failed",
+    "UI_LOCALIZATION_RESULTS: checks=422 failures=0",
+    "VISUAL_P1_RESULTS: checks=544 failures=0",
+    "CHAPTER_ONE_RESULTS: checks=132 failures=0",
+    "P3_PATH_RESULTS: missions=36 failures=0",
+    "P3_RULES_RESULTS: checks=1789 failures=0",
+    "P3_SPECIALTIES_RESULTS: checks=67 failures=0",
+    "P3_STORY_PROOFS_RESULTS: checks=56 failures=0",
+    "P3_CAMPAIGN_RESULTS: campaigns=1 failures=0",
+    "P3_CAMPAIGN_RESULTS: campaigns=1 failures=0",
+    "P3_CAMPAIGN_RESULTS: campaigns=1 failures=0",
+    "P3_CAMPAIGN_RESULTS: campaigns=1 failures=0",
+    "P2_PRESENTATION_RESULTS: checks=92 failures=0",
+    "P3_PRESENTATION_RESULTS: checks=178 failures=0",
+    "P4_PRODUCT_RESULTS: checks=1027 failures=0",
+    "P4_HISTORY_RESULTS: checks=56 failures=0",
+    "P4_PRESENTATION_RESULTS: checks=65 failures=0",
+    "P4_PROFILE_RESULTS: profile=no_training days=24 failures=0",
+    "P4_PROFILE_RESULTS: profile=few_sides days=24 failures=0",
+    "P4_PROFILE_RESULTS: profile=fixed_favorites days=24 failures=0",
+    "P4_PROFILE_RESULTS: profile=injury_rotation days=24 failures=0",
+    "P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ \"success\": 72, \"partial\": 0, \"failed\": 0 }",
+    "P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ \"success\": 72, \"partial\": 0, \"failed\": 0 }",
+    "P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ \"success\": 72, \"partial\": 0, \"failed\": 0 }",
+    "CHECK_OK: current development automated checks; P4 Windows native acceptance remains separate",
+    "WINDOWS_EXPORT_OK: /Users/a1-6/projects/person/gameNOT/build/windows-p4; native Windows tests remain required"
+  ],
+  "matrix": {
+    "paths": 216,
+    "success": 216,
+    "injury_free": 216,
+    "specialties_or_equipment_used": false
+  },
+  "continuous_campaigns": [
+    {
+      "mode": "shared_control",
+      "days": 24,
+      "ending": "shared_control"
+    },
+    {
+      "mode": "distributed_rebuild",
+      "days": 24,
+      "ending": "distributed_rebuild"
+    },
+    {
+      "mode": "evacuation",
+      "days": 24,
+      "ending": "evacuation"
+    },
+    {
+      "mode": "failure",
+      "days": 24,
+      "ending": "evacuation"
+    }
+  ],
+  "profiles": [
+    {
+      "profile": "no_training",
+      "days": 24,
+      "ending": "evacuation"
+    },
+    {
+      "profile": "few_sides",
+      "days": 24,
+      "ending": "evacuation"
+    },
+    {
+      "profile": "fixed_favorites",
+      "days": 24,
+      "ending": "evacuation"
+    },
+    {
+      "profile": "injury_rotation",
+      "days": 24,
+      "ending": "evacuation"
+    }
+  ],
+  "gui_host": {
+    "human_acceptance": false,
+    "kind": "automated rendered legal-command replay",
+    "platform": "macOS",
+    "records": [
+      {
+        "actions": 47,
+        "mission": "M01",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 35,
+        "mission": "M02",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 39,
+        "mission": "M03",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 34,
+        "mission": "M04",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 30,
+        "mission": "M05",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 44,
+        "mission": "M06",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 40,
+        "mission": "M07",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 33,
+        "mission": "M08",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 45,
+        "mission": "M09",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 30,
+        "mission": "M10",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 32,
+        "mission": "M11",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 31,
+        "mission": "M12",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 36,
+        "mission": "M13",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 29,
+        "mission": "M14",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 32,
+        "mission": "M15",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 39,
+        "mission": "M16",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 37,
+        "mission": "M17",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 27,
+        "mission": "M18",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 35,
+        "mission": "M19",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 26,
+        "mission": "M20",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 30,
+        "mission": "M21",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 27,
+        "mission": "M22",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 48,
+        "mission": "M23",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 48,
+        "mission": "M24",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 25,
+        "mission": "S01",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 32,
+        "mission": "S02",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 40,
+        "mission": "S03",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 29,
+        "mission": "S04",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 39,
+        "mission": "S05",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 37,
+        "mission": "S06",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 31,
+        "mission": "S07",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 31,
+        "mission": "S08",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 25,
+        "mission": "S09",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 24,
+        "mission": "S10",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 24,
+        "mission": "S11",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      },
+      {
+        "actions": 30,
+        "mission": "S12",
+        "ok": true,
+        "outcome": "success",
+        "primary": 0,
+        "screen": 1
+      }
+    ],
+    "windows_acceptance": false
+  },
+  "historical_hashes_verified": 23,
+  "windows_native": "pending_P4_user_test",
+  "reference_hardware_metrics": "pending_individual_measurements",
+  "H01_H04": "pending_real_player_evidence",
+  "final_art_audio_editorial": "pending_human_review",
+  "release_ready": false,
+  "build": {
+    "pe_architecture": "x86_64",
+    "exported_pack_host_smoke": true,
+    "design": "0.18-predevelopment",
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "windows_runtime_tested": false,
+    "git_head": "7a7fee3a284a632efd62988095c016c7f2697b7a",
+    "working_tree_dirty": true,
+    "sha256": {
+      "night-tide.exe": "93e7651eb311a69afa92a469e49170726bcb28f59fa7c3d8ab695961ac1fd464",
+      "night-tide.pck": "5c83ef3abab81ccf5685c9cea18169157e2706d89f479bd534dca22c739d8872"
+    },
+    "runtime_revision": 5,
+    "source_sha256": {
+      "game/assets/audio_p4/ambient_camp.wav": "db3bc61c50c28c817505e74f2b1be248a06225c6ab7f8c2eb9fb3120a3cf57ee",
+      "game/assets/audio_p4/ambient_field.wav": "b4c1b0fea0057785ff9cc9f80e083ee126225fd20fe8f5e79c74b37f4db8f214",
+      "game/assets/audio_p4/attack.wav": "5549f2a51d36da6b76a0b5d365b96b14d954d1a5ee195b8298065236cc8bf136",
+      "game/assets/audio_p4/drop.wav": "6fb8f9d450998a7220fcb064afebef2d8f018aa12046e9ab0656dfa7158de09a",
+      "game/assets/audio_p4/end_round.wav": "78b5032884d499fe69d535232be8d59840807b615658d870804755ef8ece6091",
+      "game/assets/audio_p4/ending.wav": "904de5b4cb5c3e65ca863798183abb18f4f4fb2aa21e208277011394ec772050",
+      "game/assets/audio_p4/extract.wav": "4a272cc3d92d81590583acb5d57df0a1fbb0a788dd38c1d2eda993792ba8e11d",
+      "game/assets/audio_p4/injury.wav": "f6f62ede0f3a7551e42f0842ca05242079d001dc17641f75c114bdc68f9b76eb",
+      "game/assets/audio_p4/machine_hauler.wav": "9ec7f68b57c543b2a2ac4d13cc213c20156ecb9c2e369eefddf19b6fc672bdc9",
+      "game/assets/audio_p4/machine_relay.wav": "f4a64ba7692fcffcc0689c7c4d9c8e1164368f9b894aab9fdcdd58ae689ef2f6",
+      "game/assets/audio_p4/machine_scout.wav": "074c021b5db9d32943b4a4c1539adc8edef52ef0ff86b4bb3d302026c13c0b38",
+      "game/assets/audio_p4/machine_sentinel.wav": "0de7177a3487f235d60ef1f5d9cd808d78dcb5f7c4ecc0363dd62208fd812c77",
+      "game/assets/audio_p4/machine_skimmer.wav": "839b6f4ac86b687008f9a920fa2a00dd9606a257a39c18f0eaf31940cc0779df",
+      "game/assets/audio_p4/machine_welder.wav": "46d972f153aa925392aa86792e40d81a3a80f29715d75820c8ba28acc1cb2ccb",
+      "game/assets/audio_p4/move.wav": "2ebdaa8a64018846fb53449e56073f67a4287d7217a33ece2287d416a680fe9d",
+      "game/assets/audio_p4/objective.wav": "661c416aee2186213fbede0d4d736d04da9e28be08e73e5f508fa08ffc514a27",
+      "game/assets/audio_p4/pickup.wav": "24bd48c2173279e26d59e38acf222eac3c4c58cf8ccc69cff1b58b5df748f981",
+      "game/assets/audio_p4/push.wav": "bd0354461812a54a03b1e0c60091ad33387070e867914560766f7455668afb15",
+      "game/assets/audio_p4/stabilize.wav": "3556817169a1a1fef5eb50a734e7db04ffb3046ecbc47011b0b6145dc8414368",
+      "game/assets/audio_p4/ui_cancel.wav": "428619fb751512c6047329ace231cab583dbf7fb24a347be95027530043a5756",
+      "game/assets/audio_p4/ui_confirm.wav": "08c228f91102eb3e52c28fa21ac9a001d5cf6c0dd736c09ff6563517e5ae2d85",
+      "game/assets/audio_p4/ui_error.wav": "eb0ec72dfb4b72c29a49fa12202c41f04180db6622ca07b4bc64ea2ea59a8bf8",
+      "game/assets/audio_p4/ui_focus.wav": "2d9a745f0b1cb35e73bb4ebd6486268b2fd8d15f87d4e2c65c20eda6c8df39d1",
+      "game/assets/audio_p4/ui_page.wav": "a6d0dbdc755865579cdfdb4fe8a715d975a5be3d6a50a91bdb9da292bd8d2c80",
+      "game/assets/audio_p4/ui_save.wav": "9fccda0fbd088aebc3257cd565a33d1374d4ef4a928dfe06280e4c943a868c12",
+      "game/assets/audio_p4/work.wav": "b436dd4190ccb329c1ae228859fdc1c506a9fe45200c8aade3f21e85da1daffb",
+      "game/assets/fonts/OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+      "game/assets/fonts/noto_sans_cjk_sc_regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "game/assets/visual_p1/crew_portraits.png": "211b632e309bc74a186423fc11c5870fab04f81e2b2a44a6b43a9048e4c2db9f",
+      "game/assets/visual_p1/harbor_camp.png": "6a6235c9f352d89b70525577eb6b0ad5500347cad441bb56fd4cd0d287dbc762",
+      "game/assets/visual_p1/rescue_sprites.png": "9b6d171f782aa6eb2aba10f46ee4c943e1a61028a4c5cff1681fe9c13debd18f",
+      "game/assets/visual_p1/support_responder.png": "163126e30bc30b0d8ef0337e1ea37f9606a138ea1f4a78415418d69fc23bcaa5",
+      "game/assets/visual_p1/terrain_atlas.png": "a9715b1d68b2d1c0fb39aabbeb38a5941078c4c828bcf816dc2b82ba062cff7e",
+      "game/assets/visual_p2/chen_portrait.png": "50b796ecd00802f6e231904809cfab39a1cdd260de3651f6c2a67df47081f06c",
+      "game/assets/visual_p2/chen_sprite.png": "bf11574a8e72ebf5229dde09c07c93af46c47e43e330a97a37820f81ece17796",
+      "game/assets/visual_p2/environments.png": "b7ca27b17e506fdadb21f72f33e133ba4f4568027c351903b5916d5f7641900e",
+      "game/assets/visual_p2/machines.png": "7af37568cbf3d920135a81a428bb3b27c3fe961801cef814353243f658f6d6b6",
+      "game/assets/visual_p2/objectives.png": "5322e7f01986de8024b88299cd99d34097d4a61150f9c86ba93acc9c1c1361ee",
+      "game/assets/visual_p3/crew_portraits.png": "809efd1ddd696eb08a67983f7d245a24908f0b608d746ece21fe1927ccbb3414",
+      "game/assets/visual_p3/crew_sprites.png": "73ae95a3b3f0c29d3296e35a285777448eafc871d89dd24dfca54cf28160be2b",
+      "game/assets/visual_p3/crew_sprites_source.png": "e3502f76dbf8458ed29854edfce212d14852e29ccc15ae9e1b62273ee9f050f5",
+      "game/assets/visual_p3/environments.png": "ca18bfe4b6064e5994528ac4f254c4468e9cf07662421804cb36866529f230b6",
+      "game/data/campaign_coordination_contract.json": "f1eae32a9c28d111a6cbd5154ade2f238881f1b3dd13b0a2d74b81f9e1328773",
+      "game/data/campaign_economy_contract.json": "a0a60f456c853b56d543f77ae1a3648579eb40ba474c9c2680e766a6bcf789da",
+      "game/data/campaign_flow.json": "62ad3710b0e052551825ce7704d10bdb694ca53b09b8a5512c4675cbd9788772",
+      "game/data/campaign_world_contract.json": "d38b514e60a54589a890a7d3fe24cb19cc1f2b552229d76b67c54aa6c7d689b6",
+      "game/data/characters.json": "8b71fd1cd460da591d11b2fcb61d607ed2793e267e8cf8df23297eb895d972d9",
+      "game/data/confirmed_experience_policy.json": "79c943fcaf92ff2fd4ecdbf39d06f16a1409f509e2169055ad0b650762648413",
+      "game/data/enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+      "game/data/equipment.json": "a9135be50fcad91a5a9873cdd33128a7733ce2d275e3b84ec46e75d9814209df",
+      "game/data/event_contract_example.json": "857dd9bf93e846464afb104d1cc46df416337a1bbdfc8ef6557b8211fec31a48",
+      "game/data/final_design/abilities.json": "8653d237f2a73f88cfef2e731eb22187ff251e543fe04ccee324a46a369eb875",
+      "game/data/final_design/acceptance.json": "0b08a7f4ecd913eab7103aee7072c3f7f02009763709071558d57ddf9851a0cc",
+      "game/data/final_design/approach_review_contract.json": "6cb65a61f3bfd7ef3f09dcfb55a632a63bf786a6d16ff5f58024fcd140634dc2",
+      "game/data/final_design/boards.json": "80d5050519b04549268a4d46fbea608725fbb79c208769bbfd4a22d7a9c63855",
+      "game/data/final_design/character_scripts.json": "eafee9a799a3598e460bd26239dc6735435d70139e877217c376969205f100a9",
+      "game/data/final_design/combat.json": "33daa21a56ad76026a49bf35c0c98e8672bbc5e52a25af2545cb89c407289031",
+      "game/data/final_design/design_manifest.json": "94a140d60a14788dbd320e384500e425262c7ad8d254bb00e8c314fe28004cec",
+      "game/data/final_design/enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+      "game/data/final_design/equipment.json": "4339095d58912300eb6835b7d40756d8d63481c9848369e40b606c52b8454141",
+      "game/data/final_design/facilities.json": "b7a1774db0358850e1a3c050cd993963f6d4c7a53f19a739dea3914355709e7a",
+      "game/data/final_design/full_audit_contract.json": "6de56925ccbd4bf0fe184b5be8054ce9403c1908c2b299e7a7dfcdb5b9ab7a48",
+      "game/data/final_design/growth_identity_contract.json": "f045b2ff0954bb9de4dd5409103074c64055e0783304bcb46070dfcb056ccf6f",
+      "game/data/final_design/integrated_review_contract.json": "7c663fa46ade1d69d51527a99af17b4336bdaf58447a332428760c759f7bed48",
+      "game/data/final_design/integration.json": "c9b1e8230f5ebe56587b4027c0354499d95f16c2da830c39a4dc6fc829aa74f7",
+      "game/data/final_design/ordinary_player_contract.json": "1b7fa4ef7457c659dab5c30559db1753b1e41fb5e4bd105742bf30289226e44b",
+      "game/data/final_design/player_choice_contract.json": "daca55c228bfdda51251de3c8453a277911fa5da1af8a6f63d32ba48a05203af",
+      "game/data/final_design/player_experience_contract.json": "1aa7895a216e0f52fc41afd6fd6485e3a45a0d7b018fb355f7b9db00d919182d",
+      "game/data/final_design/player_flow.json": "62ad3710b0e052551825ce7704d10bdb694ca53b09b8a5512c4675cbd9788772",
+      "game/data/final_design/player_ready_contract.json": "69ba1905c7038e7605d75de2afab0058aa55a3f14e7d730813e5cb6c32da87ee",
+      "game/data/final_design/predevelopment_decisions.json": "e1d8cc41e77ec4aa121e8d7234ac488149740484eeba1beff2412a33e58c2a04",
+      "game/data/final_design/production_scope.json": "e980fdfb7b4202b23949df2674b0f91ebf5eb0addc3b6166cedd8f6b3a2909c6",
+      "game/data/final_design/progression_relationship.json": "f4b467aa82fb60ff01447253d4a3da8f187e3e26ab2fe83a763c608b990036a4",
+      "game/data/final_design/relationship_edge_cases.json": "3fab447e2c8aa7af07e1041eecd5c053e69cf367b35f8d1c16681b06407d1630",
+      "game/data/final_design/release_baseline.json": "1f74768ce8dfa5ebf43567e1e6dc6c4cd9a3db6d0ad22774aa943b2f8a6d6a75",
+      "game/data/final_design/release_scope.json": "f4ac9f21673f3290ea9ce6627de2ec575e3ebe0de0d3c8e9232f8f2e14e084c3",
+      "game/data/final_design/stories.json": "1e48cfdcda5dc282957cba6ab5792ec235be9e56d1d38d8fce6aca23dc0b5b0a",
+      "game/data/final_design/system_audit_contract.json": "a197d32753872c49999ca46cdbc6b693d9d6cc49cb53c5a8e1a31b7f533eb99b",
+      "game/data/final_design/tactical_review_contract.json": "132120d0fc23335a3f09043660d7031593a605db0e1a3aaf567bd720c6378185",
+      "game/data/final_design/training_value_contract.json": "8840fa8e5ba4308b81ad85181def8c5ff6772c162f61f08790fc0182e65eb0a3",
+      "game/data/final_design/whole_campaign_contract.json": "feb03d9ded7b571ff85ff4ebedf4da21048a3cdf195faebca3448bac963e2ec4",
+      "game/data/initial_relationships.json": "315ef69cf7f624bd395ea6f780c33db95df89213f85537300fe1467171af8a76",
+      "game/data/localization/zh_CN.json": "aa7a7f9cfff1d9aa85b0e1fb53e79f67f5abe4769d3b8af743ad8c51c564b285",
+      "game/data/mission_registry.json": "ed5d08192557008f53c4497e2b5464a17915f1d0bceb2cbfef65a9f6c2177002",
+      "game/data/product.json": "7a77bc9371ca7980a1d5a1471b7eca9f2fc952d66423d47055c19b05bfda78e4",
+      "game/data/requirements.json": "29e4e75e4a53bec3f2bb28f5a3cac342a9f2423fd7acb6324dfd2f76bc654d75",
+      "game/data/rules.json": "bfac9922bd6a9fcea32bab9f202e6c82e9a8f512f47428fcc7b570821a04a26b",
+      "game/scenes/main.tscn": "a7ff59318635c8c9578f59b7773597fae1147729221166a56fa37ea77032bb98",
+      "game/scripts/app/main.gd": "6ca610943baf85d12f1a6e98a4e8db8a202e954149db8dcfa63230845b7ac117",
+      "game/scripts/app/session.gd": "975d52a179a80c6476620f8de8c11eeb00a8e6eab656d29c7c446ab5d4b22427",
+      "game/scripts/domain/campaign_rules.gd": "18a588bb9e97979a1f80dd24d16894656282c462b27f898369231050b7db7e40",
+      "game/scripts/domain/campaign_social.gd": "f6e2f5e67e23c250986d2848fcb280012ec8332a48e24d4373be40ce6d27aa29",
+      "game/scripts/domain/chapter_hazards.gd": "c2f56e4ddc11f2b7a187645338d20a4c4b434ba45da2a2ac6be1a2bdb9b87374",
+      "game/scripts/domain/chapter_one.gd": "cb3db8a59257c06d8600f43a28bb9cc3b7c62bff07551b085d8b6a93721081fd",
+      "game/scripts/domain/chapter_stories.gd": "59007f956e22791e28bf36fd0f1c405352a1c4fd9901b33cc912453925cdee81",
+      "game/scripts/domain/full_campaign.gd": "8e9eccc33b58168982808e91883542288cf094dc6e2ea950f9eab90538e417ab",
+      "game/scripts/domain/history_repair.gd": "1f75e6b175d351b75c03af434bc0b8b796653657268d71ac17ae8e50ced6ff26",
+      "game/scripts/domain/p1_protocols.gd": "30e141c49d9cc07ce25e52d92fb677a0519f06e957a7df361d0e05e7a735f022",
+      "game/scripts/domain/p1_specialties.gd": "b1a1620ec1175f42c654340dee25ea8ff18131e438be7b710535187ce197344e",
+      "game/scripts/domain/product_systems.gd": "3c56254c6e2e52fbadfd6620436072b2ecda24dd021cca9c7febea97ce684ef7",
+      "game/scripts/domain/relationship_rules.gd": "db0cd1d250b3c55ec549bd58d0dbd8680c1139694a344322d74d38abbae227e0",
+      "game/scripts/domain/save_store.gd": "547a7699d55e48c066106e2b0bd0039144b21138b85bf911dec2bf21e53faf14",
+      "game/scripts/infrastructure/campaign_store.gd": "5cb0e7b637774e991a1e15c746a1629d4b5ef1d7132e61312a931816fe77bbd4",
+      "game/scripts/infrastructure/content_catalog.gd": "aa85d8ce63291813694f3c6ebaaa4fd85f5970e22823e0199902b32887c29a8e",
+      "game/scripts/presentation/audio_controller.gd": "643644abe1686900b5c232258ae6d080ba6aa83b6daa6a5fcf36c006d852f167",
+      "game/scripts/presentation/guidance.gd": "dc82bed6845681f436f8ff0534437674bf9529a4d9dabf7cab1ba890f8e9104f",
+      "game/scripts/presentation/localization.gd": "a08d808ccb107999e1cb8e418f3637a0cea34f5a21917fda5adb838b5f840d0a",
+      "game/scripts/presentation/runtime_metrics.gd": "edb7f6fc4905180d17e7aec6c1afb2713ae4fb0677e1c28e01a1e2837cecd4fc",
+      "game/scripts/presentation/tactical_board.gd": "5a633553e47d814a225dc2340280af87c4f5dc1e8dfa021a0654b89ff157a5fa",
+      "game/scripts/presentation/visual_assets.gd": "881775c6ecad257955e83b6eb7badd7e3c0909465eb9028fb568fc8df1bd5f2a",
+      "game/project.godot": "022a31e6f04a3e243233ecfc85ed1546a0d9167d0eb98b0346d7313f0dad49b2",
+      "game/export_presets.cfg": "0270e40e41d8e1d7fc0dcd9d30f8834affa9d992b2dd30b6c1305f0ec300daf4"
+    },
+    "test_source_sha256": {
+      "game/tests/campaign_playthrough.gd": "240d764be635c8b31e8c9e6802b920ea475d71431755db7c14b018eb2ccfa587",
+      "game/tests/chapter_one_tests.gd": "93019107753170c4aa935a99ab063be3ca8b038e52aaf6ae39bb3d35b3e50a35",
+      "game/tests/chapter_playthrough.gd": "1d29e2e45dec2f6791bb2b305de64d2b2cbba02d267e8b0794530119f3af2473",
+      "game/tests/content_catalog_tests.gd": "9a84b47833576254ca90cadd04c69d90bf1dbc6b53b33e75b23c44392dc239e1",
+      "game/tests/full_playthrough.gd": "1d453f116fcf956fa140eb5345cc46998f38e1e9e908cdfa36068393e2bd01b4",
+      "game/tests/gui_external.gd": "eb0bcf9d60ae11a5190e514f1dddd39b62f9a39922e5a39296ef30b60010b104",
+      "game/tests/p1_systems_tests.gd": "329a3eca6e5f684884478975463f953129a63f0a93f0ef3b8ac1a8e31a1d3a3c",
+      "game/tests/p1_tests.gd": "709fb360f4fead7bad0d2a6814feefea7ffd4a549a03d7d2432aa04208ef06b7",
+      "game/tests/p2_presentation_tests.gd": "17c1408f0477ce73ea2769559b52a86f8f56d8194b7e766ebc734b7b53221150",
+      "game/tests/p3_gui_replay.gd": "38c58c073d9ea78acbe043e5082be98dc74667a312f1af89cdc3432e0224da23",
+      "game/tests/p3_presentation_tests.gd": "8891e60831efd6c479825caee71db07327f0a7a17aada495cf505282247c2461",
+      "game/tests/p3_rules_tests.gd": "4650456d8395ac28af5e2736920ba6c316766c8e2a54fec24b03b5fe7ac1e03a",
+      "game/tests/p3_specialties_tests.gd": "c1e54fdbc648be74b0436e303cb83d242003e77c0db1326f57626a5981fbd91d",
+      "game/tests/p3_story_proofs.gd": "660f73dcd129233e7bc96127b9ac5690cecd25f3cb1f389f36d6fd2f43dcea88",
+      "game/tests/p3_visual_review.gd": "a3f68cfa061b7072c0f0062278293b6f254cc7bca9a5b9ff8c0ab218a469d69f",
+      "game/tests/p4_campaign_profiles.gd": "7eced9d7754c24a2cb5497b59412221fd891730670a549afc112ebc1a11bac1c",
+      "game/tests/p4_gui_replay.gd": "cd6c0ed2c919b61175e71025916ebda3f9c18ef63ae5208cd279e888f396dc8a",
+      "game/tests/p4_history_tests.gd": "fd29cb1eed8b0b50473fce222232322b0a3e6959cc29d7df0edec855830e4854",
+      "game/tests/p4_matrix.gd": "9984f4aa0fdc69791ceb8bc2b79280158fcf8112e075140311158d55d6d805e1",
+      "game/tests/p4_presentation_tests.gd": "369561199f0088297562d8241f01bc90cb495679cb5d7e957d12e9d4818c0b9d",
+      "game/tests/p4_tests.gd": "67d620102f277306e1736d17b36b62f9964ad0fdfa75ea7d32eea29b9916440e",
+      "game/tests/p4_visual_review.gd": "a6e00e86a4f1ea5c1a21564bd25935b08283935067542aa0d2e57901918bbfa0",
+      "game/tests/run_tests.gd": "9cd7669c5b4b5c2901ed9c92a97ca18e1665f6ce81f99835d6235f47d15e2dfe",
+      "game/tests/ui_localization_tests.gd": "f24682a2ba980b18218d66e7bbc50d37486e803ad0938045dbead6aac9929597",
+      "game/tests/visual_p1_tests.gd": "fd935a92620fdae9901b5fa2c061613b8035f144b0052ddd2596a93615df1ab3"
+    },
+    "evidence_sha256": {
+      "outputs/p4-build.log": "48c83217a649b4c4cf3a0b273ea77b96e36293251fab8df140fa198447ea0a74",
+      "outputs/p4-path-exploration.json": "fed4ff148a6f4f95dfb859736cd2f2e93c236e5e1a07ddd2b80e0a8747f745cc",
+      "outputs/p4-campaign-paths.json": "e9c9f2fe57195b3f15a6113536207a2b3ad7991d7b20ce6c66a6a8c966a9c5ca",
+      "outputs/p4-gui/replay.json": "07125c8aea6fe7ad42067b6a92c5798559a2cb575b284cc3973ea23a2269b8c4",
+      "outputs/p4-visual-review/record.json": "3bb2944d8ceaaeb44c42ff5123cab03f9e0d62b8ac7a62e86f561c0ba6ec4857",
+      "docs/p4-preserved-files.json": "de914d5152149564f6af9295a783a199a206f390f672515c707a5a4fd60ec7d5",
+      "docs/p3-user-feedback.json": "f101d530032f500ca878b3ab675d665690c27e6a7ca457e144b043c67d9669ec",
+      "docs/p4-audio-assets.json": "202ecc497f3621bd96fe29abb4b3a56cffef7ac8ffe0cc5352e20b187f0dadda",
+      "outputs/p4-matrix-relaxed.json": "3cb10340a613c4759375cafdd64cee696a8bc2c19e68c0410b24697c08f8d14c",
+      "outputs/p4-matrix-standard.json": "58d0b936fb346856e91e29276dabcda7fd17e5732b73efa76eff6e339195d822",
+      "outputs/p4-matrix-hard.json": "5c732c4836c53197be142aae1fadbc0db6d9b4139c8a7939286cfdd8ee38a10a",
+      "outputs/p4-profile-no_training.json": "9628d2eb4597f914818e9bd5f8bd7c3017ebcef34b13a37c5aec69dcc44177cc",
+      "outputs/p4-profile-few_sides.json": "8dc46e7c681b495032d94c9b709895958066db63256e3fc1ee688674c0fef8b3",
+      "outputs/p4-profile-fixed_favorites.json": "850e08227af3c472295366b4f1b4427e98e9a86b54ef0e1f39d4d9a3c40f68a1",
+      "outputs/p4-profile-injury_rotation.json": "ef7b21b4f6b9fcebb3c8ddd59353c4093be1d6e93a13001dbe66184395442a53"
+    }
+  },
+  "package": "build/night-tide-windows-p4.zip",
+  "package_bytes": 76687821,
+  "package_sha256": "f9a432b39368a53dcbe604499d398cbeb952e29c42c3acb68d71176f0f003df5"
+}

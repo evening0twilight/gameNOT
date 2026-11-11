@@ -1,0 +1,27 @@
+{
+  "dimensions": [
+    1280,
+    720
+  ],
+  "failures": [],
+  "native_input_acceptance": false,
+  "rendered": "hidden root with actual GPU SubViewport",
+  "reviewed_images": [
+    "title",
+    "preparation",
+    "planning",
+    "first-contact",
+    "city",
+    "camp",
+    "growth",
+    "dialogue",
+    "relationships",
+    "ending",
+    "battle",
+    "walking"
+  ],
+  "source": "production new-game UI plus actual continuous linked-campaign saves; battle and movement committed through production UI",
+  "motion_clip": "outputs/product018-movement.mp4",
+  "motion_clip_scope": "rendered frames of actual committed move, slowed playback without audio; not input latency evidence",
+  "human_acceptance": false
+}

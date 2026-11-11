@@ -1,0 +1,21 @@
+{
+  "scope": "Same three-mission automated host workflow; variable host load; not stable-board FPS or Windows acceptance",
+  "changes": [
+    "single bounded reachability flood",
+    "reuse schema templates",
+    "validate undo structure without redundant envelopes",
+    "validate new temp save fully; hash verified unchanged old file and backup bytes",
+    "reuse unchanged guidance result"
+  ],
+  "before": {
+    "source": "outputs/p4-tuning-native-host-before-optimization.json",
+    "seconds": 270.935,
+    "input_p95_ms": 2532.23
+  },
+  "after": {
+    "source": "outputs/p4-tuning-native-host-report.json",
+    "seconds": 75.085,
+    "input_p95_ms": 337.242
+  },
+  "remaining": "p95 about337ms; stable60fps, reference Windows hardware and two-hour memory acceptance not established"
+}

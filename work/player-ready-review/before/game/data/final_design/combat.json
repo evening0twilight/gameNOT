@@ -1,0 +1,177 @@
+{
+  "version": "0.14-full-audit",
+  "coordinates": "Zero-based [x,y], top-left origin. Orthogonal movement and Manhattan ranges. Board glyphs: .=dry, ~=water cost2, :=rubble cost2, #=wall, X=deep water impassable. Exits and objects are separate overlays.",
+  "turn_order": [
+    "start_round: reset 2 AP per active hero and once-per-round markers",
+    "publish enemy intents and environmental footprints",
+    "player interleaves all three heroes; no real-time clock",
+    "resolve surviving enabled enemies by stable unit ID",
+    "apply environmental damage once per actor: electricity and fire take the larger applicable value; insulation removes electricity only",
+    "advance active objective work and evacuation deadline counters",
+    "check mission success, retreat and time limit; otherwise next round"
+  ],
+  "information": "All tactical units, hazards, objectives, deadlines and costs visible at deployment. No surprise enemy attack, fog-of-war miss chance or critical hits. Future scheduled hazard footprints at least one round ahead.",
+  "stats": {
+    "hero_hp": 10,
+    "ap": 2,
+    "move_budget": 3,
+    "carrying_move_budget": 2,
+    "attack_damage": 2,
+    "push_collision_damage": 1,
+    "civilian_hp": 4,
+    "object_hp": 6
+  },
+  "geometry": {
+    "range": "Manhattan unless an explicit straight line is required",
+    "line_of_sight": "Same row/column; walls and intact shields block, occupants do not. Range excludes source includes target. Ability specifying no LOS ignores this check.",
+    "movement": "四方向加权移动，可经过站立友军但不能停在友军格；不能穿过未毁机器、墙或深水。抛索例外统一读取carrying_exception。",
+    "occupancy": "站立者与装置可共格；同格地面伤员/货物可以多件，必须按对象ID选择拾起/治疗/放下目标。每人仍只能携带1件。此规则避免搬运者倒在已有物件格时无处放人或丢物；不额外阻断路。",
+    "push": "Adjacent target, one cardinal tile directly away; no chain push. Blocked destination deals 1 collision damage to pushed enemy only. Cannot push allies/civilians into hazards or deep water. Enemies cannot push units into X; blocked push deals 1 instead.",
+    "shutdown_occupancy": "停机机器仍占格，不能把断电当作瞬移清空通路；拆毁后不阻塞。玩家在窄路需花正常移动让出停靠格，搬运者不能在队友脚下结束移动。"
+  },
+  "actions": [
+    {
+      "id": "move",
+      "ap": 1,
+      "effect": "花1AP沿合法路线移动，空手最多3点地形代价，搬运时2点；不能原地空移动。"
+    },
+    {
+      "id": "attack",
+      "ap": 1,
+      "effect": "攻击相邻机器，固定2伤害；不能攻击人，没有击杀经验、掉落或返还AP。"
+    },
+    {
+      "id": "push",
+      "ap": 1,
+      "effect": "将相邻机器推开1格；搬运机/守闸机需同轮累计两次推移工量；受阻仅机器承受1碰撞伤害。"
+    },
+    {
+      "id": "stabilize",
+      "ap": 1,
+      "effect": "稳定相邻伤员；失能队员的救援期限只可延长1轮，不恢复本关生命或AP，不能重复刷。"
+    },
+    {
+      "id": "pickup",
+      "ap": 1,
+      "effect": "拾起一个相邻且稳定的伤员/货物；每人最多携带1个。携带可移动、通用交互、稳定其他伤员、放下、交付、离场和接力搬运；不能攻击、推移、专长、其他双人协议、使用主动工具或准备第三人保护。被动担架照常。不得让携带者借协议绕过禁攻/禁推。 明确例外统一读取carrying_exception，不另保留旧版锚点限制。"
+    },
+    {
+      "id": "drop",
+      "ap": 0,
+      "effect": "将携带物放在自己或邻接合法格；不触发贡献、经验、信任或恢复奖励。"
+    },
+    {
+      "id": "interact",
+      "ap": 1,
+      "effect": "距离装置不超过1格，检查前置后增加1工量；两人可以同轮接力施工；完成后不能重复操作。"
+    },
+    {
+      "id": "extract",
+      "ap": 1,
+      "effect": "在出口卸下携带目标，记为永久送达；操作者仍留场。"
+    },
+    {
+      "id": "leave_site",
+      "ap": 1,
+      "effect": "在出口撤出自己及所携带目标，本关不再返回；最后一位撤出后结算。"
+    },
+    {
+      "id": "wait",
+      "ap": 0,
+      "effect": "结束当前队员安排，回合结束前可恢复操作；不推进世界时间。"
+    },
+    {
+      "id": "emergency_retreat",
+      "ap": 0,
+      "effect": "任何玩家阶段可发出全队紧急撤退；需确认具体后果。保留已完成成果，普通模式遗留者重伤；严峻模式遗留的失能者永久医疗离队。站立者到达紧急接驳，但未到出口者计可恢复重伤；无金钱门槛。"
+    },
+    {
+      "id": "prepare_safety",
+      "ap": 1,
+      "effect": "第三名站立队员在被保护者相邻干地准备一次保护；不是协议双方本人。指定被保护者和协议，标记持续到本轮结束，最多被一次联合动作消费。保护人移动、失能、离开相邻位置即失效。它提供第三人保护条件，本身不减伤、不增AP、不发信用；只有后续真实动作使用它才记有效支援。"
+    }
+  ],
+  "objective_machine": {
+    "work": "Atomic increments 0..required_work; prerequisites all_of validated before each increment. No work decay unless explicitly timed channel.",
+    "rescue": "stable->carried->delivered_at_exit. Only delivery completes. Civilian killed/deadline missed is irreversible lost, no replay by heal.",
+    "channel": "Interact starts active timer; at environment step advance by 1 only if fixture alive and power condition true. Interrupt pauses; destroyed becomes failed.",
+    "convoy": "Interact after blockers complete dispatches; at each environment step move one waypoint if next cell free; blocked waits, does not teleport or attack; reaches final waypoint -> delivered.",
+    "choice": "Exclusive branch committed at first branch-specific action after confirmation; common preparation persists. M14/M20 explicitly nonexclusive.",
+    "outcome": "success if every mandatory group satisfied (each group any_of its alternatives); partial if any mandatory atomic milestone completed without all groups; failed otherwise. Optional steps never upgrade failed to partial. A destroyed/lost target cannot become completed. Complete mandatory groups does not force end before player resolves optional tasks or exits; task clock still runs.",
+    "deadline": "最后允许轮仍有完整玩家行动；敌人按ID结算→环境→运输/持续目标进度→救援期限→任务时限/结算。已经送达的人员先离开危险判定，不会在同一轮被计作超时失去。最后站立者撤出但仍有失能者遗留时，先弹出明确救援后果确认。"
+  },
+  "intent": {
+    "creation": "At round start each enemy chooses a cardinal axis toward nearest active hero (distance, hero ID tie), locks origin/footprint/route; if no target use listed patrol direction. Player sees exact footprint and order.",
+    "locked": "Hero movement never retargets locked attack. Pushing enemy translates locked footprint by its displacement, retaining orientation; preview recomputes immediately. Destroy/disable cancels. Telegraphed paths obstructed at resolution stop at first blocker.",
+    "activation": "Spawn warns one round in advance; new unit appears end-round, first intent next round. No more than board reinforcement budget.",
+    "preview": "Preview and commit read same state revision; reject stale commands without AP spend. No hidden random reroll. Confirm irreversible conflict/loss only once per command."
+  },
+  "damage": {
+    "resolution": "For each source apply max(0,raw-cover-shield); same water connected-component attack hits each occupant once, not per wet cell. No friendly fire from hero abilities.",
+    "hazards": "Fire 1 and live water 2; where both coincide use max 2 environmental damage, not sum. Water alone costs movement but no damage. Shield blocks machine ray; does not block electricity or fire. Insulation blocks water electricity only.",
+    "downing": "At HP<=0 set downed, AP0, release held cargo on tile; no same-mission revival. Rescue deadline=end of current round+2, stabilization once adds1. Downed units cannot be damaged to reset timer. 失能队员不再接受HP伤害或重置期限，仅保留救援倒计时；平民仍有4HP与稳定/失去状态，二者不要混用。已携带的目标不重复承受同次范围伤害，搬运者失能后只落下一个目标。",
+    "deadline_expiry": "Remove casualty from tactical board via secondary rescue. Ordinary modes recoverable injury; hard mode long-term hospital withdrawal. Explain the difference as severity/prolonged exposure, not random refusal of rescue.",
+    "end_mission": "Non-downed heroes reset HP next deployment. Downed heroes obey camp injury recovery. Goal loss does not automatically down everyone."
+  },
+  "difficulty": {
+    "relaxed": {
+      "deadline_bonus": 3,
+      "enemy_damage_delta": -1,
+      "min_enemy_damage": 1,
+      "hero_loss": "injury"
+    },
+    "standard": {
+      "deadline_bonus": 0,
+      "enemy_damage_delta": 0,
+      "hero_loss": "injury"
+    },
+    "hard": {
+      "enemy_damage_delta": 0,
+      "hero_loss": "withdrawal_if_not_retrieved",
+      "deadline_source": "board.hard_round_limit"
+    }
+  },
+  "difficulty_constraints": "放松为标准限时+3且敌伤-1（最低1）；标准保持原限时；最高使用每关明确hard_round_limit，不再统一减1。敌人HP、人格与记忆不变。最高每种主目标与A/B环境均须有基础行动无重伤解法，时间余量仍不等于新手必能发现。",
+  "objective_persistence": "work/channel/convoy nodes marked sustain_until_exit must still have HP>0 when the team leaves or time expires. Their earlier completion remains a milestone for partial outcome, but not a secured success. Cargo/rescue delivered and copied evidence receipts persist. Destroyed objectives cannot be healed back into completion. Carrying protects the carried target from duplicate area damage; if the carrier goes down it drops, and subsequent sources can hit it.",
+  "archetype_planning_overrides": {
+    "welder_and_sentinel": "奇数轮锁定朝向并展示蓄能，下一偶数轮保持该朝向攻击，不重新追踪；推移只平移攻击原点。下个奇数轮才重新选朝向。",
+    "hauler": "按本关有序轨道前进，到末端后下一轮反向；每轮最多2格。前方机器/不可移动装置阻挡则停止；人员按推移规则处理；屏障承受2伤害但本轮仍阻停。",
+    "skimmer": "奇数轮从当前及相邻合法浅水格中选择离最近站立角色曼哈顿距离最小的格，平局按y再x；被占用不可选。偶数轮不移动，预告当前连通浅水区域；断电/地形变化后预览同步重算，执行只使用确认后的同一状态。",
+    "relay": "按地图reinforcement.cells顺序选择第一个无站立单位的出生格，先预告再生成；两格均不可用时按既定延迟规则取消，绝不临时另找未预告的格。"
+  },
+  "enemy_targeting": "Only standing heroes determine facing; greatest absolute axis offset wins, horizontal on ties, hero stable ID for equal distance. Charged lines stop at walls/shields. Enemy attacks affect each standing hero/civilian and fragile fixture in the declared footprint once; objective damage is collateral, never hidden retargeting.",
+  "save_and_undo": "稳定玩家阶段、营地允许手动保存；自动保存出发前、轮初和终结结算前。0.14存档清单见full_audit_contract.json。读档不能重置次数/冷却或重复结算；旧规则存档先迁移校验，失败保留原文件并说明不兼容。当前尚无正式游戏存档实现。",
+  "safeguard_producers": {
+    "independent_anchor": "本任务实际部署的winch锚点及保护范围；xu_5已退出本版本，未部署库存不算保障。",
+    "third_person_protection": "本轮有效prepare_safety标记，消费时再次检查保护者在场、站立与相邻。",
+    "power_off": "该对象指定供电前置/就地断路已完成，对象current_power=false；停掉无关机器不算。",
+    "insulated": "当前操作格处于已放置绝缘垫/叶禾绝缘通道。",
+    "reinforced_and_insulated": "同对象有效加固且当前操作格绝缘，两者都要有。",
+    "explicit_authority": "本任务确认过的行动授权记录包含该角色与动作类型；改约需确认，不凭点击重复发信任。",
+    "named_receiver": "当前交接的接收者已被明确指派，仍在场、空手并愿意接收；换人后重查。",
+    "declared_personnel_cargo_priority": "简报中明确选择人员与货物优先次序；违背时先显示改约/违约后果。",
+    "valid_exit": "当前有至少一条基础通行路线到未关闭出口；不把必须用被拒协议才能通过的路线当作保障。",
+    "retrieval_deadline_known": "本次行动对应救援期限已向玩家和角色明确展示。"
+  },
+  "target_tags": "0.12轻障碍可用撬棍；远程停机探针仅用于已标记控制器。重障碍和供电工量均保留普通交互；退出本版本的切割器、电池等不能再购买或使用。绝缘、屏障、锚点与担架按保留规则工作。无泡沫延迟涨水、诱导信标和灭火工具。",
+  "system_audit_ref": "system_audit_contract.json",
+  "resolution_amendments": {
+    "single_source": "战斗动作事实必须供目标、物资、伤势、贡献、故事共同读取。结算结果由目标组推导，不能由脚本直接宣称成功覆盖失去的对象。",
+    "order": "最后允许轮仍有完整玩家行动；敌人按ID结算→环境→运输/持续目标进度→救援期限→任务时限/结算。已经送达的人员先离开危险判定，不会在同一轮被计作超时失去。最后站立者撤出但仍有失能者遗留时，先弹出明确救援后果确认。",
+    "carried_downed": "稳定只给失能队员期限+1一次；携带不会停止期限，出口交付才完成救援。若携带中到期，二线救援转运该伤员并清空携带槽，按难度判重伤/永久医疗离队；不复制身体，不把搬运者也判失能。",
+    "downed_damage": "失能队员不再接受HP伤害或重置期限，仅保留救援倒计时；平民仍有4HP与稳定/失去状态，二者不要混用。已携带的目标不重复承受同次范围伤害，搬运者失能后只落下一个目标。",
+    "hard_boundary": "最高难度只有失能且未在期限内救回/明确放弃才永久医疗离队。站立但紧急撤离未走到出口者可恢复重伤，不凭任务失败直接永久删除。自动到总时限也应用相同的遗留者规则。",
+    "carrying_actions": "携带可移动、通用交互、稳定其他伤员、放下、交付、离场和接力搬运；不能攻击、推移、专长、其他双人协议、使用主动工具或准备第三人保护。被动担架照常。不得让携带者借协议绕过禁攻/禁推。",
+    "occupied_overlay": "站立者与装置可共格；同格地面伤员/货物可以多件，必须按对象ID选择拾起/治疗/放下目标。每人仍只能携带1件。此规则避免搬运者倒在已有物件格时无处放人或丢物；不额外阻断路。",
+    "control": "同一机器受到临时控制后，下个整轮免疫临时控制；不同队员/道具共享该标记。永久停机是不同目标成果。重机推移的两个基本推移工量必须来自同方向、同轮，机器位移或回合结束即清除；不跨轮暗存半次推力。",
+    "tools": "永久装备任务前分配，任务内不交接刷新次数；部署锚点持续本任务，个人抛索不回收锚点。携带例外只读carrying_exception。屏障不能通过免费拾放回满HP。"
+  },
+  "movement_stack": "空手基础3、临时+1最多4；搬运基础2，担架/安全搬运/单次协调取最有利办法但最终最多3；接力附带移动固定3，不再叠加。",
+  "carrying_exception": "许舟抛索：未满5级携带伤员时须邻接实际部署的winch锚点；5级个人携带例外不要求锚点，亦不生成给别人用的免费锚点。其他AP、次数、单格障碍与干地空落点规则不变。江朔交接/实际药剂补给保留原携带例外。",
+  "environment_damage_order": "放电水域与火合并为本轮环境危害，同格取较大值；绝缘消去电伤后仍保留火伤。普通机器攻击按各自来源结算；屏障截射线，不挡电火。",
+  "optional_deadlines": "带opportunity_deadline的额外目标：该轮玩家阶段有效，轮末未完成则机会失去；与普通伤员稳定期限独立，两者都展示。已lost不能在随后交付恢复为secured。",
+  "production_scope_ref": "production_scope.json",
+  "growth_identity_ref": "growth_identity_contract.json",
+  "medical_rules": "医疗恢复最多3HP，以上限10+L4加1+L6加1截断；离场或失能者不可治疗，本关不能复活。急救包禁止携带时操作；江朔可携带操作但接收者须空手。必须消耗实际打包药剂和1AP。基础急救包2次，工坊II出勤快照为3次；江朔技能次数不变。",
+  "command_transaction": "合法性与执行使用同一规则。检查角色、目标、已获专长、当前AP/次数、实际关系条件、持物和场景状态；拒绝后包括锚点、次数、药剂、AP、贡献记录在内全部不变。"
+}

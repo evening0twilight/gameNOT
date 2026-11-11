@@ -1,0 +1,69 @@
+REPOSITORY_OK: 266 files; nesting, case, literal resources, renderer
+EVIDENCE_OK: 34 files
+DESIGN_VIEWS_OK: 33
+RULE CHECKS 1172
+HISTORICAL_GATES_EXCLUDED: 2 runtime byte-identity assertions; original hashes preserved
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started 正在注册全局类…… (6 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  14% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  28% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  42% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  57% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  71% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+TEST_RESULTS: 33 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CONTENT_TEST_RESULTS: failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_TEST_RESULTS: 166 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_SYSTEMS_RESULTS: 179 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+HBoxContainer (1232.0, 81.0) min=(250.0, 81.0)
+HSeparator (1232.0, 4.0) min=(3.0, 4.0)
+HBoxContainer (1232.0, 567.0) min=(710.0, 567.0)
+PanelContainer (1232.0, 40.0) min=(25.0, 40.0)
+UI_CHECK_FAILED: battle layout en_XA (1280, 720) 24 actions size=(1232.0, 728.0)
+HBoxContainer (1232.0, 81.0) min=(250.0, 81.0)
+HSeparator (1232.0, 4.0) min=(3.0, 4.0)
+HBoxContainer (1232.0, 567.0) min=(710.0, 567.0)
+PanelContainer (1232.0, 40.0) min=(25.0, 40.0)
+UI_CHECK_FAILED: battle layout en_XA (1280, 720) 24 objectives size=(1232.0, 728.0)
+HBoxContainer (1232.0, 81.0) min=(250.0, 81.0)
+HSeparator (1232.0, 4.0) min=(3.0, 4.0)
+HBoxContainer (1232.0, 567.0) min=(710.0, 567.0)
+PanelContainer (1232.0, 40.0) min=(25.0, 40.0)
+UI_CHECK_FAILED: battle layout en_XA (1280, 720) 24 cooperation size=(1232.0, 728.0)
+UI_LOCALIZATION_RESULTS: checks=435 failures=3
+Traceback (most recent call last):
+  File "/Users/a1-6/projects/person/gameNOT/tools/build_windows_p4_feedback.py", line 13, in <module>
+    subprocess.run([sys.executable, str(ROOT / 'tools/check.py'), '--engine'], cwd=ROOT, check=True)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.7/Frameworks/Python.framework/Versions/3.14/lib/python3.14/subprocess.py", line 578, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command '['/opt/homebrew/opt/python@3.14/bin/python3.14', '/Users/a1-6/projects/person/gameNOT/tools/check.py', '--engine']' returned non-zero exit status 1.

@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-06",
+  "baseline": "0.18 authority untouched; runtime balance snapshot revision 2",
+  "changes": {
+    "relaxed": "resident stabilization and timed opportunity deadlines +2 rounds, on top of existing +3 total rounds and -1 machine damage",
+    "standard": "unchanged",
+    "hard": "machine damage +1; authored hard turn limits and permanent withdrawal unchanged"
+  },
+  "compatibility": "runtime envelope 6; revisions 2-5 migrate in-flight battles and undo checkpoints to balance 1; next deployment uses balance 2",
+  "method": "8 representative missions x 3 difficulties x 4 delays. Intentionally idle for 0/2/4/6 rounds, then use the same legal solver without specialties or equipment. Isolated deployments, not human win rates.",
+  "comparison": [
+    {
+      "difficulty": "relaxed",
+      "idle_rounds": 0,
+      "cases": 8,
+      "before_success": 8,
+      "after_success": 8
+    },
+    {
+      "difficulty": "relaxed",
+      "idle_rounds": 2,
+      "cases": 8,
+      "before_success": 8,
+      "after_success": 8
+    },
+    {
+      "difficulty": "relaxed",
+      "idle_rounds": 4,
+      "cases": 8,
+      "before_success": 8,
+      "after_success": 8
+    },
+    {
+      "difficulty": "relaxed",
+      "idle_rounds": 6,
+      "cases": 8,
+      "before_success": 3,
+      "after_success": 8
+    },
+    {
+      "difficulty": "standard",
+      "idle_rounds": 0,
+      "cases": 8,
+      "before_success": 8,
+      "after_success": 8
+    },
+    {
+      "difficulty": "standard",
+      "idle_rounds": 2,
+      "cases": 8,
+      "before_success": 8,
+      "after_success": 8
+    },
+    {
+      "difficulty": "standard",
+      "idle_rounds": 4,
+      "cases": 8,
+      "before_success": 7,
+      "after_success": 7
+    },
+    {
+      "difficulty": "standard",
+      "idle_rounds": 6,
+      "cases": 8,
+      "before_success": 3,
+      "after_success": 3
+    },
+    {
+      "difficulty": "hard",
+      "idle_rounds": 0,
+      "cases": 8,
+      "before_success": 8,
+      "after_success": 8
+    },
+    {
+      "difficulty": "hard",
+      "idle_rounds": 2,
+      "cases": 8,
+      "before_success": 8,
+      "after_success": 7
+    },
+    {
+      "difficulty": "hard",
+      "idle_rounds": 4,
+      "cases": 8,
+      "before_success": 5,
+      "after_success": 5
+    },
+    {
+      "difficulty": "hard",
+      "idle_rounds": 6,
+      "cases": 8,
+      "before_success": 0,
+      "after_success": 0
+    }
+  ],
+  "final_matrix": {
+    "paths": 216,
+    "complete_success": 214,
+    "partial": 2,
+    "can_continue": 216,
+    "partial_cases": "M05 hard A/B using fixed original route",
+    "alternate_legal_route": "shutdown machine before energizing pump: success for A/B, no equipment or specialties",
+    "evidence": "outputs/p4-tuning-hard-route.json"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "date": "2026-11-04",
+  "status": "windows_x64_export_passed",
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "official_template_archive_sha256": "f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011",
+  "full_archive_verified": true,
+  "installed_templates": {
+    "windows_release_x86_64.exe": "d34d36f3be1a6c49c56525ae86469b92e4f417ddf0b43cf00dd80c385c4b0562",
+    "windows_debug_x86_64.exe": "51498b72b3a237f882ebd7d1787f06a4bc1eaf0572daab93837adcfd3cfdc107",
+    "version.txt": "38885c88f75abbc797a1db7559719800279a00cfb9fa8b2e2868a7f6f84bad2e"
+  },
+  "build": {
+    "pe_architecture": "x86_64",
+    "exported_pack_host_smoke": true,
+    "design": "0.18-predevelopment",
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "windows_runtime_tested": false,
+    "git_head": "7a7fee3a284a632efd62988095c016c7f2697b7a",
+    "working_tree_dirty": true,
+    "sha256": {
+      "night-tide.exe": "93e7651eb311a69afa92a469e49170726bcb28f59fa7c3d8ab695961ac1fd464",
+      "night-tide.pck": "7e2f930dade58d3eec3ec8e9f678a8a92f12d748380e18e5865cf60e596e6b38"
+    }
+  },
+  "checks": {
+    "reference_rules": 1174,
+    "godot_foundation_tests": 33,
+    "repository_checks": "passed",
+    "source_startup": "passed",
+    "pe_architecture": "x86_64",
+    "exported_pack_smoke_in_empty_directory": "passed_on_macOS_host",
+    "windows_native_execution": "not_tested",
+    "windows_performance": "not_tested",
+    "remote_ci": "not_run"
+  },
+  "scope": "Existing foundation entry only; gameplay not implemented in this chat.",
+  "p1_authorized": true,
+  "p1_handoff": "docs/p1-handoff.txt",
+  "package": {
+    "path": "build/night-tide-windows-foundation.zip",
+    "bytes": 38395150,
+    "sha256": "65b86ea9bbcbc7ec251b6efeb2782bc3393ce664f7503903a90e190ba1ef0388"
+  }
+}

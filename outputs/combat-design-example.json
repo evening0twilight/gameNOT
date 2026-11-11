@@ -1,0 +1,1795 @@
+{
+  "cases": [
+    {
+      "style": "baseline",
+      "rounds": 5,
+      "ap_used": 26,
+      "supplies_used": 0,
+      "hp": {
+        "A": 10,
+        "B": 10,
+        "C": 10
+      },
+      "log": [
+        {
+          "round": 1,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            2
+          ],
+          "cells": [
+            [
+              7,
+              3
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              7,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              2,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 1,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 1,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              3,
+              7
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 1,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 1,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 1,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 1,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 0,
+            "power": 0,
+            "stop": 0
+          }
+        },
+        {
+          "round": 2,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": [
+            [
+              6,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 2,
+          "actor": "B",
+          "action": "interact",
+          "target": "cut",
+          "work": 1,
+          "ap_left": 0
+        },
+        {
+          "round": 2,
+          "actor": "C",
+          "action": "interact",
+          "target": "stop",
+          "work": 1,
+          "ap_left": 1
+        },
+        {
+          "round": 2,
+          "actor": "C",
+          "action": "interact",
+          "target": "stop",
+          "work": 2,
+          "ap_left": 0
+        },
+        {
+          "round": 2,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 2,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 1,
+            "power": 0,
+            "stop": 2
+          }
+        },
+        {
+          "round": 3,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": []
+        },
+        {
+          "round": 3,
+          "actor": "B",
+          "action": "interact",
+          "target": "cut",
+          "work": 2,
+          "ap_left": 1
+        },
+        {
+          "round": 3,
+          "actor": "A",
+          "action": "interact",
+          "target": "power",
+          "work": 1,
+          "ap_left": 1
+        },
+        {
+          "round": 3,
+          "actor": "A",
+          "action": "interact",
+          "target": "power",
+          "work": 2,
+          "ap_left": 0
+        },
+        {
+          "round": 3,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 2,
+            "power": 2,
+            "stop": 2
+          }
+        },
+        {
+          "round": 4,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": []
+        },
+        {
+          "round": 4,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 4,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 4,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              6,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 4,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 4,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 4,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              4,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 4,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 2,
+            "power": 2,
+            "stop": 2
+          }
+        },
+        {
+          "round": 5,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": []
+        },
+        {
+          "round": 5,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 5,
+          "actor": "B",
+          "action": "leave_site",
+          "ap_left": 0
+        },
+        {
+          "round": 5,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 5,
+          "actor": "C",
+          "action": "leave_site",
+          "ap_left": 0
+        },
+        {
+          "round": 5,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 5,
+          "actor": "A",
+          "action": "leave_site",
+          "ap_left": 0
+        },
+        {
+          "round": 5,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 2,
+            "power": 2,
+            "stop": 2
+          }
+        }
+      ]
+    },
+    {
+      "style": "level2",
+      "rounds": 4,
+      "ap_used": 23,
+      "supplies_used": 0,
+      "hp": {
+        "A": 10,
+        "B": 10,
+        "C": 10
+      },
+      "log": [
+        {
+          "round": 1,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            2
+          ],
+          "cells": [
+            [
+              7,
+              3
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              7,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              2,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 1,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 1,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              3,
+              7
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 1,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 1,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 1,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 1,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 0,
+            "power": 0,
+            "stop": 0
+          }
+        },
+        {
+          "round": 2,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": [
+            [
+              6,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 2,
+          "actor": "B",
+          "action": "interact",
+          "target": "cut",
+          "work": 2,
+          "ap_left": 0
+        },
+        {
+          "round": 2,
+          "actor": "C",
+          "action": "interact",
+          "target": "stop",
+          "work": 2,
+          "ap_left": 1
+        },
+        {
+          "round": 2,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 2,
+          "actor": "A",
+          "action": "interact",
+          "target": "power",
+          "work": 2,
+          "ap_left": 0
+        },
+        {
+          "round": 2,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 2,
+            "power": 2,
+            "stop": 2
+          }
+        },
+        {
+          "round": 3,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": []
+        },
+        {
+          "round": 3,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 3,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 3,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              6,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 3,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 3,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 3,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              4,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 3,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 2,
+            "power": 2,
+            "stop": 2
+          }
+        },
+        {
+          "round": 4,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": []
+        },
+        {
+          "round": 4,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 4,
+          "actor": "B",
+          "action": "leave_site",
+          "ap_left": 0
+        },
+        {
+          "round": 4,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 4,
+          "actor": "C",
+          "action": "leave_site",
+          "ap_left": 0
+        },
+        {
+          "round": 4,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 4,
+          "actor": "A",
+          "action": "leave_site",
+          "ap_left": 0
+        },
+        {
+          "round": 4,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 2,
+            "power": 2,
+            "stop": 2
+          }
+        }
+      ]
+    },
+    {
+      "style": "battery",
+      "rounds": 5,
+      "ap_used": 25,
+      "supplies_used": 2,
+      "hp": {
+        "A": 10,
+        "B": 10,
+        "C": 10
+      },
+      "log": [
+        {
+          "round": 1,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            2
+          ],
+          "cells": [
+            [
+              7,
+              3
+            ],
+            [
+              7,
+              4
+            ],
+            [
+              7,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              2,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 1,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 1,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              3,
+              7
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              4,
+              6
+            ],
+            [
+              4,
+              5
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 1,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              4,
+              5
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 1,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 1,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              1,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 1,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 0,
+            "power": 0,
+            "stop": 0
+          }
+        },
+        {
+          "round": 2,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": [
+            [
+              6,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 2,
+          "actor": "B",
+          "action": "interact",
+          "target": "cut",
+          "work": 1,
+          "ap_left": 0
+        },
+        {
+          "round": 2,
+          "actor": "C",
+          "action": "interact",
+          "target": "stop",
+          "work": 1,
+          "ap_left": 1
+        },
+        {
+          "round": 2,
+          "actor": "C",
+          "action": "interact",
+          "target": "stop",
+          "work": 2,
+          "ap_left": 0
+        },
+        {
+          "round": 2,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              4,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 2,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 1,
+            "power": 0,
+            "stop": 2
+          }
+        },
+        {
+          "round": 3,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": []
+        },
+        {
+          "round": 3,
+          "actor": "B",
+          "action": "interact",
+          "target": "cut",
+          "work": 2,
+          "ap_left": 1
+        },
+        {
+          "round": 3,
+          "actor": "A",
+          "action": "battery",
+          "target": "power",
+          "work": 2,
+          "ap_left": 1
+        },
+        {
+          "round": 3,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 3,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 2,
+            "power": 2,
+            "stop": 2
+          }
+        },
+        {
+          "round": 4,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": []
+        },
+        {
+          "round": 4,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              3,
+              2
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              0,
+              2
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 4,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 4,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              6,
+              4
+            ],
+            [
+              5,
+              4
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 4,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 4,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              4,
+              4
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              2,
+              4
+            ],
+            [
+              1,
+              4
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 4,
+          "actor": "A",
+          "action": "move",
+          "path": [
+            [
+              1,
+              4
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 4,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 2,
+            "power": 2,
+            "stop": 2
+          }
+        },
+        {
+          "round": 5,
+          "event": "intent",
+          "enemy_at": [
+            7,
+            5
+          ],
+          "cells": []
+        },
+        {
+          "round": 5,
+          "actor": "B",
+          "action": "move",
+          "path": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 5,
+          "actor": "B",
+          "action": "leave_site",
+          "ap_left": 0
+        },
+        {
+          "round": 5,
+          "actor": "C",
+          "action": "move",
+          "path": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              7
+            ]
+          ],
+          "ap_left": 1
+        },
+        {
+          "round": 5,
+          "actor": "C",
+          "action": "leave_site",
+          "ap_left": 0
+        },
+        {
+          "round": 5,
+          "actor": "A",
+          "action": "leave_site",
+          "ap_left": 1
+        },
+        {
+          "round": 5,
+          "event": "end_round",
+          "hp": {
+            "A": 10,
+            "B": 10,
+            "C": 10
+          },
+          "work": {
+            "cut": 2,
+            "power": 2,
+            "stop": 2
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [
+    "three cases extracted without incapacitation",
+    "battery paid exactly2 supplies",
+    "baseline costs no supplies",
+    "growth and equipment reduce AP independently"
+  ],
+  "cooperation": {
+    "scenario": "two adjacent actors both adjacent to a three-work console, one imminent machine hit for2",
+    "basic": {
+      "total_ap": 3,
+      "work": 3,
+      "damage_to_worker": 2
+    },
+    "protected_work": {
+      "total_ap": 2,
+      "work": 3,
+      "damage_to_worker": 0,
+      "requires": "mutual trust>=60, trained/equipped protocol, relevant safety condition satisfied"
+    },
+    "low_trust": {
+      "same_basic_work_legal": true,
+      "advanced_protocol_legal": false
+    },
+    "limits": "shield blocks one machine hit only; electricity bypasses it; this is an algebraic action comparison, not an extra simulated map."
+  },
+  "scope": "Executed subset: M02 terrain, 3 heroes, AP movement, occupied endpoints, scout locked intent/damage, work prerequisites, stop control, mission goals, water addition and evacuation. No general proof for other 35 maps, all enemy types or every skill."
+}

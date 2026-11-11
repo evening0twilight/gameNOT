@@ -1,0 +1,1549 @@
+{
+  "version": "0.15",
+  "rows": [
+    {
+      "mission": "M16",
+      "party": [
+        "lin",
+        "he",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M16",
+          "goals": [
+            "lane",
+            "people"
+          ],
+          "extra": [
+            "goods"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {
+            "he_3": 1
+          },
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 31,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "lane",
+            "people",
+            "goods"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "lin",
+            "he",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "lin": 3,
+            "he": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        },
+        "True": {
+          "mission": "M16",
+          "goals": [
+            "lane",
+            "people"
+          ],
+          "extra": [
+            "goods"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {
+            "he_3": 1
+          },
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 31,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "lane",
+            "people",
+            "goods"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "lin",
+            "he",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "lin": 3,
+            "he": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M16",
+      "party": [
+        "xu",
+        "su",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M16",
+          "goals": [
+            "lane",
+            "people"
+          ],
+          "extra": [
+            "goods"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 33,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "lane",
+            "people",
+            "goods"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "xu",
+            "su",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "xu": 3,
+            "su": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        },
+        "True": {
+          "mission": "M16",
+          "goals": [
+            "lane",
+            "people"
+          ],
+          "extra": [
+            "goods"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 33,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "lane",
+            "people",
+            "goods"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "xu",
+            "su",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "xu": 3,
+            "su": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M16",
+      "party": [
+        "chen",
+        "mo",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M16",
+          "goals": [
+            "lane",
+            "people"
+          ],
+          "extra": [
+            "goods"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 33,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "lane",
+            "people",
+            "goods"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "chen",
+            "mo",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "chen": 3,
+            "mo": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        },
+        "True": {
+          "mission": "M16",
+          "goals": [
+            "lane",
+            "people"
+          ],
+          "extra": [
+            "goods"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 33,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "lane",
+            "people",
+            "goods"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "chen",
+            "mo",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "chen": 3,
+            "mo": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M19",
+      "party": [
+        "lin",
+        "he",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M19",
+          "goals": [
+            "patient",
+            "shelter"
+          ],
+          "extra": [
+            "device"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "optional_first",
+          "gear": {
+            "he_3": 1
+          },
+          "level": 1,
+          "rounds": 6,
+          "limit": 15,
+          "ap": 29,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "patient",
+            "shelter",
+            "device"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "lin",
+            "he",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "lin_1"
+          ],
+          "levels": {
+            "lin": 3,
+            "he": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "lin_1": 1
+          }
+        },
+        "True": {
+          "mission": "M19",
+          "goals": [
+            "patient",
+            "shelter"
+          ],
+          "extra": [
+            "device"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "optional_first",
+          "gear": {
+            "he_3": 1
+          },
+          "level": 1,
+          "rounds": 6,
+          "limit": 15,
+          "ap": 29,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "patient",
+            "shelter",
+            "device"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "lin",
+            "he",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "lin_1"
+          ],
+          "levels": {
+            "lin": 3,
+            "he": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "lin_1": 1
+          }
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M19",
+      "party": [
+        "xu",
+        "su",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M19",
+          "goals": [
+            "patient",
+            "shelter"
+          ],
+          "extra": [
+            "device"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "controls",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 36,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "patient",
+            "shelter",
+            "device"
+          ],
+          "lost": [],
+          "controls": 2,
+          "spawned": 0,
+          "party": [
+            "xu",
+            "su",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "xu": 3,
+            "su": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        },
+        "True": {
+          "mission": "M19",
+          "goals": [
+            "patient",
+            "shelter"
+          ],
+          "extra": [
+            "device"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 32,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "patient",
+            "shelter",
+            "device"
+          ],
+          "lost": [
+            "M19_enemy1_cut"
+          ],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "xu",
+            "su",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "jiang_1"
+          ],
+          "levels": {
+            "xu": 3,
+            "su": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "jiang_1": 1
+          }
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M19",
+      "party": [
+        "chen",
+        "mo",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M19",
+          "goals": [
+            "patient",
+            "shelter"
+          ],
+          "extra": [
+            "device"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "controls",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 35,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "patient",
+            "shelter",
+            "device"
+          ],
+          "lost": [],
+          "controls": 2,
+          "spawned": 0,
+          "party": [
+            "chen",
+            "mo",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "mo_1"
+          ],
+          "levels": {
+            "chen": 3,
+            "mo": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "mo_1": 1
+          }
+        },
+        "True": {
+          "mission": "M19",
+          "goals": [
+            "patient",
+            "shelter"
+          ],
+          "extra": [
+            "device"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 15,
+          "ap": 32,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "patient",
+            "shelter",
+            "device"
+          ],
+          "lost": [
+            "M19_enemy1_cut"
+          ],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "chen",
+            "mo",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "jiang_1"
+          ],
+          "levels": {
+            "chen": 3,
+            "mo": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "jiang_1": 1
+          }
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M23",
+      "party": [
+        "lin",
+        "he",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M23",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "rebuild"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {
+            "he_3": 1
+          },
+          "level": 1,
+          "rounds": 6,
+          "limit": 16,
+          "ap": 27,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "rebuild"
+          ],
+          "lost": [
+            "M23_enemy1_cut"
+          ],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "lin",
+            "he",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "lin_3"
+          ],
+          "levels": {
+            "lin": 3,
+            "he": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "lin_3": 1
+          }
+        },
+        "True": {
+          "mission": "M23",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "rebuild"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {
+            "he_3": 1
+          },
+          "level": 1,
+          "rounds": 6,
+          "limit": 16,
+          "ap": 27,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "rebuild"
+          ],
+          "lost": [
+            "M23_enemy1_cut"
+          ],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "lin",
+            "he",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "lin_3"
+          ],
+          "levels": {
+            "lin": 3,
+            "he": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "lin_3": 1
+          }
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M23",
+      "party": [
+        "xu",
+        "su",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M23",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "rebuild"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 6,
+          "limit": 16,
+          "ap": 30,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "rebuild"
+          ],
+          "lost": [
+            "M23_enemy1_cut"
+          ],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "xu",
+            "su",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "su_3"
+          ],
+          "levels": {
+            "xu": 3,
+            "su": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "su_3": 1
+          }
+        },
+        "True": {
+          "mission": "M23",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "rebuild"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 6,
+          "limit": 16,
+          "ap": 30,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "rebuild"
+          ],
+          "lost": [
+            "M23_enemy1_cut"
+          ],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "xu",
+            "su",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "su_3"
+          ],
+          "levels": {
+            "xu": 3,
+            "su": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "su_3": 1
+          }
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M23",
+      "party": [
+        "chen",
+        "mo",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M23",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "rebuild"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 6,
+          "limit": 16,
+          "ap": 31,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "rebuild"
+          ],
+          "lost": [
+            "M23_enemy1_cut"
+          ],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "chen",
+            "mo",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "chen": 3,
+            "mo": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        },
+        "True": {
+          "mission": "M23",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "rebuild"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 6,
+          "limit": 16,
+          "ap": 31,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "rebuild"
+          ],
+          "lost": [
+            "M23_enemy1_cut"
+          ],
+          "controls": 0,
+          "spawned": 0,
+          "party": [
+            "chen",
+            "mo",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "chen": 3,
+            "mo": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M24",
+      "party": [
+        "lin",
+        "he",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M24",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "archive"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {
+            "he_3": 1
+          },
+          "level": 1,
+          "rounds": 7,
+          "limit": 17,
+          "ap": 29,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "archive"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "lin",
+            "he",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "lin_1"
+          ],
+          "levels": {
+            "lin": 3,
+            "he": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "lin_1": 1
+          }
+        },
+        "True": {
+          "mission": "M24",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "archive"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {
+            "he_3": 1
+          },
+          "level": 1,
+          "rounds": 7,
+          "limit": 17,
+          "ap": 28,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "archive"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "lin",
+            "he",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 2,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "jiang_1",
+            "lin_1"
+          ],
+          "levels": {
+            "lin": 3,
+            "he": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "lin_1": 1,
+            "jiang_1": 1
+          }
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M24",
+      "party": [
+        "xu",
+        "su",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M24",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "archive"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 17,
+          "ap": 31,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "archive"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "xu",
+            "su",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "su_3"
+          ],
+          "levels": {
+            "xu": 3,
+            "su": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "su_3": 1
+          }
+        },
+        "True": {
+          "mission": "M24",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "archive"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 17,
+          "ap": 31,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "archive"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "xu",
+            "su",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "su_3"
+          ],
+          "levels": {
+            "xu": 3,
+            "su": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "su_3": 1
+          }
+        }
+      },
+      "trials": 232
+    },
+    {
+      "mission": "M24",
+      "party": [
+        "chen",
+        "mo",
+        "jiang"
+      ],
+      "states": {
+        "False": {
+          "mission": "M24",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "archive"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 17,
+          "ap": 31,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "archive"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "chen",
+            "mo",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 0,
+          "relation_refusals": 0,
+          "skill_action_types": [],
+          "levels": {
+            "chen": 3,
+            "mo": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {}
+        },
+        "True": {
+          "mission": "M24",
+          "goals": [
+            "r1",
+            "r2"
+          ],
+          "extra": [
+            "archive"
+          ],
+          "difficulty": "standard",
+          "variant": "A",
+          "style": "rush",
+          "gear": {},
+          "level": 1,
+          "rounds": 7,
+          "limit": 17,
+          "ap": 29,
+          "damage": 0,
+          "healthy_extracted": 3,
+          "downed": 0,
+          "success": true,
+          "secured": [
+            "r1",
+            "r2",
+            "archive"
+          ],
+          "lost": [],
+          "controls": 0,
+          "spawned": 1,
+          "party": [
+            "chen",
+            "mo",
+            "jiang"
+          ],
+          "skills_enabled": true,
+          "skill_actions": 1,
+          "relation_refusals": 0,
+          "skill_action_types": [
+            "jiang_1"
+          ],
+          "levels": {
+            "chen": 3,
+            "mo": 3,
+            "jiang": 3
+          },
+          "approach": "safe",
+          "service_secured": false,
+          "machinery_intact": true,
+          "watchers": [],
+          "trained": [],
+          "protocol_effects": 0,
+          "field_effects": [],
+          "cooperation_actions": 0,
+          "advanced_actions": 0,
+          "player_choice_version": "0.11",
+          "mechanisms": {
+            "jiang_1": 1
+          }
+        }
+      },
+      "trials": 232
+    }
+  ],
+  "trials": 2784,
+  "scope": "Focused all task allocations<=5 objectives, with ordinary handoff retained; only Jiang specialties ablated at equalL3. Conditional opportunity evidence, not world-wide hero ranking."
+}

@@ -1,0 +1,602 @@
+REPOSITORY_OK: 278 files; nesting, case, literal resources, renderer
+EVIDENCE_OK: 34 files
+DESIGN_VIEWS_OK: 33
+RULE CHECKS 1172
+HISTORICAL_GATES_EXCLUDED: 2 runtime byte-identity assertions; original hashes preserved
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | Started 正在注册全局类…… (5 steps)[39m[0m
+[   0% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  16% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  33% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  50% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[  66% ] [90m[1mupdate_scripts_classes[22m | [39m[0m
+[92m[ DONE ][39m [1mupdate_scripts_classes[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+TEST_RESULTS: 33 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CONTENT_TEST_RESULTS: failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_TEST_RESULTS: 166 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_SYSTEMS_RESULTS: 179 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+UI_LOCALIZATION_RESULTS: checks=438 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+VISUAL_P1_RESULTS: checks=544 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CHAPTER_ONE_RESULTS: checks=132 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_PATH: M01 success actions=47
+P3_PATH: M02 success actions=35
+P3_PATH: M03 success actions=39
+P3_PATH: M04 success actions=34
+P3_PATH: M05 success actions=30
+P3_PATH: M06 success actions=44
+P3_PATH: M07 success actions=40
+P3_PATH: M08 success actions=33
+P3_PATH: M09 success actions=45
+P3_PATH: M10 success actions=30
+P3_PATH: M11 success actions=32
+P3_PATH: M12 success actions=31
+P3_PATH: M13 success actions=36
+P3_PATH: M14 success actions=29
+P3_PATH: M15 success actions=32
+P3_PATH: M16 success actions=39
+P3_PATH: M17 success actions=37
+P3_PATH: M18 success actions=27
+P3_PATH: M19 success actions=35
+P3_PATH: M20 success actions=26
+P3_PATH: M21 success actions=30
+P3_PATH: M22 success actions=27
+P3_PATH: M23 success actions=48
+P3_PATH: M24 success actions=48
+P3_PATH: S01 success actions=25
+P3_PATH: S02 success actions=32
+P3_PATH: S03 success actions=40
+P3_PATH: S04 success actions=29
+P3_PATH: S05 success actions=39
+P3_PATH: S06 success actions=37
+P3_PATH: S07 success actions=31
+P3_PATH: S08 success actions=31
+P3_PATH: S09 success actions=25
+P3_PATH: S10 success actions=24
+P3_PATH: S11 success actions=24
+P3_PATH: S12 success actions=30
+P3_PATH_RESULTS: missions=36 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_RULES_RESULTS: checks=1789 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_SPECIALTIES_RESULTS: checks=67 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_STORY_PROOFS_RESULTS: checks=56 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_CAMPAIGN: mode=shared_control days=24 ending=shared_control
+P3_CAMPAIGN_RESULTS: campaigns=1 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_CAMPAIGN: mode=distributed_rebuild days=24 ending=distributed_rebuild
+P3_CAMPAIGN_RESULTS: campaigns=1 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_CAMPAIGN: mode=evacuation days=24 ending=evacuation
+P3_CAMPAIGN_RESULTS: campaigns=1 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_CAMPAIGN: mode=failure days=24 ending=evacuation
+P3_CAMPAIGN_RESULTS: campaigns=1 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+P2_PRESENTATION_RESULTS: checks=92 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+P3_PRESENTATION_RESULTS: checks=178 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_PRODUCT_RESULTS: checks=1027 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_HISTORY_RESULTS: checks=56 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+P4_PRESENTATION_RESULTS: checks=65 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+P4_FEEDBACK_RESULTS: checks=89 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+P4_TUNING_RESULTS: checks=709 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_PROFILE_RESULTS: profile=no_training days=24 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_PROFILE_RESULTS: profile=few_sides days=24 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_PROFILE_RESULTS: profile=fixed_favorites days=24 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_PROFILE_RESULTS: profile=injury_rotation days=24 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_MATRIX_PATH: M01 relaxed A success continued=true
+P4_MATRIX_PATH: M02 relaxed A success continued=true
+P4_MATRIX_PATH: M03 relaxed A success continued=true
+P4_MATRIX_PATH: M04 relaxed A success continued=true
+P4_MATRIX_PATH: M05 relaxed A success continued=true
+P4_MATRIX_PATH: M06 relaxed A success continued=true
+P4_MATRIX_PATH: M07 relaxed A success continued=true
+P4_MATRIX_PATH: M08 relaxed A success continued=true
+P4_MATRIX_PATH: M09 relaxed A success continued=true
+P4_MATRIX_PATH: M10 relaxed A success continued=true
+P4_MATRIX_PATH: M11 relaxed A success continued=true
+P4_MATRIX_PATH: M12 relaxed A success continued=true
+P4_MATRIX_PATH: M13 relaxed A success continued=true
+P4_MATRIX_PATH: M14 relaxed A success continued=true
+P4_MATRIX_PATH: M15 relaxed A success continued=true
+P4_MATRIX_PATH: M16 relaxed A success continued=true
+P4_MATRIX_PATH: M17 relaxed A success continued=true
+P4_MATRIX_PATH: M18 relaxed A success continued=true
+P4_MATRIX_PATH: M19 relaxed A success continued=true
+P4_MATRIX_PATH: M20 relaxed A success continued=true
+P4_MATRIX_PATH: M21 relaxed A success continued=true
+P4_MATRIX_PATH: M22 relaxed A success continued=true
+P4_MATRIX_PATH: M23 relaxed A success continued=true
+P4_MATRIX_PATH: M24 relaxed A success continued=true
+P4_MATRIX_PATH: S01 relaxed A success continued=true
+P4_MATRIX_PATH: S02 relaxed A success continued=true
+P4_MATRIX_PATH: S03 relaxed A success continued=true
+P4_MATRIX_PATH: S04 relaxed A success continued=true
+P4_MATRIX_PATH: S05 relaxed A success continued=true
+P4_MATRIX_PATH: S06 relaxed A success continued=true
+P4_MATRIX_PATH: S07 relaxed A success continued=true
+P4_MATRIX_PATH: S08 relaxed A success continued=true
+P4_MATRIX_PATH: S09 relaxed A success continued=true
+P4_MATRIX_PATH: S10 relaxed A success continued=true
+P4_MATRIX_PATH: S11 relaxed A success continued=true
+P4_MATRIX_PATH: S12 relaxed A success continued=true
+P4_MATRIX_PATH: M01 relaxed B success continued=true
+P4_MATRIX_PATH: M02 relaxed B success continued=true
+P4_MATRIX_PATH: M03 relaxed B success continued=true
+P4_MATRIX_PATH: M04 relaxed B success continued=true
+P4_MATRIX_PATH: M05 relaxed B success continued=true
+P4_MATRIX_PATH: M06 relaxed B success continued=true
+P4_MATRIX_PATH: M07 relaxed B success continued=true
+P4_MATRIX_PATH: M08 relaxed B success continued=true
+P4_MATRIX_PATH: M09 relaxed B success continued=true
+P4_MATRIX_PATH: M10 relaxed B success continued=true
+P4_MATRIX_PATH: M11 relaxed B success continued=true
+P4_MATRIX_PATH: M12 relaxed B success continued=true
+P4_MATRIX_PATH: M13 relaxed B success continued=true
+P4_MATRIX_PATH: M14 relaxed B success continued=true
+P4_MATRIX_PATH: M15 relaxed B success continued=true
+P4_MATRIX_PATH: M16 relaxed B success continued=true
+P4_MATRIX_PATH: M17 relaxed B success continued=true
+P4_MATRIX_PATH: M18 relaxed B success continued=true
+P4_MATRIX_PATH: M19 relaxed B success continued=true
+P4_MATRIX_PATH: M20 relaxed B success continued=true
+P4_MATRIX_PATH: M21 relaxed B success continued=true
+P4_MATRIX_PATH: M22 relaxed B success continued=true
+P4_MATRIX_PATH: M23 relaxed B success continued=true
+P4_MATRIX_PATH: M24 relaxed B success continued=true
+P4_MATRIX_PATH: S01 relaxed B success continued=true
+P4_MATRIX_PATH: S02 relaxed B success continued=true
+P4_MATRIX_PATH: S03 relaxed B success continued=true
+P4_MATRIX_PATH: S04 relaxed B success continued=true
+P4_MATRIX_PATH: S05 relaxed B success continued=true
+P4_MATRIX_PATH: S06 relaxed B success continued=true
+P4_MATRIX_PATH: S07 relaxed B success continued=true
+P4_MATRIX_PATH: S08 relaxed B success continued=true
+P4_MATRIX_PATH: S09 relaxed B success continued=true
+P4_MATRIX_PATH: S10 relaxed B success continued=true
+P4_MATRIX_PATH: S11 relaxed B success continued=true
+P4_MATRIX_PATH: S12 relaxed B success continued=true
+P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ "success": 72, "partial": 0, "failed": 0 }
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_MATRIX_PATH: M01 standard A success continued=true
+P4_MATRIX_PATH: M02 standard A success continued=true
+P4_MATRIX_PATH: M03 standard A success continued=true
+P4_MATRIX_PATH: M04 standard A success continued=true
+P4_MATRIX_PATH: M05 standard A success continued=true
+P4_MATRIX_PATH: M06 standard A success continued=true
+P4_MATRIX_PATH: M07 standard A success continued=true
+P4_MATRIX_PATH: M08 standard A success continued=true
+P4_MATRIX_PATH: M09 standard A success continued=true
+P4_MATRIX_PATH: M10 standard A success continued=true
+P4_MATRIX_PATH: M11 standard A success continued=true
+P4_MATRIX_PATH: M12 standard A success continued=true
+P4_MATRIX_PATH: M13 standard A success continued=true
+P4_MATRIX_PATH: M14 standard A success continued=true
+P4_MATRIX_PATH: M15 standard A success continued=true
+P4_MATRIX_PATH: M16 standard A success continued=true
+P4_MATRIX_PATH: M17 standard A success continued=true
+P4_MATRIX_PATH: M18 standard A success continued=true
+P4_MATRIX_PATH: M19 standard A success continued=true
+P4_MATRIX_PATH: M20 standard A success continued=true
+P4_MATRIX_PATH: M21 standard A success continued=true
+P4_MATRIX_PATH: M22 standard A success continued=true
+P4_MATRIX_PATH: M23 standard A success continued=true
+P4_MATRIX_PATH: M24 standard A success continued=true
+P4_MATRIX_PATH: S01 standard A success continued=true
+P4_MATRIX_PATH: S02 standard A success continued=true
+P4_MATRIX_PATH: S03 standard A success continued=true
+P4_MATRIX_PATH: S04 standard A success continued=true
+P4_MATRIX_PATH: S05 standard A success continued=true
+P4_MATRIX_PATH: S06 standard A success continued=true
+P4_MATRIX_PATH: S07 standard A success continued=true
+P4_MATRIX_PATH: S08 standard A success continued=true
+P4_MATRIX_PATH: S09 standard A success continued=true
+P4_MATRIX_PATH: S10 standard A success continued=true
+P4_MATRIX_PATH: S11 standard A success continued=true
+P4_MATRIX_PATH: S12 standard A success continued=true
+P4_MATRIX_PATH: M01 standard B success continued=true
+P4_MATRIX_PATH: M02 standard B success continued=true
+P4_MATRIX_PATH: M03 standard B success continued=true
+P4_MATRIX_PATH: M04 standard B success continued=true
+P4_MATRIX_PATH: M05 standard B success continued=true
+P4_MATRIX_PATH: M06 standard B success continued=true
+P4_MATRIX_PATH: M07 standard B success continued=true
+P4_MATRIX_PATH: M08 standard B success continued=true
+P4_MATRIX_PATH: M09 standard B success continued=true
+P4_MATRIX_PATH: M10 standard B success continued=true
+P4_MATRIX_PATH: M11 standard B success continued=true
+P4_MATRIX_PATH: M12 standard B success continued=true
+P4_MATRIX_PATH: M13 standard B success continued=true
+P4_MATRIX_PATH: M14 standard B success continued=true
+P4_MATRIX_PATH: M15 standard B success continued=true
+P4_MATRIX_PATH: M16 standard B success continued=true
+P4_MATRIX_PATH: M17 standard B success continued=true
+P4_MATRIX_PATH: M18 standard B success continued=true
+P4_MATRIX_PATH: M19 standard B success continued=true
+P4_MATRIX_PATH: M20 standard B success continued=true
+P4_MATRIX_PATH: M21 standard B success continued=true
+P4_MATRIX_PATH: M22 standard B success continued=true
+P4_MATRIX_PATH: M23 standard B success continued=true
+P4_MATRIX_PATH: M24 standard B success continued=true
+P4_MATRIX_PATH: S01 standard B success continued=true
+P4_MATRIX_PATH: S02 standard B success continued=true
+P4_MATRIX_PATH: S03 standard B success continued=true
+P4_MATRIX_PATH: S04 standard B success continued=true
+P4_MATRIX_PATH: S05 standard B success continued=true
+P4_MATRIX_PATH: S06 standard B success continued=true
+P4_MATRIX_PATH: S07 standard B success continued=true
+P4_MATRIX_PATH: S08 standard B success continued=true
+P4_MATRIX_PATH: S09 standard B success continued=true
+P4_MATRIX_PATH: S10 standard B success continued=true
+P4_MATRIX_PATH: S11 standard B success continued=true
+P4_MATRIX_PATH: S12 standard B success continued=true
+P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ "success": 72, "partial": 0, "failed": 0 }
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P4_MATRIX_PATH: M01 hard A success continued=true
+P4_MATRIX_PATH: M02 hard A success continued=true
+P4_MATRIX_PATH: M03 hard A success continued=true
+P4_MATRIX_PATH: M04 hard A success continued=true
+P4_MATRIX_PATH: M05 hard A partial continued=true
+P4_MATRIX_PATH: M06 hard A success continued=true
+P4_MATRIX_PATH: M07 hard A success continued=true
+P4_MATRIX_PATH: M08 hard A success continued=true
+P4_MATRIX_PATH: M09 hard A success continued=true
+P4_MATRIX_PATH: M10 hard A success continued=true
+P4_MATRIX_PATH: M11 hard A success continued=true
+P4_MATRIX_PATH: M12 hard A success continued=true
+P4_MATRIX_PATH: M13 hard A success continued=true
+P4_MATRIX_PATH: M14 hard A success continued=true
+P4_MATRIX_PATH: M15 hard A success continued=true
+P4_MATRIX_PATH: M16 hard A success continued=true
+P4_MATRIX_PATH: M17 hard A success continued=true
+P4_MATRIX_PATH: M18 hard A success continued=true
+P4_MATRIX_PATH: M19 hard A success continued=true
+P4_MATRIX_PATH: M20 hard A success continued=true
+P4_MATRIX_PATH: M21 hard A success continued=true
+P4_MATRIX_PATH: M22 hard A success continued=true
+P4_MATRIX_PATH: M23 hard A success continued=true
+P4_MATRIX_PATH: M24 hard A success continued=true
+P4_MATRIX_PATH: S01 hard A success continued=true
+P4_MATRIX_PATH: S02 hard A success continued=true
+P4_MATRIX_PATH: S03 hard A success continued=true
+P4_MATRIX_PATH: S04 hard A success continued=true
+P4_MATRIX_PATH: S05 hard A success continued=true
+P4_MATRIX_PATH: S06 hard A success continued=true
+P4_MATRIX_PATH: S07 hard A success continued=true
+P4_MATRIX_PATH: S08 hard A success continued=true
+P4_MATRIX_PATH: S09 hard A success continued=true
+P4_MATRIX_PATH: S10 hard A success continued=true
+P4_MATRIX_PATH: S11 hard A success continued=true
+P4_MATRIX_PATH: S12 hard A success continued=true
+P4_MATRIX_PATH: M01 hard B success continued=true
+P4_MATRIX_PATH: M02 hard B success continued=true
+P4_MATRIX_PATH: M03 hard B success continued=true
+P4_MATRIX_PATH: M04 hard B success continued=true
+P4_MATRIX_PATH: M05 hard B partial continued=true
+P4_MATRIX_PATH: M06 hard B success continued=true
+P4_MATRIX_PATH: M07 hard B success continued=true
+P4_MATRIX_PATH: M08 hard B success continued=true
+P4_MATRIX_PATH: M09 hard B success continued=true
+P4_MATRIX_PATH: M10 hard B success continued=true
+P4_MATRIX_PATH: M11 hard B success continued=true
+P4_MATRIX_PATH: M12 hard B success continued=true
+P4_MATRIX_PATH: M13 hard B success continued=true
+P4_MATRIX_PATH: M14 hard B success continued=true
+P4_MATRIX_PATH: M15 hard B success continued=true
+P4_MATRIX_PATH: M16 hard B success continued=true
+P4_MATRIX_PATH: M17 hard B success continued=true
+P4_MATRIX_PATH: M18 hard B success continued=true
+P4_MATRIX_PATH: M19 hard B success continued=true
+P4_MATRIX_PATH: M20 hard B success continued=true
+P4_MATRIX_PATH: M21 hard B success continued=true
+P4_MATRIX_PATH: M22 hard B success continued=true
+P4_MATRIX_PATH: M23 hard B success continued=true
+P4_MATRIX_PATH: M24 hard B success continued=true
+P4_MATRIX_PATH: S01 hard B success continued=true
+P4_MATRIX_PATH: S02 hard B success continued=true
+P4_MATRIX_PATH: S03 hard B success continued=true
+P4_MATRIX_PATH: S04 hard B success continued=true
+P4_MATRIX_PATH: S05 hard B success continued=true
+P4_MATRIX_PATH: S06 hard B success continued=true
+P4_MATRIX_PATH: S07 hard B success continued=true
+P4_MATRIX_PATH: S08 hard B success continued=true
+P4_MATRIX_PATH: S09 hard B success continued=true
+P4_MATRIX_PATH: S10 hard B success continued=true
+P4_MATRIX_PATH: S11 hard B success continued=true
+P4_MATRIX_PATH: S12 hard B success continued=true
+P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ "success": 70, "partial": 2, "failed": 0 }
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+CHECK_OK: current development automated checks; P4 Windows native acceptance remains separate
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1msavepack[22m | Started 打包中 (102 steps)[39m[0m
+[   1% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/attack.wav-9c2253b644688958b451b0a97b1b6630.sample[39m[0m
+[   1% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_feedback/attack.wav.import[39m[0m
+[   1% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/drop.wav-178cc350a30d2f1dcb03e1faa78ff6d2.sample[39m[0m
+[   1% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_feedback/drop.wav.import[39m[0m
+[   2% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/extract.wav-c91be904b79bf9fab113f480d77fafc5.sample[39m[0m
+[   2% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_feedback/extract.wav.import[39m[0m
+[   3% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/injury.wav-0fce3705f2b1320bb4ae1bf3302d2c64.sample[39m[0m
+[   3% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_feedback/injury.wav.import[39m[0m
+[   4% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/move.wav-37127956c6991509c0e73343e973eb60.sample[39m[0m
+[   4% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_feedback/move.wav.import[39m[0m
+[   5% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/pickup.wav-f3984d42ffbc1b813de3113e53b8b096.sample[39m[0m
+[   5% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_feedback/pickup.wav.import[39m[0m
+[   5% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/push.wav-388a701158df5cead131eb8577deacb4.sample[39m[0m
+[   5% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_feedback/push.wav.import[39m[0m
+[   6% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/stabilize.wav-9e21d831cba103a47c6b9306f1dff49e.sample[39m[0m
+[   6% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_feedback/stabilize.wav.import[39m[0m
+[   7% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/work.wav-f4e1534413f1ed0ad71586c4a513032c.sample[39m[0m
+[   7% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_feedback/work.wav.import[39m[0m
+[   8% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/ambient_camp.wav-13a1781618ac0f414e39ebdb66859b58.sample[39m[0m
+[   8% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/ambient_camp.wav.import[39m[0m
+[   9% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/ambient_field.wav-bdad535e20b564a2ce6d19323c7a6aad.sample[39m[0m
+[   9% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/ambient_field.wav.import[39m[0m
+[  10% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/attack.wav-78cee2fc6fc45fe367cd6ac85d654408.sample[39m[0m
+[  10% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/attack.wav.import[39m[0m
+[  10% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/drop.wav-6eb874cca60f7771ba2220dba867de6c.sample[39m[0m
+[  10% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/drop.wav.import[39m[0m
+[  11% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/ending.wav-394c0384d59b70de11f6de2d07b4e779.sample[39m[0m
+[  11% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/ending.wav.import[39m[0m
+[  12% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/end_round.wav-1d6833f09285bbf93693982aaf9ef696.sample[39m[0m
+[  12% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/end_round.wav.import[39m[0m
+[  13% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/extract.wav-e24f0cae65c61612552fff4dfbdae4d5.sample[39m[0m
+[  13% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/extract.wav.import[39m[0m
+[  14% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/injury.wav-8545b03e891a87905da96e40f8737d1e.sample[39m[0m
+[  14% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/injury.wav.import[39m[0m
+[  14% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/machine_hauler.wav-d8307643cd89fb904523e08134ca85b4.sample[39m[0m
+[  14% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/machine_hauler.wav.import[39m[0m
+[  15% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/machine_relay.wav-cad5c9b8aa03555fd375285864c40057.sample[39m[0m
+[  15% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/machine_relay.wav.import[39m[0m
+[  16% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/machine_scout.wav-e27ea749be32aaf69751609a629b1bab.sample[39m[0m
+[  16% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/machine_scout.wav.import[39m[0m
+[  17% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/machine_sentinel.wav-47a1a3cb107f6d35c9e34a116ba89508.sample[39m[0m
+[  17% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/machine_sentinel.wav.import[39m[0m
+[  18% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/machine_skimmer.wav-1d9b048de4d9d0913da943f49e96b84f.sample[39m[0m
+[  18% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/machine_skimmer.wav.import[39m[0m
+[  19% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/machine_welder.wav-22c69b4ea5dc728b9f58fd7427bbdfaf.sample[39m[0m
+[  19% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/machine_welder.wav.import[39m[0m
+[  19% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/move.wav-3a0cc8c320515b9f694f6b8d220139e5.sample[39m[0m
+[  19% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/move.wav.import[39m[0m
+[  20% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/objective.wav-2ad09713dcc63bc7639e10eee5fb1c54.sample[39m[0m
+[  20% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/objective.wav.import[39m[0m
+[  21% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/pickup.wav-358d4b1e6280b1330e058fa9df854632.sample[39m[0m
+[  21% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/pickup.wav.import[39m[0m
+[  22% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/push.wav-bcd0a05b98c9ec44dca33fb1e13376aa.sample[39m[0m
+[  22% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/push.wav.import[39m[0m
+[  23% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/stabilize.wav-654a0571a7548be46ac1f5fc69a42aa8.sample[39m[0m
+[  23% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/stabilize.wav.import[39m[0m
+[  23% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/ui_cancel.wav-a66a77f6cf29282c600afa34c79b99f1.sample[39m[0m
+[  23% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/ui_cancel.wav.import[39m[0m
+[  24% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/ui_confirm.wav-36d60d555366515767e7cd4a4cab96eb.sample[39m[0m
+[  24% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/ui_confirm.wav.import[39m[0m
+[  25% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/ui_error.wav-a96cc5727ec9fe1e77b373154c19fa86.sample[39m[0m
+[  25% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/ui_error.wav.import[39m[0m
+[  26% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/ui_focus.wav-43c1470760152f0e1221e8597c8135b3.sample[39m[0m
+[  26% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/ui_focus.wav.import[39m[0m
+[  27% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/ui_page.wav-a778afe3bb4d07798494cc90d4cd6483.sample[39m[0m
+[  27% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/ui_page.wav.import[39m[0m
+[  28% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/ui_save.wav-fe205a7bebe6d6a5678666762d13223d.sample[39m[0m
+[  28% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/ui_save.wav.import[39m[0m
+[  28% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/work.wav-39cd8393559f1ec42b432e0c4e177bf6.sample[39m[0m
+[  28% ] [90m[1msavepack[22m | 正在保存文件：res://assets/audio_p4/work.wav.import[39m[0m
+[  29% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/noto_sans_cjk_sc_regular.otf-97acc729c9e83e29380f51376321645d.fontdata[39m[0m
+[  29% ] [90m[1msavepack[22m | 正在保存文件：res://assets/fonts/noto_sans_cjk_sc_regular.otf.import[39m[0m
+[  30% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/crew_a.png-aae82cb007d0e9919e006a9a553e71e6.ctex[39m[0m
+[  30% ] [90m[1msavepack[22m | 正在保存文件：res://assets/motion_p4/crew_a.png.import[39m[0m
+[  31% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/crew_b.png-35e0ffd84bfd516368e12ae196dcd1c6.ctex[39m[0m
+[  31% ] [90m[1msavepack[22m | 正在保存文件：res://assets/motion_p4/crew_b.png.import[39m[0m
+[  32% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/crew_portraits.png-8174c3c61484a56cf1d0e193beab75e8.ctex[39m[0m
+[  32% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p1/crew_portraits.png.import[39m[0m
+[  32% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/harbor_camp.png-ee2a51dae0491d31c7dae5f9d7480fe3.ctex[39m[0m
+[  32% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p1/harbor_camp.png.import[39m[0m
+[  33% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/rescue_sprites.png-1085b5aa5b11c1096b4dd864d45260d3.ctex[39m[0m
+[  33% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p1/rescue_sprites.png.import[39m[0m
+[  33% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/support_responder.png-07a7fedb345cc1bc808c40a4bcc972b2.ctex[39m[0m
+[  33% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p1/support_responder.png.import[39m[0m
+[  34% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/terrain_atlas.png-35bb3ef0ab0830bdff0c0e495ec56f6c.ctex[39m[0m
+[  34% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p1/terrain_atlas.png.import[39m[0m
+[  35% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/chen_portrait.png-7682c018b3980251d0c5dec3894a6aae.ctex[39m[0m
+[  35% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p2/chen_portrait.png.import[39m[0m
+[  36% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/chen_sprite.png-8aa6ad5e689766513066218b049ca14c.ctex[39m[0m
+[  36% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p2/chen_sprite.png.import[39m[0m
+[  36% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/environments.png-02924e611c2e5de25cf407c3ab719ae0.ctex[39m[0m
+[  36% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p2/environments.png.import[39m[0m
+[  37% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/machines.png-2b98b3bec0dcd0973e42d4bc5aa9492e.ctex[39m[0m
+[  37% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p2/machines.png.import[39m[0m
+[  38% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/objectives.png-4fce552a45e54e2b9e607c2dcd4ba031.ctex[39m[0m
+[  38% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p2/objectives.png.import[39m[0m
+[  39% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/crew_portraits.png-1d9cacac088fe82454babfce81708ddc.ctex[39m[0m
+[  39% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p3/crew_portraits.png.import[39m[0m
+[  40% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/crew_sprites.png-23af8723d32e540a0d20c13bf5febdc2.ctex[39m[0m
+[  40% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p3/crew_sprites.png.import[39m[0m
+[  40% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/crew_sprites_source.png-77558fbc449d31378d7ddb7cd169b933.ctex[39m[0m
+[  40% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p3/crew_sprites_source.png.import[39m[0m
+[  41% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/imported/environments.png-0de1613339ce1cc4aca8bd1fdc2c1d08.ctex[39m[0m
+[  41% ] [90m[1msavepack[22m | 正在保存文件：res://assets/visual_p3/environments.png.import[39m[0m
+[  42% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/abilities.json[39m[0m
+[  43% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/acceptance.json[39m[0m
+[  44% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/approach_review_contract.json[39m[0m
+[  45% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/boards.json[39m[0m
+[  45% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/character_scripts.json[39m[0m
+[  46% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/combat.json[39m[0m
+[  47% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/design_manifest.json[39m[0m
+[  48% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/enemies.json[39m[0m
+[  49% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/equipment.json[39m[0m
+[  50% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/facilities.json[39m[0m
+[  50% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/full_audit_contract.json[39m[0m
+[  51% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/growth_identity_contract.json[39m[0m
+[  52% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/integrated_review_contract.json[39m[0m
+[  53% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/integration.json[39m[0m
+[  54% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/ordinary_player_contract.json[39m[0m
+[  54% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/player_choice_contract.json[39m[0m
+[  55% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/player_experience_contract.json[39m[0m
+[  56% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/player_flow.json[39m[0m
+[  57% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/player_ready_contract.json[39m[0m
+[  58% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/predevelopment_decisions.json[39m[0m
+[  59% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/production_scope.json[39m[0m
+[  59% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/progression_relationship.json[39m[0m
+[  60% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/relationship_edge_cases.json[39m[0m
+[  61% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/release_baseline.json[39m[0m
+[  62% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/release_scope.json[39m[0m
+[  63% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/stories.json[39m[0m
+[  63% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/system_audit_contract.json[39m[0m
+[  64% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/tactical_review_contract.json[39m[0m
+[  65% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/training_value_contract.json[39m[0m
+[  66% ] [90m[1msavepack[22m | 正在保存文件：res://data/final_design/whole_campaign_contract.json[39m[0m
+[  66% ] [90m[1msavepack[22m | 正在保存文件：res://data/localization/zh_CN.json[39m[0m
+[  67% ] [90m[1msavepack[22m | 正在保存文件：res://data/campaign_coordination_contract.json[39m[0m
+[  67% ] [90m[1msavepack[22m | 正在保存文件：res://data/campaign_economy_contract.json[39m[0m
+[  68% ] [90m[1msavepack[22m | 正在保存文件：res://data/campaign_flow.json[39m[0m
+[  69% ] [90m[1msavepack[22m | 正在保存文件：res://data/campaign_world_contract.json[39m[0m
+[  70% ] [90m[1msavepack[22m | 正在保存文件：res://data/characters.json[39m[0m
+[  71% ] [90m[1msavepack[22m | 正在保存文件：res://data/confirmed_experience_policy.json[39m[0m
+[  71% ] [90m[1msavepack[22m | 正在保存文件：res://data/enemies.json[39m[0m
+[  72% ] [90m[1msavepack[22m | 正在保存文件：res://data/equipment.json[39m[0m
+[  73% ] [90m[1msavepack[22m | 正在保存文件：res://data/event_contract_example.json[39m[0m
+[  74% ] [90m[1msavepack[22m | 正在保存文件：res://data/initial_relationships.json[39m[0m
+[  75% ] [90m[1msavepack[22m | 正在保存文件：res://data/mission_registry.json[39m[0m
+[  76% ] [90m[1msavepack[22m | 正在保存文件：res://data/product.json[39m[0m
+[  76% ] [90m[1msavepack[22m | 正在保存文件：res://data/requirements.json[39m[0m
+[  77% ] [90m[1msavepack[22m | 正在保存文件：res://data/rules.json[39m[0m
+[  78% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/exported/133200997/export-3ad5c15c4f3250da0cc7c1af1770d85f-main.scn[39m[0m
+[  79% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/app/main.gdc[39m[0m
+[  80% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/app/native_acceptance.gdc[39m[0m
+[  80% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/app/session.gdc[39m[0m
+[  81% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/campaign_rules.gdc[39m[0m
+[  82% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/campaign_social.gdc[39m[0m
+[  83% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/chapter_hazards.gdc[39m[0m
+[  84% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/chapter_one.gdc[39m[0m
+[  85% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/chapter_stories.gdc[39m[0m
+[  85% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/full_campaign.gdc[39m[0m
+[  86% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/history_repair.gdc[39m[0m
+[  87% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/p1_protocols.gdc[39m[0m
+[  88% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/p1_specialties.gdc[39m[0m
+[  89% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/product_systems.gdc[39m[0m
+[  89% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/relationship_rules.gdc[39m[0m
+[  90% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/save_store.gdc[39m[0m
+[  91% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/infrastructure/campaign_store.gdc[39m[0m
+[  92% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/infrastructure/content_catalog.gdc[39m[0m
+[  93% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/action_feedback.gdc[39m[0m
+[  94% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/audio_controller.gdc[39m[0m
+[  94% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/guidance.gdc[39m[0m
+[  95% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/localization.gdc[39m[0m
+[  96% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/runtime_metrics.gdc[39m[0m
+[  97% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/tactical_board.gdc[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/visual_assets.gdc[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scenes/main.tscn.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/app/main.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/app/native_acceptance.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/app/session.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/campaign_rules.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/campaign_social.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/chapter_hazards.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/chapter_one.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/chapter_stories.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/full_campaign.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/history_repair.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/p1_protocols.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/p1_specialties.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/product_systems.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/relationship_rules.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/domain/save_store.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/infrastructure/campaign_store.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/infrastructure/content_catalog.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/action_feedback.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/audio_controller.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/guidance.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/localization.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/runtime_metrics.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/tactical_board.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://scripts/presentation/visual_assets.gd.remap[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/global_script_class_cache.cfg[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://.godot/uid_cache.bin[39m[0m
+[  98% ] [90m[1msavepack[22m | 正在保存文件：res://project.binary[39m[0m
+[92m[ DONE ][39m [1msavepack[22m
+[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+WINDOWS_EXPORT_OK: /Users/a1-6/projects/person/gameNOT/build/windows-p4-tuning; native Windows tests remain required

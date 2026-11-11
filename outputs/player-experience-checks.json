@@ -1,0 +1,3473 @@
+{
+  "version": "0.8-player-experience",
+  "passed_count": 73,
+  "checks": [
+    "reliable success can reduce relevant ordinary irritation",
+    "audience may add bounded credit with real joint contribution",
+    "successful breach remains resentment and loses trust",
+    "restraint is not forgiveness",
+    "ambiguous blame does not fabricate guilt",
+    "strict self appraisal has higher load for same observed setback",
+    "strict self appraisal changes first expressed concern",
+    "weather with no responsible actor produces no directed blame",
+    "merely bringing likedC produces no relationship credit",
+    "success cannot erase severe old memory or G",
+    "irrelevant good task cannot erase humiliation",
+    "repeated root receipt makes no second change",
+    "same root cannot bypass dedup by changing mission",
+    "positive credit mission cap is3 per direction",
+    "ordinary relief mission cap6 and never returns archive",
+    "breach audience does not discount verified wrongdoing",
+    "unfairness audience does not discount verified wrongdoing",
+    "humiliation audience does not discount verified wrongdoing",
+    "concealment audience does not discount verified wrongdoing",
+    "cost_overrun audience does not discount verified wrongdoing",
+    "start irrelevant time does not automatically add resentment",
+    "finish irrelevant time does not automatically add resentment",
+    "late start and finish same breach is one memory",
+    "more people cannot multiply social credit or emotion",
+    "audience lacking information does not count as informed witness",
+    "unlearned event has no internal or relational penalty",
+    "unknown event does not consume later learning token",
+    "later learning keeps occurrence separate from memory date",
+    "pending explanation retained with explicit uncertainty",
+    "late evidence confirms original event once",
+    "late confirmation does not double charge selfload and stress",
+    "correction assigns actual leader and not suspected coworker",
+    "proven no blame closes suspicion without reward",
+    "all directions share single personal load and stress caps",
+    "self burden can request support without basic action loss",
+    "existing recovery and support reduce load by8",
+    "same night cannot farm recovery",
+    "self burden has reachable exit and is not a diagnostic label",
+    "invalid responsibility transaction rolls back all state",
+    "1200fixedseed contexts preserve bounded causal state",
+    "M01tutorial accepts relaxedAcontrols",
+    "M01tutorial accepts relaxedArush",
+    "M01tutorial accepts relaxedAattack",
+    "M01tutorial accepts relaxedAoptional_first",
+    "M01tutorial accepts relaxedBcontrols",
+    "M01tutorial accepts relaxedBrush",
+    "M01tutorial accepts relaxedBattack",
+    "M01tutorial accepts relaxedBoptional_first",
+    "M01tutorial accepts standardAcontrols",
+    "M01tutorial accepts standardArush",
+    "M01tutorial accepts standardAattack",
+    "M01tutorial accepts standardAoptional_first",
+    "M01tutorial accepts standardBcontrols",
+    "M01tutorial accepts standardBrush",
+    "M01tutorial accepts standardBattack",
+    "M01tutorial accepts standardBoptional_first",
+    "M01tutorial accepts hardAcontrols",
+    "M01tutorial accepts hardArush",
+    "M01tutorial accepts hardAattack",
+    "M01tutorial accepts hardAoptional_first",
+    "M01tutorial accepts hardBcontrols",
+    "M01tutorial accepts hardBrush",
+    "M01tutorial accepts hardBattack",
+    "M01tutorial accepts hardBoptional_first",
+    "skipping help does not require solving an invented exercise",
+    "unsecured cargo cannot satisfy rescue tutorial",
+    "hints filter unavailable or stale actions",
+    "all8cast have individual visual and appraisal briefs",
+    "guide entries have alternatives and dismissal",
+    "M06actual alternatives preserve different optional outcomes",
+    "actual risky decision attributes breach to commander not carrier",
+    "actual safe alternative does not invent broken promise",
+    "runtime remains untouched"
+  ],
+  "property_sample_count": 1200,
+  "m01_strategy_configurations": 24,
+  "examples": [
+    {
+      "name": "成功，C不在场",
+      "profile": "xu",
+      "input": {
+        "id": "case",
+        "mission": "M17",
+        "day": 8,
+        "kind": "cooperation",
+        "outcome": "success",
+        "known_by": [
+          "B",
+          "A",
+          "C"
+        ],
+        "witnesses": [
+          "B",
+          "A"
+        ],
+        "contributors": [
+          "B",
+          "A"
+        ],
+        "responsibility": {},
+        "evidence": "verified",
+        "voluntary_contribution": true,
+        "relevant_category": "fairness",
+        "extra_cost": 0,
+        "self_control": 0.75
+      },
+      "result": {
+        "id": "case",
+        "mission": "M17",
+        "directions": {
+          "A": {
+            "known": true,
+            "confirmed": false,
+            "share": 0,
+            "kind": "cooperation",
+            "stress": 0,
+            "self_load": 0,
+            "suspicion": 0,
+            "focus": null,
+            "salience": 0.0,
+            "expression": "acknowledge_contribution",
+            "trust_gain": 2,
+            "relief": 2.3,
+            "relief_category": "fairness",
+            "positive": true,
+            "r_before": 40.0,
+            "r_after": 37.7,
+            "trust_before": 50,
+            "trust_after": 52,
+            "actual_relief": 2.3,
+            "actual_trust_gain": 2
+          }
+        },
+        "self_load": 0.0,
+        "load_delta": 0,
+        "stress": 8.0,
+        "stress_delta": -2,
+        "self_band": 0,
+        "basic_actions_changed": false
+      }
+    },
+    {
+      "name": "成功，C在场且B在意其评价",
+      "profile": "xu",
+      "input": {
+        "id": "case",
+        "mission": "M17",
+        "day": 8,
+        "kind": "cooperation",
+        "outcome": "success",
+        "known_by": [
+          "B",
+          "A",
+          "C"
+        ],
+        "witnesses": [
+          "B",
+          "A",
+          "C"
+        ],
+        "contributors": [
+          "B",
+          "A"
+        ],
+        "responsibility": {},
+        "evidence": "verified",
+        "voluntary_contribution": true,
+        "relevant_category": "fairness",
+        "extra_cost": 0,
+        "self_control": 0.75
+      },
+      "result": {
+        "id": "case",
+        "mission": "M17",
+        "directions": {
+          "A": {
+            "known": true,
+            "confirmed": false,
+            "share": 0,
+            "kind": "cooperation",
+            "stress": 0,
+            "self_load": 0,
+            "suspicion": 0,
+            "focus": "C",
+            "salience": 0.765,
+            "expression": "shared_relief",
+            "trust_gain": 3,
+            "relief": 3,
+            "relief_category": "fairness",
+            "positive": true,
+            "r_before": 40.0,
+            "r_after": 37.0,
+            "trust_before": 50,
+            "trust_after": 53,
+            "actual_relief": 3,
+            "actual_trust_gain": 3
+          }
+        },
+        "self_load": 0.0,
+        "load_delta": 0,
+        "stress": 8.0,
+        "stress_delta": -2,
+        "self_band": 0,
+        "basic_actions_changed": false
+      }
+    },
+    {
+      "name": "成功，但明确违约仍成立",
+      "profile": "xu",
+      "input": {
+        "id": "case",
+        "mission": "M17",
+        "day": 8,
+        "kind": "breach",
+        "outcome": "success",
+        "known_by": [
+          "B",
+          "A",
+          "C"
+        ],
+        "witnesses": [
+          "B",
+          "A",
+          "C"
+        ],
+        "contributors": [
+          "B",
+          "A"
+        ],
+        "responsibility": {
+          "A": 1
+        },
+        "evidence": "verified",
+        "voluntary_contribution": true,
+        "relevant_category": "fairness",
+        "extra_cost": 0,
+        "self_control": 0.75,
+        "explicit_violation": true
+      },
+      "result": {
+        "id": "case",
+        "mission": "M17",
+        "directions": {
+          "A": {
+            "known": true,
+            "confirmed": true,
+            "share": 1,
+            "kind": "breach",
+            "stress": 0,
+            "self_load": 0,
+            "suspicion": 0,
+            "focus": "C",
+            "salience": 0.765,
+            "expression": "public_restraint_private_concern",
+            "trust_gain": 0,
+            "relief": 0,
+            "relief_category": "fairness",
+            "positive": false,
+            "r_before": 40.0,
+            "r_after": 54.748,
+            "trust_before": 50,
+            "trust_after": 42,
+            "actual_relief": 0,
+            "actual_trust_gain": 0
+          }
+        },
+        "self_load": 0.0,
+        "load_delta": 0,
+        "stress": 10.0,
+        "stress_delta": 0,
+        "self_band": 0,
+        "basic_actions_changed": false
+      }
+    },
+    {
+      "name": "失败，A有明确责任，C在场",
+      "profile": "xu",
+      "input": {
+        "id": "case",
+        "mission": "M17",
+        "day": 8,
+        "kind": "cost_overrun",
+        "outcome": "failed",
+        "known_by": [
+          "B",
+          "A",
+          "C"
+        ],
+        "witnesses": [
+          "B",
+          "A",
+          "C"
+        ],
+        "contributors": [
+          "B",
+          "A"
+        ],
+        "responsibility": {
+          "A": 1
+        },
+        "evidence": "verified",
+        "voluntary_contribution": true,
+        "relevant_category": "fairness",
+        "extra_cost": 2,
+        "self_control": 0.75
+      },
+      "result": {
+        "id": "case",
+        "mission": "M17",
+        "directions": {
+          "A": {
+            "known": true,
+            "confirmed": true,
+            "share": 1,
+            "kind": "cost_overrun",
+            "stress": 8,
+            "self_load": 3.934,
+            "suspicion": 0,
+            "focus": "C",
+            "salience": 0.765,
+            "expression": "public_restraint_private_concern",
+            "trust_gain": 0,
+            "relief": 0,
+            "relief_category": "fairness",
+            "positive": false,
+            "r_before": 40.0,
+            "r_after": 46.937,
+            "trust_before": 50,
+            "trust_after": 47,
+            "actual_relief": 0,
+            "actual_trust_gain": 0
+          }
+        },
+        "self_load": 3.934,
+        "load_delta": 3.934,
+        "stress": 18.0,
+        "stress_delta": 8,
+        "self_band": 0,
+        "basic_actions_changed": false
+      }
+    },
+    {
+      "name": "失败，只有疑点，B倾向外归因",
+      "profile": "ye",
+      "input": {
+        "id": "case",
+        "mission": "M17",
+        "day": 8,
+        "kind": "cost_overrun",
+        "outcome": "failed",
+        "known_by": [
+          "B",
+          "A",
+          "C"
+        ],
+        "witnesses": [
+          "B",
+          "A",
+          "C"
+        ],
+        "contributors": [
+          "B",
+          "A"
+        ],
+        "responsibility": {},
+        "evidence": "ambiguous",
+        "voluntary_contribution": true,
+        "relevant_category": "fairness",
+        "extra_cost": 2,
+        "self_control": 0.75,
+        "suspect": "A",
+        "visible_cue": true
+      },
+      "result": {
+        "id": "case",
+        "mission": "M17",
+        "directions": {
+          "A": {
+            "known": true,
+            "confirmed": false,
+            "share": 0,
+            "kind": "cost_overrun",
+            "stress": 8,
+            "self_load": 3.234,
+            "suspicion": 1.89,
+            "focus": "C",
+            "salience": 0.552,
+            "expression": "tentative_question_not_accusation",
+            "trust_gain": 0,
+            "relief": 0,
+            "relief_category": "fairness",
+            "positive": false,
+            "r_before": 40.0,
+            "r_after": 40.0,
+            "trust_before": 50,
+            "trust_after": 50,
+            "actual_relief": 0,
+            "actual_trust_gain": 0
+          }
+        },
+        "self_load": 3.234,
+        "load_delta": 3.234,
+        "stress": 18.0,
+        "stress_delta": 8,
+        "self_band": 0,
+        "basic_actions_changed": false
+      }
+    },
+    {
+      "name": "同样失败，B更严格自责",
+      "profile": "lin",
+      "input": {
+        "id": "case",
+        "mission": "M17",
+        "day": 8,
+        "kind": "cost_overrun",
+        "outcome": "failed",
+        "known_by": [
+          "B",
+          "A",
+          "C"
+        ],
+        "witnesses": [
+          "B",
+          "A",
+          "C"
+        ],
+        "contributors": [
+          "B",
+          "A"
+        ],
+        "responsibility": {},
+        "evidence": "ambiguous",
+        "voluntary_contribution": true,
+        "relevant_category": "fairness",
+        "extra_cost": 2,
+        "self_control": 0.75,
+        "suspect": "A",
+        "visible_cue": true
+      },
+      "result": {
+        "id": "case",
+        "mission": "M17",
+        "directions": {
+          "A": {
+            "known": true,
+            "confirmed": false,
+            "share": 0,
+            "kind": "cost_overrun",
+            "stress": 8,
+            "self_load": 4.441,
+            "suspicion": 0.978,
+            "focus": "C",
+            "salience": 0.297,
+            "expression": "self_questioning_request_review",
+            "trust_gain": 0,
+            "relief": 0,
+            "relief_category": "fairness",
+            "positive": false,
+            "r_before": 40.0,
+            "r_after": 40.0,
+            "trust_before": 50,
+            "trust_after": 50,
+            "actual_relief": 0,
+            "actual_trust_gain": 0
+          }
+        },
+        "self_load": 4.441,
+        "load_delta": 4.441,
+        "stress": 18.0,
+        "stress_delta": 8,
+        "self_band": 0,
+        "basic_actions_changed": false
+      }
+    },
+    {
+      "name": "坏天气下未完成，没有个人过错",
+      "profile": "lin",
+      "input": {
+        "id": "case",
+        "mission": "M17",
+        "day": 8,
+        "kind": "cost_overrun",
+        "outcome": "failed",
+        "known_by": [
+          "B",
+          "A",
+          "C"
+        ],
+        "witnesses": [
+          "B",
+          "A",
+          "C"
+        ],
+        "contributors": [],
+        "responsibility": {},
+        "evidence": "verified",
+        "voluntary_contribution": true,
+        "relevant_category": "fairness",
+        "extra_cost": 0,
+        "self_control": 0.75,
+        "weather_hazard_experienced": true
+      },
+      "result": {
+        "id": "case",
+        "mission": "M17",
+        "directions": {},
+        "self_load": 3.06,
+        "load_delta": 3.06,
+        "stress": 15.0,
+        "stress_delta": 5,
+        "self_band": 0,
+        "basic_actions_changed": false
+      }
+    }
+  ],
+  "tactical_context_cases": [
+    {
+      "style": "attack",
+      "rounds": 7,
+      "damage": 0,
+      "secured": [
+        "r1",
+        "r2"
+      ],
+      "promise": "第7轮末前返回：为对照明确设定的自愿承诺，不是原关卡的强制限时",
+      "appraisal": {
+        "id": "M06-voluntary-return",
+        "mission": "M06",
+        "directions": {
+          "su": {
+            "known": true,
+            "confirmed": false,
+            "share": 0,
+            "kind": "cooperation",
+            "stress": 0,
+            "self_load": 0,
+            "suspicion": 0,
+            "focus": null,
+            "salience": 0.0,
+            "expression": "factual_update",
+            "trust_gain": 0,
+            "relief": 0,
+            "relief_category": "fairness",
+            "positive": false,
+            "r_before": 0,
+            "r_after": 0,
+            "trust_before": 50,
+            "trust_after": 50,
+            "actual_relief": 0,
+            "actual_trust_gain": 0
+          },
+          "xu": {
+            "known": true,
+            "confirmed": false,
+            "share": 0,
+            "kind": "cooperation",
+            "stress": 0,
+            "self_load": 0,
+            "suspicion": 0,
+            "focus": "su",
+            "salience": 0.297,
+            "expression": "factual_update",
+            "trust_gain": 0,
+            "relief": 0,
+            "relief_category": "fairness",
+            "positive": false,
+            "r_before": 0,
+            "r_after": 0,
+            "trust_before": 50,
+            "trust_after": 50,
+            "actual_relief": 0,
+            "actual_trust_gain": 0
+          }
+        },
+        "self_load": 0.0,
+        "load_delta": 0,
+        "stress": 10.0,
+        "stress_delta": 0,
+        "self_band": 0,
+        "basic_actions_changed": false
+      },
+      "log": [
+        {
+          "round": 1,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                2
+              ],
+              "cells": [
+                [
+                  7,
+                  3
+                ],
+                [
+                  7,
+                  4
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                4,
+                0
+              ],
+              "cells": [
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            1,
+            4
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            3,
+            5
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              2,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            3,
+            4
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              3,
+              7
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            1,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            6,
+            5
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            3,
+            2
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "round_end",
+          "hp": [
+            10,
+            10,
+            10
+          ],
+          "positions": [
+            [
+              1,
+              1
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "secured": []
+        },
+        {
+          "round": 2,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                4
+              ],
+              "cells": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                4,
+                3
+              ],
+              "cells": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            2,
+            1
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            6,
+            3
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              6,
+              5
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "action": "stabilize",
+          "actor": 2,
+          "at": [
+            3,
+            2
+          ],
+          "ap_left": 1,
+          "target": "r1"
+        },
+        {
+          "round": 2,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            5,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "action": "stabilize",
+          "actor": 1,
+          "at": [
+            6,
+            3
+          ],
+          "ap_left": 0,
+          "target": "r2"
+        },
+        {
+          "round": 2,
+          "action": "pickup",
+          "actor": 2,
+          "at": [
+            3,
+            2
+          ],
+          "ap_left": 0,
+          "target": "r1"
+        },
+        {
+          "round": 2,
+          "action": "round_end",
+          "hp": [
+            10,
+            10,
+            10
+          ],
+          "positions": [
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "secured": []
+        },
+        {
+          "round": 3,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                5
+              ],
+              "cells": [
+                [
+                  7,
+                  4
+                ],
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                1,
+                3
+              ],
+              "cells": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            2,
+            1
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              5,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "action": "pickup",
+          "actor": 1,
+          "at": [
+            6,
+            3
+          ],
+          "ap_left": 1,
+          "target": "r2"
+        },
+        {
+          "round": 3,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            3,
+            4
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            1,
+            2
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            6,
+            5
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              6,
+              3
+            ],
+            [
+              6,
+              4
+            ],
+            [
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            2,
+            5
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "action": "round_end",
+          "hp": [
+            10,
+            10,
+            10
+          ],
+          "positions": [
+            [
+              1,
+              2
+            ],
+            [
+              6,
+              5
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "secured": []
+        },
+        {
+          "round": 4,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                3
+              ],
+              "cells": [
+                [
+                  7,
+                  2
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                4,
+                3
+              ],
+              "cells": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            3,
+            1
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            4,
+            5
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              6,
+              5
+            ],
+            [
+              5,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            0,
+            5
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              2,
+              5
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            4,
+            2
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            2,
+            5
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              4,
+              5
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "round_end",
+          "hp": [
+            10,
+            10,
+            10
+          ],
+          "positions": [
+            [
+              4,
+              2
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "secured": []
+        },
+        {
+          "round": 5,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                2
+              ],
+              "cells": [
+                [
+                  7,
+                  3
+                ],
+                [
+                  7,
+                  4
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                1,
+                3
+              ],
+              "cells": [
+                [
+                  1,
+                  4
+                ],
+                [
+                  1,
+                  5
+                ],
+                [
+                  1,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            2,
+            3
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              4,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            2,
+            7
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              7
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "completed",
+          "target": "r1"
+        },
+        {
+          "round": 5,
+          "action": "extract",
+          "actor": 2,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 1,
+          "target": "r1"
+        },
+        {
+          "round": 5,
+          "action": "attack",
+          "actor": 0,
+          "at": [
+            2,
+            3
+          ],
+          "ap_left": 0,
+          "target": "M06_enemy2",
+          "damage": 2
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            0,
+            7
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              2,
+              7
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            0,
+            3
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "water_added",
+          "cells": [
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "round_end",
+          "hp": [
+            10,
+            10,
+            10
+          ],
+          "positions": [
+            [
+              2,
+              3
+            ],
+            [
+              0,
+              7
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "secured": [
+            "r1"
+          ]
+        },
+        {
+          "round": 6,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                4
+              ],
+              "cells": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                1,
+                6
+              ],
+              "cells": [
+                [
+                  0,
+                  6
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            1,
+            4
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "round": 6,
+          "action": "completed",
+          "target": "r2"
+        },
+        {
+          "round": 6,
+          "action": "extract",
+          "actor": 1,
+          "at": [
+            0,
+            7
+          ],
+          "ap_left": 1,
+          "target": "r2"
+        },
+        {
+          "round": 6,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            1,
+            5
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              1,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 6,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            2,
+            6
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              2,
+              6
+            ]
+          ]
+        },
+        {
+          "round": 6,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            1,
+            7
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              0,
+              7
+            ],
+            [
+              1,
+              7
+            ]
+          ]
+        },
+        {
+          "round": 6,
+          "action": "attack",
+          "actor": 2,
+          "at": [
+            1,
+            5
+          ],
+          "ap_left": 0,
+          "target": "M06_enemy2",
+          "damage": 2
+        },
+        {
+          "round": 6,
+          "action": "object_lost",
+          "target": "asset",
+          "source": "announced_opportunity_deadline"
+        },
+        {
+          "round": 6,
+          "action": "round_end",
+          "hp": [
+            10,
+            10,
+            10
+          ],
+          "positions": [
+            [
+              2,
+              6
+            ],
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              5
+            ]
+          ],
+          "secured": [
+            "r1",
+            "r2"
+          ]
+        },
+        {
+          "round": 7,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                5
+              ],
+              "cells": [
+                [
+                  7,
+                  4
+                ],
+                [
+                  7,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              2,
+              6
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "round": 7,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            0,
+            7
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              1,
+              7
+            ],
+            [
+              0,
+              7
+            ]
+          ]
+        },
+        {
+          "round": 7,
+          "action": "leave_site",
+          "actor": 0,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 7,
+          "action": "leave_site",
+          "actor": 1,
+          "at": [
+            0,
+            7
+          ],
+          "ap_left": 0
+        },
+        {
+          "round": 7,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              1,
+              5
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "round": 7,
+          "action": "leave_site",
+          "actor": 2,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 0
+        }
+      ]
+    },
+    {
+      "style": "optional_first",
+      "rounds": 8,
+      "damage": 2,
+      "secured": [
+        "r1",
+        "r2",
+        "asset"
+      ],
+      "promise": "第7轮末前返回：为对照明确设定的自愿承诺，不是原关卡的强制限时",
+      "appraisal": {
+        "id": "M06-voluntary-return",
+        "mission": "M06",
+        "directions": {
+          "leader": {
+            "known": true,
+            "confirmed": true,
+            "share": 1,
+            "kind": "breach",
+            "stress": 3,
+            "self_load": 0.988,
+            "suspicion": 0,
+            "focus": "su",
+            "salience": 0.297,
+            "expression": "state_specific_objection",
+            "trust_gain": 0,
+            "relief": 0,
+            "relief_category": "fairness",
+            "positive": false,
+            "r_before": 0,
+            "r_after": 12.3,
+            "trust_before": 50,
+            "trust_after": 42,
+            "actual_relief": 0,
+            "actual_trust_gain": 0
+          },
+          "su": {
+            "known": true,
+            "confirmed": false,
+            "share": 0,
+            "kind": "breach",
+            "stress": 3,
+            "self_load": 0.691,
+            "suspicion": 0,
+            "focus": null,
+            "salience": 0.0,
+            "expression": "factual_update",
+            "trust_gain": 0,
+            "relief": 0,
+            "relief_category": "fairness",
+            "positive": false,
+            "r_before": 0,
+            "r_after": 0,
+            "trust_before": 50,
+            "trust_after": 50,
+            "actual_relief": 0,
+            "actual_trust_gain": 0
+          },
+          "xu": {
+            "known": true,
+            "confirmed": false,
+            "share": 0,
+            "kind": "breach",
+            "stress": 3,
+            "self_load": 0.988,
+            "suspicion": 0,
+            "focus": "su",
+            "salience": 0.297,
+            "expression": "factual_update",
+            "trust_gain": 0,
+            "relief": 0,
+            "relief_category": "fairness",
+            "positive": false,
+            "r_before": 0,
+            "r_after": 0,
+            "trust_before": 50,
+            "trust_after": 50,
+            "actual_relief": 0,
+            "actual_trust_gain": 0
+          }
+        },
+        "self_load": 0.988,
+        "load_delta": 0.988,
+        "stress": 13.0,
+        "stress_delta": 3,
+        "self_band": 0,
+        "basic_actions_changed": false
+      },
+      "log": [
+        {
+          "round": 1,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                2
+              ],
+              "cells": [
+                [
+                  7,
+                  3
+                ],
+                [
+                  7,
+                  4
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                4,
+                0
+              ],
+              "cells": [
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            1,
+            4
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              1,
+              7
+            ],
+            [
+              1,
+              6
+            ],
+            [
+              1,
+              5
+            ],
+            [
+              1,
+              4
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            3,
+            5
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              2,
+              7
+            ],
+            [
+              2,
+              6
+            ],
+            [
+              2,
+              5
+            ],
+            [
+              3,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            4,
+            5
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              3,
+              7
+            ],
+            [
+              3,
+              6
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              4,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            1,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              1,
+              4
+            ],
+            [
+              1,
+              3
+            ],
+            [
+              1,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            3,
+            2
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            3,
+            3
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              4,
+              5
+            ],
+            [
+              3,
+              5
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 1,
+          "action": "round_end",
+          "hp": [
+            10,
+            10,
+            10
+          ],
+          "positions": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "secured": []
+        },
+        {
+          "round": 2,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                4
+              ],
+              "cells": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                4,
+                3
+              ],
+              "cells": [
+                [
+                  3,
+                  3
+                ],
+                [
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 2,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            4,
+            1
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "action": "stabilize",
+          "actor": 1,
+          "at": [
+            3,
+            2
+          ],
+          "ap_left": 1,
+          "target": "r1"
+        },
+        {
+          "round": 2,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            3,
+            1
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              3,
+              3
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            6,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            5,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            4,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              3,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 2,
+          "action": "round_end",
+          "hp": [
+            10,
+            10,
+            10
+          ],
+          "positions": [
+            [
+              6,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ],
+          "secured": []
+        },
+        {
+          "round": 3,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                5
+              ],
+              "cells": [
+                [
+                  7,
+                  4
+                ],
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                1,
+                3
+              ],
+              "cells": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  3,
+                  3
+                ],
+                [
+                  4,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 3,
+          "action": "pickup",
+          "actor": 0,
+          "at": [
+            6,
+            1
+          ],
+          "ap_left": 1,
+          "target": "asset"
+        },
+        {
+          "round": 3,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            6,
+            2
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              6,
+              2
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            5,
+            1
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              4,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            4,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              6,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "action": "stabilize",
+          "actor": 1,
+          "at": [
+            6,
+            2
+          ],
+          "ap_left": 0,
+          "target": "r2"
+        },
+        {
+          "round": 3,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            6,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              5,
+              1
+            ],
+            [
+              6,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 3,
+          "action": "round_end",
+          "hp": [
+            10,
+            10,
+            10
+          ],
+          "positions": [
+            [
+              4,
+              1
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              6,
+              1
+            ]
+          ],
+          "secured": []
+        },
+        {
+          "round": 4,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                3
+              ],
+              "cells": [
+                [
+                  7,
+                  2
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                4,
+                3
+              ],
+              "cells": [
+                [
+                  4,
+                  2
+                ],
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            2,
+            1
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              4,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            4,
+            1
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              6,
+              2
+            ],
+            [
+              6,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "pickup",
+          "actor": 2,
+          "at": [
+            6,
+            1
+          ],
+          "ap_left": 1,
+          "target": "r2"
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            0,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "pickup",
+          "actor": 1,
+          "at": [
+            4,
+            1
+          ],
+          "ap_left": 0,
+          "target": "r1"
+        },
+        {
+          "round": 4,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            6,
+            3
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              6,
+              1
+            ],
+            [
+              6,
+              2
+            ],
+            [
+              6,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 4,
+          "action": "damage",
+          "actor": 1,
+          "source": "M06_enemy2",
+          "damage": 2,
+          "hp": 8
+        },
+        {
+          "round": 4,
+          "action": "round_end",
+          "hp": [
+            10,
+            8,
+            10
+          ],
+          "positions": [
+            [
+              0,
+              1
+            ],
+            [
+              4,
+              1
+            ],
+            [
+              6,
+              3
+            ]
+          ],
+          "secured": []
+        },
+        {
+          "round": 5,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                2
+              ],
+              "cells": [
+                [
+                  7,
+                  3
+                ],
+                [
+                  7,
+                  4
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                4,
+                2
+              ],
+              "cells": [
+                [
+                  4,
+                  1
+                ],
+                [
+                  4,
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            0,
+            3
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            2,
+            1
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              4,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            4,
+            3
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              6,
+              3
+            ],
+            [
+              5,
+              3
+            ],
+            [
+              4,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            0,
+            5
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            0,
+            1
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            2,
+            3
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              4,
+              3
+            ],
+            [
+              3,
+              3
+            ],
+            [
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "water_added",
+          "cells": [
+            [
+              1,
+              3
+            ],
+            [
+              3,
+              4
+            ]
+          ]
+        },
+        {
+          "round": 5,
+          "action": "round_end",
+          "hp": [
+            10,
+            8,
+            10
+          ],
+          "positions": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "secured": []
+        },
+        {
+          "round": 6,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                4
+              ],
+              "cells": [
+                [
+                  7,
+                  5
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                4,
+                0
+              ],
+              "cells": [
+                [
+                  3,
+                  0
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 6,
+          "action": "move",
+          "actor": 0,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "round": 6,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            0,
+            3
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              0,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 6,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            1,
+            3
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              2,
+              3
+            ],
+            [
+              1,
+              3
+            ]
+          ]
+        },
+        {
+          "round": 6,
+          "action": "completed",
+          "target": "asset"
+        },
+        {
+          "round": 6,
+          "action": "leave_site",
+          "actor": 0,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 0,
+          "delivered": "asset"
+        },
+        {
+          "round": 6,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            0,
+            5
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 6,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            0,
+            4
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              1,
+              3
+            ],
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              4
+            ]
+          ]
+        },
+        {
+          "round": 6,
+          "action": "round_end",
+          "hp": [
+            10,
+            8,
+            10
+          ],
+          "positions": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "secured": [
+            "asset"
+          ]
+        },
+        {
+          "round": 7,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                5
+              ],
+              "cells": [
+                [
+                  7,
+                  4
+                ],
+                [
+                  7,
+                  3
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                3,
+                0
+              ],
+              "cells": [
+                [
+                  3,
+                  1
+                ],
+                [
+                  3,
+                  2
+                ],
+                [
+                  3,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 7,
+          "action": "move",
+          "actor": 1,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "round": 7,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            0,
+            5
+          ],
+          "ap_left": 1,
+          "path": [
+            [
+              0,
+              4
+            ],
+            [
+              0,
+              5
+            ]
+          ]
+        },
+        {
+          "round": 7,
+          "action": "completed",
+          "target": "r1"
+        },
+        {
+          "round": 7,
+          "action": "leave_site",
+          "actor": 1,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 0,
+          "delivered": "r1"
+        },
+        {
+          "round": 7,
+          "action": "move",
+          "actor": 2,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 0,
+          "path": [
+            [
+              0,
+              5
+            ],
+            [
+              0,
+              6
+            ]
+          ]
+        },
+        {
+          "round": 7,
+          "action": "round_end",
+          "hp": [
+            10,
+            8,
+            10
+          ],
+          "positions": [
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              6
+            ],
+            [
+              0,
+              6
+            ]
+          ],
+          "secured": [
+            "r1",
+            "asset"
+          ]
+        },
+        {
+          "round": 8,
+          "action": "intents",
+          "enemies": [
+            {
+              "id": "M06_enemy1",
+              "type": "hauler",
+              "at": [
+                7,
+                3
+              ],
+              "cells": [
+                [
+                  7,
+                  2
+                ]
+              ]
+            },
+            {
+              "id": "M06_enemy2",
+              "type": "scout",
+              "at": [
+                3,
+                3
+              ],
+              "cells": [
+                [
+                  2,
+                  3
+                ],
+                [
+                  1,
+                  3
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          ]
+        },
+        {
+          "round": 8,
+          "action": "completed",
+          "target": "r2"
+        },
+        {
+          "round": 8,
+          "action": "leave_site",
+          "actor": 2,
+          "at": [
+            0,
+            6
+          ],
+          "ap_left": 1,
+          "delivered": "r2"
+        }
+      ]
+    }
+  ],
+  "scope": "Offline evaluation adapter and guide-contract checks. M01 acceptance uses existing actual tactical results; twoM06full-map runs feed appraisal under an explicitly stipulated voluntary promise. Does not test a real tutorial interface, generated artwork, clinical psychology, all36maps with new appraisal or human enjoyment.",
+  "runtime_unchanged": true
+}

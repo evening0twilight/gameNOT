@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-06",
+  "tester": "assistant using native CUA mouse/keyboard on non-primary macOS display",
+  "human_playtest": false,
+  "windows_test": false,
+  "scope": "isolated new M01 state, actual UI input; no production player saves",
+  "before_observation": "Clicking the old gold-framed distant resident while Move selected produced an invalid-target error.",
+  "after_observations": [
+    "Gold frame now marks reachable next step.",
+    "Preview Move opens inline confirmation with AP still 2.",
+    "Confirm moves to the framed cell and AP becomes 1.",
+    "Second preview/confirm moves adjacent to resident and AP becomes 0.",
+    "Guidance offers switching to Xu; clicked switch selects Xu.",
+    "Space opens end-round preview warning that Xu and Su each still have 2 AP.",
+    "Cancel then Undo restores Lin to the prior cell and AP 1.",
+    "How to Play opens page 1; Next advances to page 2 with controls visible."
+  ],
+  "audio_review": "Runtime cues included; no claim of human listening acceptance.",
+  "final_visual_review": {
+    "captures": "outputs/p4-tuning-review/record.json",
+    "checked": [
+      "first mission legal gold endpoint and available movement cells",
+      "rescue introduction step3 sequence and preview explanation",
+      "relaxed default and three numeric difficulty cards",
+      "walk stride and lift pose visible with controls locked",
+      "M24 settlement view"
+    ],
+    "operator": "assistant via rendered image inspection; not independent human acceptance"
+  }
+}

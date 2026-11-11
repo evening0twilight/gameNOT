@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "status": "Generated compatibility projection of release_baseline.json; not an independent rule source.",
+  "tactical": {
+    "party_size": 3,
+    "board_default": [
+      8,
+      8
+    ],
+    "board_max": [
+      8,
+      8
+    ],
+    "ap_per_actor_per_round": 2,
+    "move_budget_per_ap": 3,
+    "terrain_cost": {
+      "dry": 1,
+      "shallow_water": 2,
+      "rubble": 2
+    },
+    "default_hero_hp": 10,
+    "base_attack_damage": 2,
+    "base_attack_range": 1,
+    "action_ap": {
+      "move": 1,
+      "attack": 1,
+      "push": 1,
+      "stabilize": 1,
+      "pick_up": 1,
+      "put_down": 0,
+      "interact": 1,
+      "extract": 1,
+      "leave_site": 1,
+      "emergency_retreat": 0
+    },
+    "carry_move_budget": 2,
+    "civilian_unstable_rounds": 3,
+    "critical_loss_policy": "civilian outcome resolved by authored mission; hero downing uses injury/rescue policy",
+    "ability_charge_scope": "mission",
+    "kill_xp": 0
+  },
+  "progression": {
+    "max_level": 6,
+    "cumulative_xp_thresholds": [
+      0,
+      12,
+      28,
+      48,
+      72,
+      100
+    ],
+    "main_xp_each_deployed": {
+      "success": 5,
+      "partial": 3,
+      "failed": 1
+    },
+    "side_xp_each_deployed": {
+      "success": 3,
+      "partial": 1,
+      "failed": 0
+    },
+    "support_xp": 2,
+    "training_xp": 12,
+    "training_supplies": 1,
+    "training_fatigue": 6,
+    "chapter_recruit_xp_floor": [
+      0,
+      12,
+      28,
+      48
+    ],
+    "specialty_unlock_levels": [
+      1,
+      3
+    ],
+    "equipped_specialties": 2,
+    "generic_cooperation_trust_min": null,
+    "equipped_cooperation_protocols_per_actor": 0,
+    "advanced_protocol_requires_mutual_trust": false,
+    "basic_cooperation_requires_trust": false,
+    "training_stages_per_chapter": 1,
+    "training_unused_stages_carry": true,
+    "training_prejoin_stages_granted": false,
+    "level5_is_upgrade": true
+  },
+  "recovery": {
+    "main_fatigue": 18,
+    "side_fatigue": 18,
+    "basic_sleep_fatigue_reduction": 12,
+    "basic_sleep_stress_reduction": 8,
+    "dedicated_rest_extra_fatigue_reduction": 12,
+    "dedicated_rest_extra_stress_reduction": 16,
+    "fatigue_warning": 60,
+    "fatigue_deploy_limit": null,
+    "serious_injury_rest_days": 2,
+    "serious_injury_treated_days": 1,
+    "treatment_supplies": 2,
+    "major_characters_random_permadeath": false,
+    "temporary_responder_limit": 3,
+    "projected_fatigue_limit": 100,
+    "idle_day_fatigue_reduction": 16,
+    "permanent_withdrawal_difficulty": "hard",
+    "automatic_permanent_loss_on_conflict": false
+  },
+  "relationship": {
+    "meaningful_cooperation_trust_gain": 2,
+    "trust_reward_cap_per_pair_per_mission": 3,
+    "trust_reward_requires_advanced_protocol": false,
+    "trust_reward_conditions": [
+      "Both voluntarily contribute to the same successfully secured factual objective",
+      "Unique mission/root decision/direction; no same-incident violation",
+      "Base 2, at most 1 additional salient witness credit; directional mission cap 3"
+    ],
+    "shared_downtime_closeness_gain": 3,
+    "closeness_daily_cap": 6,
+    "high_intensity_scene_cap_per_evening": 1,
+    "extra_decision_conflict_cap_per_squad_per_mission": 1,
+    "history_repair_reductions": [
+      6,
+      12,
+      12
+    ],
+    "entry_pressure": [
+      45,
+      65,
+      80
+    ],
+    "exit_pressure": [
+      35,
+      50,
+      60
+    ],
+    "emotional_display_states": [
+      "calm",
+      "tense",
+      "resentful",
+      "discouraged",
+      "relieved",
+      "determined"
+    ],
+    "conflict_control": "basic actions stay controlled by player; only specific cooperation restrictions"
+  },
+  "facilities": {
+    "ids": [
+      "infirmary",
+      "workshop",
+      "rest_area",
+      "communications"
+    ],
+    "upgrade_costs": [
+      {
+        "credits": 35,
+        "parts": 4
+      },
+      {
+        "credits": 60,
+        "parts": 8
+      }
+    ],
+    "upgrade_execution": "one facility upgrade per evening; no passive real-time construction wait"
+  },
+  "endings": {
+    "district_ids": [
+      "dock",
+      "old_town",
+      "workshops",
+      "overpass",
+      "medical",
+      "floodgates"
+    ],
+    "district_infrastructure_range": [
+      0,
+      3
+    ],
+    "world_routes": [
+      "shared_control",
+      "distributed_rebuild",
+      "evacuation"
+    ],
+    "shared_control_min_infrastructure_sum": 10,
+    "shared_control_min_verified_evidence": 2,
+    "distributed_rebuild_requires": "final mission isolation objective completed",
+    "fallback": "evacuation",
+    "hero_epilogue_priority": [
+      "presence",
+      "career",
+      "personal_plan",
+      "directional_relationship_overlays"
+    ]
+  },
+  "authoritative_combat": "final_design/combat.json",
+  "authoritative_progression": "final_design/progression_relationship.json",
+  "authoritative_facilities": "final_design/facilities.json",
+  "design_version": "0.18-predevelopment"
+}

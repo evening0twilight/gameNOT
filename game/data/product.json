@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "design_version": "0.18-predevelopment",
+  "title": "夜潮事务所",
+  "title_status": "working_title",
+  "genre": "单机群像养成与回合制战术救援",
+  "world": "架空近未来港城，洪灾使自治巡检与防护设备失去可靠指令，救援队需要穿越危险区域并处理旧事故留下的关系。",
+  "scope": {
+    "characters": 8,
+    "chapters": 4,
+    "main_missions": 24,
+    "side_candidates": 12,
+    "expected_side_per_run": 6,
+    "story_event_budget": 96,
+    "enemy_archetypes": 6,
+    "equipment_archetypes": 7,
+    "base_facilities": 4,
+    "target_first_play_hours": [
+      12,
+      16
+    ],
+    "target_is_measured": false,
+    "duration_policy": "12–16小时仅内容节奏目标，不能作为已达时长或拖长关卡依据；真人记录主线/支线/阅读时间后再定商业承诺。"
+  },
+  "modes": [
+    "从容",
+    "标准",
+    "严峻"
+  ],
+  "death_policy": "从容与标准：可恢复重伤；严峻：明示救援期限内未救出的失能队员可能永久医疗离队，不是随机死亡。",
+  "start_resources": {
+    "credits": 30,
+    "supplies": 6,
+    "parts": 2
+  },
+  "daily_upkeep": "0：基本食宿由社区保障；物资用于战术、加速治疗与训练。",
+  "reward_design": {
+    "success": {
+      "credits": 10,
+      "supplies": 1,
+      "parts": 1
+    },
+    "partial": {
+      "credits": 7,
+      "supplies": 0,
+      "parts": 0
+    },
+    "failed": {
+      "credits": 6,
+      "supplies": 0,
+      "parts": 0
+    }
+  },
+  "chapter_titles": [
+    "断线之夜",
+    "一张旧名单",
+    "水面以下",
+    "天亮以前"
+  ],
+  "non_goals": [
+    "实时 AI 对话",
+    "联网或服务器",
+    "3D 动作与动作捕捉",
+    "付费抽卡",
+    "全语音",
+    "开放世界",
+    "无限过程生成战役",
+    "首版创意工坊"
+  ],
+  "implementation_status": "设计基线已收敛；本轮未进入正式开发。",
+  "design_authority": "final_design/design_manifest.json",
+  "commercial_scope": "单机买断方向；售价、渠道、商店与发行决策另开讨论，本基线不创建充值货币或付费抽卡。"
+}

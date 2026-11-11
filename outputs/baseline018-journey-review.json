@@ -1,0 +1,46 @@
+{
+	"captures": [
+		{
+			"day": 4,
+			"phase": "settlement",
+			"revision": 162.0,
+			"source": "res://../outputs/baseline018-linked-day04.json",
+			"state_mutated_for_presentation": false
+		},
+		{
+			"day": 6,
+			"phase": "camp",
+			"revision": 243.0,
+			"source": "res://../outputs/baseline018-linked-day06.json",
+			"state_mutated_for_presentation": false
+		},
+		{
+			"day": 18,
+			"phase": "camp",
+			"revision": 699.0,
+			"source": "res://../outputs/baseline018-linked-day18.json",
+			"state_mutated_for_presentation": false
+		},
+		{
+			"day": 19,
+			"phase": "battle",
+			"revision": 701.0,
+			"source": "res://../outputs/baseline018-linked-day19.json",
+			"state_mutated_for_presentation": false
+		},
+		{
+			"day": 24,
+			"phase": "settlement",
+			"revision": 929.0,
+			"source": "res://../outputs/baseline018-linked-day24.json",
+			"state_mutated_for_presentation": false
+		}
+	],
+	"failures": [],
+	"music_contexts": 6,
+	"outfits": 16,
+	"portraits": 64,
+	"primary": 0,
+	"rendered": true,
+	"screen": 1
+}

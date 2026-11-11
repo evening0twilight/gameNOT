@@ -1,0 +1,98 @@
+{
+  "status": "contract_only_not_implemented",
+  "version": 1,
+  "design_authority": "game/data/final_design/design_manifest.json",
+  "command": {
+    "required": [
+      "command_id",
+      "expected_revision",
+      "kind",
+      "actor_id",
+      "payload",
+      "root_decision_id"
+    ],
+    "idempotency": "campaign_id/command_id",
+    "unknown_kind": "reject"
+  },
+  "reducer": {
+    "signature": "reduce(snapshot, command, content) -> Result",
+    "pure": true,
+    "preview_and_execute_same_function": true,
+    "result": [
+      "ok",
+      "error_code",
+      "expected_revision",
+      "next_state",
+      "events",
+      "costs",
+      "risk_disclosure",
+      "next_rng"
+    ]
+  },
+  "errors": [
+    "invalid_command",
+    "stale_revision",
+    "invalid_target",
+    "insufficient_ap",
+    "insufficient_resources",
+    "unavailable_actor",
+    "unknown_content",
+    "save_io_failed",
+    "corrupt_save",
+    "unsupported_schema",
+    "content_mismatch"
+  ],
+  "state": {
+    "single_owner": "app.Session",
+    "required": [
+      "campaign",
+      "battle",
+      "actors",
+      "inventory",
+      "social",
+      "story",
+      "receipts",
+      "tutorial",
+      "rng",
+      "revision"
+    ],
+    "field_inventory": "release_baseline.json#/domains/persistence_inventory/snapshot",
+    "social_authority": "social; camp is a projection"
+  },
+  "events": {
+    "authority": "release_baseline.json#/domains/integration/receipt_schema",
+    "additional_fields": [
+      "seq",
+      "command_id"
+    ],
+    "order": "monotonic seq, deterministic stable-ID tie breaking",
+    "settlement_key": [
+      "campaign_id",
+      "mission_id"
+    ],
+    "load_replays_rewards": false
+  },
+  "save": {
+    "format": "night_tide_save",
+    "schema_version": 2,
+    "existing_preparation_schema": 1,
+    "existing_schema_policy": "reject as preparation-only; preserve original",
+    "required": [
+      "format",
+      "schema_version",
+      "content_version",
+      "content_sha256",
+      "engine_version",
+      "campaign_id",
+      "revision",
+      "state",
+      "checksum"
+    ],
+    "rng_encoding": "decimal strings for 64-bit seed/state",
+    "checksum": "SHA256 canonical UTF-8 payload without checksum field; sorted keys, ordered sets, no NaN/Infinity",
+    "transaction": "persist validated candidate snapshot before publishing state and events",
+    "stable_boundaries_only": true,
+    "max_read_bytes": 67108864,
+    "migration_policy": "explicit sequential migrations; preserve source; reject unknown versions"
+  }
+}

@@ -1,0 +1,1001 @@
+{
+  "date": "2026-11-06",
+  "authority": "game/data/final_design/release_baseline.json",
+  "scope": "All 36 requirement groups and all baseline domains statically inspected against current production code and player-facing entry points; not a proof of zero undiscovered defects.",
+  "domains_reviewed": [
+    "scope",
+    "economy",
+    "product",
+    "confirmed_policy",
+    "characters",
+    "initial_relationships",
+    "abilities",
+    "enemies",
+    "equipment",
+    "facilities",
+    "combat",
+    "progression_relationship",
+    "growth",
+    "training",
+    "experience",
+    "field_operations",
+    "world",
+    "coordination",
+    "campaign",
+    "integration",
+    "stories",
+    "scripts",
+    "boards",
+    "player_readiness",
+    "persistence_inventory",
+    "player_flow",
+    "release_scope",
+    "acceptance",
+    "decisions",
+    "compatibility_rules",
+    "mission_index",
+    "requirements"
+  ],
+  "requirements": [
+    {
+      "id": "CORE-01",
+      "title": "完整战役状态流",
+      "requirement": "每种失败结果也有可达后继，不依赖成功才能推进",
+      "findings": [
+        "F01"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "CORE-02",
+      "title": "任务与回合操作",
+      "requirement": "移动、基础攻击、稳定、搬运、互动、撤离都有明确合法性",
+      "findings": [
+        "F09",
+        "F12",
+        "F14",
+        "F15"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "CORE-03",
+      "title": "预告与结算",
+      "requirement": "预告使用与实际结算相同的数据；不暗改目标",
+      "findings": [
+        "F16",
+        "F17"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "CORE-04",
+      "title": "空间与资源",
+      "requirement": "移动寻路考虑实际地形代价；碰撞不重复结算",
+      "findings": [
+        "F11",
+        "F12",
+        "F16",
+        "F17"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "CORE-05",
+      "title": "撤退与伤势",
+      "requirement": "难度选择与不可逆行动前均提示；仍能安排合法基础行动；离队不丢主线关键物品",
+      "findings": [
+        "F29"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "REL-01",
+      "title": "有向旧怨",
+      "requirement": "相同刺激下有旧怨者增长更快；反方向不自动复制",
+      "findings": [],
+      "status": "existing_implementation_rechecked",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "REL-02",
+      "title": "事件归责",
+      "requirement": "责任份额≤1；未知、重复与无责事件不错误加怨",
+      "findings": [
+        "F05",
+        "F06",
+        "F07",
+        "F25"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "REL-03",
+      "title": "爆发闭环",
+      "requirement": "有上下阈值、情境门槛与冷却；绝不随机杀伤队友",
+      "findings": [
+        "F08"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "REL-04",
+      "title": "修复与重复刺激",
+      "requirement": "道歉不能刷，低信任边界不能刷，旧怨不靠休息直接归零",
+      "findings": [
+        "F05",
+        "F08"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "REL-05",
+      "title": "正向关系",
+      "requirement": "至少四种通用合作协议；低亲近仍可专业合作",
+      "findings": [
+        "F04",
+        "F05",
+        "F09",
+        "F10",
+        "F11"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "CHAR-01",
+      "title": "招募与缺席",
+      "requirement": "规定主线节点结算后加入，不以胜利为条件；缺席时重要目标有通用基础动作替代",
+      "findings": [
+        "F02"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "CHAR-02",
+      "title": "成长",
+      "requirement": "新招募有章节经验底线；不靠无限支线刷级",
+      "findings": [
+        "F03",
+        "F10",
+        "F14"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "CHAR-03",
+      "title": "身体与情绪",
+      "requirement": "不让同一事件在多个状态上重复施加等价惩罚",
+      "findings": [
+        "F06",
+        "F28"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "CHAR-04",
+      "title": "人物内容",
+      "requirement": "缺席分支有补写或摘要；不要求每个人最终和好",
+      "findings": [
+        "F19",
+        "F20",
+        "F24"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "ECO-01",
+      "title": "资源账本",
+      "requirement": "无负库存、重复结算或买卖套利",
+      "findings": [
+        "F30"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "ECO-02",
+      "title": "基地建设",
+      "requirement": "升级改变可用办法；有限资源使单局存在投资取舍",
+      "findings": [
+        "F13"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "ECO-03",
+      "title": "经济恢复",
+      "requirement": "无按人数征收的食宿费用；主线结算含一次基础补助；借调不需预付款；保底不恢复丢失的机会与好结果",
+      "findings": [],
+      "status": "existing_implementation_rechecked",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "WORLD-01",
+      "title": "世界后果",
+      "requirement": "失败改变代价而非直接把全部主线锁死",
+      "findings": [
+        "F12",
+        "F13"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "WORLD-02",
+      "title": "日程",
+      "requirement": "支线窗口两日且不越过第 23 日；每日最多一次支线；夜间两项安排；每个任务只结算一次；终战后直接进入结局",
+      "findings": [
+        "F02",
+        "F21"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "EVENT-01",
+      "title": "叙事调度",
+      "requirement": "无匹配不强塞事件；固定种子和版本可重现",
+      "findings": [
+        "F19"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "EVENT-02",
+      "title": "信息与秘密",
+      "requirement": "不靠角色读心触发怨气；重要证据有多个可达来源",
+      "findings": [
+        "F07"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "END-01",
+      "title": "结局",
+      "requirement": "第 24 日前判定可选路线；证据有任务和核查来源；终战失败进入撤离；缺席角色也有结局回退",
+      "findings": [
+        "F20"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "REPLAY-01",
+      "title": "第二轮",
+      "requirement": "不重置人格，不强制刷周目看真结局",
+      "findings": [],
+      "status": "existing_implementation_rechecked",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "DIFF-01",
+      "title": "难度",
+      "requirement": "人格与叙事条件不随难度变；最高难度的永久医疗离队在选择时披露；不默认强制铁人存档",
+      "findings": [
+        "F18"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "UI-01",
+      "title": "操作界面",
+      "requirement": "关键行动预览消耗、后果、责任与可撤销边界",
+      "findings": [
+        "F01",
+        "F03",
+        "F04",
+        "F15",
+        "F21",
+        "F25",
+        "F28",
+        "F29",
+        "F30"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "UI-02",
+      "title": "可访问性",
+      "requirement": "1280×720 与 1920×1080 验收；不只靠颜色表达威胁",
+      "findings": [
+        "F23"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "SAVE-01",
+      "title": "存档",
+      "requirement": "临时文件写入成功后换名；保留上一份完整存档",
+      "findings": [
+        "F22"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "SAVE-02",
+      "title": "恢复与迁移",
+      "requirement": "坏档和未知版本保留原文件并可回退备份/返回；首发不承诺兼容设计探针旧档。以后新增迁移要单独验收。",
+      "findings": [
+        "F22",
+        "F27"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "TECH-01",
+      "title": "可复现规则",
+      "requirement": "同版本/种子/命令序列得到相同状态",
+      "findings": [
+        "F27"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "TECH-02",
+      "title": "内容检查",
+      "requirement": "构建时检查悬空引用、循环依赖、不可达主线",
+      "findings": [
+        "F26"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "TECH-03",
+      "title": "性能与平台",
+      "requirement": "目标 Windows；macOS 开发验证不冒充 Windows 实机通过",
+      "findings": [
+        "V01",
+        "F31"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "ASSET-01",
+      "title": "资产规范",
+      "requirement": "统一风格、透明边缘、命名、许可与替换尺寸",
+      "findings": [
+        "F24",
+        "V02"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "AUDIO-01",
+      "title": "声音反馈",
+      "requirement": "关键信息同时有视觉提示；音量独立设置",
+      "findings": [
+        "F23"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "QA-01",
+      "title": "自动与人工验证",
+      "requirement": "规则通过不等于有趣；记录不同玩家的真实行为",
+      "findings": [
+        "V02"
+      ],
+      "status": "implementation_locally_verified",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "SCOPE-01",
+      "title": "正式版范围",
+      "requirement": "内容数量是生产预算，不是假装已经制作完成",
+      "findings": [],
+      "status": "existing_implementation_rechecked",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    },
+    {
+      "id": "SCOPE-02",
+      "title": "商业边界",
+      "requirement": "无付费抽卡或关系修复；发行另开对话",
+      "findings": [],
+      "status": "existing_implementation_rechecked",
+      "note": "实现对照与本地证据；不等于Windows硬件或真人产品验收。"
+    }
+  ],
+  "issues": [
+    {
+      "id": "F01",
+      "requirements": [
+        "CORE-01",
+        "UI-01"
+      ],
+      "title": "开局与阶段",
+      "finding": "新局直接deploy M01；缺主菜单、正式简报/编队阶段与夜间确认",
+      "design": "player_flow / release_scope.screens",
+      "evidence": "app/main.gd; domain/campaign_rules.gd; domain/chapter_one.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_ui",
+        "baseline018_campaign"
+      ],
+      "correction": "标题、新局、持久化出勤准备、夜间确认；D24直接终局。"
+    },
+    {
+      "id": "F02",
+      "requirements": [
+        "CHAR-01",
+        "WORLD-02"
+      ],
+      "title": "人物加入",
+      "finding": "按日期在指定任务前开放；没有结算入队事实、入队介绍与职业用途引导",
+      "design": "requirements.CHAR-01 / economy.growth.new_recruit",
+      "evidence": "domain/chapter_one.gd; domain/campaign_rules.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_tests",
+        "baseline018_linked_campaign"
+      ],
+      "correction": "以对应主线结算记录加入；失败仍加入，介绍/档案/编队接入。同日支线可使用新成员。"
+    },
+    {
+      "id": "F03",
+      "requirements": [
+        "CHAR-02",
+        "UI-01"
+      ],
+      "title": "培养与阵容",
+      "finding": "缺独立角色成长页、完整技能升级说明、下一次出勤疲劳/项目取舍对照；出发页无L2/装备整合",
+      "design": "growth.training / training / release_scope.screens",
+      "evidence": "app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p3_rules_tests",
+        "baseline018_linked_campaign",
+        "journey-day06.png"
+      ],
+      "correction": "人物页列等级阈值/专长/训练阶段，比较训练、休息、治疗、夜间恢复和下一次计划；配装与L2倾向纳入草案。"
+    },
+    {
+      "id": "F04",
+      "requirements": [
+        "REL-05",
+        "UI-01"
+      ],
+      "title": "关系入口",
+      "finding": "约定按钮硬编码对象；缺任意人物对、双向事实、资格不足原因与具体保障",
+      "design": "growth.positive_relationships / experience.current_context_help",
+      "evidence": "app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p4_history_tests",
+        "journey-day18.png"
+      ],
+      "correction": "任意已加入人物对及领队的有向关系、双向事实、约定、保障和补救入口。"
+    },
+    {
+      "id": "F05",
+      "requirements": [
+        "REL-02",
+        "REL-04",
+        "REL-05"
+      ],
+      "title": "评价唯一入口",
+      "finding": "共同贡献固定+2；缺同源事件/违约资格排除、在意者+1、相关普通记忆宽慰及单任务额度",
+      "design": "experience.appraisal / integration.attribution_detail",
+      "evidence": "domain/campaign_social.gd; domain/campaign_rules.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_tests",
+        "p3_rules_tests",
+        "baseline018_linked_campaign"
+      ],
+      "correction": "统一Appraisal入口；删除旧重复奖励入口；以任务+目标/决定归根，独立贡献与同目标信用分别计算，并排除相关违约。"
+    },
+    {
+      "id": "F06",
+      "requirements": [
+        "CHAR-03",
+        "REL-02"
+      ],
+      "title": "压力与自责",
+      "finding": "self_load仅恢复不增长；缺按性格、事实、知情、自主归责的评价与可读原因",
+      "design": "experience.appraisal",
+      "evidence": "domain/campaign_social.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_tests",
+        "p3_rules_tests"
+      ],
+      "correction": "压力、自责分离；按实际失败/伤势/超约/暴露/控制感和性格结算，夜间/休息/真实支持恢复，显示担忧与过载。"
+    },
+    {
+      "id": "F07",
+      "requirements": [
+        "REL-02",
+        "EVENT-02"
+      ],
+      "title": "知识与修订",
+      "finding": "缺待核实解释、首次知情与责任修订/纠错的数据及界面；不能把事实、推测混为一条关系值",
+      "design": "integration.attribution_detail / experience.appraisal",
+      "evidence": "domain/campaign_social.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_edges",
+        "p3_rules_tests"
+      ],
+      "correction": "待核实解释按方向限额；记录发生日与首次知情日；迟到旧事不构成近期连续违约，责任变更按原实际损失纠正。"
+    },
+    {
+      "id": "F08",
+      "requirements": [
+        "REL-03",
+        "REL-04"
+      ],
+      "title": "冲突与修复",
+      "finding": "缺第三次独立明确失约升级、场景队列/冷却的实际接线和任意方向认责/补救入口",
+      "design": "progression_relationship / coordination.conflict_queue",
+      "evidence": "domain/campaign_rules.gd; domain/relationship_rules.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_tests",
+        "baseline018_edges",
+        "p4_history_tests"
+      ],
+      "correction": "第三次近期独立明确违约升级；无向人物对冷却、每任务一次长提示，其余留日志；任意方向认责/预约/凭后续证据补救。"
+    },
+    {
+      "id": "F09",
+      "requirements": [
+        "REL-05",
+        "CORE-02"
+      ],
+      "title": "四项协作",
+      "finding": "coordinated_pull未实现；关系保障仅覆盖部分人物/协议；需要四协议完整预览与普通替代",
+      "design": "progression_relationship.protocols / situational_cooperation",
+      "evidence": "domain/p1_protocols.gd; app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p1_systems_tests",
+        "p3_specialties_tests",
+        "baseline018_edges"
+      ],
+      "correction": "四种协作均可用，牵引双方各1AP；按人物/风险检查真实保障，第三人保护可指定保护作业或交叉掩护；预览列普通替代。"
+    },
+    {
+      "id": "F10",
+      "requirements": [
+        "REL-05",
+        "CHAR-02"
+      ],
+      "title": "共同带教",
+      "finding": "资格按累计任务计数，没有排除涉及双方的违约；UI只列可做项目没有解释不足条件",
+      "design": "growth.positive_relationships",
+      "evidence": "domain/chapter_one.gd; presentation",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_linked_campaign",
+        "p3_rules_tests"
+      ],
+      "correction": "带教资格与实际收益说明，双方两场有效贡献、同意/约定/阶段/疲劳/项目/物资检查；实际收益不高于普通训练时不提供。"
+    },
+    {
+      "id": "F11",
+      "requirements": [
+        "REL-05",
+        "CORE-04"
+      ],
+      "title": "改派接应",
+      "finding": "R04/R10合作后东侧出口改派、2物资、后勤机会成本与草案取消均未接入",
+      "design": "growth.positive_relationships.dispatch",
+      "evidence": "domain/full_campaign.gd; app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_linked_campaign",
+        "journey-day19.png"
+      ],
+      "correction": "R04/R10与真实共同贡献解锁付费接应；实际出发替换普通出口，草案免费取消，后勤不再额外给1物资。"
+    },
+    {
+      "id": "F12",
+      "requirements": [
+        "CORE-02",
+        "CORE-04",
+        "WORLD-01"
+      ],
+      "title": "四处现场操作",
+      "finding": "M05累计排水、M10同步确认、M21连续值守、S11序列切换缺运行时状态和操作入口",
+      "design": "field_operations.services",
+      "evidence": "domain/campaign_rules.gd; domain/chapter_hazards.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_field_paths",
+        "baseline018_tests"
+      ],
+      "correction": "M05累计、M10同步、M21连续、S11序列的站位/AP/供电/受击中断与收益接线。"
+    },
+    {
+      "id": "F13",
+      "requirements": [
+        "ECO-02",
+        "WORLD-01"
+      ],
+      "title": "两处后勤设施",
+      "finding": "M05/M10设施保全/修复、限期两次外部协助未实现；十二处设备事实未完整留存",
+      "design": "field_operations.investments / maintenance_rules / asset_registry",
+      "evidence": "domain/full_campaign.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_edges",
+        "baseline018_campaign"
+      ],
+      "correction": "12处设备记录、M05/M10保全资格、付费修复、次日生效、窗口/两次协助及实际恢复回执。"
+    },
+    {
+      "id": "F14",
+      "requirements": [
+        "CORE-02",
+        "CHAR-02"
+      ],
+      "title": "专长边界",
+      "finding": "许舟低于5级的实际锚点携带例外缺失；被动/剩余次数与场景用途需要在人物页区分",
+      "design": "combat.carrying_exception / abilities",
+      "evidence": "domain/p1_specialties.gd; app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p1_systems_tests",
+        "p3_specialties_tests"
+      ],
+      "correction": "许舟携带锚点例外按实际部署检查；专长级别/次数/被动区分保留；人物页可查。"
+    },
+    {
+      "id": "F15",
+      "requirements": [
+        "CORE-02",
+        "UI-01"
+      ],
+      "title": "同格目标和放下",
+      "finding": "地图同格选第一个对象；drop只能放自己格，未提供邻接合法格和对象ID选择",
+      "design": "combat.actions / resolution_amendments.occupied_overlay",
+      "evidence": "domain/campaign_rules.gd; app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p4_tests",
+        "baseline018_ui"
+      ],
+      "correction": "同格多对象含专长按ID选择，放下可选择自己或相邻合法格，零奖励。"
+    },
+    {
+      "id": "F16",
+      "requirements": [
+        "CORE-03",
+        "CORE-04"
+      ],
+      "title": "结算顺序与护盾",
+      "finding": "火环境在运输/持续进度之后；机器cover用于水电；对象被携带者失能后可能在同源攻击中重复受伤",
+      "design": "combat.turn_order / environment_damage_order / resolution_amendments",
+      "evidence": "domain/chapter_hazards.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_edges",
+        "p1_systems_tests",
+        "p4_tests"
+      ],
+      "correction": "机器→环境→目标进度→期限；水火取较大值、绝缘不防火、机器掩护不防电；同源伤害不重复击中刚落下的携带物。"
+    },
+    {
+      "id": "F17",
+      "requirements": [
+        "CORE-03",
+        "CORE-04"
+      ],
+      "title": "持续目标供电",
+      "finding": "channel没有独立电源条件；永久里程碑/持续保全/失去的显示与奖励需一致",
+      "design": "combat.objective_machine / result_dimensions",
+      "evidence": "domain/chapter_hazards.gd; domain/campaign_rules.gd; app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p3_rules_tests",
+        "baseline018_field_paths",
+        "baseline018_campaign"
+      ],
+      "correction": "持续目标读电源条件；永久里程碑、送达、持续保全和失去分开判断，失去的目标不发保全收益。"
+    },
+    {
+      "id": "F18",
+      "requirements": [
+        "DIFF-01"
+      ],
+      "title": "回到0.18数值",
+      "finding": "新周目默认放松、严峻伤害+1、放松额外对象期限+2偏离0.18；当前授权要求按0.18",
+      "design": "combat.difficulty / player_flow.difficulty",
+      "evidence": "domain/product_systems.gd; domain/chapter_hazards.gd; app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_guidance",
+        "baseline018_matrix"
+      ],
+      "correction": "新周目标准默认；放松+3总轮数/伤害-1最低1，不延长独立目标期限；严峻不加机器伤害。旧在途任务保留旧版。"
+    },
+    {
+      "id": "F19",
+      "requirements": [
+        "CHAR-04",
+        "EVENT-01"
+      ],
+      "title": "剧情入口与摘要",
+      "finding": "正文可读但缺摘要后选项、首次见面、已解锁未发生日志占位、D23统一待办提醒",
+      "design": "stories.scheduler / experience.visual_policy.first_contact",
+      "evidence": "app/main.gd; domain/chapter_stories.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p3_rules_tests",
+        "baseline018_ui",
+        "baseline018_linked_campaign"
+      ],
+      "correction": "首次见面、剧情摘要与展开原文、未发生日志占位；D23统一待办/终局路线提醒。"
+    },
+    {
+      "id": "F20",
+      "requirements": [
+        "CHAR-04",
+        "END-01"
+      ],
+      "title": "人物尾声",
+      "finding": "医疗离队直接continue掩盖已选职业/曾履约；pending合同未标记医疗中断；需四层独立结语",
+      "design": "stories.ending_resolution / integration.missing_actor",
+      "evidence": "app/main.gd; domain/full_campaign.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p3_story_proofs",
+        "baseline018_linked_campaign",
+        "journey-day24.png"
+      ],
+      "correction": "在场、职业/生活方向、曾履约/医疗中断/违约、各方向关系独立显示；医疗退出不掩盖职业或已履约事实。"
+    },
+    {
+      "id": "F21",
+      "requirements": [
+        "WORLD-02",
+        "UI-01"
+      ],
+      "title": "支线待办",
+      "finding": "缺明确延期/主动放弃记录和过期展示；不应把未做当已尝试",
+      "design": "player_flow.side_decisions",
+      "evidence": "domain/chapter_one.gd; app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p3_rules_tests",
+        "profile-few_sides"
+      ],
+      "correction": "支线可暂缓、主动放弃并记录；过期、未尝试、已尝试分开；不自动补发结果。"
+    },
+    {
+      "id": "F22",
+      "requirements": [
+        "SAVE-01",
+        "SAVE-02"
+      ],
+      "title": "十槽与阶段存档",
+      "finding": "只有一个manual.json；缺10槽、空槽默认、覆盖其他周目确认、准备页稳定状态保存",
+      "design": "player_flow.persistence / release_scope.screens",
+      "evidence": "app/main.gd; infrastructure/campaign_store.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p4_tests",
+        "baseline018_tests",
+        "baseline018_ui"
+      ],
+      "correction": "10个手动槽、覆盖确认与备份；读取旧manual.json；出勤草案可保存，稳定阶段严格验证。"
+    },
+    {
+      "id": "F23",
+      "requirements": [
+        "UI-02",
+        "AUDIO-01"
+      ],
+      "title": "设置与暂停",
+      "finding": "缺动画速度、减少动态、真正暂停/回主菜单；当前只有两个音乐循环且无交叉淡入淡出",
+      "design": "player_readiness.pacing / release_scope.assets",
+      "evidence": "app/main.gd; presentation/audio_controller.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p4_feedback_tests",
+        "baseline018-native-host.json",
+        "baseline018-journey-review.json"
+      ],
+      "correction": "动画速度、减少动态、动画中Esc暂停/空格跳过、回标题；六个独立循环交叉淡入淡出，音效时间线跟随动作。"
+    },
+    {
+      "id": "F24",
+      "requirements": [
+        "ASSET-01",
+        "CHAR-04"
+      ],
+      "title": "人物表现素材",
+      "finding": "人物立绘只有部分单套静态画像；缺8人现场/日常与8表情接线；需保留既定外形",
+      "design": "release_scope.assets / experience.visual_policy",
+      "evidence": "presentation/visual_assets.gd; assets",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018-portrait-prompts.json",
+        "baseline018-journey-review.json",
+        "asset-register.csv"
+      ],
+      "correction": "8套人物图集各2服装+8表情，实际用于准备/人物/剧情/终局；来源与生成提示已登记。"
+    },
+    {
+      "id": "F25",
+      "requirements": [
+        "UI-01",
+        "REL-02"
+      ],
+      "title": "行动结果说明",
+      "finding": "预览仅AP/资源和部分数字；缺真实风险保障原因、各方AP与已知责任、下一动作条件；结果缺XP/关系原因卡",
+      "design": "player_readiness.preview / experience.replay_structure.feedback",
+      "evidence": "app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p4_tests",
+        "p4_feedback_tests",
+        "baseline018_ui"
+      ],
+      "correction": "基础动作可打开完整预览；各方AP/生命、目标变化、已知风险、真实保障、责任依据、XP/资源逐项说明；撤退列具体失能者。"
+    },
+    {
+      "id": "F26",
+      "requirements": [
+        "TECH-02"
+      ],
+      "title": "内容验证",
+      "finding": "运行时目录只检查基础ID/格和直接自引用；需全域引用、循环前置、技能/装备/剧情/四服务的构建验证",
+      "design": "acceptance.D01 / TECH-02",
+      "evidence": "infrastructure/content_catalog.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "content_catalog_tests",
+        "baseline018_edges",
+        "baseline018-checks.json"
+      ],
+      "correction": "目录检查全域角色/技能/装备/敌人/剧情引用与循环前置、四服务、设备、目标与奖励；冻结投影逐字核对。"
+    },
+    {
+      "id": "F27",
+      "requirements": [
+        "SAVE-02",
+        "TECH-01"
+      ],
+      "title": "新状态兼容",
+      "finding": "新增入队/准备/服务/评价/接应状态必须纳入版本迁移与撤销/存档校验；旧档不能凭空重发收益",
+      "design": "persistence_inventory / player_flow.persistence",
+      "evidence": "infrastructure/campaign_store.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p1_tests",
+        "p4_tests",
+        "baseline018_guidance",
+        "baseline018_edges"
+      ],
+      "correction": "runtime_revision7兼容2–6；新字段和撤销快照纳入验证；旧档迁移不虚构服务/归因/收益；损坏嵌套状态拒绝。"
+    },
+    {
+      "id": "F28",
+      "requirements": [
+        "UI-01",
+        "CHAR-03"
+      ],
+      "title": "人员状态与队伍规划",
+      "finding": "缺持续可见的已加入/未遇到/伤势/医疗离队/后勤与出勤比较；不能默认三人名单替代队伍管理",
+      "design": "campaign.one_state / release_scope.screens",
+      "evidence": "app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "baseline018_linked_campaign",
+        "profile-injury_rotation",
+        "baseline018_ui"
+      ],
+      "correction": "已加入/未遇到/休养/医疗离队/出勤/后勤可查；营地计划与次日草案共享，实际出发重查资格。"
+    },
+    {
+      "id": "F29",
+      "requirements": [
+        "CORE-05",
+        "UI-01"
+      ],
+      "title": "具体救援后果",
+      "finding": "最后站立者离场/严峻超时的具体对象需在确认页集中说明，包含送达而非只稳定/携带",
+      "design": "combat.objective_machine.deadline / player_readiness.preview",
+      "evidence": "app/main.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p4_tests",
+        "baseline018_ui"
+      ],
+      "correction": "回合结束/撤退/最后离场预览列失能者名字、送达状态、期限和本次行动后的伤势/永久离队。"
+    },
+    {
+      "id": "F30",
+      "requirements": [
+        "ECO-01",
+        "UI-01"
+      ],
+      "title": "收益与投资比较",
+      "finding": "需逐项呈现基础报酬/实物/后勤/课程和实际恢复，不把潜在收益当作必得；工具退款仍保留",
+      "design": "economy / field_operations.maintenance_rules",
+      "evidence": "app/main.gd; domain/full_campaign.gd",
+      "status": "implemented_locally_verified",
+      "verification": [
+        "p4_tests",
+        "baseline018_linked_campaign",
+        "baseline018_edges"
+      ],
+      "correction": "基础报酬、目标收益、响应员费用、后勤及经验分别列出；培养与设施恢复显示实际变化，保留工具退款规则。"
+    },
+    {
+      "id": "F31",
+      "requirements": [
+        "TECH-03"
+      ],
+      "title": "自动保存时的输入延迟",
+      "finding": "最终原生检查发现部分操作输入延迟超过目标；写入后重复解析并复制整份撤销历史。",
+      "design": "acceptance.R07 / persistence_inventory",
+      "evidence": "infrastructure/campaign_store.gd; app/main.gd",
+      "status": "implemented_locally_verified",
+      "correction": "提交前验证状态；临时文件落盘后按字节摘要校验，保留原子替换/备份及坏档拒绝，去掉重复解析和全状态复制。本机112次输入P95约61ms；仍不代替Windows参考机。",
+      "verification": [
+        "outputs/baseline018-native-host-final.json",
+        "outputs/baseline018-check-storage-final-p1_tests.log",
+        "outputs/baseline018-check-storage-final-baseline018_linked_campaign.log"
+      ]
+    },
+    {
+      "id": "V01",
+      "requirements": [
+        "TECH-03"
+      ],
+      "title": "Windows性能",
+      "finding": "用户明确稍后在Windows实测；本机与跨平台导出不能标为Windows通过",
+      "design": "acceptance.R07",
+      "evidence": "docs/p4-tuning-validation.json",
+      "status": "external_validation_pending",
+      "verification": []
+    },
+    {
+      "id": "V02",
+      "requirements": [
+        "QA-01",
+        "ASSET-01"
+      ],
+      "title": "真实体验验收",
+      "finding": "5名新人/一章选择/完整周目/审美听感的真人证据尚不存在，不能自动生成或替代",
+      "design": "acceptance.H01 H02 H03 H04 R08",
+      "evidence": "docs/p4-tuning-validation.json",
+      "status": "external_validation_pending",
+      "verification": []
+    }
+  ],
+  "implementation_complete": false,
+  "windows_tested": false,
+  "human_acceptance": false,
+  "verification_scope": "初始30项实现偏差及运行检查追加的1项延迟问题已修正；36图×2天气×3难度、4世界路线周目、4偏好/伤势周目、人物关联周目与原生macOS渲染检查。不能声称穷举一切行动或已获真人认可。",
+  "product_alignment_status": "reopened_confirmed_implementation_gaps",
+  "reassessment": "docs/baseline018-product-reassessment.txt"
+}

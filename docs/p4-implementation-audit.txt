@@ -1,0 +1,17 @@
+P4 实施审计 — 2026-11-06
+用户阶段通过记录：p3-user-feedback.json。
+权威入口仍为design_manifest.json→release_baseline.json，未改冻结内容。
+
+新增product_systems.gd：七工具、四设施、出勤难度/天气、装备与永久医疗离队状态。
+新增history_repair.gd：九条方向性修复，按实际凭据和阶段顺序推进。
+新增guidance.gd：只读提示选择，随下一次成功指令保存历史，不改变行动数值。
+新增audio_controller.gd与26个原创程序合成PCM资源：音量/静音独立。
+新增runtime_metrics.gd：本地会话辅助测量，导出时明确测量边界。
+main.gd接入开局/出发难度、装备设施、历史修复、声音设置、提示记录、非模态动作预览及键盘取消/结束回合。
+campaign_store.gd升级runtime5并迁移旧2/3/4，保留schema2；session.gd备份恢复立即落盘。
+移动范围预览改为复用规则层的移动预算与寻路合法性，避免每次画64格都复制完整战役及撤销历史。
+
+测试输出统一写p4前缀，原P3记录没有覆写；check.py继续执行历史测试脚本作为回归。
+构建使用build_windows_p4.py，打包使用package_p4.py；不调用旧阶段打包覆盖旧包。
+所有GUI runner先确认至少两屏并选择非主屏；无第二屏时拒绝开始GUI验证。
+用户初始未提交/未跟踪文件保留，未执行git commit/push。

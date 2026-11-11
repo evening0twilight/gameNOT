@@ -1,0 +1,37 @@
+{
+  "version": "0.15",
+  "design_sha256": {
+    "game/data/campaign_economy_contract.json": "79764bb6cdd4562f85026331dfb3b553d7f01907a3cf152f40e4b106247e3084",
+    "game/data/characters.json": "8b71fd1cd460da591d11b2fcb61d607ed2793e267e8cf8df23297eb895d972d9",
+    "game/data/final_design/facilities.json": "b7a1774db0358850e1a3c050cd993963f6d4c7a53f19a739dea3914355709e7a",
+    "game/data/final_design/production_scope.json": "7c60bf7e735ac832e1e2170a295af51296ec01e910bd0fca0844470b63aa180e",
+    "game/data/final_design/player_ready_contract.json": "33f98339653bd5703ac2455273ea26e46bdbeb3a521178dca5d79d4dfa9ff54a",
+    "game/data/final_design/integrated_review_contract.json": "10187719d53255a03292020e3807e178214ca249bb2f91705f56589e4ace7aac",
+    "game/data/final_design/tactical_review_contract.json": "c050d86adf6cb5a4ee018bb702407f7a71b050f56d24ab98ab3e718dbf26061d",
+    "game/data/final_design/boards.json": "d895aca21b760fb1d71cb86f73f9c7fc8eaa6d81bd92ab3104c0eec3b5a8d5a0",
+    "game/data/final_design/player_experience_contract.json": "0cc3ef495086e08c1b29ea1614ea8993f56e741b2fd747936a61063b9e6cddbc",
+    "game/data/final_design/growth_identity_contract.json": "0a1f0ef6d82066e96591d78e961c18a20c23d8dd9b2897dcd038c3acde2fc064",
+    "game/data/final_design/whole_campaign_contract.json": "e25d8cd0dc2fd6598042ee0f704a3aabe166e17c6cb9eb904cfd56c25a2e7613",
+    "game/data/final_design/stories.json": "c8fa6e9e55ee44773026b1ddf864f2493f48ae8a94eb8f91f492891ff2e4a249",
+    "game/data/final_design/player_choice_contract.json": "597df92c44458376a471a21e21c3af31cdfd0a0caf36f90c4e22ddb5d5667a54",
+    "game/data/final_design/relationship_edge_cases.json": "236e4d89ce6564137907f201f954c61507eb7c87cbb676ebf9ff881c1959e2d4",
+    "game/data/final_design/enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+    "game/data/final_design/full_audit_contract.json": "c2cbda8cecbd5e4d8540142e23ef4cb6035f3e2ccd1f8f169f6a24edeb88e8ef",
+    "game/data/final_design/character_scripts.json": "d4f298ea73ce48a867337e06e921076d3a17df66e179445f1f5bb244a7d4b607",
+    "game/data/final_design/design_manifest.json": "3a95fbf6ed0e5ce172b176f6b5696ad008091d48a1552113604358e2af8dd215",
+    "game/data/final_design/system_audit_contract.json": "8982635b6a8e189236e28f07c4bdbb5c90452a8af82d555919701dedd346c333",
+    "game/data/final_design/approach_review_contract.json": "591b52f30a343dc121d891594ff9e73ad90e438d88fd0892b0cd6cf48c81613a",
+    "game/data/final_design/integration.json": "914bba8d1d7ffb96ccbdd51cedbec9a7071c89e0fceff0c2a313fa36b5e3e162",
+    "game/data/final_design/abilities.json": "f427bc60b7faef4070d4fa34cf0337205c330aa77530884045718b7b67e17d93",
+    "game/data/final_design/combat.json": "ec63bd4e8fc4a51235e911c7a7749ff7d403308a42c8cf9a2456ef9043a70579",
+    "game/data/final_design/equipment.json": "31987b21d81881d0c1befaa15b87c92595a00b8b6ef675f7ade710096a44e0c7",
+    "game/data/final_design/progression_relationship.json": "ce1bfe61ae78342fae81c137a2c60d434389a43741c0136c460661298010116b"
+  },
+  "reference_sha256": {
+    "work/growth-identity-review/model.py": "22a0ed73b5c33ca6de405035e37951b8e30aed03c6a423af413b1ede12441ebe",
+    "work/growth-identity-review/relationships.py": "c030ef9f4f89df6a50020b1bd9dbec86efb3c00a3812a3d0c91b843ee9d6b0c9",
+    "work/campaign-review/ledger_review.py": "c868319d142172867fc50d0c5716c8d0833b25bddffedd8b2b05d86b24a8e0b1",
+    "work/integrated-review/campaign.py": "5315881ffc0659940b6c040b2d7874d1880e123e41cc40320d3325e61aabba91"
+  },
+  "formal_runtime_changed": false
+}

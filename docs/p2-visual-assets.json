@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-05",
+  "assets": [
+    {
+      "path": "game/assets/visual_p2/chen_portrait.png",
+      "sha256": "50b796ecd00802f6e231904809cfab39a1cdd260de3651f6c2a67df47081f06c",
+      "bytes": 2088675,
+      "source": "OpenAI built-in image_gen; generated for project",
+      "prompt_set": "docs/p2-visual-prompt-set.json",
+      "original_preserved": true
+    },
+    {
+      "path": "game/assets/visual_p2/chen_sprite.png",
+      "sha256": "bf11574a8e72ebf5229dde09c07c93af46c47e43e330a97a37820f81ece17796",
+      "bytes": 2000495,
+      "source": "OpenAI built-in image_gen; generated for project",
+      "prompt_set": "docs/p2-visual-prompt-set.json",
+      "original_preserved": true
+    },
+    {
+      "path": "game/assets/visual_p2/environments.png",
+      "sha256": "b7ca27b17e506fdadb21f72f33e133ba4f4568027c351903b5916d5f7641900e",
+      "bytes": 3442753,
+      "source": "OpenAI built-in image_gen; generated for project",
+      "prompt_set": "docs/p2-visual-prompt-set.json",
+      "original_preserved": true
+    },
+    {
+      "path": "game/assets/visual_p2/machines.png",
+      "sha256": "7af37568cbf3d920135a81a428bb3b27c3fe961801cef814353243f658f6d6b6",
+      "bytes": 1832651,
+      "source": "OpenAI built-in image_gen; generated for project",
+      "prompt_set": "docs/p2-visual-prompt-set.json",
+      "original_preserved": true
+    },
+    {
+      "path": "game/assets/visual_p2/objectives.png",
+      "sha256": "5322e7f01986de8024b88299cd99d34097d4a61150f9c86ba93acc9c1c1361ee",
+      "bytes": 2732111,
+      "source": "OpenAI built-in image_gen; generated for project",
+      "prompt_set": "docs/p2-visual-prompt-set.json",
+      "original_preserved": true
+    }
+  ]
+}

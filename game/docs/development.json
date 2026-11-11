@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-04",
+  "engine": "Godot 4.7.2 standard, GDScript, Compatibility renderer",
+  "project_stage": "Windows export environment validated; P1 explicitly authorized for a new chat in this same final project.",
+  "implemented": [
+    "现有基础工程和旧版关系/存档准备模块；不视为0.18完整规则已接入。"
+  ],
+  "not_implemented": [
+    "0.18完整战役/战斗/成长/关系的Godot集成",
+    "正式UI、预览执行、剧情演出和完整保存恢复",
+    "最终美术音乐及授权核验",
+    "Windows性能兼容和真人试玩验收"
+  ],
+  "commands": {
+    "design_validation": "python3 work/predevelopment-review/verify.py",
+    "engine_tests": "<Godot binary> --headless --path game --script tests/run_tests.gd",
+    "startup_smoke": "<Godot binary> --headless --path game --quit-after 3",
+    "open_project": "<Godot binary> --editor --path game",
+    "development_validation": "python3 tools/check.py --engine"
+  },
+  "production_order_in_same_project": [
+    "Command/state contracts, tactical movement and action preview/resolution",
+    "Combat/rescue objectives, mission outcome, daily schedule and resource ledger",
+    "Roster/growth/relationships integrated with actions and negotiations",
+    "Complete four-chapter content, character arcs, side missions and endings",
+    "Final presentation, balance, complete-campaign regression and platform validation"
+  ],
+  "outstanding_user_preference": null,
+  "logic_audit": "docs/logic-audit.json",
+  "logical_closure_status": "ALL_36_MAPS_HAVE_BOUNDED_TACTICAL_WITNESSES; EXHAUSTIVE_COMBINATIONS_AND_HUMAN_PLAYABILITY_NOT_CLAIMED",
+  "confirmed_experience_policy": "data/confirmed_experience_policy.json",
+  "flow_contracts": [
+    "data/campaign_economy_contract.json",
+    "data/campaign_world_contract.json",
+    "data/campaign_coordination_contract.json"
+  ],
+  "design_version": "0.18-predevelopment",
+  "authored_this_revision": [
+    "全域规则与覆盖审查",
+    "装备、医疗、工坊投资修正",
+    "关系归责与重新协商",
+    "存档状态清单和拒绝操作原子性"
+  ],
+  "design_authority": "data/final_design/design_manifest.json",
+  "design_verification": {
+    "content_checks": "../../outputs/final-design-validation.json",
+    "combat_example": "../../outputs/combat-design-example.json",
+    "story_checks": "../../outputs/story-contract-checks.json"
+  },
+  "formal_development_gate": "User authorized P1 after Windows export setup; setup passed. Proceed in the new P1 chat.",
+  "latest_review": "../../outputs/predevelopment-review.html",
+  "current_production_scope": "data/final_design/production_scope.json",
+  "player_ready_review": "../../outputs/player-ready-review.html",
+  "authored_scripts": "../../outputs/character-script-final.html",
+  "formal_development_started": false,
+  "design_complete": [
+    "单一当前规则基线",
+    "36地图、8角色、96完整场景数据",
+    "完整流程、首发制作范围、D/R/H验收标准"
+  ],
+  "technical_decisions": "../../docs/technical-decisions.txt",
+  "platform_confirmation": "User confirmed Windows 11 x64 keyboard/mouse Simplified Chinese and an available Windows test computer on 2026-11-04."
+}

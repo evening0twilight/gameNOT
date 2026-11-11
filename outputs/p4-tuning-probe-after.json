@@ -1,0 +1,1096 @@
+{
+  "records": [
+    {
+      "difficulty": "relaxed",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 6,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 7,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 5,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 6,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 19,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 8,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 9,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 7,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 8,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 19,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 12,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 10,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 11,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 12,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 12,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 9,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [
+        "east",
+        "west"
+      ],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 10,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 12,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 19,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 14,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 12,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 13,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 14,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 14,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 12,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [
+        "east",
+        "west"
+      ],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 12,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 18,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "relaxed",
+      "final_round": 14,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 19,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 6,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 7,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 5,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 6,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 16,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 8,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 9,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 7,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [
+        "east",
+        "west"
+      ],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 8,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 16,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 12,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 10,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 11,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 12,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 12,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 9,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [
+        "east",
+        "west"
+      ],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 15,
+      "idle_rounds": 4,
+      "injured": [
+        "xu",
+        "su"
+      ],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "partial"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 12,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 16,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 12,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "su"
+      ],
+      "limit": 12,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 12,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 12,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 13,
+      "idle_rounds": 6,
+      "injured": [],
+      "limit": 15,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 15,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 15,
+      "lost_residents": [
+        "r1",
+        "r2"
+      ],
+      "mission": "M06",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 15,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 15,
+      "lost_residents": [
+        "r1",
+        "r2"
+      ],
+      "mission": "M09",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 12,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 12,
+      "lost_residents": [
+        "north",
+        "east",
+        "west"
+      ],
+      "mission": "M15",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 15,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 15,
+      "lost_residents": [
+        "patient"
+      ],
+      "mission": "M19",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "standard",
+      "final_round": 16,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 16,
+      "lost_residents": [
+        "r1",
+        "r2"
+      ],
+      "mission": "M23",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 6,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 8,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 7,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 10,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 5,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 6,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 8,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 0,
+      "injured": [],
+      "limit": 10,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 2,
+      "injured": [
+        "lin"
+      ],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 8,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 10,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 7,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 9,
+      "lost_residents": [
+        "east",
+        "west"
+      ],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 2,
+      "injured": [
+        "xu",
+        "su"
+      ],
+      "limit": 8,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "partial"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 10,
+      "idle_rounds": 2,
+      "injured": [],
+      "limit": 10,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 4,
+      "injured": [
+        "lin",
+        "su"
+      ],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "partial"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 4,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 8,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 4,
+      "injured": [
+        "lin",
+        "xu"
+      ],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 4,
+      "injured": [
+        "su"
+      ],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M06",
+      "outcome": "partial"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 10,
+      "idle_rounds": 4,
+      "injured": [
+        "lin",
+        "su"
+      ],
+      "limit": 10,
+      "lost_residents": [],
+      "mission": "M09",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 4,
+      "injured": [],
+      "limit": 9,
+      "lost_residents": [
+        "east",
+        "west"
+      ],
+      "mission": "M15",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 4,
+      "injured": [
+        "xu",
+        "su"
+      ],
+      "limit": 8,
+      "lost_residents": [],
+      "mission": "M19",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 10,
+      "idle_rounds": 4,
+      "injured": [
+        "lin"
+      ],
+      "limit": 10,
+      "lost_residents": [],
+      "mission": "M23",
+      "outcome": "success"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M01",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 8,
+      "lost_residents": [],
+      "mission": "M02",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 9,
+      "lost_residents": [],
+      "mission": "M04",
+      "outcome": "partial"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 9,
+      "lost_residents": [
+        "r1",
+        "r2"
+      ],
+      "mission": "M06",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 10,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 10,
+      "lost_residents": [
+        "r1",
+        "r2"
+      ],
+      "mission": "M09",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 9,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 9,
+      "lost_residents": [
+        "north",
+        "east",
+        "west"
+      ],
+      "mission": "M15",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 8,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 8,
+      "lost_residents": [
+        "patient"
+      ],
+      "mission": "M19",
+      "outcome": "failed"
+    },
+    {
+      "difficulty": "hard",
+      "final_round": 10,
+      "idle_rounds": 6,
+      "injured": [
+        "lin",
+        "xu",
+        "su"
+      ],
+      "limit": 10,
+      "lost_residents": [
+        "r1",
+        "r2"
+      ],
+      "mission": "M23",
+      "outcome": "failed"
+    }
+  ],
+  "scope": "Deterministic isolated recovery after deliberately idle rounds; not a human win-rate estimate"
+}

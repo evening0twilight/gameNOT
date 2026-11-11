@@ -1,0 +1,56 @@
+[
+  {
+    "id": "scout",
+    "name": "巡检机",
+    "hp": 3,
+    "intent": "每轮预告最多3格直线冲撞路径；沿线前进，遇第一名角色在其前停下并造成2伤害，墙会直接阻停。也可用就地停机开关完成2工量永久关闭。",
+    "counter": "诱导、推离攻击线",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/enemies.json#scout"
+  },
+  {
+    "id": "welder",
+    "name": "焊接机",
+    "hp": 5,
+    "intent": "奇数轮蓄能、偶数轮灼烧前方3格扇形（正前与两侧前斜格），伤害2；不移动，下轮生成预告时才转向。就地断路2工量可永久关闭。",
+    "counter": "断电、灭火、改变朝向",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/enemies.json#welder"
+  },
+  {
+    "id": "hauler",
+    "name": "搬运机",
+    "hp": 8,
+    "intent": "沿本关轨道最多前进2格，遇人推1格并伤害2；推不动则停止，不能离开轨道。制动开关2工量可关闭。",
+    "counter": "轨道改道、卡位",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/enemies.json#hauler"
+  },
+  {
+    "id": "relay",
+    "name": "中继机",
+    "hp": 4,
+    "intent": "第3/6轮预告出生格，下一轮末出现巡检机；占位则延后1轮仍占则取消。全关共享最多2次增援额度。关停只阻止未来增援，不删除已登场单位。",
+    "counter": "优先关停、干扰",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/enemies.json#relay"
+  },
+  {
+    "id": "skimmer",
+    "name": "涉水机",
+    "hp": 4,
+    "intent": "奇数轮在连通浅水内移动最多1格，偶数轮对当前连通水域放电2伤害；离开水域或断电可规避，每名受影响者只结算一次。",
+    "counter": "绝缘、断路、离水",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/enemies.json#skimmer"
+  },
+  {
+    "id": "sentinel",
+    "name": "守闸机",
+    "hp": 10,
+    "intent": "奇数轮蓄能、偶数轮对朝向前3格直线攻击3伤害；不移动，墙和屏障截断射线。两个分路开关各1工量能永久关闭，或通过基础攻击拆除。",
+    "counter": "掩体、断电、目标切换",
+    "status": "complete_design_definition_runtime_pending",
+    "definition_ref": "final_design/enemies.json#sentinel"
+  }
+]

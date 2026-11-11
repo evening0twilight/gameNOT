@@ -1,0 +1,225 @@
+{
+  "passed_count": 84,
+  "checks": [
+    "M01 leak is an explicit accessible overlay",
+    "M01 ignition only targets traversable cells",
+    "M02 leak is an explicit accessible overlay",
+    "M02 ignition only targets traversable cells",
+    "M03 leak is an explicit accessible overlay",
+    "M03 ignition only targets traversable cells",
+    "M04 leak is an explicit accessible overlay",
+    "M04 ignition only targets traversable cells",
+    "M05 leak is an explicit accessible overlay",
+    "M05 ignition only targets traversable cells",
+    "M06 leak is an explicit accessible overlay",
+    "M06 ignition only targets traversable cells",
+    "M07 leak is an explicit accessible overlay",
+    "M07 ignition only targets traversable cells",
+    "M08 leak is an explicit accessible overlay",
+    "M08 ignition only targets traversable cells",
+    "M09 leak is an explicit accessible overlay",
+    "M09 ignition only targets traversable cells",
+    "M10 leak is an explicit accessible overlay",
+    "M10 ignition only targets traversable cells",
+    "M11 leak is an explicit accessible overlay",
+    "M11 ignition only targets traversable cells",
+    "M12 leak is an explicit accessible overlay",
+    "M12 ignition only targets traversable cells",
+    "M13 leak is an explicit accessible overlay",
+    "M13 ignition only targets traversable cells",
+    "M14 leak is an explicit accessible overlay",
+    "M14 ignition only targets traversable cells",
+    "M15 leak is an explicit accessible overlay",
+    "M15 ignition only targets traversable cells",
+    "M16 leak is an explicit accessible overlay",
+    "M16 ignition only targets traversable cells",
+    "M17 leak is an explicit accessible overlay",
+    "M17 ignition only targets traversable cells",
+    "M18 leak is an explicit accessible overlay",
+    "M18 ignition only targets traversable cells",
+    "M19 leak is an explicit accessible overlay",
+    "M19 ignition only targets traversable cells",
+    "M20 leak is an explicit accessible overlay",
+    "M20 ignition only targets traversable cells",
+    "M21 leak is an explicit accessible overlay",
+    "M21 ignition only targets traversable cells",
+    "M22 leak is an explicit accessible overlay",
+    "M22 ignition only targets traversable cells",
+    "M23 leak is an explicit accessible overlay",
+    "M23 ignition only targets traversable cells",
+    "M24 leak is an explicit accessible overlay",
+    "M24 ignition only targets traversable cells",
+    "S01 leak is an explicit accessible overlay",
+    "S01 ignition only targets traversable cells",
+    "S02 leak is an explicit accessible overlay",
+    "S02 ignition only targets traversable cells",
+    "S03 leak is an explicit accessible overlay",
+    "S03 ignition only targets traversable cells",
+    "S04 leak is an explicit accessible overlay",
+    "S04 ignition only targets traversable cells",
+    "S05 leak is an explicit accessible overlay",
+    "S05 ignition only targets traversable cells",
+    "S06 leak is an explicit accessible overlay",
+    "S06 ignition only targets traversable cells",
+    "S07 leak is an explicit accessible overlay",
+    "S07 ignition only targets traversable cells",
+    "S08 leak is an explicit accessible overlay",
+    "S08 ignition only targets traversable cells",
+    "S09 leak is an explicit accessible overlay",
+    "S09 ignition only targets traversable cells",
+    "S10 leak is an explicit accessible overlay",
+    "S10 ignition only targets traversable cells",
+    "S11 leak is an explicit accessible overlay",
+    "S11 ignition only targets traversable cells",
+    "S12 leak is an explicit accessible overlay",
+    "S12 ignition only targets traversable cells",
+    "crowbar has a defined use after its actual unlock",
+    "medkit has a defined use after its actual unlock",
+    "winch has a defined use after its actual unlock",
+    "shield has a defined use after its actual unlock",
+    "foam has a defined use after its actual unlock",
+    "insulation has a defined use after its actual unlock",
+    "battery has a defined use after its actual unlock",
+    "scanner has a defined use after its actual unlock",
+    "beacon has a defined use after its actual unlock",
+    "cutter has a defined use after its actual unlock",
+    "stretcher has a defined use after its actual unlock",
+    "extinguisher has a defined use after its actual unlock"
+  ],
+  "examples": [
+    {
+      "item": "crowbar",
+      "unlocked_after_main": 0,
+      "example": {
+        "mission": "M03",
+        "targets": [
+          "door"
+        ]
+      },
+      "matching_encounters": 3
+    },
+    {
+      "item": "medkit",
+      "unlocked_after_main": 0,
+      "example": {
+        "mission": "M01",
+        "targets": [
+          "standing_hero_after_damage; conditional_not_initial_state"
+        ]
+      },
+      "matching_encounters": 36
+    },
+    {
+      "item": "winch",
+      "unlocked_after_main": 3,
+      "example": {
+        "mission": "M04",
+        "targets": [
+          "single_gap_anchor_geometry"
+        ]
+      },
+      "matching_encounters": 8
+    },
+    {
+      "item": "shield",
+      "unlocked_after_main": 4,
+      "example": {
+        "mission": "M05",
+        "targets": [
+          "empty_walkable_tile"
+        ]
+      },
+      "matching_encounters": 31
+    },
+    {
+      "item": "foam",
+      "unlocked_after_main": 5,
+      "example": {
+        "mission": "M06",
+        "targets": [
+          "M06_leak"
+        ]
+      },
+      "matching_encounters": 29
+    },
+    {
+      "item": "insulation",
+      "unlocked_after_main": 7,
+      "example": {
+        "mission": "M13",
+        "targets": [
+          "existing_shallow_water"
+        ]
+      },
+      "matching_encounters": 7
+    },
+    {
+      "item": "battery",
+      "unlocked_after_main": 1,
+      "example": {
+        "mission": "M02",
+        "targets": [
+          "power"
+        ]
+      },
+      "matching_encounters": 5
+    },
+    {
+      "item": "scanner",
+      "unlocked_after_main": 10,
+      "example": {
+        "mission": "M11",
+        "targets": [
+          "M11_enemy1_cut",
+          "M11_enemy2_cut"
+        ]
+      },
+      "matching_encounters": 22
+    },
+    {
+      "item": "beacon",
+      "unlocked_after_main": 11,
+      "example": {
+        "mission": "M12",
+        "targets": [
+          "dry_tile_for_next_scout_intent"
+        ]
+      },
+      "matching_encounters": 13
+    },
+    {
+      "item": "cutter",
+      "unlocked_after_main": 13,
+      "example": {
+        "mission": "M21",
+        "targets": [
+          "route"
+        ]
+      },
+      "matching_encounters": 1
+    },
+    {
+      "item": "stretcher",
+      "unlocked_after_main": 16,
+      "example": {
+        "mission": "M19",
+        "targets": [
+          "actor_carrying_stabilized_casualty"
+        ]
+      },
+      "matching_encounters": 4
+    },
+    {
+      "item": "extinguisher",
+      "unlocked_after_main": 18,
+      "example": {
+        "mission": "M19",
+        "targets": [
+          "announced_fire_or_welder"
+        ]
+      },
+      "matching_encounters": 2
+    }
+  ],
+  "scope": "Static target existence and unlock timing. Does not prove utility, optimal cost or live tactical reachability for every item."
+}

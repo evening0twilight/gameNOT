@@ -1,0 +1,506 @@
+{
+  "version": "0.6-system-audit",
+  "date": "2026-11-01",
+  "passed_count": 89,
+  "checks": [
+    {
+      "group": "memory",
+      "name": "old capped total hides a genuine repair",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "repair at100 visibly reduces actual total",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "sum of displayed active sources equals actual number",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "duplicate restitution cannot mint trust",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "unrelated repair evidence rejected",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "duplicate incident adds neither memory nor loss",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "severe8day decay uses blended floor not max-floor",
+      "detail": {
+        "correct": 27.0,
+        "old_ledger": 20
+      }
+    },
+    {
+      "group": "memory",
+      "name": "restitution clears serious residual floor",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "ordinary live slots never exceed3",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "archived ordinary event does not refill after repair",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "third distinct warned breach escalates once",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "D-3 is outside the three-day escalation window",
+      "detail": null
+    },
+    {
+      "group": "memory",
+      "name": "late discovery does not invent contemporaneous warning/escalation",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "unknown responsibility does not deduct directed trust",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "forced operator receives no blame",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "informed volunteer splits responsibility with approving leader",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "one decision with three consequences is one memory",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "new intentional concealment remains a separate choice",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "different witnesses retain their own directed memories",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "known severe consequence amends one event and deducts only trust delta",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "replaying same consequence does not amplify memory",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "false blame refunds actual net loss without double restitution",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "unrelated history does not use promise-specific sensitivity multiplier",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "one source permits distinct accountable directions",
+      "detail": null
+    },
+    {
+      "group": "attribution",
+      "name": "duplicate directed event is a true no-op",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "third attribution cannot exceed total responsibility1",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "hysteresis retains refusal until below50",
+      "detail": [
+        3,
+        3,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "group": "conflict",
+      "name": "very low resentment cannot be forced into conflict by general stress",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "first relevant warned rupture gets one long scene",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "reversing direction does not bypass pair cooldown",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "next day remains on cooldown",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "expiry alone cannot surprise player with a scene",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "new warned request on D+2 may trigger",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "another pair cannot cause second long scene in same mission",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "anger at commander constrains dangerous order without blaming partner",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "real protection restores that action during cooldown too",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "ledger retains conditional band at55",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "ledger exits conditional band below50",
+      "detail": null
+    },
+    {
+      "group": "conflict",
+      "name": "high resentment leaves legal basic deployment available",
+      "detail": null
+    },
+    {
+      "group": "combat",
+      "name": "hard downed but retrieved is injury, not permanent loss",
+      "detail": null
+    },
+    {
+      "group": "combat",
+      "name": "hard standing emergency evac never permanent loss",
+      "detail": null
+    },
+    {
+      "group": "combat",
+      "name": "hard abandoned downed actor withdraws",
+      "detail": null
+    },
+    {
+      "group": "combat",
+      "name": "standard abandoned downed actor is recoverable",
+      "detail": null
+    },
+    {
+      "group": "combat",
+      "name": "delivery precedes same-round rescue expiry",
+      "detail": null
+    },
+    {
+      "group": "combat",
+      "name": "stabilization extends once, not a new full timer",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "illegal recipe/unlock/quantity ('invented', 1)",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "illegal recipe/unlock/quantity ('foam', 1)",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "illegal recipe/unlock/quantity ('battery', 1)",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "illegal recipe/unlock/quantity ('med_dose', 0.5)",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "illegal recipe/unlock/quantity ('med_dose', True)",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "zero-price consumable cannot be bought as permanent tool",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "fractional inventory settlement atomically rejected",
+      "detail": null
+    },
+    {
+      "group": "economy",
+      "name": "crafted/packed/consumed conservation with real ledger",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "unknown training protocol cannot consume a project or mint unlock",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "tier2 does not silently extend two-record power to D18",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "duplicate evidence cannot masquerade as two distinct records",
+      "detail": null
+    },
+    {
+      "group": "economy",
+      "name": "tier2 legitimate two-record project costs one slot",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "side duty cannot satisfy Su two-main-duty plan",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "assigned but never performed support cannot satisfy Su plan",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "actual two-main schedule remains accepted",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "missing Xu promise record defaults to unproven",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "injured teammate brought back counts as all retrieved",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "He proof remains valid with safely retrieved injury",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "D22 Su two-future-main promise refused",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "D21 Su plan still has two main windows",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "D22 Chen plan refused because M23 lacks work",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "D20 Chen plan has actual M21 engineering targets",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "D22 Lin plan has actual M23 casualty targets",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "late impossible plan does not charge scenes, projects or payment",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "late reader still has complete professional choice",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "player can explicitly choose career change without fabricated proof",
+      "detail": null
+    },
+    {
+      "group": "story",
+      "name": "absent partner creates correspondence coda, not live pair scene",
+      "detail": null
+    },
+    {
+      "group": "ending",
+      "name": "completed plan survives later medical withdrawal",
+      "detail": null
+    },
+    {
+      "group": "ending",
+      "name": "uncompleted plan is interrupted, not maliciously broken",
+      "detail": null
+    },
+    {
+      "group": "ending",
+      "name": "actual ledger preserves fulfilled history plus hospital presence",
+      "detail": null
+    },
+    {
+      "group": "ending",
+      "name": "past achievement and later ongoing-duty breach coexist",
+      "detail": null
+    },
+    {
+      "group": "ending",
+      "name": "repairing one directed incident leaves another unresolved",
+      "detail": null
+    },
+    {
+      "group": "ending",
+      "name": "unrelated character does not inherit rupture",
+      "detail": null
+    },
+    {
+      "group": "world",
+      "name": "M17 isolation clips current district as well as future cap",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "isolation action cannot be settled under unspecified repair branch",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "two records cannot bypass infrastructure threshold",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "wrong-route objects cannot pay chosen-route victory",
+      "detail": null
+    },
+    {
+      "group": "world",
+      "name": "failed final plan keeps only actual saved object",
+      "detail": null
+    },
+    {
+      "group": "transaction",
+      "name": "M24 cannot open a nonexistent final camp",
+      "detail": null
+    },
+    {
+      "group": "properties",
+      "name": "8000 seeded relationship transitions preserve caps and monotonic repair/decay",
+      "detail": {
+        "transitions": 8000,
+        "max_reallocation_drift": 1.4210854715202004e-14
+      }
+    },
+    {
+      "group": "properties",
+      "name": "40804 band states respect bounds and increasing stress monotonicity",
+      "detail": {
+        "states": 40804
+      }
+    },
+    {
+      "group": "content",
+      "name": "all36maps retain authored baseline shutdown references",
+      "detail": null
+    },
+    {
+      "group": "content",
+      "name": "M24 narrative delivered as epilogue, not camp",
+      "detail": null
+    },
+    {
+      "group": "scope",
+      "name": "all runtime scripts/scenes/project files unchanged",
+      "detail": {
+        "files": 6
+      }
+    }
+  ],
+  "examples": [
+    {
+      "id": "saturation",
+      "old_before": 100,
+      "old_after": 100,
+      "new_before": 100.0,
+      "new_after": 86.9796,
+      "new_active": [
+        17.1633,
+        17.1633,
+        10.6531
+      ]
+    },
+    {
+      "id": "repeated_breach",
+      "resentment": [
+        61.7111,
+        66.0,
+        100.0
+      ],
+      "trust": 72
+    }
+  ],
+  "property_cases": {
+    "relationship_transitions": 8000,
+    "band_states": 40804
+  },
+  "existing_suites": {
+    "content": 488,
+    "story": 49,
+    "ledger": 51,
+    "equipment": 84
+  },
+  "boundaries": [
+    "Design reference calculations and supplied mission results; no complete tactical campaign simulation.",
+    "Narrative clauses such as attribution correction and carrier expiry are specified; not every clause has an executable gameplay model.",
+    "Rule correctness is distinct from fun, market demand, measured duration, balance and runtime implementation."
+  ]
+}

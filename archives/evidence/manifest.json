@@ -1,0 +1,244 @@
+{
+  "format_version": 1,
+  "policy": "Originals are restored on demand and may be pruned after validating both gzip and original SHA256. No cloud-only archives included.",
+  "files": [
+    {
+      "path": "outputs/approach-campaign-results.json",
+      "archive": "archives/evidence/outputs/approach-campaign-results.json.gz",
+      "bytes": 1459003,
+      "sha256": "1c6c03e1d159a1326afe8e7fcdc6b3c5283ef305a08e3554115873e557eaa5d0",
+      "archive_sha256": "eab676ef1ed0fc7b880db96d0d1ba14ed13d8dc48239fdc9e061ada218eb9c98"
+    },
+    {
+      "path": "outputs/approach-matrix-results.json",
+      "archive": "archives/evidence/outputs/approach-matrix-results.json.gz",
+      "bytes": 29710407,
+      "sha256": "3caeb92e2cc5755beae5edc27c83142ba9245d3bd052adc56ab2eb3018b38497",
+      "archive_sha256": "9e410c576a17e28a8a52caea20dd2fdd5c897220981fd8ba82a7d72d7cb9eb54"
+    },
+    {
+      "path": "outputs/cooperation-frontier-challenge.json",
+      "archive": "archives/evidence/outputs/cooperation-frontier-challenge.json.gz",
+      "bytes": 1233152,
+      "sha256": "4826a44cde76f837aa87b7644766ce734d2d4fb1958b61fee3f8822ef0e39c9e",
+      "archive_sha256": "3d08049444864e3cb62e98639089edf7efe880fbd68fb620d6433fb472f93bb6"
+    },
+    {
+      "path": "outputs/cooperation-value-campaign.json",
+      "archive": "archives/evidence/outputs/cooperation-value-campaign.json.gz",
+      "bytes": 1829260,
+      "sha256": "a90ab620c29d76c39721551d1e072a94dd258bbfc9020b8b0a2b46e51b7ade13",
+      "archive_sha256": "6d07b9acbf0737d854419478b3104c97da22eb6b2e2993a6bbc2835d6b194a2b"
+    },
+    {
+      "path": "outputs/cooperation-value-matrix.json",
+      "archive": "archives/evidence/outputs/cooperation-value-matrix.json.gz",
+      "bytes": 4558707,
+      "sha256": "7624d1fa070f2a025c5b862df4cf0d946fa8e6e900beaf28b3161eff042b2239",
+      "archive_sha256": "085f87d53929b5adcdd0d73bfbe2d4bd6b9268dcc9bf63f7af965983c18a7b4e"
+    },
+    {
+      "path": "outputs/growth-identity-campaigns.json",
+      "archive": "archives/evidence/outputs/growth-identity-campaigns.json.gz",
+      "bytes": 1981672,
+      "sha256": "891fe45b1486d853524ac8ba8c6a338ae2d47b6414e4089b0cf3ae1c51af3209",
+      "archive_sha256": "0575f783aa797ed5c179d7afa3ca1b9572f6f32a7cdb7e9f94fe621a7855f953"
+    },
+    {
+      "path": "outputs/growth-identity-field.json",
+      "archive": "archives/evidence/outputs/growth-identity-field.json.gz",
+      "bytes": 2569917,
+      "sha256": "91e92206e9cb5c537e5d53cfb3d961bb487dcf3be621c3f88ad5c12ea1cd4e3a",
+      "archive_sha256": "1b5f6790d927f2e60e3a198c9f3125616c67f610bceb8a397fcd9bf496804150"
+    },
+    {
+      "path": "outputs/growth-identity-matrix.json",
+      "archive": "archives/evidence/outputs/growth-identity-matrix.json.gz",
+      "bytes": 9560342,
+      "sha256": "8b534904988ae57febe69d59f7b959c1f9dcb0446ba8a6355add4861db77c6dc",
+      "archive_sha256": "779d3b8b4b039f39b037bd930039ff51c60ff846b745b9f26619ee4830815bc1"
+    },
+    {
+      "path": "outputs/growth-identity-pre-upgrade-campaigns.json",
+      "archive": "archives/evidence/outputs/growth-identity-pre-upgrade-campaigns.json.gz",
+      "bytes": 1961211,
+      "sha256": "864ace26186e6bf885b2f5e049120c81207a14899bb4de42de1898d9a17a4203",
+      "archive_sha256": "d56b925eef0b4e351ef4b3cc9af589de6f3d28d6569c93ebc0fb3c859ca15c5b"
+    },
+    {
+      "path": "outputs/growth-identity-pre-upgrade.json",
+      "archive": "archives/evidence/outputs/growth-identity-pre-upgrade.json.gz",
+      "bytes": 9548185,
+      "sha256": "4f87413cf5c85d1b9520d6c0e37fff9863a17d162054e2082df87f76246bede4",
+      "archive_sha256": "602042d65b1c4153137112cee932937886fca03a8e113d44e8d43f4ff6ab4888"
+    },
+    {
+      "path": "outputs/integrated-campaign-results.json",
+      "archive": "archives/evidence/outputs/integrated-campaign-results.json.gz",
+      "bytes": 1346894,
+      "sha256": "d03494efafb4035ded291bd15f01ac362fd9037063b85476f08a944ada82b261",
+      "archive_sha256": "8f528b85e58e970e13cd17ed566fd081085df1a900deb8b4e60a01c90588e357"
+    },
+    {
+      "path": "outputs/integrated-party-before-mo.json",
+      "archive": "archives/evidence/outputs/integrated-party-before-mo.json.gz",
+      "bytes": 2823533,
+      "sha256": "4a13966dc8329746f3dfcc50f0e2b0b7467ea54a85099b81700fc4dd81a7d58d",
+      "archive_sha256": "dcac5e6a18f8db7a3454b4765fe68610be4bd516a8d0be87b1b109e2176f89ac"
+    },
+    {
+      "path": "outputs/integrated-party-matrix.json",
+      "archive": "archives/evidence/outputs/integrated-party-matrix.json.gz",
+      "bytes": 2938479,
+      "sha256": "6a78d8a85c47beacf37413ad0508f4820666c951143816297404a3a72e1d62d9",
+      "archive_sha256": "7f2cf1f72fac6ae819db1485754b83843d4436df54be8413b85f944a34fb3b50"
+    },
+    {
+      "path": "outputs/ordinary-player-after-campaigns.json",
+      "archive": "archives/evidence/outputs/ordinary-player-after-campaigns.json.gz",
+      "bytes": 17448203,
+      "sha256": "829ef6c52de282495b608e6ddeafa28394f5d281d035b4cffaa2f1a32d695d10",
+      "archive_sha256": "9b9bdebfeed8994e254729123d9872d7aede6db7ecb52e44a63b196528caf846"
+    },
+    {
+      "path": "outputs/ordinary-player-after-routes.json",
+      "archive": "archives/evidence/outputs/ordinary-player-after-routes.json.gz",
+      "bytes": 9282548,
+      "sha256": "21621b0eed9edcb4196df6b5d876ae79b9f4fddab1192e006dedf30e9a0799fd",
+      "archive_sha256": "3453d22f4a955160061420b7d7626736c1730205bef9567cb4e4d9838309a0f9"
+    },
+    {
+      "path": "outputs/ordinary-player-before-campaigns.json",
+      "archive": "archives/evidence/outputs/ordinary-player-before-campaigns.json.gz",
+      "bytes": 17398025,
+      "sha256": "1f03fae98f6dd03ac5a475a91d48eaa8c5009914a7b7672e1296f7f64e87991e",
+      "archive_sha256": "9895202c55800f582223f8c6dd2d8a043f912c14994cb75a3440d0611d773f50"
+    },
+    {
+      "path": "outputs/ordinary-player-before-routes.json",
+      "archive": "archives/evidence/outputs/ordinary-player-before-routes.json.gz",
+      "bytes": 5944507,
+      "sha256": "aca6781f65f5a791f125759a432529fb8b4a4f0f697e86c13e7d9faebf19e895",
+      "archive_sha256": "3dfb8e52a7730787cc5d9d57eb09765b9180120b9f2c4619f58f98160aab92f4"
+    },
+    {
+      "path": "outputs/ordinary-player-growth.json",
+      "archive": "archives/evidence/outputs/ordinary-player-growth.json.gz",
+      "bytes": 4657796,
+      "sha256": "5c3d7a27d0b3cd9e9e76d16a8bcb60bf41b5fabe3b6c1140c2b220c91d9a71b8",
+      "archive_sha256": "dcbd7165ade4e0c72f7b2fd35c1bd3a85fe0f533ca5c63ad8f34189f7c895fa5"
+    },
+    {
+      "path": "outputs/player-choice-campaign-results.json",
+      "archive": "archives/evidence/outputs/player-choice-campaign-results.json.gz",
+      "bytes": 2556443,
+      "sha256": "6d25184cb90e6e53d1a962a9e2c9bc47739b49bc121d7641d78bbe34cb5d2b7f",
+      "archive_sha256": "c40d48eb86c7377b32eedcab82c710791c76275d0d4aa5df9ca996fc66fb62f4"
+    },
+    {
+      "path": "outputs/player-choice-matrix-results.json",
+      "archive": "archives/evidence/outputs/player-choice-matrix-results.json.gz",
+      "bytes": 17721149,
+      "sha256": "eddd5b49f4aaa8fb4b020999eafa16c24aca822d50e637c07d4780d136a48ad4",
+      "archive_sha256": "18da71412f34903440626b50cb000d06e4df5988a3f95460999afa316f4c5db0"
+    },
+    {
+      "path": "outputs/player-ready-campaigns.json",
+      "archive": "archives/evidence/outputs/player-ready-campaigns.json.gz",
+      "bytes": 1855014,
+      "sha256": "3b701485c257ddee3f136482bb5cd939b68b099442f81773bcb2ecbb9e7d5bca",
+      "archive_sha256": "8e4fc73a1fb9dc271930fcaefc5f06691addfe04356d89f20a7439a5d2fcdc5c"
+    },
+    {
+      "path": "outputs/player-ready-matrix.json",
+      "archive": "archives/evidence/outputs/player-ready-matrix.json.gz",
+      "bytes": 4142155,
+      "sha256": "29f4104fe0322bde9842db6cb2e1956fe009e8bd54f8d5147abe35c6ae23c54c",
+      "archive_sha256": "c2d3532b6c5bb0d667a991375c77a5d439fe8aea4fc888d82363eeb1f57afbb4"
+    },
+    {
+      "path": "outputs/predevelopment-campaigns.json",
+      "archive": "archives/evidence/outputs/predevelopment-campaigns.json.gz",
+      "bytes": 17689071,
+      "sha256": "3bb9f8c9619464974a602cd9e57148d202834f7e5a10e87da095679b3153affc",
+      "archive_sha256": "113cf0ada210b7ec9068e7e5cbfb7b5ab8993ed54d6c67808a74122c524052c3"
+    },
+    {
+      "path": "outputs/tactical-full-witnesses.json",
+      "archive": "archives/evidence/outputs/tactical-full-witnesses.json.gz",
+      "bytes": 1363279,
+      "sha256": "dce64e7da68c42f7bc76c473f6853ca438d28998ee51c1694139268fdc266fbf",
+      "archive_sha256": "b20c6102a109b61751c6215010ee37402e97de40cd491212569353c7c957829c"
+    },
+    {
+      "path": "outputs/tactical-matrix-results.json",
+      "archive": "archives/evidence/outputs/tactical-matrix-results.json.gz",
+      "bytes": 2743931,
+      "sha256": "0688f2a6f0f0c2dbe3b421452562a68ae3b8c81849f73f5aca891b63de9d8704",
+      "archive_sha256": "b74770377197f14675fa3bf366d88ac918d43387f24c4b4c4cecf019cb8f31a0"
+    },
+    {
+      "path": "outputs/training-campaigns.json",
+      "archive": "archives/evidence/outputs/training-campaigns.json.gz",
+      "bytes": 95267462,
+      "sha256": "db7f2b72c3cd70ae19c9f5c0c099818fff9484faa6de6023643e27ec7474468e",
+      "archive_sha256": "0acc59802bd323a2102f63d38c12f25a9b2e5266997e47fbc06ea48e326d22b6"
+    },
+    {
+      "path": "outputs/training-general-campaigns.json",
+      "archive": "archives/evidence/outputs/training-general-campaigns.json.gz",
+      "bytes": 17689056,
+      "sha256": "25e7e72b217154baa102395483383048c985936e51a1dc2f335bc11a66bc12cc",
+      "archive_sha256": "6749e41975010fb452927b58dadaeb1ea402d2231d4b9074ca0b77068e8eb033"
+    },
+    {
+      "path": "outputs/training-mentorship-18.json",
+      "archive": "archives/evidence/outputs/training-mentorship-18.json.gz",
+      "bytes": 4555748,
+      "sha256": "35cfdcfe384425dfe00f4bd88b49376751b85612f08902c6e78c5fe90fa8f27b",
+      "archive_sha256": "5b4a6df363f96f2809323e675ffbdc1eb86c26a2630d4fba2181e57da1686516"
+    },
+    {
+      "path": "outputs/training-mentorship.json",
+      "archive": "archives/evidence/outputs/training-mentorship.json.gz",
+      "bytes": 4555734,
+      "sha256": "7002217b87c4c1c73b0c951f8fc5ffa5be0f08aaba77277f54bd78bf3c86ff94",
+      "archive_sha256": "449fc281717a9f81d6523eca525bee9c4de7cdac72a473db9d8bb8bdc993bb5d"
+    },
+    {
+      "path": "outputs/training-planned.json",
+      "archive": "archives/evidence/outputs/training-planned.json.gz",
+      "bytes": 16108016,
+      "sha256": "e7b604f5470c4c951a12eb90c2fc6f4660c5a8ef48a26453c98dcf524d9b2429",
+      "archive_sha256": "eac9d1a3767d155355c2a3b31bfc7e3a746254c2a3b9bb57b822b64e5c33c2b8"
+    },
+    {
+      "path": "outputs/training-screen-initial.json",
+      "archive": "archives/evidence/outputs/training-screen-initial.json.gz",
+      "bytes": 13509763,
+      "sha256": "d0251dda28e7448185732032ed4b7af58fe369bb7226be9f48b2a6c409544ff4",
+      "archive_sha256": "09242f489d66eb490ec3d25b51def0e91780294ac1ce0970d1f9f61704a992f1"
+    },
+    {
+      "path": "outputs/training-screen.json",
+      "archive": "archives/evidence/outputs/training-screen.json.gz",
+      "bytes": 16871677,
+      "sha256": "97d1d704f839cc17d4e3b839ae06a0254c37b0903250a52b8e8082f5ca1b54cb",
+      "archive_sha256": "317e92e8e6c0d97fe14ccd84189f9372f8a7b8c5123cc1a87ec7e20a95404045"
+    },
+    {
+      "path": "outputs/training-specialty.json",
+      "archive": "archives/evidence/outputs/training-specialty.json.gz",
+      "bytes": 10726555,
+      "sha256": "0dc67f1f457ef95301b20384378b21f8b8837743efd64cff93b51747eb54c650",
+      "archive_sha256": "e8fe7ceee83f37c77617bc8eea985fb00f04a8e050c16ee1ef7dc897babdc9a7"
+    },
+    {
+      "path": "work/approach-review/v09-matrix.json",
+      "archive": "archives/evidence/work/approach-review/v09-matrix.json.gz",
+      "bytes": 2938479,
+      "sha256": "6a78d8a85c47beacf37413ad0508f4820666c951143816297404a3a72e1d62d9",
+      "archive_sha256": "7f2cf1f72fac6ae819db1485754b83843d4436df54be8413b85f944a34fb3b50"
+    }
+  ]
+}

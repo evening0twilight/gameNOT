@@ -1,0 +1,10 @@
+* text=auto eol=lf
+*.gd text
+*.tscn text
+*.tres text
+*.uid text
+*.png binary
+*.jpg binary
+*.ogg binary
+*.wav binary
+*.gz binary

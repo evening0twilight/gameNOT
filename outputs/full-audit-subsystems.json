@@ -1,0 +1,14 @@
+[
+  {
+    "script": "system-audit/verify.py",
+    "exit_code": 0
+  },
+  {
+    "script": "player-experience/verify.py",
+    "exit_code": 0
+  },
+  {
+    "script": "final-design/verify_contracts.py",
+    "exit_code": 0
+  }
+]

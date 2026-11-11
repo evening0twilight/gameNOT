@@ -1,0 +1,64 @@
+REPOSITORY_OK: 135 files; nesting, case, literal resources, renderer
+EVIDENCE_OK: 34 files
+DESIGN_VIEWS_OK: 33
+RULE CHECKS 1172
+HISTORICAL_GATES_EXCLUDED: 2 runtime byte-identity assertions; original hashes preserved
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+TEST_RESULTS: 33 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CONTENT_TEST_RESULTS: failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_TEST_RESULTS: 166 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_SYSTEMS_RESULTS: 179 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P2 chapter UI
+UI_LOCALIZATION_RESULTS: checks=319 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+VISUAL_P1_RESULTS: checks=544 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CHAPTER_ONE_RESULTS: checks=108 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CHAPTER_PATH: M01 success actions=47
+CHAPTER_PATH: M02 success actions=35
+CHAPTER_PATH: M03 success actions=39
+CHAPTER_PATH: M04 success actions=34
+CHAPTER_PATH: M05 success actions=30
+CHAPTER_PATH: M06 success actions=44
+CHAPTER_PATH: S01 success actions=25
+CHAPTER_PATH: S02 success actions=32
+CHAPTER_PATH: S03 success actions=40
+CHAPTER_CONTINUOUS_RESULTS: days=6 finished=true
+CHAPTER_PATH_RESULTS: missions=9 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P2 chapter UI
+P2_PRESENTATION_RESULTS: checks=92 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P2 chapter UI
+CHECK_OK: current development automated checks; P2 Windows native acceptance remains separate

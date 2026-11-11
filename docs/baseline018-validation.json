@@ -1,0 +1,902 @@
+{
+  "design": "0.18",
+  "runtime_revision": 7,
+  "known_implementation_findings_resolved": 31,
+  "implementation_aligned": false,
+  "release_ready": false,
+  "windows_native_tested": false,
+  "human_acceptance": false,
+  "automated_checks": "outputs/baseline018-checks.json",
+  "mission_matrix": {
+    "relaxed": {
+      "paths": 72,
+      "success": 72,
+      "report": "outputs/baseline018-matrix-relaxed.json"
+    },
+    "standard": {
+      "paths": 72,
+      "success": 72,
+      "report": "outputs/baseline018-matrix-standard.json"
+    },
+    "hard": {
+      "paths": 72,
+      "success": 72,
+      "report": "outputs/baseline018-matrix-hard.json"
+    }
+  },
+  "full_routes": [
+    "shared_control",
+    "distributed_rebuild",
+    "evacuation",
+    "failure"
+  ],
+  "continuous_profiles": [
+    "no_training",
+    "few_sides",
+    "fixed_favorites",
+    "injury_rotation"
+  ],
+  "linked_campaign": "outputs/baseline018-linked-campaign.json",
+  "field_action_paths": "outputs/baseline018-field-paths.json",
+  "native_host_final": {
+    "checks": [
+      {
+        "description": "isolated campaign path",
+        "ok": true
+      },
+      {
+        "description": "production new-game preparation",
+        "ok": true
+      },
+      {
+        "description": "preparation deploys and charges fatigue once",
+        "ok": true
+      },
+      {
+        "description": "UI minimum fits (1280, 720) font 16",
+        "ok": true
+      },
+      {
+        "description": "UI minimum fits (1280, 720) font 20",
+        "ok": true
+      },
+      {
+        "description": "UI minimum fits (1280, 720) font 24",
+        "ok": true
+      },
+      {
+        "description": "UI minimum fits (1920, 1080) font 16",
+        "ok": true
+      },
+      {
+        "description": "UI minimum fits (1920, 1080) font 20",
+        "ok": true
+      },
+      {
+        "description": "UI minimum fits (1920, 1080) font 24",
+        "ok": true
+      },
+      {
+        "description": "UI minimum fits (2560, 1440) font 16",
+        "ok": true
+      },
+      {
+        "description": "UI minimum fits (2560, 1440) font 20",
+        "ok": true
+      },
+      {
+        "description": "UI minimum fits (2560, 1440) font 24",
+        "ok": true
+      },
+      {
+        "description": "initial save M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M01",
+        "ok": true
+      },
+      {
+        "description": "commit once M01",
+        "ok": true
+      },
+      {
+        "description": "guided completion M01",
+        "ok": true
+      },
+      {
+        "description": "save/load exact roundtrip M01",
+        "ok": true
+      },
+      {
+        "description": "initial save M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M02",
+        "ok": true
+      },
+      {
+        "description": "commit once M02",
+        "ok": true
+      },
+      {
+        "description": "guided completion M02",
+        "ok": true
+      },
+      {
+        "description": "save/load exact roundtrip M02",
+        "ok": true
+      },
+      {
+        "description": "initial save M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "preview unchanged M03",
+        "ok": true
+      },
+      {
+        "description": "commit once M03",
+        "ok": true
+      },
+      {
+        "description": "guided completion M03",
+        "ok": true
+      },
+      {
+        "description": "save/load exact roundtrip M03",
+        "ok": true
+      }
+    ],
+    "human_audio_motion_review": false,
+    "human_difficulty_review": false,
+    "kind": "packaged local automated acceptance; not human usability evidence",
+    "native_windows": false,
+    "passed": true,
+    "platform": "macOS",
+    "primary": 0,
+    "rendered": true,
+    "runtime": {
+      "cold_launch_stopwatch": "not_measured",
+      "cpu": "Apple M3",
+      "display_backend": "macOS",
+      "elapsed_seconds": 51.679,
+      "engine_to_first_frame_ms": 1050,
+      "fraction_frames_le_16_7ms": 0.972921795114562,
+      "frames": 5281,
+      "gpu": "Apple M3",
+      "input_samples": 112,
+      "input_submit_to_next_frame_p95_ms": 61.146,
+      "max_frame_ms": 142.756,
+      "mean_frame_ms": 9.73766193271503,
+      "memory_info": {
+        "available": 5191221248,
+        "free": 4249206784,
+        "physical": 17179869184,
+        "stack": 8372224
+      },
+      "memory_samples": [],
+      "platform": "macOS",
+      "renderer": "gl_compatibility",
+      "scope": "This session includes menus and user interactions. Not automatically a stable-board benchmark, cold launch, 2-hour memory test, 8GB reference-machine acceptance or human-playtest result.",
+      "window_size": "(1280, 720)"
+    },
+    "screen": 1,
+    "seconds": 51.463
+  },
+  "visual_review": "outputs/baseline018-journey-review.json",
+  "limitations": [
+    "No Windows reference-machine runtime, cold-start or two-hour memory evidence",
+    "No five-player onboarding or complete-campaign human experience evidence",
+    "No user art/music acceptance; generated identities and source manifests preserved",
+    "Finite routes and boundary fixtures do not exhaust all action combinations"
+  ],
+  "preserved_files_verified": 287,
+  "product_alignment_status": "reopened_confirmed_implementation_gaps",
+  "reassessment": "docs/baseline018-product-reassessment.txt"
+}

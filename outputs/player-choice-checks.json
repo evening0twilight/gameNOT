@@ -1,0 +1,3331 @@
+{
+  "version": "0.11",
+  "passed_count": 135,
+  "checks": [
+    "four operations replace twelve, eight retired",
+    "four cadence types, only one continuous dual hold",
+    "basic cover does not require buying training or trust60",
+    "advanced handoff still requires real learning and trust",
+    "free cover still respects concrete fall-safety restriction",
+    "actual third-person safeguard restores basic cooperation",
+    "protecting partner does not falsely satisfy Lin own safety condition",
+    "community reserve can perform basic cover, not advanced skills",
+    "M08 no retired objective or service-control warning",
+    "M11 no retired objective or service-control warning",
+    "M13 no retired objective or service-control warning",
+    "M17 no retired objective or service-control warning",
+    "M22 no retired objective or service-control warning",
+    "S01 no retired objective or service-control warning",
+    "S04 no retired objective or service-control warning",
+    "S10 no retired objective or service-control warning",
+    "unrepaired pump cannot drain water",
+    "first drainage stage changes actual shallow cells",
+    "interrupted drainage retains completed stage",
+    "resumed drainage completes without erasing earlier work",
+    "one operator cannot complete two-terminal confirmation",
+    "one synchronous round completes M10",
+    "new exit requires both existing tests as well as confirmation",
+    "first bridge round is not enough",
+    "interrupted continuous escort resets progress",
+    "clinic shifts real operating position after first stage",
+    "clinic movement gap does not erase first connection",
+    "clinic second position completes handover",
+    "planner does not spend wet-ground mat on dry first stage",
+    "failed accumulated stage cannot award stale helper credit",
+    "later shutdown does not erase bridge passage already earned",
+    "late operation cannot recreate past window",
+    "westward basic push would require an out-of-map standing cell",
+    "two legal side positions can pull the machine off rail intact",
+    "off-rail movement still cannot teleport",
+    "repair pays one real project and two supplies",
+    "repair cannot be repeated for new visits",
+    "no same-evening payoff after repair",
+    "volunteer logistics uses neither character assignment nor third camp project",
+    "external care neither creates trust nor deletes resentment",
+    "same evening cannot double spend support",
+    "volunteer logistics does not permit a third regular project",
+    "assisted character can still use a legal training project",
+    "two visits are finite",
+    "preservation has exactly the same two visits without repair cost",
+    "intact equipment cannot be demolished through the repair menu",
+    "late but timely repair has only one remaining usable evening",
+    "unused visits expire at original calendar end",
+    "post-expiry philanthropy cannot renew campaign assistance",
+    "external recovery is not treatment for severe injury",
+    "rested characters do not generate imaginary recovery value",
+    "high-fatigue return can genuinely prevent training",
+    "finite volunteer support can make that training legal",
+    "ordinary pair training learns two advanced actions without extra cost",
+    "second protocol cannot be repurchased for duplicate XP",
+    "learning bundle does not bypass later trust restrictions",
+    "camp preflight agrees that basic cover has no trust60 gate",
+    "276 baseline goal/difficulty/weather contexts retain a solution",
+    "all1432 named baseline configurations remain solvable in sampled policies",
+    "twelve campaigns include learned cooperation and high-tempo comparisons",
+    "actual earlier training feeds an archive-preserving M06 relay",
+    "普通轮换，不使用外部休整 reaches ending with nonnegative resources",
+    "普通轮换，不使用外部休整 regular camp projects stay capped",
+    "普通轮换，不使用外部休整 finite dated assistance only",
+    "普通轮换，不使用外部休整 only the two authored facilities can charge repair",
+    "普通轮换，不使用外部休整 acquired advanced-action bundles match real training receipts",
+    "普通轮换，按需使用保全设施 reaches ending with nonnegative resources",
+    "普通轮换，按需使用保全设施 regular camp projects stay capped",
+    "普通轮换，按需使用保全设施 finite dated assistance only",
+    "普通轮换，按需使用保全设施 only the two authored facilities can charge repair",
+    "普通轮换，按需使用保全设施 acquired advanced-action bundles match real training receipts",
+    "偏好阵容，一次搭档训练 reaches ending with nonnegative resources",
+    "偏好阵容，一次搭档训练 regular camp projects stay capped",
+    "偏好阵容，一次搭档训练 finite dated assistance only",
+    "偏好阵容，一次搭档训练 only the two authored facilities can charge repair",
+    "偏好阵容，一次搭档训练 acquired advanced-action bundles match real training receipts",
+    "专业人员轮换，按需使用后勤 reaches ending with nonnegative resources",
+    "专业人员轮换，按需使用后勤 regular camp projects stay capped",
+    "专业人员轮换，按需使用后勤 finite dated assistance only",
+    "专业人员轮换，按需使用后勤 only the two authored facilities can charge repair",
+    "专业人员轮换，按需使用后勤 acquired advanced-action bundles match real training receipts",
+    "固定阵容拆除，不维修 reaches ending with nonnegative resources",
+    "固定阵容拆除，不维修 regular camp projects stay capped",
+    "固定阵容拆除，不维修 finite dated assistance only",
+    "固定阵容拆除，不维修 only the two authored facilities can charge repair",
+    "固定阵容拆除，不维修 acquired advanced-action bundles match real training receipts",
+    "固定阵容拆除，及时维修并使用 reaches ending with nonnegative resources",
+    "固定阵容拆除，及时维修并使用 regular camp projects stay capped",
+    "固定阵容拆除，及时维修并使用 finite dated assistance only",
+    "固定阵容拆除，及时维修并使用 only the two authored facilities can charge repair",
+    "固定阵容拆除，及时维修并使用 acquired advanced-action bundles match real training receipts",
+    "固定阵容拆除，过期后才公益修复 reaches ending with nonnegative resources",
+    "固定阵容拆除，过期后才公益修复 regular camp projects stay capped",
+    "固定阵容拆除，过期后才公益修复 finite dated assistance only",
+    "固定阵容拆除，过期后才公益修复 only the two authored facilities can charge repair",
+    "固定阵容拆除，过期后才公益修复 acquired advanced-action bundles match real training receipts",
+    "完整36关，按需合作和后勤 reaches ending with nonnegative resources",
+    "完整36关，按需合作和后勤 regular camp projects stay capped",
+    "完整36关，按需合作和后勤 finite dated assistance only",
+    "完整36关，按需合作和后勤 only the two authored facilities can charge repair",
+    "完整36关，按需合作和后勤 acquired advanced-action bundles match real training receipts",
+    "最高难度连续失误后继续 reaches ending with nonnegative resources",
+    "最高难度连续失误后继续 regular camp projects stay capped",
+    "最高难度连续失误后继续 finite dated assistance only",
+    "最高难度连续失误后继续 only the two authored facilities can charge repair",
+    "最高难度连续失误后继续 acquired advanced-action bundles match real training receipts",
+    "真实养成后，在M06使用接力争取档案 reaches ending with nonnegative resources",
+    "真实养成后，在M06使用接力争取档案 regular camp projects stay capped",
+    "真实养成后，在M06使用接力争取档案 finite dated assistance only",
+    "真实养成后，在M06使用接力争取档案 only the two authored facilities can charge repair",
+    "真实养成后，在M06使用接力争取档案 acquired advanced-action bundles match real training receipts",
+    "高出勤且偏好固定阵容，不维修 reaches ending with nonnegative resources",
+    "高出勤且偏好固定阵容，不维修 regular camp projects stay capped",
+    "高出勤且偏好固定阵容，不维修 finite dated assistance only",
+    "高出勤且偏好固定阵容，不维修 only the two authored facilities can charge repair",
+    "高出勤且偏好固定阵容，不维修 acquired advanced-action bundles match real training receipts",
+    "高出勤且偏好固定阵容，及时维修 reaches ending with nonnegative resources",
+    "高出勤且偏好固定阵容，及时维修 regular camp projects stay capped",
+    "高出勤且偏好固定阵容，及时维修 finite dated assistance only",
+    "高出勤且偏好固定阵容，及时维修 only the two authored facilities can charge repair",
+    "高出勤且偏好固定阵容，及时维修 acquired advanced-action bundles match real training receipts",
+    "relay still retains an additional archive in full-map comparison",
+    "pull full map survives retirement of artificial holding task",
+    "M22 ordinary full objective route is retained",
+    "relay hint budget remains one",
+    "ordinary_handoff hint budget remains one",
+    "pull_without_added_wait hint budget remains one",
+    "M10_independent hint budget remains one",
+    "M10_protected hint budget remains one",
+    "M21_independent hint budget remains one",
+    "M21_protected hint budget remains one",
+    "S11_independent hint budget remains one",
+    "S11_protected hint budget remains one",
+    "M22_ordinary_no_added_wait hint budget remains one",
+    "production runtime unchanged"
+  ],
+  "baseline_contexts": [
+    {
+      "mission": "M01",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M01",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M01",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M01",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M01",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M01",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M02",
+      "goals": [
+        "cut",
+        "power"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M02",
+      "goals": [
+        "cut",
+        "power"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M02",
+      "goals": [
+        "cut",
+        "power"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M02",
+      "goals": [
+        "cut",
+        "power"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M02",
+      "goals": [
+        "cut",
+        "power"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M02",
+      "goals": [
+        "cut",
+        "power"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M03",
+      "goals": [
+        "crate",
+        "door"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M03",
+      "goals": [
+        "crate",
+        "door"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M03",
+      "goals": [
+        "crate",
+        "door"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M03",
+      "goals": [
+        "crate",
+        "door"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M03",
+      "goals": [
+        "crate",
+        "door"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M03",
+      "goals": [
+        "crate",
+        "door"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M04",
+      "goals": [
+        "brace1",
+        "brace2",
+        "worker"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M04",
+      "goals": [
+        "brace1",
+        "brace2",
+        "worker"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M04",
+      "goals": [
+        "brace1",
+        "brace2",
+        "worker"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M04",
+      "goals": [
+        "brace1",
+        "brace2",
+        "worker"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M04",
+      "goals": [
+        "brace1",
+        "brace2",
+        "worker"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M04",
+      "goals": [
+        "brace1",
+        "brace2",
+        "worker"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M05",
+      "goals": [
+        "isolate",
+        "pump"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 1
+    },
+    {
+      "mission": "M05",
+      "goals": [
+        "isolate",
+        "pump"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 1
+    },
+    {
+      "mission": "M05",
+      "goals": [
+        "isolate",
+        "pump"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 2
+    },
+    {
+      "mission": "M05",
+      "goals": [
+        "isolate",
+        "pump"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 2
+    },
+    {
+      "mission": "M05",
+      "goals": [
+        "isolate",
+        "pump"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 2
+    },
+    {
+      "mission": "M05",
+      "goals": [
+        "isolate",
+        "pump"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 2
+    },
+    {
+      "mission": "M06",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M06",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M06",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M06",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M06",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M06",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M07",
+      "goals": [
+        "cut",
+        "worker"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 1
+    },
+    {
+      "mission": "M07",
+      "goals": [
+        "cut",
+        "worker"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 1
+    },
+    {
+      "mission": "M07",
+      "goals": [
+        "cut",
+        "worker"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 2
+    },
+    {
+      "mission": "M07",
+      "goals": [
+        "cut",
+        "worker"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 2
+    },
+    {
+      "mission": "M07",
+      "goals": [
+        "cut",
+        "worker"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 2
+    },
+    {
+      "mission": "M07",
+      "goals": [
+        "cut",
+        "worker"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 2
+    },
+    {
+      "mission": "M08",
+      "goals": [
+        "block1",
+        "block2",
+        "truck"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 11,
+      "damage": 0
+    },
+    {
+      "mission": "M08",
+      "goals": [
+        "block1",
+        "block2",
+        "truck"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 11,
+      "damage": 0
+    },
+    {
+      "mission": "M08",
+      "goals": [
+        "block1",
+        "block2",
+        "truck"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 11,
+      "damage": 0
+    },
+    {
+      "mission": "M08",
+      "goals": [
+        "block1",
+        "block2",
+        "truck"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 11,
+      "damage": 0
+    },
+    {
+      "mission": "M08",
+      "goals": [
+        "block1",
+        "block2",
+        "truck"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 11,
+      "damage": 0
+    },
+    {
+      "mission": "M08",
+      "goals": [
+        "block1",
+        "block2",
+        "truck"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 11,
+      "damage": 0
+    },
+    {
+      "mission": "M09",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M09",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M09",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M09",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M09",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M09",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M10",
+      "goals": [
+        "test1",
+        "test2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M10",
+      "goals": [
+        "test1",
+        "test2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M10",
+      "goals": [
+        "test1",
+        "test2"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M10",
+      "goals": [
+        "test1",
+        "test2"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M10",
+      "goals": [
+        "test1",
+        "test2"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M10",
+      "goals": [
+        "test1",
+        "test2"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M11",
+      "goals": [
+        "cut",
+        "lock"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M11",
+      "goals": [
+        "cut",
+        "lock"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M11",
+      "goals": [
+        "cut",
+        "lock"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M11",
+      "goals": [
+        "cut",
+        "lock"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M11",
+      "goals": [
+        "cut",
+        "lock"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M11",
+      "goals": [
+        "cut",
+        "lock"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M12",
+      "goals": [
+        "backup",
+        "drive"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M12",
+      "goals": [
+        "backup",
+        "drive"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M12",
+      "goals": [
+        "backup",
+        "drive"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M12",
+      "goals": [
+        "backup",
+        "drive"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M12",
+      "goals": [
+        "backup",
+        "drive"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M12",
+      "goals": [
+        "backup",
+        "drive"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M13",
+      "goals": [
+        "cut",
+        "log"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M13",
+      "goals": [
+        "cut",
+        "log"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M13",
+      "goals": [
+        "cut",
+        "log"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M13",
+      "goals": [
+        "cut",
+        "log"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M13",
+      "goals": [
+        "cut",
+        "log"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M13",
+      "goals": [
+        "cut",
+        "log"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "meds"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "meds"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "meds"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "meds"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "meds"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "meds"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "cold"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "cold"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "cold"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "cold"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "cold"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M14",
+      "goals": [
+        "cold"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "north"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "north"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "north"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "north"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "north"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "north"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M15",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M16",
+      "goals": [
+        "lane",
+        "people"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M16",
+      "goals": [
+        "lane",
+        "people"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M16",
+      "goals": [
+        "lane",
+        "people"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M16",
+      "goals": [
+        "lane",
+        "people"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M16",
+      "goals": [
+        "lane",
+        "people"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M16",
+      "goals": [
+        "lane",
+        "people"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "repair2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "repair2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "repair2"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "repair2"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "repair2"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "repair2"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "isolate"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "isolate"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "isolate"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "isolate"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "isolate"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M17",
+      "goals": [
+        "isolate"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 3,
+      "damage": 0
+    },
+    {
+      "mission": "M18",
+      "goals": [
+        "broadcast",
+        "relay"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M18",
+      "goals": [
+        "broadcast",
+        "relay"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M18",
+      "goals": [
+        "broadcast",
+        "relay"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M18",
+      "goals": [
+        "broadcast",
+        "relay"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M18",
+      "goals": [
+        "broadcast",
+        "relay"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M18",
+      "goals": [
+        "broadcast",
+        "relay"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M19",
+      "goals": [
+        "patient",
+        "shelter"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 1
+    },
+    {
+      "mission": "M19",
+      "goals": [
+        "patient",
+        "shelter"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 1
+    },
+    {
+      "mission": "M19",
+      "goals": [
+        "patient",
+        "shelter"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 2
+    },
+    {
+      "mission": "M19",
+      "goals": [
+        "patient",
+        "shelter"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 2
+    },
+    {
+      "mission": "M19",
+      "goals": [
+        "patient",
+        "shelter"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 2
+    },
+    {
+      "mission": "M19",
+      "goals": [
+        "patient",
+        "shelter"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 2
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "west"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M20",
+      "goals": [
+        "east"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M21",
+      "goals": [
+        "route"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M21",
+      "goals": [
+        "route"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M21",
+      "goals": [
+        "route"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M21",
+      "goals": [
+        "route"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M21",
+      "goals": [
+        "route"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M21",
+      "goals": [
+        "route"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M22",
+      "goals": [
+        "handover"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M22",
+      "goals": [
+        "handover"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M22",
+      "goals": [
+        "handover"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M22",
+      "goals": [
+        "handover"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M22",
+      "goals": [
+        "handover"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M22",
+      "goals": [
+        "handover"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "M23",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M23",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M23",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M23",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M23",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M23",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "auth",
+        "bus"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "auth",
+        "bus"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "auth",
+        "bus"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "auth",
+        "bus"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "auth",
+        "bus"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "auth",
+        "bus"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "east",
+        "west"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "east",
+        "west"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "east",
+        "west"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "east",
+        "west"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "east",
+        "west"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "east",
+        "west"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "M24",
+      "goals": [
+        "r1",
+        "r2"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "S01",
+      "goals": [
+        "engine"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S01",
+      "goals": [
+        "engine"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S01",
+      "goals": [
+        "engine"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S01",
+      "goals": [
+        "engine"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S01",
+      "goals": [
+        "engine"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S01",
+      "goals": [
+        "engine"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "med"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "med"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "med"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "med"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "med"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "med"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "books"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "books"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "books"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "books"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "books"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S02",
+      "goals": [
+        "books"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S03",
+      "goals": [
+        "cut",
+        "passenger"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "S03",
+      "goals": [
+        "cut",
+        "passenger"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "S03",
+      "goals": [
+        "cut",
+        "passenger"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "S03",
+      "goals": [
+        "cut",
+        "passenger"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "S03",
+      "goals": [
+        "cut",
+        "passenger"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "S03",
+      "goals": [
+        "cut",
+        "passenger"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 7,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "seed"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "seed"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "seed"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "seed"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "seed"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "seed"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "rack"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "rack"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "rack"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "rack"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "rack"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S04",
+      "goals": [
+        "rack"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S05",
+      "goals": [
+        "cloth",
+        "isolate"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S05",
+      "goals": [
+        "cloth",
+        "isolate"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S05",
+      "goals": [
+        "cloth",
+        "isolate"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S05",
+      "goals": [
+        "cloth",
+        "isolate"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S05",
+      "goals": [
+        "cloth",
+        "isolate"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S05",
+      "goals": [
+        "cloth",
+        "isolate"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S06",
+      "goals": [
+        "locate",
+        "resident"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S06",
+      "goals": [
+        "locate",
+        "resident"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S06",
+      "goals": [
+        "locate",
+        "resident"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S06",
+      "goals": [
+        "locate",
+        "resident"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S06",
+      "goals": [
+        "locate",
+        "resident"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S06",
+      "goals": [
+        "locate",
+        "resident"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 8,
+      "damage": 0
+    },
+    {
+      "mission": "S07",
+      "goals": [
+        "clerk"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S07",
+      "goals": [
+        "clerk"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S07",
+      "goals": [
+        "clerk"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S07",
+      "goals": [
+        "clerk"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S07",
+      "goals": [
+        "clerk"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S07",
+      "goals": [
+        "clerk"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "luggage"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "luggage"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "luggage"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "luggage"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "luggage"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "luggage"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "tools"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "tools"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "tools"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "tools"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "tools"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S08",
+      "goals": [
+        "tools"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 6,
+      "damage": 0
+    },
+    {
+      "mission": "S09",
+      "goals": [
+        "class"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S09",
+      "goals": [
+        "class"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S09",
+      "goals": [
+        "class"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S09",
+      "goals": [
+        "class"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S09",
+      "goals": [
+        "class"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S09",
+      "goals": [
+        "class"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S10",
+      "goals": [
+        "light"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S10",
+      "goals": [
+        "light"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S10",
+      "goals": [
+        "light"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S10",
+      "goals": [
+        "light"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S10",
+      "goals": [
+        "light"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S10",
+      "goals": [
+        "light"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S11",
+      "goals": [
+        "wire"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S11",
+      "goals": [
+        "wire"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S11",
+      "goals": [
+        "wire"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S11",
+      "goals": [
+        "wire"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S11",
+      "goals": [
+        "wire"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S11",
+      "goals": [
+        "wire"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 4,
+      "damage": 0
+    },
+    {
+      "mission": "S12",
+      "goals": [
+        "box"
+      ],
+      "difficulty": "relaxed",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S12",
+      "goals": [
+        "box"
+      ],
+      "difficulty": "relaxed",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S12",
+      "goals": [
+        "box"
+      ],
+      "difficulty": "standard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S12",
+      "goals": [
+        "box"
+      ],
+      "difficulty": "standard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S12",
+      "goals": [
+        "box"
+      ],
+      "difficulty": "hard",
+      "variant": "A",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    },
+    {
+      "mission": "S12",
+      "goals": [
+        "box"
+      ],
+      "difficulty": "hard",
+      "variant": "B",
+      "success": true,
+      "rounds": 5,
+      "damage": 0
+    }
+  ],
+  "runtime_unchanged": true,
+  "scope": "Boundary fixtures and full reference replays. No human fun, readability or preference claim."
+}

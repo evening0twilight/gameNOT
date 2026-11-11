@@ -1,0 +1,48 @@
+{
+  "captures": [
+    {
+      "name": "m01-guidance-large-font",
+      "primary": 0,
+      "screen": 1,
+      "size": "(1280, 720)"
+    },
+    {
+      "name": "inline-action-preview",
+      "primary": 0,
+      "screen": 1,
+      "size": "(1280, 720)"
+    },
+    {
+      "name": "help",
+      "primary": 0,
+      "screen": 1,
+      "size": "(1280, 720)"
+    },
+    {
+      "name": "difficulty-and-weather",
+      "primary": 0,
+      "screen": 1,
+      "size": "(1280, 720)"
+    },
+    {
+      "name": "equipment-and-facilities",
+      "primary": 0,
+      "screen": 1,
+      "size": "(1280, 720)"
+    },
+    {
+      "name": "historical-repair",
+      "primary": 0,
+      "screen": 1,
+      "size": "(1280, 720)"
+    },
+    {
+      "name": "audio-controls",
+      "primary": 0,
+      "screen": 1,
+      "size": "(1280, 720)"
+    }
+  ],
+  "human_acceptance": false,
+  "kind": "isolated visual fixtures"
+}

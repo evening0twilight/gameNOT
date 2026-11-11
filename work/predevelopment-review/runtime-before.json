@@ -1,0 +1,8 @@
+{
+  "game/project.godot": "ef951f3dcf4e5005bbb015c4a9efc4a60e77b0f945898e614a35b402346919d7",
+  "game/scenes/main.tscn": "a7ff59318635c8c9578f59b7773597fae1147729221166a56fa37ea77032bb98",
+  "game/tests/run_tests.gd": "9cd7669c5b4b5c2901ed9c92a97ca18e1665f6ce81f99835d6235f47d15e2dfe",
+  "game/scripts/app/main.gd": "52c642ce3f39c38a08ce8c3ac9cb516e53a04685b4d98e49b8dc4cccce017f10",
+  "game/scripts/domain/relationship_rules.gd": "975e122b08f1f172dfea8b96fe07657978dbd2833e29a12df1839a5d1244160e",
+  "game/scripts/domain/save_store.gd": "547a7699d55e48c066106e2b0bd0039144b21138b85bf911dec2bf21e53faf14"
+}

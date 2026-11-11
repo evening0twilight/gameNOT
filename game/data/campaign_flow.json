@@ -1,0 +1,380 @@
+{
+  "version": "0.18-predevelopment",
+  "schema_version": 1,
+  "status": "authoritative_design_state_graph_not_runtime",
+  "start": "title",
+  "terminal": "ending",
+  "max_main_days": 24,
+  "transitions": [
+    {
+      "from": "title",
+      "to": "new_game",
+      "on": "new"
+    },
+    {
+      "from": "new_game",
+      "to": "briefing",
+      "on": "confirm_empty_slot_difficulty_variant"
+    },
+    {
+      "from": "new_game",
+      "to": "title",
+      "on": "cancel"
+    },
+    {
+      "from": "title",
+      "to": "load",
+      "on": "choose_saved_slot"
+    },
+    {
+      "from": "load",
+      "to": "restore_checkpoint",
+      "on": "valid_schema_hash_and_receipts"
+    },
+    {
+      "from": "load",
+      "to": "load_error",
+      "on": "invalid_or_incompatible"
+    },
+    {
+      "from": "load_error",
+      "to": "load",
+      "on": "select_backup_or_other_slot"
+    },
+    {
+      "from": "load_error",
+      "to": "title",
+      "on": "cancel_preserve_all_files"
+    },
+    {
+      "from": "title",
+      "to": "new_game",
+      "on": "new"
+    },
+    {
+      "from": "new_game",
+      "to": "briefing",
+      "on": "confirm_empty_slot_difficulty_variant"
+    },
+    {
+      "from": "new_game",
+      "to": "title",
+      "on": "cancel"
+    },
+    {
+      "from": "title",
+      "to": "load",
+      "on": "choose_saved_slot"
+    },
+    {
+      "from": "load",
+      "to": "restore_checkpoint",
+      "on": "valid_schema_hash_and_receipts"
+    },
+    {
+      "from": "load",
+      "to": "load_error",
+      "on": "invalid_or_incompatible"
+    },
+    {
+      "from": "load_error",
+      "to": "load",
+      "on": "select_backup_or_other_slot"
+    },
+    {
+      "from": "load_error",
+      "to": "title",
+      "on": "cancel_preserve_all_files"
+    },
+    {
+      "from": "title",
+      "to": "new_game",
+      "on": "new"
+    },
+    {
+      "from": "new_game",
+      "to": "briefing",
+      "on": "confirm_empty_slot_difficulty_variant"
+    },
+    {
+      "from": "new_game",
+      "to": "title",
+      "on": "cancel"
+    },
+    {
+      "from": "title",
+      "to": "load",
+      "on": "choose_saved_slot"
+    },
+    {
+      "from": "load",
+      "to": "restore_checkpoint",
+      "on": "valid_schema_hash_and_receipts"
+    },
+    {
+      "from": "load",
+      "to": "load_error",
+      "on": "invalid_or_incompatible"
+    },
+    {
+      "from": "load_error",
+      "to": "load",
+      "on": "select_backup_or_other_slot"
+    },
+    {
+      "from": "load_error",
+      "to": "title",
+      "on": "cancel_preserve_all_files"
+    },
+    {
+      "from": "title",
+      "to": "new_game",
+      "on": "new"
+    },
+    {
+      "from": "new_game",
+      "to": "briefing",
+      "on": "confirm_empty_slot_difficulty_variant"
+    },
+    {
+      "from": "new_game",
+      "to": "title",
+      "on": "cancel"
+    },
+    {
+      "from": "title",
+      "to": "load",
+      "on": "choose_saved_slot"
+    },
+    {
+      "from": "load",
+      "to": "restore_checkpoint",
+      "on": "valid_schema_hash_and_receipts"
+    },
+    {
+      "from": "load",
+      "to": "load_error",
+      "on": "invalid_or_incompatible"
+    },
+    {
+      "from": "load_error",
+      "to": "load",
+      "on": "select_backup_or_other_slot"
+    },
+    {
+      "from": "load_error",
+      "to": "title",
+      "on": "cancel_preserve_all_files"
+    },
+    {
+      "from": "briefing",
+      "to": "assignment",
+      "on": "acknowledge_briefing"
+    },
+    {
+      "from": "assignment",
+      "to": "main_mission",
+      "on": "valid_deployment"
+    },
+    {
+      "from": "main_mission",
+      "to": "main_settlement",
+      "on": "success_or_partial_or_failure_or_retreat"
+    },
+    {
+      "from": "main_settlement",
+      "to": "side_offer",
+      "on": "commit_unique_main_result_when_current_day_less_than_24"
+    },
+    {
+      "from": "main_settlement",
+      "to": "ending",
+      "on": "commit_unique_main_result_when_current_day_equals_24"
+    },
+    {
+      "from": "side_offer",
+      "to": "side_mission",
+      "on": "accept_available_side_and_valid_deployment"
+    },
+    {
+      "from": "side_offer",
+      "to": "camp",
+      "on": "decline_or_no_offer"
+    },
+    {
+      "from": "side_mission",
+      "to": "side_settlement",
+      "on": "success_or_partial_or_failure_or_retreat"
+    },
+    {
+      "from": "side_settlement",
+      "to": "camp",
+      "on": "commit_unique_side_result"
+    },
+    {
+      "from": "camp",
+      "to": "night",
+      "on": "confirm_valid_evening_assignments"
+    },
+    {
+      "from": "night",
+      "to": "briefing",
+      "on": "next_day_when_current_day_less_than_24"
+    },
+    {
+      "from": "ending",
+      "to": "postgame",
+      "on": "finish_or_skip_epilogue"
+    },
+    {
+      "from": "postgame",
+      "to": "title",
+      "on": "return"
+    },
+    {
+      "from": "title",
+      "to": "settings",
+      "on": "open_settings"
+    },
+    {
+      "from": "settings",
+      "to": "title",
+      "on": "close"
+    },
+    {
+      "from": "ending",
+      "to": "postgame",
+      "on": "finish_or_skip_epilogue"
+    },
+    {
+      "from": "postgame",
+      "to": "title",
+      "on": "return"
+    },
+    {
+      "from": "title",
+      "to": "settings",
+      "on": "open_settings"
+    },
+    {
+      "from": "settings",
+      "to": "title",
+      "on": "close"
+    },
+    {
+      "from": "ending",
+      "to": "postgame",
+      "on": "finish_or_skip_epilogue"
+    },
+    {
+      "from": "postgame",
+      "to": "title",
+      "on": "return"
+    },
+    {
+      "from": "title",
+      "to": "settings",
+      "on": "open_settings"
+    },
+    {
+      "from": "settings",
+      "to": "title",
+      "on": "close"
+    },
+    {
+      "from": "ending",
+      "to": "postgame",
+      "on": "finish_or_skip_epilogue"
+    },
+    {
+      "from": "postgame",
+      "to": "title",
+      "on": "return"
+    },
+    {
+      "from": "title",
+      "to": "settings",
+      "on": "open_settings"
+    },
+    {
+      "from": "settings",
+      "to": "title",
+      "on": "close"
+    }
+  ],
+  "required_recovery_paths": {
+    "insufficient_crew": "temporary_responders",
+    "insufficient_supplies": "community_basic_care_free_actions_and_automatic_recovery",
+    "unavailable_personal_arc_actor": "absent_role_fallback",
+    "failed_final_objective": "evacuation_ending",
+    "unresolved_grievance": "alternative_actions_or_formal_protocol"
+  },
+  "terminals": [
+    "ending",
+    "title"
+  ],
+  "side_decisions": {
+    "prepare": "点击支线先打开准备页；出发前允许取消，退出准备不消耗该支线。",
+    "defer": "不接受不等于解决；开放日及下一日内仍在待办，截止最多D23。一天最多一场支线。",
+    "decline": "本日跳过返回营地，仍可在截止前再选；只有明确放弃整项或过期才关闭。",
+    "active": "出发后成功/部分/失败/撤退均算已尝试，不反复刷同一任务。",
+    "no_crew": "主线允许免费借调补足真实空位；支线没有借调，不够三人就延期或跳过。"
+  },
+  "pause": {
+    "entry": "任何玩家控制稳定点可暂停；动画期间先完成原子动作再暂停。",
+    "actions": [
+      "继续",
+      "设置",
+      "帮助/日志",
+      "保存",
+      "读取",
+      "回主菜单",
+      "退出桌面"
+    ],
+    "return": "暂停/帮助/设置关闭回原阶段与原选中对象，不自动结束回合。",
+    "save_failure": "写入失败显示可重试/改槽/取消，旧有效档保留；回主菜单提示最后有效保存时间。"
+  },
+  "difficulty": {
+    "initial": "默认标准，开局并列展示三个难度和严峻的永久医疗离队边界；选择严峻须勾选理解。",
+    "change": "只在主线/支线出发前准备页可改，下一次deploy生效；任务中锁定，恢复已存难度。",
+    "history": "改变难度不复活或退还过去损失；结局日志记录用过的难度，不设计纯难度限定奖励或成就。",
+    "variant": "首次周目A；通关记录只解锁新存档A/B选项，不携带资源/等级；不覆盖旧存档。"
+  },
+  "planning": {
+    "preview": "同一规则函数预览AP、工量、落点、伤害、次数、风险和关系条件；更改队伍/装备/项目即重算。",
+    "defaults": "未分配工具留仓；有效原阵容可保留；不能用隐藏自动补药扣资源。L2默认work但出发前可改。",
+    "deployment": "检查人物资格、真实空位、预测疲劳、槽位、包容量、费用、出口与世界路线，再整体提交；校验失败不扣任何资源。",
+    "battle": "队员2AP可交错行动→玩家明确结束→按敌人ID→环境→持续目标/运输→救援期限→整关时限。0AP仍可放下或紧急撤退，正常离场要1AP。",
+    "undo": "一组指令回滚AP/HP/库存/贡献/知情/记忆；跨敌方环境、新信息、结算、公开隐私或M17分支确认边界后不能战术撤销，可读合法保存点。"
+  },
+  "camp_order": [
+    "进入营地展示剩余2项目、2短谈与各自占用；个人第二段选择需同时有短谈和项目余量。",
+    "玩家按任意合法顺序安排训练/恢复/治疗/设施/核查/人物计划；同人每夜最多参加一个项目。",
+    "0项目也可结束夜晚；0资金仍可睡眠和免费恢复，不收取维持费。",
+    "已确认项目立即结算，未确认草案不收费；跨项目不能假定未来设施已建成。",
+    "D23只提示一次未结承诺与路线资格，允许继续安排；明确结束这夜才进入终局准备。",
+    "D24仍有主线配队、难度和现有库存安排；没有新训练/核查/营地或补签个人线。"
+  ],
+  "failure_policy": [
+    "任意主线结果推进下一日；失败修饰只影响下一主线的一格碎石，不累计。",
+    "损失目标依赖项立刻标不可达，允许保其他成果或撤退；不要求穷耗AP等时限。",
+    "普通重伤按恢复日返队，保留XP/关系/课程记录；伤势恢复不自动加减怨气。",
+    "严峻失能者只有在明示期限内未救回/明确放弃才医疗离队；站立紧急撤退按可恢复重伤。",
+    "队伍无人可出勤仍可借调继续主线；终战未达路线目标走撤离结局。"
+  ],
+  "persistence": {
+    "slots": "10个手动槽；每个存档1个滚动自动槽和1个上次有效备份。覆盖其他周目明确确认；新游戏默认空槽，不删除旧档。",
+    "write_points": "稳定玩家阶段、准备页、营地项目提交后；每个主/支线出发前、唯一结算后、夜间推进后自动保存。边界确认前先保存，动作动画和敌方结算中不保存半状态。",
+    "atomicity": "整个状态+receipt集合+版本/内容指纹写临时文件→读回校验→保留上一有效备份→原子替换。失败不发布半档；重复读档不补发奖励。",
+    "restore": "有效档恢复保存的阶段、难度、所有领域状态和可见预告；清空纯UI草案。只在白名单稳定阶段恢复；不能从日志猜测遗漏次数。",
+    "incompatible": "首发只保证本版schema。相同schema且在显式兼容清单内的内容修订才可载入；不在清单则说明原因并保留原档，绝不无声按新规则重算旧事件。后续需迁移时先离线迁移副本并独立验收。",
+    "corrupt": "拒绝坏档，显示备份时间并由玩家选择备份/另一槽/返回；不自动覆盖原文件。",
+    "catalogue": "完整必存字段见persistence_inventory域，所有新增字段必须进入往返测试。",
+    "exit": "退出不强制上传或联网；未保存时列出最后成功存档，不以保存失败锁住程序退出。"
+  },
+  "endings": {
+    "world": "按D23锁定可选路线及M24实际目标决定；未达目标回落撤离，不能靠汇总分补造目标。",
+    "people": "presence→career→personal_plan→逐方向关系附注。已兑现计划不被后来重伤抹去，未完成计划因医疗中断不写成恶意背约。",
+    "postgame": "只读已发生全文/支线错失/事实摘要；未发生内容不伪造为本周目经历。可另开新周目；不返场刷资料。"
+  }
+}

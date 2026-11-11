@@ -1,0 +1,1055 @@
+{
+  "mission": "M22",
+  "difficulty": "hard",
+  "party": [
+    "lin",
+    "xu",
+    "he"
+  ],
+  "equipment": [],
+  "active_specialty": "he_1 only; He joined afterM10, L1 skill available",
+  "rounds": 6,
+  "limit": 8,
+  "ap": 26,
+  "damage": 0,
+  "all_extracted": true,
+  "story_proof_verified": true,
+  "actual_protection": [
+    {
+      "round": 2,
+      "action": "barrier_intercept",
+      "owner": 2,
+      "source": "M22_enemy2",
+      "protected_actors": [
+        0
+      ]
+    }
+  ],
+  "primary_contribution": [
+    {
+      "actor": 0,
+      "action": "interact",
+      "round": 2
+    }
+  ],
+  "receipts": [
+    {
+      "seq": 11,
+      "kind": "objective_completed",
+      "mission": "M22",
+      "primary_contributor": "lin"
+    },
+    {
+      "seq": 12,
+      "kind": "protect_or_rescue",
+      "mission": "M22",
+      "actor": "he"
+    },
+    {
+      "seq": 13,
+      "kind": "mission_settled",
+      "mission": "M22",
+      "actors": [
+        "lin",
+        "xu",
+        "he"
+      ],
+      "all_extracted": true
+    }
+  ],
+  "log": [
+    {
+      "round": 1,
+      "action": "intents",
+      "enemies": [
+        {
+          "id": "M22_enemy1",
+          "type": "relay",
+          "at": [
+            7,
+            2
+          ],
+          "cells": []
+        },
+        {
+          "id": "M22_enemy2",
+          "type": "sentinel",
+          "at": [
+            3,
+            0
+          ],
+          "cells": []
+        }
+      ]
+    },
+    {
+      "round": 1,
+      "action": "move",
+      "actor": 0,
+      "at": [
+        1,
+        4
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          1,
+          7
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          5
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "round": 1,
+      "action": "move",
+      "actor": 0,
+      "at": [
+        3,
+        3
+      ],
+      "ap_left": 0,
+      "path": [
+        [
+          1,
+          4
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          3
+        ]
+      ]
+    },
+    {
+      "round": 1,
+      "action": "move",
+      "actor": 2,
+      "at": [
+        4,
+        5
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          3,
+          7
+        ],
+        [
+          4,
+          7
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          5
+        ]
+      ]
+    },
+    {
+      "round": 1,
+      "action": "move",
+      "actor": 2,
+      "at": [
+        5,
+        3
+      ],
+      "ap_left": 0,
+      "path": [
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          5,
+          3
+        ]
+      ]
+    },
+    {
+      "round": 1,
+      "action": "round_end",
+      "hp": [
+        10,
+        10,
+        10
+      ],
+      "positions": [
+        [
+          3,
+          3
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "secured": []
+    },
+    {
+      "round": 2,
+      "action": "intents",
+      "enemies": [
+        {
+          "id": "M22_enemy1",
+          "type": "relay",
+          "at": [
+            7,
+            2
+          ],
+          "cells": []
+        },
+        {
+          "id": "M22_enemy2",
+          "type": "sentinel",
+          "at": [
+            3,
+            0
+          ],
+          "cells": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "action": "interact",
+      "actor": 0,
+      "at": [
+        3,
+        3
+      ],
+      "ap_left": 1,
+      "target": "handover"
+    },
+    {
+      "round": 2,
+      "action": "move",
+      "actor": 0,
+      "at": [
+        3,
+        2
+      ],
+      "ap_left": 0,
+      "path": [
+        [
+          3,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ]
+    },
+    {
+      "round": 2,
+      "action": "move",
+      "actor": 2,
+      "at": [
+        4,
+        1
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ]
+    },
+    {
+      "round": 2,
+      "action": "he_1",
+      "actor": 2,
+      "target": null,
+      "destination": [
+        3,
+        1
+      ],
+      "ap_left": 0
+    },
+    {
+      "round": 2,
+      "action": "barrier_intercept",
+      "owner": 2,
+      "source": "M22_enemy2",
+      "protected_actors": [
+        0
+      ]
+    },
+    {
+      "round": 2,
+      "action": "round_end",
+      "hp": [
+        10,
+        10,
+        10
+      ],
+      "positions": [
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "secured": []
+    },
+    {
+      "round": 3,
+      "action": "spawn_warning",
+      "source": "M22_enemy1",
+      "cell": [
+        7,
+        0
+      ],
+      "due": 4
+    },
+    {
+      "round": 3,
+      "action": "intents",
+      "enemies": [
+        {
+          "id": "M22_enemy1",
+          "type": "relay",
+          "at": [
+            7,
+            2
+          ],
+          "cells": []
+        },
+        {
+          "id": "M22_enemy2",
+          "type": "sentinel",
+          "at": [
+            3,
+            0
+          ],
+          "cells": []
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "action": "move",
+      "actor": 0,
+      "at": [
+        5,
+        2
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ]
+      ]
+    },
+    {
+      "round": 3,
+      "action": "move",
+      "actor": 1,
+      "at": [
+        4,
+        6
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          2,
+          7
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "round": 3,
+      "action": "move",
+      "actor": 2,
+      "at": [
+        5,
+        3
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          4,
+          1
+        ],
+        [
+          4,
+          2
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ]
+      ]
+    },
+    {
+      "round": 3,
+      "action": "completed",
+      "target": "M22_enemy2_cut0"
+    },
+    {
+      "round": 3,
+      "action": "interact",
+      "actor": 0,
+      "at": [
+        5,
+        2
+      ],
+      "ap_left": 0,
+      "target": "M22_enemy2_cut0"
+    },
+    {
+      "round": 3,
+      "action": "move",
+      "actor": 1,
+      "at": [
+        5,
+        5
+      ],
+      "ap_left": 0,
+      "path": [
+        [
+          4,
+          6
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          5
+        ]
+      ]
+    },
+    {
+      "round": 3,
+      "action": "interact",
+      "actor": 2,
+      "at": [
+        5,
+        3
+      ],
+      "ap_left": 0,
+      "target": "M22_enemy1_cut"
+    },
+    {
+      "round": 3,
+      "action": "completed",
+      "target": "handover"
+    },
+    {
+      "round": 3,
+      "action": "round_end",
+      "hp": [
+        10,
+        10,
+        10
+      ],
+      "positions": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          5
+        ],
+        [
+          5,
+          3
+        ]
+      ],
+      "secured": [
+        "handover",
+        "M22_enemy2_cut0"
+      ]
+    },
+    {
+      "round": 4,
+      "action": "intents",
+      "enemies": [
+        {
+          "id": "M22_enemy1",
+          "type": "relay",
+          "at": [
+            7,
+            2
+          ],
+          "cells": []
+        },
+        {
+          "id": "M22_enemy2",
+          "type": "sentinel",
+          "at": [
+            3,
+            0
+          ],
+          "cells": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "round": 4,
+      "action": "move",
+      "actor": 0,
+      "at": [
+        4,
+        4
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          5,
+          2
+        ],
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "round": 4,
+      "action": "move",
+      "actor": 1,
+      "at": [
+        3,
+        6
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          5,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ]
+    },
+    {
+      "round": 4,
+      "action": "move",
+      "actor": 2,
+      "at": [
+        3,
+        4
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          5,
+          3
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "round": 4,
+      "action": "move",
+      "actor": 0,
+      "at": [
+        1,
+        4
+      ],
+      "ap_left": 0,
+      "path": [
+        [
+          4,
+          4
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          4
+        ]
+      ]
+    },
+    {
+      "round": 4,
+      "action": "move",
+      "actor": 1,
+      "at": [
+        0,
+        6
+      ],
+      "ap_left": 0,
+      "path": [
+        [
+          3,
+          6
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "round": 4,
+      "action": "move",
+      "actor": 2,
+      "at": [
+        0,
+        4
+      ],
+      "ap_left": 0,
+      "path": [
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "round": 4,
+      "action": "spawn",
+      "enemy": "reinforcement_1",
+      "at": [
+        7,
+        0
+      ]
+    },
+    {
+      "round": 4,
+      "action": "round_end",
+      "hp": [
+        10,
+        10,
+        10
+      ],
+      "positions": [
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "secured": [
+        "handover",
+        "M22_enemy2_cut0"
+      ]
+    },
+    {
+      "round": 5,
+      "action": "intents",
+      "enemies": [
+        {
+          "id": "M22_enemy1",
+          "type": "relay",
+          "at": [
+            7,
+            2
+          ],
+          "cells": []
+        },
+        {
+          "id": "M22_enemy2",
+          "type": "sentinel",
+          "at": [
+            3,
+            0
+          ],
+          "cells": []
+        },
+        {
+          "id": "reinforcement_1",
+          "type": "scout",
+          "at": [
+            7,
+            0
+          ],
+          "cells": [
+            [
+              6,
+              0
+            ],
+            [
+              5,
+              0
+            ],
+            [
+              4,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "round": 5,
+      "action": "move",
+      "actor": 0,
+      "at": [
+        0,
+        5
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          1,
+          4
+        ],
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ]
+      ]
+    },
+    {
+      "round": 5,
+      "action": "leave_site",
+      "actor": 1,
+      "at": [
+        0,
+        6
+      ],
+      "ap_left": 1
+    },
+    {
+      "round": 5,
+      "action": "move",
+      "actor": 2,
+      "at": [
+        0,
+        6
+      ],
+      "ap_left": 1,
+      "path": [
+        [
+          0,
+          4
+        ],
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "round": 5,
+      "action": "move",
+      "actor": 0,
+      "at": [
+        0,
+        7
+      ],
+      "ap_left": 0,
+      "path": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          7
+        ]
+      ]
+    },
+    {
+      "round": 5,
+      "action": "leave_site",
+      "actor": 2,
+      "at": [
+        0,
+        6
+      ],
+      "ap_left": 0
+    },
+    {
+      "round": 5,
+      "action": "water_added",
+      "cells": [
+        [
+          1,
+          3
+        ],
+        [
+          6,
+          2
+        ]
+      ]
+    },
+    {
+      "round": 5,
+      "action": "round_end",
+      "hp": [
+        10,
+        10,
+        10
+      ],
+      "positions": [
+        [
+          0,
+          7
+        ],
+        [
+          0,
+          6
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "secured": [
+        "handover",
+        "M22_enemy2_cut0"
+      ]
+    },
+    {
+      "round": 6,
+      "action": "spawn_warning",
+      "source": "M22_enemy1",
+      "cell": [
+        7,
+        0
+      ],
+      "due": 7
+    },
+    {
+      "round": 6,
+      "action": "intents",
+      "enemies": [
+        {
+          "id": "M22_enemy1",
+          "type": "relay",
+          "at": [
+            7,
+            2
+          ],
+          "cells": []
+        },
+        {
+          "id": "M22_enemy2",
+          "type": "sentinel",
+          "at": [
+            3,
+            0
+          ],
+          "cells": [
+            [
+              3,
+              1
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "id": "reinforcement_1",
+          "type": "scout",
+          "at": [
+            4,
+            0
+          ],
+          "cells": [
+            [
+              4,
+              1
+            ],
+            [
+              4,
+              2
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "round": 6,
+      "action": "leave_site",
+      "actor": 0,
+      "at": [
+        0,
+        7
+      ],
+      "ap_left": 1
+    }
+  ],
+  "scope": "Entire map reached and exited with legal AP. Camp branch requires accepting He plan beforehand and deferring final choice until this evidence exists; no forced reconciliation."
+}

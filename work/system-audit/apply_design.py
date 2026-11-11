@@ -1,0 +1,88 @@
+"""Version 0.6 normative design amendments. No game/runtime code is edited."""
+from pathlib import Path
+import json
+ROOT=Path(__file__).resolve().parents[2]; D=ROOT/'game/data/final_design'
+def read(name): return json.loads((D/name).read_text())
+def save(name,data): (D/name).write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+
+sections = {
+ 'memory_budget': {
+  'rule':'事实档案与当前情绪分开。保存全部事故、实际责任、首次知情日、实际信任损失与修复状态；只有已分配的活跃权重参与R。R=G+活跃记忆值，不再先累计到几百再只显示100。',
+  'allocation':'新事件先算原始强度。普通同类只保留当前最强3条参与数值，其余永久转事实档案；超过24时按比例缩减这3条的已分配幅度。全部活跃记忆超过100-G时，再同比缩减所有活跃幅度，使真实总值等于上限。缩减不可逆，不在后续修复、衰减或降低G时补回。',
+  'meaning':'满值时新恶意仍留下事实、信任损失和具体未解决事项；不会积攒不可见的额外怨气，也不借冷却删除事实。记忆权重被压缩不代表已经原谅。',
+  'decay':'普通：A×stage×2^(-age/3)。严重：A×stage×[floor+(1-floor)×2^(-age/8)]；未实质补救floor=.35，补救后0；stage=1/.85/.45。A是缩减后的幅度，年龄从首次知情日计算；不在认责时重新起算。',
+  'repair':'认责和实质补救各一次，stage按原幅度取值。补救只退min(4,实际信任损失/2)。补救必须引用同一方向与原事件ID；不能用无关任务覆盖旧事。不因为其他记忆被处理，让已归档的负面权重重新出现。',
+  'repair_access':'每天营地可在关系页对一名对象的一条事件认责，计1个免费短谈，不占重点项目；已认责不重复占窗口。承诺类补救是重新约定同范围安排并在后续实际守约；不公类是责任方承担真实班次；羞辱类是同公开范围更正（计1个重点项目，可同项目纠正同一原发言的全部受影响方向）。无资金门槛，不要求T>=60。不可逆损失不能被“补救”复原。',
+  'history':'旧怨仍走原6/12/12相关事实链；不与同一旧事故重复创建新记忆。历史G下降不会给其他记忆扩容反弹。',
+  'display':'关系页显示G、各活跃来源当前值、衰减/认责/补救预计变化、已压缩/归档状态与仍未解决事实。总值100时没有隐藏负债。数值下降与“伤害是否处理”分开呈现。'},
+ 'attribution': {
+  'canonical_key':'campaign / root_decision_id / observer / responsible_target。对同一决定的受伤、撤离失败、治疗延迟只是后果列表，合并为一次事件；不同观察者可以各自建立一个有向记忆。',
+  'shares':'队长单独决策：leader=1、被指派执行者=0。已知风险且自愿主动提出并获队长批准：leader=.5、提议者=.5。责任份额总和<=1；不能用后来的受伤结果推断执行者主动提议。',
+  'unknown':'未获知责任只记未知事实与个人压力，不扣某人的信任；后来知情只建立一次记忆，以首次知情日衰减。新的隐瞒是另一次选择，可成为不同事件；重复发现同一材料不是新事件。',
+  'late_revision':'同一事件后来明确责任或严重后果，更新原条目而不另建重复记忆；计算同一初始状态下的新旧目标幅度之差，只补正向差额，信任同样只补扣差额。责任被证据撤销则撤销该错误条目并退其实际损失；这属于纠错，不发道歉奖励。压缩过的旧权重不借修订恢复。',
+  'repeat':'3个连续值勤日定义为当前D及D-1/D-2；第三个不同的已知、明确、可归责承诺被主动违背且提交前已预告，升级为18强度/12信任损失的一条严重记忆。第四次仍满足窗口可再次为严重事件；同一承诺、事故、医疗中断、迟来的三份旧材料不冒充三次当场失信。',
+  'leader_scope':'现场合作检查观察者→搭档和观察者→队长两方向；任一处于条件合作及以上，都按当前动作的相关风险要求保障。对队长的不满不转嫁为对搭档扣分；基础行动保持可控。'},
+ 'conflict_state': {
+  'hysteresis':'进入45/65/80；退出分别<35/<50/<60，严格小于；R<25直接平静。保存阶段，不能每次仅用Q>=65计算，否则修复后会突然提前解锁。',
+  'cooldown':'长场景冷却按无向人物对（含队长）记录；D触发后最早D+2再次触发。一任务全队至多1次长冲突。数值、持续条件、已知事实不受场景冷却保护。',
+  'no_delayed_ambush':'到期不会自动播放。再次长冲突必须有新的相关违约/新的危险合作请求与可见预告；换地图或反复打开按钮本身不触发。其他高怨人物继续显示条件，不排成长队中断。',
+  'atomic_action':'预览→确认→完整动作→影响后续行动。不得扣完双方AP再因新关系状态取消本次已承诺动作。迟到的命令因状态版本过期整体拒绝，不扣资源。',
+  'at100':'100与80处于同一最高阶段；没有额外友伤、偷物、随机失控或关系性强制离队。满足实际保障、改用其他搭档/独立行动、放弃可选目标、撤退均可继续。'},
+ 'combat_resolution': {
+  'single_source':'战斗动作事实必须供目标、物资、伤势、贡献、故事共同读取。结算结果由目标组推导，不能由脚本直接宣称成功覆盖失去的对象。',
+  'order':'最后允许轮仍有完整玩家行动；敌人按ID结算→环境→运输/持续目标进度→救援期限→任务时限/结算。已经送达的人员先离开危险判定，不会在同一轮被计作超时失去。最后站立者撤出但仍有失能者遗留时，先弹出明确救援后果确认。',
+  'carried_downed':'稳定只给失能队员期限+1一次；携带不会停止期限，出口交付才完成救援。若携带中到期，二线救援转运该伤员并清空携带槽，按难度判重伤/永久医疗离队；不复制身体，不把搬运者也判失能。',
+  'downed_damage':'失能队员不再接受HP伤害或重置期限，仅保留救援倒计时；平民仍有4HP与稳定/失去状态，二者不要混用。已携带的目标不重复承受同次范围伤害，搬运者失能后只落下一个目标。',
+  'hard_boundary':'最高难度只有失能且未在期限内救回/明确放弃才永久医疗离队。站立但紧急撤离未走到出口者可恢复重伤，不凭任务失败直接永久删除。自动到总时限也应用相同的遗留者规则。',
+  'carrying_actions':'携带可移动、通用交互、稳定其他伤员、放下、交付、离场和接力搬运；不能攻击、推移、专长、其他双人协议、使用主动工具或准备第三人保护。被动担架照常。不得让携带者借协议绕过禁攻/禁推。',
+  'occupied_overlay':'站立者与装置可共格；同格地面伤员/货物可以多件，必须按对象ID选择拾起/治疗/放下目标。每人仍只能携带1件。此规则避免搬运者倒在已有物件格时无处放人或丢物；不额外阻断路。',
+  'control':'同一机器受到临时控制后，下个整轮免疫临时控制；不同队员/道具共享该标记。永久停机是不同目标成果。重机推移的两个基本推移工量必须来自同方向、同轮，机器位移或回合结束即清除；不跨轮暗存半次推力。',
+  'tools':'永久装备任务前分配，任务内不交接装备刷新次数。原文盾牌拾回不补HP、次数不回充。伸缩锚点是专用通行装置，明确例外于“携带不能绳索跳跃”；不能把人物个人绳索技能也当同例外。'},
+ 'economy_growth': {
+  'inventory':'制作只接受显式配方及已解锁ID，药剂独立med_dose；永久装备只接受tool/support。数量必须正整数；未知道具、布尔数量、小数、未打包物品消耗均整体拒绝。不能通过购买价格为0的耗材行绕过制作。',
+  'settlement':'投入=已用+归还，消耗只一次；重复结算不重复发资源/XP。XP任务结束才发，新任务重新快照；负面记忆即时生效，正向信任每任务每方向上限4。',
+  'training':'协议ID必须在4个协议表中，双人T>=60、各付1物资、共占1项目；已学不重复买。学习与现场条件分离。每人最多装备两项（按协议种类计槽），仍须该人物对已学会，换搭档不自动继承。',
+  'fatigue':'白天无出勤/后勤可获得白天休整-16，即使晚上训练；训练+8仍计入，睡眠另-12。白天闲置与晚间训练不同时发生，不构成免费刷经验；每人一晚1项目且战役只有23晚。',
+  'facility':'通信台二级仅20/22/23日晚一项目两份证据，18日仍一份；以设施表为准。审核名单去重。早期资料可提前改决策，后期公共副本仅补事实，不补错失关系。',
+  'economic_role':'当前资金是购置和补给预算，不宣称生存贫困模拟。主要机会成本是23晚46项目、出勤与截止日。常规脚本有剩余资金属已知现象；不靠强制日租或惩罚角色加入制造紧张。保留消耗敏感性分析，不宣称价格已经平衡。'},
+ 'story_and_ending': {
+  'su':'必须是承诺后的两次不同主任务；都没有派苏棠后勤，且至少一次其他正式成员有该主任务真实support_work回执。支线、仅安排却未完成的后勤不算。',
+  'xu':'同一次任务中实际站立撤出且明确守约；缺少kept_deadline时是未知/无凭据，不默认为true。任务成功也不等于按承诺时间撤离。',
+  'he':'实际保护、他人主要贡献、全员被带回必须是同一任务。被救回的重伤者也算带回；“全员撤出”不等于“无人受伤”。最高难度失去一人则不成立。',
+  'lin':'轮换计划只验证同一主任务伤员的至少两位真实贡献者，至少一位非林岚；交接职责可由稳定/搬运/交付/真实防护承担。原文字提到的撤离期限改为单独自愿承诺；不暗加验证器没有的条件。',
+  'latest_plan':'依赖未来主任务的计划最迟林岚/许舟/贺鸣D22，苏棠/陈砚D21（M23没有施工目标）；叶禾/莫遥/江朔D23。晚读仍可选完整专业分支。确认前预览可用的后续任务，绝不在D23卖一个需两次主任务才兑现的计划。',
+  'plan_cost':'第二段两种选择都仍占一个真实个人安排项目；免费职业分支是零资金，不是零项目。进入界面不扣，确认才占用，不能取消后保留付款/凭据。',
+  'achievement_and_duty':'曾兑现的个人计划与后续持续义务分开。兑现后受伤不抹掉履约；若泄露隐私/再违背人员优先，保留“曾兑现”，另写“后续违约”。永久医疗离队只中断未完成执行，不凭空改成恶意背约。',
+  'directional_coda':'presence→已选职业/康复→计划完成情况→每个具体方向的未解决事件。一次针对陈砚的补救不能清掉林岚对队长的另一事件。职业选择不会被一个笼统“关系破裂”标签覆盖。',
+  'absent_scene':'永久离队者不能出现在现场双人对话。使用已授权且已知的来信或未解决摘要；不发相处/共同任务/修复凭据。临时重伤可谈话，但不能因此生成战斗贡献。',
+  'final_cutoff':'23日晚是最后营地与新个人计划窗口，24日只处理当场已存在承诺和世界目标。M24社区回访/章节后果以结局档案呈现，不再占不存在的第24晚或补发项目。',
+  'route':'M24前锁路线及其必需目标。shared_control须实际地区和>=10且两种不同证据；M17隔离永久上限2按实值扣截。其他路线对象不用于补这条路线。失利转代价明确的撤离后记，已送达者不倒扣。'},
+ 'validation_boundary': {
+  'checked':'设计数值与状态参考、真实数据引用、错误操作不改账、明确给定任务成果的整局账本、现有地图基础路径；新增随机/边界组合检查只证明其断言范围。',
+  'not_checked':'未做36关完整敌人战斗求解、全部技能组合实战、真人阅读和游玩测试、最终通关时长、付费/市场转化、Godot运行实现或平台兼容。不能从静态逻辑通过推出好玩或无任何漏洞。',
+  'phase':'按用户指示仅设计，正式开发继续暂停。'}
+}
+contract={'version':'0.6-system-audit','authority':'本文件为0.6明确修订；具体对象/技能表仍在原文件。与旧版冲突时按此修订；构建脚本同步受影响字段，不依靠玩家自己找补丁。','sections':sections}
+save('system_audit_contract.json',contract)
+p=read('progression_relationship.json');p['version']='0.6-system-audit';p['memory_model']=sections['memory_budget'];p['responsibility']=sections['attribution'];p['conflict_state']=sections['conflict_state']
+p['restriction_rules']='保存有向关系阶段，进入45/65/80，退出<35/<50/<60。现场检查对搭档与对队长两方向，任一阶段>=条件合作才按相关动作/风险要求真实保障；长场景冷却不取消条件，基础动作始终可用。'
+p['situational_rule']=p['restriction_rules'];p['protocol_training']=p['protocol_training'].split(' '+sections['economy_growth']['training'])[0]+' '+sections['economy_growth']['training'];p['repeated_breach_escalation']['conditions']=[x.replace('连续3个值勤日窗口内','当前日D及D-1/D-2窗口内') for x in p['repeated_breach_escalation']['conditions']];save('progression_relationship.json',p)
+c=read('combat.json');c['system_audit_ref']='system_audit_contract.json';c['version']='0.6-system-audit';c['resolution_amendments']=sections['combat_resolution'];c['geometry']['occupancy']=sections['combat_resolution']['occupied_overlay'];c['damage']['downing']=c['damage']['downing'].split(' '+sections['combat_resolution']['downed_damage'])[0]+' '+sections['combat_resolution']['downed_damage'];c['enemy_targeting']=c['enemy_targeting'].replace('each standing/downed person','each standing hero/civilian')
+for a in c['actions']:
+ if a['id']=='pickup':a['effect']='拾起一个相邻且稳定的伤员/货物；每人最多携带1个。'+sections['combat_resolution']['carrying_actions']
+c['objective_machine']['deadline']=sections['combat_resolution']['order'];save('combat.json',c)
+i=read('integration.json');i['version']='0.6-system-audit';i['authority']='本目录为当前0.6设计，system_audit_contract.json是明确修订规则；外层文件仅保留基础工程兼容，运行工程尚未实现本版本。';i['system_audit_authority']='system_audit_contract.json';i['logical_audit_sections']=sections;i['receipt_schema']['fields']=list(dict.fromkeys(i['receipt_schema']['fields']+['root_decision_id','first_known_day','occurrence_day','responsibility_shares']))
+i['story_verifiers']['su']['all']=[x for x in i['story_verifiers']['su']['all'] if not x.get('must_match_main_assignment')]+[{'receipt':'support_work','must_match_main_assignment':True}];i['story_verifiers']['xu']['missing_kept_means']=False;i['late_breach_resolution']=i['late_breach_resolution'].split(' '+sections['story_and_ending']['achievement_and_duty'])[0]+' '+sections['story_and_ending']['achievement_and_duty'];save('integration.json',i)
+w=read('whole_campaign_contract.json');w['version']='0.6-system-audit';w['system_audit_authority']='system_audit_contract.json';w['epilogue_components']['personal_plan']=sections['story_and_ending']['achievement_and_duty'];w['epilogue_components']['relationships']=sections['story_and_ending']['directional_coda'];w['settlement_packet']['actor_records']=w['settlement_packet']['actor_records'].split(' 全员撤出、许舟站立撤出、守约分别读取真实行动记录，禁止用胜利/无人受伤替代。')[0]+' 全员撤出、许舟站立撤出、守约分别读取真实行动记录，禁止用胜利/无人受伤替代。';save('whole_campaign_contract.json',w)
+s=read('stories.json');s['version']='0.6-system-audit';s['audit_rules']=sections['story_and_ending']
+for n in s['personal_nodes']:
+ if n['stage']==2:
+  for choice in n['choices']:
+   if choice['creates_contract']:choice['latest_creation_day']=21 if n['actor']=='su' else 21 if n['actor']=='chen' else 22 if n['actor'] in ['lin','xu','he'] else 23
+   if n['id']=='P_lin_2' and choice['id']=='rotation':choice['response']='制定明确接应职责；后续同一主线伤员由至少两位队员实际完成救援，其中至少一位不是林岚。撤离时限如另作明确约定，按独立承诺处理。'
+for n in s['relationship_nodes']:n['absence_rule']=sections['story_and_ending']['absent_scene']
+for n in s['community_nodes']+s['chapter_nodes']:
+ if n['source']=='M24':n['delivery']='ending_archive_no_camp_no_extra_rewards'
+save('stories.json',s)
+edge=read('relationship_edge_cases.json');edge['version']='0.6-system-audit';edge['known_remaining_audit']='本轮已明确满值、归责与冷却的修订并增加参考检查；见system_audit_contract.json与outputs/system-audit-results.json。仍未证明完整战斗与实际游玩平衡。';edge['numeric_authority']='system_audit_contract.json / memory_budget';edge['reference_examples_scope']='以下为0.5原始反例，保留用于说明修订原因；当前0.6数值以outputs/system-audit-results.json为准';save('relationship_edge_cases.json',edge)
+print('Applied 0.6 systematic design amendments; runtime unchanged.')

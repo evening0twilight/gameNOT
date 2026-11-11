@@ -1,0 +1,32 @@
+{
+  "passed_count": 26,
+  "checks": [
+    "eight unique character IDs",
+    "all 56 crew directions and eight leader directions exist",
+    "relationship IDs are unique",
+    "initial stats stay in range",
+    "old grievances include reason and matching categories",
+    "personal arcs and distinct endings planned for everyone",
+    "three initial crew and five later recruits",
+    "24 main and 12 side outlines",
+    "all mission dependencies exist",
+    "dependency graph acyclic and all mission outlines reachable",
+    "main progression depends on resolution, not winning",
+    "every mission has explicit baseline fallback",
+    "all later characters have a matching recruit beat",
+    "side missions do not unlock required recruits",
+    "requirements have acceptance conditions and honest status",
+    "six enemies and twelve equipment archetypes",
+    "level thresholds are strictly increasing and cover all levels",
+    "all campaign phases and ending reachable in declared graph",
+    "all declared phases have a path to ending",
+    "main and side failure states have settlement transitions",
+    "example event roles exist and responsibility is normalized",
+    "ending fallback exists and has no evidence lock",
+    "all side offers precede the final main mission",
+    "final result settles directly into ending",
+    "post-main side phase excludes final day",
+    "trust can be earned without already unlocking advanced cooperation"
+  ],
+  "limitations": "Reference and reachability checks only; mission layouts, full scripts, final numbers and playtime are not implemented or certified."
+}

@@ -1,0 +1,8 @@
+fixed_ordinary 24 12 678 {'credits': 814, 'supplies': 93, 'parts': 63} 0 0
+fixed_cultivate 24 12 684 {'credits': 814, 'supplies': 91, 'parts': 63} 3 0
+rotate_ordinary 24 12 750 {'credits': 814, 'supplies': 69, 'parts': 63} 0 0
+rotate_cultivate 24 12 750 {'credits': 814, 'supplies': 69, 'parts': 63} 3 0
+hard_ordinary 24 12 750 {'credits': 814, 'supplies': 68, 'parts': 63} 0 0
+hard_cultivate 24 12 750 {'credits': 814, 'supplies': 68, 'parts': 63} 3 0
+setbacks_ordinary 24 0 549 {'credits': 542, 'supplies': 29, 'parts': 43} 1 0
+setbacks_cultivate 24 0 604 {'credits': 554, 'supplies': 21, 'parts': 43} 2 0

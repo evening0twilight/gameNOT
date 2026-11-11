@@ -1,0 +1,77 @@
+{
+  "ordinary_only_cap_counterexample": [
+    {
+      "day": 1,
+      "before": 42,
+      "new_strength": 19.71,
+      "serious": false,
+      "resentment": 61.71
+    },
+    {
+      "day": 2,
+      "before": 57.64,
+      "new_strength": 24.05,
+      "serious": false,
+      "resentment": 66
+    },
+    {
+      "day": 3,
+      "before": 66,
+      "new_strength": 27.95,
+      "serious": false,
+      "resentment": 66
+    }
+  ],
+  "repeat_escalation_old_grudge": [
+    {
+      "day": 1,
+      "before": 42,
+      "new_strength": 19.71,
+      "serious": false,
+      "resentment": 61.71
+    },
+    {
+      "day": 2,
+      "before": 57.64,
+      "new_strength": 24.05,
+      "serious": false,
+      "resentment": 66
+    },
+    {
+      "day": 3,
+      "before": 66,
+      "new_strength": 40,
+      "serious": true,
+      "resentment": 100
+    }
+  ],
+  "repeat_escalation_no_grudge": [
+    {
+      "day": 1,
+      "before": 0,
+      "new_strength": 15.37,
+      "serious": false,
+      "resentment": 15.37
+    },
+    {
+      "day": 2,
+      "before": 12.2,
+      "new_strength": 17.11,
+      "serious": false,
+      "resentment": 24
+    },
+    {
+      "day": 3,
+      "before": 23.27,
+      "new_strength": 28.87,
+      "serious": true,
+      "resentment": 52.14
+    }
+  ],
+  "checks": [
+    "same-category ordinary cap prevents further growth above old_grudge+24",
+    "third distinct warned breach as serious memory can reach rupture without double-counting",
+    "same event is one source, not three separate memories"
+  ],
+  "scope": "Design calculation, not runtime implementation or a full balance test."
+}

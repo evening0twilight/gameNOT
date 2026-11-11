@@ -1,0 +1,554 @@
+{
+  "version": "0.18-predevelopment",
+  "district_initial": {
+    "dock": 1,
+    "medical": 1,
+    "workshops": 1,
+    "overpass": 1,
+    "floodgates": 1,
+    "old_town": 1
+  },
+  "district_bounds": [
+    0,
+    3
+  ],
+  "missions": [
+    {
+      "id": "M01",
+      "title": "最后一班渡轮",
+      "day": 1,
+      "district": "dock",
+      "primary": "将两名受困居民送到撤离格",
+      "optional": "取回渡轮线路图",
+      "carry_forward": "码头路线得以登记；错过者由后续市级撤离接管",
+      "next": "M02",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M02",
+      "title": "诊所的备用电",
+      "day": 2,
+      "district": "medical",
+      "primary": "关闭错误供电回路并恢复诊所供电",
+      "optional": "保存备用电池",
+      "carry_forward": "诊所是否保留稳定电源影响后续医疗现场",
+      "next": "M03",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M03",
+      "title": "被锁住的仓库",
+      "day": 3,
+      "district": "workshops",
+      "primary": "开启仓库并转出一箱救援物资",
+      "optional": "回收破拆工具部件",
+      "carry_forward": "公共工具登记完成，失败仍能用初始基础工具",
+      "next": "M04",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M04",
+      "title": "高架桥下",
+      "day": 4,
+      "district": "overpass",
+      "primary": "保护维修人员完成两处桥面加固并撤出",
+      "optional": "保持临时护栏完整",
+      "carry_forward": "陈砚按社区派驻安排在结算后加入，并非任务救出的唯一人质",
+      "next": "M05",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M05",
+      "title": "旧泵房来电",
+      "day": 5,
+      "district": "floodgates",
+      "primary": "关闭失控装置并启动应急排水",
+      "optional": "保留泵站控制模块",
+      "carry_forward": "决定下一次涨潮时的额外可用道路",
+      "next": "M06",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M06",
+      "title": "第一次涨潮",
+      "day": 6,
+      "district": "old_town",
+      "primary": "在涨潮期限前完成居民接力撤离",
+      "optional": "带走一件社区公共资产",
+      "carry_forward": "首章结算已救出的居民，不追溯抹去成功",
+      "next": "M07",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M07",
+      "title": "工具箱的名字",
+      "day": 7,
+      "district": "workshops",
+      "primary": "解除工厂作业区危险并接出维修人员",
+      "optional": "带回旧维修编号",
+      "carry_forward": "叶禾通过轮调加入；旧案线索不自动等于她原谅陈砚",
+      "next": "M08",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M08",
+      "title": "断开的补给线",
+      "day": 8,
+      "district": "workshops",
+      "primary": "打通两处运输阻碍并让补给车到达出口",
+      "optional": "保留一条备用运输线",
+      "carry_forward": "工坊地区的恢复状态形成后续作业优势",
+      "next": "M09",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M09",
+      "title": "屋顶上的病房",
+      "day": 9,
+      "district": "medical",
+      "primary": "稳定并转移两名伤员",
+      "optional": "保存便携医疗设备",
+      "carry_forward": "未达成的额外目标影响当地恢复叙述，不取消基础医疗",
+      "next": "M10",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M10",
+      "title": "撤离预案",
+      "day": 10,
+      "district": "overpass",
+      "primary": "测试并保留一条可用的双向撤离通道",
+      "optional": "标记第二处集合点",
+      "carry_forward": "贺鸣按事先协调于任务后加入；意见与指令分开记录",
+      "next": "M11",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M11",
+      "title": "需要签字的门",
+      "day": 11,
+      "district": "workshops",
+      "primary": "安全解除工业门锁与相连设备",
+      "optional": "保存维护记录 E_MAINTENANCE",
+      "carry_forward": "核对设备事故，不用一份文件免除所有人责任",
+      "next": "M12",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M12",
+      "title": "闸下的记录",
+      "day": 12,
+      "district": "floodgates",
+      "primary": "让取证设备完成两轮备份并撤离",
+      "optional": "保存封闸指令 E_ORDER",
+      "carry_forward": "封闸历史进入可核查阶段；失败可在后续公共副本处补查",
+      "next": "M13",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M13",
+      "title": "会说谎的日志",
+      "day": 13,
+      "district": "old_town",
+      "primary": "隔离故障节点并让日志终端安全下线",
+      "optional": "保存报警覆盖记录 E_WARNING",
+      "carry_forward": "莫遥完成派驻交接，关键资料不绑定她必须在队",
+      "next": "M14",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M14",
+      "title": "冷库里的电池",
+      "day": 14,
+      "district": "medical",
+      "primary": "转移冷库药品或恢复其冷藏电源，至少完成一项",
+      "optional": "兼顾两项",
+      "carry_forward": "明确告诉玩家无法全拿时的取舍，不把两种合理方案都写成错",
+      "next": "M15",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M15",
+      "title": "三条同时响起的电话",
+      "day": 15,
+      "district": "old_town",
+      "primary": "在地图内优先处理至少一个求援点并安全离开",
+      "optional": "完成第二个目标",
+      "carry_forward": "未签承诺的第三处求援不自动让全队怨恨队长",
+      "next": "M16",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M16",
+      "title": "没有空位的船",
+      "day": 16,
+      "district": "dock",
+      "primary": "清出运输通道并组织居民上船",
+      "optional": "保留社区生活物资",
+      "carry_forward": "江朔按合作约定加入，轮换能力增加但基本食宿成本不增加",
+      "next": "M17",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M17",
+      "title": "修复或拆除",
+      "day": 17,
+      "district": "floodgates",
+      "primary": "完成泵站修复或断开危险供电，任选一条合法路线",
+      "optional": "取得维护记录副本 E_MAINTENANCE",
+      "carry_forward": "方案改变地方设施状态，均能继续主线",
+      "next": "M18",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M18",
+      "title": "广播塔的盲区",
+      "day": 18,
+      "district": "old_town",
+      "primary": "解除中继干扰并发出撤离通告",
+      "optional": "保存广播备份",
+      "carry_forward": "第四章前显示各地区的实际状况与可改进项",
+      "next": "M19",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M19",
+      "title": "警戒水位",
+      "day": 19,
+      "district": "medical",
+      "primary": "转移高风险病房并保住临时集合点",
+      "optional": "减少设备损耗",
+      "carry_forward": "进入最后一轮风暴准备；这里不是“只剩一夜”后又过六天",
+      "next": "M20",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M20",
+      "title": "两座避难所",
+      "day": 20,
+      "district": "old_town",
+      "primary": "完成至少一处避难所防护与转运安排",
+      "optional": "兼顾第二处",
+      "carry_forward": "集中资源或分散布局都有清楚收益，另开放公共记录核查",
+      "next": "M21",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M21",
+      "title": "旧路与新桥",
+      "day": 21,
+      "district": "overpass",
+      "primary": "打通最后阶段的撤离路线",
+      "optional": "补取封闸指令副本 E_ORDER",
+      "carry_forward": "若旧路失败仍有最终撤离模板，失去的是效率与额外收益",
+      "next": "M22",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M22",
+      "title": "最后一份记录",
+      "day": 22,
+      "district": "workshops",
+      "primary": "保护记录终端并完成交接",
+      "optional": "补取报警记录副本 E_WARNING",
+      "carry_forward": "最终路线条件进入明示阶段，仍允许一次公共核查",
+      "next": "M23",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M23",
+      "title": "撤离顺序",
+      "day": 23,
+      "district": "dock",
+      "primary": "安排居民与关键物资的最后登船顺序",
+      "optional": "保留更多重建物资",
+      "carry_forward": "最后一次支线与营地整备，提示明天进入终局",
+      "next": "M24",
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 1,
+        "partial": 0,
+        "failed": -1
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    },
+    {
+      "id": "M24",
+      "title": "天亮以前",
+      "day": 24,
+      "district": "floodgates",
+      "primary": "执行已选的共同控制、分区隔离或总撤离方案",
+      "optional": "尽量保住已争取的地区成果",
+      "carry_forward": "任务结算立即组装结局；失利也有完整的撤离收束",
+      "next": null,
+      "outcome_rule": "success when all explicitly required milestones are completed; partial when at least one required milestone is completed; otherwise failed. Withdrawal uses the achieved milestones rather than paying a second reward.",
+      "infrastructure_delta": {
+        "success": 0,
+        "partial": 0,
+        "failed": 0
+      },
+      "failure_next_mission_complication_cap": 1,
+      "requires_named_hero": false,
+      "failed_transition": "The next site remains available, with the recorded local consequence. No success prerequisite.",
+      "basic_action_contract": "Core objective or an orderly retreat must be expressible with universal actions. Concrete board layouts still require tactical verification."
+    }
+  ],
+  "evidence": {
+    "E_ORDER": {
+      "direct": [
+        "M12",
+        "M21"
+      ],
+      "review_days": [
+        20,
+        22,
+        23
+      ]
+    },
+    "E_WARNING": {
+      "direct": [
+        "M13",
+        "M22"
+      ],
+      "review_days": [
+        20,
+        22,
+        23
+      ]
+    },
+    "E_MAINTENANCE": {
+      "direct": [
+        "M11",
+        "M17"
+      ],
+      "review_days": [
+        20,
+        22,
+        23
+      ]
+    }
+  },
+  "record_review": "One evening project verifies one named record after its source incident. No supplies, no named hero, no duplicated record counts. Maximum two projects per evening including all other projects.",
+  "evidence_timing_contract": "Cross-district public copies become accessible after communications recover on day 20. Late verification can restore route eligibility but cannot undo expired promises, settled personal choices or past rescue losses. Early field evidence enables earlier informed interventions; each associated authored scene must implement that timing difference.",
+  "endings": {
+    "shared_control": "final selected route=shared_control, mission M24 success, infrastructure sum>=10, >=2 distinct verified evidence IDs",
+    "distributed_rebuild": "final selected route=distributed_rebuild and M24 success; evidence not required",
+    "evacuation": "selected evacuation, or the final selected objective fails/partially succeeds. World coda uses preserved district and rescue records."
+  },
+  "ending_priority": [
+    "resolve actual final mission outcome",
+    "select one world ending",
+    "resolve each hero: withdrawn before personal arc before relationship coda",
+    "append district and relationship codas"
+  ],
+  "no_named_hero_requirement": true,
+  "no_automatic_forgiveness_from_evidence": true,
+  "no_post_final_activity": true,
+  "authoritative_objectives": "final_design/boards.json",
+  "mission_specific_override": {
+    "M17": "repair成功：泵区+1，上限3；isolate成功：泵区本次不加分且本局上限降为2，当前值超2截为2；两方案互斥。部分/失败按旧表0/-1；旧表笼统成功+1对此关不再适用。最终shared_control按实际各区之和判定。",
+    "M24": "先选route，再使用boards.M24.route_groups；只激活该路线必需对象，其他路线对象不出现，archive保留。目标没完成则撤离尾声；选择evacuation且失败不是伪造全员成功撤离，按实际saved/lost名单写代价。"
+  },
+  "record_review_facility_override": "通信台一级新增第18日窗口，二级每项目可核查2份；否则20/22/23日每项目1份。"
+}

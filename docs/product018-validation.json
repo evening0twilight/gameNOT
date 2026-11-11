@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-07",
+  "package": "build/night-tide-0.18-windows.zip",
+  "package_sha256": "b88172277556b058b07b67fd39174521cfd16d567d65bbfc5bdd009c24a65a11",
+  "runtime_revision": 8,
+  "check_groups_including_final_ui": 31,
+  "story_assertions": 4161,
+  "full_campaign_days": 24,
+  "all_eight_first_specialties_observed": true,
+  "rendered_ui_review": "outputs/product018-visual-review.json",
+  "windows_native_tested": false,
+  "human_acceptance": false,
+  "p4_final_acceptance": false,
+  "historical_files_preserved": 287,
+  "scope_document": "docs/product018-alignment.txt"
+}

@@ -1,0 +1,725 @@
+[
+  {
+    "id": "lin>xu",
+    "observer": "lin",
+    "target": "xu",
+    "grudge": 42,
+    "trust": 34,
+    "closeness": 25,
+    "grudge_categories": [
+      "promise"
+    ],
+    "history": "旧封闸事故：林岚认为许舟违背共同撤离承诺。",
+    "active_memories": []
+  },
+  {
+    "id": "lin>su",
+    "observer": "lin",
+    "target": "su",
+    "grudge": 0.0,
+    "trust": 60,
+    "closeness": 40,
+    "grudge_categories": [],
+    "history": "两人曾在社区诊所共同值班，林岚信任苏棠的调度。",
+    "active_memories": []
+  },
+  {
+    "id": "lin>chen",
+    "observer": "lin",
+    "target": "chen",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "lin>ye",
+    "observer": "lin",
+    "target": "ye",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "lin>he",
+    "observer": "lin",
+    "target": "he",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "lin>mo",
+    "observer": "lin",
+    "target": "mo",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "lin>jiang",
+    "observer": "lin",
+    "target": "jiang",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "lin>leader",
+    "observer": "lin",
+    "target": "leader",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "xu>lin",
+    "observer": "xu",
+    "target": "lin",
+    "grudge": 12,
+    "trust": 70,
+    "closeness": 45,
+    "grudge_categories": [
+      "humiliation"
+    ],
+    "history": "许舟认可她的能力，也怨她将责任归于自己一人。",
+    "active_memories": []
+  },
+  {
+    "id": "xu>su",
+    "observer": "xu",
+    "target": "su",
+    "grudge": 0,
+    "trust": 65,
+    "closeness": 60,
+    "grudge_categories": [],
+    "history": "熟悉的老搭档。",
+    "active_memories": []
+  },
+  {
+    "id": "xu>chen",
+    "observer": "xu",
+    "target": "chen",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "xu>ye",
+    "observer": "xu",
+    "target": "ye",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "xu>he",
+    "observer": "xu",
+    "target": "he",
+    "grudge": 28,
+    "trust": 60,
+    "closeness": 20,
+    "grudge_categories": [
+      "fairness"
+    ],
+    "history": "反感未经协商就被收回自主权。",
+    "active_memories": []
+  },
+  {
+    "id": "xu>mo",
+    "observer": "xu",
+    "target": "mo",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "xu>jiang",
+    "observer": "xu",
+    "target": "jiang",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "xu>leader",
+    "observer": "xu",
+    "target": "leader",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "su>lin",
+    "observer": "su",
+    "target": "lin",
+    "grudge": 0.0,
+    "trust": 65,
+    "closeness": 45,
+    "grudge_categories": [],
+    "history": "曾在诊所并肩工作，认可林岚在压力下的可靠性。",
+    "active_memories": []
+  },
+  {
+    "id": "su>xu",
+    "observer": "su",
+    "target": "xu",
+    "grudge": 10,
+    "trust": 45,
+    "closeness": 50,
+    "grudge_categories": [
+      "promise"
+    ],
+    "history": "几次由苏棠承担了许舟额外承诺的收尾。",
+    "active_memories": []
+  },
+  {
+    "id": "su>chen",
+    "observer": "su",
+    "target": "chen",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "su>ye",
+    "observer": "su",
+    "target": "ye",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "su>he",
+    "observer": "su",
+    "target": "he",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "su>mo",
+    "observer": "su",
+    "target": "mo",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "su>jiang",
+    "observer": "su",
+    "target": "jiang",
+    "grudge": 0,
+    "trust": 60,
+    "closeness": 45,
+    "grudge_categories": [],
+    "history": "认可兑现承诺的能力。",
+    "active_memories": []
+  },
+  {
+    "id": "su>leader",
+    "observer": "su",
+    "target": "leader",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "chen>lin",
+    "observer": "chen",
+    "target": "lin",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "chen>xu",
+    "observer": "chen",
+    "target": "xu",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "chen>su",
+    "observer": "chen",
+    "target": "su",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "chen>ye",
+    "observer": "chen",
+    "target": "ye",
+    "grudge": 8,
+    "trust": 55,
+    "closeness": 25,
+    "grudge_categories": [
+      "humiliation"
+    ],
+    "history": "内疚与防御并存，不能简单反向复制怨恨。",
+    "active_memories": []
+  },
+  {
+    "id": "chen>he",
+    "observer": "chen",
+    "target": "he",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "chen>mo",
+    "observer": "chen",
+    "target": "mo",
+    "grudge": 5,
+    "trust": 60,
+    "closeness": 30,
+    "grudge_categories": [
+      "fairness"
+    ],
+    "history": "认可技术，但担忧未经核实公开记录。",
+    "active_memories": []
+  },
+  {
+    "id": "chen>jiang",
+    "observer": "chen",
+    "target": "jiang",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "chen>leader",
+    "observer": "chen",
+    "target": "leader",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "ye>lin",
+    "observer": "ye",
+    "target": "lin",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "ye>xu",
+    "observer": "ye",
+    "target": "xu",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "ye>su",
+    "observer": "ye",
+    "target": "su",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "ye>chen",
+    "observer": "ye",
+    "target": "chen",
+    "grudge": 55,
+    "trust": 32,
+    "closeness": 5,
+    "grudge_categories": [
+      "promise",
+      "fairness"
+    ],
+    "history": "父亲的设备事故与陈砚的签字。",
+    "active_memories": []
+  },
+  {
+    "id": "ye>he",
+    "observer": "ye",
+    "target": "he",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "ye>mo",
+    "observer": "ye",
+    "target": "mo",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "ye>jiang",
+    "observer": "ye",
+    "target": "jiang",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "ye>leader",
+    "observer": "ye",
+    "target": "leader",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "he>lin",
+    "observer": "he",
+    "target": "lin",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "he>xu",
+    "observer": "he",
+    "target": "xu",
+    "grudge": 25,
+    "trust": 40,
+    "closeness": 30,
+    "grudge_categories": [
+      "promise"
+    ],
+    "history": "对冒险倾向不放心。",
+    "active_memories": []
+  },
+  {
+    "id": "he>su",
+    "observer": "he",
+    "target": "su",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "he>chen",
+    "observer": "he",
+    "target": "chen",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "he>ye",
+    "observer": "he",
+    "target": "ye",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "he>mo",
+    "observer": "he",
+    "target": "mo",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "he>jiang",
+    "observer": "he",
+    "target": "jiang",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "he>leader",
+    "observer": "he",
+    "target": "leader",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "mo>lin",
+    "observer": "mo",
+    "target": "lin",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "mo>xu",
+    "observer": "mo",
+    "target": "xu",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "mo>su",
+    "observer": "mo",
+    "target": "su",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "mo>chen",
+    "observer": "mo",
+    "target": "chen",
+    "grudge": 15,
+    "trust": 65,
+    "closeness": 25,
+    "grudge_categories": [
+      "promise"
+    ],
+    "history": "怀疑他仍选择用术语回避责任。",
+    "active_memories": []
+  },
+  {
+    "id": "mo>ye",
+    "observer": "mo",
+    "target": "ye",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "mo>he",
+    "observer": "mo",
+    "target": "he",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "mo>jiang",
+    "observer": "mo",
+    "target": "jiang",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "mo>leader",
+    "observer": "mo",
+    "target": "leader",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "jiang>lin",
+    "observer": "jiang",
+    "target": "lin",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "jiang>xu",
+    "observer": "jiang",
+    "target": "xu",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "jiang>su",
+    "observer": "jiang",
+    "target": "su",
+    "grudge": 0,
+    "trust": 65,
+    "closeness": 55,
+    "grudge_categories": [],
+    "history": "曾得到公平调度。",
+    "active_memories": []
+  },
+  {
+    "id": "jiang>chen",
+    "observer": "jiang",
+    "target": "chen",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "jiang>ye",
+    "observer": "jiang",
+    "target": "ye",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "jiang>he",
+    "observer": "jiang",
+    "target": "he",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "jiang>mo",
+    "observer": "jiang",
+    "target": "mo",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  },
+  {
+    "id": "jiang>leader",
+    "observer": "jiang",
+    "target": "leader",
+    "grudge": 0.0,
+    "trust": 50.0,
+    "closeness": 20.0,
+    "grudge_categories": [],
+    "history": "",
+    "active_memories": []
+  }
+]

@@ -1,0 +1,91 @@
+REPOSITORY_OK: 276 files; nesting, case, literal resources, renderer
+EVIDENCE_OK: 34 files
+DESIGN_VIEWS_OK: 33
+RULE CHECKS 1172
+HISTORICAL_GATES_EXCLUDED: 2 runtime byte-identity assertions; original hashes preserved
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+[   0% ] [90m[1mfirst_scan_filesystem[22m | Started 项目初始化 (5 steps)[39m[0m
+[   0% ] [90m[1mfirst_scan_filesystem[22m | 正在扫描文件结构……[39m[0m
+[  16% ] [90m[1mfirst_scan_filesystem[22m | 正在加载全局类名……[39m[0m
+[  33% ] [90m[1mfirst_scan_filesystem[22m | 正在校验 GDExtension……[39m[0m
+[  50% ] [90m[1mfirst_scan_filesystem[22m | 正在创建自动加载脚本……[39m[0m
+[  66% ] [90m[1mfirst_scan_filesystem[22m | 正在初始化插件……[39m[0m
+[  83% ] [90m[1mfirst_scan_filesystem[22m | 正在启动文件扫描……[39m[0m
+[92m[ DONE ][39m [1mfirst_scan_filesystem[22m
+[0m
+[   0% ] [90m[1mloading_editor_layout[22m | Started 正在加载编辑器 (5 steps)[39m[0m
+[   0% ] [90m[1mloading_editor_layout[22m | 正在加载编辑器布局……[39m[0m
+[  16% ] [90m[1mloading_editor_layout[22m | 正在加载停靠面板……[39m[0m
+[92m[ DONE ][39m [1mloading_editor_layout[22m
+[0m
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+TEST_RESULTS: 33 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CONTENT_TEST_RESULTS: failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_TEST_RESULTS: 166 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P1_SYSTEMS_RESULTS: 179 passed, 0 failed
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: P4 campaign UI
+UI_LOCALIZATION_RESULTS: checks=438 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+VISUAL_P1_RESULTS: checks=544 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CHAPTER_ONE_RESULTS: checks=132 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_PATH: M01 success actions=47
+P3_PATH: M02 success actions=35
+P3_PATH: M03 success actions=39
+P3_PATH: M04 success actions=34
+P3_PATH: M05 success actions=30
+P3_PATH: M06 success actions=44
+P3_PATH: M07 success actions=40
+P3_PATH: M08 success actions=33
+P3_PATH: M09 success actions=45
+P3_PATH: M10 success actions=30
+P3_PATH: M11 success actions=32
+P3_PATH: M12 success actions=31
+P3_PATH: M13 success actions=36
+P3_PATH: M14 success actions=29
+P3_PATH: M15 success actions=32
+P3_PATH: M16 success actions=39
+P3_PATH: M17 success actions=37
+P3_PATH: M18 success actions=27
+P3_PATH: M19 success actions=35
+P3_PATH: M20 success actions=26
+P3_PATH: M21 success actions=30
+P3_PATH: M22 success actions=27
+P3_PATH: M23 success actions=48
+P3_PATH: M24 success actions=48
+P3_PATH: S01 success actions=25
+P3_PATH: S02 success actions=32
+P3_PATH: S03 success actions=40
+P3_PATH: S04 success actions=29
+P3_PATH: S05 success actions=39
+P3_PATH: S06 success actions=37
+P3_PATH: S07 success actions=31
+P3_PATH: S08 success actions=31
+P3_PATH: S09 success actions=25
+P3_PATH: S10 success actions=24
+P3_PATH: S11 success actions=24
+P3_PATH: S12 success actions=30
+P3_PATH_RESULTS: missions=36 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_RULES_RESULTS: checks=1789 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_SPECIALTIES_RESULTS: checks=67 failures=0
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+P3_STORY_PROOFS_RESULTS: checks=56 failures=0

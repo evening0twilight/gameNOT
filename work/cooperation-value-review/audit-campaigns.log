@@ -1,0 +1,12 @@
+fixed_ordinary 678 {'credits': 814, 'supplies': 93, 'parts': 63} 0
+fixed_cultivate 684 {'credits': 814, 'supplies': 91, 'parts': 63} 0
+fixed_trained_no_actions 684 {'credits': 814, 'supplies': 91, 'parts': 63} 0
+rotate_ordinary 750 {'credits': 814, 'supplies': 69, 'parts': 63} 0
+rotate_cultivate 750 {'credits': 814, 'supplies': 69, 'parts': 63} 0
+rotate_trained_no_actions 750 {'credits': 814, 'supplies': 69, 'parts': 63} 0
+hard_ordinary 750 {'credits': 814, 'supplies': 68, 'parts': 63} 0
+hard_cultivate 750 {'credits': 814, 'supplies': 68, 'parts': 63} 0
+hard_trained_no_actions 750 {'credits': 814, 'supplies': 68, 'parts': 63} 0
+setbacks_ordinary 601 {'credits': 554, 'supplies': 22, 'parts': 43} 0
+setbacks_cultivate 601 {'credits': 554, 'supplies': 22, 'parts': 43} 0
+setbacks_trained_no_actions 601 {'credits': 554, 'supplies': 22, 'parts': 43} 0

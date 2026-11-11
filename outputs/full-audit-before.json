@@ -1,0 +1,23 @@
+[
+  {
+    "id": "winch_deleted",
+    "observed": [],
+    "expected": [
+      [
+        2,
+        3
+      ]
+    ],
+    "bug": true
+  },
+  {
+    "id": "cannot_heal_above10",
+    "hp": 10,
+    "maxHP": 12,
+    "bug": true
+  },
+  {
+    "id": "heals_departed_actor",
+    "bug": true
+  }
+]

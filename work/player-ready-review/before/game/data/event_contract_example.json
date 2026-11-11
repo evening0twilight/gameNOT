@@ -1,0 +1,18 @@
+{
+  "id": "EV_PROMISE_RESCUE_01",
+  "content_version": "0.2",
+  "status": "contract_example_not_playable_content",
+  "category": "promise",
+  "required_roles": ["lin", "xu"],
+  "absent_role_fallback": "do_not_schedule_specific_pair_event; retain generic mission alternatives",
+  "preconditions": ["both_present", "active_retreat_agreement", "optional_supplies_found", "before_action_commit"],
+  "information": {"world_truth": "taking supplies requires breaking agreed retreat timing", "known_by": ["leader", "lin", "xu"]},
+  "choices": [
+    {"id": "keep_agreement", "label": "按约定撤离", "effect_types": ["forgo_optional_supplies", "record_meaningful_kept_promise"], "receipt_scope": "mission_once"},
+    {"id": "renegotiate", "label": "先重新确认保障条件", "effect_types": ["spend_available_preparation_or_action", "request_agreement"], "on_rejection": "return_to_choice_without_consuming_uncommitted_cost"},
+    {"id": "override", "label": "批准延长行动", "preview": "违背已知约定；具体风险与责任在确认前显示", "effect_types": ["enable_optional_objective", "apply_attributed_memory", "reduce_reliability_trust"], "responsibility": {"leader": 0.5, "xu": 0.5}}
+  ],
+  "conflict_forms": ["require_independent_protection", "request_alternative_partner", "choose_independent_route"],
+  "forbidden_effects": ["random_friendly_fire", "unannounced_permanent_departure", "delete_shared_equipment"],
+  "follow_up_contract": "acknowledge_specific_harm -> validated_restitution -> future_reliability_opportunity"
+}

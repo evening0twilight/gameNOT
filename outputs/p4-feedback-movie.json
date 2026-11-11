@@ -1,0 +1,93 @@
+{
+  "actions": [
+    {
+      "duration": 0.78,
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "revision": 1
+    },
+    {
+      "duration": 0.78,
+      "kind": "move",
+      "payload": {
+        "cell": [
+          3,
+          3
+        ]
+      },
+      "revision": 2
+    },
+    {
+      "duration": 0.85,
+      "kind": "attack",
+      "payload": {
+        "target": "M01_enemy1"
+      },
+      "revision": 1
+    },
+    {
+      "duration": 0.85,
+      "kind": "push",
+      "payload": {
+        "target": "M01_enemy1"
+      },
+      "revision": 2
+    },
+    {
+      "duration": 0.85,
+      "kind": "stabilize",
+      "payload": {
+        "target": "r1"
+      },
+      "revision": 1
+    },
+    {
+      "duration": 0.85,
+      "kind": "pickup",
+      "payload": {
+        "target": "r1"
+      },
+      "revision": 2
+    },
+    {
+      "duration": 0.56,
+      "kind": "move",
+      "payload": {
+        "cell": [
+          1,
+          4
+        ]
+      },
+      "revision": 3
+    },
+    {
+      "duration": 0.85,
+      "kind": "extract",
+      "payload": {},
+      "revision": 4
+    },
+    {
+      "duration": 0.85,
+      "kind": "interact",
+      "payload": {
+        "target": "map"
+      },
+      "revision": 1
+    },
+    {
+      "duration": 1.42,
+      "kind": "end_round",
+      "payload": {},
+      "revision": 1
+    }
+  ],
+  "human_acceptance": false,
+  "kind": "engine runtime capture of isolated legal-action fixtures",
+  "primary": 0,
+  "screen": 1
+}

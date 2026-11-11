@@ -1,0 +1,4695 @@
+{
+  "version": "0.18",
+  "passed": 1172,
+  "inherited": 1172,
+  "checks": [
+    {
+      "group": "active_actions",
+      "name": "lin_1 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "lin_3 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "xu_1 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "xu_3 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "su_1 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "su_3 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "chen_1 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "chen_3 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "ye_1 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "ye_3 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "he_1 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "he_3 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "mo_1 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "mo_3 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "jiang_1 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "jiang_3 has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "crowbar has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "medkit has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "winch has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "shield has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "insulation has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "scanner has executable owned/earned action"
+    },
+    {
+      "group": "active_actions",
+      "name": "stretcher has executable owned/earned action"
+    },
+    {
+      "group": "equipment",
+      "name": "Deployed winch persists"
+    },
+    {
+      "group": "equipment",
+      "name": "L3 uses real anchor without deleting it"
+    },
+    {
+      "group": "medical",
+      "name": "L1 healing uses current max HP"
+    },
+    {
+      "group": "medical",
+      "name": "L1 full HP rejects without stock/AP loss"
+    },
+    {
+      "group": "medical",
+      "name": "L4 healing uses current max HP"
+    },
+    {
+      "group": "medical",
+      "name": "L4 full HP rejects without stock/AP loss"
+    },
+    {
+      "group": "medical",
+      "name": "L5 healing uses current max HP"
+    },
+    {
+      "group": "medical",
+      "name": "L5 full HP rejects without stock/AP loss"
+    },
+    {
+      "group": "medical",
+      "name": "L6 healing uses current max HP"
+    },
+    {
+      "group": "medical",
+      "name": "L6 full HP rejects without stock/AP loss"
+    },
+    {
+      "group": "medical",
+      "name": "medkit cannot treat left"
+    },
+    {
+      "group": "medical",
+      "name": "medkit cannot treat down"
+    },
+    {
+      "group": "medical",
+      "name": "jiang_3 cannot treat left"
+    },
+    {
+      "group": "medical",
+      "name": "jiang_3 cannot treat down"
+    },
+    {
+      "group": "medical",
+      "name": "Capacity2 limits both actual doses and kit uses"
+    },
+    {
+      "group": "medical",
+      "name": "Capacity3 limits both actual doses and kit uses"
+    },
+    {
+      "group": "equipment",
+      "name": "Two tools cannot silently occupy same actor slot"
+    },
+    {
+      "group": "command",
+      "name": "Direct AP-transfer command checks actual relationship"
+    },
+    {
+      "group": "command",
+      "name": "Explicit named agreement restores legal action"
+    },
+    {
+      "group": "command",
+      "name": "Malformed actor/target rejected (-1, 1)"
+    },
+    {
+      "group": "command",
+      "name": "Malformed actor/target rejected (True, 1)"
+    },
+    {
+      "group": "command",
+      "name": "Malformed actor/target rejected (0, -1)"
+    },
+    {
+      "group": "command",
+      "name": "Malformed actor/target rejected (0, True)"
+    },
+    {
+      "group": "command",
+      "name": "Rejected personal rope leaves no temporary anchor"
+    },
+    {
+      "group": "relationships",
+      "name": "Unrelated third-party breach does not erase this pair history"
+    },
+    {
+      "group": "relationships",
+      "name": "Relevant breach still invalidates that mission"
+    },
+    {
+      "group": "relationships",
+      "name": "Renegotiation costs one short scene, no memory/usage reset"
+    },
+    {
+      "group": "relationships",
+      "name": "Same-day toggling cannot reset pact"
+    },
+    {
+      "group": "relationships",
+      "name": "Re-agreement preserves already-used chapter teaching"
+    },
+    {
+      "group": "relationships",
+      "name": "Repeating identical choice consumes nothing"
+    },
+    {
+      "group": "relationships",
+      "name": "No nonexistent day24 camp negotiation"
+    },
+    {
+      "group": "dispatch",
+      "name": "Selecting then cancelling draft is free and restores default"
+    },
+    {
+      "group": "dispatch",
+      "name": "Changing to party without agreed partner invalidates draft"
+    },
+    {
+      "group": "dispatch",
+      "name": "Unusable field member invalidates plan before payment"
+    },
+    {
+      "group": "economy",
+      "name": "Two workshop tiers and3 doses pay real budget"
+    },
+    {
+      "group": "economy",
+      "name": "Failure returns only one unused dose"
+    },
+    {
+      "group": "economy",
+      "name": "Duplicate settlement cannot return stock or pay again"
+    },
+    {
+      "group": "endings",
+      "name": "Foreign final route results rejected atomically"
+    },
+    {
+      "group": "endings",
+      "name": "Final mission failure reaches evacuation coda"
+    },
+    {
+      "group": "endings",
+      "name": "All8 protagonists unavailable still reach24main coda through real reserve slots"
+    },
+    {
+      "group": "persistence",
+      "name": "IdentityBattle all current fields survive typed JSON"
+    },
+    {
+      "group": "persistence",
+      "name": "AP receiver token and task charges survive reload"
+    },
+    {
+      "group": "persistence",
+      "name": "IdentityBattle all current fields survive typed JSON"
+    },
+    {
+      "group": "persistence",
+      "name": "Deployed equipment survives reload"
+    },
+    {
+      "group": "persistence",
+      "name": "RelationshipLedger all current fields survive typed JSON"
+    },
+    {
+      "group": "persistence",
+      "name": "Mentoring and committed dispatch choice survive reload"
+    },
+    {
+      "group": "persistence",
+      "name": "Social all current fields survive typed JSON"
+    },
+    {
+      "group": "persistence",
+      "name": "Social memory and dedup preserve same current result"
+    },
+    {
+      "group": "persistence",
+      "name": "Guidance all current fields survive typed JSON"
+    },
+    {
+      "group": "persistence",
+      "name": "Seen tutorial does not replay after reload"
+    },
+    {
+      "group": "persistence",
+      "name": "RelationshipLedger all current fields survive typed JSON"
+    },
+    {
+      "group": "persistence",
+      "name": "Social all current fields survive typed JSON"
+    },
+    {
+      "group": "persistence",
+      "name": "Social canonical state rebuilds ledger projection without reward"
+    },
+    {
+      "group": "boards",
+      "name": "M01 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M01 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M01 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M02 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M02 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M02 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M03 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M03 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M03 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M04 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M04 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M04 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M05 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M05 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M05 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M06 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M06 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M06 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M07 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M07 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M07 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M08 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M08 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M08 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M09 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M09 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M09 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M10 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M10 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M10 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M11 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M11 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M11 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M12 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M12 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M12 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M13 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M13 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M13 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M14 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M14 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M14 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M15 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M15 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M15 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M16 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M16 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M16 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M17 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M17 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M17 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M18 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M18 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M18 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M19 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M19 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M19 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M20 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M20 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M20 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M21 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M21 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M21 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M22 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M22 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M22 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M23 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M23 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M23 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "M24 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "M24 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "M24 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S01 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S01 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S01 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S02 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S02 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S02 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S03 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S03 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S03 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S04 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S04 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S04 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S05 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S05 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S05 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S06 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S06 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S06 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S07 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S07 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S07 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S08 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S08 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S08 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S09 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S09 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S09 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S10 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S10 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S10 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S11 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S11 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S11 endpoints and deadlines valid"
+    },
+    {
+      "group": "boards",
+      "name": "S12 unique IDs and8x8 cells"
+    },
+    {
+      "group": "boards",
+      "name": "S12 dependency DAG and all branch groups valid"
+    },
+    {
+      "group": "boards",
+      "name": "S12 endpoints and deadlines valid"
+    },
+    {
+      "group": "stories",
+      "name": "96 registered narrative nodes"
+    },
+    {
+      "group": "stories",
+      "name": "lin has three ordered prefinal nodes"
+    },
+    {
+      "group": "stories",
+      "name": "xu has three ordered prefinal nodes"
+    },
+    {
+      "group": "stories",
+      "name": "su has three ordered prefinal nodes"
+    },
+    {
+      "group": "stories",
+      "name": "chen has three ordered prefinal nodes"
+    },
+    {
+      "group": "stories",
+      "name": "ye has three ordered prefinal nodes"
+    },
+    {
+      "group": "stories",
+      "name": "he has three ordered prefinal nodes"
+    },
+    {
+      "group": "stories",
+      "name": "mo has three ordered prefinal nodes"
+    },
+    {
+      "group": "stories",
+      "name": "jiang has three ordered prefinal nodes"
+    },
+    {
+      "group": "scope",
+      "name": "16 current skills and7 current tools are all exercised"
+    },
+    {
+      "group": "balance",
+      "name": "Second AP transfer rejected across rounds without spending"
+    },
+    {
+      "group": "persistence",
+      "name": "IdentityBattle all current fields survive typed JSON"
+    },
+    {
+      "group": "balance",
+      "name": "Per-mission transfer cap persists"
+    },
+    {
+      "group": "balance",
+      "name": "Second total coordination use remains movement option"
+    },
+    {
+      "group": "balance",
+      "name": "Chen protects device from2cells"
+    },
+    {
+      "group": "balance",
+      "name": "Mo works known control from5cells for2work"
+    },
+    {
+      "group": "balance",
+      "name": "Longer range never opens normal objective remotely"
+    },
+    {
+      "group": "role",
+      "name": "Lin stabilization at3cells before pickup"
+    },
+    {
+      "group": "role",
+      "name": "Xu carries acrossoneblockedcell without common anchor"
+    },
+    {
+      "group": "role",
+      "name": "Ye separates danger from retained machine state"
+    },
+    {
+      "group": "role",
+      "name": "He carries3 without buying/using support slot"
+    },
+    {
+      "group": "role",
+      "name": "Jiang transfersover2drycells preserving receiverAP"
+    },
+    {
+      "group": "role",
+      "name": "Jiang can heal whilecarrying, payingactualmedicine"
+    },
+    {
+      "group": "balance",
+      "name": "JiangL1range1 legal"
+    },
+    {
+      "group": "balance",
+      "name": "JiangL3range2 legal"
+    },
+    {
+      "group": "balance",
+      "name": "JiangL5range3 legal"
+    },
+    {
+      "group": "balance",
+      "name": "Jiang extendedhandoff rejects water"
+    },
+    {
+      "group": "balance",
+      "name": "Jiang extendedhandoff rejects ally"
+    },
+    {
+      "group": "tradeoff",
+      "name": "S02 medicalcache exceedscashconversion whilebookfund remainsflexible"
+    },
+    {
+      "group": "economy",
+      "name": "M02.spare reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "M02.spare secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "M02.spare no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "M02.spare completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "M02.spare no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "M03.parts reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "M03.parts secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "M03.parts no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "M03.parts completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "M03.parts no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "M05.module reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "M05.module secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "M05.module no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "M05.module completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "M05.module no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "M08.alt reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "M08.alt secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "M08.alt no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "M08.alt completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "M08.alt no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "M09.med reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "M09.med secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "M09.med no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "M09.med completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "M09.med no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "M14.meds reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "M14.meds secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "M14.meds no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "M14.meds completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "M14.meds no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "M16.goods reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "M16.goods secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "M16.goods no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "M16.goods completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "M16.goods no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "M19.device reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "M19.device secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "M19.device no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "M19.device completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "M19.device no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "M23.rebuild reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "M23.rebuild secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "M23.rebuild no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "M23.rebuild completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "M23.rebuild no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S01.tickets reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S01.tickets secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S01.tickets no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S01.tickets completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S01.tickets no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S02.med reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S02.med secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S02.med no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S02.med completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S02.med no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S02.books reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S02.books secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S02.books no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S02.books completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S02.books no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S04.seed reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S04.seed secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S04.seed no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S04.seed completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S04.seed no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S04.rack reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S04.rack secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S04.rack no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S04.rack completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S04.rack no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S05.cloth reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S05.cloth secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S05.cloth no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S05.cloth completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S05.cloth no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S06.meal reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S06.meal secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S06.meal no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S06.meal completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S06.meal no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S08.luggage reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S08.luggage secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S08.luggage no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S08.luggage completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S08.luggage no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S08.tools reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S08.tools secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S08.tools no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S08.tools completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S08.tools no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S09.books reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S09.books secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S09.books no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S09.books completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S09.books no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S10.chart reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S10.chart secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S10.chart no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S10.chart completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S10.chart no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S11.cold reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S11.cold secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S11.cold no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S11.cold completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S11.cold no second settlement False"
+    },
+    {
+      "group": "economy",
+      "name": "S12.box reward references actual objective"
+    },
+    {
+      "group": "economy",
+      "name": "S12.box secured paysonce"
+    },
+    {
+      "group": "economy",
+      "name": "S12.box no second settlement True"
+    },
+    {
+      "group": "economy",
+      "name": "S12.box completedbutlost givesnothing"
+    },
+    {
+      "group": "economy",
+      "name": "S12.box no second settlement False"
+    },
+    {
+      "group": "fallback",
+      "name": "D1 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D2 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D3 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D4 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D5 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D6 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D7 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D8 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D9 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D10 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D11 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D12 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D13 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D14 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D15 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D16 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D17 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D18 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D19 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D20 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D21 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D22 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D23 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "D24 zeroavailableheroes still legal withnonnegative budget"
+    },
+    {
+      "group": "fallback",
+      "name": "24failed duties still reach evacuation;6credit floor notremoved"
+    },
+    {
+      "group": "tradeoff",
+      "name": "Evenallcashcaches cannotbuyallfacilitiesplusalltools"
+    },
+    {
+      "group": "tradeoff",
+      "name": "47parts maximumforcesfacilityselection evenwithouttoolpurchases"
+    },
+    {
+      "group": "tradeoff",
+      "name": "Buy35credit facility excludes20credit winch now"
+    },
+    {
+      "group": "tradeoff",
+      "name": "Buy20credit winch excludes35credit facility now"
+    },
+    {
+      "group": "scripts",
+      "name": "personal_nodes exact authored ID coverage"
+    },
+    {
+      "group": "scripts",
+      "name": "P_lin_1 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_lin_1 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_lin_2 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_lin_2 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_lin_3 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_lin_3 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_xu_1 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_xu_1 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_xu_2 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_xu_2 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_xu_3 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_xu_3 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_su_1 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_su_1 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_su_2 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_su_2 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_su_3 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_su_3 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_chen_1 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_chen_1 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_chen_2 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_chen_2 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_chen_3 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_chen_3 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_ye_1 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_ye_1 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_ye_2 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_ye_2 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_ye_3 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_ye_3 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_he_1 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_he_1 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_he_2 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_he_2 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_he_3 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_he_3 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_mo_1 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_mo_1 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_mo_2 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_mo_2 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_mo_3 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_mo_3 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_jiang_1 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_jiang_1 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_jiang_2 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_jiang_2 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "P_jiang_3 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "P_jiang_3 absent/unmet/laterbreach/unread text exists"
+    },
+    {
+      "group": "scripts",
+      "name": "relationship_nodes exact authored ID coverage"
+    },
+    {
+      "group": "scripts",
+      "name": "R01 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R02 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R03 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R04 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R05 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R06 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R07 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R08 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R09 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R10 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R11 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "R12 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "community_nodes exact authored ID coverage"
+    },
+    {
+      "group": "scripts",
+      "name": "C01 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C02 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C03 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C04 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C05 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C06 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C07 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C08 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C09 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C10 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C11 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C12 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C13 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C14 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C15 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C16 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C17 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C18 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C19 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C20 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C21 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C22 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C23 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "C24 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "recovery_nodes exact authored ID coverage"
+    },
+    {
+      "group": "scripts",
+      "name": "L01 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L02 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L03 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L04 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L05 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L06 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L07 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L08 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L09 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L10 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L11 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L12 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L13 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L14 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L15 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L16 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L17 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "L18 every choice has written response"
+    },
+    {
+      "group": "scripts",
+      "name": "chapter_nodes exact authored ID coverage"
+    },
+    {
+      "group": "scripts",
+      "name": "K01 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K02 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K03 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K04 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K05 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K06 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K07 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K08 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K09 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K10 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K11 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K12 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K13 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K14 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K15 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K16 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K17 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "K18 only secured facts count"
+    },
+    {
+      "group": "scripts",
+      "name": "96 full nodes with distinct IDs"
+    },
+    {
+      "group": "scripts",
+      "name": "M17 active isolation has its own successful story branch"
+    },
+    {
+      "group": "scripts",
+      "name": "No obsolete learning-cooperation promise inR06"
+    },
+    {
+      "group": "narrative",
+      "name": "P_lin_1/private actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_lin_1/share actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_lin_2/rotation actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_lin_2/independent actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_xu_1/record actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_xu_1/testimony actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_xu_2/bounded actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_xu_2/solo actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_su_1/list actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_su_1/listen actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_su_2/rota actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_su_2/specialist actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_chen_1/copy actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_chen_1/explain actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_chen_2/fund actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_chen_2 exactpayment"
+    },
+    {
+      "group": "narrative",
+      "name": "P_chen_2/duty actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_ye_1/retain actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_ye_1/compare actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_ye_2/audit actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_ye_2/boundary actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_he_1/name actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_he_1/route actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_he_2/delegate actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_he_2/discipline actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_mo_1/classify actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_mo_1/verify actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_mo_2/redact actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "Mo redact doesnotinstantlypublish"
+    },
+    {
+      "group": "narrative",
+      "name": "P_mo_2/independent actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "Mo independent doesnotinstantlypublish"
+    },
+    {
+      "group": "narrative",
+      "name": "P_jiang_1/wages actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_jiang_1/family actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_jiang_2/settle actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "P_jiang_2 exactpayment"
+    },
+    {
+      "group": "narrative",
+      "name": "P_jiang_2/negotiate actualchoicepersisted"
+    },
+    {
+      "group": "narrative",
+      "name": "Mo cannotdoa secondpersonalproject the sameevening"
+    },
+    {
+      "group": "narrative",
+      "name": "Actual publication consumes oneproject and verifiesplan"
+    },
+    {
+      "group": "narrative",
+      "name": "ActualpublicationfulfillsMoobligation"
+    },
+    {
+      "group": "narrative",
+      "name": "Duplicatepublicationdoesnotfarm receipts"
+    },
+    {
+      "group": "narrative",
+      "name": "No publicationof unknown evidence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/integrated/False/healthy rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/integrated/False/injured rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/integrated/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/integrated/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/integrated/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/integrated/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/professional/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/professional/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/professional/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/professional/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/professional/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/professional/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/new_life/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/new_life/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/new_life/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/new_life/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/new_life/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_lin_3/new_life/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/integrated/False/healthy rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/integrated/False/injured rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/integrated/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/integrated/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/integrated/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/integrated/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/professional/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/professional/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/professional/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/professional/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/professional/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/professional/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/new_life/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/new_life/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/new_life/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/new_life/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/new_life/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_xu_3/new_life/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/integrated/False/healthy rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/integrated/False/injured rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/integrated/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/integrated/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/integrated/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/integrated/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/professional/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/professional/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/professional/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/professional/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/professional/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/professional/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/new_life/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/new_life/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/new_life/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/new_life/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/new_life/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_su_3/new_life/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/integrated/False/healthy rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/integrated/False/injured rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/integrated/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/integrated/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/integrated/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/integrated/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/professional/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/professional/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/professional/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/professional/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/professional/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/professional/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/new_life/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/new_life/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/new_life/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/new_life/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/new_life/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_chen_3/new_life/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/integrated/False/healthy rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/integrated/False/injured rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/integrated/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/integrated/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/integrated/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/integrated/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/professional/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/professional/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/professional/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/professional/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/professional/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/professional/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/new_life/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/new_life/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/new_life/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/new_life/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/new_life/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_ye_3/new_life/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/integrated/False/healthy rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/integrated/False/injured rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/integrated/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/integrated/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/integrated/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/integrated/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/professional/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/professional/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/professional/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/professional/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/professional/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/professional/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/new_life/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/new_life/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/new_life/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/new_life/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/new_life/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_he_3/new_life/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/integrated/False/healthy rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/integrated/False/injured rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/integrated/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/integrated/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/integrated/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/integrated/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/professional/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/professional/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/professional/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/professional/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/professional/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/professional/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/new_life/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/new_life/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/new_life/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/new_life/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/new_life/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_mo_3/new_life/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/integrated/False/healthy rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/integrated/False/injured rejectsunsupportedwarmending"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/integrated/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/integrated/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/integrated/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/integrated/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/professional/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/professional/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/professional/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/professional/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/professional/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/professional/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/new_life/False/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/new_life/False/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/new_life/False/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/new_life/True/healthy respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/new_life/True/injured respectschoiceorpresence"
+    },
+    {
+      "group": "ending",
+      "name": "P_jiang_3/new_life/True/withdrawn respectschoiceorpresence"
+    },
+    {
+      "group": "narrative",
+      "name": "P_lin_1 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_lin_2 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_lin_3 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_xu_1 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_xu_2 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_xu_3 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_su_1 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_su_2 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_su_3 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_chen_1 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_chen_2 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_chen_3 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_ye_1 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_ye_2 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_ye_3 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_he_1 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_he_2 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_he_3 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_mo_1 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_mo_2 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_mo_3 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_jiang_1 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_jiang_2 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "narrative",
+      "name": "P_jiang_3 allpresence/proof/knowledge/responsibility combinations"
+    },
+    {
+      "group": "dependency",
+      "name": "Lostunfinishedparent makesdependentunavailable"
+    },
+    {
+      "group": "dependency",
+      "name": "No repeated notification for sameblockedchain"
+    },
+    {
+      "group": "dependency",
+      "name": "Completedmilestoneisnotretroactivelyerased"
+    },
+    {
+      "group": "dependency",
+      "name": "ExactM12failedroute canretreatbeforelimitwithoutfakevictory"
+    },
+    {
+      "group": "contribution",
+      "name": "Carriedrope supplies realtransportcredit"
+    },
+    {
+      "group": "contribution",
+      "name": "Outandbackrope cannotfarmtransportcredit"
+    },
+    {
+      "group": "contribution",
+      "name": "Extendedhandoffprogresscreditedtoactualmover"
+    },
+    {
+      "group": "economy",
+      "name": "Unusedpurchase refundexactpaid False"
+    },
+    {
+      "group": "economy",
+      "name": "No repeatrefund False"
+    },
+    {
+      "group": "economy",
+      "name": "Departureclosesrefundwindow False"
+    },
+    {
+      "group": "economy",
+      "name": "Unusedpurchase refundexactpaid True"
+    },
+    {
+      "group": "economy",
+      "name": "No repeatrefund True"
+    },
+    {
+      "group": "economy",
+      "name": "Departureclosesrefundwindow True"
+    },
+    {
+      "group": "economy",
+      "name": "Startertoolcannotgeneratecash"
+    },
+    {
+      "group": "growth",
+      "name": "L5He5HPshield absorbssecondknown3damagebeam"
+    },
+    {
+      "group": "growth",
+      "name": "L5Yeisolatesstraight2awaywithoutsteppingintoedge"
+    },
+    {
+      "group": "growth",
+      "name": "Extendedisolationcannotreachthrough wall"
+    },
+    {
+      "group": "growth",
+      "name": "Extendedisolationcannotreachthrough ally"
+    },
+    {
+      "group": "growth",
+      "name": "L3Yestillneedsadjacency"
+    },
+    {
+      "group": "economy",
+      "name": "Retiredcuttercannotbepurchased"
+    },
+    {
+      "group": "economy",
+      "name": "Retiredbatterycannotbecrafted"
+    },
+    {
+      "group": "economy",
+      "name": "Legacybatterycannotbepacked"
+    },
+    {
+      "group": "guidance",
+      "name": "ExpiredisolationexampledoesnotconsumeextraAP complete"
+    },
+    {
+      "group": "guidance",
+      "name": "ExpiredisolationexampledoesnotconsumeextraAP failed"
+    },
+    {
+      "group": "guidance",
+      "name": "ExpiredisolationexampledoesnotconsumeextraAP expired"
+    },
+    {
+      "group": "natural",
+      "name": "main_xp_each_deployed unchanged"
+    },
+    {
+      "group": "natural",
+      "name": "side_xp_each_deployed unchanged"
+    },
+    {
+      "group": "natural",
+      "name": "support_xp unchanged"
+    },
+    {
+      "group": "natural",
+      "name": "chapter_recruit_xp_floor unchanged"
+    },
+    {
+      "group": "natural",
+      "name": "Allnontrainingprogressionfieldsunchanged"
+    },
+    {
+      "group": "natural",
+      "name": "Naturalrestunchanged"
+    },
+    {
+      "group": "stages",
+      "name": "lin D1 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D1 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D1 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D2 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D2 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D2 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D3 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D3 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D3 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D4 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D4 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D4 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D5 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D5 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D5 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D6 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D6 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D6 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D7 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D7 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D7 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D8 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D8 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D8 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D9 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D9 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D9 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D10 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D10 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D10 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D11 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D11 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D11 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D12 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D12 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D12 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D13 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D13 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D13 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D14 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D14 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D14 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D15 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D15 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D15 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D16 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D16 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D16 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D17 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D17 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D17 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D18 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D18 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D18 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D19 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D19 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D19 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D20 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D20 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D20 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D21 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D21 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D21 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D22 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D22 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D22 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "lin D23 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "lin D23 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "lin D23 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D1 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D1 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D1 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D2 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D2 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D2 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D3 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D3 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D3 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D4 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D4 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D4 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D5 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D5 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D5 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D6 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D6 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D6 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D7 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D7 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D7 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D8 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D8 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D8 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D9 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D9 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D9 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D10 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D10 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D10 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D11 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D11 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D11 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D12 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D12 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D12 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D13 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D13 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D13 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D14 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D14 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D14 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D15 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D15 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D15 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D16 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D16 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D16 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D17 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D17 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D17 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D18 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D18 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D18 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D19 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D19 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D19 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D20 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D20 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D20 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D21 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D21 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D21 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D22 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D22 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D22 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "xu D23 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "xu D23 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "xu D23 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D1 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D1 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D1 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D2 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D2 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D2 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D3 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D3 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D3 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D4 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D4 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D4 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D5 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D5 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D5 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D6 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D6 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D6 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D7 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D7 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D7 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D8 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D8 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D8 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D9 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D9 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D9 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D10 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D10 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D10 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D11 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D11 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D11 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D12 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D12 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D12 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D13 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D13 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D13 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D14 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D14 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D14 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D15 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D15 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D15 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D16 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D16 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D16 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D17 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D17 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D17 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D18 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D18 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D18 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D19 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D19 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D19 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D20 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D20 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D20 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D21 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D21 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D21 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D22 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D22 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D22 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "su D23 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "su D23 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "su D23 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D4 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D4 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D4 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D5 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D5 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D5 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D6 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D6 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D6 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D7 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D7 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D7 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D8 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D8 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D8 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D9 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D9 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D9 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D10 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D10 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D10 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D11 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D11 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D11 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D12 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D12 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D12 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D13 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D13 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D13 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D14 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D14 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D14 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D15 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D15 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D15 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D16 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D16 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D16 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D17 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D17 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D17 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D18 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D18 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D18 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D19 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D19 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D19 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D20 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D20 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D20 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D21 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D21 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D21 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D22 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D22 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D22 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "chen D23 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "chen D23 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "chen D23 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D7 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D7 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D7 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D8 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D8 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D8 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D9 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D9 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D9 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D10 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D10 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D10 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D11 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D11 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D11 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D12 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D12 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D12 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D13 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D13 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D13 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D14 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D14 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D14 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D15 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D15 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D15 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D16 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D16 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D16 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D17 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D17 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D17 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D18 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D18 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D18 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D19 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D19 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D19 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D20 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D20 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D20 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D21 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D21 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D21 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D22 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D22 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D22 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "ye D23 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "ye D23 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "ye D23 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D10 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D10 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D10 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D11 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D11 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D11 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D12 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D12 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D12 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D13 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D13 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D13 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D14 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D14 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D14 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D15 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D15 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D15 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D16 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D16 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D16 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D17 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D17 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D17 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D18 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D18 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D18 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D19 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D19 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D19 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D20 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D20 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D20 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D21 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D21 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D21 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D22 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D22 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D22 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "he D23 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "he D23 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "he D23 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D13 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D13 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D13 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D14 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D14 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D14 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D15 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D15 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D15 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D16 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D16 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D16 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D17 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D17 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D17 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D18 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D18 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D18 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D19 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D19 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D19 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D20 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D20 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D20 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D21 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D21 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D21 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D22 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D22 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D22 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "mo D23 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "mo D23 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "mo D23 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D16 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D16 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D16 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D17 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D17 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D17 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D18 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D18 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D18 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D19 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D19 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D19 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D20 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D20 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D20 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D21 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D21 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D21 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D22 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D22 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D22 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D23 recruitedstagesonly"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D23 exactpaymentgain"
+    },
+    {
+      "group": "stages",
+      "name": "jiang D23 norepeatedsameevening"
+    },
+    {
+      "group": "stages",
+      "name": "Unusedearliercoursescarryacrosschapters"
+    },
+    {
+      "group": "persistence",
+      "name": "RelationshipLedger all current fields survive typed JSON"
+    },
+    {
+      "group": "stages",
+      "name": "Savepreservescompletedstages"
+    },
+    {
+      "group": "stages",
+      "name": "Newchapterunlocksoneadditionalstage"
+    },
+    {
+      "group": "stages",
+      "name": "NoXPfarmwithinusedchapter"
+    },
+    {
+      "group": "atomic",
+      "name": "Rejectedtraining resources"
+    },
+    {
+      "group": "atomic",
+      "name": "Rejectedtraining project"
+    },
+    {
+      "group": "atomic",
+      "name": "Rejectedtraining injured"
+    },
+    {
+      "group": "atomic",
+      "name": "Rejectedtraining withdrawn"
+    },
+    {
+      "group": "atomic",
+      "name": "Rejectedtraining unjoined"
+    },
+    {
+      "group": "atomic",
+      "name": "Rejectedtraining maxxp"
+    },
+    {
+      "group": "atomic",
+      "name": "Rejectedtraining day24"
+    },
+    {
+      "group": "atomic",
+      "name": "Rejectedtraining notcamp"
+    },
+    {
+      "group": "atomic",
+      "name": "Rejectedtraining fatigue"
+    },
+    {
+      "group": "cap",
+      "name": "Nearcapgains3not12"
+    },
+    {
+      "group": "cost",
+      "name": "Twoparticipantsoneprojecttwosupplies"
+    },
+    {
+      "group": "atomic",
+      "name": "Duplicatedparticipantrejected"
+    },
+    {
+      "group": "fatigue",
+      "name": "TrainingcanunlockL5yetblocknextduty"
+    },
+    {
+      "group": "fatigue",
+      "name": "Foregonerestmeans18fatiguedifference"
+    },
+    {
+      "group": "mentor",
+      "name": "24XPrealcostandsharedlearnerstage"
+    },
+    {
+      "group": "mentor",
+      "name": "Existingchapterteachingcapretained"
+    },
+    {
+      "group": "mentor",
+      "name": "Cannotovertakementor"
+    },
+    {
+      "group": "mentor",
+      "name": "Noexpensiveofferwhenordinary12isequal"
+    },
+    {
+      "group": "mentor",
+      "name": "Cannotbypassspentstageswithdifferenttrainingmode"
+    },
+    {
+      "group": "facts",
+      "name": "Trainingdoesnotfabricatefieldexperience"
+    },
+    {
+      "group": "comparison",
+      "name": "Battledoesnotmutateinputequipment"
+    },
+    {
+      "group": "comparison",
+      "name": "UntrainedHehasnotrainedpassive"
+    },
+    {
+      "group": "growth",
+      "name": "lin solotrainingalonebelowL5"
+    },
+    {
+      "group": "growth",
+      "name": "xu solotrainingalonebelowL5"
+    },
+    {
+      "group": "growth",
+      "name": "su solotrainingalonebelowL5"
+    },
+    {
+      "group": "growth",
+      "name": "chen solotrainingalonebelowL5"
+    },
+    {
+      "group": "growth",
+      "name": "ye solotrainingalonebelowL5"
+    },
+    {
+      "group": "growth",
+      "name": "he solotrainingalonebelowL5"
+    },
+    {
+      "group": "growth",
+      "name": "mo solotrainingalonebelowL5"
+    },
+    {
+      "group": "growth",
+      "name": "jiang solotrainingalonebelowL5"
+    }
+  ]
+}

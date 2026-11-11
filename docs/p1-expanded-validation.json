@@ -1,0 +1,46 @@
+{
+  "date": "2026-11-04",
+  "scope": "M01/M02 opening roster specialties, social events and tactical undo",
+  "checks": {
+    "reference": 1172,
+    "foundation": 33,
+    "content": 10,
+    "loop": 166,
+    "systems": 179
+  },
+  "windows_native": "pending_user_device_test",
+  "build": {
+    "pe_architecture": "x86_64",
+    "exported_pack_host_smoke": true,
+    "design": "0.18-predevelopment",
+    "engine": "4.7.2.stable.official.ed1daf0bf",
+    "windows_runtime_tested": false,
+    "git_head": "7a7fee3a284a632efd62988095c016c7f2697b7a",
+    "working_tree_dirty": true,
+    "sha256": {
+      "night-tide.exe": "93e7651eb311a69afa92a469e49170726bcb28f59fa7c3d8ab695961ac1fd464",
+      "night-tide.pck": "340a058f6e3e292023390ac18c81b2f13f79b3d9ba17d911651b094e0c045709"
+    },
+    "runtime_revision": 2,
+    "source_sha256": {
+      "game/scripts/app/main.gd": "a87bd4a6609dc8f556ee06472fe682705d0f1bfea1f14ae0cb63c998a38f89ef",
+      "game/scripts/app/session.gd": "fe10bb01dfbdcf1deac5c0bfd9429be8a166528c630807b0ae362005cc0efc7c",
+      "game/scripts/infrastructure/campaign_store.gd": "05aed5359d9bcde33b963c4f930e6c8de170efa898d6af4c03131a5f2509ffe8",
+      "game/scripts/infrastructure/content_catalog.gd": "aa85d8ce63291813694f3c6ebaaa4fd85f5970e22823e0199902b32887c29a8e",
+      "game/scripts/domain/campaign_rules.gd": "d31db4c541fcca17e9f20614090917f38c5054b26a407eb4fd8d66e810d1c0a1",
+      "game/scripts/domain/p1_protocols.gd": "5cfecd1666e3e6fe216e208546787d93df7befbcf87cf5b8c8a8128f0f7ababa",
+      "game/scripts/domain/relationship_rules.gd": "db0cd1d250b3c55ec549bd58d0dbd8680c1139694a344322d74d38abbae227e0",
+      "game/scripts/domain/p1_specialties.gd": "9cf970b53473508ed18c4db8fbf40d4c41a7140635c2190b3e8c76a89653d839",
+      "game/scripts/domain/save_store.gd": "547a7699d55e48c066106e2b0bd0039144b21138b85bf911dec2bf21e53faf14",
+      "game/scripts/domain/campaign_social.gd": "f6e2f5e67e23c250986d2848fcb280012ec8332a48e24d4373be40ce6d27aa29",
+      "game/project.godot": "022a31e6f04a3e243233ecfc85ed1546a0d9167d0eb98b0346d7313f0dad49b2"
+    }
+  },
+  "package": "build/night-tide-windows-p1-expanded.zip",
+  "package_sha256": "69542d4f448e1dac334e0ab9c00dfe21b2a24c5552a12bf9468cb94cb9d8e61f",
+  "gui_external_screen": {
+    "screen": 1,
+    "primary": 0,
+    "total": 2
+  }
+}

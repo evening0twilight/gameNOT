@@ -1,0 +1,2801 @@
+{
+  "kind": "production hint follower; isolated fresh first three missions, no specialty or equipment use; not human evidence",
+  "records": [
+    {
+      "actions": [
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "stabilize",
+          "payload": {
+            "target": "r1"
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "pickup",
+          "payload": {
+            "target": "r1"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "stabilize",
+          "payload": {
+            "target": "r2"
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              6,
+              1
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              4
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "pickup",
+          "payload": {
+            "target": "r2"
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "extract",
+          "payload": {},
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              2
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              3
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              5
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              7
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "extract",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "xu",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              2
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              3
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              4
+            ]
+          },
+          "round": 8
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 8
+        },
+        {
+          "actor": "lin",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 9
+        }
+      ],
+      "difficulty": "relaxed",
+      "mission": "M01",
+      "outcome": "success",
+      "round": 9
+    },
+    {
+      "actions": [
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              5
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              3
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              3
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              1
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "interact",
+          "payload": {
+            "target": "cut"
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "interact",
+          "payload": {
+            "target": "cut"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "interact",
+          "payload": {
+            "target": "power"
+          },
+          "round": 3
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              4
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              3
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "interact",
+          "payload": {
+            "target": "power"
+          },
+          "round": 4
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              4
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              5
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              6,
+              4
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              7
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              4
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "lin",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 5
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              4
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "xu",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        }
+      ],
+      "difficulty": "relaxed",
+      "mission": "M02",
+      "outcome": "success",
+      "round": 6
+    },
+    {
+      "actions": [
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              5
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              5
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              3
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              1
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "interact",
+          "payload": {
+            "target": "door"
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "interact",
+          "payload": {
+            "target": "door"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              6,
+              1
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              3
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              1
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "pickup",
+          "payload": {
+            "target": "crate"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              1
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              1
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              1
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              3
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              5
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "extract",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              5
+            ]
+          },
+          "round": 6
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              1
+            ]
+          },
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              5
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              2
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              5
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 8
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 8
+        },
+        {
+          "actor": "xu",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 8
+        }
+      ],
+      "difficulty": "relaxed",
+      "mission": "M03",
+      "outcome": "success",
+      "round": 8
+    },
+    {
+      "actions": [
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "stabilize",
+          "payload": {
+            "target": "r1"
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "pickup",
+          "payload": {
+            "target": "r1"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "stabilize",
+          "payload": {
+            "target": "r2"
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              6,
+              1
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              4
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "pickup",
+          "payload": {
+            "target": "r2"
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "extract",
+          "payload": {},
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              2
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              3
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              5
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              7
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "extract",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "xu",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              2
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              3
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              4
+            ]
+          },
+          "round": 8
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 8
+        },
+        {
+          "actor": "lin",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 9
+        }
+      ],
+      "difficulty": "standard",
+      "mission": "M01",
+      "outcome": "success",
+      "round": 9
+    },
+    {
+      "actions": [
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              5
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              3
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              3
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              1
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "interact",
+          "payload": {
+            "target": "cut"
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "interact",
+          "payload": {
+            "target": "cut"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "interact",
+          "payload": {
+            "target": "power"
+          },
+          "round": 3
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              4
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              3
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "interact",
+          "payload": {
+            "target": "power"
+          },
+          "round": 4
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              4
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              5
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              6,
+              4
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              7
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              4
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "lin",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 5
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              4
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "xu",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        }
+      ],
+      "difficulty": "standard",
+      "mission": "M02",
+      "outcome": "success",
+      "round": 6
+    },
+    {
+      "actions": [
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              5
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              5
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              3
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              1
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "interact",
+          "payload": {
+            "target": "door"
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "interact",
+          "payload": {
+            "target": "door"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              6,
+              1
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              3
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              1
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "pickup",
+          "payload": {
+            "target": "crate"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              1
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              1
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              1
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              3
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              5
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "extract",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              5
+            ]
+          },
+          "round": 6
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              1
+            ]
+          },
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              5
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              2
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              5
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 8
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 8
+        },
+        {
+          "actor": "xu",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 8
+        }
+      ],
+      "difficulty": "standard",
+      "mission": "M03",
+      "outcome": "success",
+      "round": 8
+    },
+    {
+      "actions": [
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "stabilize",
+          "payload": {
+            "target": "r1"
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "pickup",
+          "payload": {
+            "target": "r1"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "stabilize",
+          "payload": {
+            "target": "r2"
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              6,
+              1
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              4
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "pickup",
+          "payload": {
+            "target": "r2"
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "extract",
+          "payload": {},
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              2
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              3
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              5
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              7
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "extract",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "xu",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              2
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              3
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              4
+            ]
+          },
+          "round": 8
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 8
+        },
+        {
+          "actor": "lin",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 9
+        }
+      ],
+      "difficulty": "hard",
+      "mission": "M01",
+      "outcome": "success",
+      "round": 9
+    },
+    {
+      "actions": [
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              5
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              3
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              3
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              1
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "interact",
+          "payload": {
+            "target": "cut"
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "interact",
+          "payload": {
+            "target": "cut"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              2
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "interact",
+          "payload": {
+            "target": "power"
+          },
+          "round": 3
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              4
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              3
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "interact",
+          "payload": {
+            "target": "power"
+          },
+          "round": 4
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              4
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              5
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              6,
+              4
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              7
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              4
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "lin",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 5
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              4
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "xu",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        }
+      ],
+      "difficulty": "hard",
+      "mission": "M02",
+      "outcome": "success",
+      "round": 6
+    },
+    {
+      "actions": [
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              5
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              5
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              4
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              3
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              2
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              3,
+              1
+            ]
+          },
+          "round": 1
+        },
+        {
+          "actor": "lin",
+          "kind": "interact",
+          "payload": {
+            "target": "door"
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "interact",
+          "payload": {
+            "target": "door"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              6,
+              1
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              3
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              5,
+              1
+            ]
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "pickup",
+          "payload": {
+            "target": "crate"
+          },
+          "round": 2
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              1
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              1
+            ]
+          },
+          "round": 3
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              1
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              3
+            ]
+          },
+          "round": 4
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              5
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 5
+        },
+        {
+          "actor": "su",
+          "kind": "extract",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              4,
+              5
+            ]
+          },
+          "round": 6
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              2,
+              1
+            ]
+          },
+          "round": 6
+        },
+        {
+          "actor": "su",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 6
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              1,
+              5
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              2
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              5
+            ]
+          },
+          "round": 7
+        },
+        {
+          "actor": "lin",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 8
+        },
+        {
+          "actor": "xu",
+          "kind": "move",
+          "payload": {
+            "cell": [
+              0,
+              6
+            ]
+          },
+          "round": 8
+        },
+        {
+          "actor": "xu",
+          "kind": "leave_site",
+          "payload": {},
+          "round": 8
+        }
+      ],
+      "difficulty": "hard",
+      "mission": "M03",
+      "outcome": "success",
+      "round": 8
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "captures": [
+    "01-first-task",
+    "02-rescue-introduction",
+    "03-difficulty",
+    "04-move-preview",
+    "05-walk-stride",
+    "06-walk-passing",
+    "07-stabilize",
+    "08-lift",
+    "09-contextual-next-step"
+  ],
+  "human_acceptance": false,
+  "kind": "isolated UI and actual runtime animation samples",
+  "primary": 0,
+  "screen": 1
+}

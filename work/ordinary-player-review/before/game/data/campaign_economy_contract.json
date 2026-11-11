@@ -1,0 +1,360 @@
+{
+  "version": "0.15-player-ready",
+  "status": "design_contract_not_tactical_balance_proof",
+  "basic_living": "Community services cover basic food, accommodation and routine first aid. There is no per-roster-size daily resource tax.",
+  "start": {
+    "credits": 30,
+    "supplies": 6,
+    "parts": 2
+  },
+  "main_rewards": {
+    "success": {
+      "credits": 10,
+      "supplies": 1,
+      "parts": 1
+    },
+    "partial": {
+      "credits": 7,
+      "supplies": 0,
+      "parts": 0
+    },
+    "failed": {
+      "credits": 6,
+      "supplies": 0,
+      "parts": 0
+    }
+  },
+  "side_rewards": {
+    "success": {
+      "credits": 6,
+      "supplies": 0,
+      "parts": 0
+    },
+    "partial": {
+      "credits": 3,
+      "supplies": 0,
+      "parts": 0
+    },
+    "failed": {
+      "credits": 0,
+      "supplies": 0,
+      "parts": 0
+    }
+  },
+  "main_base_allowance": 6,
+  "allowance_reason": "One municipal deployment-and-handover allowance per scheduled main duty, included in the totals above; not a second reward.",
+  "supply_buy_cost": 4,
+  "supplies_resale": false,
+  "parts_resale": false,
+  "shared_equipment": "Permanent tools do not consume charges for their baseline action. Consumables and expedited treatment spend supplies. No core objective requires a purchased item.",
+  "fallback": "With no resources, free basic actions, ordinary recovery and eligible community responders still permit the next main duty. Extra training, consumables and upgrades may be unavailable.",
+  "responders": {
+    "max": 3,
+    "eligible": "Only fill vacancies when fewer than 3 present main characters can legally deploy.",
+    "upfront_cost": 0,
+    "reward_reduction_each": 4,
+    "main_reward_floor": 6,
+    "hero_xp": false,
+    "personal_arcs": false,
+    "skills": "Universal basic actions; no personal specialties or advanced relationship protocols.",
+    "persistent_identity": "Mission-scoped IDs; never substitute for a missing named role in character story."
+  },
+  "camp": {
+    "projects_per_evening": 2,
+    "one_project_per_participant": true,
+    "default": "Unassigned heroes take basic sleep; heroes who did no day work also receive day-rest recovery.",
+    "treatment": {
+      "max_patients": 2,
+      "supplies_each": 2
+    },
+    "training": {
+      "max_participants": 2,
+      "supplies_each": 1,
+      "xp_each": 3,
+      "fatigue_each": 8
+    },
+    "recovery": {
+      "max_participants": 2,
+      "extra_fatigue_reduction_each": 12,
+      "cost": 0
+    },
+    "conversation": {
+      "max_participants": 3,
+      "generic_item_gifting_clears_grievances": false,
+      "uses_project": "Only substantive personal plan/repair work; short story reading uses free two-scene window."
+    },
+    "record_review": {
+      "cost": 0,
+      "uses_project": true,
+      "requires_specific_hero": false
+    },
+    "facility": {
+      "max_per_evening": 1,
+      "uses_project": true
+    },
+    "free_short_scenes": 2
+  },
+  "fatigue": {
+    "main_cost": 18,
+    "side_cost": 18,
+    "support_cost": 8,
+    "sleep_reduction": 12,
+    "idle_day_reduction": 16,
+    "warning_at": 60,
+    "deployment_rule": "Current fatigue + known mission fatigue cost must be <=100. Reserve cost before confirmation; do not clamp away excess cost.",
+    "same_day_redeployment": "Permitted only if healthy and the second deployment also meets the projected-cost test."
+  },
+  "injury": {
+    "ordinary_ready_day": "injury_day + 2; no resource cost",
+    "treated_ready_day": "injury_day + 1, after the first overnight; 2 supplies per patient",
+    "highest_withdrawal": "If the hero is still incapacitated and not extracted when the displayed rescue deadline expires or the player confirms abandonment, transfer to long-term hospital care and remove from this campaign roster. No random roll.",
+    "shared_gear": "Recovered through the following settlement inventory transfer; no main-story key item is personally owned.",
+    "fallback_epilogue": "Long-term recovery / changed occupation, reflecting the facts recorded before withdrawal."
+  },
+  "support": {
+    "max_workers": 1,
+    "supply_gain": 1,
+    "xp": 2,
+    "stage": "Primary-duty phase only. A worker cannot also take the main duty. Taking a later side duty is legal, but forfeits idle-day rest."
+  },
+  "growth": {
+    "main_xp": {
+      "success": 5,
+      "partial": 3,
+      "failed": 1
+    },
+    "side_xp": {
+      "success": 3,
+      "partial": 1,
+      "failed": 0
+    },
+    "power_budget": "Levels mainly unlock choices and modifiers; total extra base HP over the campaign <=2, base attack is not multiplied by level.",
+    "new_recruit": "Receives the chapter XP floor, cannot join a mission already settled, may join the subsequent optional duty if healthy."
+  },
+  "facility_effects_ref": "final_design/facilities.json",
+  "equipment_costs_ref": "final_design/equipment.json",
+  "objective_rewards": [
+    {
+      "mission": "M02",
+      "objective": "spare",
+      "reward": {
+        "parts": 2
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "M03",
+      "objective": "parts",
+      "reward": {
+        "parts": 3
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "M05",
+      "objective": "module",
+      "reward": {
+        "parts": 3
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "M08",
+      "objective": "alt",
+      "reward": {
+        "credits": 8
+      },
+      "source": "社区专项运输或线路核验补助；不出售居民私物",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "M09",
+      "objective": "med",
+      "reward": {
+        "supplies": 3
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "M14",
+      "objective": "meds",
+      "reward": {
+        "supplies": 3
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "M16",
+      "objective": "goods",
+      "reward": {
+        "credits": 12
+      },
+      "source": "社区专项运输或线路核验补助；不出售居民私物",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "M19",
+      "objective": "device",
+      "reward": {
+        "parts": 3
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "M23",
+      "objective": "rebuild",
+      "reward": {
+        "parts": 3
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S01",
+      "objective": "tickets",
+      "reward": {
+        "credits": 10
+      },
+      "source": "社区专项运输或线路核验补助；不出售居民私物",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S02",
+      "objective": "med",
+      "reward": {
+        "supplies": 4
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S02",
+      "objective": "books",
+      "reward": {
+        "credits": 12
+      },
+      "source": "社区专项运输或线路核验补助；不出售居民私物",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S04",
+      "objective": "seed",
+      "reward": {
+        "supplies": 2
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S04",
+      "objective": "rack",
+      "reward": {
+        "parts": 2
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S05",
+      "objective": "cloth",
+      "reward": {
+        "supplies": 3
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S06",
+      "objective": "meal",
+      "reward": {
+        "supplies": 2
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S08",
+      "objective": "luggage",
+      "reward": {
+        "credits": 12
+      },
+      "source": "社区专项运输或线路核验补助；不出售居民私物",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S08",
+      "objective": "tools",
+      "reward": {
+        "parts": 3
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S09",
+      "objective": "books",
+      "reward": {
+        "credits": 12
+      },
+      "source": "社区专项运输或线路核验补助；不出售居民私物",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S10",
+      "objective": "chart",
+      "reward": {
+        "credits": 8
+      },
+      "source": "社区专项运输或线路核验补助；不出售居民私物",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S11",
+      "objective": "cold",
+      "reward": {
+        "supplies": 3
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    },
+    {
+      "mission": "S12",
+      "objective": "box",
+      "reward": {
+        "parts": 2
+      },
+      "source": "物资/零件实物签收",
+      "condition": "secured",
+      "once": "mission+objective"
+    }
+  ],
+  "objective_reward_policy": "取代旧的任意可选目标统一+1物资及S05自动+2；仅实际保全并交接的指定目标发一次，结算失败也保留确已交回成果；不因取得资料、公开隐私或多救一人额外发货币。任务预览列全奖励，档案/照片的价值是事实与叙事，不用隐藏现金强推。",
+  "budget_intent": "24次必要主线可继续到结局；12支线是可选择的资源与故事机会。不能让全部设施、全部工具、持续训练同时无代价。失败保底6不削减；日常生活、基础治疗、基础行动免费。"
+}

@@ -1,0 +1,63 @@
+{
+  "date": "2026-11-02",
+  "engine": "Godot 4.7.2 standard, GDScript, Compatibility renderer",
+  "project_stage": "Design only. Advanced-cooperation investment challenged with stronger ordinary routes; production scope reduced. No runtime development.",
+  "implemented": [
+    "8 character design records and 64 directed initial relationship records",
+    "24 main and 12 side mission outlines with resolution-based dependencies",
+    "Nonlinear historical resentment amplification and decaying incident memories",
+    "Directional attribution, duplicate-event rejection and information awareness",
+    "Hysteresis bands, outburst eligibility and cooldown bookkeeping",
+    "Specific-memory repair and staged historical-grievance repair",
+    "Preparation save envelope with temporary file, previous valid backup and schema checks",
+    "Engine startup screen loading design records"
+  ],
+  "not_implemented": [
+    "Playable Godot campaign/tactical controllers and all rule adapters for v0.4",
+    "Godot event receipt issuance, previews, UI, animations and content presentation",
+    "Full runtime combat traversal across 36 boards and all ability combinations",
+    "Final prose polish, scene art, audio and accessibility implementation",
+    "Save migrations and Windows real-device verification"
+  ],
+  "commands": {
+    "design_validation": "python3 game/tools/validate_design.py",
+    "engine_tests": "<Godot binary> --headless --path game --script tests/run_tests.gd",
+    "startup_smoke": "<Godot binary> --headless --path game --quit-after 3",
+    "open_project": "<Godot binary> --editor --path game"
+  },
+  "production_order_in_same_project": [
+    "Command/state contracts, tactical movement and action preview/resolution",
+    "Combat/rescue objectives, mission outcome, daily schedule and resource ledger",
+    "Roster/growth/relationships integrated with actions and negotiations",
+    "Complete four-chapter content, character arcs, side missions and endings",
+    "Final presentation, balance, complete-campaign regression and platform validation"
+  ],
+  "outstanding_user_preference": null,
+  "logic_audit": "docs/logic-audit.json",
+  "logical_closure_status": "ALL_36_MAPS_HAVE_BOUNDED_TACTICAL_WITNESSES; EXHAUSTIVE_COMBINATIONS_AND_HUMAN_PLAYABILITY_NOT_CLAIMED",
+  "confirmed_experience_policy": "data/confirmed_experience_policy.json",
+  "flow_contracts": [
+    "data/campaign_economy_contract.json",
+    "data/campaign_world_contract.json",
+    "data/campaign_coordination_contract.json"
+  ],
+  "design_version": "0.15-player-ready",
+  "authored_this_revision": [
+    "全域规则与覆盖审查",
+    "装备、医疗、工坊投资修正",
+    "关系归责与重新协商",
+    "存档状态清单和拒绝操作原子性"
+  ],
+  "design_authority": "data/final_design/",
+  "design_verification": {
+    "content_checks": "../../outputs/final-design-validation.json",
+    "combat_example": "../../outputs/combat-design-example.json",
+    "story_checks": "../../outputs/story-contract-checks.json"
+  },
+  "formal_development_gate": "Do not begin formal implementation under the latest instruction; finish design review first.",
+  "latest_review": "../../outputs/full-audit-review.html",
+  "current_production_scope": "data/final_design/production_scope.json",
+  "player_ready_review": "../../outputs/player-ready-review.html",
+  "authored_scripts": "../../outputs/character-script-final.html",
+  "formal_development_started": false
+}

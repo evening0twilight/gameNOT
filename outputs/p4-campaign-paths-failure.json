@@ -1,0 +1,3581 @@
+[
+  {
+    "actions": [
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "community_report",
+        "payload": {
+          "choice": "archive"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "enter_camp",
+        "payload": {},
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "select_route",
+        "payload": {
+          "route": "evacuation"
+        },
+        "round": 1
+      },
+      {
+        "actor": "lin",
+        "kind": "next_mission",
+        "payload": {},
+        "round": 1.0
+      },
+      {
+        "actor": "lin",
+        "kind": "emergency_retreat",
+        "payload": {
+          "confirmed": true
+        },
+        "round": 1
+      }
+    ],
+    "days": [
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 0,
+            "id": "chen",
+            "join": 4,
+            "name": "陈砚",
+            "ready_day": 1,
+            "self_load": 0,
+            "stress": 10,
+            "tendency": "work",
+            "training_completed": 0,
+            "xp": 0
+          },
+          "he": {
+            "fatigue": 0,
+            "id": "he",
+            "join": 10,
+            "name": "贺鸣",
+            "ready_day": 1,
+            "self_load": 0,
+            "stress": 10,
+            "tendency": "work",
+            "training_completed": 0,
+            "xp": 12
+          },
+          "jiang": {
+            "fatigue": 0,
+            "id": "jiang",
+            "join": 16,
+            "name": "江朔",
+            "ready_day": 1,
+            "self_load": 0,
+            "stress": 10,
+            "tendency": "work",
+            "training_completed": 0,
+            "xp": 28
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1,
+            "name": "林岚",
+            "ready_day": 3,
+            "self_load": 0,
+            "stress": 16,
+            "tendency": "work",
+            "training_completed": 0,
+            "xp": 1
+          },
+          "mo": {
+            "fatigue": 0,
+            "id": "mo",
+            "join": 13,
+            "name": "莫遥",
+            "ready_day": 1,
+            "self_load": 0,
+            "stress": 10,
+            "tendency": "work",
+            "training_completed": 0,
+            "xp": 28
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1,
+            "name": "苏棠",
+            "ready_day": 3,
+            "self_load": 0,
+            "stress": 16,
+            "tendency": "work",
+            "training_completed": 0,
+            "xp": 1
+          },
+          "xu": {
+            "fatigue": 18,
+            "id": "xu",
+            "join": 1,
+            "name": "许舟",
+            "ready_day": 3,
+            "self_load": 0,
+            "stress": 16,
+            "tendency": "work",
+            "training_completed": 0,
+            "xp": 1
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7,
+            "name": "叶禾",
+            "ready_day": 1,
+            "self_load": 0,
+            "stress": 10,
+            "tendency": "work",
+            "training_completed": 0,
+            "xp": 12
+          }
+        },
+        "day": 1,
+        "districts": {
+          "dock": 1,
+          "floodgates": 1,
+          "medical": 1,
+          "old_town": 1,
+          "overpass": 1,
+          "workshops": 1
+        },
+        "inventory": {
+          "credits": 6,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M01",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "xu",
+          "su"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 0.0,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 0.0
+          },
+          "he": {
+            "fatigue": 0.0,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 3.0,
+            "self_load": 0,
+            "stress": 8,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 1.0
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 3.0,
+            "self_load": 0,
+            "stress": 8,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 1.0
+          },
+          "xu": {
+            "fatigue": 6,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 3.0,
+            "self_load": 0,
+            "stress": 8,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 1.0
+          },
+          "ye": {
+            "fatigue": 0.0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          }
+        },
+        "day": 2,
+        "districts": {
+          "dock": 1,
+          "floodgates": 1,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 1,
+          "workshops": 1
+        },
+        "inventory": {
+          "credits": 12.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M02",
+        "outcome": "failed",
+        "roster": [
+          "responder_M02_0",
+          "responder_M02_1",
+          "responder_M02_2"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 0.0,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 0.0
+          },
+          "he": {
+            "fatigue": 0.0,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 5.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 2
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 5.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 2
+          },
+          "xu": {
+            "fatigue": 18,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 5.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 2
+          },
+          "ye": {
+            "fatigue": 0.0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          }
+        },
+        "day": 3,
+        "districts": {
+          "dock": 1,
+          "floodgates": 1,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 1,
+          "workshops": 1
+        },
+        "inventory": {
+          "credits": 18.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M03",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 6.0,
+            "self_load": 0,
+            "stress": 8,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 1
+          },
+          "he": {
+            "fatigue": 0.0,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 5.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 2.0
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 5.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 2.0
+          },
+          "xu": {
+            "fatigue": 6,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 5.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 2.0
+          },
+          "ye": {
+            "fatigue": 0.0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          }
+        },
+        "day": 4,
+        "districts": {
+          "dock": 1,
+          "floodgates": 1,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 1
+        },
+        "inventory": {
+          "credits": 24.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M04",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "responder_M04_1",
+          "responder_M04_2"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 6.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 1.0
+          },
+          "he": {
+            "fatigue": 0.0,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 7.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 3
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 7.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 3
+          },
+          "xu": {
+            "fatigue": 18,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 7.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 3
+          },
+          "ye": {
+            "fatigue": 0.0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          }
+        },
+        "day": 5,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 1
+        },
+        "inventory": {
+          "credits": 30.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M05",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 8.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 2
+          },
+          "he": {
+            "fatigue": 0.0,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 7.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 3.0
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 7.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 3.0
+          },
+          "xu": {
+            "fatigue": 6,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 7.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 3.0
+          },
+          "ye": {
+            "fatigue": 0.0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          }
+        },
+        "day": 6,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 1
+        },
+        "inventory": {
+          "credits": 36.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M06",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "responder_M06_1",
+          "responder_M06_2"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 8.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 2.0
+          },
+          "he": {
+            "fatigue": 0.0,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 9.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 4
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 9.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 4
+          },
+          "xu": {
+            "fatigue": 18,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 9.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 4
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 1.0,
+            "self_load": 0,
+            "stress": 2,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          }
+        },
+        "day": 7,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 1
+        },
+        "inventory": {
+          "credits": 42.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M07",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 10.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 3
+          },
+          "he": {
+            "fatigue": 0.0,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 9.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 4.0
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 9.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 4.0
+          },
+          "xu": {
+            "fatigue": 6,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 9.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 4.0
+          },
+          "ye": {
+            "fatigue": 18,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 10.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 13
+          }
+        },
+        "day": 8,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 48.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M08",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "ye",
+          "responder_M08_2"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 10.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 3.0
+          },
+          "he": {
+            "fatigue": 0.0,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 11.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 5
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 11.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 5
+          },
+          "xu": {
+            "fatigue": 18,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 11.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 5
+          },
+          "ye": {
+            "fatigue": 6,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 10.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 13.0
+          }
+        },
+        "day": 9,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 54.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M09",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 12.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 4
+          },
+          "he": {
+            "fatigue": 18,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 12.0,
+            "self_load": 0,
+            "stress": 8,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 13
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 11.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 5.0
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 11.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 5.0
+          },
+          "xu": {
+            "fatigue": 6,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 11.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 5.0
+          },
+          "ye": {
+            "fatigue": 18,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 12.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 14
+          }
+        },
+        "day": 10,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 60.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M10",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "he",
+          "ye"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 12.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 4.0
+          },
+          "he": {
+            "fatigue": 6,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 12.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 13.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 13.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 6
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 13.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 6
+          },
+          "xu": {
+            "fatigue": 18,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 13.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 6
+          },
+          "ye": {
+            "fatigue": 6,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 12.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 14.0
+          }
+        },
+        "day": 11,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 66.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M11",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "su",
+          "xu"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 5
+          },
+          "he": {
+            "fatigue": 18,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 14
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 13.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 6.0
+          },
+          "mo": {
+            "fatigue": 0.0,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 13.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 6.0
+          },
+          "xu": {
+            "fatigue": 6,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 13.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 6.0
+          },
+          "ye": {
+            "fatigue": 18,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15
+          }
+        },
+        "day": 12,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 72.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M12",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "he",
+          "ye"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 5.0
+          },
+          "he": {
+            "fatigue": 6,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 14.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 15.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7
+          },
+          "mo": {
+            "fatigue": 18,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 15.0,
+            "self_load": 0,
+            "stress": 8,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 29
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 15.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 13.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 6.0
+          },
+          "ye": {
+            "fatigue": 6,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 13,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 78.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M13",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "mo",
+          "su"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 6
+          },
+          "he": {
+            "fatigue": 18,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 15.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "mo": {
+            "fatigue": 6,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 15.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 29.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 15.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "xu": {
+            "fatigue": 18,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 14,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 84.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M14",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "he",
+          "xu"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 6.0
+          },
+          "he": {
+            "fatigue": 6,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          },
+          "jiang": {
+            "fatigue": 0.0,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 1.0,
+            "self_load": 0.0,
+            "stress": 10.0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 28.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 17.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 8
+          },
+          "mo": {
+            "fatigue": 18,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 17.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 30
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 17.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 8
+          },
+          "xu": {
+            "fatigue": 6,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 15,
+        "districts": {
+          "dock": 1,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 90.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M15",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "mo",
+          "su"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 18.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7
+          },
+          "he": {
+            "fatigue": 18,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 18.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 16
+          },
+          "jiang": {
+            "fatigue": 18,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 18.0,
+            "self_load": 0,
+            "stress": 8,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 29
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 17.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 8.0
+          },
+          "mo": {
+            "fatigue": 6,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 17.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 30.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 17.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 8.0
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 16,
+        "districts": {
+          "dock": 0,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 96.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M16",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "he",
+          "jiang"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 18.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "he": {
+            "fatigue": 6,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 18.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 16.0
+          },
+          "jiang": {
+            "fatigue": 6,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 18.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 29.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 19.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 9
+          },
+          "mo": {
+            "fatigue": 18,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 19.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 31
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 19.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 9
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 17,
+        "districts": {
+          "dock": 0,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 1,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 102.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M17",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "mo",
+          "su"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 20.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 8
+          },
+          "he": {
+            "fatigue": 18,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 20.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 17
+          },
+          "jiang": {
+            "fatigue": 18,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 20.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 30
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 19.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 9.0
+          },
+          "mo": {
+            "fatigue": 6,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 19.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 31.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 19.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 9.0
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 18,
+        "districts": {
+          "dock": 0,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 0,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 108.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M18",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "he",
+          "jiang"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 20.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 8.0
+          },
+          "he": {
+            "fatigue": 6,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 20.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 17.0
+          },
+          "jiang": {
+            "fatigue": 6,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 20.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 30.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 21.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 10
+          },
+          "mo": {
+            "fatigue": 18,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 21.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 32
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 21.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 10
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 19,
+        "districts": {
+          "dock": 0,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 0,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 114.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M19",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "mo",
+          "su"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 22.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 9
+          },
+          "he": {
+            "fatigue": 18,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 22.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 18
+          },
+          "jiang": {
+            "fatigue": 18,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 22.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 31
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 21.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 10.0
+          },
+          "mo": {
+            "fatigue": 6,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 21.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 32.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 21.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 10.0
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 20,
+        "districts": {
+          "dock": 0,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 0,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 120.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M20",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "he",
+          "jiang"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 22.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 9.0
+          },
+          "he": {
+            "fatigue": 6,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 22.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 18.0
+          },
+          "jiang": {
+            "fatigue": 6,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 22.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 31.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 23.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 11
+          },
+          "mo": {
+            "fatigue": 18,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 23.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 33
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 23.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 11
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 21,
+        "districts": {
+          "dock": 0,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 0,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 126.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M21",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "mo",
+          "su"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 24.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 10
+          },
+          "he": {
+            "fatigue": 18,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 24.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 19
+          },
+          "jiang": {
+            "fatigue": 18,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 24.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 32
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 23.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 11.0
+          },
+          "mo": {
+            "fatigue": 6,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 23.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 33.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 23.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 11.0
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 22,
+        "districts": {
+          "dock": 0,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 0,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 132.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M22",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "he",
+          "jiang"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 6,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 24.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 10.0
+          },
+          "he": {
+            "fatigue": 6,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 24.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 19.0
+          },
+          "jiang": {
+            "fatigue": 6,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 24.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 32.0
+          },
+          "lin": {
+            "fatigue": 18,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 25.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12
+          },
+          "mo": {
+            "fatigue": 18,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 25.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 34
+          },
+          "su": {
+            "fatigue": 18,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 25.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 23,
+        "districts": {
+          "dock": 0,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 0,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 138.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M23",
+        "outcome": "failed",
+        "roster": [
+          "lin",
+          "mo",
+          "su"
+        ]
+      },
+      {
+        "actors": {
+          "chen": {
+            "fatigue": 18,
+            "id": "chen",
+            "join": 4.0,
+            "name": "陈砚",
+            "ready_day": 26.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 11
+          },
+          "he": {
+            "fatigue": 18,
+            "id": "he",
+            "join": 10.0,
+            "name": "贺鸣",
+            "ready_day": 26.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 20
+          },
+          "jiang": {
+            "fatigue": 18,
+            "id": "jiang",
+            "join": 16.0,
+            "name": "江朔",
+            "ready_day": 26.0,
+            "self_load": 0,
+            "stress": 6,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 33
+          },
+          "lin": {
+            "fatigue": 6,
+            "id": "lin",
+            "join": 1.0,
+            "name": "林岚",
+            "ready_day": 25.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "mo": {
+            "fatigue": 6,
+            "id": "mo",
+            "join": 13.0,
+            "name": "莫遥",
+            "ready_day": 25.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 34.0
+          },
+          "su": {
+            "fatigue": 6,
+            "id": "su",
+            "join": 1.0,
+            "name": "苏棠",
+            "ready_day": 25.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 12.0
+          },
+          "xu": {
+            "fatigue": 0,
+            "id": "xu",
+            "join": 1.0,
+            "name": "许舟",
+            "ready_day": 16.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 7.0
+          },
+          "ye": {
+            "fatigue": 0,
+            "id": "ye",
+            "join": 7.0,
+            "name": "叶禾",
+            "ready_day": 14.0,
+            "self_load": 0,
+            "stress": 0,
+            "tendency": "work",
+            "training_completed": 0.0,
+            "xp": 15.0
+          }
+        },
+        "day": 24,
+        "districts": {
+          "dock": 0,
+          "floodgates": 0,
+          "medical": 0,
+          "old_town": 0,
+          "overpass": 0,
+          "workshops": 0
+        },
+        "inventory": {
+          "credits": 144.0,
+          "parts": 0.0,
+          "supplies": 0.0
+        },
+        "mission": "M24",
+        "outcome": "failed",
+        "roster": [
+          "chen",
+          "he",
+          "jiang"
+        ]
+      }
+    ],
+    "ending": "evacuation",
+    "evidence": {},
+    "final_inventory": {
+      "credits": 144.0,
+      "parts": 0.0,
+      "supplies": 0.0
+    },
+    "finished": true,
+    "mode": "failure"
+  }
+]

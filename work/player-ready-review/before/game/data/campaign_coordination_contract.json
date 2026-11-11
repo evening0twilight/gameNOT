@@ -1,0 +1,35 @@
+{
+  "version": "0.3",
+  "stages": [
+    "briefing",
+    "main_assignment",
+    "main_action",
+    "main_settlement",
+    "side_offer_or_skip",
+    "side_action_if_accepted",
+    "side_settlement",
+    "camp_two_projects",
+    "night_recovery",
+    "next_briefing"
+  ],
+  "final_day_override": "After M24 settlement go directly to ending. Day 23 is the last normal camp.",
+  "assignment_receipt": "One actor can hold one assignment in a given phase. A main-duty hero may take the later side duty if the known fatigue and health constraints still pass; no duplicate idle-day recovery.",
+  "side_windows": "Offers last through the next duty day, capped at day 23. At most one side duty per day. A resolved or expired offer cannot be replayed.",
+  "reward_receipt": "Key by mission ID and result transaction ID; rewards, recruits, district effects, XP and memories commit together once.",
+  "relationship_receipt": "Key by event ID, observer, target and opportunity; common mission participation is not proof of cooperation.",
+  "conflict_queue": {
+    "priority": [
+      "immediate safety relevance",
+      "explicit promise expiry",
+      "severity band",
+      "earliest triggering command index",
+      "stable relationship ID"
+    ],
+    "interruptions_per_squad_per_mission": 1,
+    "persistent_constraints": "All declared cooperation conditions are visible in action previews. The scene cap does not silently remove another pair’s restrictions.",
+    "after_cap": "Further consequences appear in the result preview and log, and any extended conversation moves to camp. Basic actions remain available. No additional forced action or secret sabotage.",
+    "pending_event": "At camp recalculate relevance. Resolve by chosen remedy, schedule a concrete next opportunity, or explicitly choose professional distance. Never automatically forgive it because the queue was full."
+  },
+  "safety_of_commit": "Preview predicted relationship restrictions before spending AP/resources on the triggering choice. Already committed actions are not retroactively changed.",
+  "strongest_team_tradeoff": "A fixed squad can remain useful, but sustained deployment requires recovery projects that compete with equipment, training, investigation and relationship work. Rotation preserves camp projects but spreads mission XP. No intention to force every character to equal win rate."
+}
