@@ -6,9 +6,9 @@
 
 用户要按已经定稿的 **0.18 做完整最终游戏**。此前多次把“局部实现、跑通测试、有动画”称作完成，用户明确否定。人物获取、培养、关系、战术和剧情必须在同一周目里真实关联。不能以文件数量或测试通过证明玩法、美术、难度和易用性已经符合定稿。
 
-现阶段是 **P4 产品对齐与最终验收收尾，仍未通过最终验收**。不是重新设计、另做演示，也不是直接进入发行。用户已有 Windows 电脑，明确说先做好游戏、之后自己测试；没有远程执行入口，不再要求他先提供 SSH/密码。没有使用 API 的运行时功能，现有游戏与素材不依赖任何模型账号或密钥。
+现阶段是 **P4 产品对齐与最终验收收尾，仍未通过最终验收**。不是重新设计、另做演示，也不是直接进入发行。用户已有 Windows 电脑，并已报告验证过上一份 Windows 包；后续候选包仍由用户按约定实测，不再索要远程入口。没有使用 API 的运行时功能，现有游戏与素材不依赖任何模型账号或密钥。
 
-最新授权是把工程推到远程 main，并提供可独立接手的说明。本次接手准备没有修改游戏规则、剧本权威数据或美术；只更新交接/仓库规则、当前检查与构建的跨机器入口、CI。
+用户授权把工程推到远程 main，并在验证 Windows 包后授权清理本机安装包和冗余文件。详见 [2026-11-11 清理记录](product018-cleanup.md)。游戏规则、剧本权威数据和运行素材未改。
 
 ## 2. 先读哪些文件，谁是权威
 
@@ -51,15 +51,15 @@ README下半部、P1/P2/P3/P4旧报告、technical-setup-handoff、p1/p3-handoff
 
 ## 4. 已有证据与准确边界
 
-2026-11-07最后游戏源代码与构建收据哈希一致；2026-11-11接手准备再次核对一致。本次没有重新跑整套游戏回归冒充新结果。
+2026-11-07最后游戏源代码与构建收据哈希一致，2026-11-11清理前再次核对。以下保留原始证据；清理后复查单独记录在清理记录中。
 
 - `outputs/product018-checks.json`：29组完整检查，加最后界面/本地化补查2组。36图×2环境×3难度=216条有限脚本路径，4条现场操作、4条世界路线、4种24日培养/轮换策略。
 - `outputs/product018-crew-campaign.json`：真实获取/培养/轮换/逐日保存读取的24日周目，八人第一专长均实际使用。**不是八人所有第二专长的连续周目覆盖，也不是最优策略或真人平衡证明。**
 - `outputs/baseline018-linked-campaign.json` 与 day06/day18/day24存档：真实共同贡献→陈砚带教，林岚计划兑现→独立职业方向，苏棠/江朔协商+两次贡献→支付2物资改派出口。
 - `outputs/product018-story-coverage.json`：54人物/关系/生活节点的当面/休养/来信及选项呈现、保存、回看、奖励约束，共4161断言。另42社区/章节点由既有检查覆盖；没有完整逐页真人审读96节点，也未穷举所有人物组合。
 - `outputs/product018-visual-review.json` 与 `product018-*.png`：隐藏原生根窗口，通过实际GPU SubViewport复查12幅1280×720界面/动作画面。`product018-movement.mp4`是实际已提交移动的渲染帧慢放、无音轨，**不是Windows实机或输入延迟证据**。
-- 包：本机 `build/night-tide-0.18-windows.zip`，114470678 bytes，SHA256 `b88172277556b058b07b67fd39174521cfd16d567d65bbfc5bdd009c24a65a11`。已核验PE x64、导出资源包在macOS空目录启动、ZIP与内部文件哈希。2026-11-11未重建这个历史包。
-- 当前Windows原生测试=false、真人验收=false、P4最终验收=false。旧P1曾有用户Windows通过反馈，不能用于本轮。
+- 2026-11-07 Windows 包已按授权删除。清理前核对本机 ZIP 的 114470678 bytes 和 SHA256 `b88172277556b058b07b67fd39174521cfd16d567d65bbfc5bdd009c24a65a11`，与 [原构建收据](product018-build.json) 一致。
+- 2026-11-11 用户报告 Windows 包已经验证过。没有随报告取得逐项测试记录、测试端包哈希或性能数据。原构建收据的 `windows_native_tested=false` 记录的是当时构建端未做原生测试；真人完整体验和 P4 最终验收仍未完成。
 
 ## 5. 下一步从这里继续：P4-018-01 剩余差异闭环
 
@@ -85,7 +85,7 @@ git clone https://github.com/evening0twilight/gameNOT.git
 cd gameNOT
 ```
 
-代码、运行资源、冻结设计、工具、压缩设计证据、当前与关键历史报告都在Git。`build/`安装包、本地引擎、编辑器缓存、浏览器会话、原始AVI录像和本轮逐帧PNG不上传；源目录中的MP4/截图与包收据保留。**换电脑克隆后不会自动得到已有Windows ZIP，需要按下面重建，或从原工作机取得同一哈希的文件。** 未创建GitHub Release。
+代码、运行资源、冻结设计、工具、压缩设计证据、当前与关键历史报告都在 Git。Windows 安装包不在 Git，本机旧包也已删除；需要时按下面命令生成新包。MP4、关键截图与构建收据仍在 Git。未创建 GitHub Release。
 
 Linux（适合API代理/CI，无第三方Python包）：
 
@@ -93,8 +93,8 @@ Linux（适合API代理/CI，无第三方Python包）：
 python3 tools/bootstrap.py linux
 python3 tools/bootstrap.py templates
 export GODOT="$PWD/work/toolchain/linux/Godot_v4.7.2-stable_linux.x86_64"
-python3 tools/check_product018.py --full --allow-missing-history
-python3 tools/build_windows_product018.py --allow-missing-history
+python3 tools/check_product018.py --full
+python3 tools/build_windows_product018.py
 ```
 
 Windows PowerShell（Python已安装）：
@@ -103,13 +103,13 @@ Windows PowerShell（Python已安装）：
 python tools/bootstrap.py windows
 python tools/bootstrap.py templates
 $env:GODOT = (Resolve-Path 'work/toolchain/windows/Godot_v4.7.2-stable_win64.exe').Path
-python tools/check_product018.py --full --allow-missing-history
-python tools/build_windows_product018.py --allow-missing-history
+python tools/check_product018.py --full
+python tools/build_windows_product018.py
 ```
 
-原macOS工作机：`/Users/a1-6/projects/person/gameNOT`；检查工具默认引擎为 `work/toolchain/godot-4.7.2/Godot.app/Contents/MacOS/Godot`。不缺历史文件时省略 `--allow-missing-history`。新Mac需自己准备锁定版本，使用 `GODOT` 指向其可执行文件；bootstrap当前没有macOS下载目标。
+原 macOS 工作机：`/Users/a1-6/projects/person/gameNOT`；默认引擎为 `work/toolchain/godot-4.7.2/Godot.app/Contents/MacOS/Godot`，已安装的 Windows 导出模板仍可离线使用。新 Mac 需自行准备锁定版本并使用 `GODOT` 指向可执行文件；bootstrap 当前没有 macOS 引擎下载目标。
 
-`--allow-missing-history` **只允许7份Git排除的旧ZIP/原始AVI不存在**，不会跳过游戏检查；现存历史文件仍全部核哈希，任何被修改文件或其他缺失仍失败。新克隆应记录280/287可核对及7份缺失，不能写历史全数校验通过。本机完整保留时仍应287/287。新记录的 `history.missing/complete`明确区分这两种情况。
+默认检查应报告 244/287 个受保护路径已核验、43 个已按清理清单移除，`history.missing=[]`、`history.complete=false`。其中 36 张重复截图有受保护的同字节原图，原图缺失或损坏会报错；恢复旧路径时也必须通过原 SHA256。兼容参数 `--allow-missing-history` 仅可容许未记入清单且被 Git 排除的旧 ZIP/AVI 缺失；当前新克隆不需要它。
 
 当前入口是 `check_product018.py` / `build_windows_product018.py`。旧 `check.py`、`build_windows.py`、baseline018、p4-tuning入口只对应历史阶段。CI已换到当前入口，仅PR和手动触发；**本次直接推main不自动运行CI，不能声称远程CI通过**。
 

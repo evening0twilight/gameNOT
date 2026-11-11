@@ -3,6 +3,7 @@ import argparse, hashlib, json, os, re, subprocess, time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 ENGINE=ROOT/'work/toolchain/godot-4.7.2/Godot.app/Contents/MacOS/Godot'
+RETIREMENTS='docs/product018-history-retirements.json'
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 def run(args, name):
     start=time.monotonic()
@@ -17,24 +18,50 @@ def source_hashes():
     result={str(p.relative_to(ROOT)):digest(p) for base in ['game/scripts','game/scenes','game/data','game/assets'] for p in sorted((ROOT/base).rglob('*')) if p.is_file() and p.suffix not in ['.uid','.import']}
     for name in ['game/project.godot','game/export_presets.cfg']:result[name]=digest(ROOT/name)
     return result
+def excluded_history(name):
+    return (name.startswith('build/') and name.endswith('.zip')) or name in [
+        'outputs/p4-feedback-runtime.avi','outputs/p4-tuning-runtime.avi']
+
 def history_status(allow_missing=False):
     hashes={}
     for filename in ['baseline018-preserved.json','p4-preserved-files.json','p4-feedback-preserved.json','p4-tuning-preserved.json']:
         hashes.update(json.loads((ROOT/'docs'/filename).read_text()))
+    policy=json.loads((ROOT/RETIREMENTS).read_text())
+    discarded=policy['discarded']
+    duplicates=policy['duplicate_captures']
+    for name,value in discarded.items():
+        if not excluded_history(name) or name not in hashes or hashes[name]!=value:
+            raise SystemExit('Invalid historical artifact retirement: '+name)
+    for name,replacement in duplicates.items():
+        directory,_,leaf=name.rpartition('/')
+        retained_dir={'outputs/p3-gui':'outputs/p4-gui','outputs/p4-feedback-gui':'outputs/p4-tuning-gui'}.get(directory)
+        if not retained_dir or not leaf.endswith('.png') or replacement!=f'{retained_dir}/{leaf}':
+            raise SystemExit('Invalid historical duplicate capture: '+name)
+        if name in hashes and hashes.get(replacement)!=hashes[name]:
+            raise SystemExit('Historical duplicate has no protected replacement: '+name)
     missing=[]
+    retired=[]
     for name,value in hashes.items():
         path=ROOT/name
-        optional=(name.startswith('build/') and path.suffix=='.zip') or name in ['outputs/p4-feedback-runtime.avi','outputs/p4-tuning-runtime.avi']
-        if not path.is_file():
-            if allow_missing and optional:missing.append(name);continue
-            raise SystemExit('Historical artifact missing: '+name+' (fresh clones may use --allow-missing-history for excluded ZIP/AVI only)')
-        if digest(path)!=value:raise SystemExit('Historical artifact changed: '+name)
-    return {'verified':len(hashes)-len(missing),'expected':len(hashes),'missing':missing,'complete':not missing}
+        if path.is_file():
+            if digest(path)!=value:raise SystemExit('Historical artifact changed: '+name)
+        elif path.exists() or path.is_symlink():
+            raise SystemExit('Historical artifact is not a file: '+name)
+        elif name in discarded or name in duplicates:
+            retired.append(name)
+        elif allow_missing and excluded_history(name):
+            missing.append(name)
+        else:
+            raise SystemExit('Historical artifact missing: '+name+' (--allow-missing-history permits only excluded ZIP/AVI)')
+    return {'verified':len(hashes)-len(missing)-len(retired),'expected':len(hashes),
+            'missing':sorted(missing),'retired':sorted(retired),'complete':not (missing or retired)}
 def preserved():
     return history_status()['verified']
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--full',action='store_true');p.add_argument('--allow-missing-history',action='store_true',help='Permit only excluded historical build ZIPs and raw AVI captures; verify every available artifact.');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--full',action='store_true');p.add_argument('--allow-missing-history',action='store_true',help='Permit missing excluded historical build ZIPs and raw AVI captures beyond recorded retirements.');args=p.parse_args()
     history=history_status(args.allow_missing_history)
+    print(f"Historical artifact paths verified: {history['verified']}/{history['expected']}; "
+          f"retired: {len(history['retired'])}; otherwise unavailable: {len(history['missing'])}",flush=True)
     if history['missing']:print('Historical artifacts unavailable in this checkout: '+', '.join(history['missing']),flush=True)
     initial_hashes=source_hashes()
     manifest=json.loads((ROOT/'game/data/final_design/design_manifest.json').read_text())

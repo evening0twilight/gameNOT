@@ -17,5 +17,6 @@ jobs:
           python-version: '3.14.7'
       - run: python tools/bootstrap.py linux
       - run: python tools/bootstrap.py templates
-      - run: python tools/check_product018.py --full --allow-missing-history
-      - run: python tools/build_windows_product018.py --allow-missing-history
+      - run: python -m unittest discover -s tools -p test_history_validation.py
+      - run: python tools/check_product018.py --full
+      - run: python tools/build_windows_product018.py
