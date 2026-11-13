@@ -1,0 +1,551 @@
+{
+  "date": "2026-11-13",
+  "mode": "imagegen bundled CLI edit",
+  "model": "gpt-image-2.6-sunburst",
+  "endpoint": "https://api.openai.com/v1/images/edits",
+  "approval": "User approved p4close-corrected-art-v3 direction and authorized full game production on 2026-11-13. This is not final game acceptance.",
+  "body_prompts": {
+    "xu": "Use case: identity-preserve\nAsset type: two complete waist-up game portrait bases, transparent PNG.\nInput 1: existing reference of this exact character; retain their individual face identity, gender, hairstyle and age. Input 2: approved Lin Lan/He Ming art direction and anatomy, use its restrained semi-realistic illustration finish; DO NOT copy their face.\nSubject: 许舟, 29 years old. 铜橙绳具配灰蓝防水服、侧分短发、清楚的腰肩轮廓；行动服贴合但不妨碍防护. Appeal: 明亮、敏捷，笑起来有亲近感. Personal detail: 旧接收器外壳与用旧的绳结；工作时先检查锁扣，再抬头开玩笑.\nCreate TWO COMPLETE anatomical portraits from whole hair to hips, one in each equal 768x1024 panel of a 1536x1024 canvas. Left is work/rescue outfit exactly in the palette described above, with practical occupational equipment. Right is daily/camp outfit: a plain blue-gray rolled-sleeve shirt, no ropes or rescue harness; casually repairing an old radio.\nThe SAME person in both panels, SAME neutral expression, head position, head size, eye line, three-quarter viewing angle and light. Natural adult neck and connected shoulders, anatomically coherent as a single painting, no separated head/neck parts, no elongated neck, no pasted head. Normal proportionate shoulders and hands, five natural fingers. Face, hair, neck and shoulder anatomy stay aligned between outfits. Whole head visible, generous clear margin around hair; hips near bottom. No additional heads, no expression tiles, no text, no frames or grid lines. True transparent margins, no halo, ground or scenery. Keep an individual adult face, avoid same-face youth, anime eyes, glamour poses, military armor or new scars. Soft overcast lighting, polished restrained semi-realistic game illustration matching input 2.\n",
+    "su": "Use case: identity-preserve\nAsset type: two complete waist-up game portrait bases, transparent PNG.\nInput 1: existing reference of this exact character; retain their individual face identity, gender, hairstyle and age. Input 2: approved Lin Lan/He Ming art direction and anatomy, use its restrained semi-realistic illustration finish; DO NOT copy their face.\nSubject: 苏棠, 28 years old. 米白内搭与莓红调度背心、整齐短发、眉眼放松；不做永远微笑的服务姿态. Appeal: 干净、温暖，眼神有主见. Personal detail: 彩色便签只放在非战术阅读区；休息服保留一条电影票根挂绳.\nCreate TWO COMPLETE anatomical portraits from whole hair to hips, one in each equal 768x1024 panel of a 1536x1024 canvas. Left is work/rescue outfit exactly in the palette described above, with practical occupational equipment. Right is daily/camp outfit: a warm ivory knit top, no tactical vest; holding a small film ticket booklet with a colorful lanyard.\nThe SAME person in both panels, SAME neutral expression, head position, head size, eye line, three-quarter viewing angle and light. Natural adult neck and connected shoulders, anatomically coherent as a single painting, no separated head/neck parts, no elongated neck, no pasted head. Normal proportionate shoulders and hands, five natural fingers. Face, hair, neck and shoulder anatomy stay aligned between outfits. Whole head visible, generous clear margin around hair; hips near bottom. No additional heads, no expression tiles, no text, no frames or grid lines. True transparent margins, no halo, ground or scenery. Keep an individual adult face, avoid same-face youth, anime eyes, glamour poses, military armor or new scars. Soft overcast lighting, polished restrained semi-realistic game illustration matching input 2.\n",
+    "chen": "Use case: identity-preserve\nAsset type: two complete waist-up game portrait bases, transparent PNG.\nInput 1: existing reference of this exact character; retain their individual face identity, gender, hairstyle and age. Input 2: approved Lin Lan/He Ming art direction and anatomy, use its restrained semi-realistic illustration finish; DO NOT copy their face.\nSubject: 陈砚, 42 years old. 石墨灰工装、少量铜绿、卷起的防水袖边、清晰鼻梁与鬓角；保留42岁特征. Appeal: 可靠厚重的成熟气质. Personal detail: 拆过又缝回的名牌针孔、保养很好的手工具、桌上一盆小植物.\nCreate TWO COMPLETE anatomical portraits from whole hair to hips, one in each equal 768x1024 panel of a 1536x1024 canvas. Left is work/rescue outfit exactly in the palette described above, with practical occupational equipment. Right is daily/camp outfit: a soft gray-green cardigan, no tool harness; holding a small terracotta potted plant with both hands.\nThe SAME person in both panels, SAME neutral expression, head position, head size, eye line, three-quarter viewing angle and light. Natural adult neck and connected shoulders, anatomically coherent as a single painting, no separated head/neck parts, no elongated neck, no pasted head. Normal proportionate shoulders and hands, five natural fingers. Face, hair, neck and shoulder anatomy stay aligned between outfits. Whole head visible, generous clear margin around hair; hips near bottom. No additional heads, no expression tiles, no text, no frames or grid lines. True transparent margins, no halo, ground or scenery. Keep an individual adult face, avoid same-face youth, anime eyes, glamour poses, military armor or new scars. Soft overcast lighting, polished restrained semi-realistic game illustration matching input 2.\n",
+    "ye": "Use case: identity-preserve\nAsset type: two complete waist-up game portrait bases, transparent PNG.\nInput 1: existing reference of this exact character; retain their individual face identity, gender, hairstyle and age. Input 2: approved Lin Lan/He Ming art direction and anatomy, use its restrained semi-realistic illustration finish; DO NOT copy their face.\nSubject: 叶禾, 24 years old. 深蓝工作服、明黄鞋带和手套扣、略不对称短发；亮色集中在小面积. Appeal: 有锋芒、明快、精力充沛. Personal detail: 带父亲笔迹的复印件装防水袋；小玩具零件而非全身伤疤作为经历线索.\nCreate TWO COMPLETE anatomical portraits from whole hair to hips, one in each equal 768x1024 panel of a 1536x1024 canvas. Left is work/rescue outfit exactly in the palette described above, with practical occupational equipment. Right is daily/camp outfit: a relaxed navy tee with a small yellow cuff accent, no work vest; holding a small toy being repaired.\nThe SAME person in both panels, SAME neutral expression, head position, head size, eye line, three-quarter viewing angle and light. Natural adult neck and connected shoulders, anatomically coherent as a single painting, no separated head/neck parts, no elongated neck, no pasted head. Normal proportionate shoulders and hands, five natural fingers. Face, hair, neck and shoulder anatomy stay aligned between outfits. Whole head visible, generous clear margin around hair; hips near bottom. No additional heads, no expression tiles, no text, no frames or grid lines. True transparent margins, no halo, ground or scenery. Keep an individual adult face, avoid same-face youth, anime eyes, glamour poses, military armor or new scars. Soft overcast lighting, polished restrained semi-realistic game illustration matching input 2.\n",
+    "mo": "Use case: identity-preserve\nAsset type: two complete waist-up game portrait bases, transparent PNG.\nInput 1: existing reference of this exact character; retain their individual face identity, gender, hairstyle and age. Input 2: approved Lin Lan/He Ming art direction and anatomy, use its restrained semi-realistic illustration finish; DO NOT copy their face.\nSubject: 莫遥, 27 years old. 烟紫与雾灰、窄轮廓外套、干净发型、锐而不夸张的眼线轮廓；实用防滑靴. Appeal: 克制、精致，有距离但不冷漠. Personal detail: 反扣的旧企业牌套、被拆除标识的接头、旧同事称呼时停顿.\nCreate TWO COMPLETE anatomical portraits from whole hair to hips, one in each equal 768x1024 panel of a 1536x1024 canvas. Left is work/rescue outfit exactly in the palette described above, with practical occupational equipment. Right is daily/camp outfit: a simple smoke-purple light cardigan over a fog-gray shirt, no harness; holding a small camera.\nThe SAME person in both panels, SAME neutral expression, head position, head size, eye line, three-quarter viewing angle and light. Natural adult neck and connected shoulders, anatomically coherent as a single painting, no separated head/neck parts, no elongated neck, no pasted head. Normal proportionate shoulders and hands, five natural fingers. Face, hair, neck and shoulder anatomy stay aligned between outfits. Whole head visible, generous clear margin around hair; hips near bottom. No additional heads, no expression tiles, no text, no frames or grid lines. True transparent margins, no halo, ground or scenery. Keep an individual adult face, avoid same-face youth, anime eyes, glamour poses, military armor or new scars. Soft overcast lighting, polished restrained semi-realistic game illustration matching input 2.\n",
+    "jiang": "Use case: identity-preserve\nAsset type: two complete waist-up game portrait bases, transparent PNG.\nInput 1: existing reference of this exact character; retain their individual face identity, gender, hairstyle and age. Input 2: approved Lin Lan/He Ming art direction and anatomy, use its restrained semi-realistic illustration finish; DO NOT copy their face.\nSubject: 江朔, 34 years old. 海军蓝短水手外套、暖棕内搭、干净利落的发须、耐磨手套；肩背有劳动感. Appeal: 从容、健朗，带一点讲究. Personal detail: 旧货栈号码、反复改写的工钱簿、修补过的围裙；不使用能一眼判定身份的刻板符号.\nCreate TWO COMPLETE anatomical portraits from whole hair to hips, one in each equal 768x1024 panel of a 1536x1024 canvas. Left is work/rescue outfit exactly in the palette described above, with practical occupational equipment. Right is daily/camp outfit: a warm brown shirt and a repaired plain navy apron; holding a small plate with two pastries, no cargo or rescue harness.\nThe SAME person in both panels, SAME neutral expression, head position, head size, eye line, three-quarter viewing angle and light. Natural adult neck and connected shoulders, anatomically coherent as a single painting, no separated head/neck parts, no elongated neck, no pasted head. Normal proportionate shoulders and hands, five natural fingers. Face, hair, neck and shoulder anatomy stay aligned between outfits. Whole head visible, generous clear margin around hair; hips near bottom. No additional heads, no expression tiles, no text, no frames or grid lines. True transparent margins, no halo, ground or scenery. Keep an individual adult face, avoid same-face youth, anime eyes, glamour poses, military armor or new scars. Soft overcast lighting, polished restrained semi-realistic game illustration matching input 2.\n"
+  },
+  "outputs": [
+    "game/assets/characters018/lin-bodies.png",
+    "game/assets/characters018/lin-expressions.png",
+    "game/assets/characters018/lin-motion.png",
+    "output/imagegen/p4art/lin-design.png",
+    "game/assets/characters018/xu-bodies.png",
+    "game/assets/characters018/xu-expressions.png",
+    "game/assets/characters018/xu-motion.png",
+    "output/imagegen/p4art/xu-design.png",
+    "game/assets/characters018/su-bodies.png",
+    "game/assets/characters018/su-expressions.png",
+    "game/assets/characters018/su-motion.png",
+    "output/imagegen/p4art/su-design.png",
+    "game/assets/characters018/chen-bodies.png",
+    "game/assets/characters018/chen-expressions.png",
+    "game/assets/characters018/chen-motion.png",
+    "output/imagegen/p4art/chen-design.png",
+    "game/assets/characters018/ye-bodies.png",
+    "game/assets/characters018/ye-expressions.png",
+    "game/assets/characters018/ye-motion.png",
+    "output/imagegen/p4art/ye-design.png",
+    "game/assets/characters018/he-bodies.png",
+    "game/assets/characters018/he-expressions.png",
+    "game/assets/characters018/he-motion.png",
+    "output/imagegen/p4art/he-design.png",
+    "game/assets/characters018/mo-bodies.png",
+    "game/assets/characters018/mo-expressions.png",
+    "game/assets/characters018/mo-motion.png",
+    "output/imagegen/p4art/mo-design.png",
+    "game/assets/characters018/jiang-bodies.png",
+    "game/assets/characters018/jiang-expressions.png",
+    "game/assets/characters018/jiang-motion.png",
+    "output/imagegen/p4art/jiang-design.png",
+    "game/assets/characters018/markers.png",
+    "game/assets/characters018/landmarks.png"
+  ],
+  "generation_status": "eight actors, eight expressions reused across both costumes, corrected alternating walk frames, eight design references, six generic markers and twelve landmark sets installed; human art acceptance pending",
+  "installed_previously_generated_assets": {
+    "game/assets/characters018/he-expressions.png": "dda62db5c4777bab4aeda3b399286ebeb3c0ec0a3db983467425e1c3ccd3c06e",
+    "game/assets/characters018/he-bodies.png": "1510c4815ce63772850b4f084f84fadaa810b45a3594fe376af8d14ca8ef5594",
+    "game/assets/characters018/manifest.json": "e0abb675612970147d8b64ae43bf5517ddfd06e87f411ecd2eb8e5acd45d7bd6",
+    "game/assets/characters018/lin-bodies.png": "6f5b86b24d0d0c4d4abc91a962eb37146dcad2d0dc36ac20cdd5e0b50bc82fee",
+    "game/assets/characters018/lin-expressions.png": "824c896e1484a179bc78e2f52411e2e23eed1d4973882775cbd8f072525a3a19"
+  },
+  "approved_prompt_source": "docs/p4-018-20261112/image-prompts.json",
+  "expression_prompt": "Edit ONLY the masked facial expressions in this exactly registered four-column by two-row template. It contains eight identical crops of the SAME adult character. Preserve the exact 1536x1024 canvas and all eight cell locations, face scales, head poses, eye-line placement, identity, skin tone, lighting, natural age, and anatomy. Do not rearrange, enlarge, tilt, turn or shift a head. Do not change any neck, shoulders, chin outline, hair, ears, background or unmasked pixel. No halo or mask edge.\nCell 1 upper left: unchanged neutral reference; do not modify.\nCell 2: focused, slightly concentrated brow, steady eyes.\nCell 3: lighthearted, restrained warm smile, no open mouth.\nCell 4: doubtful, a mild questioning brow, closed lips, no shock or gaping mouth.\nCell 5 lower left: restrained anger, firmer brow and lips, no theatrical rage.\nCell 6: tired, lowered eyelids and relaxed brow; no injuries, no crying, no pain.\nCell 7: emotionally touched, softly warmed eyes and slight softened smile.\nCell 8: determined, steady direct gaze and firm closed lips.\nEach change must remain inside its supplied face mask. Keep the facial feature proportions and bone structure exactly consistent with the template. This is a registered expression texture for a game, not a new character design sheet. The transparent margins remain transparent. Keep all unmasked content unchanged.\n",
+  "resumed": "User confirmed API credits restored on 2026-11-13; completed generation and installed reviewed assets.",
+  "motion_prompts": {
+    "lin": "Use case: identity-preserve\nAsset type: production 2D tactical game sprite animation strip, 1536x1024 transparent PNG.\nReference: the LEFT work costume of the attached full anatomical portrait of 林岚, age 31. Preserve exact character identity, hair, costume palette and occupational equipment: 深青短雨披、暖白内层、低束发；眼下疲倦保留，视线和手部稳定. Do NOT use the right daily costume.\nDraw this same single character SIX times in exactly six equal 512x512 cells, 3 columns by 2 rows. Whole body, elevated three-quarter view looking down at a 45-degree angle, facing lower right, feet visible. Readable strong silhouette at 96px, calm adult proportions. Neutral overcast lighting, restrained semi-realistic painted style matching the reference. Empty margin 40px inside each cell, body center x256, hair top around55, feet baseline450. Identical head, body mass, scale, equipment and framing across all frames.\nTop row left to right: walk contact with left leg forward; neutral standing with both feet grounded; walk contact with right leg forward. Bottom row: passing walk pose; ready/brace action with hands forward; brief natural forward reach performing rescue work. No weapon attacks. Motion is subtle anatomical limb movement, no character redesign. Equipment attached naturally, natural short neck and shoulders, no floating heads or rubber limbs. Every frame fully isolated on true transparent alpha. No circular base, floor, ground shadow, background, text, grid lines, cell numbers or other people. Six separate consistent sprites only, do not include the reference portraits or a design board.",
+    "xu": "Use case: identity-preserve\nAsset type: production 2D tactical game sprite animation strip, 1536x1024 transparent PNG.\nReference: the LEFT work costume of the attached full anatomical portrait of 许舟, age 29. Preserve exact character identity, hair, costume palette and occupational equipment: 铜橙绳具配灰蓝防水服、侧分短发、清楚的腰肩轮廓；行动服贴合但不妨碍防护. Do NOT use the right daily costume.\nDraw this same single character SIX times in exactly six equal 512x512 cells, 3 columns by 2 rows. Whole body, elevated three-quarter view looking down at a 45-degree angle, facing lower right, feet visible. Readable strong silhouette at 96px, calm adult proportions. Neutral overcast lighting, restrained semi-realistic painted style matching the reference. Empty margin 40px inside each cell, body center x256, hair top around55, feet baseline450. Identical head, body mass, scale, equipment and framing across all frames.\nTop row left to right: walk contact with left leg forward; neutral standing with both feet grounded; walk contact with right leg forward. Bottom row: passing walk pose; ready/brace action with hands forward; brief natural forward reach performing rescue work. No weapon attacks. Motion is subtle anatomical limb movement, no character redesign. Equipment attached naturally, natural short neck and shoulders, no floating heads or rubber limbs. Every frame fully isolated on true transparent alpha. No circular base, floor, ground shadow, background, text, grid lines, cell numbers or other people. Six separate consistent sprites only, do not include the reference portraits or a design board.",
+    "su": "Use case: identity-preserve\nAsset type: production 2D tactical game sprite animation strip, 1536x1024 transparent PNG.\nReference: the LEFT work costume of the attached full anatomical portrait of 苏棠, age 28. Preserve exact character identity, hair, costume palette and occupational equipment: 米白内搭与莓红调度背心、整齐短发、眉眼放松；不做永远微笑的服务姿态. Do NOT use the right daily costume.\nDraw this same single character SIX times in exactly six equal 512x512 cells, 3 columns by 2 rows. Whole body, elevated three-quarter view looking down at a 45-degree angle, facing lower right, feet visible. Readable strong silhouette at 96px, calm adult proportions. Neutral overcast lighting, restrained semi-realistic painted style matching the reference. Empty margin 40px inside each cell, body center x256, hair top around55, feet baseline450. Identical head, body mass, scale, equipment and framing across all frames.\nTop row left to right: walk contact with left leg forward; neutral standing with both feet grounded; walk contact with right leg forward. Bottom row: passing walk pose; ready/brace action with hands forward; brief natural forward reach performing rescue work. No weapon attacks. Motion is subtle anatomical limb movement, no character redesign. Equipment attached naturally, natural short neck and shoulders, no floating heads or rubber limbs. Every frame fully isolated on true transparent alpha. No circular base, floor, ground shadow, background, text, grid lines, cell numbers or other people. Six separate consistent sprites only, do not include the reference portraits or a design board.",
+    "chen": "Use case: identity-preserve\nAsset type: production 2D tactical game sprite animation strip, 1536x1024 transparent PNG.\nReference: the LEFT work costume of the attached full anatomical portrait of 陈砚, age 42. Preserve exact character identity, hair, costume palette and occupational equipment: 石墨灰工装、少量铜绿、卷起的防水袖边、清晰鼻梁与鬓角；保留42岁特征. Do NOT use the right daily costume.\nDraw this same single character SIX times in exactly six equal 512x512 cells, 3 columns by 2 rows. Whole body, elevated three-quarter view looking down at a 45-degree angle, facing lower right, feet visible. Readable strong silhouette at 96px, calm adult proportions. Neutral overcast lighting, restrained semi-realistic painted style matching the reference. Empty margin 40px inside each cell, body center x256, hair top around55, feet baseline450. Identical head, body mass, scale, equipment and framing across all frames.\nTop row left to right: walk contact with left leg forward; neutral standing with both feet grounded; walk contact with right leg forward. Bottom row: passing walk pose; ready/brace action with hands forward; brief natural forward reach performing rescue work. No weapon attacks. Motion is subtle anatomical limb movement, no character redesign. Equipment attached naturally, natural short neck and shoulders, no floating heads or rubber limbs. Every frame fully isolated on true transparent alpha. No circular base, floor, ground shadow, background, text, grid lines, cell numbers or other people. Six separate consistent sprites only, do not include the reference portraits or a design board.",
+    "ye": "Use case: identity-preserve\nAsset type: production 2D tactical game sprite animation strip, 1536x1024 transparent PNG.\nReference: the LEFT work costume of the attached full anatomical portrait of 叶禾, age 24. Preserve exact character identity, hair, costume palette and occupational equipment: 深蓝工作服、明黄鞋带和手套扣、略不对称短发；亮色集中在小面积. Do NOT use the right daily costume.\nDraw this same single character SIX times in exactly six equal 512x512 cells, 3 columns by 2 rows. Whole body, elevated three-quarter view looking down at a 45-degree angle, facing lower right, feet visible. Readable strong silhouette at 96px, calm adult proportions. Neutral overcast lighting, restrained semi-realistic painted style matching the reference. Empty margin 40px inside each cell, body center x256, hair top around55, feet baseline450. Identical head, body mass, scale, equipment and framing across all frames.\nTop row left to right: walk contact with left leg forward; neutral standing with both feet grounded; walk contact with right leg forward. Bottom row: passing walk pose; ready/brace action with hands forward; brief natural forward reach performing rescue work. No weapon attacks. Motion is subtle anatomical limb movement, no character redesign. Equipment attached naturally, natural short neck and shoulders, no floating heads or rubber limbs. Every frame fully isolated on true transparent alpha. No circular base, floor, ground shadow, background, text, grid lines, cell numbers or other people. Six separate consistent sprites only, do not include the reference portraits or a design board.",
+    "he": "Use case: identity-preserve\nAsset type: production 2D tactical game sprite animation strip, 1536x1024 transparent PNG.\nReference: the LEFT work costume of the attached full anatomical portrait of 贺鸣, age 46. Preserve exact character identity, hair, costume palette and occupational equipment: 沙色重外套、暗红内衬、宽肩轮廓、短须或鬓白；装备重量有支撑结构. Do NOT use the right daily costume.\nDraw this same single character SIX times in exactly six equal 512x512 cells, 3 columns by 2 rows. Whole body, elevated three-quarter view looking down at a 45-degree angle, facing lower right, feet visible. Readable strong silhouette at 96px, calm adult proportions. Neutral overcast lighting, restrained semi-realistic painted style matching the reference. Empty margin 40px inside each cell, body center x256, hair top around55, feet baseline450. Identical head, body mass, scale, equipment and framing across all frames.\nTop row left to right: walk contact with left leg forward; neutral standing with both feet grounded; walk contact with right leg forward. Bottom row: passing walk pose; ready/brace action with hands forward; brief natural forward reach performing rescue work. No weapon attacks. Motion is subtle anatomical limb movement, no character redesign. Equipment attached naturally, natural short neck and shoulders, no floating heads or rubber limbs. Every frame fully isolated on true transparent alpha. No circular base, floor, ground shadow, background, text, grid lines, cell numbers or other people. Six separate consistent sprites only, do not include the reference portraits or a design board.",
+    "mo": "Use case: identity-preserve\nAsset type: production 2D tactical game sprite animation strip, 1536x1024 transparent PNG.\nReference: the LEFT work costume of the attached full anatomical portrait of 莫遥, age 27. Preserve exact character identity, hair, costume palette and occupational equipment: 烟紫与雾灰、窄轮廓外套、干净发型、锐而不夸张的眼线轮廓；实用防滑靴. Do NOT use the right daily costume.\nDraw this same single character SIX times in exactly six equal 512x512 cells, 3 columns by 2 rows. Whole body, elevated three-quarter view looking down at a 45-degree angle, facing lower right, feet visible. Readable strong silhouette at 96px, calm adult proportions. Neutral overcast lighting, restrained semi-realistic painted style matching the reference. Empty margin 40px inside each cell, body center x256, hair top around55, feet baseline450. Identical head, body mass, scale, equipment and framing across all frames.\nTop row left to right: walk contact with left leg forward; neutral standing with both feet grounded; walk contact with right leg forward. Bottom row: passing walk pose; ready/brace action with hands forward; brief natural forward reach performing rescue work. No weapon attacks. Motion is subtle anatomical limb movement, no character redesign. Equipment attached naturally, natural short neck and shoulders, no floating heads or rubber limbs. Every frame fully isolated on true transparent alpha. No circular base, floor, ground shadow, background, text, grid lines, cell numbers or other people. Six separate consistent sprites only, do not include the reference portraits or a design board.",
+    "jiang": "Use case: identity-preserve\nAsset type: production 2D tactical game sprite animation strip, 1536x1024 transparent PNG.\nReference: the LEFT work costume of the attached full anatomical portrait of 江朔, age 34. Preserve exact character identity, hair, costume palette and occupational equipment: 海军蓝短水手外套、暖棕内搭、干净利落的发须、耐磨手套；肩背有劳动感. Do NOT use the right daily costume.\nDraw this same single character SIX times in exactly six equal 512x512 cells, 3 columns by 2 rows. Whole body, elevated three-quarter view looking down at a 45-degree angle, facing lower right, feet visible. Readable strong silhouette at 96px, calm adult proportions. Neutral overcast lighting, restrained semi-realistic painted style matching the reference. Empty margin 40px inside each cell, body center x256, hair top around55, feet baseline450. Identical head, body mass, scale, equipment and framing across all frames.\nTop row left to right: walk contact with left leg forward; neutral standing with both feet grounded; walk contact with right leg forward. Bottom row: passing walk pose; ready/brace action with hands forward; brief natural forward reach performing rescue work. No weapon attacks. Motion is subtle anatomical limb movement, no character redesign. Equipment attached naturally, natural short neck and shoulders, no floating heads or rubber limbs. Every frame fully isolated on true transparent alpha. No circular base, floor, ground shadow, background, text, grid lines, cell numbers or other people. Six separate consistent sprites only, do not include the reference portraits or a design board."
+  },
+  "design_prompts": {
+    "lin": "Use case: identity-preserve\nAsset type: final character model sheet for an existing 2D adult rescue game, 1536x1024 landscape.\nReference is the established 林岚, age 31. Preserve exact individual face, hairstyle, normal adult anatomical proportions and work outfit, not the daily outfit. 深青短雨披、暖白内层、低束发；眼下疲倦保留，视线和手部稳定. Personal detail: 腰侧防水医嘱夹、袖口修补；休息立绘解开外层扣子，露出旧食谱.\nCreate three carefully consistent full-body views of this SAME character: straight front, exact side, three-quarter. All three wear the reference LEFT work costume and identical practical occupational equipment, matching color and scale. Feet and complete hair visible, no crop. Include a compact six-color palette along the bottom and a small black silhouette of the front view. Clean warm light-gray background. Restrained semi-realistic illustration exactly matching the reference. Fixed costume construction; adult age and individual features. Natural neck and shoulder anatomy, no detached heads or extreme stylization. No new uniforms, weapons, military ranks, slogans, captions or labels. This is a production reference sheet; three poses, one identity, no extra costumes or expression portraits.",
+    "xu": "Use case: identity-preserve\nAsset type: final character model sheet for an existing 2D adult rescue game, 1536x1024 landscape.\nReference is the established 许舟, age 29. Preserve exact individual face, hairstyle, normal adult anatomical proportions and work outfit, not the daily outfit. 铜橙绳具配灰蓝防水服、侧分短发、清楚的腰肩轮廓；行动服贴合但不妨碍防护. Personal detail: 旧接收器外壳与用旧的绳结；工作时先检查锁扣，再抬头开玩笑.\nCreate three carefully consistent full-body views of this SAME character: straight front, exact side, three-quarter. All three wear the reference LEFT work costume and identical practical occupational equipment, matching color and scale. Feet and complete hair visible, no crop. Include a compact six-color palette along the bottom and a small black silhouette of the front view. Clean warm light-gray background. Restrained semi-realistic illustration exactly matching the reference. Fixed costume construction; adult age and individual features. Natural neck and shoulder anatomy, no detached heads or extreme stylization. No new uniforms, weapons, military ranks, slogans, captions or labels. This is a production reference sheet; three poses, one identity, no extra costumes or expression portraits.",
+    "su": "Use case: identity-preserve\nAsset type: final character model sheet for an existing 2D adult rescue game, 1536x1024 landscape.\nReference is the established 苏棠, age 28. Preserve exact individual face, hairstyle, normal adult anatomical proportions and work outfit, not the daily outfit. 米白内搭与莓红调度背心、整齐短发、眉眼放松；不做永远微笑的服务姿态. Personal detail: 彩色便签只放在非战术阅读区；休息服保留一条电影票根挂绳.\nCreate three carefully consistent full-body views of this SAME character: straight front, exact side, three-quarter. All three wear the reference LEFT work costume and identical practical occupational equipment, matching color and scale. Feet and complete hair visible, no crop. Include a compact six-color palette along the bottom and a small black silhouette of the front view. Clean warm light-gray background. Restrained semi-realistic illustration exactly matching the reference. Fixed costume construction; adult age and individual features. Natural neck and shoulder anatomy, no detached heads or extreme stylization. No new uniforms, weapons, military ranks, slogans, captions or labels. This is a production reference sheet; three poses, one identity, no extra costumes or expression portraits.",
+    "chen": "Use case: identity-preserve\nAsset type: final character model sheet for an existing 2D adult rescue game, 1536x1024 landscape.\nReference is the established 陈砚, age 42. Preserve exact individual face, hairstyle, normal adult anatomical proportions and work outfit, not the daily outfit. 石墨灰工装、少量铜绿、卷起的防水袖边、清晰鼻梁与鬓角；保留42岁特征. Personal detail: 拆过又缝回的名牌针孔、保养很好的手工具、桌上一盆小植物.\nCreate three carefully consistent full-body views of this SAME character: straight front, exact side, three-quarter. All three wear the reference LEFT work costume and identical practical occupational equipment, matching color and scale. Feet and complete hair visible, no crop. Include a compact six-color palette along the bottom and a small black silhouette of the front view. Clean warm light-gray background. Restrained semi-realistic illustration exactly matching the reference. Fixed costume construction; adult age and individual features. Natural neck and shoulder anatomy, no detached heads or extreme stylization. No new uniforms, weapons, military ranks, slogans, captions or labels. This is a production reference sheet; three poses, one identity, no extra costumes or expression portraits.",
+    "ye": "Use case: identity-preserve\nAsset type: final character model sheet for an existing 2D adult rescue game, 1536x1024 landscape.\nReference is the established 叶禾, age 24. Preserve exact individual face, hairstyle, normal adult anatomical proportions and work outfit, not the daily outfit. 深蓝工作服、明黄鞋带和手套扣、略不对称短发；亮色集中在小面积. Personal detail: 带父亲笔迹的复印件装防水袋；小玩具零件而非全身伤疤作为经历线索.\nCreate three carefully consistent full-body views of this SAME character: straight front, exact side, three-quarter. All three wear the reference LEFT work costume and identical practical occupational equipment, matching color and scale. Feet and complete hair visible, no crop. Include a compact six-color palette along the bottom and a small black silhouette of the front view. Clean warm light-gray background. Restrained semi-realistic illustration exactly matching the reference. Fixed costume construction; adult age and individual features. Natural neck and shoulder anatomy, no detached heads or extreme stylization. No new uniforms, weapons, military ranks, slogans, captions or labels. This is a production reference sheet; three poses, one identity, no extra costumes or expression portraits.",
+    "he": "Use case: identity-preserve\nAsset type: final character model sheet for an existing 2D adult rescue game, 1536x1024 landscape.\nReference is the established 贺鸣, age 46. Preserve exact individual face, hairstyle, normal adult anatomical proportions and work outfit, not the daily outfit. 沙色重外套、暗红内衬、宽肩轮廓、短须或鬓白；装备重量有支撑结构. Personal detail: 整齐但可见的补缝、小女儿挑的衣扣；生活立绘的姿态比工作时松弛.\nCreate three carefully consistent full-body views of this SAME character: straight front, exact side, three-quarter. All three wear the reference LEFT work costume and identical practical occupational equipment, matching color and scale. Feet and complete hair visible, no crop. Include a compact six-color palette along the bottom and a small black silhouette of the front view. Clean warm light-gray background. Restrained semi-realistic illustration exactly matching the reference. Fixed costume construction; adult age and individual features. Natural neck and shoulder anatomy, no detached heads or extreme stylization. No new uniforms, weapons, military ranks, slogans, captions or labels. This is a production reference sheet; three poses, one identity, no extra costumes or expression portraits.",
+    "mo": "Use case: identity-preserve\nAsset type: final character model sheet for an existing 2D adult rescue game, 1536x1024 landscape.\nReference is the established 莫遥, age 27. Preserve exact individual face, hairstyle, normal adult anatomical proportions and work outfit, not the daily outfit. 烟紫与雾灰、窄轮廓外套、干净发型、锐而不夸张的眼线轮廓；实用防滑靴. Personal detail: 反扣的旧企业牌套、被拆除标识的接头、旧同事称呼时停顿.\nCreate three carefully consistent full-body views of this SAME character: straight front, exact side, three-quarter. All three wear the reference LEFT work costume and identical practical occupational equipment, matching color and scale. Feet and complete hair visible, no crop. Include a compact six-color palette along the bottom and a small black silhouette of the front view. Clean warm light-gray background. Restrained semi-realistic illustration exactly matching the reference. Fixed costume construction; adult age and individual features. Natural neck and shoulder anatomy, no detached heads or extreme stylization. No new uniforms, weapons, military ranks, slogans, captions or labels. This is a production reference sheet; three poses, one identity, no extra costumes or expression portraits.",
+    "jiang": "Use case: identity-preserve\nAsset type: final character model sheet for an existing 2D adult rescue game, 1536x1024 landscape.\nReference is the established 江朔, age 34. Preserve exact individual face, hairstyle, normal adult anatomical proportions and work outfit, not the daily outfit. 海军蓝短水手外套、暖棕内搭、干净利落的发须、耐磨手套；肩背有劳动感. Personal detail: 旧货栈号码、反复改写的工钱簿、修补过的围裙；不使用能一眼判定身份的刻板符号.\nCreate three carefully consistent full-body views of this SAME character: straight front, exact side, three-quarter. All three wear the reference LEFT work costume and identical practical occupational equipment, matching color and scale. Feet and complete hair visible, no crop. Include a compact six-color palette along the bottom and a small black silhouette of the front view. Clean warm light-gray background. Restrained semi-realistic illustration exactly matching the reference. Fixed costume construction; adult age and individual features. Natural neck and shoulder anatomy, no detached heads or extreme stylization. No new uniforms, weapons, military ranks, slogans, captions or labels. This is a production reference sheet; three poses, one identity, no extra costumes or expression portraits."
+  },
+  "marker_prompt": "Use case: stylized-concept\nAsset type: 6 reusable 2D rescue-game NPC markers, transparent sprite atlas, 1536x1024.\nReference art supplies rendering finish only, do not copy the named hero. Make exactly SIX DISTINCT civilian/responder full-body figures in a regular 3-column by 2-row grid, each cell512x512, generous40px empty margins. Elevated three-quarter top-down camera, all same camera and realistic human scale, neutral overcast light, restrained semi-realistic painted rescue-game art. Each complete sprite is isolated on true transparent alpha, NO floor or circular base, labels, grids or numbers.\nTOP ROW: 1 adult civilian in plain muted tan coat, seated waiting for assistance, recognizably unarmed ordinary person; 2 child wearing a yellow raincoat, smaller true child proportions and no adult equipment, seated waiting; 3 injured adult lying safely on a compact evacuation stretcher under a white blanket, a small clean bandage, no gore.\nBOTTOM ROW: 4 workplace staff member in a light work vest with badge, hard hat beside them and clipboard, seated waiting; 5 generic borrowed rescue responder in pale teal reflective jacket, practical aid bag and helmet, standing ready; 6 a DIFFERENT generic borrowed rescue responder with a broader silhouette, mustard reflective vest, helmet and compact tool bag, standing ready. The two responders are generic support workers, not new named recruitable heroes. Practical appropriate clothing, natural anatomy and short necks. Crisp recognizable silhouette at 96px, distinct shapes as well as colors. No weapons, injuries beyond the one stretcher marker, gore, extra people or scenery.",
+  "mo_identity_correction": "Use case: identity-preserve. Correct only the face identity in BOTH complete portraits in input 1. Input 1 is the edit target; its costume, hands, framing, body, neck and shoulder anatomy are correct. However its face accidentally resembles another cast member. Input 2 is the authoritative face reference for Mo Yao, age 27: restore HER exact individual eye shape, straighter compact brows, fuller oval cheek and jaw structure, compact mouth and distinctive facial proportions from input 2. The same Mo Yao in both costumes, identical neutral head pose, same size and position within each existing panel. Keep the existing low ponytail. Do not copy a different character or introduce a new model face. Do not change neck length, shoulders, body, costumes, camera, hands, props, skin lighting, panel positions or canvas1536x1024. Preserve natural coherent anatomy and true transparent background. Exactly two complete waist-up people, no additional face crops or sheet panels. Keep the restrained semi-realistic finish of input 1. The task is identity correction, not a costume redesign.",
+  "landmark_prompt": "Use case: stylized-concept\nAsset type: twelve reusable location landmark prop kits for a 2D flood-rescue tactical game, transparent1536x1024 atlas, exactly4 columns by3 rows, no text or grid lines.\nEach cell contains a small coherent group of THREE practical location-specific props in a clear elevated three-quarter view, isolated on true transparent alpha, no ground plate or background rectangle. Consistent readable semi-realistic painted game art, soft overcast light, restrained teal/gray/ochre materials, same scale and crisp silhouettes. Generous empty margins between all twelve cells. These are illustrative landmarks, not an entire map or new interactive objectives. No people, weapons, labels or lettering.\nRow1 left to right: bridge maintenance kit (steel bridge joint, concrete support, safety barrier); community clinic kit (medical trolley, examination lamp, compact power backup); cold storage kit (insulated coldroom door, compressor, medicine crate); control-room kit (control console, cable rack, signal panel).\nRow2: factory kit (industrial valve column, guarded motor, warning barrier); ferry-dock kit (mooring bollard, orange life ring, dock ladder); floodgate kit (hydraulic gate drive, handwheel, water gauge without writing); housing-block kit (apartment doorway, stair railing, domestic utility cabinet).\nRow3: pump-station kit (large water pump, pipe elbow, valve); rooftop kit (ventilation stack, rooftop access hatch, safety rail); shelter kit (folding cots, folded blankets, water container); warehouse kit (steel storage shelves, sealed crates, hand trolley).\nNo full-scene backgrounds, no additional tiles, no obstructing fog or glow. Exactly twelve clear location identities in the requested order.",
+  "motion_opposite_contact_correction": "Use case: precise-object-edit. Input image is the EDIT TARGET: a 3x2 atlas of six full-body animation frames. Keep the canvas 1536x1024, exact six cell registration, transparent background, and ALL pixels outside the editable masked lower-half of TOP RIGHT cell unchanged. Change ONLY the legs of the TOP RIGHT character (frame 2). The current mistake is that frame 2 repeats frame 0 with the same leg forward. Fix frame 2 to the OPPOSITE FOOT CONTACT of a walk: the leg attached to the hip on SCREEN LEFT must now lead forward, with its boot planted lower toward the viewer; the leg attached to the hip on SCREEN RIGHT must trail behind, bent at knee, its boot higher and heel lifted. The two legs must visibly swap front/back depth and which knee is leading compared to the TOP LEFT sprite. Keep pelvis, costume, trouser color, boots, camera angle, body size, head placement and all other frames unchanged. Both legs remain naturally connected to their original hips; no extra limbs, no twisting knees, no duplication. No labels or ground plate. This is an in-place walking animation, not a new portrait.",
+  "motion_pose_reference_correction": "Use case: precise-object-edit. Image 1 is the EDIT TARGET. Image 2 is ONLY a pose reference, a different character already having the correct opposite-foot contact in its TOP RIGHT cell. Change ONLY the legs in the TOP RIGHT cell of image 1 (frame 2) to EXACTLY match the LEG POSE AND FOOT POSITIONS of image 2 TOP RIGHT cell. The reference's SCREEN-LEFT leg extends straight down and slightly toward the viewer, with the boot planted near cell coordinate (227,480). Its SCREEN-RIGHT knee bends, the boot is lifted behind near (280,380). Copy that front/back arrangement; the visible screen-left shin must be the planted straight one, screen-right shin must be the bent lifted one. The previous edit failed by keeping the same foot forward as TOP LEFT: do not repeat that error. Do not copy any face, clothing, hands, poncho or props from image 2. Preserve original trousers, boots, proportions and identity from image 1. Keep torso, head, arms, all other 5 frames and all cell registration unchanged. Exact 1536x1024 canvas 3columns x2rows. Genuine transparent alpha outside all silhouettes; no studio glow. Natural anatomy, two connected legs only.",
+  "alpha_cleanup_prompt": "Use case: background-extraction. Input image is the EDIT TARGET, a registered game sprite atlas. Remove ONLY the entire studio background, all grey/brown/black glow, vignette, haze and opaque rectangular backdrop. Return genuine clean RGBA transparency with alpha ZERO everywhere outside the character/prop silhouette, including gaps between limbs and all margins. This is exact cutout extraction, not illustration generation. Preserve every existing character/prop, face, costume, expression, limb pose, position, size, lighting and color. Do NOT move, rescale or redraw the subjects, do not change any body part or foot position. Keep the exact 1536x1024 canvas and cell alignment. No ground, no shadow plane, no replacement solid color or checkerboard. Crisp antialiased silhouette only with no colored halo.",
+  "accepted_outputs": {
+    "game/assets/characters018/lin-bodies.png": {
+      "sha256": "6f5b86b24d0d0c4d4abc91a962eb37146dcad2d0dc36ac20cdd5e0b50bc82fee",
+      "usage": "bodies",
+      "actor": "lin"
+    },
+    "game/assets/characters018/lin-expressions.png": {
+      "sha256": "824c896e1484a179bc78e2f52411e2e23eed1d4973882775cbd8f072525a3a19",
+      "usage": "expressions",
+      "actor": "lin"
+    },
+    "game/assets/characters018/lin-motion.png": {
+      "sha256": "c964e1b4814381af1010893483dd9c290119a1a120053e69d00444c94cd8a1ec",
+      "usage": "motion",
+      "actor": "lin"
+    },
+    "output/imagegen/p4art/lin-design.png": {
+      "sha256": "3dba05b6d731c32eabe9277670e3a0d456a93f606a36792662e7e12f56288fc7",
+      "usage": "three-view design reference; not a runtime portrait",
+      "actor": "lin"
+    },
+    "game/assets/characters018/xu-bodies.png": {
+      "sha256": "d529ff9dd6146642ebdf4b2751bfbdbd5728789c9c35a963b28aa8cdd9b85eb1",
+      "usage": "bodies",
+      "actor": "xu"
+    },
+    "game/assets/characters018/xu-expressions.png": {
+      "sha256": "f014363d2248b815a556d4f91cf694246f3bd2c302978530efe5268822d3c091",
+      "usage": "expressions",
+      "actor": "xu"
+    },
+    "game/assets/characters018/xu-motion.png": {
+      "sha256": "c84e1c980aac0da9bcb68193b666888956fda44b184210264711c3a7186b8224",
+      "usage": "motion",
+      "actor": "xu"
+    },
+    "output/imagegen/p4art/xu-design.png": {
+      "sha256": "e2c90295f8e90777e4006d14638a4779085d0aea465ac57e471b273922898f49",
+      "usage": "three-view design reference; not a runtime portrait",
+      "actor": "xu"
+    },
+    "game/assets/characters018/su-bodies.png": {
+      "sha256": "62f9a5a4a0169ee4fa7508ec4a652e6b152314ab2a0ea6024d120708026bb00b",
+      "usage": "bodies",
+      "actor": "su"
+    },
+    "game/assets/characters018/su-expressions.png": {
+      "sha256": "8619850ffd379730007498b2d99588804606ae76ae63d201f28747a4ed3f276f",
+      "usage": "expressions",
+      "actor": "su"
+    },
+    "game/assets/characters018/su-motion.png": {
+      "sha256": "e9987a26c1e8405a2e4fce0c6921b7e390f660749eeed5d1d9d7a937d16b0772",
+      "usage": "motion",
+      "actor": "su"
+    },
+    "output/imagegen/p4art/su-design.png": {
+      "sha256": "5f2d8f9a0669ec5eee943ce70f8b0b4736c4007b10554df2cb8d2f558edf20db",
+      "usage": "three-view design reference; not a runtime portrait",
+      "actor": "su"
+    },
+    "game/assets/characters018/chen-bodies.png": {
+      "sha256": "62847558d1db1fbcd227e364734170775df96f0734a8f91e02b9e13da21997da",
+      "usage": "bodies",
+      "actor": "chen"
+    },
+    "game/assets/characters018/chen-expressions.png": {
+      "sha256": "c7ac9d9cac6e775468384d58a5940476fed1aa517ce63fe9a752d58ed584a9e2",
+      "usage": "expressions",
+      "actor": "chen"
+    },
+    "game/assets/characters018/chen-motion.png": {
+      "sha256": "7703d2944c8454755bba199fe5eb60a907ce5284d166110a53acbdc756274a3d",
+      "usage": "motion",
+      "actor": "chen"
+    },
+    "output/imagegen/p4art/chen-design.png": {
+      "sha256": "76ceea79c8832eef23be68492f3b1d1a41944a84eacdfe32643307ab97e9835c",
+      "usage": "three-view design reference; not a runtime portrait",
+      "actor": "chen"
+    },
+    "game/assets/characters018/ye-bodies.png": {
+      "sha256": "22ebb05672a942b4632ac6dc1f5c91a8cf2f46b9548be0544b583e3437164d1b",
+      "usage": "bodies",
+      "actor": "ye"
+    },
+    "game/assets/characters018/ye-expressions.png": {
+      "sha256": "348be7d52e9534cb1682b42ee811c3e3b52de9c9a60500a2a2ae111dca9e040f",
+      "usage": "expressions",
+      "actor": "ye"
+    },
+    "game/assets/characters018/ye-motion.png": {
+      "sha256": "a82073e0f9db0dd2747a0cce6f6e89778dbba3b752ce95b4319019c5aba729e9",
+      "usage": "motion",
+      "actor": "ye"
+    },
+    "output/imagegen/p4art/ye-design.png": {
+      "sha256": "8290844447e27d731704d3920f5025b61e852a0017f8ee2d66223b205330ab79",
+      "usage": "three-view design reference; not a runtime portrait",
+      "actor": "ye"
+    },
+    "game/assets/characters018/he-bodies.png": {
+      "sha256": "1510c4815ce63772850b4f084f84fadaa810b45a3594fe376af8d14ca8ef5594",
+      "usage": "bodies",
+      "actor": "he"
+    },
+    "game/assets/characters018/he-expressions.png": {
+      "sha256": "dda62db5c4777bab4aeda3b399286ebeb3c0ec0a3db983467425e1c3ccd3c06e",
+      "usage": "expressions",
+      "actor": "he"
+    },
+    "game/assets/characters018/he-motion.png": {
+      "sha256": "c40dca4d1b02c1cc95c0e0f74fa95d489dff6d55b0363ca4379a83dff238fdc8",
+      "usage": "motion",
+      "actor": "he"
+    },
+    "output/imagegen/p4art/he-design.png": {
+      "sha256": "58195fbe52ab5081b12e304bcabf3c1bb0d9ca4997cc046d412b6aec7dbbf871",
+      "usage": "three-view design reference; not a runtime portrait",
+      "actor": "he"
+    },
+    "game/assets/characters018/mo-bodies.png": {
+      "sha256": "257865092d8fc0aa790aafd0d0ff9069c4ba92e951628158ab466a8d9508925a",
+      "usage": "bodies",
+      "actor": "mo"
+    },
+    "game/assets/characters018/mo-expressions.png": {
+      "sha256": "1a066ebb33a8ead35dddf824426fcd5980c2b21dd7f7fe0a19399789f6a573ff",
+      "usage": "expressions",
+      "actor": "mo"
+    },
+    "game/assets/characters018/mo-motion.png": {
+      "sha256": "2e42f3575d3e72b046ca1e5bf19be6ec5b7409c1e3f45f2c4073d875c70a1119",
+      "usage": "motion",
+      "actor": "mo"
+    },
+    "output/imagegen/p4art/mo-design.png": {
+      "sha256": "5daf7a26147f05566b428cb933b5c9687fff7cbf2b759371eac2442911039ca5",
+      "usage": "three-view design reference; not a runtime portrait",
+      "actor": "mo"
+    },
+    "game/assets/characters018/jiang-bodies.png": {
+      "sha256": "70d1e3e26d7c2ff51675b9f72ed4bb847778b654920fb9d494896f55753f20c2",
+      "usage": "bodies",
+      "actor": "jiang"
+    },
+    "game/assets/characters018/jiang-expressions.png": {
+      "sha256": "ee08c267cf11dc85ea1333d71bede508d82f58798ad8b4afb7d8af411aba0e8e",
+      "usage": "expressions",
+      "actor": "jiang"
+    },
+    "game/assets/characters018/jiang-motion.png": {
+      "sha256": "bc40ced9919c8d3621288413aa7a7d00862e9d806871641848d2734b402081e0",
+      "usage": "motion",
+      "actor": "jiang"
+    },
+    "output/imagegen/p4art/jiang-design.png": {
+      "sha256": "030c591861ba64c38b409490e206d0f65d4ea26f154b7e6c05ad0cb4e063af41",
+      "usage": "three-view design reference; not a runtime portrait",
+      "actor": "jiang"
+    },
+    "game/assets/characters018/markers.png": {
+      "sha256": "2d082c0cb887543ce994ccb505ed7a3c0866944abf3963a424c5157675228fd5",
+      "usage": "markers"
+    },
+    "game/assets/characters018/landmarks.png": {
+      "sha256": "996238643e8126bc00bfe2344b2dee7e513675a2c4f5e68f6d8e769455768b82",
+      "usage": "landmarks"
+    }
+  },
+  "final_selection": {
+    "lin_motion": "lin-motion-v3",
+    "xu_motion": "xu-motion-v2",
+    "su_motion": "su-motion-v3",
+    "chen_motion": "chen-motion-v2",
+    "ye_motion": "ye-motion-v3",
+    "he_motion": "he-motion-v3",
+    "mo_motion": "mo-motion-v2",
+    "jiang_motion": "jiang-motion-v3",
+    "mo_bodies": "mo-bodies-v3",
+    "landmarks": "landmarks-v2"
+  },
+  "quality_review": [
+    "Rejected initial Mo identity copied from Lin; regenerated distinct face.",
+    "Corrected duplicated same-foot contact with lower-body masked edits; additional pose-reference pass for Su/Ye/He/Jiang.",
+    "Removed residual opaque background from Mo base, Lin corrected motion and landmark atlas using image API; no hand-painted neck/head composites.",
+    "128 real shader renders keep pixels below face identical to complete base. 96px gallery and three-view references reviewed by assistant; not human acceptance."
+  ],
+  "intermediate_files": [
+    {
+      "path": "output/imagegen/p4art/chen-bodies.png",
+      "sha256": "62847558d1db1fbcd227e364734170775df96f0734a8f91e02b9e13da21997da",
+      "retained_runtime_copy": [
+        "game/assets/characters018/chen-bodies.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/chen-expressions.png",
+      "sha256": "c7ac9d9cac6e775468384d58a5940476fed1aa517ce63fe9a752d58ed584a9e2",
+      "retained_runtime_copy": [
+        "game/assets/characters018/chen-expressions.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/chen-motion-v2.png",
+      "sha256": "7703d2944c8454755bba199fe5eb60a907ce5284d166110a53acbdc756274a3d",
+      "retained_runtime_copy": [
+        "game/assets/characters018/chen-motion.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/chen-motion.png",
+      "sha256": "0b63bd1a2dd7fd9aa676099557c66ba1766c98b22c928ffb54f315800cc7c991",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/he-motion-v2.png",
+      "sha256": "2aa9798d4df79bd341c7c744df39431688797ffac325a01ab254e19aff14d614",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/he-motion-v3.png",
+      "sha256": "c40dca4d1b02c1cc95c0e0f74fa95d489dff6d55b0363ca4379a83dff238fdc8",
+      "retained_runtime_copy": [
+        "game/assets/characters018/he-motion.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/he-motion.png",
+      "sha256": "9114564bed52a9e8dfa7e3b3fb8728ec71a857d3bee3448e1b845caa6ae43ffd",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/jiang-bodies.png",
+      "sha256": "70d1e3e26d7c2ff51675b9f72ed4bb847778b654920fb9d494896f55753f20c2",
+      "retained_runtime_copy": [
+        "game/assets/characters018/jiang-bodies.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/jiang-expressions.png",
+      "sha256": "ee08c267cf11dc85ea1333d71bede508d82f58798ad8b4afb7d8af411aba0e8e",
+      "retained_runtime_copy": [
+        "game/assets/characters018/jiang-expressions.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/jiang-motion-v2.png",
+      "sha256": "fdf015f997f6769c496c4bed8400fd5b3c595cdffd2b77e31ae8b69bd0478f71",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/jiang-motion-v3.png",
+      "sha256": "bc40ced9919c8d3621288413aa7a7d00862e9d806871641848d2734b402081e0",
+      "retained_runtime_copy": [
+        "game/assets/characters018/jiang-motion.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/jiang-motion.png",
+      "sha256": "e0c500eaa34cc3ba9cb57b50fc2351a7e6818ad7e5603a898fe0b77b67ce9def",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/landmarks-v2.png",
+      "sha256": "996238643e8126bc00bfe2344b2dee7e513675a2c4f5e68f6d8e769455768b82",
+      "retained_runtime_copy": [
+        "game/assets/characters018/landmarks.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/landmarks.png",
+      "sha256": "e84c564ca7e1721f4e4f779ac49a2774cd0ea86c43b657e0def9bfe10c6afe6e",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/lin-motion-v2.png",
+      "sha256": "194141df4d7b8f71f3358b7d0be6c5d98f60520df05b6ea0927a615043530c17",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/lin-motion-v3.png",
+      "sha256": "c964e1b4814381af1010893483dd9c290119a1a120053e69d00444c94cd8a1ec",
+      "retained_runtime_copy": [
+        "game/assets/characters018/lin-motion.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/lin-motion.png",
+      "sha256": "d629096d34eda85b1ba0e727a523469b18066f83aa27abec6bade8c74647078e",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/markers.png",
+      "sha256": "2d082c0cb887543ce994ccb505ed7a3c0866944abf3963a424c5157675228fd5",
+      "retained_runtime_copy": [
+        "game/assets/characters018/markers.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/mo-bodies-v2.png",
+      "sha256": "c3ce823dde89f1337da9db95838a883469c0108e4efb6afad189d54e9a0254c4",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/mo-bodies-v3.png",
+      "sha256": "257865092d8fc0aa790aafd0d0ff9069c4ba92e951628158ab466a8d9508925a",
+      "retained_runtime_copy": [
+        "game/assets/characters018/mo-bodies.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/mo-bodies.png",
+      "sha256": "c3ce823dde89f1337da9db95838a883469c0108e4efb6afad189d54e9a0254c4",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/mo-expressions.png",
+      "sha256": "1a066ebb33a8ead35dddf824426fcd5980c2b21dd7f7fe0a19399789f6a573ff",
+      "retained_runtime_copy": [
+        "game/assets/characters018/mo-expressions.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/mo-motion-v2.png",
+      "sha256": "2e42f3575d3e72b046ca1e5bf19be6ec5b7409c1e3f45f2c4073d875c70a1119",
+      "retained_runtime_copy": [
+        "game/assets/characters018/mo-motion.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/mo-motion.png",
+      "sha256": "be3656bdf0afe950b40168cdecd869ccad910021a7b1215f0cd007a6ad4c8c22",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/su-bodies.png",
+      "sha256": "62f9a5a4a0169ee4fa7508ec4a652e6b152314ab2a0ea6024d120708026bb00b",
+      "retained_runtime_copy": [
+        "game/assets/characters018/su-bodies.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/su-expressions.png",
+      "sha256": "8619850ffd379730007498b2d99588804606ae76ae63d201f28747a4ed3f276f",
+      "retained_runtime_copy": [
+        "game/assets/characters018/su-expressions.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/su-motion-v2.png",
+      "sha256": "0b29ce8c7c44b50dcee1a7375bd18d29fd97f17942f16d3b4b054a36a0e8193d",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/su-motion-v3.png",
+      "sha256": "e9987a26c1e8405a2e4fce0c6921b7e390f660749eeed5d1d9d7a937d16b0772",
+      "retained_runtime_copy": [
+        "game/assets/characters018/su-motion.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/su-motion.png",
+      "sha256": "49161be09cc398793d7e86499423d003d71ef19c78aeee71d233fc48cf162e50",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/xu-bodies.png",
+      "sha256": "d529ff9dd6146642ebdf4b2751bfbdbd5728789c9c35a963b28aa8cdd9b85eb1",
+      "retained_runtime_copy": [
+        "game/assets/characters018/xu-bodies.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/xu-expressions.png",
+      "sha256": "f014363d2248b815a556d4f91cf694246f3bd2c302978530efe5268822d3c091",
+      "retained_runtime_copy": [
+        "game/assets/characters018/xu-expressions.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/xu-motion-v2.png",
+      "sha256": "c84e1c980aac0da9bcb68193b666888956fda44b184210264711c3a7186b8224",
+      "retained_runtime_copy": [
+        "game/assets/characters018/xu-motion.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/xu-motion.png",
+      "sha256": "70d3262628742805c5fea19fe34feefe64cb11dfd150c66f085995728f3c843c",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/ye-bodies.png",
+      "sha256": "22ebb05672a942b4632ac6dc1f5c91a8cf2f46b9548be0544b583e3437164d1b",
+      "retained_runtime_copy": [
+        "game/assets/characters018/ye-bodies.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/ye-expressions.png",
+      "sha256": "348be7d52e9534cb1682b42ee811c3e3b52de9c9a60500a2a2ae111dca9e040f",
+      "retained_runtime_copy": [
+        "game/assets/characters018/ye-expressions.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/ye-motion-v2.png",
+      "sha256": "448a8fe66e61675676f2f62cfb908d4fad285bb3665903d73c8b6134b14c2ab8",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    },
+    {
+      "path": "output/imagegen/p4art/ye-motion-v3.png",
+      "sha256": "a82073e0f9db0dd2747a0cce6f6e89778dbba3b752ce95b4319019c5aba729e9",
+      "retained_runtime_copy": [
+        "game/assets/characters018/ye-motion.png"
+      ],
+      "reason": "duplicate generated output"
+    },
+    {
+      "path": "output/imagegen/p4art/ye-motion.png",
+      "sha256": "3fae3839121791363b36bc9222e91d1852f17d6e24eedcf693082e546fbca3f7",
+      "retained_runtime_copy": [],
+      "reason": "superseded intermediate art; not accepted"
+    }
+  ],
+  "intermediate_retention": "Untracked duplicates and superseded variants moved to ignored tmp/imagegen/p4art-intermediates; accepted runtime textures and design references retained in repository."
+}

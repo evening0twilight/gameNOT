@@ -1,0 +1,26 @@
+{
+  "rescue": {
+    "M01:r1": "adult",
+    "M01:r2": "adult",
+    "M04:worker": "staff",
+    "M06:r1": "adult",
+    "M06:r2": "child",
+    "M07:worker": "staff",
+    "M09:r1": "injured",
+    "M09:r2": "injured",
+    "M15:north": "adult",
+    "M15:east": "adult",
+    "M15:west": "adult",
+    "M16:people": "adult",
+    "M19:patient": "injured",
+    "M20:transfer": "injured",
+    "M23:r1": "adult",
+    "M23:r2": "adult",
+    "M24:r1": "adult",
+    "M24:r2": "injured",
+    "S03:passenger": "adult",
+    "S06:resident": "adult",
+    "S07:clerk": "staff"
+  },
+  "scope": "Visual roles only, mapped from authored objective labels; no gameplay rule, recruitment or injury changes."
+}

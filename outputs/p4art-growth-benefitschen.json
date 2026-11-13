@@ -1,0 +1,331 @@
+{
+	"comparisons": [
+		{
+			"ability": "chen_3",
+			"actor": "chen",
+			"actual_campaign_snapshot_revision": 296.0,
+			"alternative": "legal wait, equal AP; then identical end_round commands on both branches",
+			"day": 8.0,
+			"mission": "M08",
+			"payload": {
+				"ability": "chen_3",
+				"target": "M08_enemy2_cut"
+			},
+			"rounds": [
+				{
+					"damage_prevented": [
+						{
+							"group": "objects",
+							"hp_with": 4,
+							"hp_without": 2,
+							"id": "M08_enemy2_cut"
+						}
+					],
+					"intents_with": {
+						"M08_enemy1": [
+							-1,
+							0
+						],
+						"M08_enemy2": [
+							0,
+							1
+						]
+					},
+					"intents_without": {
+						"M08_enemy1": [
+							-1,
+							0
+						],
+						"M08_enemy2": [
+							0,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"damage_prevented": [
+						{
+							"group": "objects",
+							"hp_with": 3,
+							"hp_without": 0,
+							"id": "M08_enemy2_cut"
+						}
+					],
+					"intents_with": {
+						"M08_enemy1": [
+							-1,
+							0
+						],
+						"M08_enemy2": [
+							0,
+							1
+						]
+					},
+					"intents_without": {
+						"M08_enemy1": [
+							-1,
+							0
+						],
+						"M08_enemy2": [
+							0,
+							1
+						]
+					},
+					"round": 4
+				}
+			],
+			"xp": 39.0
+		},
+		{
+			"ability": "chen_3",
+			"actor": "chen",
+			"actual_campaign_snapshot_revision": 385.0,
+			"alternative": "legal wait, equal AP; then identical end_round commands on both branches",
+			"day": 10.0,
+			"mission": "M10",
+			"payload": {
+				"ability": "chen_3",
+				"target": "test2"
+			},
+			"rounds": [
+				{
+					"damage_prevented": [],
+					"intents_with": {
+						"M10_enemy1": [
+							-1,
+							0
+						]
+					},
+					"intents_without": {
+						"M10_enemy1": [
+							-1,
+							0
+						]
+					},
+					"round": 4
+				},
+				{
+					"damage_prevented": [
+						{
+							"group": "objects",
+							"hp_with": 6,
+							"hp_without": 3,
+							"id": "test2"
+						}
+					],
+					"intents_with": {
+						"M10_enemy1": [
+							-1,
+							0
+						]
+					},
+					"intents_without": {
+						"M10_enemy1": [
+							-1,
+							0
+						]
+					},
+					"round": 5
+				}
+			],
+			"xp": 49.0
+		},
+		{
+			"ability": "chen_3",
+			"actor": "chen",
+			"actual_campaign_snapshot_revision": 591.0,
+			"alternative": "legal wait, equal AP; then identical end_round commands on both branches",
+			"day": 16.0,
+			"mission": "M16",
+			"payload": {
+				"ability": "chen_3",
+				"target": "M16_enemy1_cut"
+			},
+			"rounds": [
+				{
+					"damage_prevented": [],
+					"intents_with": {
+						"M16_enemy2": [
+							1,
+							0
+						],
+						"reinforcement_1": [
+							-1,
+							0
+						]
+					},
+					"intents_without": {
+						"M16_enemy2": [
+							1,
+							0
+						],
+						"reinforcement_1": [
+							-1,
+							0
+						]
+					},
+					"round": 6
+				},
+				{
+					"damage_prevented": [
+						{
+							"group": "objects",
+							"hp_with": 6,
+							"hp_without": 4,
+							"id": "M16_enemy1_cut"
+						}
+					],
+					"intents_with": {
+						"M16_enemy2": [
+							1,
+							0
+						],
+						"reinforcement_1": [
+							-1,
+							0
+						]
+					},
+					"intents_without": {
+						"M16_enemy2": [
+							1,
+							0
+						],
+						"reinforcement_1": [
+							-1,
+							0
+						]
+					},
+					"round": 7
+				}
+			],
+			"xp": 91.0
+		},
+		{
+			"ability": "chen_3",
+			"actor": "chen",
+			"actual_campaign_snapshot_revision": 886.0,
+			"alternative": "legal wait, equal AP; then identical end_round commands on both branches",
+			"day": 24.0,
+			"mission": "M24",
+			"payload": {
+				"ability": "chen_3",
+				"target": "archive"
+			},
+			"rounds": [
+				{
+					"damage_prevented": [
+						{
+							"group": "objects",
+							"hp_with": 2,
+							"hp_without": 0,
+							"id": "archive"
+						}
+					],
+					"intents_with": {
+						"M24_enemy1": [
+							-1,
+							0
+						],
+						"M24_enemy2": [
+							1,
+							0
+						],
+						"M24_enemy3": [
+							0,
+							-1
+						],
+						"reinforcement_1": [
+							-1,
+							0
+						],
+						"reinforcement_2": [
+							0,
+							-1
+						]
+					},
+					"intents_without": {
+						"M24_enemy1": [
+							-1,
+							0
+						],
+						"M24_enemy2": [
+							1,
+							0
+						],
+						"M24_enemy3": [
+							0,
+							-1
+						],
+						"reinforcement_1": [
+							-1,
+							0
+						],
+						"reinforcement_2": [
+							0,
+							-1
+						]
+					},
+					"round": 8
+				},
+				{
+					"damage_prevented": [
+						{
+							"group": "objects",
+							"hp_with": 2,
+							"hp_without": 0,
+							"id": "archive"
+						}
+					],
+					"intents_with": {
+						"M24_enemy1": [
+							-1,
+							0
+						],
+						"M24_enemy2": [
+							1,
+							0
+						],
+						"M24_enemy3": [
+							0,
+							-1
+						],
+						"reinforcement_1": [
+							-1,
+							0
+						],
+						"reinforcement_2": [
+							0,
+							-1
+						]
+					},
+					"intents_without": {
+						"M24_enemy1": [
+							-1,
+							0
+						],
+						"M24_enemy2": [
+							1,
+							0
+						],
+						"M24_enemy3": [
+							0,
+							-1
+						],
+						"reinforcement_1": [
+							0,
+							1
+						],
+						"reinforcement_2": [
+							0,
+							-1
+						]
+					},
+					"round": 9
+				}
+			],
+			"xp": 100.0
+		}
+	],
+	"scope": "Counterfactual legal command branches from a real continuous progression route; not a human balance verdict"
+}

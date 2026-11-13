@@ -63,3 +63,13 @@
 # Uncompressed capture intermediates; MP4 previews and receipts remain tracked.
 /outputs/*.avi
 /outputs/product018-motion-frames/
+
+# Disposable working prompts and backup snapshots from current acceptance tools
+/tmp/imagegen/
+/outputs/p4close-*.bak
+
+/outputs/p4art-*.bak
+
+/outputs/p4art-motion-frames/
+
+/outputs/p4art-action-frames/

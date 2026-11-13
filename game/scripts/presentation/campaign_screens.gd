@@ -4,6 +4,7 @@ const Crew=preload("res://scripts/domain/crew_journey.gd")
 const Full=preload("res://scripts/domain/full_campaign.gd")
 const Product=preload("res://scripts/domain/product_systems.gd")
 const Specialties=preload("res://scripts/domain/p1_specialties.gd")
+const Growth=preload("res://scripts/presentation/growth_presentation.gd")
 static func column(parent: Node) -> VBoxContainer:
 	var scroll:=ScrollContainer.new();scroll.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;parent.add_child(scroll)
 	var box:=VBoxContainer.new();box.size_flags_horizontal=Control.SIZE_EXPAND_FILL;box.add_theme_constant_override("separation",12);scroll.add_child(box);return box
@@ -28,8 +29,9 @@ static func introduction(ui: Control,id: String) -> void:
 	var actor: Dictionary=ui.session.content.actors[id]
 	var contact: Dictionary=Journey.contact(id)
 	var dialog: Dictionary=ui.modal(actor.name+ui.I18n.t("baseline018.f04a519e103e"))
+	ui.sound.scene_music(dialog.window,"daily")
 	var stage:=HBoxContainer.new();stage.add_theme_constant_override("separation",18);dialog.box.add_child(stage)
-	var picture=ui.Art.picture(ui.Art.outfit(id,"work"),Vector2(200,260));picture.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;stage.add_child(picture)
+	var picture=ui.Art.character(id,"work","neutral",Vector2(200,270));picture.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;stage.add_child(picture)
 	var speech:=VBoxContainer.new();speech.size_flags_horizontal=Control.SIZE_EXPAND_FILL;stage.add_child(speech)
 	ui.label(speech,contact.entrance).add_theme_color_override("font_color",ui.MUTED)
 	ui.label(speech,actor.name+"："+contact.line)
@@ -39,6 +41,15 @@ static func introduction(ui: Control,id: String) -> void:
 	var roster: Array=ui.session.state.journey.draft.get("roster",[]).duplicate()
 	if roster.has(id):
 		ui.label(dialog.box,ui.I18n.t("journey.already_planned"))
+		var board: Dictionary=ui.session.content.boards[ui.session.state.journey.next_mission]
+		ui.label(dialog.box,ui.I18n.t("p4close.start_choice")%board.title)
+		var starts:=HFlowContainer.new();dialog.box.add_child(starts)
+		for index: int in range(roster.size()):
+			if roster[index]==id:continue
+			var chosen: Array=roster.duplicate();chosen.erase(id);chosen.insert(index,id)
+			var at: Array=board.spawns[index]
+			ui.button(starts,ui.I18n.t("p4close.start_at")%[int(at[0])+1,int(at[1])+1],func():dialog.window.queue_free();ui.propose("acknowledge_recruit",{"actor":id,"roster":chosen}))
+		ui.button(dialog.box,ui.I18n.t("journey.planning_board"),func():planning_board(ui,ui.session.state.journey.draft))
 	elif roster.size()<3:
 		var chosen: Array=roster.duplicate();chosen.append(id)
 		ui.button(dialog.box,ui.I18n.t("journey.plan_member"),func():dialog.window.queue_free();ui.propose("acknowledge_recruit",{"actor":id,"roster":chosen}))
@@ -59,7 +70,7 @@ static func briefing(ui: Control,parent: Node) -> void:
 	var mission: String=s.journey.next_mission
 	var board: Dictionary=ui.session.content.boards[mission]
 	ui.label(box,ui.I18n.t("baseline018.fd006c90fe24")%[s.campaign.day,board.title]).add_theme_color_override("font_color",ui.TEAL)
-	box.add_child(ui.Art.picture(ui.Art.environment(board.location),Vector2(0,140)))
+	box.add_child(ui.Art.site_picture(board.location,Vector2(0,140)))
 	ui.label(box,board.decision)
 	var context:=VBoxContainer.new();box.add_child(context)
 	for line: String in Journey.situation(s,ui.session.content,mission):ui.label(context,line)
@@ -91,7 +102,7 @@ static func briefing(ui: Control,parent: Node) -> void:
 		choice.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 		choice.button_pressed=roster.has(id);choice.disabled=not Crew.ready_ids(s).has(id)
 		var actor_row:=HBoxContainer.new();box.add_child(actor_row)
-		var face=ui.Art.picture(ui.Art.portrait(id,"tired" if a.fatigue>=70 else "neutral"),Vector2(58,70));face.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;actor_row.add_child(face)
+		var face=ui.Art.character(id,"work","tired" if a.fatigue>=70 else "neutral",Vector2(58,70),true);face.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;actor_row.add_child(face)
 		choice.size_flags_horizontal=Control.SIZE_EXPAND_FILL;actor_row.add_child(choice)
 		ui.label(box,Journey.contact(id).use).add_theme_color_override("font_color",ui.MUTED)
 		choice.toggled.connect(func(on: bool):
@@ -155,7 +166,7 @@ static func profile(ui: Control,id: String) -> void:
 	var definition: Dictionary=ui.session.content.actors[id]
 	var dialog: Dictionary=ui.modal(definition.name+ui.I18n.t("baseline018.a6f33fcf27e9"));var box: VBoxContainer=dialog.box
 	var header:=HBoxContainer.new();box.add_child(header)
-	var portrait=ui.Art.picture(ui.Art.outfit(id,"camp" if s.campaign.phase=="camp" else "work"),Vector2(105,160));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;header.add_child(portrait)
+	var portrait=ui.Art.character(id,"camp" if s.campaign.phase=="camp" else "work","neutral",Vector2(130,175));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;header.add_child(portrait)
 	var summary:=VBoxContainer.new();summary.size_flags_horizontal=Control.SIZE_EXPAND_FILL;header.add_child(summary)
 	ui.label(summary,definition.role+"\n"+definition.ordinary)
 	ui.label(summary,Journey.contact(id).use).add_theme_color_override("font_color",ui.TEAL)
@@ -174,9 +185,7 @@ static func profile(ui: Control,id: String) -> void:
 			if preview.ok:
 				var after: Dictionary=preview.next_state.actors[id]
 				ui.label(box,ui.I18n.t("baseline018.64392ceb9129")%[ui.action_name(kind),actor.xp,after.xp,actor.fatigue,after.fatigue,Crew.overnight_fatigue(s,id,after.fatigue),Crew.overnight_fatigue(s,id,after.fatigue)+18,ui.resource_text(preview.costs.resources)])
-				if kind=="train" and Specialties.level(after.xp)>Specialties.level(actor.xp):
-					for ability: Dictionary in ui.session.content.domains.abilities:
-						if ability.actor==id and ability.level>Specialties.level(actor.xp) and ability.level<=Specialties.level(after.xp):ui.label(box,ui.I18n.t("journey.unlock_now")%ability.name).add_theme_color_override("font_color",ui.TEAL)
+				for gain: String in Growth.gains(ui.session.content,id,actor.xp,after.xp):ui.label(box,gain).add_theme_color_override("font_color",ui.TEAL)
 				ui.button(box,ui.I18n.t("baseline018.13d61fea9f17")+ui.action_name(kind),func():dialog.window.queue_free();ui.selected=id;ui.propose(kind,{}))
 			else:
 				var reason: String=ui.error_text(preview.error_code)
@@ -184,13 +193,27 @@ static func profile(ui: Control,id: String) -> void:
 					reason=ui.I18n.t("baseline018.0f02323da7b3")%actor.ready_day if actor.ready_day>s.campaign.day else (ui.I18n.t("baseline018.ab7962e71a04") if actor.xp>=100 else (ui.I18n.t("baseline018.68a7c505e506") if actor.fatigue+6>100 else ui.I18n.t("baseline018.952aabe81ebb")))
 				ui.label(box,ui.action_name(kind)+"："+reason)
 		ui.label(box,ui.I18n.t("baseline018.27fdbc9a6954")%[actor.xp,Crew.overnight_fatigue(s,id,actor.fatigue)])
+		var mentors: int=0
+		for teacher: String in s.journey.recruited:
+			if teacher==id:continue
+			var command: Dictionary={"command_id":"mentor-comparison","expected_revision":s.revision,"kind":"mentor","actor_id":teacher,"payload":{"student":id,"consent":true},"root_decision_id":"mentor-comparison"}
+			var preview: Dictionary=ui.session.preview(command)
+			if not preview.ok:continue
+			mentors+=1
+			var learner: Dictionary=preview.next_state.actors[id]
+			ui.label(box,ui.I18n.t("p4close.mentor_compare")%[ui.actor_name(teacher),actor.xp,learner.xp,learner.fatigue,Crew.overnight_fatigue(s,id,learner.fatigue)+18,preview.next_state.actors[teacher].fatigue,ui.resource_text(preview.costs.resources)])
+			for gain: String in Growth.gains(ui.session.content,id,actor.xp,learner.xp):ui.label(box,gain).add_theme_color_override("font_color",ui.TEAL)
+			ui.button(box,ui.I18n.t("p4close.mentor_choose")%ui.actor_name(teacher),func():dialog.window.queue_free();ui.selected=teacher;ui.propose("mentor",{"student":id,"consent":true}))
+		if mentors==0:ui.label(box,ui.I18n.t("p4close.no_mentor"))
 	ui.button(box,ui.I18n.t("baseline018.c9d3731e56af"),func():relationships(ui,id))
 	ui.label(box,Journey.contact(id).tradeoff)
 	ui.label(box,ui.I18n.t("journey.growth_path"))
+	for gain: String in Growth.gains(ui.session.content,id,0,100):ui.label(box,gain)
 	for a: Dictionary in ui.session.content.domains.abilities:
 		if a.actor!=id:continue
 		var ability_row:=HBoxContainer.new();box.add_child(ability_row);ability_row.add_child(ui.Art.picture(ui.Art.icon(a.id),Vector2(30,30)))
 		ui.label(ability_row,ui.I18n.t("baseline018.2f233147e7e0")%[a.name,ui.I18n.t("baseline018.e4cf2de9b47f") if Specialties.level(actor.xp)>=a.level else ui.I18n.t("baseline018.716470b2918c")%a.level,a.ap,a.charges_per_mission,a.effect,a.get("level5_effect","")])
+		ui.label(box,ui.I18n.t("p4close.use_heading")+"："+ui.I18n.t("p4close.use."+a.id)).add_theme_color_override("font_color",ui.MUTED)
 static func relationships(ui: Control,observer: String="lin",target: String="xu") -> void:
 	var s: Dictionary=ui.session.state
 	var dialog: Dictionary=ui.modal(ui.I18n.t("baseline018.daf349b31c7f"));var box: VBoxContainer=dialog.box
@@ -252,6 +275,7 @@ static func manual_slots(ui: Control,saving: bool) -> void:
 				else:ui.message=ui.error_text(saved.error_code);ui.render()).disabled=not saving and not existing.ok
 static func write_manual(ui: Control,path: String) -> void:
 	var result: Dictionary=ui.session.store.save_slot(path,ui.session.state,ui.session.content)
+	if result.ok:ui.sound.play("ui_save")
 	ui.message=ui.I18n.t("baseline018.68942f066e8c") if result.ok else ui.error_text(result.error_code);ui.render()
 static func operations(ui: Control,box: VBoxContainer) -> void:
 	var s: Dictionary=ui.session.state

@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-13",
+  "reviewer": "assistant",
+  "source": "outputs/p4close-editorial.json",
+  "reported_review_scope": {
+    "personal_relationship_life_nodes": 54,
+    "unique_scene_lines": 398,
+    "community_chapter_nodes": 42,
+    "unique_result_texts": 108,
+    "attribution_variants": 4
+  },
+  "fixes": [
+    "L06 withdrawal letter: no claim of ongoing dance practice while injured; records steps for practice after recovery."
+  ],
+  "limits": [
+    "Review counts record assistant editorial review performed earlier in this work; not human playtest.",
+    "Fixture presentations are not proof that every global state combination is reachable.",
+    "Continuous human review and applicability across all in-game state combinations remain acceptance work."
+  ]
+}

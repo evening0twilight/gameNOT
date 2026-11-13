@@ -1,0 +1,85 @@
+{
+	"comparisons": [
+		{
+			"ability": "he_1",
+			"actor": "he",
+			"actual_campaign_snapshot_revision": 776.0,
+			"alternative": "legal wait, equal AP; then identical end_round commands on both branches",
+			"day": 22.0,
+			"mission": "M22",
+			"payload": {
+				"ability": "he_1",
+				"cell": [
+					3,
+					2
+				]
+			},
+			"rounds": [
+				{
+					"damage_prevented": [
+						{
+							"group": "objects",
+							"hp_with": 6.0,
+							"hp_without": 3,
+							"id": "handover"
+						}
+					],
+					"intents_with": {
+						"M22_enemy1": [
+							-1,
+							0
+						],
+						"M22_enemy2": [
+							0,
+							1
+						]
+					},
+					"intents_without": {
+						"M22_enemy1": [
+							-1,
+							0
+						],
+						"M22_enemy2": [
+							0,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"damage_prevented": [
+						{
+							"group": "objects",
+							"hp_with": 6.0,
+							"hp_without": 3,
+							"id": "handover"
+						}
+					],
+					"intents_with": {
+						"M22_enemy1": [
+							-1,
+							0
+						],
+						"M22_enemy2": [
+							0,
+							1
+						]
+					},
+					"intents_without": {
+						"M22_enemy1": [
+							-1,
+							0
+						],
+						"M22_enemy2": [
+							0,
+							1
+						]
+					},
+					"round": 4
+				}
+			],
+			"xp": 100.0
+		}
+	],
+	"scope": "Counterfactual legal command branches from a real continuous progression route; not a human balance verdict"
+}

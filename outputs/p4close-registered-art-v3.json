@@ -1,0 +1,198 @@
+{
+	"all_neck_shoulders_body_identical": true,
+	"checks": [
+		{
+			"actor": "lin",
+			"emotion": 0,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "lin",
+			"emotion": 1,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "lin",
+			"emotion": 2,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "lin",
+			"emotion": 3,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "lin",
+			"emotion": 4,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "lin",
+			"emotion": 5,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "lin",
+			"emotion": 6,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "lin",
+			"emotion": 7,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "lin",
+			"emotion": 0,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "lin",
+			"emotion": 1,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "lin",
+			"emotion": 2,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "lin",
+			"emotion": 3,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "lin",
+			"emotion": 4,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "lin",
+			"emotion": 5,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "lin",
+			"emotion": 6,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "lin",
+			"emotion": 7,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "he",
+			"emotion": 0,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "he",
+			"emotion": 1,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "he",
+			"emotion": 2,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "he",
+			"emotion": 3,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "he",
+			"emotion": 4,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "he",
+			"emotion": 5,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "he",
+			"emotion": 6,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "he",
+			"emotion": 7,
+			"neck_shoulders_body_identical": true,
+			"outfit": 0
+		},
+		{
+			"actor": "he",
+			"emotion": 0,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "he",
+			"emotion": 1,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "he",
+			"emotion": 2,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "he",
+			"emotion": 3,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "he",
+			"emotion": 4,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "he",
+			"emotion": 5,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "he",
+			"emotion": 6,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		},
+		{
+			"actor": "he",
+			"emotion": 7,
+			"neck_shoulders_body_identical": true,
+			"outfit": 1
+		}
+	],
+	"human_art_approval": false
+}

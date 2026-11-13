@@ -1,0 +1,9 @@
+{
+	"dimensions": [
+		1280,
+		720
+	],
+	"failures": [],
+	"native_input_acceptance": false,
+	"rendered": "hidden root with actual GPU SubViewport"
+}

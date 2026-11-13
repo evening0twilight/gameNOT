@@ -1,19 +1,20 @@
 """Check the 0.18 alignment without rewriting any historical acceptance evidence."""
+import functools
 import argparse, hashlib, json, os, re, subprocess, time
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 ENGINE=ROOT/'work/toolchain/godot-4.7.2/Godot.app/Contents/MacOS/Godot'
 RETIREMENTS='docs/product018-history-retirements.json'
 def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
-def run(args, name):
+def run(args, name, prefix="product018"):
     start=time.monotonic()
     result=subprocess.run(args,cwd=ROOT,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=1200)
-    (ROOT/f'outputs/product018-check-{name}.log').write_text(result.stdout)
+    (ROOT/f'outputs/{prefix}-check-{name}.log').write_text(result.stdout)
     if result.returncode or 'SCRIPT ERROR:' in result.stdout or '\nERROR:' in result.stdout or re.search(r'failures=[1-9]|[1-9][0-9]* failed',result.stdout):
         print(result.stdout);raise SystemExit(f'Failed: {name}')
-    markers=[x for x in result.stdout.splitlines() if 'RESULTS:' in x or 'BASELINE018_' in x or 'TEST_RESULTS:' in x]
+    markers=[x for x in result.stdout.splitlines() if 'RESULTS:' in x or 'BASELINE018_' in x or 'TEST_RESULTS:' in x or 'P4_AUDIO_NOV13:' in x]
     print(name+': '+(' | '.join(markers[-2:]) or 'ok'),flush=True)
-    return {'name':name,'seconds':round(time.monotonic()-start,2),'markers':markers,'log':f'outputs/product018-check-{name}.log'}
+    return {'name':name,'seconds':round(time.monotonic()-start,2),'markers':markers,'log':f'outputs/{prefix}-check-{name}.log'}
 def source_hashes():
     result={str(p.relative_to(ROOT)):digest(p) for base in ['game/scripts','game/scenes','game/data','game/assets'] for p in sorted((ROOT/base).rglob('*')) if p.is_file() and p.suffix not in ['.uid','.import']}
     for name in ['game/project.godot','game/export_presets.cfg']:result[name]=digest(ROOT/name)
@@ -58,7 +59,9 @@ def history_status(allow_missing=False):
 def preserved():
     return history_status()['verified']
 def main():
-    p=argparse.ArgumentParser();p.add_argument('--full',action='store_true');p.add_argument('--allow-missing-history',action='store_true',help='Permit missing excluded historical build ZIPs and raw AVI captures beyond recorded retirements.');args=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--full',action='store_true');p.add_argument('--allow-missing-history',action='store_true',help='Permit missing excluded historical build ZIPs and raw AVI captures beyond recorded retirements.');p.add_argument('--report-prefix',default='product018');args=p.parse_args()
+    assert re.fullmatch(r'[a-z0-9][a-z0-9-]*',args.report_prefix),'Invalid report prefix'
+    execute=functools.partial(run,prefix=args.report_prefix)
     history=history_status(args.allow_missing_history)
     print(f"Historical artifact paths verified: {history['verified']}/{history['expected']}; "
           f"retired: {len(history['retired'])}; otherwise unavailable: {len(history['missing'])}",flush=True)
@@ -74,19 +77,20 @@ def main():
     game_files={str(p.relative_to(ROOT/'game')).casefold():p for p in (ROOT/'game').rglob('*') if p.is_file() and '.godot' not in p.parts}
     for path in (ROOT/'game/scripts').rglob('*.gd'):
         for reference in re.findall(r'(?:preload|load)\("res://([^"%]+)"\)',path.read_text()):assert reference.casefold() in game_files,(path,reference)
-    records=[run([engine,'--headless','--path','game','--editor','--import','--quit'],'import')]
-    names=['run_tests','content_catalog_tests','p1_tests','p1_systems_tests','p3_rules_tests','p3_specialties_tests','p3_story_proofs','p4_history_tests','p4_tests','p4_feedback_tests','baseline018_tests','baseline018_edges','baseline018_guidance','ui_localization_tests','baseline018_ui','product018_story_tests']
-    for name in names:records.append(run([engine,'--headless','--path','game','--script',f'tests/{name}.gd','--','--isolated-ui-review'],name))
+    records=[execute([engine,'--headless','--path','game','--editor','--import','--quit'],'import')]
+    names=['run_tests','content_catalog_tests','p1_tests','p1_systems_tests','p3_rules_tests','p3_specialties_tests','p3_story_proofs','p4_history_tests','p4_tests','p4_feedback_tests','baseline018_tests','baseline018_edges','baseline018_guidance','ui_localization_tests','baseline018_ui','product018_story_tests','p4close_tests']
+    for name in names:records.append(execute([engine,'--headless','--path','game','--script',f'tests/{name}.gd','--','--isolated-ui-review'],name))
+    records.append(execute([engine,'--headless','--path','game','--script','tests/p4_audio_nov13.gd','--',str(ROOT/'outputs/baseline018-linked-day24.json')],'p4_audio_nov13'))
     if args.full:
-        for name in ['baseline018_missions','baseline018_field_paths','baseline018_campaign','baseline018_linked_campaign','product018_crew_campaign']:
-            records.append(run([engine,'--headless','--path','game','--script',f'tests/{name}.gd'],name))
+        for name in ['baseline018_missions','baseline018_field_paths','baseline018_campaign','baseline018_linked_campaign','product018_crew_campaign','p4close_growth_campaign']:
+            records.append(execute([engine,'--headless','--path','game','--script',f'tests/{name}.gd'],name))
         for difficulty in ['relaxed','standard','hard']:
-            records.append(run([engine,'--headless','--path','game','--script','tests/baseline018_matrix.gd','--','--difficulty='+difficulty],'matrix-'+difficulty))
+            records.append(execute([engine,'--headless','--path','game','--script','tests/baseline018_matrix.gd','--','--difficulty='+difficulty],'matrix-'+difficulty))
         for profile in ['no_training','few_sides','fixed_favorites','injury_rotation']:
-            records.append(run([engine,'--headless','--path','game','--script','tests/baseline018_profiles.gd','--','--profile='+profile],'profile-'+profile))
+            records.append(execute([engine,'--headless','--path','game','--script','tests/baseline018_profiles.gd','--','--profile='+profile],'profile-'+profile))
     assert initial_hashes==source_hashes(),'Game sources changed during validation; rerun against one consistent revision'
     history=history_status(args.allow_missing_history)
     record={'authority':manifest['version'],'full':args.full,'checks':records,'preserved_files':history['verified'],'history':history,'source_hashes':initial_hashes,'windows_native_tested':False,'human_acceptance':False}
-    (ROOT/'outputs/product018-checks.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
+    (ROOT/f'outputs/{args.report_prefix}-checks.json').write_text(json.dumps(record,ensure_ascii=False,indent=2)+'\n')
     print('BASELINE018_CHECK_OK: implementation checks; Windows native and human acceptance remain separate')
 if __name__=='__main__':main()

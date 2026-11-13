@@ -1,5 +1,6 @@
 extends Control
 const Screens=preload("res://scripts/presentation/campaign_screens.gd")
+const StoryFacts=preload("res://scripts/presentation/story_facts.gd")
 const Crew=preload("res://scripts/domain/crew_journey.gd")
 var title_screen: bool=true
 var animation_rate: float=1.0
@@ -35,9 +36,11 @@ func feedback_active() -> bool:return not feedback_plan.is_empty()
 func _process(_delta: float) -> void:
 	if feedback_active() and not paused:
 		feedback_elapsed+=_delta*animation_rate
-		if feedback_elapsed>=float(feedback_plan.duration):finish_feedback()
-func finish_feedback() -> void:
-	feedback_plan={};visual_previous={};sound.cancel_timeline();render()
+		if feedback_elapsed>=float(feedback_plan.duration):finish_feedback(true)
+func finish_feedback(completed: bool=false) -> void:
+	if completed:sound.finish_timeline()
+	else:sound.cancel_timeline()
+	feedback_plan={};visual_previous={};render()
 	show_conflict_notice()
 	show_next_welcome()
 
@@ -143,7 +146,7 @@ func _ready() -> void:
 	if acceptance:
 		var runner=preload("res://scripts/app/native_acceptance.gd").new();add_child(runner);runner.call_deferred("run",self)
 
-func button(parent: Node,label: String,callback: Callable) -> Button:
+func button(parent: Node,label: String,callback: Callable,cue: String="ui_focus") -> Button:
 	var b := Button.new()
 	b.text=label
 	for mapping: Array in [["ui.975778d99095","end_round"],["ui.926a50b98ece","undo"],["baseline018.00768fb3f70c","relations"],["p3.journal","journal"],["baseline018.d04bb3ddf1b7","coordinated_pull"],["ui.029b72a67ea6","protected_work"],["ui.a4b81cbe097b","relay_carry"],["ui.81bac7b6b054","mutual_cover"]]:
@@ -151,7 +154,7 @@ func button(parent: Node,label: String,callback: Callable) -> Button:
 	b.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	b.custom_minimum_size=Vector2(170 if parent is FlowContainer else 100,42)
 	b.add_theme_font_size_override("font_size",font_size)
-	b.pressed.connect(func():sound.play("ui_focus"))
+	b.pressed.connect(func():sound.play(cue))
 	b.pressed.connect(callback)
 	parent.add_child(b)
 	return b
@@ -298,7 +301,7 @@ func render_battle(body: HBoxContainer) -> void:
 		elif h.left:text+=I18n.t("ui.4c0584645189")
 		var row:=HBoxContainer.new();row.add_theme_constant_override("separation",10);right.add_child(row)
 		if h.id in ["lin","xu","su","chen","ye","he","mo","jiang"]:
-			var portrait=Art.picture(Art.portrait(h.id),Vector2(48,60));row.add_child(portrait)
+			var portrait=Art.character(h.id,"work","neutral",Vector2(48,60),true);row.add_child(portrait)
 		var crew:=button(row,text,func():selected=h.id;action="move";render());crew.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 		crew.add_theme_font_size_override("font_size",16)
 		if selected==h.id:crew.add_theme_stylebox_override("normal",surface(Color("23493f"),8,TEAL))
@@ -458,7 +461,7 @@ func render_camp(body: HBoxContainer) -> void:
 			return
 		for entry: Dictionary in session.content.domains.scripts.community:
 			if entry.source!=s.battle.mission_id:continue
-			label(overview,I18n.content("scenes",entry.id,"variants."+result.outcome,entry.variants[result.outcome]))
+			label(overview,StoryFacts.community(s,session.content,entry).text)
 			var flag: String="community."+entry.source+".public"
 			if s.chapter_one.flags.has(flag):
 				var choice: String="publish" if s.chapter_one.flags[flag] else "archive"
@@ -496,7 +499,7 @@ func render_camp(body: HBoxContainer) -> void:
 		var card:=PanelContainer.new();card.size_flags_horizontal=Control.SIZE_EXPAND_FILL;card.add_theme_stylebox_override("panel",surface(SURFACE,12));cards.add_child(card)
 		var details:=VBoxContainer.new();details.add_theme_constant_override("separation",10);card.add_child(details)
 		if a.id in ["lin","xu","su","chen","ye","he","mo","jiang"]:
-			var portrait=Art.picture(Art.outfit(a.id,"camp"),Vector2(0,175));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;details.add_child(portrait)
+			var portrait=Art.character(a.id,"camp","neutral",Vector2(0,175));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;details.add_child(portrait)
 		label(details,actor_name(a.id)).add_theme_color_override("font_color",TEAL)
 		label(details,I18n.t("role."+a.id)).add_theme_color_override("font_color",MUTED)
 		label(details,I18n.t("camp.stats") % [Rules.Specialties.level(int(a.xp)),a.fatigue,a.ready_day])
@@ -628,7 +631,7 @@ func commit_pending() -> void:
 		visual_previous=before;visual_started=Time.get_ticks_msec();feedback_elapsed=0
 		if feedback_active():
 			for id: String in feedback_plan.paths:actor_facings[id]=Feedback.direction(feedback_plan.paths[id],1.0)
-			sound.schedule(feedback_plan.events,visual_started,feedback_seconds)
+			sound.schedule(sound.contextual_events(feedback_plan,previous_state,session.state),visual_started,feedback_seconds,func():return paused)
 		else:visual_previous={};sound.action(pending.kind,previous_state,session.state)
 	else:sound.play("ui_error")
 	message=(I18n.t("p3.action_done") % action_name(pending.kind))+" · "+objective_summary() if result.ok else I18n.t("error.commit") % error_text(result.error_code)
@@ -710,7 +713,7 @@ func prepare_mission(mission: String,side: bool) -> void:
 	var board: Dictionary=session.content.boards[mission]
 	var dialog:=modal(I18n.t("p2.briefing"));var box: VBoxContainer=dialog.box
 	label(box,I18n.content("boards",mission,"title",board.title)).add_theme_color_override("font_color",TEAL)
-	box.add_child(Art.picture(Art.environment(board.location),Vector2(0,240)))
+	box.add_child(Art.site_picture(board.location,Vector2(0,240)))
 	var settings: Dictionary=difficulty_controls(box,board)
 	label(box,I18n.t("p4.weather") % [session.state.product.variant,Product.weather(board,session.state.product.variant).water_addition.round])
 	for group: Array in Full.groups(session.state,board):
@@ -770,9 +773,7 @@ func chapter_report(box: VBoxContainer) -> void:
 	label(box,I18n.t("p2.chapter_summary")).add_theme_color_override("font_color",GOLD)
 	for entry: Dictionary in session.content.domains.scripts.chapter:
 		if not session.state.campaign.settled.has(entry.source):continue
-		var result: Dictionary=session.state.campaign.settled[entry.source]
-		var secured: bool=result.facts.get(entry.condition.objective,"") in ["saved","completed"]
-		label(box,I18n.content("scenes",entry.id,"true_text" if secured else "false_text",entry.true_text if secured else entry.false_text))
+		label(box,StoryFacts.chapter(session.state,session.content,entry).text)
 
 func render_mentors(box: VBoxContainer) -> void:
 	for teacher: String in session.state.actors:
@@ -831,7 +832,7 @@ func render_ending(box: VBoxContainer) -> void:
 	for district: String in s.campaign.districts:label(box,I18n.t("journey.district_state")%[Screens.Journey.district_name(district),s.campaign.districts[district],s.full_campaign.district_caps[district]])
 	label(box,risk_text(s))
 	for entry: Dictionary in session.content.domains.scripts.community:
-		if entry.source=="M24":label(box,I18n.content("scenes",entry.id,"variants."+s.campaign.last_result.outcome,entry.variants[s.campaign.last_result.outcome]))
+		if entry.source=="M24":label(box,StoryFacts.community(s,session.content,entry).text)
 	chapter_report(box)
 	for id: String in s.actors:
 		var node_id: String="P_"+id+"_3"
@@ -839,11 +840,12 @@ func render_ending(box: VBoxContainer) -> void:
 		var script: Dictionary=Stories.script(session.content,node)
 		var record: Dictionary=s.chapter_one.scenes.get(node_id,{})
 		label(box,actor_name(id)).add_theme_color_override("font_color",TEAL)
-		var portrait=Art.picture(Art.portrait(id,"grief" if s.product.withdrawn.has(id) else ("relieved" if record.get("choice","")=="integrated" else "neutral")),Vector2(0,150));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;box.add_child(portrait)
+		var portrait=Art.character(id,"camp","grief" if s.product.withdrawn.has(id) else ("relieved" if record.get("choice","")=="integrated" else "neutral"),Vector2(0,180));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;box.add_child(portrait)
 		label(box,I18n.t("baseline018.139478be0703")+(I18n.t("baseline018.a973c1399893") if s.product.withdrawn.has(id) else I18n.t("baseline018.68e5b398962f")))
 		if s.product.withdrawn.has(id):
 			label(box,I18n.content("scenes",node_id,"withdrawn",script.withdrawn))
-		if s.full_campaign.contracts.get(id,{}).get("breached",false):label(box,I18n.content("scenes",node_id,"later_breach_other",script.later_breach_other))
+		var later: Dictionary=StoryFacts.breach(s,id,script)
+		if not later.is_empty():label(box,later.line+"\n"+later.reason)
 		label(box,I18n.t("baseline018.7b9c7799cdb3"))
 		if record.get("choice","").is_empty():label(box,I18n.content("scenes",node_id,"unread",script.unread))
 		elif record.choice=="integrated" and s.full_campaign.contracts.get(id,{}).get("breached",false):label(box,I18n.t("p3.past_fulfilled"))
@@ -860,7 +862,7 @@ func render_ending(box: VBoxContainer) -> void:
 func show_site() -> void:
 	var board: Dictionary=session.content.boards[session.state.battle.mission_id]
 	var dialog:=modal(I18n.content("boards",board.id,"title",board.title))
-	dialog.box.add_child(Art.picture(Art.environment(board.location),Vector2(0,380)))
+	dialog.box.add_child(Art.site_picture(board.location,Vector2(0,380)))
 	label(dialog.box,objective_summary()).add_theme_color_override("font_color",TEAL)
 	label(dialog.box,I18n.content("boards",board.id,"decision",board.decision))
 	label(dialog.box,I18n.t("p2.basic_method"))
@@ -880,7 +882,9 @@ func show_journal() -> void:
 		if not session.state.campaign.settled.has(entry.source):continue
 		var result: Dictionary=session.state.campaign.settled[entry.source]
 		label(box,I18n.content("scenes",entry.id,"title",entry.title)).add_theme_color_override("font_color",TEAL)
-		label(box,I18n.content("scenes",entry.id,"variants."+result.outcome,entry.variants[result.outcome]))
+		var community_view: Dictionary=StoryFacts.community(session.state,session.content,entry)
+		label(box,community_view.text)
+		for line: String in community_view.reply:label(box,line)
 		for id: String in result.facts:
 			label(box,I18n.content("objects",entry.source+"."+id,"label",id)+" · "+I18n.t("p3.fact_"+result.facts[id]))
 
@@ -1124,9 +1128,8 @@ func show_conflict_notice() -> void:
 	var actor: String=entry.pair.split(">")[0]
 	var target: String=entry.pair.split(">")[1]
 	var dialog:=modal(actor_name(actor)+I18n.t("baseline018.fa93d44a3ff7"))
-	sound.ambience("grave")
-	dialog.window.tree_exited.connect(func():sound.ambience(music_context()))
-	var portrait=Art.picture(Art.portrait(actor,"firm"),Vector2(0,200));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;dialog.box.add_child(portrait)
+	sound.scene_music(dialog.window,"grave")
+	var portrait=Art.character(actor,"camp","firm",Vector2(0,220));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;dialog.box.add_child(portrait)
 	label(dialog.box,I18n.t("baseline018.72dcac11836b")+(I18n.t("baseline018.36caf75886a3") if target=="leader" else actor_name(target))+" · "+entry.reason)
 	label(dialog.box,session.content.actors[actor].rupture)
 	label(dialog.box,I18n.t("baseline018.00d41827a37a"))

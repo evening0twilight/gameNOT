@@ -1,0 +1,41 @@
+{
+  "reason": "Untracked failed head/neck and unregistered face prototypes superseded by approved complete-anatomy assets; rejection preview screenshots and prompt provenance retained. Not protected historical evidence.",
+  "removed": [
+    {
+      "path": "output/imagegen/p4close/lin-design.png",
+      "sha256": "6f459742a098f80ce67c9ee05e194af32644abac3e287720c409803405544a84"
+    },
+    {
+      "path": "output/imagegen/p4close/lin-layers.png",
+      "sha256": "36fad7e6da0007b77f062f618f905424256b21be5d088aa5c8c14bc10605e5c2"
+    },
+    {
+      "path": "output/imagegen/p4close/he-layers.png",
+      "sha256": "14de5ee9c415dad23848cd2a461fb06715fe469c0f43496345af6fda990335da"
+    },
+    {
+      "path": "output/imagegen/p4close/he-face-parts-v2.png",
+      "sha256": "b9918187c6033ab8639c2a8d806402909db4672542a32dda720ce7be295d4d25"
+    },
+    {
+      "path": "outputs/p4close-he-face-review-v2.png",
+      "sha256": "f0309f3402ace17603562342be1aca373318c73495478ed443c66cac443809e7"
+    },
+    {
+      "path": "game/tests/p4close_layer_review.gd",
+      "sha256": "9a39b9911fca2c53ebfddd848b1df3a56de92892c98d5eece68fc6a179441d37"
+    },
+    {
+      "path": "game/tests/p4close_layer_review.gd.uid",
+      "sha256": "ba698f319a8de6604a6720e5d3ff710032c43965c5d1c57af151c0c8b50e06c3"
+    },
+    {
+      "path": "game/tests/p4close_face_review.gd",
+      "sha256": "312cdc59cf587e1a3ca658dda0c4e1fc45f4f635e4f92d5cbc7caa9a05dc0751"
+    },
+    {
+      "path": "game/tests/p4close_face_review.gd.uid",
+      "sha256": "2eb8228caf8c96ec7bf330bee419260af6b88c7fd5ac654f2b24c25d60bf0067"
+    }
+  ]
+}

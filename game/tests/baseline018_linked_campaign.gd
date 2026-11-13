@@ -40,6 +40,7 @@ func run() -> void:
 			require(attempt("story_choice","lin",{"node":"P_lin_1","choice":"share"}),"consented disclosure recorded")
 		if day==4:require(attempt("agreement","lin",{"target":"chen","choice":"cooperate"}),"new recruit cooperation agreement")
 		if day==6:
+			store.save_slot("res://../outputs/p4close-before-mentor.json",s,content)
 			var offer: Dictionary=Rules.Chapter.mentor_offer(s,"lin","chen")
 			print("LINKED_MENTOR_OFFER: "+str(offer))
 			require(attempt("mentor","lin",{"student":"chen","consent":true}),"two real missions unlock meaningful mentorship")

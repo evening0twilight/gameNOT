@@ -1,0 +1,33 @@
+Historical artifact paths verified: 244/287; retired: 43; otherwise unavailable: 0
+import: ok
+run_tests: TEST_RESULTS: 33 passed, 0 failed
+content_catalog_tests: CONTENT_TEST_RESULTS: failures=0
+p1_tests: P1_TEST_RESULTS: 167 passed, 0 failed
+p1_systems_tests: P1_SYSTEMS_RESULTS: 179 passed, 0 failed
+p3_rules_tests: P3_RULES_RESULTS: checks=1789 failures=0
+p3_specialties_tests: P3_SPECIALTIES_RESULTS: checks=67 failures=0
+p3_story_proofs: P3_STORY_PROOFS_RESULTS: checks=56 failures=0
+p4_history_tests: P4_HISTORY_RESULTS: checks=56 failures=0
+p4_tests: P4_PRODUCT_RESULTS: checks=1028 failures=0
+p4_feedback_tests: P4_FEEDBACK_RESULTS: checks=89 failures=0
+baseline018_tests: BASELINE018_RESULTS: checks=66 failures=0
+baseline018_edges: BASELINE018_EDGES: checks=32 failures=0
+baseline018_guidance: P4_TUNING_RESULTS: checks=709 failures=0
+ui_localization_tests: UI_LOCALIZATION_RESULTS: checks=557 failures=0
+baseline018_ui: BASELINE018_UI: failures=0
+product018_story_tests: ok
+p4close_tests: P4CLOSE_RESULTS: checks=4001 failures=0
+baseline018_missions: P3_PATH_RESULTS: missions=36 failures=0
+baseline018_field_paths: BASELINE018_FIELD_PATHS: paths=4 failures=0
+baseline018_campaign: BASELINE018_CAMPAIGN: mode=failure days=24 ending=evacuation | BASELINE018_CAMPAIGN_RESULTS: campaigns=4 failures=0
+baseline018_linked_campaign: BASELINE018_LINKED: failures=0
+product018_crew_campaign: ok
+p4close_growth_campaign: P4CLOSE_GROWTH_RESULTS: failures=0 unobserved=[]
+matrix-relaxed: P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ "success": 72, "partial": 0, "failed": 0 }
+matrix-standard: P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ "success": 72, "partial": 0, "failed": 0 }
+matrix-hard: P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ "success": 72, "partial": 0, "failed": 0 }
+profile-no_training: P4_PROFILE_RESULTS: profile=no_training days=24 failures=0
+profile-few_sides: P4_PROFILE_RESULTS: profile=few_sides days=24 failures=0
+profile-fixed_favorites: P4_PROFILE_RESULTS: profile=fixed_favorites days=24 failures=0
+profile-injury_rotation: P4_PROFILE_RESULTS: profile=injury_rotation days=24 failures=0
+BASELINE018_CHECK_OK: implementation checks; Windows native and human acceptance remain separate

@@ -1,0 +1,249 @@
+{
+	"comparisons": [
+		{
+			"ability": "mo_3",
+			"actor": "mo",
+			"actual_campaign_snapshot_revision": 539.0,
+			"alternative": "legal wait, equal AP; then identical end_round commands on both branches",
+			"day": 15.0,
+			"mission": "M15",
+			"payload": {
+				"ability": "mo_3",
+				"cell": [
+					0,
+					1
+				],
+				"target": "M15_enemy1"
+			},
+			"rounds": [
+				{
+					"damage_prevented": [],
+					"intents_with": {
+						"M15_enemy1": [
+							-1,
+							0
+						],
+						"M15_enemy2": [
+							-1,
+							0
+						]
+					},
+					"intents_without": {
+						"M15_enemy1": [
+							0,
+							-1
+						],
+						"M15_enemy2": [
+							-1,
+							0
+						]
+					},
+					"round": 3
+				},
+				{
+					"damage_prevented": [
+						{
+							"group": "heroes",
+							"hp_with": 10,
+							"hp_without": 8,
+							"id": "he"
+						}
+					],
+					"intents_with": {
+						"M15_enemy1": [
+							0,
+							-1
+						],
+						"M15_enemy2": [
+							-1,
+							0
+						]
+					},
+					"intents_without": {
+						"M15_enemy1": [
+							0,
+							-1
+						],
+						"M15_enemy2": [
+							-1,
+							0
+						]
+					},
+					"round": 4
+				}
+			],
+			"xp": 45.0
+		},
+		{
+			"ability": "mo_3",
+			"actor": "mo",
+			"actual_campaign_snapshot_revision": 589.0,
+			"alternative": "legal wait, equal AP; then identical end_round commands on both branches",
+			"day": 16.0,
+			"mission": "M16",
+			"payload": {
+				"ability": "mo_3",
+				"cell": [
+					7,
+					2
+				],
+				"target": "reinforcement_1"
+			},
+			"rounds": [
+				{
+					"damage_prevented": [],
+					"intents_with": {
+						"M16_enemy2": [
+							1,
+							0
+						],
+						"reinforcement_1": [
+							0,
+							-1
+						]
+					},
+					"intents_without": {
+						"M16_enemy2": [
+							1,
+							0
+						],
+						"reinforcement_1": [
+							-1,
+							0
+						]
+					},
+					"round": 6
+				},
+				{
+					"damage_prevented": [
+						{
+							"group": "heroes",
+							"hp_with": 11,
+							"hp_without": 9,
+							"id": "su"
+						},
+						{
+							"group": "objects",
+							"hp_with": 6.0,
+							"hp_without": 4,
+							"id": "M16_enemy1_cut"
+						}
+					],
+					"intents_with": {
+						"M16_enemy2": [
+							1,
+							0
+						],
+						"reinforcement_1": [
+							0,
+							1
+						]
+					},
+					"intents_without": {
+						"M16_enemy2": [
+							1,
+							0
+						],
+						"reinforcement_1": [
+							-1,
+							0
+						]
+					},
+					"round": 7
+				}
+			],
+			"xp": 50.0
+		},
+		{
+			"ability": "mo_3",
+			"actor": "mo",
+			"actual_campaign_snapshot_revision": 815.0,
+			"alternative": "legal wait, equal AP; then identical end_round commands on both branches",
+			"day": 23.0,
+			"mission": "M23",
+			"payload": {
+				"ability": "mo_3",
+				"cell": [
+					0,
+					2
+				],
+				"target": "M23_enemy3"
+			},
+			"rounds": [
+				{
+					"damage_prevented": [],
+					"intents_with": {
+						"M23_enemy1": [
+							-1,
+							0
+						],
+						"M23_enemy2": [
+							-1,
+							0
+						],
+						"M23_enemy3": [
+							-1,
+							0
+						]
+					},
+					"intents_without": {
+						"M23_enemy1": [
+							-1,
+							0
+						],
+						"M23_enemy2": [
+							-1,
+							0
+						],
+						"M23_enemy3": [
+							0,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"damage_prevented": [
+						{
+							"group": "heroes",
+							"hp_with": 8,
+							"hp_without": 6,
+							"id": "jiang"
+						}
+					],
+					"intents_with": {
+						"M23_enemy1": [
+							0,
+							1
+						],
+						"M23_enemy2": [
+							-1,
+							0
+						],
+						"M23_enemy3": [
+							0,
+							1
+						]
+					},
+					"intents_without": {
+						"M23_enemy1": [
+							0,
+							1
+						],
+						"M23_enemy2": [
+							-1,
+							0
+						],
+						"M23_enemy3": [
+							0,
+							1
+						]
+					},
+					"round": 4
+				}
+			],
+			"xp": 97.0
+		}
+	],
+	"scope": "Counterfactual legal command branches from a real continuous progression route; not a human balance verdict"
+}

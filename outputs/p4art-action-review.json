@@ -1,0 +1,48 @@
+{
+	"clips": [
+		{
+			"fixture": true,
+			"frames": 48,
+			"game_seconds": 0.78,
+			"name": "walk_and_corner",
+			"start_frame": 0
+		},
+		{
+			"fixture": true,
+			"frames": 48,
+			"game_seconds": 0.85,
+			"name": "attack",
+			"start_frame": 48
+		},
+		{
+			"fixture": true,
+			"frames": 48,
+			"game_seconds": 0.85,
+			"name": "push",
+			"start_frame": 96
+		},
+		{
+			"fixture": true,
+			"frames": 48,
+			"game_seconds": 0.85,
+			"name": "stabilize",
+			"start_frame": 144
+		},
+		{
+			"fixture": true,
+			"frames": 48,
+			"game_seconds": 0.85,
+			"name": "pickup",
+			"start_frame": 192
+		},
+		{
+			"fixture": true,
+			"frames": 48,
+			"game_seconds": 1.42,
+			"name": "machine_response",
+			"start_frame": 240
+		}
+	],
+	"failures": [],
+	"scope": "GPU production rendering of committed commands from isolated fixtures; silent slow-motion art review, not real-time input or audio capture"
+}

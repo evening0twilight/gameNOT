@@ -1,0 +1,11836 @@
+{
+	"actions": {
+		"jiang:he_3:3": {
+			"ability": "he_3",
+			"after": {
+				"ability_uses": {
+					"jiang_1": 1
+				},
+				"authorizations": [],
+				"balance_revision": 3,
+				"barriers": {},
+				"beacons": {},
+				"branch": "",
+				"cover": {},
+				"deployed_tools": {},
+				"difficulty": "standard",
+				"electrified_hits": [],
+				"enemies": {
+					"M23_enemy1": {
+						"cell": [
+							7.0,
+							3.0
+						],
+						"disable_requires": [
+							"M23_enemy1_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 8.0,
+						"id": "M23_enemy1",
+						"rail": [
+							[
+								7.0,
+								2.0
+							],
+							[
+								7.0,
+								3.0
+							],
+							[
+								7.0,
+								4.0
+							],
+							[
+								7.0,
+								5.0
+							]
+						],
+						"rail_direction": -1,
+						"type": "hauler"
+					},
+					"M23_enemy2": {
+						"cell": [
+							7.0,
+							2.0
+						],
+						"disable_requires": [
+							"M23_enemy2_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 4.0,
+						"id": "M23_enemy2",
+						"locked_step": [
+							0,
+							0
+						],
+						"rail": null,
+						"type": "skimmer"
+					},
+					"M23_enemy3": {
+						"cell": [
+							6,
+							4
+						],
+						"disable_requires": [
+							"M23_enemy3_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 3.0,
+						"id": "M23_enemy3",
+						"rail": null,
+						"type": "scout"
+					}
+				},
+				"environment": {
+					"briefing": "涨水只变成浅水，不把已知必经道路突然变成深水；火区在上一轮预告。失控机器电击按各自预告。",
+					"fire_pulse": {
+						"cells": [],
+						"damage": 1.0,
+						"duration_rounds": 3.0,
+						"round": 7.0,
+						"rule": "预告点火后，所列格持续3次环境结算，各1伤害；浅水电伤与火同格取较大值，不双扣。不可燃的墙/深水不点燃。"
+					},
+					"water_addition": {
+						"cells": [
+							[
+								1.0,
+								3.0
+							],
+							[
+								3.0,
+								4.0
+							]
+						],
+						"round": 5.0,
+						"source": {
+							"blocks_movement": false,
+							"cell": [
+								7.0,
+								1.0
+							],
+							"id": "M23_leak",
+							"tag": "leak_source",
+							"targetable": true
+						}
+					}
+				},
+				"equipment": {
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"exits": [
+					[
+						0.0,
+						7.0
+					],
+					[
+						0.0,
+						6.0
+					]
+				],
+				"heroes": {
+					"he": {
+						"ap": 0,
+						"carrying": "r2",
+						"cell": [
+							0,
+							6
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 10,
+						"id": "he",
+						"left": false,
+						"stabilized": false
+					},
+					"jiang": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							5,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "jiang",
+						"left": false,
+						"stabilized": false
+					},
+					"lin": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							0,
+							4
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "lin",
+						"left": false,
+						"stabilized": false
+					}
+				},
+				"insulation": [],
+				"intents": {
+					"M23_enemy1": [
+						-1,
+						0
+					],
+					"M23_enemy2": [
+						-1,
+						0
+					],
+					"M23_enemy3": [
+						-1,
+						0
+					]
+				},
+				"limit": 16,
+				"marks": {},
+				"medicine": 1,
+				"medicine_limit": 2,
+				"mission_id": "M23",
+				"move_bonuses": {},
+				"objects": {
+					"M23_enemy1_cut": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							3.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy1",
+						"hp": 4,
+						"id": "M23_enemy1_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M23_enemy2_cut": {
+						"carrier": "",
+						"cell": [
+							4.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy2",
+						"hp": 6.0,
+						"id": "M23_enemy2_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M23_enemy3_cut": {
+						"carrier": "",
+						"cell": [
+							5.0,
+							5.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy3",
+						"hp": 6.0,
+						"id": "M23_enemy3_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"r1": {
+						"carrier": "",
+						"cell": [
+							2.0,
+							2.0
+						],
+						"completed": true,
+						"contributors": [
+							"jiang",
+							"lin"
+						],
+						"delivered": true,
+						"hp": 4.0,
+						"id": "r1",
+						"initial_stable": false,
+						"interaction_tags": [
+							"objective",
+							"rescue"
+						],
+						"kind": "rescue",
+						"label": "优先组登船",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stabilize_deadline": {
+							"mode": "fixed_round",
+							"round": 6.0
+						},
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [
+							{
+								"actor": "",
+								"cell": [
+									1,
+									2
+								]
+							},
+							{
+								"actor": "jiang",
+								"cell": [
+									1,
+									5
+								]
+							},
+							{
+								"actor": "lin",
+								"cell": [
+									0,
+									6
+								]
+							}
+						],
+						"unlocked_round": 1,
+						"work": 0.0
+					},
+					"r2": {
+						"carrier": "he",
+						"cell": [
+							6.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [
+							"he"
+						],
+						"delivered": false,
+						"hp": 4.0,
+						"id": "r2",
+						"initial_stable": false,
+						"interaction_tags": [
+							"objective",
+							"rescue"
+						],
+						"kind": "rescue",
+						"label": "第二组登船",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stabilize_deadline": {
+							"mode": "fixed_round",
+							"round": 6.0
+						},
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [
+							{
+								"actor": "",
+								"cell": [
+									5,
+									2
+								]
+							},
+							{
+								"actor": "he",
+								"cell": [
+									2,
+									2
+								]
+							},
+							{
+								"actor": "he",
+								"cell": [
+									0,
+									3
+								]
+							},
+							{
+								"actor": "he",
+								"cell": [
+									0,
+									6
+								]
+							}
+						],
+						"unlocked_round": 1,
+						"work": 0.0
+					},
+					"rebuild": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							0.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "rebuild",
+						"initial_stable": true,
+						"interaction_tags": [
+							"cargo",
+							"objective"
+						],
+						"kind": "cargo",
+						"label": "重建材料箱",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 0.0
+					}
+				},
+				"protection": [],
+				"queued_reinforcements": [],
+				"reinforcement": {
+					"cap": 2.0,
+					"cells": [
+						[
+							7.0,
+							0.0
+						],
+						[
+							7.0,
+							6.0
+						]
+					],
+					"spawn_hp": 3.0,
+					"warning_rounds": 1.0
+				},
+				"round": 4,
+				"round_markers": {},
+				"rows": [
+					"........",
+					"..##....",
+					".......~",
+					"....XX~~",
+					"....XX~~",
+					".......~",
+					"........",
+					"........"
+				],
+				"safety": [],
+				"service": {},
+				"spawn_count": 0,
+				"tool_uses": {},
+				"used_markers": {},
+				"variant": "A"
+			},
+			"before": {
+				"ability_uses": {
+					"jiang_1": 1
+				},
+				"authorizations": [],
+				"balance_revision": 3,
+				"barriers": {},
+				"beacons": {},
+				"branch": "",
+				"cover": {},
+				"deployed_tools": {},
+				"difficulty": "standard",
+				"electrified_hits": [],
+				"enemies": {
+					"M23_enemy1": {
+						"cell": [
+							7.0,
+							3.0
+						],
+						"disable_requires": [
+							"M23_enemy1_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 8.0,
+						"id": "M23_enemy1",
+						"rail": [
+							[
+								7.0,
+								2.0
+							],
+							[
+								7.0,
+								3.0
+							],
+							[
+								7.0,
+								4.0
+							],
+							[
+								7.0,
+								5.0
+							]
+						],
+						"rail_direction": -1,
+						"type": "hauler"
+					},
+					"M23_enemy2": {
+						"cell": [
+							7.0,
+							2.0
+						],
+						"disable_requires": [
+							"M23_enemy2_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 4.0,
+						"id": "M23_enemy2",
+						"locked_step": [
+							0,
+							0
+						],
+						"rail": null,
+						"type": "skimmer"
+					},
+					"M23_enemy3": {
+						"cell": [
+							6,
+							4
+						],
+						"disable_requires": [
+							"M23_enemy3_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 3.0,
+						"id": "M23_enemy3",
+						"rail": null,
+						"type": "scout"
+					}
+				},
+				"environment": {
+					"briefing": "涨水只变成浅水，不把已知必经道路突然变成深水；火区在上一轮预告。失控机器电击按各自预告。",
+					"fire_pulse": {
+						"cells": [],
+						"damage": 1.0,
+						"duration_rounds": 3.0,
+						"round": 7.0,
+						"rule": "预告点火后，所列格持续3次环境结算，各1伤害；浅水电伤与火同格取较大值，不双扣。不可燃的墙/深水不点燃。"
+					},
+					"water_addition": {
+						"cells": [
+							[
+								1.0,
+								3.0
+							],
+							[
+								3.0,
+								4.0
+							]
+						],
+						"round": 5.0,
+						"source": {
+							"blocks_movement": false,
+							"cell": [
+								7.0,
+								1.0
+							],
+							"id": "M23_leak",
+							"tag": "leak_source",
+							"targetable": true
+						}
+					}
+				},
+				"equipment": {
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"exits": [
+					[
+						0.0,
+						7.0
+					],
+					[
+						0.0,
+						6.0
+					]
+				],
+				"heroes": {
+					"he": {
+						"ap": 1,
+						"carrying": "r2",
+						"cell": [
+							0,
+							3
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 10,
+						"id": "he",
+						"left": false,
+						"stabilized": false
+					},
+					"jiang": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							5,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "jiang",
+						"left": false,
+						"stabilized": false
+					},
+					"lin": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							0,
+							4
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "lin",
+						"left": false,
+						"stabilized": false
+					}
+				},
+				"insulation": [],
+				"intents": {
+					"M23_enemy1": [
+						-1,
+						0
+					],
+					"M23_enemy2": [
+						-1,
+						0
+					],
+					"M23_enemy3": [
+						-1,
+						0
+					]
+				},
+				"limit": 16,
+				"marks": {},
+				"medicine": 1,
+				"medicine_limit": 2,
+				"mission_id": "M23",
+				"move_bonuses": {},
+				"objects": {
+					"M23_enemy1_cut": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							3.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy1",
+						"hp": 4,
+						"id": "M23_enemy1_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M23_enemy2_cut": {
+						"carrier": "",
+						"cell": [
+							4.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy2",
+						"hp": 6.0,
+						"id": "M23_enemy2_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M23_enemy3_cut": {
+						"carrier": "",
+						"cell": [
+							5.0,
+							5.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy3",
+						"hp": 6.0,
+						"id": "M23_enemy3_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"r1": {
+						"carrier": "",
+						"cell": [
+							2.0,
+							2.0
+						],
+						"completed": true,
+						"contributors": [
+							"jiang",
+							"lin"
+						],
+						"delivered": true,
+						"hp": 4.0,
+						"id": "r1",
+						"initial_stable": false,
+						"interaction_tags": [
+							"objective",
+							"rescue"
+						],
+						"kind": "rescue",
+						"label": "优先组登船",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stabilize_deadline": {
+							"mode": "fixed_round",
+							"round": 6.0
+						},
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [
+							{
+								"actor": "",
+								"cell": [
+									1,
+									2
+								]
+							},
+							{
+								"actor": "jiang",
+								"cell": [
+									1,
+									5
+								]
+							},
+							{
+								"actor": "lin",
+								"cell": [
+									0,
+									6
+								]
+							}
+						],
+						"unlocked_round": 1,
+						"work": 0.0
+					},
+					"r2": {
+						"carrier": "he",
+						"cell": [
+							6.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [
+							"he"
+						],
+						"delivered": false,
+						"hp": 4.0,
+						"id": "r2",
+						"initial_stable": false,
+						"interaction_tags": [
+							"objective",
+							"rescue"
+						],
+						"kind": "rescue",
+						"label": "第二组登船",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stabilize_deadline": {
+							"mode": "fixed_round",
+							"round": 6.0
+						},
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [
+							{
+								"actor": "",
+								"cell": [
+									5,
+									2
+								]
+							},
+							{
+								"actor": "he",
+								"cell": [
+									2,
+									2
+								]
+							},
+							{
+								"actor": "he",
+								"cell": [
+									0,
+									3
+								]
+							}
+						],
+						"unlocked_round": 1,
+						"work": 0.0
+					},
+					"rebuild": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							0.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "rebuild",
+						"initial_stable": true,
+						"interaction_tags": [
+							"cargo",
+							"objective"
+						],
+						"kind": "cargo",
+						"label": "重建材料箱",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 0.0
+					}
+				},
+				"protection": [],
+				"queued_reinforcements": [],
+				"reinforcement": {
+					"cap": 2.0,
+					"cells": [
+						[
+							7.0,
+							0.0
+						],
+						[
+							7.0,
+							6.0
+						]
+					],
+					"spawn_hp": 3.0,
+					"warning_rounds": 1.0
+				},
+				"round": 4,
+				"round_markers": {},
+				"rows": [
+					"........",
+					"..##....",
+					".......~",
+					"....XX~~",
+					"....XX~~",
+					".......~",
+					"........",
+					"........"
+				],
+				"safety": [],
+				"service": {},
+				"spawn_count": 0,
+				"tool_uses": {},
+				"used_markers": {},
+				"variant": "A"
+			},
+			"day": 23.0,
+			"focus": "jiang",
+			"mission": "M23",
+			"reason": "actual loaded move unavailable with ordinary budget 2",
+			"xp": 42.0
+		},
+		"jiang:jiang_1:5": {
+			"ability": "jiang_1",
+			"after": {
+				"ability_uses": {
+					"jiang_1": 1
+				},
+				"authorizations": [],
+				"balance_revision": 3,
+				"barriers": {},
+				"beacons": {},
+				"branch": "",
+				"cover": {},
+				"deployed_tools": {},
+				"difficulty": "standard",
+				"electrified_hits": [],
+				"enemies": {
+					"M23_enemy1": {
+						"cell": [
+							7.0,
+							5.0
+						],
+						"disable_requires": [
+							"M23_enemy1_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 8.0,
+						"id": "M23_enemy1",
+						"rail": [
+							[
+								7.0,
+								2.0
+							],
+							[
+								7.0,
+								3.0
+							],
+							[
+								7.0,
+								4.0
+							],
+							[
+								7.0,
+								5.0
+							]
+						],
+						"rail_direction": -1,
+						"type": "hauler"
+					},
+					"M23_enemy2": {
+						"cell": [
+							7.0,
+							2.0
+						],
+						"disable_requires": [
+							"M23_enemy2_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 4.0,
+						"id": "M23_enemy2",
+						"locked_step": [
+							0,
+							0
+						],
+						"rail": null,
+						"type": "skimmer"
+					},
+					"M23_enemy3": {
+						"cell": [
+							6,
+							7
+						],
+						"disable_requires": [
+							"M23_enemy3_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 3.0,
+						"id": "M23_enemy3",
+						"rail": null,
+						"type": "scout"
+					}
+				},
+				"environment": {
+					"briefing": "涨水只变成浅水，不把已知必经道路突然变成深水；火区在上一轮预告。失控机器电击按各自预告。",
+					"fire_pulse": {
+						"cells": [],
+						"damage": 1.0,
+						"duration_rounds": 3.0,
+						"round": 7.0,
+						"rule": "预告点火后，所列格持续3次环境结算，各1伤害；浅水电伤与火同格取较大值，不双扣。不可燃的墙/深水不点燃。"
+					},
+					"water_addition": {
+						"cells": [
+							[
+								1.0,
+								3.0
+							],
+							[
+								3.0,
+								4.0
+							]
+						],
+						"round": 5.0,
+						"source": {
+							"blocks_movement": false,
+							"cell": [
+								7.0,
+								1.0
+							],
+							"id": "M23_leak",
+							"tag": "leak_source",
+							"targetable": true
+						}
+					}
+				},
+				"equipment": {
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"exits": [
+					[
+						0.0,
+						7.0
+					],
+					[
+						0.0,
+						6.0
+					]
+				],
+				"heroes": {
+					"he": {
+						"ap": 2,
+						"carrying": "",
+						"cell": [
+							5,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 10,
+						"id": "he",
+						"left": false,
+						"stabilized": false
+					},
+					"jiang": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							1,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "jiang",
+						"left": false,
+						"stabilized": false
+					},
+					"lin": {
+						"ap": 2,
+						"carrying": "r1",
+						"cell": [
+							1,
+							5
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "lin",
+						"left": false,
+						"stabilized": false
+					}
+				},
+				"insulation": [],
+				"intents": {
+					"M23_enemy1": [
+						0,
+						-1
+					],
+					"M23_enemy2": [
+						-1,
+						0
+					],
+					"M23_enemy3": [
+						0,
+						-1
+					]
+				},
+				"limit": 16,
+				"marks": {},
+				"medicine": 1,
+				"medicine_limit": 2,
+				"mission_id": "M23",
+				"move_bonuses": {},
+				"objects": {
+					"M23_enemy1_cut": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							3.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy1",
+						"hp": 4,
+						"id": "M23_enemy1_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M23_enemy2_cut": {
+						"carrier": "",
+						"cell": [
+							4.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy2",
+						"hp": 6.0,
+						"id": "M23_enemy2_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M23_enemy3_cut": {
+						"carrier": "",
+						"cell": [
+							5.0,
+							5.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy3",
+						"hp": 6.0,
+						"id": "M23_enemy3_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"r1": {
+						"carrier": "lin",
+						"cell": [
+							2.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [
+							"jiang"
+						],
+						"delivered": false,
+						"hp": 4.0,
+						"id": "r1",
+						"initial_stable": false,
+						"interaction_tags": [
+							"objective",
+							"rescue"
+						],
+						"kind": "rescue",
+						"label": "优先组登船",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stabilize_deadline": {
+							"mode": "fixed_round",
+							"round": 6.0
+						},
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [
+							{
+								"actor": "",
+								"cell": [
+									1,
+									2
+								]
+							},
+							{
+								"actor": "jiang",
+								"cell": [
+									1,
+									5
+								]
+							}
+						],
+						"unlocked_round": 1,
+						"work": 0.0
+					},
+					"r2": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [
+							"he"
+						],
+						"delivered": false,
+						"hp": 4.0,
+						"id": "r2",
+						"initial_stable": false,
+						"interaction_tags": [
+							"objective",
+							"rescue"
+						],
+						"kind": "rescue",
+						"label": "第二组登船",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stabilize_deadline": {
+							"mode": "fixed_round",
+							"round": 6.0
+						},
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 0.0
+					},
+					"rebuild": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							0.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "rebuild",
+						"initial_stable": true,
+						"interaction_tags": [
+							"cargo",
+							"objective"
+						],
+						"kind": "cargo",
+						"label": "重建材料箱",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 0.0
+					}
+				},
+				"protection": [],
+				"queued_reinforcements": [],
+				"reinforcement": {
+					"cap": 2.0,
+					"cells": [
+						[
+							7.0,
+							0.0
+						],
+						[
+							7.0,
+							6.0
+						]
+					],
+					"spawn_hp": 3.0,
+					"warning_rounds": 1.0
+				},
+				"round": 3,
+				"round_markers": {},
+				"rows": [
+					"........",
+					"..##....",
+					".......~",
+					"....XX~~",
+					"....XX~~",
+					".......~",
+					"........",
+					"........"
+				],
+				"safety": [],
+				"service": {},
+				"spawn_count": 0,
+				"tool_uses": {},
+				"used_markers": {},
+				"variant": "A"
+			},
+			"before": {
+				"ability_uses": {},
+				"authorizations": [],
+				"balance_revision": 3,
+				"barriers": {},
+				"beacons": {},
+				"branch": "",
+				"cover": {},
+				"deployed_tools": {},
+				"difficulty": "standard",
+				"electrified_hits": [],
+				"enemies": {
+					"M23_enemy1": {
+						"cell": [
+							7.0,
+							5.0
+						],
+						"disable_requires": [
+							"M23_enemy1_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 8.0,
+						"id": "M23_enemy1",
+						"rail": [
+							[
+								7.0,
+								2.0
+							],
+							[
+								7.0,
+								3.0
+							],
+							[
+								7.0,
+								4.0
+							],
+							[
+								7.0,
+								5.0
+							]
+						],
+						"rail_direction": -1,
+						"type": "hauler"
+					},
+					"M23_enemy2": {
+						"cell": [
+							7.0,
+							2.0
+						],
+						"disable_requires": [
+							"M23_enemy2_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 4.0,
+						"id": "M23_enemy2",
+						"locked_step": [
+							0,
+							0
+						],
+						"rail": null,
+						"type": "skimmer"
+					},
+					"M23_enemy3": {
+						"cell": [
+							6,
+							7
+						],
+						"disable_requires": [
+							"M23_enemy3_cut"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 3.0,
+						"id": "M23_enemy3",
+						"rail": null,
+						"type": "scout"
+					}
+				},
+				"environment": {
+					"briefing": "涨水只变成浅水，不把已知必经道路突然变成深水；火区在上一轮预告。失控机器电击按各自预告。",
+					"fire_pulse": {
+						"cells": [],
+						"damage": 1.0,
+						"duration_rounds": 3.0,
+						"round": 7.0,
+						"rule": "预告点火后，所列格持续3次环境结算，各1伤害；浅水电伤与火同格取较大值，不双扣。不可燃的墙/深水不点燃。"
+					},
+					"water_addition": {
+						"cells": [
+							[
+								1.0,
+								3.0
+							],
+							[
+								3.0,
+								4.0
+							]
+						],
+						"round": 5.0,
+						"source": {
+							"blocks_movement": false,
+							"cell": [
+								7.0,
+								1.0
+							],
+							"id": "M23_leak",
+							"tag": "leak_source",
+							"targetable": true
+						}
+					}
+				},
+				"equipment": {
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"exits": [
+					[
+						0.0,
+						7.0
+					],
+					[
+						0.0,
+						6.0
+					]
+				],
+				"heroes": {
+					"he": {
+						"ap": 2,
+						"carrying": "",
+						"cell": [
+							5,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 10,
+						"id": "he",
+						"left": false,
+						"stabilized": false
+					},
+					"jiang": {
+						"ap": 2,
+						"carrying": "r1",
+						"cell": [
+							1,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "jiang",
+						"left": false,
+						"stabilized": false
+					},
+					"lin": {
+						"ap": 2,
+						"carrying": "",
+						"cell": [
+							1,
+							5
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "lin",
+						"left": false,
+						"stabilized": false
+					}
+				},
+				"insulation": [],
+				"intents": {
+					"M23_enemy1": [
+						0,
+						-1
+					],
+					"M23_enemy2": [
+						-1,
+						0
+					],
+					"M23_enemy3": [
+						0,
+						-1
+					]
+				},
+				"limit": 16,
+				"marks": {},
+				"medicine": 1,
+				"medicine_limit": 2,
+				"mission_id": "M23",
+				"move_bonuses": {},
+				"objects": {
+					"M23_enemy1_cut": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							3.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy1",
+						"hp": 4,
+						"id": "M23_enemy1_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M23_enemy2_cut": {
+						"carrier": "",
+						"cell": [
+							4.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy2",
+						"hp": 6.0,
+						"id": "M23_enemy2_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M23_enemy3_cut": {
+						"carrier": "",
+						"cell": [
+							5.0,
+							5.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M23_enemy3",
+						"hp": 6.0,
+						"id": "M23_enemy3_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"r1": {
+						"carrier": "jiang",
+						"cell": [
+							2.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [
+							"jiang"
+						],
+						"delivered": false,
+						"hp": 4.0,
+						"id": "r1",
+						"initial_stable": false,
+						"interaction_tags": [
+							"objective",
+							"rescue"
+						],
+						"kind": "rescue",
+						"label": "优先组登船",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stabilize_deadline": {
+							"mode": "fixed_round",
+							"round": 6.0
+						},
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 0.0
+					},
+					"r2": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							2.0
+						],
+						"completed": false,
+						"contributors": [
+							"he"
+						],
+						"delivered": false,
+						"hp": 4.0,
+						"id": "r2",
+						"initial_stable": false,
+						"interaction_tags": [
+							"objective",
+							"rescue"
+						],
+						"kind": "rescue",
+						"label": "第二组登船",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stabilize_deadline": {
+							"mode": "fixed_round",
+							"round": 6.0
+						},
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 0.0
+					},
+					"rebuild": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							0.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "rebuild",
+						"initial_stable": true,
+						"interaction_tags": [
+							"cargo",
+							"objective"
+						],
+						"kind": "cargo",
+						"label": "重建材料箱",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": true,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 0.0
+					}
+				},
+				"protection": [],
+				"queued_reinforcements": [],
+				"reinforcement": {
+					"cap": 2.0,
+					"cells": [
+						[
+							7.0,
+							0.0
+						],
+						[
+							7.0,
+							6.0
+						]
+					],
+					"spawn_hp": 3.0,
+					"warning_rounds": 1.0
+				},
+				"round": 3,
+				"round_markers": {},
+				"rows": [
+					"........",
+					"..##....",
+					".......~",
+					"....XX~~",
+					"....XX~~",
+					".......~",
+					"........",
+					"........"
+				],
+				"safety": [],
+				"service": {},
+				"spawn_count": 0,
+				"tool_uses": {},
+				"used_markers": {},
+				"variant": "A"
+			},
+			"day": 23.0,
+			"focus": "jiang",
+			"mission": "M23",
+			"payload": {
+				"ability": "jiang_1",
+				"consent": true,
+				"target": "lin"
+			},
+			"reason": "level 5 handed off real cargo across three clear cells",
+			"round": 3,
+			"xp": 85.0
+		},
+		"jiang:jiang_3:5": {
+			"ability": "jiang_3",
+			"after": {
+				"ability_uses": {
+					"jiang_3": 1
+				},
+				"authorizations": [],
+				"balance_revision": 3,
+				"barriers": {},
+				"beacons": {},
+				"branch": "",
+				"cover": {},
+				"deployed_tools": {},
+				"difficulty": "standard",
+				"electrified_hits": [],
+				"enemies": {
+					"M21_enemy1": {
+						"cell": [
+							7.0,
+							4.0
+						],
+						"disable_requires": [
+							"M21_enemy1_cut"
+						],
+						"disabled": true,
+						"facing": "south",
+						"hp": 8.0,
+						"id": "M21_enemy1",
+						"rail": [
+							[
+								7.0,
+								2.0
+							],
+							[
+								7.0,
+								3.0
+							],
+							[
+								7.0,
+								4.0
+							],
+							[
+								7.0,
+								5.0
+							]
+						],
+						"type": "hauler"
+					},
+					"M21_enemy2": {
+						"asset_disclosure": "机体损毁保留为现场后果，不新增付费维修项目。",
+						"cell": [
+							4.0,
+							0.0
+						],
+						"charge_direction": [
+							0,
+							1
+						],
+						"disable_requires": [
+							"M21_enemy2_cut0",
+							"M21_enemy2_cut1"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 10.0,
+						"id": "M21_enemy2",
+						"rail": null,
+						"recoverable_asset": false,
+						"type": "sentinel"
+					}
+				},
+				"environment": {
+					"briefing": "涨水只变成浅水，不把已知必经道路突然变成深水；火区在上一轮预告。失控机器电击按各自预告。",
+					"fire_pulse": {
+						"cells": [],
+						"damage": 1.0,
+						"duration_rounds": 3.0,
+						"round": 7.0,
+						"rule": "预告点火后，所列格持续3次环境结算，各1伤害；浅水电伤与火同格取较大值，不双扣。不可燃的墙/深水不点燃。"
+					},
+					"water_addition": {
+						"cells": [
+							[
+								1.0,
+								3.0
+							],
+							[
+								6.0,
+								2.0
+							]
+						],
+						"round": 5.0,
+						"source": {
+							"blocks_movement": false,
+							"cell": [
+								7.0,
+								1.0
+							],
+							"id": "M21_leak",
+							"tag": "leak_source",
+							"targetable": true
+						}
+					}
+				},
+				"equipment": {
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"exits": [
+					[
+						0.0,
+						7.0
+					],
+					[
+						0.0,
+						6.0
+					]
+				],
+				"heroes": {
+					"he": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							1,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 10,
+						"id": "he",
+						"left": false,
+						"stabilized": false
+					},
+					"jiang": {
+						"ap": 0,
+						"carrying": "",
+						"cell": [
+							2,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "jiang",
+						"left": false,
+						"stabilized": false
+					},
+					"lin": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							2,
+							5
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "lin",
+						"left": false,
+						"stabilized": false
+					}
+				},
+				"insulation": [],
+				"intents": {
+					"M21_enemy2": [
+						0,
+						1
+					]
+				},
+				"limit": 14,
+				"marks": {},
+				"medicine": 0,
+				"medicine_limit": 2,
+				"mission_id": "M21",
+				"move_bonuses": {},
+				"objects": {
+					"M21_enemy1_cut": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							3.0
+						],
+						"completed": true,
+						"contributors": [
+							"lin"
+						],
+						"delivered": false,
+						"disables": "M21_enemy1",
+						"hp": 6.0,
+						"id": "M21_enemy1_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 2,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M21_enemy2_cut0": {
+						"carrier": "",
+						"cell": [
+							5.0,
+							3.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M21_enemy2",
+						"hp": 6.0,
+						"id": "M21_enemy2_cut0",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "现场联动分路1（影响两端护送通过新桥）",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"service_linked": "M21:live-service",
+						"service_shutdown_effect": "两端连续保障两轮；中断重新计数，施工完成后开放新桥出口。全游戏只保留这一处双点连续驻守。",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 1.0
+					},
+					"M21_enemy2_cut1": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							5.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M21_enemy2",
+						"hp": 6.0,
+						"id": "M21_enemy2_cut1",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "现场联动分路2（影响两端护送通过新桥）",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"service_linked": "M21:live-service",
+						"service_shutdown_effect": "两端连续保障两轮；中断重新计数，施工完成后开放新桥出口。全游戏只保留这一处双点连续驻守。",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 1.0
+					},
+					"e": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							0.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "e",
+						"interaction_tags": [
+							"objective",
+							"work"
+						],
+						"kind": "work",
+						"label": "旧闸指令副本",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"fall"
+						],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 1.0
+					},
+					"marker": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							4.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "marker",
+						"interaction_tags": [
+							"objective",
+							"work"
+						],
+						"kind": "work",
+						"label": "给替代路径做标记",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"fall"
+						],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 1.0
+					},
+					"route": {
+						"carrier": "",
+						"cell": [
+							3.0,
+							2.0
+						],
+						"completed": true,
+						"contributors": [
+							"jiang"
+						],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "route",
+						"interaction_tags": [
+							"engineering",
+							"heavy_obstacle",
+							"objective",
+							"work"
+						],
+						"kind": "work",
+						"label": "恢复最终撤离线",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 4,
+						"risk_context": [
+							"heavy_load",
+							"fall"
+						],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 4.0
+					}
+				},
+				"protection": [],
+				"queued_reinforcements": [],
+				"reinforcement": {
+					"cap": 2.0,
+					"cells": [
+						[
+							7.0,
+							0.0
+						],
+						[
+							7.0,
+							6.0
+						]
+					],
+					"spawn_hp": 3.0,
+					"warning_rounds": 1.0
+				},
+				"round": 3,
+				"round_markers": {},
+				"rows": [
+					"..X..X..",
+					"..X..X..",
+					"........",
+					"..X.....",
+					"..X..X..",
+					"........",
+					"........",
+					"........"
+				],
+				"safety": [],
+				"service": {
+					"contributors": [],
+					"definition": {
+						"consecutive_rounds": 2.0,
+						"deadline": 7.0,
+						"effect": "两端连续保障两轮；中断重新计数，施工完成后开放新桥出口。全游戏只保留这一处双点连续驻守。",
+						"exit_requires": [
+							"route"
+						],
+						"extra_exit": [
+							6.0,
+							1.0
+						],
+						"id": "M21:live-service",
+						"label": "两端护送通过新桥",
+						"linked_controls": [
+							"M21_enemy2_cut0",
+							"M21_enemy2_cut1"
+						],
+						"mode": "consecutive",
+						"posts": [
+							[
+								4.0,
+								2.0
+							],
+							[
+								4.0,
+								3.0
+							]
+						],
+						"reason": "两端同时确认开放条件；旧路和基础施工依然可通关，守闸机分路影响新桥试验供电。",
+						"repair_projects": 1.0,
+						"repair_supplies": 2.0,
+						"source_enemy": "M21_enemy2"
+					},
+					"done": false,
+					"failed": false,
+					"history": [
+						{
+							"operators": [],
+							"powered": true,
+							"round": 1,
+							"ticks": 0,
+							"valid": false
+						},
+						{
+							"operators": [],
+							"powered": true,
+							"round": 2,
+							"ticks": 0,
+							"valid": false
+						}
+					],
+					"reinforced": false,
+					"shield": 0,
+					"steady": {},
+					"ticks": 0,
+					"watches": {}
+				},
+				"spawn_count": 0,
+				"tool_uses": {},
+				"used_markers": {
+					"work:jiang": true,
+					"work:lin": true
+				},
+				"variant": "A"
+			},
+			"before": {
+				"ability_uses": {},
+				"authorizations": [],
+				"balance_revision": 3,
+				"barriers": {},
+				"beacons": {},
+				"branch": "",
+				"cover": {},
+				"deployed_tools": {},
+				"difficulty": "standard",
+				"electrified_hits": [],
+				"enemies": {
+					"M21_enemy1": {
+						"cell": [
+							7.0,
+							4.0
+						],
+						"disable_requires": [
+							"M21_enemy1_cut"
+						],
+						"disabled": true,
+						"facing": "south",
+						"hp": 8.0,
+						"id": "M21_enemy1",
+						"rail": [
+							[
+								7.0,
+								2.0
+							],
+							[
+								7.0,
+								3.0
+							],
+							[
+								7.0,
+								4.0
+							],
+							[
+								7.0,
+								5.0
+							]
+						],
+						"type": "hauler"
+					},
+					"M21_enemy2": {
+						"asset_disclosure": "机体损毁保留为现场后果，不新增付费维修项目。",
+						"cell": [
+							4.0,
+							0.0
+						],
+						"charge_direction": [
+							0,
+							1
+						],
+						"disable_requires": [
+							"M21_enemy2_cut0",
+							"M21_enemy2_cut1"
+						],
+						"disabled": false,
+						"facing": "south",
+						"hp": 10.0,
+						"id": "M21_enemy2",
+						"rail": null,
+						"recoverable_asset": false,
+						"type": "sentinel"
+					}
+				},
+				"environment": {
+					"briefing": "涨水只变成浅水，不把已知必经道路突然变成深水；火区在上一轮预告。失控机器电击按各自预告。",
+					"fire_pulse": {
+						"cells": [],
+						"damage": 1.0,
+						"duration_rounds": 3.0,
+						"round": 7.0,
+						"rule": "预告点火后，所列格持续3次环境结算，各1伤害；浅水电伤与火同格取较大值，不双扣。不可燃的墙/深水不点燃。"
+					},
+					"water_addition": {
+						"cells": [
+							[
+								1.0,
+								3.0
+							],
+							[
+								6.0,
+								2.0
+							]
+						],
+						"round": 5.0,
+						"source": {
+							"blocks_movement": false,
+							"cell": [
+								7.0,
+								1.0
+							],
+							"id": "M21_leak",
+							"tag": "leak_source",
+							"targetable": true
+						}
+					}
+				},
+				"equipment": {
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"exits": [
+					[
+						0.0,
+						7.0
+					],
+					[
+						0.0,
+						6.0
+					]
+				],
+				"heroes": {
+					"he": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							1,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 7,
+						"id": "he",
+						"left": false,
+						"stabilized": false
+					},
+					"jiang": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							2,
+							2
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "jiang",
+						"left": false,
+						"stabilized": false
+					},
+					"lin": {
+						"ap": 1,
+						"carrying": "",
+						"cell": [
+							2,
+							5
+						],
+						"deadline": 0,
+						"downed": false,
+						"hp": 11,
+						"id": "lin",
+						"left": false,
+						"stabilized": false
+					}
+				},
+				"insulation": [],
+				"intents": {
+					"M21_enemy2": [
+						0,
+						1
+					]
+				},
+				"limit": 14,
+				"marks": {},
+				"medicine": 1,
+				"medicine_limit": 2,
+				"mission_id": "M21",
+				"move_bonuses": {},
+				"objects": {
+					"M21_enemy1_cut": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							3.0
+						],
+						"completed": true,
+						"contributors": [
+							"lin"
+						],
+						"delivered": false,
+						"disables": "M21_enemy1",
+						"hp": 6.0,
+						"id": "M21_enemy1_cut",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "就地停机/制动",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 2,
+						"risk_context": [
+							"electrical"
+						],
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 2.0
+					},
+					"M21_enemy2_cut0": {
+						"carrier": "",
+						"cell": [
+							5.0,
+							3.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M21_enemy2",
+						"hp": 6.0,
+						"id": "M21_enemy2_cut0",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "现场联动分路1（影响两端护送通过新桥）",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"service_linked": "M21:live-service",
+						"service_shutdown_effect": "两端连续保障两轮；中断重新计数，施工完成后开放新桥出口。全游戏只保留这一处双点连续驻守。",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 1.0
+					},
+					"M21_enemy2_cut1": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							5.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"disables": "M21_enemy2",
+						"hp": 6.0,
+						"id": "M21_enemy2_cut1",
+						"interaction_tags": [
+							"machine_shutdown",
+							"work"
+						],
+						"kind": "work",
+						"label": "现场联动分路2（影响两端护送通过新桥）",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"electrical"
+						],
+						"service_linked": "M21:live-service",
+						"service_shutdown_effect": "两端连续保障两轮；中断重新计数，施工完成后开放新桥出口。全游戏只保留这一处双点连续驻守。",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 1.0
+					},
+					"e": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							0.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "e",
+						"interaction_tags": [
+							"objective",
+							"work"
+						],
+						"kind": "work",
+						"label": "旧闸指令副本",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"fall"
+						],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 1.0
+					},
+					"marker": {
+						"carrier": "",
+						"cell": [
+							6.0,
+							4.0
+						],
+						"completed": false,
+						"contributors": [],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "marker",
+						"interaction_tags": [
+							"objective",
+							"work"
+						],
+						"kind": "work",
+						"label": "给替代路径做标记",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 0,
+						"risk_context": [
+							"fall"
+						],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 1.0
+					},
+					"route": {
+						"carrier": "",
+						"cell": [
+							3.0,
+							2.0
+						],
+						"completed": true,
+						"contributors": [
+							"jiang"
+						],
+						"delivered": false,
+						"hp": 6.0,
+						"id": "route",
+						"interaction_tags": [
+							"engineering",
+							"heavy_obstacle",
+							"objective",
+							"work"
+						],
+						"kind": "work",
+						"label": "恢复最终撤离线",
+						"lost": false,
+						"prerequisites": [],
+						"progress": 4,
+						"risk_context": [
+							"heavy_load",
+							"fall"
+						],
+						"secured_rule": "completed milestone receipt; rescue/cargo requires delivered, channel requires full hold, convoy requires final waypoint",
+						"stable": false,
+						"sustain_until_exit": false,
+						"transport_path": [],
+						"unlocked_round": 1,
+						"work": 4.0
+					}
+				},
+				"protection": [],
+				"queued_reinforcements": [],
+				"reinforcement": {
+					"cap": 2.0,
+					"cells": [
+						[
+							7.0,
+							0.0
+						],
+						[
+							7.0,
+							6.0
+						]
+					],
+					"spawn_hp": 3.0,
+					"warning_rounds": 1.0
+				},
+				"round": 3,
+				"round_markers": {},
+				"rows": [
+					"..X..X..",
+					"..X..X..",
+					"........",
+					"..X.....",
+					"..X..X..",
+					"........",
+					"........",
+					"........"
+				],
+				"safety": [],
+				"service": {
+					"contributors": [],
+					"definition": {
+						"consecutive_rounds": 2.0,
+						"deadline": 7.0,
+						"effect": "两端连续保障两轮；中断重新计数，施工完成后开放新桥出口。全游戏只保留这一处双点连续驻守。",
+						"exit_requires": [
+							"route"
+						],
+						"extra_exit": [
+							6.0,
+							1.0
+						],
+						"id": "M21:live-service",
+						"label": "两端护送通过新桥",
+						"linked_controls": [
+							"M21_enemy2_cut0",
+							"M21_enemy2_cut1"
+						],
+						"mode": "consecutive",
+						"posts": [
+							[
+								4.0,
+								2.0
+							],
+							[
+								4.0,
+								3.0
+							]
+						],
+						"reason": "两端同时确认开放条件；旧路和基础施工依然可通关，守闸机分路影响新桥试验供电。",
+						"repair_projects": 1.0,
+						"repair_supplies": 2.0,
+						"source_enemy": "M21_enemy2"
+					},
+					"done": false,
+					"failed": false,
+					"history": [
+						{
+							"operators": [],
+							"powered": true,
+							"round": 1,
+							"ticks": 0,
+							"valid": false
+						},
+						{
+							"operators": [],
+							"powered": true,
+							"round": 2,
+							"ticks": 0,
+							"valid": false
+						}
+					],
+					"reinforced": false,
+					"shield": 0,
+					"steady": {},
+					"ticks": 0,
+					"watches": {}
+				},
+				"spawn_count": 0,
+				"tool_uses": {},
+				"used_markers": {
+					"work:jiang": true,
+					"work:lin": true
+				},
+				"variant": "A"
+			},
+			"day": 21.0,
+			"focus": "jiang",
+			"mission": "M21",
+			"payload": {
+				"ability": "jiang_3",
+				"target": "he"
+			},
+			"reason": "healed genuinely damaged teammate using packed medicine",
+			"round": 3,
+			"xp": 72.0
+		}
+	},
+	"campaigns": [
+		{
+			"commands": [
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "specialty",
+					"payload": {
+						"ability": "lin_1",
+						"target": "r1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "specialty",
+					"payload": {
+						"ability": "su_1",
+						"target": "M01_enemy1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "pickup",
+					"payload": {
+						"target": "r1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "stabilize",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "interact",
+					"payload": {
+						"target": "M01_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "pickup",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "interact",
+					"payload": {
+						"target": "M01_enemy1_cut"
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "extract",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "extract",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "craft_medicine",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 8.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"lin",
+							"su",
+							"xu"
+						]
+					},
+					"round": 8.0
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "specialty",
+					"payload": {
+						"ability": "xu_1",
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "interact",
+					"payload": {
+						"target": "M02_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "interact",
+					"payload": {
+						"target": "M02_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "cut"
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "interact",
+					"payload": {
+						"target": "power"
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "interact",
+					"payload": {
+						"target": "power"
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 6.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"lin",
+							"su",
+							"xu"
+						]
+					},
+					"round": 6.0
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "door"
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "interact",
+					"payload": {
+						"target": "M03_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "door"
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "pickup",
+					"payload": {
+						"target": "crate"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "interact",
+					"payload": {
+						"target": "M03_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							1
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "extract",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							1
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							3
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							1
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "rest",
+					"payload": {
+						"participants": [
+							"lin",
+							"su"
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 7.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"lin",
+							"su",
+							"xu"
+						]
+					},
+					"round": 7.0
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							1
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "brace1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "interact",
+					"payload": {
+						"target": "brace2"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "stabilize",
+					"payload": {
+						"target": "worker"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "pickup",
+					"payload": {
+						"target": "worker"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "extract",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "rest",
+					"payload": {
+						"participants": [
+							"xu"
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 6.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"chen",
+							"lin",
+							"su"
+						]
+					},
+					"round": 6.0
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							5
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "isolate"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "isolate"
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "pump"
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "rest",
+					"payload": {
+						"participants": [
+							"lin",
+							"su"
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 5.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"xu",
+							"chen",
+							"lin"
+						]
+					},
+					"round": 5.0
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							1
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							1
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "specialty",
+					"payload": {
+						"ability": "chen_1",
+						"target": "M06_enemy2"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "M06_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "stabilize",
+					"payload": {
+						"target": "r1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "pickup",
+					"payload": {
+						"target": "r1"
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "stabilize",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "pickup",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "extract",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							1
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							1
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							4
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "extract",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							5
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "xu",
+					"kind": "end_round",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 8.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"su",
+							"xu",
+							"chen"
+						]
+					},
+					"round": 8.0
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "M07_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "interact",
+					"payload": {
+						"target": "cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "stabilize",
+					"payload": {
+						"target": "worker"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "M07_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "pickup",
+					"payload": {
+						"target": "worker"
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "extract",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							4
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "chen",
+					"kind": "rest",
+					"payload": {
+						"participants": [
+							"chen"
+						]
+					},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 8.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"lin",
+							"ye",
+							"chen"
+						]
+					},
+					"round": 8.0
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "block1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "ye",
+					"kind": "interact",
+					"payload": {
+						"target": "block2"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "truck"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							6
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							7
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							7
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "end_round",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 8
+				},
+				{
+					"actor": "ye",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 8.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"su",
+							"xu",
+							"lin"
+						]
+					},
+					"round": 8.0
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							6
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "stabilize",
+					"payload": {
+						"target": "r1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "M09_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "pickup",
+					"payload": {
+						"target": "r1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "stabilize",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "pickup",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "extract",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							4
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "extract",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							4
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "end_round",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 8
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 8.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"chen",
+							"ye",
+							"su"
+						]
+					},
+					"round": 8.0
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "test1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "interact",
+					"payload": {
+						"target": "M10_enemy1_cut0"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "ye",
+					"kind": "interact",
+					"payload": {
+						"target": "test2"
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "ye",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 4.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"he",
+							"lin",
+							"xu"
+						]
+					},
+					"round": 4.0
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "interact",
+					"payload": {
+						"target": "M11_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "interact",
+					"payload": {
+						"target": "cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "lock"
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 4.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"chen",
+							"su",
+							"ye"
+						]
+					},
+					"round": 4.0
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "backup"
+					},
+					"round": 2
+				},
+				{
+					"actor": "ye",
+					"kind": "interact",
+					"payload": {
+						"target": "M12_enemy1_cut0"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "pickup",
+					"payload": {
+						"target": "drive"
+					},
+					"round": 4
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "ye",
+					"kind": "attack",
+					"payload": {
+						"target": "M12_enemy2"
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "extract",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "ye",
+					"kind": "specialty",
+					"payload": {
+						"ability": "ye_1",
+						"target": "M12_enemy2"
+					},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "ye",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 8
+				},
+				{
+					"actor": "ye",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 8.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"he",
+							"lin",
+							"xu"
+						]
+					},
+					"round": 8.0
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "interact",
+					"payload": {
+						"target": "cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "interact",
+					"payload": {
+						"target": "M13_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "interact",
+					"payload": {
+						"target": "log"
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "log"
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "he",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 5.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"chen",
+							"mo",
+							"su"
+						]
+					},
+					"round": 5.0
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "specialty",
+					"payload": {
+						"ability": "mo_1",
+						"target": "M14_enemy1_cut"
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "pickup",
+					"payload": {
+						"target": "meds"
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "interact",
+					"payload": {
+						"target": "M14_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "extract",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 5.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"he",
+							"lin",
+							"xu"
+						]
+					},
+					"round": 5.0
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							1
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "stabilize",
+					"payload": {
+						"target": "north"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "interact",
+					"payload": {
+						"target": "M15_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "pickup",
+					"payload": {
+						"target": "north"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							1
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							1
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "extract",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							1
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "xu",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 5.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"chen",
+							"mo",
+							"su"
+						]
+					},
+					"round": 5.0
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "lane"
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "interact",
+					"payload": {
+						"target": "M16_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "stabilize",
+					"payload": {
+						"target": "people"
+					},
+					"round": 2
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "mo",
+					"kind": "pickup",
+					"payload": {
+						"target": "people"
+					},
+					"round": 3
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "mo",
+					"kind": "extract",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "mo",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "su",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "chen",
+					"kind": "end_round",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "jiang",
+					"kind": "train",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 8.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"jiang",
+							"he",
+							"lin"
+						]
+					},
+					"round": 8.0
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "interact",
+					"payload": {
+						"target": "repair1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "M17_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							1
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "interact",
+					"payload": {
+						"target": "repair2"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "interact",
+					"payload": {
+						"target": "repair2"
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "repair2"
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "he",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 5.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"jiang",
+							"chen",
+							"mo"
+						]
+					},
+					"round": 5.0
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							6
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "interact",
+					"payload": {
+						"target": "relay"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "interact",
+					"payload": {
+						"target": "M18_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "broadcast"
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "mo",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 6.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"jiang",
+							"he",
+							"lin"
+						]
+					},
+					"round": 6.0
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "stabilize",
+					"payload": {
+						"target": "patient"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "specialty",
+					"payload": {
+						"ability": "he_1",
+						"cell": [
+							6,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "M19_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "pickup",
+					"payload": {
+						"target": "patient"
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "interact",
+					"payload": {
+						"target": "shelter"
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "extract",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "he",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "jiang",
+					"kind": "train",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 6.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"jiang",
+							"chen",
+							"mo"
+						]
+					},
+					"round": 6.0
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "interact",
+					"payload": {
+						"target": "M20_enemy1_cut0"
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "interact",
+					"payload": {
+						"target": "west"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "rest",
+					"payload": {
+						"participants": [
+							"jiang"
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 4.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"jiang",
+							"he",
+							"lin"
+						]
+					},
+					"round": 4.0
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "interact",
+					"payload": {
+						"target": "route"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "M21_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "interact",
+					"payload": {
+						"target": "route"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "interact",
+					"payload": {
+						"target": "route"
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							5
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "specialty",
+					"payload": {
+						"ability": "jiang_3",
+						"target": "he"
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "rest",
+					"payload": {
+						"participants": [
+							"jiang"
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "craft_medicine",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 5.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"jiang",
+							"chen",
+							"mo"
+						]
+					},
+					"round": 5.0
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							6
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "interact",
+					"payload": {
+						"target": "handover"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "interact",
+					"payload": {
+						"target": "M22_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "mo",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "start_side",
+					"payload": {
+						"mission": "S11",
+						"roster": [
+							"jiang",
+							"chen",
+							"mo"
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "interact",
+					"payload": {
+						"target": "wire"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "mo",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "rest",
+					"payload": {
+						"participants": [
+							"chen",
+							"jiang"
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 4.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"jiang",
+							"he",
+							"lin"
+						]
+					},
+					"round": 4.0
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "stabilize",
+					"payload": {
+						"target": "r1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "pickup",
+					"payload": {
+						"target": "r1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "stabilize",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							5
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "specialty",
+					"payload": {
+						"ability": "jiang_1",
+						"consent": true,
+						"target": "lin"
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "pickup",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "extract",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "extract",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "he",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "lin",
+					"kind": "start_side",
+					"payload": {
+						"mission": "S12",
+						"roster": [
+							"jiang",
+							"he",
+							"lin"
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							5
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "pickup",
+					"payload": {
+						"target": "box"
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							6,
+							3
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "interact",
+					"payload": {
+						"target": "S12_enemy1_cut"
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							2
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "extract",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							4
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "he",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "he",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "enter_camp",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "he",
+					"kind": "rest",
+					"payload": {
+						"participants": [
+							"he",
+							"jiang"
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "select_route",
+					"payload": {
+						"route": "evacuation"
+					},
+					"round": 5
+				},
+				{
+					"actor": "lin",
+					"kind": "finish_evening",
+					"payload": {},
+					"round": 5.0
+				},
+				{
+					"actor": "lin",
+					"kind": "depart",
+					"payload": {
+						"medicine": 1,
+						"roster": [
+							"jiang",
+							"chen",
+							"mo"
+						]
+					},
+					"round": 5.0
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							4
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							1,
+							1
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							2
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							3
+						]
+					},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 1
+				},
+				{
+					"actor": "jiang",
+					"kind": "stabilize",
+					"payload": {
+						"target": "r1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							1
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "interact",
+					"payload": {
+						"target": "M24_enemy1_cut0"
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "pickup",
+					"payload": {
+						"target": "r1"
+					},
+					"round": 2
+				},
+				{
+					"actor": "chen",
+					"kind": "stabilize",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 2
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							1
+						]
+					},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 2
+				},
+				{
+					"actor": "jiang",
+					"kind": "specialty",
+					"payload": {
+						"ability": "jiang_1",
+						"consent": true,
+						"target": "mo"
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "pickup",
+					"payload": {
+						"target": "r2"
+					},
+					"round": 3
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							3,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							1
+						]
+					},
+					"round": 3
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 3
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							1
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							1
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 4
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 4
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "mo",
+					"kind": "extract",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							4,
+							1
+						]
+					},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 5
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							5,
+							1
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							7
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							3
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "extract",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "mo",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 6
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 6
+				},
+				{
+					"actor": "chen",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "mo",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							2,
+							1
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							2
+						]
+					},
+					"round": 7
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 7
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							5
+						]
+					},
+					"round": 8
+				},
+				{
+					"actor": "jiang",
+					"kind": "move",
+					"payload": {
+						"cell": [
+							0,
+							6
+						]
+					},
+					"round": 8
+				},
+				{
+					"actor": "jiang",
+					"kind": "end_round",
+					"payload": {},
+					"round": 8
+				},
+				{
+					"actor": "jiang",
+					"kind": "leave_site",
+					"payload": {},
+					"round": 9
+				}
+			],
+			"days": [
+				{
+					"day": 1,
+					"fatigue": 0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"lin",
+						"xu",
+						"su"
+					],
+					"xp": 28
+				},
+				{
+					"day": 2,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"lin",
+						"su",
+						"xu"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 3,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"lin",
+						"su",
+						"xu"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 4,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"lin",
+						"su",
+						"xu"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 5,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"chen",
+						"lin",
+						"su"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 6,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"xu",
+						"chen",
+						"lin"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 7,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"su",
+						"xu",
+						"chen"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 8,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"lin",
+						"ye",
+						"chen"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 9,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"su",
+						"xu",
+						"lin"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 10,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"chen",
+						"ye",
+						"su"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 11,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"he",
+						"lin",
+						"xu"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 12,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"chen",
+						"su",
+						"ye"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 13,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"he",
+						"lin",
+						"xu"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 14,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"chen",
+						"mo",
+						"su"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 15,
+					"fatigue": 0.0,
+					"joined": false,
+					"outcome": "success",
+					"party": [
+						"he",
+						"lin",
+						"xu"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 16,
+					"fatigue": 0.0,
+					"joined": true,
+					"outcome": "success",
+					"party": [
+						"chen",
+						"mo",
+						"su"
+					],
+					"xp": 28.0
+				},
+				{
+					"day": 17,
+					"fatigue": 18,
+					"joined": true,
+					"outcome": "success",
+					"party": [
+						"jiang",
+						"he",
+						"lin"
+					],
+					"xp": 45
+				},
+				{
+					"day": 18,
+					"fatigue": 24,
+					"joined": true,
+					"outcome": "success",
+					"party": [
+						"jiang",
+						"chen",
+						"mo"
+					],
+					"xp": 50
+				},
+				{
+					"day": 19,
+					"fatigue": 30,
+					"joined": true,
+					"outcome": "success",
+					"party": [
+						"jiang",
+						"he",
+						"lin"
+					],
+					"xp": 55
+				},
+				{
+					"day": 20,
+					"fatigue": 42,
+					"joined": true,
+					"outcome": "success",
+					"party": [
+						"jiang",
+						"chen",
+						"mo"
+					],
+					"xp": 72
+				},
+				{
+					"day": 21,
+					"fatigue": 36,
+					"joined": true,
+					"outcome": "success",
+					"party": [
+						"jiang",
+						"he",
+						"lin"
+					],
+					"xp": 77
+				},
+				{
+					"day": 22,
+					"fatigue": 30,
+					"joined": true,
+					"outcome": "success",
+					"party": [
+						"jiang",
+						"chen",
+						"mo"
+					],
+					"xp": 82
+				},
+				{
+					"day": 23,
+					"fatigue": 42,
+					"joined": true,
+					"outcome": "success",
+					"party": [
+						"jiang",
+						"he",
+						"lin"
+					],
+					"xp": 90
+				},
+				{
+					"day": 24,
+					"fatigue": 54,
+					"joined": true,
+					"outcome": "success",
+					"party": [
+						"jiang",
+						"chen",
+						"mo"
+					],
+					"xp": 98
+				}
+			],
+			"final_xp": 98,
+			"finished": true,
+			"focus": "jiang"
+		}
+	],
+	"failures": [],
+	"scope": "eight continuous production-command focus routes, real costs, daily save/load; no state injection. Observed activation is distinct from tactical benefit and human balance acceptance.",
+	"unobserved_second_specialties": []
+}

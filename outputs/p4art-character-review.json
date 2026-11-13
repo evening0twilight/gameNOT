@@ -1,0 +1,902 @@
+{
+	"failures": [],
+	"results": [
+		{
+			"actor": "lin",
+			"costume": "work",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "work",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "work",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "work",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "work",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "work",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "work",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "work",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "camp",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "camp",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "camp",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "camp",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "camp",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "camp",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "camp",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "lin",
+			"costume": "camp",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "work",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "work",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "work",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "work",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "work",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "work",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "work",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "work",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "camp",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "camp",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "camp",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "camp",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "camp",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "camp",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "camp",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "he",
+			"costume": "camp",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "work",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "work",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "work",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "work",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "work",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "work",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "work",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "work",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "camp",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "camp",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "camp",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "camp",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "camp",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "camp",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "camp",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "xu",
+			"costume": "camp",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "work",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "work",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "work",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "work",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "work",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "work",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "work",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "work",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "camp",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "camp",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "camp",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "camp",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "camp",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "camp",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "camp",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "su",
+			"costume": "camp",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "work",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "work",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "work",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "work",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "work",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "work",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "work",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "work",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "camp",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "camp",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "camp",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "camp",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "camp",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "camp",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "camp",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "chen",
+			"costume": "camp",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "work",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "work",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "work",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "work",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "work",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "work",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "work",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "work",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "camp",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "camp",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "camp",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "camp",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "camp",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "camp",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "camp",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "ye",
+			"costume": "camp",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "work",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "work",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "work",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "work",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "work",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "work",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "work",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "work",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "camp",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "camp",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "camp",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "camp",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "camp",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "camp",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "camp",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "jiang",
+			"costume": "camp",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "work",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "work",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "work",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "work",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "work",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "work",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "work",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "work",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "camp",
+			"expression": "neutral",
+			"face_changed": false,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "camp",
+			"expression": "focused",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "camp",
+			"expression": "light",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "camp",
+			"expression": "doubtful",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "camp",
+			"expression": "anger",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "camp",
+			"expression": "tired",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "camp",
+			"expression": "touched",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		},
+		{
+			"actor": "mo",
+			"costume": "camp",
+			"expression": "determined",
+			"face_changed": true,
+			"neck_shoulders_body_identical": true
+		}
+	],
+	"scope": "Actual production CharacterArt shader, two costumes and all eight expressions; anatomy invariance is not final human acceptance"
+}

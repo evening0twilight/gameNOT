@@ -1,0 +1,42 @@
+{
+	"cold_start_measured": false,
+	"cpu": "Apple M3",
+	"frames": 3076,
+	"godot_static_memory_after": 163672056,
+	"godot_static_memory_before": 163586612,
+	"gpu": "Apple M3",
+	"host": "macOS",
+	"memory_info": {
+		"available": 3611623424,
+		"free": 2532966400,
+		"physical": 17179869184,
+		"stack": 8372224
+	},
+	"mission": "M24",
+	"preview_samples": [
+		31.316,
+		32.729,
+		37.178,
+		40.074,
+		41.183,
+		41.727,
+		42.77,
+		47.882,
+		47.937,
+		63.778,
+		76.76,
+		187.543
+	],
+	"preview_to_next_frame_p95_ms": 187.543,
+	"rendered_canvas": [
+		1920,
+		1080
+	],
+	"scope": "macOS hidden offscreen GPU development measurement; not Windows 8GB, OS resident-memory, native input/display latency, human experience, or release acceptance",
+	"stable_fraction_le_16_7ms": 0.944408322496749,
+	"stable_p95_frame_ms": 17.341,
+	"stable_seconds": 30,
+	"two_hour_memory_measured": false,
+	"window": "hidden 1x1 root; GPU SubViewport",
+	"windows_native": false
+}

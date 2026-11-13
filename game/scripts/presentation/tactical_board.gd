@@ -81,10 +81,12 @@ static func route(battle: Dictionary,start: Array,target: Array) -> Array:
 			queue.append([cell,cost])
 	return routes.get(str(target),[])
 func paint_sprite(index: int,at: Vector2,tile: float,tint: Color=Color.WHITE) -> void:
+	paint_texture(Art.sprite(index),at,tile,tint)
+func paint_texture(texture: Texture2D,at: Vector2,tile: float,tint: Color=Color.WHITE) -> void:
 	draw_set_transform(at+Vector2(0,tile*.27),0,Vector2(1,.36))
 	draw_circle(Vector2.ZERO,tile*.3,Color(0.02,.06,.08,.55))
 	draw_set_transform(Vector2.ZERO)
-	draw_texture_rect(Art.sprite(index),Rect2(at-Vector2.ONE*tile*.46,Vector2.ONE*tile*.92),false,tint)
+	draw_texture_rect(texture,Rect2(at-Vector2.ONE*tile*.46,Vector2.ONE*tile*.92),false,tint)
 func hero_position(hero: Dictionary) -> Vector2:
 	if not animating() or not feedback.get("paths",{}).has(hero.id):return center(hero.cell)
 	var point: Vector2=Feedback.step_position(feedback.paths[hero.id],Feedback.progress(feedback,seconds()))
@@ -139,7 +141,7 @@ func paint_actor(hero: Dictionary,at: Vector2,tile: float) -> void:
 		var cargo: int=4 if object.get("kind","")=="rescue" else 22
 		var carried_at:=at+offset+Vector2(-tile*.12,-tile*.02+bob*tile)
 		if active and feedback.kind=="pickup" and seconds()>=impact():carried_at=(target_position()-Vector2.ONE*tile*.28).lerp(carried_at,clampf((seconds()-impact())/.25,0,1))
-		draw_texture_rect(Art.sprite(cargo),Rect2(carried_at,Vector2.ONE*tile*.56),false,tint)
+		draw_texture_rect(Art.rescue_marker(state.battle.mission_id,object) if object.get("kind","")=="rescue" else Art.sprite(cargo),Rect2(carried_at,Vector2.ONE*tile*.56),false,tint)
 func floating_text(at: Vector2,text: String,color: Color,age: float,tile: float) -> void:
 	if age<0 or age>.8:return
 	color.a=1-clampf(age/.8,0,1)
@@ -200,6 +202,9 @@ func _draw() -> void:
 	# Water surrounds the ferry; clinic gets an architectural surround.
 	draw_texture_rect(Art.environment(board.location),Rect2(Vector2.ZERO,size),false,Color(.8,.86,.88))
 	draw_rect(Rect2(Vector2.ZERO,size),Color(.015,.045,.065,.32))
+	var landmark: Texture2D=Art.landmark(board.location)
+	var landmark_size: float=minf(64,area.position.x-12)
+	if landmark!=null and landmark_size>=28:draw_texture_rect(landmark,Rect2(Vector2(6,6),Vector2.ONE*landmark_size),false)
 	draw_rect(area.grow(10),Color("0b2026"))
 	draw_rect(area.grow(8),Color("827865"),false,3)
 	# Decorative railings stay outside the interactive board footprint.
@@ -294,7 +299,8 @@ func _draw() -> void:
 			if object.id.begins_with("brace") or object.id=="rail":index=20
 			elif object.id in ["pump","engine"]:index=21
 			elif object.id=="door":index=24
-		paint_sprite(index,at,tile,tint)
+		if object.kind=="rescue":paint_texture(Art.rescue_marker(b.mission_id,object),at,tile,tint)
+		else:paint_sprite(index,at,tile,tint)
 		if object.completed or object.stable:draw_circle(at+Vector2(tile*.32,-tile*.31),tile*.055,Color("70d9c1"))
 	for enemy: Dictionary in b.enemies.values():
 		var old: Dictionary=previous.get("enemies",{}).get(enemy.id,enemy)

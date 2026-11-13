@@ -1,0 +1,12 @@
+{
+	"face_changed": true,
+	"face_region": [
+		318,
+		82,
+		166,
+		172
+	],
+	"human_art_approval": false,
+	"method": "same-position masked edit, only original face pixels reused across two whole-anatomy costumes",
+	"original_neck_shoulders_body_pixel_identical": true
+}

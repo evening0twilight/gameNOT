@@ -1,0 +1,118 @@
+{
+  "mode": "bundled imagegen CLI edit",
+  "model": "gpt-image-2.6-sunburst",
+  "status": "Original detached head/neck prototypes REJECTED. Corrective whole-anatomy bases and registered face-expression samples rendered and inspected; human aesthetic approval still pending, no new art installed in production.",
+  "prompts": {
+    "lin": "Use case: identity-preserve\nAsset type: final game character turnaround and costume design review board for 夜潮事务所, 2D adult ensemble rescue strategy game.\nInput image: reference for this exact character identity, age, hair, face and established colors. Retain identity. Improve painterly art direction rather than photorealistic skin photography.\nSubject: 林岚. 深青短雨披、暖白内层、低束发；眼下疲倦保留，视线和手部稳定. Appeal: 冷静、利落的成熟感. Personal detail: 腰侧防水医嘱夹、袖口修补；休息立绘解开外层扣子，露出旧食谱.\nCreate one polished landscape character design sheet, clean warm pale gray background, restrained semi-realistic illustration, appealing distinctive adult features, strong readable silhouette, consistent facial anatomy and body proportions. The same person in every view, no other characters.\nComposition: top two thirds show FIVE full-body drawings with generous separation: front work outfit, exact side work outfit, three-quarter work outfit, relaxed daily outfit, small overhead rescue-board token with an unmistakable occupational silhouette. Practical flood-rescue equipment, fully clothed. Bottom third show EIGHT small head-and-neck portraits, same scale, same three-quarter angle, same fixed head position, without clothing below the collarbone: neutral, focused, lighthearted, doubtful, restrained anger, tired, touched, determined. Preserve identity and distinguish tired from pain. Include six small palette swatches. No text labels, no grid lines, no watermarks. No anime eyes, fashion glamour pose, weapons, medieval armor or body horror. Consistent soft overcast lighting. Crisp silhouette suitable for 96px display; illustration, not photographs.\n",
+    "he": "Use case: identity-preserve\nAsset type: final game character turnaround and costume design review board for 夜潮事务所, 2D adult ensemble rescue strategy game.\nInput image: reference for this exact character identity, age, hair, face and established colors. Retain identity. Improve painterly art direction rather than photorealistic skin photography.\nSubject: 贺鸣. 沙色重外套、暗红内衬、宽肩轮廓、短须或鬓白；装备重量有支撑结构. Appeal: 宽厚、沉稳，有岁月感. Personal detail: 整齐但可见的补缝、小女儿挑的衣扣；生活立绘的姿态比工作时松弛.\nCreate one polished landscape character design sheet, clean warm pale gray background, restrained semi-realistic illustration, appealing distinctive adult features, strong readable silhouette, consistent facial anatomy and body proportions. The same person in every view, no other characters.\nComposition: top two thirds show FIVE full-body drawings with generous separation: front work outfit, exact side work outfit, three-quarter work outfit, relaxed daily outfit, small overhead rescue-board token with an unmistakable occupational silhouette. Practical flood-rescue equipment, fully clothed. Bottom third show EIGHT small head-and-neck portraits, same scale, same three-quarter angle, same fixed head position, without clothing below the collarbone: neutral, focused, lighthearted, doubtful, restrained anger, tired, touched, determined. Preserve identity and distinguish tired from pain. Include six small palette swatches. No text labels, no grid lines, no watermarks. No anime eyes, fashion glamour pose, weapons, medieval armor or body horror. Consistent soft overcast lighting. Crisp silhouette suitable for 96px display; illustration, not photographs.\n",
+    "lin_correction": "Use case: precise-object-edit\nEdit this character review sheet. Change ONLY the fourth full-body figure (the one holding a book, between the third figure and the small overhead token). It must be the DAILY/CAMP outfit: remove the teal rain cape, remove the heavy rescue belt, pouches, rescue harness, and ropes; show a clean warm ivory rolled-sleeve shirt, simple dark relaxed trousers, a plain narrow belt and comfortable practical ankle shoes. Preserve her face, low tied hair, book, body proportions and relaxed reading pose. Preserve EVERY other figure, all eight expression heads, palette, background, framing and style exactly. No writing.\n",
+    "lin_layers": "Use case: identity-preserve\nAsset type: production-ready modular 2D character portrait atlas with true transparent background.\nInput: review reference of Lin Lan, mature East Asian woman, low tied black hair, deep teal short rescue rain cape over ivory shirt; daily outfit is ivory shirt with dark trousers. Preserve the reference identity and restrained semi-realistic illustration.\nCreate exactly TEN equal cells in a 5-column by 2-row regular grid filling a 1536x1024 image. NO borders, padding between cells, labels, swatches, backdrop, shadows or checkerboard. All unused pixels transparent.\nEvery cell uses the SAME coordinate system: adult head spans x=96..210, y=30..150; chin at y=150; neck ends at y=185; shoulders y=180; waist y=385. Camera fixed three-quarter facing slightly left. Designed to overlay a head cell onto a torso cell at exactly the same origin, no scaling.\nCell 1 (top left): work costume TORSO ONLY, from base of neck y=165 to hips y=490. Deep teal short rain cape, ivory shirt, rescue belt, medical satchel, calm hands holding a clipboard. No head or hair in this cell; leave y=0..164 completely transparent. This is a modular costume asset, not an injured person.\nCell 2: daily costume TORSO ONLY, same neck/shoulders/body scale and camera as cell 1. Ivory rolled-sleeve shirt, dark trousers, relaxed hands holding a closed book. No rain cape, heavy rescue belt or rope. No head/hair, y=0..164 transparent.\nCells 3,4,5,6,7,8,9,10: ONLY the same woman's head, tied hair and neck at precisely the head coordinates above, with everything below y=185 transparent. No shoulders or clothes. Expressions in order neutral, focused, lighthearted, doubtful, restrained anger, tired, touched, determined. Eyes, mouth and eyebrows change only; head outline, tilt, neck and camera must remain aligned. Maintain her adult age and individual facial structure.\nProfessional 2D layered game sprite parts, crisp antialiased edges, soft overcast lighting, no gore, wounds or cutting marks. True alpha transparency.\n",
+    "he_layers": "Use case: identity-preserve\nAsset type: production-ready modular 2D character portrait atlas with true transparent background.\nInput: review reference of He Ming, older broad-shouldered East Asian man with short dark and gray hair, weathered mature face; sand-colored heavy rescue coat with dark red lining and load-bearing harness; daily outfit is a burgundy knit shirt with a small colorful button chosen by his daughter, dark trousers. Preserve the reference identity and restrained semi-realistic illustration.\nCreate exactly TEN equal cells in a 5-column by 2-row regular grid filling a 1536x1024 image. NO borders, padding between cells, labels, swatches, backdrop, shadows or checkerboard. All unused pixels transparent.\nEvery cell uses the SAME coordinate system: adult head spans x=96..210, y=30..150; chin at y=150; neck ends at y=185; shoulders y=180; waist y=385. Camera fixed three-quarter facing slightly left. Designed to overlay a head cell onto a torso cell at exactly the same origin, no scaling.\nCell 1 (top left): work costume TORSO ONLY, from base of neck y=165 to hips y=490. Sand-colored heavy rescue coat, dark red lining, practical structural harness and rescue belt, strong calm hands resting on a folded protective shield. No head or hair in this cell; leave y=0..164 completely transparent. This is a modular costume asset, not an injured person.\nCell 2: daily costume TORSO ONLY, same neck/shoulders/body scale and camera as cell 1. Burgundy knit shirt with a single small colorful button, dark trousers, relaxed hands resting comfortably. No rain cape, heavy rescue belt or rope. No head/hair, y=0..164 transparent.\nCells 3,4,5,6,7,8,9,10: ONLY the same man's head, tied hair and neck at precisely the head coordinates above, with everything below y=185 transparent. No shoulders or clothes. Expressions in order neutral, focused, lighthearted, doubtful, restrained anger, tired, touched, determined. Eyes, mouth and eyebrows change only; head outline, tilt, neck and camera must remain aligned. Maintain his older age, broad shoulders and individual facial structure.\nProfessional 2D layered game sprite parts, crisp antialiased edges, soft overcast lighting, no gore, wounds or cutting marks. True alpha transparency.\n",
+    "he_bodies_v2": "Use case: identity-preserve\nAsset type: two full, anatomically coherent waist-up portrait bases for a layered 2D game character.\nInput image is He Ming's established design sheet. Keep his exact individual face, mature age, short gray-black hair, broad shoulders and restrained semi-realistic illustration.\nCorrect the production approach: paint TWO COMPLETE PEOPLE from head through hips in a single 1536x1024 transparent PNG, one person in each equal 768x1024 panel. Do not make detached heads, neck pieces, headless bodies, grids or expression thumbnails.\nLeft: practical sand-colored rescue coat with dark red lining, structural harness, gloved hands resting on a folded protective shield. Right: burgundy knit shirt with the small colorful button selected by his daughter, dark trousers, relaxed hands. Both are the SAME adult man at exactly the SAME scale, facing the SAME three-quarter angle and with exactly the SAME neutral face pose, eye line, head location and lighting. Costume and hands may change; anatomy, face and neck must remain the same.\nCRITICAL anatomical correction: normal SHORT male neck, shoulders connect naturally to the neck at the trapezius, chin rests only a small natural distance above the collar. Broad shoulder girdle with believable clavicles. No giraffe neck, no pasted head, no floating head, no detached neck seam, no stretched anatomy, no narrow sloping shoulders. Preserve complete head-neck-shoulder continuity as one painted subject. Do not leave exaggerated blank space between jaw and shirt collar.\nFraming per 768x1024 panel: whole hair visible near y=65, chin around y=270, collar close beneath around y=300, shoulders around y=330, hips at y=990. Human proportions take priority over exact pixel numbers. Center the head over the sternum. Retain natural body mass and posture from the design sheet. Same soft overcast lighting on both faces. True alpha transparency, no ground, labels, frame, background, shadows or glow.\n",
+    "lin-bodies-v2": "Use case: identity-preserve\nAsset type: two full, anatomically coherent waist-up portrait bases for a layered 2D game character.\nInput image is Lin Lan's established design sheet. Keep her exact individual face, mature adult age, low tied black hair, realistic female shoulders and restrained semi-realistic illustration.\nCorrect the production approach: paint TWO COMPLETE PEOPLE from head through hips in a single 1536x1024 transparent PNG, one person in each equal 768x1024 panel. Do not make detached heads, neck pieces, headless bodies, grids or expression thumbnails.\nLeft: deep teal short rescue rain cape over a warm ivory shirt, practical medical equipment, calm hands holding a clipboard. Right: warm ivory rolled-sleeve shirt, dark trousers, relaxed hands holding a book; no rain cape, heavy rescue harness or ropes. Both are the SAME adult woman at exactly the SAME scale, facing the SAME three-quarter angle and with exactly the SAME neutral face pose, eye line, head location and lighting. Costume and hands may change; anatomy, face and neck must remain the same.\nCRITICAL anatomical correction: normal SHORT female neck, shoulders connect naturally to the neck at the trapezius, chin rests only a small natural distance above the collar. Natural shoulder girdle with believable clavicles. No giraffe neck, no pasted head, no floating head, no detached neck seam, no stretched anatomy, no narrow sloping shoulders. Preserve complete head-neck-shoulder continuity as one painted subject. Do not leave exaggerated blank space between jaw and shirt collar.\nFraming per 768x1024 panel: whole hair visible near y=65, chin around y=270, collar close beneath around y=300, shoulders around y=330, hips at y=990. Human proportions take priority over exact pixel numbers. Center the head over the sternum. Retain natural body mass and posture from the design sheet. Same soft overcast lighting on both faces. True alpha transparency, no ground, labels, frame, background, shadows or glow.\n",
+    "he-face-parts-v2": "Use case: identity-preserve\nAsset type: eight reusable FACE-ONLY expression layers for He Ming's two existing whole-body portraits. The input image is the exact anatomical and lighting reference.\nGenerate a transparent 1536x1024 atlas with exactly 4 columns and 2 rows, eight equal 384x512 cells. Each cell contains ONLY the central facial skin and expression features of this same man, at the same size, angle and eye line: forehead below the hairline, both eyebrows, both eyes, nose, cheeks, lips. Exclude hair, ears, jaw silhouette, chin silhouette, neck, shoulders and clothing entirely. The outer edge of each face patch tapers softly into true alpha, especially the forehead and cheeks. These are image compositing layers, not masks or objects.\nMatch the input face's exact identity, age, skin tone, lighting, three-quarter view and feature spacing. Fixed head pose and camera across all eight; do not turn, tilt, lift or stretch the face. Only expression changes. All cells have the same aligned eyebrow/eye/nose/mouth positions. Place the facial patch in each cell inside x=75..309 and y=95..365, with generous transparent margin.\nRow 1 left to right: neutral, focused, lighthearted restrained smile, doubtful with closed lips and a slight questioning brow.\nRow 2 left to right: restrained anger, tired with slightly lowered eyelids, emotionally touched with a small softened smile, determined.\nNo open-mouth shock, no exaggerated deformation, no wounded expression, no gore, no neck, no head outline, no added scenery, no glow, no labels, no tile borders. Preserve his natural wrinkles. Do not generate complete heads or new full-body portraits. True alpha transparency.\n",
+    "he-smile-edit": "Edit ONLY the masked facial expression of the LEFT character to a gentle, restrained, warm smile. This is the same older man He Ming. Keep his exact face identity, natural age, facial anatomy, head pose, perspective, face scale, eye locations and head position. Mouth corners lift slightly; eyes soften naturally. No broad laughing mouth or exaggerated cheeks. Preserve all unmasked pixels, hair, ears, jaw contour, chin, neck, shoulders, costumes, torso, hands and the entire right-hand portrait. Keep the original 1536x1024 canvas and exact two-person layout. Do not move or resize the head or facial features. Do not add a halo, backdrop, mask border or color cast. Match the existing skin tone and lighting exactly. True alpha background remains unchanged.\n",
+    "registered_expressions_v3": "Edit ONLY the masked facial expressions in this exactly registered four-column by two-row template. It contains eight identical crops of the SAME adult character. Preserve the exact 1536x1024 canvas and all eight cell locations, face scales, head poses, eye-line placement, identity, skin tone, lighting, natural age, and anatomy. Do not rearrange, enlarge, tilt, turn or shift a head. Do not change any neck, shoulders, chin outline, hair, ears, background or unmasked pixel. No halo or mask edge.\nCell 1 upper left: unchanged neutral reference; do not modify.\nCell 2: focused, slightly concentrated brow, steady eyes.\nCell 3: lighthearted, restrained warm smile, no open mouth.\nCell 4: doubtful, a mild questioning brow, closed lips, no shock or gaping mouth.\nCell 5 lower left: restrained anger, firmer brow and lips, no theatrical rage.\nCell 6: tired, lowered eyelids and relaxed brow; no injuries, no crying, no pain.\nCell 7: emotionally touched, softly warmed eyes and slight softened smile.\nCell 8: determined, steady direct gaze and firm closed lips.\nEach change must remain inside its supplied face mask. Keep the facial feature proportions and bone structure exactly consistent with the template. This is a registered expression texture for a game, not a new character design sheet. The transparent margins remain transparent. Keep all unmasked content unchanged.\n"
+  },
+  "outputs": [
+    "output/imagegen/p4close/lin-design-v2.png",
+    "output/imagegen/p4close/he-design.png",
+    "output/imagegen/p4close/lin-layers.png",
+    "outputs/p4close-lin-composited.png",
+    "output/imagegen/p4close/he-layers.png",
+    "outputs/p4close-he-composited.png",
+    "output/imagegen/p4close/he-bodies-v2.png",
+    "output/imagegen/p4close/lin-bodies-v2.png",
+    "output/imagegen/p4close/he-smile-masked-v3.png",
+    "outputs/p4close-he-masked-face-v3.png",
+    "output/imagegen/p4close/he-expressions-v3.png",
+    "outputs/p4close-he-registered-expressions-v3.png",
+    "output/imagegen/p4close/lin-expressions-v3.png",
+    "outputs/p4close-lin-registered-expressions-v3.png",
+    "outputs/p4close-corrected-art-v3.png",
+    "outputs/p4close-registered-art-v3.json"
+  ],
+  "technical_review": {
+    "lin_layers": "REJECTED by user: detached neck and shoulder mismatch. Do not use or batch from this prototype.",
+    "model_directory": "Official OpenAI /v1/models returned exact 2.5/2.6 model IDs; no model alias guessed.",
+    "credentials": "Local environment only; not part of output or game.",
+    "he_layers": "REJECTED by user: elongated neck and shoulder mismatch. Do not use or batch from this prototype.",
+    "face_parts_v2": "Rejected: freely generated face-only atlas did not retain pixel registration and produced visible patch seams in composite. Superseded by masked edits of the complete base portrait.",
+    "masked_v3": "Single masked edit retains registration. GPU composition uses only the exact original face ROI and the original silhouette alpha with edge feathering. Neck/shoulder/body region pixel identical to complete base. User aesthetic approval still pending.",
+    "registered_v3": "Two whole-anatomy costume bases per actor; same masked face-expression atlas reused across both costumes. Godot review of all 32 combinations preserves original pixels below face ROI. Daily face offset measured against actual base images: Lin (-52,0), He (-1,0). Original unregistered Lin daily overlay failed internal visual review and was corrected before user preview. Pixel invariance is a compositing check, not aesthetic acceptance. Expressions remain subtle and eight-person 96px recognition is unverified."
+  },
+  "user_review": "Original setting approval question is superseded by rejection of the composited art quality. No approval has been granted.",
+  "revision": "Rebuild anatomically coherent whole portrait bases. Expression reuse must preserve original neck/shoulder anatomy, using face-only expression layers rather than detached head/neck overlays.",
+  "endpoint": "https://api.openai.com/v1/images/edits",
+  "provider_environment_verified": "OPENAI_BASE_URL and OPENAI_API_BASE were unset for initial runs (OpenAI SDK default). Corrective runs explicitly set official base URL. Requested model gpt-image-2.6-sunburst; no alias or fallback substitution.",
+  "asset_sha256": {
+    "output/imagegen/p4close/lin-design.png": "6f459742a098f80ce67c9ee05e194af32644abac3e287720c409803405544a84",
+    "output/imagegen/p4close/he-face-parts-v2.png": "b9918187c6033ab8639c2a8d806402909db4672542a32dda720ce7be295d4d25",
+    "output/imagegen/p4close/lin-layers.png": "36fad7e6da0007b77f062f618f905424256b21be5d088aa5c8c14bc10605e5c2",
+    "output/imagegen/p4close/he-smile-masked-v3.png": "82cd3e432507ad67ab1ded836eeaffff4c556dd4f7948df65c989ea25157033c",
+    "output/imagegen/p4close/lin-bodies-v2.png": "6f5b86b24d0d0c4d4abc91a962eb37146dcad2d0dc36ac20cdd5e0b50bc82fee",
+    "output/imagegen/p4close/he-layers.png": "14de5ee9c415dad23848cd2a461fb06715fe469c0f43496345af6fda990335da",
+    "output/imagegen/p4close/lin-design-v2.png": "80defc3c15867a66303d12eb0657c96176dc5da54b79c821a29d41bd39164ccf",
+    "output/imagegen/p4close/he-design.png": "23cb74f8ea9516a3a158107871af2623b91bfe846a0d661c06cfe0098791134e",
+    "output/imagegen/p4close/he-bodies-v2.png": "1510c4815ce63772850b4f084f84fadaa810b45a3594fe376af8d14ca8ef5594",
+    "outputs/p4close-lin-composited.png": "06fd9f539d183f028b864ed6e169a3376c9f1d49e045e6a6c55394094c1f7db5",
+    "outputs/p4close-he-composited.png": "b437026f154caa8148a99cbadb501465813c445f32c12a2dd61fcc30538a410e",
+    "outputs/p4close-he-masked-face-v3.png": "55ee01447b5c77583e9b6d86aef1ab14ab15f739a2ef0583309209ccbca3f7c4",
+    "output/imagegen/p4close/he-expressions-v3.png": "dda62db5c4777bab4aeda3b399286ebeb3c0ec0a3db983467425e1c3ccd3c06e",
+    "outputs/p4close-he-registered-expressions-v3.png": "e982e9c977a0465c81ac4257a680a9a5a23ac03064894bda6a9c650c22c41b01",
+    "output/imagegen/p4close/lin-expressions-v3.png": "824c896e1484a179bc78e2f52411e2e23eed1d4973882775cbd8f072525a3a19",
+    "outputs/p4close-lin-registered-expressions-v3.png": "0e3384d3375345d8d14c2246d01b16ed83edf663f243869446d0745eab0a175f",
+    "outputs/p4close-corrected-art-v3.png": "74e5aa2cf3c67c1a066ae2fc09fb3b3769d1f4b7aa98e54b9d70bb79d9861afd",
+    "outputs/p4close-registered-art-v3.json": "8a517c2e7d38eed6e6bf7220798f9cafe132c87e3316efc33c9e7c24e16a25ef"
+  },
+  "registration": {
+    "canvas": [
+      1536,
+      1024
+    ],
+    "expression_grid": [
+      4,
+      2
+    ],
+    "cell": [
+      384,
+      512
+    ],
+    "he": {
+      "original_face": [
+        318,
+        82,
+        166,
+        172
+      ],
+      "atlas_cell_face": [
+        120,
+        168,
+        166,
+        172
+      ],
+      "daily_offset": [
+        -1,
+        0
+      ]
+    },
+    "lin": {
+      "original_face": [
+        326,
+        103,
+        140,
+        155
+      ],
+      "atlas_cell_face": [
+        108,
+        169,
+        140,
+        155
+      ],
+      "daily_offset": [
+        -52,
+        0
+      ]
+    }
+  }
+}

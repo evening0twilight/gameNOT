@@ -1,16 +1,21 @@
 extends RefCounted
 ## Atlas regions are runtime views; original generated assets remain unmodified.
+const CharacterArt=preload("res://scripts/presentation/character_art.gd")
 static var cache: Dictionary={}
+static func character(id: String,kind: String="work",expression: String="neutral",minimum: Vector2=Vector2(155,200),head_only: bool=false) -> TextureRect:
+	if CharacterArt.has_actor(id):return CharacterArt.view(id,kind,expression,minimum,head_only)
+	return picture(portrait(id,expression) if head_only else outfit(id,kind),minimum)
 static func atlas(file: String,column: int,row: int,columns: int,rows: int) -> AtlasTexture:
 	var key: String="%s:%d:%d:%d:%d" % [file,column,row,columns,rows]
 	if cache.has(key):return cache[key]
-	var texture: Texture2D=load("res://assets/%s.png" % (file if file.begins_with("visual_p2/") or file.begins_with("visual_p3/") or file.begins_with("motion_p4/") or file.begins_with("portraits018/") or file.begins_with("product018/") else "visual_p1/"+file))
+	var texture: Texture2D=load("res://assets/%s.png" % (file if file.begins_with("visual_p2/") or file.begins_with("visual_p3/") or file.begins_with("motion_p4/") or file.begins_with("portraits018/") or file.begins_with("product018/") or file.begins_with("characters018/") else "visual_p1/"+file))
 	var region:=AtlasTexture.new();region.atlas=texture
 	var cell: Vector2=texture.get_size()/Vector2(columns,rows)
 	region.region=Rect2(Vector2(column,row)*cell+Vector2.ONE,cell-Vector2.ONE*2)
 	region.filter_clip=true;cache[key]=region
 	return region
 static func portrait(id: String,expression: String="neutral") -> Texture2D:
+	if CharacterArt.has_actor(id) and expression=="neutral":return CharacterArt.region(id,"work",true)
 	if ResourceLoader.exists("res://assets/product018/"+id+".png"):
 		var semantic: String={"smile":"light","worried":"doubtful","firm":"determined","surprised":"focused","grief":"doubtful","relieved":"touched"}.get(expression,expression)
 		var index: int=2+maxi(0,["neutral","focused","light","doubtful","anger","tired","touched","determined","injured"].find(semantic))
@@ -32,6 +37,7 @@ static func portrait(id: String,expression: String="neutral") -> Texture2D:
 	face.region=Rect2(full.region.position,Vector2(full.region.size.x,full.region.size.y*.6));face.filter_clip=true
 	return face
 static func sprite(index: int) -> Texture2D:
+	if index==4 and ResourceLoader.exists("res://assets/characters018/markers.png"):return atlas("characters018/markers",2,0,3,2)
 	if index>=40:
 		var region:=atlas("visual_p3/crew_sprites",(index-40)%4,(index-40)/4,4,2)
 		var texture: Texture2D=region.atlas
@@ -64,12 +70,17 @@ static func environment(location: String) -> Texture2D:
 	return atlas("visual_p2/environments",index%3,index/3,3,2)
 
 static func motion(id: String,frame: int) -> Texture2D:
+	if ResourceLoader.exists("res://assets/characters018/"+id+"-motion.png"):return atlas("characters018/"+id+"-motion",clampi(frame,0,5)%3,clampi(frame,0,5)/3,3,2)
+	if id.begins_with("responder_") and ResourceLoader.exists("res://assets/characters018/markers.png"):
+		var variant: int=4+int(id.get_slice("_",2))%2
+		return atlas("characters018/markers",variant%3,variant/3,3,2)
 	var ids: Array=["lin","xu","su","chen","ye","he","mo","jiang"]
 	var index: int=ids.find(id)
 	if index<0:return sprite(9)
 	return atlas("motion_p4/crew_a" if index<4 else "motion_p4/crew_b",clampi(frame,0,5),index%4,6,4)
 
 static func outfit(id: String,kind: String="work") -> Texture2D:
+	if CharacterArt.has_actor(id):return CharacterArt.region(id,kind)
 	if ResourceLoader.exists("res://assets/product018/"+id+".png"):return atlas("product018/"+id,1 if kind=="camp" else 0,0,4,3)
 	if ResourceLoader.exists("res://assets/portraits018/"+id+".png"):return atlas("portraits018/"+id,1 if kind=="camp" else 0,0,5,2)
 	return portrait(id)
@@ -81,3 +92,27 @@ static func narrative(location: String) -> Texture2D:
 static func icon(id: String) -> Texture2D:
 	var path: String="res://assets/product018/icons/"+id+".svg"
 	return load(path) if ResourceLoader.exists(path) else null
+
+static var rescue_roles: Dictionary={}
+static func rescue_marker(mission: String,object: Dictionary) -> Texture2D:
+	if not ResourceLoader.exists("res://assets/characters018/markers.png"):return sprite(4)
+	if rescue_roles.is_empty():rescue_roles=JSON.parse_string(FileAccess.get_file_as_string("res://data/presentation/asset_roles.json")).rescue
+	var role: String="injured" if object.get("id","").begins_with("casualty_") else rescue_roles.get(mission+":"+object.get("id",""),"adult")
+	return atlas("characters018/markers",["adult","child","injured","staff"].find(role)%3,["adult","child","injured","staff"].find(role)/3,3,2)
+
+const LOCATIONS=["bridge","clinic","coldstore","control","factory","ferry","gate","housing","pump","roof","shelter","warehouse"]
+static func landmark(location: String) -> Texture2D:
+	if not ResourceLoader.exists("res://assets/characters018/landmarks.png"):return null
+	var index: int=LOCATIONS.find(location)
+	return atlas("characters018/landmarks",index%4,index/4,4,3) if index>=0 else null
+static func site_picture(location: String,minimum: Vector2) -> Control:
+	var frame:=Control.new();frame.custom_minimum_size=minimum;frame.size_flags_horizontal=Control.SIZE_EXPAND_FILL;frame.mouse_filter=Control.MOUSE_FILTER_IGNORE
+	var backdrop:=picture(environment(location),Vector2.ZERO);frame.add_child(backdrop);backdrop.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var prop: Texture2D=landmark(location)
+	if prop!=null:
+		var mark:=picture(prop,Vector2.ZERO);mark.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;frame.add_child(mark)
+		var fit: Callable=func():
+			var side: float=minf(120,frame.size.y*.7)
+			mark.size=Vector2.ONE*side;mark.position=Vector2(maxf(0,frame.size.x-side-10),maxf(0,frame.size.y-side-8))
+		frame.resized.connect(fit)
+	return frame
