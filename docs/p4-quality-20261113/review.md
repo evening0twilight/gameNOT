@@ -29,3 +29,38 @@
 - 本轮不是平台迁移。换平台尚未决策，也不会自动解决画面、引导和剧情问题。
 
 原 p4art 包与其报告保留历史。当前检查与包使用独立前缀 p4quality-20261113。所有本机图形检查使用隐藏根窗口的GPU SubViewport，不占主屏。
+
+## 冻结16类界面的入口核对
+
+这是生产代码入口核查，不等于16页全部通过人类体验验收。本轮主要调整title/battle/camp/story；其余复用原正式入口。
+
+| 定稿界面 | 生产入口 | 此轮确认范围 |
+| --- | --- | --- |
+| title | campaign_screens.title / main.can_variant_b | 新周目、继续、存档选择、帮助、音量、退出及天气B解锁状态 |
+| slots | campaign_screens.manual_slots / main.recover / campaign_picker | 十个手动位置、覆盖确认、备份恢复和周目选择保留 |
+| new_game | main.new_campaign / difficulty_controls | 原三难度披露、严峻确认、天气B解锁条件保留 |
+| briefing | campaign_screens.briefing / city | 必须目标前置；环境、城市事实、支线期限读取正式数据 |
+| deployment | campaign_screens.briefing / planning_board | 3人/后勤、装备、L2倾向、药剂和接应草案仍可操作 |
+| battle | tactical_workspace.render / main.propose | 新布局；所有预览仍来自Session同一规则入口 |
+| settlement | main.render_camp / appraisal_log | 目标事实、资源和XP、社区发布选择、关系事件原因保留 |
+| side_offer | main.prepare_mission / show_journal | 接受、稍后、已尝试与过期信息入口保留 |
+| camp | camp_workspace.show / main.show_night_review | 2项目2短谈、疲劳预览、自然睡眠及D23警告可达 |
+| growth | campaign_screens.profile / main.group_project | 个人课程/合法带教的实际成本与收益比较保留 |
+| supply | main.show_workshop | 购买、撤销、制作、库存和设施入口未删除 |
+| relations | campaign_screens.relationships / camp_workspace.administration | 方向关系、认责、证据补救、约定/授权入口保留 |
+| story | story_screen.show / journey_presentation.scene | 新回应接续；现场/休养/来信与摘要语义保留 |
+| journal | main.show_journal / render_campaign_options | 已知事实、可用但未读故事占位、核查与发布入口保留 |
+| ending | main.render_ending | 世界、地区、人物选择/履约、关系收束及另开存档保留 |
+| settings_help | main.settings_action / show_help / pause_menu | 三字号、声音、速度、动效、键位与保存返回保留 |
+
+## 本轮实渲染画面
+
+全部来自1280×720隐藏GPU SubViewport；不是概念图或Windows截图。
+
+- [标题与周目入口](../../outputs/p4quality-title.png)
+- [正式M01战斗与目标坐标](../../outputs/p4quality-battle.png)
+- [真实day06存档营地](../../outputs/p4quality-camp.png)
+- [真实day06回看P_lin_1的对话区域](../../outputs/p4quality-dialogue.png)
+- [实际已提交移动中的画面](../../outputs/p4quality-walking.png)
+
+对话截图用于检查布局；30段新补演出由专项测试检查适用状态，不将此P_lin_1截图说成L/R演出全量展示。
