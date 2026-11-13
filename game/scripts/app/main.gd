@@ -190,7 +190,7 @@ func render() -> void:
 	sound.ambience(music_context())
 	var header:=HBoxContainer.new();root.add_child(header)
 	var title:=VBoxContainer.new();title.size_flags_horizontal=Control.SIZE_EXPAND_FILL;header.add_child(title)
-	var heading:=label(title,I18n.t("ui.ea0219b09f08"));heading.add_theme_font_size_override("font_size",28);heading.add_theme_color_override("font_color",TEAL)
+	var heading:=label(title,I18n.t("ui.ea0219b09f08"));heading.add_theme_font_size_override("font_size",20 if s.campaign.phase=="battle" or feedback_active() else 28);heading.add_theme_color_override("font_color",TEAL)
 	var subtitle:=label(title,I18n.t("ui.6b73f6729147") % [s.campaign.day,I18n.content("boards",s.battle.mission_id,"title",session.content.boards[s.battle.mission_id].title)])
 	subtitle.add_theme_color_override("font_color",MUTED);subtitle.add_theme_font_size_override("font_size",16)
 	for currency: String in ["credits","supplies","parts"]:
@@ -209,6 +209,7 @@ func render() -> void:
 	menu.get_popup().add_item(I18n.t("baseline018.40327e5a6e68"))
 	menu.get_popup().id_pressed.connect(settings_action)
 	var separator:=HSeparator.new();root.add_child(separator)
+	if title_screen:header.hide();separator.hide()
 	var body:=HBoxContainer.new();body.size_flags_vertical=Control.SIZE_EXPAND_FILL;body.add_theme_constant_override("separation",20);root.add_child(body)
 	if title_screen:Screens.title(self,body)
 	elif s.campaign.phase=="briefing":Screens.briefing(self,body)
@@ -219,7 +220,7 @@ func render() -> void:
 	if feedback_active():
 		menu.disabled=true
 		for control: Node in body.find_children("*","Button",true,false):control.disabled=true
-	var notice:=PanelContainer.new();notice.custom_minimum_size.y=56;notice.add_theme_stylebox_override("panel",surface(SURFACE,8));root.add_child(notice)
+	var notice:=PanelContainer.new();notice.custom_minimum_size.y=48;notice.add_theme_stylebox_override("panel",surface(SURFACE,8));root.add_child(notice)
 	var status_row:=HBoxContainer.new();notice.add_child(status_row)
 	var status_message: String=message
 	if message==I18n.t("ui.28efa9cc44f6") and s.campaign.phase!="battle":status_message=I18n.t("journey.status_briefing" if s.campaign.phase=="briefing" else "journey.status_camp")
@@ -258,83 +259,9 @@ func settings_action(index: int) -> void:
 			message=I18n.t("p4.diagnostics_saved") % path if not path.is_empty() else I18n.t("error.save") % error_text("save_io_failed")
 			render()
 func render_battle(body: HBoxContainer) -> void:
-	var s: Dictionary=session.state
-	if feedback_active() and s.campaign.phase!="battle":s=s.duplicate(true);s.campaign.phase="battle"
-	var b: Dictionary=s.battle
-	var board: Dictionary=session.content.boards[b.mission_id]
-	if not b.heroes.has(selected):selected=str(b.heroes.keys()[0])
-	var left:=VBoxContainer.new();left.size_flags_horizontal=Control.SIZE_EXPAND_FILL;body.add_child(left)
-	label(left,objective_summary()).add_theme_color_override("font_color",TEAL)
-	var title:=HBoxContainer.new();left.add_child(title)
-	button(title,I18n.t("p3.site_view"),show_site).custom_minimum_size.x=140
-	button(title,I18n.t("intro.button"),func():show_intro(false)).custom_minimum_size.x=100
-	label(title,I18n.t("ui.b3033f3709e4")).add_theme_color_override("font_color",GOLD)
-	label(title,I18n.t("ui.23cdebc8c9bf") % [b.round,b.limit])
-	for control: Control in title.get_children():control.add_theme_font_size_override("font_size",16)
-	var map=BoardView.new();map.state=s;map.board=board;map.selected=selected
-	map.previous=visual_previous;map.animation_started=visual_started;map.feedback=feedback_plan;map.actor_facings=actor_facings;map.playback_seconds=feedback_seconds
-	var next: Dictionary=current_guidance() if guidance_enabled else {}
-	map.hint_cell=next.get("cell",[])
-	map.size_flags_vertical=Control.SIZE_EXPAND_FILL;map.custom_minimum_size=Vector2(300,280)
-	var cache_key: String="%s:%s:%s" % [hash(s.battle),selected,action]
-	if reach_key!=cache_key:
-		reach_cache.clear();reach_key=cache_key
-		if action=="move":
-			for cell: Array in Rules.reachable_cells(s,selected):reach_cache[str(cell)]=cell
-	map.reachable=[] if feedback_active() else reach_cache.values()
-	map.validate_hover=func(cell: Array):return reach_cache.has(str(cell))
-	map.cell_chosen.connect(click_cell);left.add_child(map)
-	if not next.is_empty():
-		var panel:=PanelContainer.new();panel.add_theme_stylebox_override("panel",surface(SURFACE,8));left.add_child(panel)
-		var guidance_row:=HBoxContainer.new();panel.add_child(guidance_row)
-		var hint_text:=label(guidance_row,I18n.t("guide."+next.key));hint_text.add_theme_font_size_override("font_size",16)
-		if not next.get("action","").is_empty() or next.has("actor"):
-			var caption: String=I18n.t("guide.switch") % actor_name(next.actor) if next.has("actor") else I18n.t("guide.preview") % action_name(next.action)
-			var suggestion:=button(guidance_row,caption,preview_guidance);suggestion.custom_minimum_size.x=132;suggestion.add_theme_font_size_override("font_size",16)
-
-	label(left,I18n.t("ui.4697785e420d")).add_theme_font_size_override("font_size",14)
-	var right_panel:=PanelContainer.new();right_panel.custom_minimum_size.x=390;right_panel.add_theme_stylebox_override("panel",surface(SURFACE,12));body.add_child(right_panel)
-	var right:=VBoxContainer.new();right.add_theme_constant_override("separation",8);right_panel.add_child(right)
-	for h: Dictionary in b.heroes.values():
-		var text: String=I18n.t("ui.de04e409bc3a") % [actor_name(h.id),h.hp,h.ap]
-		if h.downed:text+=I18n.t("ui.fb2c9b47365c")
-		elif h.left:text+=I18n.t("ui.4c0584645189")
-		var row:=HBoxContainer.new();row.add_theme_constant_override("separation",10);right.add_child(row)
-		if h.id in ["lin","xu","su","chen","ye","he","mo","jiang"]:
-			var portrait=Art.character(h.id,"work","neutral",Vector2(48,60),true);row.add_child(portrait)
-		var crew:=button(row,text,func():selected=h.id;action="move";render());crew.size_flags_horizontal=Control.SIZE_EXPAND_FILL
-		crew.add_theme_font_size_override("font_size",16)
-		if selected==h.id:crew.add_theme_stylebox_override("normal",surface(Color("23493f"),8,TEAL))
-	var tabs:=HBoxContainer.new();right.add_child(tabs)
-	for item: Array in [["actions",I18n.t("ui.253fb75906c6")],["objectives",I18n.t("ui.5253040db864")],["cooperation",I18n.t("ui.19bf536853e2")]]:
-		var tab:=button(tabs,item[1],func():panel_tab=item[0];render());tab.size_flags_horizontal=Control.SIZE_EXPAND_FILL
-	var scroll:=ScrollContainer.new();scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;right.add_child(scroll)
-	var contents:=VBoxContainer.new();contents.size_flags_horizontal=Control.SIZE_EXPAND_FILL;contents.add_theme_constant_override("separation",8);scroll.add_child(contents)
-	match panel_tab:
-		"actions":action_panel(contents)
-		"objectives":
-			for o: Dictionary in b.objects.values():
-				var state_text: String=I18n.t("ui.f28461bb49c8") if o.completed else (I18n.t("p2.lost") if o.lost or o.has("unavailable_reason") else (I18n.t("ui.44068ff6b2ee") if o.stable else I18n.t("ui.999a459c3f3f")))
-				if o.work>0 and not o.completed and not o.lost and not o.has("unavailable_reason"):state_text=I18n.t("p2.work_progress") % [o.progress,o.work]
-				if o.get("active",false) and not o.completed:state_text=I18n.t("p3.timed_progress") % [int(o.get("timer",o.get("waypoint",0))),int(o.get("hold_rounds",o.get("waypoints",[]).size()-1))]
-				var item:=button(contents,"%s · %s" % [object_name(o.id),state_text],func():object_click(o.id));item.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
-				var deadline: int=Rules.Hazards.rescue_deadline(b,o)
-				if deadline>0 and not o.stable and not o.lost:label(contents,I18n.t("difficulty.rescue_deadline") % deadline).add_theme_font_size_override("font_size",16)
-			label(contents,I18n.t("ui.3ef5bf27c047") % b.environment.water_addition.round)
-		"cooperation":cooperation_panel(contents)
-	button(right,I18n.t("ui.975778d99095"),func():propose("end_round",{}))
-	var footer:=HBoxContainer.new();right.add_child(footer)
-	button(footer,I18n.t("ui.926a50b98ece"),func():propose("undo",{})).size_flags_horizontal=Control.SIZE_EXPAND_FILL
-	button(footer,I18n.t("ui.f2adfafb5b50"),func():propose("emergency_retreat",{"confirmed":true})).size_flags_horizontal=Control.SIZE_EXPAND_FILL
+	preload("res://scripts/presentation/tactical_workspace.gd").render(self,body)
 func action_panel(box: VBoxContainer) -> void:
-	Screens.operations(self,box)
 	var s: Dictionary=session.state
-	var grid:=GridContainer.new();grid.columns=2;box.add_child(grid)
-	for kind: String in ["move","attack","push","stabilize","pickup","interact","drop","extract","leave_site"]:
-		var b:=button(grid,action_name(kind),func():action=kind;message=I18n.t("ui.5f8e4339d044") % action_name(kind);render();if kind in ["drop","extract","leave_site"]:propose(kind,{}))
-		b.size_flags_horizontal=Control.SIZE_EXPAND_FILL;b.icon=Art.icon(kind)
-		if action==kind:b.add_theme_stylebox_override("normal",surface(Color("34594f"),8,TEAL))
-	render_tools(box)
 	if s.actors.has(selected):
 		var lv: int=Rules.Specialties.level(int(s.actors[selected].xp))
 		label(box,I18n.t("ui.d18936001d7a")).add_theme_color_override("font_color",GOLD)
@@ -345,7 +272,14 @@ func action_panel(box: VBoxContainer) -> void:
 				var b:=button(box,I18n.t("ui.f4012a3898f3") % [title,int(spec.charges_per_mission)-int(s.battle.ability_uses.get(spec.id,0))],func():action="specialty";ability=spec.id;specialty_mode="move";specialty_target="";message=I18n.content("abilities",spec.id,"effect",spec.effect);render())
 				b.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;b.icon=Art.icon(spec.id)
 		if selected=="su" and lv>=5:button(box,I18n.t("ui.bf8acf052f64"),func():action="specialty";ability="su_3";specialty_mode="ap";message=I18n.t("ui.7e050b01a60e");render())
+	var grid:=GridContainer.new();grid.columns=2;box.add_child(grid)
+	for kind: String in ["move","attack","push","stabilize","pickup","interact","drop","extract","leave_site"]:
+		var b:=button(grid,action_name(kind),func():action=kind;message=I18n.t("ui.5f8e4339d044") % action_name(kind);render();if kind in ["drop","extract","leave_site"]:propose(kind,{}))
+		b.size_flags_horizontal=Control.SIZE_EXPAND_FILL;b.icon=Art.icon(kind)
+		if action==kind:b.add_theme_stylebox_override("normal",surface(Color("34594f"),8,TEAL))
+	render_tools(box)
 func cooperation_panel(box: VBoxContainer) -> void:
+	Screens.operations(self,box)
 	button(box,I18n.t("baseline018.d04bb3ddf1b7"),func():action="protocol";protocol="coordinated_pull";specialty_target="";message=I18n.t("baseline018.07d244dd0218");render())
 	button(box,I18n.t("baseline018.12bb628f0efc"),func():propose("declare_priority",{"priority":"people"}))
 	button(box,I18n.t("baseline018.a178bcfbaf13"),func():propose("declare_priority",{"priority":"cargo"}))
@@ -435,6 +369,9 @@ func render_camp(body: HBoxContainer) -> void:
 	if s.chapter_one.finished:
 		render_ending(box)
 		return
+	if s.campaign.phase=="camp":
+		preload("res://scripts/presentation/camp_workspace.gd").show(self,box)
+		return
 	Screens.recruits(self,box)
 	var nav:=HFlowContainer.new();box.add_child(nav)
 	button(nav,I18n.t("baseline018.b2bc2ee20311"),func():Screens.roster_page(self))
@@ -475,55 +412,7 @@ func render_camp(body: HBoxContainer) -> void:
 		for side: String in Chapter.side_available(s,session.content):button(overview,I18n.t("baseline018.bc5141d3c6cc")+session.content.boards[side].title,func():propose("decline_side",{"mission":side}))
 		button(overview,I18n.t("ui.6de354f5f7cd"),func():propose("enter_camp",{}))
 		return
-	label(box,I18n.t("ui.10a3c2a27fcc") % [s.campaign.projects,s.campaign.talked.size()]).add_theme_color_override("font_color",GOLD)
-	var projects:=HFlowContainer.new();box.add_child(projects)
-	for kind: String in ["train","treat","rest"]:button(projects,I18n.t("p2.group") % action_name(kind),func():group_project(kind))
-	button(projects,I18n.t("p2.stories"),func():var choices: Dictionary=modal(I18n.t("p2.stories"));render_story_list(choices.box))
-	if s.chapter_one.main_completed<24:
-		button(box,I18n.t("p2.prepare_next"),show_night_review)
-	else:
-		button(box,I18n.t("p2.complete"),func():propose("next_mission",{})).disabled=s.chapter_one.finished
-		chapter_report(box)
-	button(box,I18n.t("baseline018.e8282617ef13"),plan_next_roster)
-	button(box,I18n.t("p4.equipment_facilities"),show_workshop)
-	Screens.operations(self,box)
-	button(box,I18n.t("journey.reactions"),func():var report: Dictionary=modal(I18n.t("journey.reactions"));Screens.appraisal_log(self,report.box))
-	render_campaign_options(box)
-	render_mentors(box)
-	button(box,I18n.t("p4.history"),show_history_repair)
-
-	var cards:=GridContainer.new();cards.columns=3 if size.x>=1100 else 1;cards.add_theme_constant_override("h_separation",16);cards.add_theme_constant_override("v_separation",16);box.add_child(cards)
-	for a: Dictionary in s.actors.values():
-		if not Crew.joined(s,a.id):continue
-		if s.product.withdrawn.has(a.id):label(box,I18n.t("p4.withdrawn") % actor_name(a.id));continue
-		var card:=PanelContainer.new();card.size_flags_horizontal=Control.SIZE_EXPAND_FILL;card.add_theme_stylebox_override("panel",surface(SURFACE,12));cards.add_child(card)
-		var details:=VBoxContainer.new();details.add_theme_constant_override("separation",10);card.add_child(details)
-		if a.id in ["lin","xu","su","chen","ye","he","mo","jiang"]:
-			var portrait=Art.character(a.id,"camp","neutral",Vector2(0,175));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;details.add_child(portrait)
-		label(details,actor_name(a.id)).add_theme_color_override("font_color",TEAL)
-		label(details,I18n.t("role."+a.id)).add_theme_color_override("font_color",MUTED)
-		label(details,I18n.t("camp.stats") % [Rules.Specialties.level(int(a.xp)),a.fatigue,a.ready_day])
-		var row:=HFlowContainer.new();details.add_child(row)
-		button(row,action_name("train"),func():selected=a.id;propose("train",{})).tooltip_text=I18n.t("ui.47bab1cfd683")
-		button(row,action_name("treat"),func():selected=a.id;propose("treat",{})).tooltip_text=I18n.t("ui.a4209ed05035")
-		button(row,I18n.t("ui.57173daf8f5a"),func():selected=a.id;propose("rest",{}))
-		if not s.social.has(a.id+">leader"):continue
-		var relation: Dictionary=s.social[a.id+">leader"]
-		label(details,I18n.t("camp.relationship") % [relation.trust,I18n.t("band."+relation.band)])
-		var trust:=ProgressBar.new();trust.min_value=0;trust.max_value=100;trust.value=relation.trust;trust.show_percentage=false;trust.custom_minimum_size.y=6
-		trust.add_theme_stylebox_override("background",surface(Color("0d1c24"),3));trust.add_theme_stylebox_override("fill",surface(TEAL,3));details.add_child(trust)
-		var social:=HFlowContainer.new();details.add_child(social)
-		for target: String in ["lin","xu","su","chen","ye","he","mo","jiang"]:
-			if target!=a.id and Crew.joined(s,target):button(social,I18n.t("ui.281ebdc87350") % actor_name(target),func():selected=a.id;propose("short_talk",{"target":target}))
-		var choices:=HFlowContainer.new();details.add_child(choices)
-		button(choices,I18n.t("camp.work"),func():selected=a.id;propose("tendency",{"choice":"work"}))
-		button(choices,I18n.t("camp.move"),func():selected=a.id;propose("tendency",{"choice":"move"}))
-		for memory: Dictionary in relation.memories:
-			label(details,I18n.t("camp.memory") % [Rules.Social.Legacy.memory_value(memory,s.campaign.day),memory.stage])
-			if memory.stage==0:button(details,I18n.t("camp.ack"),func():selected=a.id;propose("acknowledge",{"event":memory.id}))
-		button(details,I18n.t("baseline018.7bb112c825a0"),func():Screens.relationships(self,a.id,"xu" if a.id=="lin" else "lin"))
-	label(box,I18n.t("camp.log")).add_theme_color_override("font_color",GOLD)
-	for e: Dictionary in s.receipts.slice(maxi(0,s.receipts.size()-6)):label(box,action_name(e.kind))
+	preload("res://scripts/presentation/camp_workspace.gd").show(self,box)
 func propose(kind: String,payload: Dictionary) -> void:
 	if feedback_active():return
 	sequence+=1
@@ -545,7 +434,9 @@ func propose(kind: String,payload: Dictionary) -> void:
 	if kind=="undo":commit_pending();return
 	if not detailed_preview and kind in ["move","attack","push","stabilize","pickup","drop","extract","wait","use_tool","cross_anchor"] and preview.next_state.campaign.phase==session.state.campaign.phase and preview.next_state.full_campaign.contracts==session.state.full_campaign.contracts:
 		if repeated:commit_pending();return
-		inline_pending=true;message=I18n.t("p4.inline_preview") % [action_name(kind),preview.costs.ap]+" · "+(object_name(str(payload.target)) if payload.has("target") and session.state.battle.objects.has(str(payload.target)) else str(payload.get("cell",payload.get("target",""))))+I18n.t("baseline018.c0eaab529348")+actor_name(selected);render();return
+		inline_pending=true
+		message=action_name(kind)+" · "+preload("res://scripts/presentation/action_preview.gd").summary(self,preview,payload)
+		render();return
 	confirmation_text.text=I18n.t("ui.32942064f5c9") % [action_name(kind),preview.costs.ap,resource_text(preview.costs.resources),risk_text(preview.next_state) if kind in ["emergency_retreat","end_round","leave_site"] else I18n.t("ui.dcb6036882a9")]
 	var changes: Array[String]=[]
 	changes.append(I18n.t("baseline018.0c7188e33d47")+actor_name(selected)+(I18n.t("baseline018.659950576da9")+actor_name(str(payload.partner)) if payload.has("partner") else ""))
@@ -640,7 +531,10 @@ func commit_pending() -> void:
 	if "--profile-input" in OS.get_cmdline_user_args():print("INPUT_TIMING: ",JSON.stringify({"kind":pending.kind,"submit_ms":(saved_at-input_start)/1000.0,"feedback_render_ms":(Time.get_ticks_usec()-saved_at)/1000.0,"undo":session.state.battle.undo.size(),"receipts":session.state.receipts.size()}))
 	if not feedback_active():
 		show_conflict_notice();show_next_welcome()
-	if result.ok and pending.kind in ["story_open","story_choice"]:show_story(str(pending.payload.node))
+	if result.ok and pending.kind=="story_open":show_story(str(pending.payload.node))
+	if result.ok and pending.kind=="story_choice":
+		var view: Dictionary=preload("res://scripts/presentation/journey_presentation.gd").scene(session.state,session.content,str(pending.payload.node))
+		preload("res://scripts/presentation/story_screen.gd").show(self,str(pending.payload.node),int(view.opening_count))
 	if result.ok and pending.kind in ["depart","next_mission","start_side"] and session.state.campaign.phase=="battle":show_site()
 func save_manual() -> void:Screens.manual_slots(self,true)
 func load_manual() -> void:Screens.manual_slots(self,false)
@@ -699,9 +593,14 @@ func object_click(target: String) -> void:
 	else:propose(action,{"target":target})
 
 func modal(title_text: String) -> Dictionary:
+	var previous_window: Window=null
+	for child: Node in get_children():
+		if child is Window and child.visible and child!=confirmation:
+			previous_window=child;child.hide()
 	var window:=Window.new();window.title=title_text;window.size=Vector2i(850,600);window.min_size=Vector2i(580,400)
 	window.transient=true;window.exclusive=true;add_child(window)
 	window.close_requested.connect(window.queue_free)
+	window.tree_exiting.connect(func():call_deferred("restore_modal",previous_window))
 	var margin:=MarginContainer.new();margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	for side: String in ["left","right","top","bottom"]:margin.add_theme_constant_override("margin_"+side,20)
 	window.add_child(margin)
@@ -709,6 +608,11 @@ func modal(title_text: String) -> Dictionary:
 	var box:=VBoxContainer.new();box.size_flags_horizontal=Control.SIZE_EXPAND_FILL;box.add_theme_constant_override("separation",12);scroll.add_child(box)
 	window.popup_centered()
 	return {"window":window,"box":box}
+func restore_modal(previous_window: Variant) -> void:
+	if not is_instance_valid(previous_window) or previous_window.is_queued_for_deletion():return
+	for child: Node in get_children():
+		if child is Window and child.visible:return
+	previous_window.show()
 func prepare_mission(mission: String,side: bool) -> void:
 	var board: Dictionary=session.content.boards[mission]
 	var dialog:=modal(I18n.t("p2.briefing"));var box: VBoxContainer=dialog.box

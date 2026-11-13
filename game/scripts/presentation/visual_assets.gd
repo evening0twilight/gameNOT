@@ -55,6 +55,10 @@ static func sprite(index: int) -> Texture2D:
 	return atlas("rescue_sprites",index%3,index/3,3,3)
 static func terrain(index: int) -> Texture2D:
 	return atlas("terrain_atlas",index%2,index/2,2,2)
+static func ground(location: String,code: String=".") -> Texture2D:
+	var index: int={"ferry":0,"clinic":1,"coldstore":1,"control":1,"factory":0,"pump":0,"warehouse":3,"shelter":3}.get(location,2)
+	index={"~":4,"X":5,"#":6,":":7}.get(code,index)
+	return atlas("product018/terrain-quality",index%4,index/4,4,2)
 static func picture(texture: Texture2D,minimum: Vector2) -> TextureRect:
 	var view:=TextureRect.new();view.texture=texture
 	view.expand_mode=TextureRect.EXPAND_IGNORE_SIZE

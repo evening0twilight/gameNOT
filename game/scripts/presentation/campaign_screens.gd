@@ -9,22 +9,36 @@ static func column(parent: Node) -> VBoxContainer:
 	var scroll:=ScrollContainer.new();scroll.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;parent.add_child(scroll)
 	var box:=VBoxContainer.new();box.size_flags_horizontal=Control.SIZE_EXPAND_FILL;box.add_theme_constant_override("separation",12);scroll.add_child(box);return box
 static func title(ui: Control,parent: Node) -> void:
-	var box:=column(parent)
-	box.add_child(ui.Art.picture(ui.Art.narrative("office"),Vector2(0,280)))
-	ui.label(box,ui.I18n.t("baseline018.ea0219b09f08")).add_theme_font_size_override("font_size",36)
-	ui.label(box,ui.I18n.t("baseline018.fc93cc6a7c50"))
+	var stage:=Control.new();stage.size_flags_horizontal=Control.SIZE_EXPAND_FILL;stage.size_flags_vertical=Control.SIZE_EXPAND_FILL;parent.add_child(stage)
+	var art=ui.Art.picture(ui.Art.narrative("office"),Vector2.ZERO);stage.add_child(art);art.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var shade:=ColorRect.new();shade.color=Color(.025,.06,.08,.48);shade.mouse_filter=Control.MOUSE_FILTER_IGNORE;stage.add_child(shade);shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var margin:=MarginContainer.new();stage.add_child(margin);margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	for side: String in ["left","right","top","bottom"]:margin.add_theme_constant_override("margin_"+side,40)
+	var layout:=HBoxContainer.new();layout.add_theme_constant_override("separation",48);margin.add_child(layout)
+	var copy:=VBoxContainer.new();copy.size_flags_horizontal=Control.SIZE_EXPAND_FILL;copy.size_flags_vertical=Control.SIZE_SHRINK_CENTER;copy.add_theme_constant_override("separation",18);layout.add_child(copy)
+	ui.label(copy,ui.I18n.t("baseline018.ea0219b09f08")).add_theme_font_size_override("font_size",52)
+	ui.label(copy,ui.I18n.t("quality.title_line")).add_theme_color_override("font_color",ui.GOLD)
+	ui.label(copy,ui.I18n.t("quality.title_description")).add_theme_font_size_override("font_size",maxi(16,ui.font_size))
+	ui.label(copy,ui.I18n.t("quality.variant_unlocked" if ui.can_variant_b() else "p4.variant_locked")).add_theme_font_size_override("font_size",16)
+	var panel:=PanelContainer.new();panel.custom_minimum_size.x=320;panel.size_flags_vertical=Control.SIZE_SHRINK_CENTER;panel.add_theme_stylebox_override("panel",ui.surface(Color(.04,.09,.11,.94),12));layout.add_child(panel)
+	var box:=VBoxContainer.new();box.add_theme_constant_override("separation",14);panel.add_child(box)
+	ui.label(box,ui.I18n.t("quality.title_return")).add_theme_color_override("font_color",ui.MUTED)
 	ui.button(box,ui.I18n.t("baseline018.b5fbc7830ee2")%ui.session.state.campaign.day,func():ui.title_screen=false;ui.render()).disabled=not FileAccess.file_exists(ui.session.path)
-	ui.button(box,ui.I18n.t("baseline018.383860206bb4"),ui.new_campaign)
+	var start: Button=ui.button(box,ui.I18n.t("baseline018.383860206bb4"),ui.new_campaign);start.add_theme_stylebox_override("normal",ui.surface(Color("35524c"),8,ui.TEAL))
 	ui.button(box,ui.I18n.t("baseline018.fbe77b429bd8"),ui.campaign_picker)
 	ui.button(box,ui.I18n.t("baseline018.f0c4b4c6f9cd"),ui.show_help)
 	ui.button(box,ui.I18n.t("baseline018.db78bb2404bf"),ui.audio_settings)
 	ui.button(box,ui.I18n.t("baseline018.dbc0fe120d31"),func():ui.get_tree().quit())
 static func recruits(ui: Control,box: VBoxContainer) -> void:
 	var s: Dictionary=ui.session.state
-	var row:=HFlowContainer.new();box.add_child(row)
+	var unread: Array=[]
 	for id: String in s.journey.recruited:
-		if s.journey.introduced.has(id):continue
-		ui.button(row,(ui.I18n.t("baseline018.f717c56fae7c") if s.actors[id].join==1 else ui.I18n.t("baseline018.48df6e63191b"))+ui.actor_name(id),func():introduction(ui,id))
+		if not s.journey.introduced.has(id):unread.append(id)
+	if unread.is_empty():return
+	var row:=HFlowContainer.new();box.add_child(row)
+	ui.button(row,ui.I18n.t("quality.camp_new")%unread.size(),func():
+		var choices: Dictionary=ui.modal(ui.I18n.t("quality.camp_new")%unread.size())
+		for id: String in unread:ui.button(choices.box,ui.actor_name(id),func():choices.window.hide();choices.window.queue_free();introduction(ui,id)))
 static func introduction(ui: Control,id: String) -> void:
 	var actor: Dictionary=ui.session.content.actors[id]
 	var contact: Dictionary=Journey.contact(id)
@@ -71,10 +85,6 @@ static func briefing(ui: Control,parent: Node) -> void:
 	var board: Dictionary=ui.session.content.boards[mission]
 	ui.label(box,ui.I18n.t("baseline018.fd006c90fe24")%[s.campaign.day,board.title]).add_theme_color_override("font_color",ui.TEAL)
 	box.add_child(ui.Art.site_picture(board.location,Vector2(0,140)))
-	ui.label(box,board.decision)
-	var context:=VBoxContainer.new();box.add_child(context)
-	for line: String in Journey.situation(s,ui.session.content,mission):ui.label(context,line)
-	ui.button(context,ui.I18n.t("journey.city_button"),func():city(ui))
 	for group: Array in Full.groups(s,board):
 		var names: Array[String]=[]
 		for id: String in group:
@@ -82,6 +92,10 @@ static func briefing(ui: Control,parent: Node) -> void:
 				if obj.id==id:names.append(obj.label)
 		ui.label(box,ui.I18n.t("baseline018.1a78ccb9b0d5")+" / ".join(names))
 	ui.label(box,ui.I18n.t("baseline018.c06312b8d2a7"))
+	ui.label(box,board.decision)
+	var context:=VBoxContainer.new();box.add_child(context)
+	for line: String in Journey.situation(s,ui.session.content,mission):ui.label(context,line)
+	ui.button(context,ui.I18n.t("journey.city_button"),func():city(ui))
 	var draft: Dictionary=s.journey.draft.duplicate(true)
 	var settings: Dictionary=ui.difficulty_controls(box,board,str(draft.get("difficulty",s.campaign.difficulty)))
 	box=column(columns)

@@ -207,6 +207,11 @@ func _draw() -> void:
 	if landmark!=null and landmark_size>=28:draw_texture_rect(landmark,Rect2(Vector2(6,6),Vector2.ONE*landmark_size),false)
 	draw_rect(area.grow(10),Color("0b2026"))
 	draw_rect(area.grow(8),Color("827865"),false,3)
+	# Coordinates agree with preparation, hints and previews (one-based to players).
+	for index: int in range(8):
+		var font: Font=get_theme_default_font()
+		draw_string(font,Vector2(area.position.x+(index+.5)*tile-4,area.position.y-11),str(index+1),HORIZONTAL_ALIGNMENT_LEFT,-1,12,Color("c2d1c9"))
+		draw_string(font,Vector2(area.position.x-14,area.position.y+(index+.5)*tile+4),str(index+1),HORIZONTAL_ALIGNMENT_LEFT,-1,12,Color("c2d1c9"))
 	# Decorative railings stay outside the interactive board footprint.
 	if board.location=="ferry":
 		for side: int in [-1,1]:
@@ -217,7 +222,7 @@ func _draw() -> void:
 				draw_line(at-Vector2(4,0),at+Vector2(4,0),Color("b3b4a4"),3,true)
 			var ring_at:=Vector2(rail_x+side*18,area.get_center().y)
 			draw_arc(ring_at,11,0,TAU,32,Color("d68f58"),5,true)
-	draw_texture_rect(Art.terrain(2 if board.location=="clinic" else 0),area,false,Color(.70,.79,.80))
+	draw_texture_rect(Art.ground(board.location),area,false,Color(.70,.79,.80))
 	for y: int in range(8):
 		for x: int in range(8):
 			var cell: Array=[x,y]
@@ -229,15 +234,13 @@ func _draw() -> void:
 			elif terrain=="#":texture=3
 			var tint:=Color(.85,.92,.94)
 			if terrain=="X":tint=Color(.38,.53,.59)
-			if terrain in ["X","~","#"]:draw_texture_rect(Art.terrain(texture),rect,false,tint)
+			if terrain in ["X","~","#",":"]:draw_texture_rect(Art.ground(board.location,terrain),rect,false,tint)
 			draw_rect(rect,Color(.55,.69,.68,.18),false,1)
 			if terrain in ["X","~"]:
 				for wave: int in range(2):
 					var points:=PackedVector2Array()
 					for step: int in range(9):points.append(at+Vector2((float(step)/8-.5)*tile*.8,(wave-.5)*tile*.32+sin(step*.65+elapsed+y)*tile*.035))
 					draw_polyline(points,Color(.5,.77,.78,.25),1.2,true)
-			if terrain==":":
-				for rock: Vector2 in [Vector2(-.2,.1),Vector2(.1,-.2),Vector2(.25,.2)]:draw_circle(at+rock*tile,tile*.1,Color("7f7466"))
 			if Rules.contains_cell(reachable,cell):
 				draw_rect(rect.grow(-2),Color(.35,.87,.75,.13))
 				draw_circle(at,tile*.035,Color(.55,.95,.82,.65))
@@ -302,6 +305,10 @@ func _draw() -> void:
 		if object.kind=="rescue":paint_texture(Art.rescue_marker(b.mission_id,object),at,tile,tint)
 		else:paint_sprite(index,at,tile,tint)
 		if object.completed or object.stable:draw_circle(at+Vector2(tile*.32,-tile*.31),tile*.055,Color("70d9c1"))
+		if not object.completed and not object.lost:
+			var marker: String=I18n.t("quality.marker."+("rescue" if object.kind=="rescue" else ("cargo" if object.kind=="cargo" else "work")))
+			draw_string_outline(get_theme_default_font(),at+Vector2(-tile*.4,-tile*.29),marker,HORIZONTAL_ALIGNMENT_LEFT,-1,maxi(12,int(tile*.23)),4,Color("10242b"))
+			draw_string(get_theme_default_font(),at+Vector2(-tile*.4,-tile*.29),marker,HORIZONTAL_ALIGNMENT_LEFT,-1,maxi(12,int(tile*.23)),Color("e8ca8a"))
 	for enemy: Dictionary in b.enemies.values():
 		var old: Dictionary=previous.get("enemies",{}).get(enemy.id,enemy)
 		var age: float=seconds()-changed_enemy_at(enemy.id)
@@ -332,12 +339,14 @@ func _draw() -> void:
 
 func hover_description(cell: Array) -> String:
 	var lines: Array[String]=[]
+	lines.append(I18n.t("quality.preview_cell")%[int(cell[0])+1,int(cell[1])+1])
 	for hero: Dictionary in state.battle.heroes.values():
 		if not hero.left and Rules.same(hero.cell,cell):
-			lines.append(I18n.content("characters",hero.id,"name",I18n.t("visual.support")))
+			lines.append(I18n.t("quality.inspect_crew")%[I18n.content("characters",hero.id,"name",I18n.t("visual.support")),hero.hp,hero.ap])
 	for object: Dictionary in state.battle.objects.values():
 		if not object.delivered and object.carrier.is_empty() and Rules.same(object.cell,cell):
 			lines.append(I18n.content("objects",state.battle.mission_id+"."+object.id,"label",I18n.t("visual.casualty")))
+			if object.work>0:lines.append(I18n.t("quality.inspect_work")%[object.progress,object.work])
 	for enemy: Dictionary in state.battle.enemies.values():
-		if enemy.hp>0 and Rules.same(enemy.cell,cell):lines.append(I18n.t("visual.machine"))
+		if enemy.hp>0 and Rules.same(enemy.cell,cell):lines.append(I18n.t("quality.inspect_machine")%[I18n.t("quality.enemy."+enemy.type),enemy.hp])
 	return "\n".join(lines)

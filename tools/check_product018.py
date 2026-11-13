@@ -78,7 +78,7 @@ def main():
     for path in (ROOT/'game/scripts').rglob('*.gd'):
         for reference in re.findall(r'(?:preload|load)\("res://([^"%]+)"\)',path.read_text()):assert reference.casefold() in game_files,(path,reference)
     records=[execute([engine,'--headless','--path','game','--editor','--import','--quit'],'import')]
-    names=['run_tests','content_catalog_tests','p1_tests','p1_systems_tests','p3_rules_tests','p3_specialties_tests','p3_story_proofs','p4_history_tests','p4_tests','p4_feedback_tests','baseline018_tests','baseline018_edges','baseline018_guidance','ui_localization_tests','baseline018_ui','product018_story_tests','p4close_tests']
+    names=['run_tests','content_catalog_tests','p1_tests','p1_systems_tests','p3_rules_tests','p3_specialties_tests','p3_story_proofs','p4_history_tests','p4_tests','p4_feedback_tests','baseline018_tests','baseline018_edges','baseline018_guidance','ui_localization_tests','baseline018_ui','product018_story_tests','p4close_tests','p4quality_tests']
     for name in names:records.append(execute([engine,'--headless','--path','game','--script',f'tests/{name}.gd','--','--isolated-ui-review'],name))
     records.append(execute([engine,'--headless','--path','game','--script','tests/p4_audio_nov13.gd','--',str(ROOT/'outputs/baseline018-linked-day24.json')],'p4_audio_nov13'))
     if args.full:

@@ -27,6 +27,12 @@ static func scene(s: Dictionary,content: Dictionary,id: String) -> Dictionary:
 	else:lines=script.get("opening",[])
 	var pages: Array=[]
 	for index: int in range(lines.size()):pages.append(page(content,node,staging,"opening",index,str(lines[index]),delivery))
+	# Authored staging adds physical context, never replacement facts or rewards.
+	# It is only valid for the recorded present delivery, not injury or letters.
+	if delivery.mode=="present" and catalog().get("scene_beats",{}).has(id) and not pages.is_empty():
+		var beats: Dictionary=catalog().scene_beats[id]
+		pages[0].beat_before=beats.before
+		pages[lines.size()-1].beat_after=beats.after
 	if not record.choice.is_empty():
 		var choices: Dictionary=script.get("injured_choices",script.choices) if delivery.mode=="recovery" else script.choices
 		if delivery.mode=="recovery" and node.category=="recovery_nodes":choices=catalog().injured_life_choices.get(id,choices)
@@ -35,7 +41,7 @@ static func scene(s: Dictionary,content: Dictionary,id: String) -> Dictionary:
 			if line.begins_with("本次只记录意愿和安排"):
 				line=catalog().recovery_close[node.actor]
 			pages.append(page(content,node,staging,"choices."+record.choice,index,line,delivery))
-	return {"pages":pages,"delivery":delivery,"field":field,"location":"clinic" if delivery.mode=="recovery" else staging.location,"tone":staging.tone,"node":node,"record":record,"script":script}
+	return {"pages":pages,"opening_count":lines.size(),"delivery":delivery,"field":field,"location":"clinic" if delivery.mode=="recovery" else staging.location,"tone":staging.tone,"node":node,"record":record,"script":script}
 static func page(content: Dictionary,node: Dictionary,staging: Dictionary,field: String,index: int,line: String,delivery: Dictionary) -> Dictionary:
 	var actors: Array=node.get("actors",[node.get("actor","")])
 	var direction: Array=staging.directions.get(field,[])

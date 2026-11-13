@@ -73,3 +73,6 @@
 /outputs/p4art-motion-frames/
 
 /outputs/p4art-action-frames/
+
+# Disposable API review scripts; approved findings live under docs/.
+/tmp/quality-review/

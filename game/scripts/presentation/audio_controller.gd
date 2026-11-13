@@ -45,12 +45,21 @@ var timeline_started: int = 0
 var played_events: Array = []
 var playback_seconds: Callable
 var playback_paused: Callable
+var music_duck: float = 1.0
+var duck_tween: Tween
+var cue_sequence: Dictionary = {}
 
 func _ready() -> void:
 	for bus: String in ["Music", "Effects"]:
 		if AudioServer.get_bus_index(bus) < 0:
 			AudioServer.add_bus()
 			AudioServer.set_bus_name(AudioServer.bus_count - 1, bus)
+	var has_limiter: bool=false
+	for index: int in range(AudioServer.get_bus_effect_count(0)):
+		if AudioServer.get_bus_effect(0,index).resource_name=="NightTideHeadroom":has_limiter=true
+	if not has_limiter:
+		var limiter:=AudioEffectHardLimiter.new();limiter.resource_name="NightTideHeadroom";limiter.ceiling_db=-1.0
+		AudioServer.add_bus_effect(0,limiter)
 	music = _player("Music")
 	fading_music = _player("Music")
 	for _index: int in range(6):
@@ -73,7 +82,7 @@ func apply_levels() -> void:
 	for setting: Array in [["Music", music_volume], ["Effects", effects_volume]]:
 		var bus: int = AudioServer.get_bus_index(setting[0])
 		var volume: float = setting[1]
-		AudioServer.set_bus_volume_db(bus, linear_to_db(maxf(.0001, volume)))
+		AudioServer.set_bus_volume_db(bus, linear_to_db(maxf(.0001, volume * (music_duck if setting[0]=="Music" else 1.0))))
 		AudioServer.set_bus_mute(bus, muted or volume == 0.0)
 
 func save_preferences() -> void:
@@ -138,9 +147,16 @@ func _update_music() -> void:
 		music.volume_linear = 0.0
 		music.play()
 	phase = next
-	music_tween = create_tween().set_parallel(true)
-	music_tween.tween_property(music, "volume_linear", 1.0, 1.2)
-	music_tween.tween_property(fading_music, "volume_linear", 0.0, 1.2)
+	var incoming: AudioStreamPlayer=music
+	var outgoing: AudioStreamPlayer=fading_music
+	var incoming_power: float=music.volume_linear*music.volume_linear
+	var outgoing_gain: float=fading_music.volume_linear
+	# Equal-power transition avoids the old audible dip at the midpoint.
+	# Starting from the current gain also makes a reversed fade continuous.
+	music_tween = create_tween()
+	music_tween.tween_method(func(t: float):
+		incoming.volume_linear=sqrt(lerpf(incoming_power,1.0,t))
+		outgoing.volume_linear=outgoing_gain*sqrt(1.0-t),0.0,1.0,1.2)
 	music_tween.chain().tween_callback(_release_music.bind(fading_music))
 
 func _swap_music_players() -> void:
@@ -176,7 +192,25 @@ func play(id: String, tactical: bool = false) -> void:
 			voice = available
 			break
 	voice.stream = cue_cache[id]
+	# Keep repetitive interface/footstep sounds beneath the rescue and injury cues.
+	voice.volume_db=-5.0 if id in ["ui_focus","move"] else (-3.0 if id.begins_with("machine_") else 0.0)
+	voice.pitch_scale=1.0
+	if id=="move":
+		var index: int=int(cue_sequence.get(id,0));cue_sequence[id]=index+1
+		voice.pitch_scale=[.96,1.02,.99,1.04][index%4]
 	voice.play()
+	if id in ["injury","objective","ending"]:_duck_music()
+
+func _duck_music() -> void:
+	if duck_tween and duck_tween.is_valid():duck_tween.kill()
+	duck_tween=create_tween()
+	duck_tween.tween_method(_set_duck,music_duck,.62,.08)
+	duck_tween.tween_interval(.30)
+	duck_tween.tween_method(_set_duck,.62,1.0,.45)
+
+func _set_duck(value: float) -> void:
+	music_duck=value
+	apply_levels()
 
 func schedule(events: Array, started: int, clock: Callable = Callable(), is_paused: Callable = Callable()) -> void:
 	cancel_timeline()
@@ -275,6 +309,9 @@ func action(kind: String, before: Dictionary, after: Dictionary) -> void:
 		play(outcome, true)
 
 func stop_audio() -> void:
+	if duck_tween and duck_tween.is_valid():duck_tween.kill()
+	music_duck=1.0
+	if AudioServer.get_bus_index("Music")>=0:apply_levels()
 	if music_tween and music_tween.is_valid():
 		music_tween.kill()
 	phase = ""
