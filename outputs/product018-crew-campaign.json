@@ -17317,7 +17317,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -30937,7 +30952,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -44593,7 +44623,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -58289,7 +58334,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {
@@ -72253,7 +72313,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -85873,7 +85948,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -99529,7 +99619,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {
@@ -131661,7 +131766,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -163442,7 +163562,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {},
@@ -195545,7 +195680,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {},
@@ -238240,7 +238390,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -280564,7 +280729,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -322924,7 +323104,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -365320,7 +365515,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {
@@ -407982,7 +408192,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -450306,7 +450531,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -492666,7 +492906,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {
@@ -495268,7 +495523,16 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {},
@@ -527424,7 +527688,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -558943,7 +559222,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -590498,7 +590792,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -622089,7 +622398,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {},
@@ -653920,7 +654244,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -685439,7 +685778,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -716994,7 +717348,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {},
@@ -719595,7 +719964,16 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -721907,7 +722285,17 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -724255,7 +724643,17 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {},
@@ -726837,7 +727235,16 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -729149,7 +729556,17 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {},
@@ -734274,7 +734691,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -739107,7 +739539,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -743976,7 +744423,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {},
@@ -749083,7 +749545,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -753916,7 +754393,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {},
@@ -789633,7 +790125,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -824996,7 +825503,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -860395,7 +860917,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {
@@ -896092,7 +896629,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					},
 					{
 						"actors": {
@@ -931455,7 +932007,22 @@
 							}
 						},
 						"story": {},
-						"tutorial": {}
+						"tutorial": {
+							"first_shift": {
+								"actions": [
+									"move",
+									"end_round",
+									"specialty",
+									"pickup",
+									"stabilize",
+									"interact",
+									"extract",
+									"leave_site"
+								],
+								"enabled": true,
+								"forecast": false
+							}
+						}
 					}
 				],
 				"used_markers": {

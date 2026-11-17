@@ -64,4 +64,36 @@ class HistoryValidationTests(unittest.TestCase):
         name='game/data/final_design/release_baseline.json'
         self.write_retirements(discarded={name:self.hashes[name]})
         with self.assertRaisesRegex(SystemExit,'Invalid historical artifact retirement'):check.history_status()
+    def prepare_amendment(self):
+        fields=['schedule','not_railroad','automatic_budget']
+        experience={'tutorial_policy':dict.fromkeys(fields,'old'),'other':'frozen'}
+        records={}
+        for leaf,before in [('release_baseline.json',{'domains':{'experience':experience},'combat':'frozen'}),('player_experience_contract.json',experience)]:
+            name='game/data/final_design/'+leaf
+            current=self.root/name;current.write_text(json.dumps(before))
+            old=check.digest(current)
+            if name in self.hashes:self.hashes[name]=old
+            archive='docs/p4-firstshift-20261117/before-'+leaf
+            target=self.root/archive;target.parent.mkdir(exist_ok=True);target.write_bytes(current.read_bytes())
+            after=json.loads(current.read_text());domain=after['domains']['experience'] if 'domains' in after else after
+            for field in fields:domain['tutorial_policy'][field]='user-requested'
+            current.write_text(json.dumps(after))
+            records[name]={'archive':archive,'before_sha256':old,'after_sha256':check.digest(current)}
+        (self.root/'docs/baseline018-preserved.json').write_text(json.dumps(self.hashes))
+        (self.root/check.TUTORIAL_AMENDMENT).write_text(json.dumps({'paths':records,'changed_fields':fields}))
+        return records
+    def test_tutorial_amendment_preserves_original_at_archive(self):
+        self.prepare_amendment();result=check.history_status()
+        self.assertEqual(result['verified'],3);self.assertEqual(result['unchanged_original_paths'],2)
+        self.assertEqual(len(result['amended_originals_verified_at']),1)
+    def test_missing_amended_original_is_not_permitted(self):
+        records=self.prepare_amendment()
+        (self.root/records['game/data/final_design/release_baseline.json']['archive']).unlink()
+        with self.assertRaisesRegex(SystemExit,'Missing tutorial amendment evidence'):check.history_status(True)
+    def test_tutorial_amendment_cannot_change_gameplay_even_with_updated_hash(self):
+        records=self.prepare_amendment();name='game/data/final_design/release_baseline.json'
+        path=self.root/name;data=json.loads(path.read_text());data['combat']='modified';path.write_text(json.dumps(data))
+        decision=json.loads((self.root/check.TUTORIAL_AMENDMENT).read_text());decision['paths'][name]['after_sha256']=check.digest(path)
+        (self.root/check.TUTORIAL_AMENDMENT).write_text(json.dumps(decision))
+        with self.assertRaisesRegex(SystemExit,'changed unrelated design'):check.history_status()
 if __name__=='__main__':unittest.main()

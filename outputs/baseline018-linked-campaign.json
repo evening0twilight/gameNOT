@@ -66803,7 +66803,22 @@
 			}
 		},
 		"story": {},
-		"tutorial": {}
+		"tutorial": {
+			"first_shift": {
+				"actions": [
+					"move",
+					"end_round",
+					"specialty",
+					"interact",
+					"pickup",
+					"stabilize",
+					"extract",
+					"leave_site"
+				],
+				"enabled": true,
+				"forecast": false
+			}
+		}
 	},
 	"milestones": [
 		{

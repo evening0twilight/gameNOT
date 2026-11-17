@@ -1,0 +1,38 @@
+{
+  "scope": "Hidden macOS GPU SubViewport at 1280x720; actual continuous M01/night1/M02/P_lin_1, not concept art or Windows evidence. Font variants are the same production state.",
+  "renderer": "OpenGL Compatibility / Apple M3",
+  "screenshots": {
+    "outputs/firstshift-approach.png": "f06aac0b01dafd649ca48c631d1b49c28cd39542243aed3448d1fad36cb0f507",
+    "outputs/firstshift-briefing.png": "7c533419d2748d0c4c8f47fb41aabf1553140e1cbfb7a3f9073b82f0ba5f8399",
+    "outputs/firstshift-camp-font16.png": "8fb084119e8150ef89677d76ffa7a86a6acd52f15267b1a11c256edebd4e188b",
+    "outputs/firstshift-camp-font20.png": "9d05ffe0300ca5d94c899865b14c48f6cc7eb378c3583dfc131246214db3498d",
+    "outputs/firstshift-camp-font24.png": "930afd04512c1d5ba1db2ca087b278781c150a2d177f5b2324090b8f39512cfc",
+    "outputs/firstshift-camp.png": "9d05ffe0300ca5d94c899865b14c48f6cc7eb378c3583dfc131246214db3498d",
+    "outputs/firstshift-deliver.png": "c9f2c91db7197c05a7cee21fd32d7f71fb1d4661ef2a1581eabb3f57ca5c7a5e",
+    "outputs/firstshift-forecast.png": "d884bd7336f2f3eddaead5ae8ac56412a947fabcef9b531f008b7d7f0b934ba4",
+    "outputs/firstshift-key-choice.png": "4c588bcb0bb9e41460a3dfd938b5fb6aeb8cb766a638eeaa117331f71681000a",
+    "outputs/firstshift-key-reply.png": "ee5eaa0b6d26661983d465300f0a548b9ad196a94cb1156a1b3e5677979f86f8",
+    "outputs/firstshift-key-story.png": "f63c726d3c02d006325b9d18a390be326a60fd4fe9e44eeedf23fd552553e5d5",
+    "outputs/firstshift-leave.png": "fbbb805cabd35831922e405e30825724854cfeae7d9aea66be0beb1f7a1a189c",
+    "outputs/firstshift-move-font16.png": "c4db55a442b37a486b1d1f0b04e89e110a1e46e10e214f820aeb519baf213c6d",
+    "outputs/firstshift-move-font20.png": "875354cb3e7914342d89df64a26dcf3feb743a3fa0c37a55f32316c185c70a51",
+    "outputs/firstshift-move-font24.png": "87bf0fd1c441e19ca40fb37e98a1bff7a875634026d9049855c4bbf29e6b96aa",
+    "outputs/firstshift-move.png": "4fb982691ede73284ad4638d7d3c92b80c1d807106f768c56df58aceb32aad63",
+    "outputs/firstshift-night-record.png": "d9f294c52b7215b24b1a5ab36a34d82116eb537d370c05994352c00cc989c584",
+    "outputs/firstshift-pickup.png": "1f9b3cc34d3792fead552c54b5e9cf89838cf2b0fa0d0aa3524c6b2eddbe08ce",
+    "outputs/firstshift-project.png": "f21b972c9eab40e4d46defe3603b8614f27b9a6a5237a8e5ad43f1425357d20c",
+    "outputs/firstshift-return.png": "f38e40f0532dfb3069c540f78c67d5b95970dd37c1de1196ad8143073c0c3cbf",
+    "outputs/firstshift-round.png": "2126b6479e082e6f074fa465e104c1e119846b81d4540880f36a48ad7de58d28",
+    "outputs/firstshift-settlement.png": "b124bb2ad4261c7315f0a4a225c693a7e13413d4b39d065fdc3ba95c92f674d0",
+    "outputs/firstshift-stabilize.png": "13624aa06e3a3425ebc1c18f160edf88eb82d838256b3324ae1c92bbf5893623",
+    "outputs/firstshift-switch.png": "d8c77fd706a96ff7210eca7a874d51d1a1d99eec7eea1f583c573b5f277e0cc0"
+  },
+  "checkpoints": {
+    "outputs/firstshift-gpu-day01-camp.json": "bc97e534264ba6d02aa662d591163d30e9b2a19142c806abc0dad10dffd71151",
+    "outputs/firstshift-gpu-day02-story.json": "e7607d5d0cf8d3bbb7478b54962f8074e11f7b5abc335e8eddeaedca8bf672d7"
+  },
+  "windows_native_tested": false,
+  "human_acceptance": false,
+  "review_result": [],
+  "checks": 119
+}

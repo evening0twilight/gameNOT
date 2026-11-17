@@ -29,6 +29,7 @@ static func fresh(content: Dictionary, campaign_id: String,options: Dictionary={
 static func begin_campaign(content: Dictionary,campaign_id: String,options: Dictionary={}) -> Dictionary:
 	var state: Dictionary=fresh(content,campaign_id,options)
 	Crew.prepare_initial(state)
+	state.tutorial.first_shift={"enabled":true,"actions":[],"forecast":false}
 	return state
 
 static func deploy(s: Dictionary, content: Dictionary, mission: String) -> void:
@@ -155,12 +156,14 @@ static func reduce(snapshot: Dictionary,command: Dictionary,content: Dictionary)
 		if s.campaign.phase!="battle" or s.battle.undo.is_empty():return reject("undo_boundary",revision)
 		var history: Array=s.battle.undo.duplicate(true)
 		var restored: Dictionary=history.pop_back()
+		# Skipping is a player preference; undo reverses learning progress, not that choice.
+		if snapshot.tutorial.get("first_shift",{}).get("enabled",true)==false and restored.tutorial.has("first_shift"):restored.tutorial.first_shift.enabled=false
 		restored.battle.undo=history
 		restored.commands=s.commands.duplicate(true)
 		restored.revision=revision
 		s=restored
 		before_count=s.receipts.size()
-	elif s.campaign.phase=="battle" and command.kind not in ["end_round","emergency_retreat","authorize","promise_retreat"]:
+	elif s.campaign.phase=="battle" and command.kind not in ["end_round","emergency_retreat","authorize","promise_retreat","tutorial_ack"]:
 		var checkpoint:=snapshot.duplicate(true)
 		checkpoint.battle.undo=[]
 		s.battle.undo.append(checkpoint)
@@ -170,6 +173,9 @@ static func reduce(snapshot: Dictionary,command: Dictionary,content: Dictionary)
 	if s.battle.has("safety") and snapshot.battle.mission_id==s.battle.mission_id:
 		s.battle.safety=s.battle.safety.filter(func(mark):return mark.round==s.battle.round and s.battle.heroes.has(mark.actor) and same(s.battle.heroes[mark.actor].cell,mark.origin) and not s.battle.heroes[mark.actor].left and not s.battle.heroes[mark.actor].downed)
 	Full.after_action(s,command,content)
+	if s.tutorial.has("first_shift") and snapshot.battle.mission_id=="M01" and snapshot.campaign.phase=="battle" and command.kind not in ["undo","tutorial_ack"]:
+		var learned: Array=s.tutorial.first_shift.actions
+		if not learned.has(command.kind):learned.append(command.kind)
 	preload("res://scripts/presentation/guidance.gd").record(s,snapshot,command,content)
 	if command.kind in ["end_round","emergency_retreat","authorize","promise_retreat"] or s.campaign.phase!="battle" or s.battle.get("branch","")!=snapshot.battle.get("branch","") or (command.kind=="pickup" and s.full_campaign.contracts!=snapshot.full_campaign.contracts):s.battle.undo=[]
 	s.revision += 1
@@ -220,6 +226,12 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 	var b: Dictionary = s.battle
 	var board: Dictionary = content.boards[b.mission_id]
 	Chapter.ensure(s)
+	if kind=="tutorial_ack":
+		if not s.tutorial.get("first_shift") is Dictionary:return "invalid_target"
+		if p.get("lesson","") not in ["forecast","skip"]:return "invalid_target"
+		if p.lesson=="skip":s.tutorial.first_shift.enabled=false
+		else:s.tutorial.first_shift.forecast=true
+		return ""
 	if kind in ["use_tool","cross_anchor"]:
 		if s.campaign.phase!="battle":return "invalid_phase"
 		return Product.use_tool(s,c,content,load("res://scripts/domain/campaign_rules.gd"))

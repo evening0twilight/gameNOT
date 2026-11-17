@@ -2,6 +2,7 @@ extends RefCounted
 ## Nightly priorities, then people. Optional administration lives in one drawer.
 static func show(ui: Control,box: VBoxContainer) -> void:
 	var s: Dictionary=ui.session.state
+	if s.campaign.day==1 and ui.FirstShift.enabled(ui):ui.FirstShift.camp(ui,box);return
 	var top:=HBoxContainer.new();box.add_child(top)
 	ui.label(top,ui.I18n.t("quality.camp_heading")).add_theme_color_override("font_color",ui.GOLD)
 	var advance: Button=ui.button(top,ui.I18n.t("p2.prepare_next"),ui.show_night_review)

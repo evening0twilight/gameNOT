@@ -1,0 +1,56 @@
+{
+  "scope": "Eight actual continuous 24-day focused growth routes; first starter snapshot is after M01 rewards. Not fastest-level proof or human balance acceptance.",
+  "source": "outputs/p4close-growth-campaign.json",
+  "source_sha256": "ac19b3f6ebe001f99df226ec8b47c00460d89dd35b3b72d6edf35da7bdb69750",
+  "rows": [
+    {
+      "actor": "lin",
+      "first_observed_join_day": 1,
+      "first_observed_xp": 5,
+      "level5_day_in_this_route": 10
+    },
+    {
+      "actor": "xu",
+      "first_observed_join_day": 1,
+      "first_observed_xp": 5,
+      "level5_day_in_this_route": 10
+    },
+    {
+      "actor": "su",
+      "first_observed_join_day": 1,
+      "first_observed_xp": 5,
+      "level5_day_in_this_route": 10
+    },
+    {
+      "actor": "chen",
+      "first_observed_join_day": 4,
+      "first_observed_xp": 0.0,
+      "level5_day_in_this_route": 14
+    },
+    {
+      "actor": "ye",
+      "first_observed_join_day": 7,
+      "first_observed_xp": 12.0,
+      "level5_day_in_this_route": 15
+    },
+    {
+      "actor": "he",
+      "first_observed_join_day": 10,
+      "first_observed_xp": 12.0,
+      "level5_day_in_this_route": 18
+    },
+    {
+      "actor": "mo",
+      "first_observed_join_day": 13,
+      "first_observed_xp": 28.0,
+      "level5_day_in_this_route": 20
+    },
+    {
+      "actor": "jiang",
+      "first_observed_join_day": 16,
+      "first_observed_xp": 28.0,
+      "level5_day_in_this_route": 20
+    }
+  ],
+  "rule_changes": []
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-17",
+  "authorization": "用户明确要求先教移动的目的和方法，功能键逐个教逐个出现；教程完成再进入正常玩法。仅修订教学展示政策，非修改玩法以迎合实现。",
+  "changed_fields": [
+    "schedule",
+    "not_railroad",
+    "automatic_budget"
+  ],
+  "paths": {
+    "game/data/final_design/release_baseline.json": {
+      "archive": "docs/p4-firstshift-20261117/before-release_baseline.json",
+      "before_sha256": "1f74768ce8dfa5ebf43567e1e6dc6c4cd9a3db6d0ad22774aa943b2f8a6d6a75",
+      "after_sha256": "f5a51e5375e0f31ee85510b56bb728c1417ce46d5594a94bd907e1eddff92a9c"
+    },
+    "game/data/final_design/player_experience_contract.json": {
+      "archive": "docs/p4-firstshift-20261117/before-player_experience_contract.json",
+      "before_sha256": "1aa7895a216e0f52fc41afd6fd6485e3a45a0d7b018fb355f7b9db00d919182d",
+      "after_sha256": "e76f4dcab38acfabd0cefaa97bf725a90c0b1a4108ea4a7520ffa710aaf71a5a"
+    }
+  }
+}

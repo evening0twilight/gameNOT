@@ -35,7 +35,7 @@ static func validate(e: Variant,content: Dictionary) -> Dictionary:
 	if not e is Dictionary: return {"ok":false,"error_code":"corrupt_save"}
 	if not int(e.get("runtime_revision",-1)) in [2,3,4,5,6,7,8]: return {"ok":false,"error_code":"unsupported_runtime_revision"}
 	if e.get("schema_version")!=2: return {"ok":false,"error_code":"unsupported_schema"}
-	if e.get("content_sha256")!=content.content_sha256 or e.get("content_version")!=content.version: return {"ok":false,"error_code":"content_mismatch"}
+	if (e.get("content_sha256")!=content.content_sha256 and not content.get("compatible_content_hashes",[]).has(e.get("content_sha256"))) or e.get("content_version")!=content.version: return {"ok":false,"error_code":"content_mismatch"}
 	var copy: Dictionary = e.duplicate(true)
 	copy.erase("checksum")
 	if e.get("checksum")!=canonical(copy).sha256_text(): return {"ok":false,"error_code":"corrupt_save"}
@@ -71,6 +71,13 @@ static func validate_state(s: Dictionary,content: Dictionary,expected_revision: 
 		if not h is Dictionary or not h.get("cell") is Array or h.cell.size()!=2 or not h.has("ap") or h.ap<0 or h.ap>3 or not h.has("hp") or h.hp<0 or h.hp>12: return {"ok":false,"error_code":"corrupt_save"}
 	for value: Variant in s.inventory.values():
 		if not (value is int or value is float) or not is_finite(float(value)) or value<0: return {"ok":false,"error_code":"corrupt_save"}
+	if s.tutorial.has("first_shift"):
+		var lesson: Variant=s.tutorial.first_shift
+		if not lesson is Dictionary or not lesson.get("enabled") is bool or not lesson.get("forecast") is bool or not lesson.get("actions") is Array:return {"ok":false,"error_code":"corrupt_save"}
+		var learned: Array=[]
+		for action: Variant in lesson.actions:
+			if not action is String or action.is_empty() or learned.has(action):return {"ok":false,"error_code":"corrupt_save"}
+			learned.append(action)
 	var template: Dictionary = validation_template(content)
 	for field: String in ["campaign","actors","inventory","social","rng"]:
 		if not shape_matches(template[field],s[field]): return {"ok":false,"error_code":"corrupt_save"}

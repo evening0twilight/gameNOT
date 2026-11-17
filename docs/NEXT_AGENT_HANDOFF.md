@@ -1,8 +1,18 @@
 # 接手入口：夜潮事务所 0.18
 
-更新：2026-11-13（Asia/Singapore）。仓库：https://github.com/evening0twilight/gameNOT 。用户已授权直接提交/推送 main；不发布商店版本。先读本文件，再看本轮差异表和冻结设计。
+更新：2026-11-17（Asia/Singapore）。仓库：https://github.com/evening0twilight/gameNOT 。用户已授权直接提交/推送 main；不发布商店版本。先读本文件，再看本轮差异表和冻结设计。
 
 ## 当前进度（优先于下方历史记录）
+
+2026-11-17 用户要求继续打磨第一场救援、第一晚、关键剧情，明确要求 PvZ 式逐步教学，并核对初始角色和后期角色获取顺序。当前返修见 `docs/p4-firstshift-20261117/review.md`，验证见同目录 `validation.md`。新局 M01 只先显示移动，真实行动逐步展开稳定/拾起/交付/离场；第一晚压缩成状态→按需安排→结束夜晚；关键剧情使用场景/人物/对白和同屏选择。初始三人保留，后续 M04/07/10/13/16 入队，章节经验底线为 Lv1/2/3，没有新人直接获得 Lv5。配乐仍暂停，不改变平台。
+
+本次用户指令明确修订了体验政策的三项教学字段，`release_baseline.json` 仍为唯一权威，生成视图同步；没有更改数值、关卡、人物顺序、剧本对白或选择。`tutorial-amendment.json` 保留具体授权及前后指纹，before-* 保留旧原字节。历史校验现在是243个原路径+1个旧baseline档案、43个已退休路径；不把旧档案算作原路径未变。只允许精确旧内容指纹读取，旧档不重播教学、不重新发奖励。
+
+新证据前缀为 `p4firstshift-20261117`。`firstshift_review.gd` 用正式命令连续走新局M01→第一晚→M02→林岚第一幕；GPU截图另记 `outputs/firstshift-review-gpu.json`，headless另记 `outputs/firstshift-review.json`。原 Windows“能玩但质量差”仍未被撤销，P4-018-01保持打开。下一步继续针对后续系统学习、地图小尺寸辨识与连续剧情质量，不得写成仅等待用户验收。
+
+本轮34组统一检查、119项连续流程/界面专项与12项历史校验通过；24张隐藏GPU图和两份真实连续存档的哈希见 visual-review.json。当前本机包 `build/night-tide-0.18-p4firstshift-20261117-windows.zip`，159266180 bytes，SHA256 `0535f165935aa52cf4ac021f295137f736602e12b998b2ee173ef808447edc51`。Windows x64导出、PE/ZIP及Mac加载导出PCK启动通过；本候选未做Windows原生测试，human_acceptance=false。源码/检查/构建逐文件哈希一致。命令：`python3 tools/check_product018.py --full --jobs 3 --report-prefix p4firstshift-20261117`；`python3 tools/build_windows_product018.py --candidate p4firstshift-20261117 --review-dir docs/p4-firstshift-20261117`。默认jobs=1仍执行完全相同检查，jobs仅并行互不读写对方输出的完整周目。
+
+### 2026-11-13 候选（历史）
 
 2026-11-13 最新用户反馈明确否定当前产品质量：简陋、上手不清且繁琐、剧情偏弱、音乐勉强可用。**P4-018-01 已重新打开，不再把下一步写成只等用户验收。** 本次正式工程返修及剩余差异见 `docs/p4-quality-20261113/review.md`，验证见同目录 `validation.md`。已调整战斗/营地/标题/剧情界面、行动预览、30场景演出、地点地面材质与混音。用户已明确“OpenAI没有能生成的模型就先算了”，配乐重制暂停，继续现有音源；不得再次索要其他服务或把它列为等待用户答复。平台尚未决定改变，冻结0.18保持不变。旧p4art结果仅作历史，后续包用p4quality-20261113。
 
@@ -139,7 +149,7 @@ python tools/build_windows_product018.py
 
 原 macOS 工作机：`/Users/a1-6/projects/person/gameNOT`；默认引擎为 `work/toolchain/godot-4.7.2/Godot.app/Contents/MacOS/Godot`，已安装的 Windows 导出模板仍可离线使用。新 Mac 需自行准备锁定版本并使用 `GODOT` 指向可执行文件；bootstrap 当前没有 macOS 引擎下载目标。
 
-默认检查应报告 244/287 个受保护路径已核验、43 个已按清理清单移除，`history.missing=[]`、`history.complete=false`。其中 36 张重复截图有受保护的同字节原图，原图缺失或损坏会报错；恢复旧路径时也必须通过原 SHA256。兼容参数 `--allow-missing-history` 仅可容许未记入清单且被 Git 排除的旧 ZIP/AVI 缺失；当前新克隆不需要它。
+默认检查应报告 244/287 份受保护历史内容已核验（243个原路径，加1份旧baseline档案；另核验本次获准教学修订的当前文件）、43 个已按清理清单移除，`history.missing=[]`、`history.complete=false`。其中 36 张重复截图有受保护的同字节原图，原图缺失或损坏会报错；恢复旧路径时也必须通过原 SHA256。兼容参数 `--allow-missing-history` 仅可容许未记入清单且被 Git 排除的旧 ZIP/AVI 缺失；当前新克隆不需要它。
 
 当前入口是 `check_product018.py` / `build_windows_product018.py`。旧 `check.py`、`build_windows.py`、baseline018、p4-tuning入口只对应历史阶段。CI已换到当前入口，仅PR和手动触发；**本次直接推main不自动运行CI，不能声称远程CI通过**。
 

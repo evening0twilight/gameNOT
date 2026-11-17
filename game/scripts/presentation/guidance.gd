@@ -104,7 +104,14 @@ static func next_step(s: Dictionary,content: Dictionary,actor: String) -> Dictio
 		if object.has("crew_id") and not object.delivered and not object.lost:required.push_front(object.id);all_done=false
 	if all_done:
 		if rules.contains_cell(b.get("exits",board.exits),hero.cell):return {"key":"leave","action":"leave_site","payload":{},"cell":hero.cell}
-		return movement(s,actor,b.get("exits",board.exits),"leave_move",rules)
+		var leave: Dictionary=movement(s,actor,b.get("exits",board.exits),"leave_move",rules)
+		if leave.get("action","").is_empty():
+			for h: Dictionary in b.heroes.values():
+				if not h.left and not h.downed and h.ap>0 and rules.contains_cell(b.get("exits",board.exits),h.cell):return {"key":"choose_crew","action":"","actor":h.id,"cell":h.cell}
+			# Exhausted crew can occupy every exit. Refresh before asking others to move.
+			for h: Dictionary in b.heroes.values():
+				if not h.left and not h.downed and rules.contains_cell(b.get("exits",board.exits),h.cell):return {"key":"round_ready","action":"end_round","payload":{},"cell":[]}
+		return leave
 	var candidate: Dictionary={}
 	var best: int=9999
 	var carried: bool=false

@@ -11,6 +11,7 @@ const Audio=preload("res://scripts/presentation/audio_controller.gd")
 var sound: Node
 var metrics: Node
 const Product=preload("res://scripts/domain/product_systems.gd")
+const FirstShift=preload("res://scripts/presentation/first_shift.gd")
 const Guidance=preload("res://scripts/presentation/guidance.gd")
 var guidance_enabled: bool=true
 var tool: String=""
@@ -212,7 +213,9 @@ func render() -> void:
 	if title_screen:header.hide();separator.hide()
 	var body:=HBoxContainer.new();body.size_flags_vertical=Control.SIZE_EXPAND_FILL;body.add_theme_constant_override("separation",20);root.add_child(body)
 	if title_screen:Screens.title(self,body)
-	elif s.campaign.phase=="briefing":Screens.briefing(self,body)
+	elif s.campaign.phase=="briefing":
+		if s.campaign.day==1 and FirstShift.enabled(self):FirstShift.briefing(self,body)
+		else:Screens.briefing(self,body)
 	elif s.campaign.phase=="battle" or feedback_active():render_battle(body)
 	else:
 		var scroll:=ScrollContainer.new();scroll.size_flags_horizontal=Control.SIZE_EXPAND_FILL;scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;body.add_child(scroll)
@@ -372,6 +375,8 @@ func render_camp(body: HBoxContainer) -> void:
 	if s.campaign.phase=="camp":
 		preload("res://scripts/presentation/camp_workspace.gd").show(self,box)
 		return
+	if s.campaign.phase=="settlement" and s.battle.mission_id=="M01" and FirstShift.enabled(self):
+		FirstShift.settlement(self,box);return
 	Screens.recruits(self,box)
 	var nav:=HFlowContainer.new();box.add_child(nav)
 	button(nav,I18n.t("baseline018.b2bc2ee20311"),func():Screens.roster_page(self))
@@ -514,6 +519,7 @@ func commit_pending() -> void:
 	var result: Dictionary = session.submit(pending)
 	var saved_at: int=Time.get_ticks_usec()
 	if result.ok:
+		if pending.kind in ["depart","next_mission","start_side"] and session.state.campaign.phase=="battle":action="move"
 		for id: String in session.state.journey.recruited:
 			if not previous_state.journey.recruited.has(id):welcome_queue.append(id)
 		for entry: Dictionary in session.state.appraisal.conflicts.slice(previous_state.appraisal.conflicts.size()):
@@ -535,7 +541,7 @@ func commit_pending() -> void:
 	if result.ok and pending.kind=="story_choice":
 		var view: Dictionary=preload("res://scripts/presentation/journey_presentation.gd").scene(session.state,session.content,str(pending.payload.node))
 		preload("res://scripts/presentation/story_screen.gd").show(self,str(pending.payload.node),int(view.opening_count))
-	if result.ok and pending.kind in ["depart","next_mission","start_side"] and session.state.campaign.phase=="battle":show_site()
+	if result.ok and pending.kind in ["depart","next_mission","start_side"] and session.state.campaign.phase=="battle" and not FirstShift.active(self):show_site()
 func save_manual() -> void:Screens.manual_slots(self,true)
 func load_manual() -> void:Screens.manual_slots(self,false)
 func recover() -> void:
@@ -827,7 +833,7 @@ func create_campaign(options: Dictionary) -> void:
 	else:message=I18n.t("error.save") % error_text(result.error_code)
 	render()
 	if result.ok:
-		welcome_queue=["lin","xu","su"];show_next_welcome()
+		if not FirstShift.enabled(self):welcome_queue=["lin","xu","su"];show_next_welcome()
 func campaign_picker() -> void:
 	var dialog:=modal(I18n.t("p3.switch_campaign"))
 	var slots: Array[String]=["user://saves/p4/autosave.json"]
@@ -949,7 +955,10 @@ func _unhandled_input(event: InputEvent) -> void:
 			if inline_pending or action!="move":cancel_selection()
 			else:pause_menu()
 			get_viewport().set_input_as_handled()
-		elif event.keycode==KEY_SPACE and session.state.campaign.phase=="battle":propose("end_round",{});get_viewport().set_input_as_handled()
+		elif event.keycode==KEY_SPACE and session.state.campaign.phase=="battle":
+			if FirstShift.active(self) and not session.state.tutorial.first_shift.forecast:message="先完成移动与危险预告教学，再学习结束回合；也可以展开全部操作。";render()
+			else:propose("end_round",{})
+			get_viewport().set_input_as_handled()
 		elif event.keycode==KEY_F1:show_help();get_viewport().set_input_as_handled()
 
 func show_intro(start_campaign: bool=false,page: int=0) -> void:
@@ -967,6 +976,14 @@ func show_intro(start_campaign: bool=false,page: int=0) -> void:
 	if page<3:button(controls,I18n.t("intro.next"),func():dialog.window.queue_free();show_intro(start_campaign,page+1))
 	else:button(controls,I18n.t("intro.choose") if start_campaign else I18n.t("intro.return"),func():dialog.window.queue_free();new_campaign() if start_campaign else render())
 	if page<3:button(controls,I18n.t("intro.skip"),func():dialog.window.queue_free();new_campaign() if start_campaign else render())
+
+func tutorial_ack(lesson: String) -> void:
+	sequence+=1
+	var command: Dictionary={"command_id":"lesson-%d-%d"%[Time.get_ticks_usec(),sequence],"expected_revision":session.state.revision,"actor_id":selected,"kind":"tutorial_ack","payload":{"lesson":lesson},"root_decision_id":"lesson-%d"%sequence}
+	var result: Dictionary=session.submit(command)
+	if not result.ok:message=error_text(result.error_code)
+	else:message="已展开完整操作。可随时打开玩法说明。" if lesson=="skip" else "现在可以绕开危险，继续靠近居民。"
+	inline_pending=false;pending={};render()
 
 func preview_guidance() -> void:
 	if feedback_active():return

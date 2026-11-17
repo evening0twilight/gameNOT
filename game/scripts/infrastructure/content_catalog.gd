@@ -12,6 +12,9 @@ static func load_catalog() -> Dictionary:
 		if baseline.version != manifest.get("version"):
 			return failure("content_mismatch")
 		result.content_sha256 = raw.sha256_text()
+		# 2026-11-17: only tutorial presentation policy changed, per user instruction.
+		# Explicit predecessor, never a general bypass of content/checksum validation.
+		result.compatible_content_hashes = ["1f74768ce8dfa5ebf43567e1e6dc6c4cd9a3db6d0ad22774aa943b2f8a6d6a75"] if result.content_sha256=="f5a51e5375e0f31ee85510b56bb728c1417ce46d5594a94bd907e1eddff92a9c" else []
 	return result
 
 static func failure(code: String) -> Dictionary:
