@@ -1,0 +1,19 @@
+{
+  "model": "qwen3.8-omni-flash",
+  "prompt": "请仅根据实际听到的音频描述内容：是否有说话或歌声？主要乐器/音色、情绪、明显噪声/破音、结尾是否突然中断。不要猜测创作意图，不要根据文件名推断。用中文简洁回答。",
+  "assessment": "根据音频内容描述如下：\n\n*   **是否有说话或歌声**：没有，这是一段纯音乐。\n*   **主要乐器/音色**：以钢琴为主奏乐器，背景有弦乐（如小提琴、大提琴）进行铺垫和旋律呼应。\n*   **情绪**：整体氛围抒情、柔和、略带伤感与怀旧感。\n*   **明显噪声/破音**：无明显的背景噪声或电流声，音质清晰干净，无破音现象。\n*   **结尾是否突然中断**：是，音乐在最后一个音符的余音尚未完全结束时被突然切断，并非自然淡出。",
+  "usage": {
+    "prompt_tokens": 369,
+    "total_tokens": 504,
+    "completion_tokens": 135,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "audio_tokens": 310,
+      "text_tokens": 59
+    },
+    "completion_tokens_details": {
+      "text_tokens": 135
+    }
+  },
+  "human_listening": false
+}

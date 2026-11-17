@@ -1,0 +1,34 @@
+{
+  "languages": [
+    "zh_CN",
+    "zh_TW",
+    "en"
+  ],
+  "authoring_models": [
+    "qwen-plus",
+    "qwen-mt-plus"
+  ],
+  "authoring_script": "tools/localize_product018.py",
+  "reviewed_overrides": "tools/localization_overrides.json",
+  "coverage": "outputs/languages-catalog-check.json",
+  "runtime_api_calls": false,
+  "authoritative_design_changed": false,
+  "api_response_usage_complete": false,
+  "notes": [
+    "Models authored offline translations only. qwen-mt-plus used for incomplete English batches.",
+    "Chinese remnants and printf differences rejected; key UI wording manually edited.",
+    "Catalog includes frozen design metadata, not only displayed strings.",
+    "No full native-speaker editorial acceptance of all story branches.",
+    "33 Traditional Chinese entries had unambiguous simplified-character remnants corrected; ambiguous legitimate variants were retained. ICU diagnostic only; no runtime ICU dependency."
+  ],
+  "catalog_hashes": {
+    "game/data/localization/zh_CN.json": "86e260945bec69a7ec90c9103b86c4ab2d25ba02047dfbfc7b4afcfb70b51c88",
+    "game/data/localization/en.json": "69dfc2757e8543d94700169d0ef94c94e0bf4d5f858562b2463b09fe8d6fbf27",
+    "game/data/localization/zh_TW.json": "86476c08c45780e0d702ae1417ca5404465b80bde58d2f4c39943d68030b2d79"
+  },
+  "baseline_sha256": "f5a51e5375e0f31ee85510b56bb728c1417ce46d5594a94bd907e1eddff92a9c",
+  "reviewed_override_count": {
+    "en": 46,
+    "zh_TW": 33
+  }
+}

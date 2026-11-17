@@ -1,0 +1,74 @@
+Historical artifact paths verified: 244/287; retired: 43; otherwise unavailable: 0
+User-authorized tutorial amendment; originals verified at archived paths: {"game/data/final_design/release_baseline.json": "docs/p4-firstshift-20261117/before-release_baseline.json"}
+import: ok
+run_tests: TEST_RESULTS: 33 passed, 0 failed
+content_catalog_tests: CONTENT_TEST_RESULTS: failures=0
+p1_tests: P1_TEST_RESULTS: 167 passed, 0 failed
+p1_systems_tests: P1_SYSTEMS_RESULTS: 179 passed, 0 failed
+p3_rules_tests: P3_RULES_RESULTS: checks=1789 failures=0
+p3_specialties_tests: P3_SPECIALTIES_RESULTS: checks=67 failures=0
+p3_story_proofs: P3_STORY_PROOFS_RESULTS: checks=56 failures=0
+p4_history_tests: P4_HISTORY_RESULTS: checks=56 failures=0
+p4_tests: P4_PRODUCT_RESULTS: checks=1028 failures=0
+p4_feedback_tests: P4_FEEDBACK_RESULTS: checks=89 failures=0
+baseline018_tests: BASELINE018_RESULTS: checks=66 failures=0
+baseline018_edges: BASELINE018_EDGES: checks=32 failures=0
+baseline018_guidance: P4_TUNING_RESULTS: checks=709 failures=0
+ui_localization_tests: UI_LOCALIZATION_RESULTS: checks=653 failures=0
+baseline018_ui: BASELINE018_UI: failures=0
+product018_story_tests: ok
+p4close_tests: P4CLOSE_RESULTS: checks=4001 failures=0
+p4quality_tests: P4QUALITY_RESULTS: checks=916 failures=0
+firstshift_review: FIRSTSHIFT_RESULTS: checks=119 failures=0 commands=92
+fieldguide_review: FIELDGUIDE_RESULTS: checks=140 failures=0 commands=158
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: baseline 0.18 campaign UI
+FIRSTSHIFT_FAIL: story controls visible zh_CN16上一句
+FIRSTSHIFT_FAIL: story controls visible zh_CN16全文速览与选择
+FIRSTSHIFT_FAIL: story controls visible zh_CN16先让她决定交班单向谁公开
+FIRSTSHIFT_FAIL: story controls visible zh_CN16征得同意后安排双方核对
+FIRSTSHIFT_FAIL: story controls visible zh_CN16暂时搁置，保留到以后
+FIRSTSHIFT_FAIL: story controls visible zh_CN20上一句
+FIRSTSHIFT_FAIL: story controls visible zh_CN20全文速览与选择
+FIRSTSHIFT_FAIL: story controls visible zh_CN20先让她决定交班单向谁公开
+FIRSTSHIFT_FAIL: story controls visible zh_CN20征得同意后安排双方核对
+FIRSTSHIFT_FAIL: story controls visible zh_CN20暂时搁置，保留到以后
+FIRSTSHIFT_FAIL: story controls visible zh_CN24上一句
+FIRSTSHIFT_FAIL: story controls visible zh_CN24全文速览与选择
+FIRSTSHIFT_FAIL: story controls visible zh_CN24先让她决定交班单向谁公开
+FIRSTSHIFT_FAIL: story controls visible zh_CN24征得同意后安排双方核对
+FIRSTSHIFT_FAIL: story controls visible zh_CN24暂时搁置，保留到以后
+FIRSTSHIFT_FAIL: story controls visible zh_TW16上一句
+FIRSTSHIFT_FAIL: story controls visible zh_TW16全文速覽與選擇
+FIRSTSHIFT_FAIL: story controls visible zh_TW16先讓她決定交班單向誰公開
+FIRSTSHIFT_FAIL: story controls visible zh_TW16徵得同意後安排雙方核對
+FIRSTSHIFT_FAIL: story controls visible zh_TW16暫時擱置，保留到以後
+FIRSTSHIFT_FAIL: story controls visible zh_TW20上一句
+FIRSTSHIFT_FAIL: story controls visible zh_TW20全文速覽與選擇
+FIRSTSHIFT_FAIL: story controls visible zh_TW20先讓她決定交班單向誰公開
+FIRSTSHIFT_FAIL: story controls visible zh_TW20徵得同意後安排雙方核對
+FIRSTSHIFT_FAIL: story controls visible zh_TW20暫時擱置，保留到以後
+FIRSTSHIFT_FAIL: story controls visible zh_TW24上一句
+FIRSTSHIFT_FAIL: story controls visible zh_TW24全文速覽與選擇
+FIRSTSHIFT_FAIL: story controls visible zh_TW24先讓她決定交班單向誰公開
+FIRSTSHIFT_FAIL: story controls visible zh_TW24徵得同意後安排雙方核對
+FIRSTSHIFT_FAIL: story controls visible zh_TW24暫時擱置，保留到以後
+FIRSTSHIFT_FAIL: story controls visible en16Back
+FIRSTSHIFT_FAIL: story controls visible en16Read all & choose
+FIRSTSHIFT_FAIL: story controls visible en16Let her decide who sees the handover sheet.
+FIRSTSHIFT_FAIL: story controls visible en16Ask for consent, then review it together.
+FIRSTSHIFT_FAIL: story controls visible en16Temporarily deferred—held for later.
+FIRSTSHIFT_FAIL: story controls visible en20Back
+FIRSTSHIFT_FAIL: story controls visible en20Read all & choose
+FIRSTSHIFT_FAIL: story controls visible en20Let her decide who sees the handover sheet.
+FIRSTSHIFT_FAIL: story controls visible en20Ask for consent, then review it together.
+FIRSTSHIFT_FAIL: story controls visible en20Temporarily deferred—held for later.
+FIRSTSHIFT_FAIL: story controls visible en24Back
+FIRSTSHIFT_FAIL: story controls visible en24Read all & choose
+FIRSTSHIFT_FAIL: story controls visible en24Let her decide who sees the handover sheet.
+FIRSTSHIFT_FAIL: story controls visible en24Ask for consent, then review it together.
+FIRSTSHIFT_FAIL: story controls visible en24Temporarily deferred—held for later.
+LANGUAGE_RESULTS: checks=180 failures=45 untranslated=0
+
+Failed: multilanguage_review

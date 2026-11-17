@@ -76,3 +76,6 @@
 
 # Disposable API review scripts; approved findings live under docs/.
 /tmp/quality-review/
+
+/work/localization-20261117/
+/work/aliyun-audio-20261117/

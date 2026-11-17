@@ -1,0 +1,12 @@
+{
+	"checks": 230,
+	"failures": [],
+	"leaks": [],
+	"renderer": "headless",
+	"scene_openings_rendered": 162,
+	"scope": "retained day23/day24 saves for ending/journal/eight profiles; isolated copies inject seen records for all 54 staged story openings per language, without rewards; not a multilingual 24-day playthrough or proof all scenes unlocked",
+	"sources": [
+		"outputs/baseline018-linked-day24.json",
+		"outputs/p4art-benefits-growth-mo-day23.json"
+	]
+}

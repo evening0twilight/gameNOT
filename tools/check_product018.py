@@ -1,7 +1,7 @@
 """Check the 0.18 alignment without rewriting any historical acceptance evidence."""
 import functools
 from concurrent.futures import ThreadPoolExecutor
-import argparse, hashlib, json, os, re, subprocess, time
+import argparse, hashlib, json, os, re, subprocess, time, sys
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[1]
 ENGINE=ROOT/'work/toolchain/godot-4.7.2/Godot.app/Contents/MacOS/Godot'
@@ -103,8 +103,9 @@ def main():
     for path in (ROOT/'game/scripts').rglob('*.gd'):
         for reference in re.findall(r'(?:preload|load)\("res://([^"%]+)"\)',path.read_text()):assert reference.casefold() in game_files,(path,reference)
     records=[execute([engine,'--headless','--path','game','--editor','--import','--quit'],'import')]
-    names=['run_tests','content_catalog_tests','p1_tests','p1_systems_tests','p3_rules_tests','p3_specialties_tests','p3_story_proofs','p4_history_tests','p4_tests','p4_feedback_tests','baseline018_tests','baseline018_edges','baseline018_guidance','ui_localization_tests','baseline018_ui','product018_story_tests','p4close_tests','p4quality_tests','firstshift_review','fieldguide_review']
+    names=['run_tests','content_catalog_tests','p1_tests','p1_systems_tests','p3_rules_tests','p3_specialties_tests','p3_story_proofs','p4_history_tests','p4_tests','p4_feedback_tests','baseline018_tests','baseline018_edges','baseline018_guidance','ui_localization_tests','baseline018_ui','product018_story_tests','p4close_tests','p4quality_tests','firstshift_review','fieldguide_review','multilanguage_review','language_lategame_review']
     for name in names:records.append(execute([engine,'--headless','--path','game','--script',f'tests/{name}.gd','--','--isolated-ui-review'],name))
+    records.append(execute([sys.executable,'tools/check_localization.py'],'language_catalog'))
     records.append(execute([engine,'--headless','--path','game','--script','tests/p4_audio_nov13.gd','--',str(ROOT/'outputs/baseline018-linked-day24.json')],'p4_audio_nov13'))
     if args.full:
         # These rule-only processes write distinct reports and unique save slots.

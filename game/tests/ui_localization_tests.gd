@@ -16,7 +16,7 @@ func run() -> void:
 	var source: String=FileAccess.get_file_as_string("res://scripts/app/main.gd")
 	var regex:=RegEx.new();regex.compile('I18n.t\\("([^"\\n]+)"\\)')
 	for match_result: RegExMatch in regex.search_all(source):check(I18n.messages.has(match_result.get_string(1)),"catalog key "+match_result.get_string(1))
-	for locale: String in ["zh_CN","en_XA"]:
+	for locale: String in ["zh_CN","zh_TW","en","en_XA"]:
 		I18n.locale=locale
 		check((I18n.t("preview.actor") % ["NAME",1,2,3,4]).contains("NAME"),"format placeholders "+locale)
 		for dimensions: Vector2i in [Vector2i(1280,720),Vector2i(1920,1080),Vector2i(2560,1440)]:
@@ -36,7 +36,7 @@ func run() -> void:
 		scene.session.state=preview.next_state
 		for dimensions: Vector2i in [Vector2i(1280,720),Vector2i(1920,1080),Vector2i(2560,1440)]:
 			root.size=dimensions;root.content_scale_size=dimensions
-			for locale: String in ["zh_CN","en_XA"]:
+			for locale: String in ["zh_CN","zh_TW","en","en_XA"]:
 				I18n.locale=locale
 				for font: int in [16,20,24]:
 					scene.font_size=font

@@ -255,7 +255,7 @@ func _draw() -> void:
 	for cell: Array in Rules.Field.posts(b):
 		var at: Vector2=center(cell)
 		draw_arc(at,tile*.35,0,TAU,24,Color("e8ca8a"),2,true)
-		draw_string(ThemeDB.fallback_font,at+Vector2(-tile*.13,tile*.07),"站",HORIZONTAL_ALIGNMENT_LEFT,-1,int(tile*.22),Color("e8ca8a"))
+		draw_string(ThemeDB.fallback_font,at+Vector2(-tile*.13,tile*.07),I18n.s("站"),HORIZONTAL_ALIGNMENT_LEFT,-1,int(tile*.22),Color("e8ca8a"))
 	var fire: Dictionary=b.get("environment",board.environment).fire_pulse
 	if b.round>=int(fire.round)-1 and b.round<int(fire.round)+int(fire.duration_rounds):
 		for cell: Array in fire.cells:
@@ -326,14 +326,14 @@ func _draw() -> void:
 				tint=Color(1,.53,.4) if int(age*18)%2==0 else Color.WHITE
 			if enemy.hp<=0:tint.a=1-clampf(age/.42,0,1)
 		paint_sprite({"welder":30,"hauler":31,"skimmer":32,"relay":44,"sentinel":45}.get(enemy.type,3),at,tile,tint)
-		badge(at+Vector2(0,tile*.32),"停机" if enemy.disabled else I18n.t("quality.enemy."+enemy.type),tile,Color("a5bbb9") if enemy.disabled else Color("f3b38e"))
+		badge(at+Vector2(0,tile*.32),I18n.s("停机") if enemy.disabled else I18n.t("quality.enemy."+enemy.type),tile,Color("a5bbb9") if enemy.disabled else Color("f3b38e"))
 	for hero: Dictionary in b.heroes.values():
 		if hero.left and not animating():continue
 		var at:=hero_position(hero)
 		var ink: Color=colors.get(hero.id,Color("ccd5d2"))
 		if not hero.left:draw_arc(at+Vector2(0,tile*.28),tile*.33,0,TAU,36,ink,3 if hero.id==selected else 1,true)
 		paint_actor(hero,at,tile)
-		var name: String=I18n.content("characters",hero.id,"name","支援"+hero.id.right(1))
+		var name: String=I18n.content("characters",hero.id,"name",I18n.s("支援")+hero.id.right(1))
 		badge(at+Vector2(0,tile*.31),name,tile,ink,hero.id==selected)
 		for ap: int in range(int(hero.ap)):draw_circle(at+Vector2((ap-(float(hero.ap)-1)/2)*tile*.14,tile*.47),tile*.035,ink)
 	# Labels are drawn after sprites; co-located objectives get separate rows.
@@ -341,7 +341,7 @@ func _draw() -> void:
 	for object: Dictionary in b.objects.values():
 		if object.delivered or not object.carrier.is_empty() or object.has("unavailable_reason"):continue
 		var at: Vector2=center(object.cell)
-		var marker: String=Readable.code(board,b,object.id)+{"rescue":"救","work":"工","cargo":"物","channel":"守","convoy":"送"}.get(object.kind,"")
+		var marker: String=Readable.code(board,b,object.id)+("" if I18n.locale=="en" else {"rescue":I18n.s("救"),"work":I18n.s("工"),"cargo":I18n.s("物"),"channel":I18n.s("守"),"convoy":I18n.s("送")}.get(object.kind,""))
 		if object.completed:marker+="✓"
 		elif object.lost:marker+="×"
 		var row: int=label_rows.get(str(object.cell),0);label_rows[str(object.cell)]=row+1
@@ -374,6 +374,7 @@ func hover_description(cell: Array) -> String:
 func badge(at: Vector2,text: String,tile: float,ink: Color,selected_badge: bool=false) -> void:
 	var font: Font=get_theme_default_font()
 	var font_size: int=clampi(int(tile*.28),14,20)
+	while font_size>10 and font.get_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size).x>tile-8:font_size-=1
 	var width: float=font.get_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size).x+8
 	var rect:=Rect2(at-Vector2(width/2,float(font_size)/2+3),Vector2(width,font_size+6))
 	draw_style_box(badge_style(ink,selected_badge),rect)

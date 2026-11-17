@@ -154,11 +154,11 @@ func _ready() -> void:
 
 func button(parent: Node,label: String,callback: Callable,cue: String="ui_focus") -> Button:
 	var b := Button.new()
-	b.text=label
+	b.text=I18n.s(label);b.language=I18n.locale
 	for mapping: Array in [["ui.975778d99095","end_round"],["ui.926a50b98ece","undo"],["baseline018.00768fb3f70c","relations"],["p3.journal","journal"],["baseline018.d04bb3ddf1b7","coordinated_pull"],["ui.029b72a67ea6","protected_work"],["ui.a4b81cbe097b","relay_carry"],["ui.81bac7b6b054","mutual_cover"]]:
 		if label==I18n.t(mapping[0]):b.icon=Art.icon(mapping[1]);break
 	b.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
-	b.custom_minimum_size=Vector2(170 if parent is FlowContainer else 100,42)
+	b.custom_minimum_size=Vector2((200 if I18n.locale=="en" else 170) if parent is FlowContainer else 100,42)
 	b.add_theme_font_size_override("font_size",font_size)
 	b.pressed.connect(func():sound.play(cue))
 	b.pressed.connect(callback)
@@ -166,7 +166,7 @@ func button(parent: Node,label: String,callback: Callable,cue: String="ui_focus"
 	return b
 func label(parent: Node,text: String) -> Label:
 	var l := Label.new()
-	l.text=text
+	l.text=I18n.s(text);l.language=I18n.locale
 	l.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART
 	l.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 	l.custom_minimum_size.x=0
@@ -256,8 +256,7 @@ func settings_action(index: int) -> void:
 			font_size=16 if font_size==24 else font_size+4
 			I18n.font_size=font_size;I18n.save_preferences();render()
 		4:
-			I18n.locale="en_XA" if I18n.locale=="zh_CN" else "zh_CN"
-			I18n.save_preferences();message=I18n.t("ui.da10edbf29b7");render()
+			show_languages()
 		5:get_tree().quit()
 		6:new_campaign()
 		7:campaign_picker()
@@ -611,7 +610,7 @@ func modal(title_text: String) -> Dictionary:
 	for child: Node in get_children():
 		if child is Window and child.visible and child!=confirmation:
 			previous_window=child;child.hide()
-	var window:=Window.new();window.title=title_text;window.size=Vector2i(850,600);window.min_size=Vector2i(580,400)
+	var window:=Window.new();window.title=I18n.s(title_text);window.size=Vector2i(850,600);window.min_size=Vector2i(580,400)
 	window.transient=true;window.exclusive=true;add_child(window)
 	window.close_requested.connect(window.queue_free)
 	window.tree_exiting.connect(func():call_deferred("restore_modal",previous_window))
@@ -703,7 +702,7 @@ func render_mentors(box: VBoxContainer) -> void:
 
 func objective_summary() -> String:
 	var s: Dictionary=session.state
-	if s.campaign.phase=="briefing":return "准备出勤："+session.content.boards[s.journey.next_mission].title
+	if s.campaign.phase=="briefing":return I18n.s("准备出勤：")+I18n.s(session.content.boards[s.journey.next_mission].title)
 	var board: Dictionary=session.content.boards[s.battle.mission_id]
 	var lines: Array[String]=[]
 	for group: Array in Full.groups(s,board):
@@ -965,7 +964,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			else:pause_menu()
 			get_viewport().set_input_as_handled()
 		elif event.keycode==KEY_SPACE and session.state.campaign.phase=="battle":
-			if FirstShift.active(self) and not session.state.tutorial.first_shift.forecast:message="先完成移动与危险预告教学，再学习结束回合；也可以展开全部操作。";render()
+			if FirstShift.active(self) and not session.state.tutorial.first_shift.forecast:message=I18n.s("先完成移动与危险预告教学，再学习结束回合；也可以展开全部操作。");render()
 			else:propose("end_round",{})
 			get_viewport().set_input_as_handled()
 		elif event.keycode==KEY_F1:show_help();get_viewport().set_input_as_handled()
@@ -991,7 +990,7 @@ func tutorial_ack(lesson: String) -> void:
 	var command: Dictionary={"command_id":"lesson-%d-%d"%[Time.get_ticks_usec(),sequence],"expected_revision":session.state.revision,"actor_id":selected,"kind":"tutorial_ack","payload":{"lesson":lesson},"root_decision_id":"lesson-%d"%sequence}
 	var result: Dictionary=session.submit(command)
 	if not result.ok:message=error_text(result.error_code)
-	else:message="已展开完整操作。可随时打开玩法说明。" if lesson=="skip" else "现在可以绕开危险，继续靠近居民。"
+	else:message=I18n.s("已展开完整操作。可随时打开玩法说明。") if lesson=="skip" else I18n.s("现在可以绕开危险，继续靠近居民。")
 	inline_pending=false;pending={};render()
 
 func preview_guidance() -> void:
@@ -1094,5 +1093,12 @@ func music_context() -> String:
 func field_ack(topic: String,manual: bool=false) -> void:
 	sequence+=1
 	var result: Dictionary=session.submit({"command_id":"field-%d-%d"%[Time.get_ticks_usec(),sequence],"expected_revision":session.state.revision,"actor_id":selected,"kind":"field_lesson","payload":{"topic":topic,"manual":manual},"root_decision_id":"field-%d"%sequence})
-	message="这个操作已保留；先按自己的节奏继续。" if result.ok else error_text(result.error_code)
+	message=I18n.s("这个操作已保留；先按自己的节奏继续。") if result.ok else error_text(result.error_code)
 	inline_pending=false;pending={};render()
+
+func show_languages() -> void:
+	var dialog: Dictionary=modal(I18n.s("语言 / Language"))
+	for id: String in I18n.LOCALES:
+		var choice: Button=button(dialog.box,I18n.NAMES[id],func():
+			dialog.window.queue_free();I18n.locale=id;I18n.save_preferences();reach_key="";guide_key=0;field_offer_key=0;message=I18n.t("ui.da10edbf29b7");render())
+		choice.text=I18n.NAMES[id];choice.disabled=I18n.locale==id

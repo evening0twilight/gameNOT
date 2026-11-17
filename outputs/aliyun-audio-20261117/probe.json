@@ -1,0 +1,39 @@
+[
+  {
+    "model": "fun-music-v1",
+    "prompt": "原创游戏配乐，无人声、无演唱、无说话。洪水后的城市救援事务所，第一晚营地，窗外细雨、室内一盏暖灯。克制温暖而略有忧伤，疲惫后的安定感；稀疏的柔音钢琴、温暖低音弦乐、轻微空气质感，72 BPM，避免激昂、避免流行歌曲结构、避免强烈鼓点。约45秒，稳定织体，适合循环作背景，不要大起大落，不要模拟任何现有歌曲。",
+    "instrumental_requested": true,
+    "status": "rejected",
+    "http_status": 403,
+    "provider_code": "AccessDenied"
+  },
+  {
+    "model": "qwen-audio-3.1-tts-next",
+    "prompt": "原创游戏配乐，无人声、无演唱、无说话。洪水后的城市救援事务所，第一晚营地，窗外细雨、室内一盏暖灯。克制温暖而略有忧伤，疲惫后的安定感；稀疏的柔音钢琴、温暖低音弦乐、轻微空气质感，72 BPM，避免激昂、避免流行歌曲结构、避免强烈鼓点。约45秒，稳定织体，适合循环作背景，不要大起大落，不要模拟任何现有歌曲。",
+    "instrumental_requested": true,
+    "status": "connection_error",
+    "exception_type": "IncompleteRead"
+  },
+  {
+    "model": "qwen-audio-3.1-tts-next",
+    "prompt": "原创游戏配乐，无人声、无演唱、无说话。洪水后的城市救援事务所，第一晚营地，窗外细雨、室内一盏暖灯。克制温暖而略有忧伤，疲惫后的安定感；稀疏的柔音钢琴、温暖低音弦乐、轻微空气质感，72 BPM，避免激昂、避免流行歌曲结构、避免强烈鼓点。约45秒，稳定织体，适合循环作背景，不要大起大落，不要模拟任何现有歌曲。",
+    "instrumental_requested": true,
+    "status": "connection_error",
+    "stage": "download",
+    "exception_type": "TimeoutError"
+  },
+  {
+    "model": "qwen-audio-3.1-tts-next",
+    "status": "generated_download_recovered",
+    "file": "outputs/aliyun-audio-20261117/qwen-audio-3.1-tts-next-camp.wav",
+    "sha256": "1a29cdf69da11992ad9a880c93af666a3119a971278cc8f4910f9cb3db135dc7",
+    "duration": 44.96,
+    "usage": {
+      "input_tokens": 564,
+      "output_tokens": 8992,
+      "total_tokens": 9556,
+      "duration": 45
+    },
+    "note": "Same successful generation downloaded over HTTPS after HTTP timeout; no regeneration."
+  }
+]

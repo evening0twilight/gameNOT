@@ -8,7 +8,7 @@ static func catalog() -> Dictionary:
 	return data
 static func contact(id: String) -> Dictionary:return catalog().contacts[id]
 static func actor_name(s: Dictionary,id: String) -> String:
-	return I18n.t("leader") if id=="leader" else s.actors.get(id,{}).get("name",I18n.t("journey.unknown"))
+	return I18n.t("leader") if id=="leader" else I18n.s(s.actors.get(id,{}).get("name",I18n.t("journey.unknown")))
 static func scene(s: Dictionary,content: Dictionary,id: String) -> Dictionary:
 	var node: Dictionary=Stories.nodes(content)[id]
 	var record: Dictionary=s.chapter_one.scenes[id]
@@ -31,8 +31,8 @@ static func scene(s: Dictionary,content: Dictionary,id: String) -> Dictionary:
 	# It is only valid for the recorded present delivery, not injury or letters.
 	if delivery.mode=="present" and catalog().get("scene_beats",{}).has(id) and not pages.is_empty():
 		var beats: Dictionary=catalog().scene_beats[id]
-		pages[0].beat_before=beats.before
-		pages[lines.size()-1].beat_after=beats.after
+		pages[0].beat_before=I18n.s(beats.before)
+		pages[lines.size()-1].beat_after=I18n.s(beats.after)
 	if not record.choice.is_empty():
 		var choices: Dictionary=script.get("injured_choices",script.choices) if delivery.mode=="recovery" else script.choices
 		if delivery.mode=="recovery" and node.category=="recovery_nodes":choices=catalog().injured_life_choices.get(id,choices)
@@ -46,9 +46,9 @@ static func page(content: Dictionary,node: Dictionary,staging: Dictionary,field:
 	var actors: Array=node.get("actors",[node.get("actor","")])
 	var direction: Array=staging.directions.get(field,[])
 	var frame: Dictionary=direction[mini(index,direction.size()-1)].duplicate(true) if not direction.is_empty() else {"speaker":actors[0],"expressions":{}}
-	frame.text=line
+	frame.text=I18n.s(line);frame.speaking=false
 	for actor: String in actors:
-		if line.begins_with(content.actors[actor].name+"："):frame.speaker=actor
+		if line.begins_with(content.actors[actor].name+"："):frame.speaker=actor;frame.speaking=true
 		if delivery.injured.has(actor):frame.expressions[actor]="injured"
 	if delivery.mode=="letter":frame.expressions={};frame.speaker=""
 	return frame
@@ -68,7 +68,7 @@ static func situation(s: Dictionary,content: Dictionary,mission: String) -> Arra
 	lines.append(board.environment.briefing)
 	if s.campaign.failure_modifier:lines.append(I18n.t("journey.rubble"))
 	for objective: Dictionary in board.objectives:
-		if objective.kind=="rescue" and mission!="M01":lines.append(I18n.t("journey.rescue_clock")%objective.label)
+		if objective.kind=="rescue" and mission!="M01":lines.append(I18n.t("journey.rescue_clock")%I18n.s(objective.label))
 	return lines
 static func reactions(s: Dictionary,content: Dictionary) -> Array:
 	var rows: Array=[]

@@ -4,6 +4,19 @@
 
 ## 当前进度（优先于下方历史记录）
 
+2026-11-17 三语与Qwen试作：本轮见 `docs/p4-languages-20261117/review.md`、`validation.md`。用户确认简中/繁中/英文；启动页与设置提供语言入口，偏好独立于战役存档，运行不联网。两份译文覆盖3601条唯一源文案（含内部设计描述，非3601个页面）。修复动态说明、人物/目标/专长字段、剧情说话人、英文长按钮与720p三字号选项布局；冻结规则、角色获取和runtime_revision不变。母语逐句润色与整部游戏品质尚未验收。
+
+用户本轮重新授权使用 `.env` 的 `aliyun-apikey` 尝试配乐，并已提供业务空间；不要再重复索要。Fun-Music实际返回AccessDenied。Qwen Audio成功生成44.96秒营地候选，HTTP下载超时后同一结果经HTTPS恢复；原WAV及淡出试听保留在 `outputs/aliyun-audio-20261117/`。这只是试作，不是已重制全套配乐；游戏正式音源未替换。自动听辨与人类听感分开记录，见 `audio-handoff.md`。凭据和签名URL只留在忽略目录，绝不进入Git或游戏。
+
+本轮38组统一全量检查、183项隐藏GPU三语专项、230项后期显示、653项字号/尺寸及12项历史校验通过；69张截图与源码哈希一致。三语无显示器专项129项，剧情窗口几何仅采用GPU证据。当前检查/构建前缀改为 `p4languages-20261117`，上一候选记录保留在下方。此候选无Windows原生或真人品质通过声明，P4-018-01继续打开。后续继续实际培养/战术选择价值、营地学习节奏、完整剧情与翻译自然度审查，不能写成只等验收。
+
+
+新Windows候选：`build/night-tide-0.18-p4languages-20261117-windows.zip`，155971709 bytes，SHA256 `5cf293e9ecc7933f64dad09a9c0f558480efe3442dc67b74389357a3b9ff06cf`。x64 PE/ZIP、导出PCK本机启动与三语目录读取通过；目录哈希与检查源码一致，见packaged-languages.json。Windows原生测试与human_acceptance仍为false。15个被统一检查重写的旧通用证据已恢复原字节，见restored-prior-evidence.json。
+
+命令：`python3 tools/check_product018.py --full --jobs 3 --report-prefix p4languages-20261117`；`python3 tools/build_windows_product018.py --candidate p4languages-20261117 --review-dir docs/p4-languages-20261117`。本轮已直接从导出PCK核对三语目录与标题，仍不代表Windows原生验收。
+
+### 前次后续引导返修（fieldguide，历史）
+
 2026-11-17 后续引导返修：用户继续要求第二场之后逐项教学、人物与目标更清楚。当前修改见 `docs/p4-fieldguide-20261117/review.md`，验证见同目录 `validation.md`。M02开始保留已学操作，一次介绍一个有场景用途的新功能；准备页默认简明，主动展开不关闭教学；必做目标固定并可定位，地图人物姓名、机器名称、目标编号/类型、同格目标分行、危险斜纹已接入。可选教学记忆随正式存档保存，撤销不忘记已读说明，老档无标志时不强制教学。本轮未改任何冻结设计文件，也没有改变角色数值或获取顺序。配乐继续暂停。
 
 本轮专项140项通过，正式新周目连续M01至M04，第4晚陈砚按原规则入队，掩护作业和撬棍真实执行。25张保留的隐藏GPU图包含720p三字号/1080p、M08/M12和借调人员隔离画面；后者及3项关系保障检查不得冒称真实后期成长。记录使用fieldguide/p4fieldguide-20261117独立前缀。完整回归及Windows候选仍以对应checks/build收据为准；没有Windows原生或真人品质通过声明。
@@ -76,7 +89,7 @@ README下半部、P1/P2/P3/P4旧报告、technical-setup-handoff、p1/p3-handoff
 
 ## 3. 当前实际有什么
 
-同一 Godot 工程 `game/`，GDScript、Compatibility，锁定 Godot `4.7.2.stable.official.ed1daf0bf`。Windows 11 x64、键鼠、简体中文；macOS为开发环境。
+同一 Godot 工程 `game/`，GDScript、Compatibility，锁定 Godot `4.7.2.stable.official.ed1daf0bf`。Windows 11 x64、键鼠；本轮新增简体中文、繁体中文、英文，macOS为开发环境。
 
 - 24日、24主线+12支线、96故事节点、8固定人物，三难度从容/标准/严峻；第24日终战后进入结局。
 - 初始林岚/许舟/苏棠；M04/M07/M10/M13/M16结算后分别加入陈砚/叶禾/贺鸣/莫遥/江朔，失败不取消固定入队。
@@ -95,6 +108,7 @@ README下半部、P1/P2/P3/P4旧报告、technical-setup-handoff、p1/p3-handoff
 | 补充演出配置/来信/休养文本 | `game/data/presentation/character_journey.json` |
 | 状态规则/获取/成长 | `game/scripts/domain/campaign_rules.gd`、`crew_journey.gd`、`chapter_one.gd`、`full_campaign.gd` |
 | 剧情/缺席事实/评价 | `chapter_stories.gd`、`story_delivery.gd`、`appraisal.gd`（同上目录） |
+| 三语展示/翻译资源 | `presentation/localization.gd`、`data/localization/{zh_CN,zh_TW,en}.json`；离线目录检查 `tools/check_localization.py` |
 | 保存/迁移 | `game/scripts/infrastructure/campaign_store.gd` |
 | 棋盘/动作/声音/素材 | `game/scripts/presentation/tactical_board.gd`、`action_feedback.gd`、`audio_controller.gd`、`visual_assets.gd` |
 | 本轮资源和来源 | `game/assets/product018/`、`docs/product018-image-prompts.json`、`product018-audio.json`、`product018-icons.json`、`asset-register.csv` |

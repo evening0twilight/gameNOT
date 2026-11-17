@@ -1,4 +1,5 @@
 extends RefCounted
+const I18n=preload("res://scripts/presentation/localization.gd")
 const Learning=preload("res://scripts/domain/field_learning.gd")
 static func active(ui: Control) -> bool:return ui.guidance_enabled and Learning.active(ui.session.state)
 static func offer(ui: Control) -> Dictionary:
@@ -7,23 +8,23 @@ static func offer(ui: Control) -> Dictionary:
 		ui.field_offer_key=key;ui.field_offer=Learning.offer(ui.session.state,ui.session.content,ui.selected)
 	return ui.field_offer
 static func title(ui: Control,info: Dictionary) -> String:
-	return ui.I18n.t("p4.item."+info.item) if info.has("item") else info.title
+	return ui.I18n.t("p4.item."+info.item) if info.has("item") else I18n.s(info.title)
 static func copy(ui: Control,box: Node,text: String,color: Color) -> void:
 	var label: Label=ui.label(box,text);label.add_theme_font_size_override("font_size",maxi(16,ui.font_size-2));label.add_theme_color_override("font_color",color)
 static func panel(ui: Control,box: VBoxContainer) -> void:
 	var lesson: Dictionary=offer(ui)
 	if not lesson.is_empty():
-		copy(ui,box,"本次只学一个 · "+title(ui,lesson),ui.GOLD)
+		copy(ui,box,I18n.s("本次只学一个 · ")+title(ui,lesson),ui.GOLD)
 		copy(ui,box,lesson.why,ui.INK);copy(ui,box,lesson.how,ui.TEAL)
-		ui.button(box,"明白了 · 保留操作",func():ui.field_ack(lesson.topic))
+		ui.button(box,I18n.s("明白了 · 保留操作"),func():ui.field_ack(lesson.topic))
 		if lesson.has("payload"):
-			ui.button(box,"查看一个可行示例",func():preview_example(ui,lesson))
+			ui.button(box,I18n.s("查看一个可行示例"),func():preview_example(ui,lesson))
 	else:
-		copy(ui,box,"按自己的节奏继续",ui.TEAL)
-		copy(ui,box,"已学操作留在右侧。遇到适合的现场，再介绍下一项。",ui.MUTED)
+		copy(ui,box,I18n.s("按自己的节奏继续"),ui.TEAL)
+		copy(ui,box,I18n.s("已学操作留在右侧。遇到适合的现场，再介绍下一项。"),ui.MUTED)
 	var next: Dictionary=ui.current_guidance()
 	if not next.is_empty():
-		ui.button(box,"看看下一步怎么做",ui.preview_guidance)
+		ui.button(box,I18n.s("看看下一步怎么做"),ui.preview_guidance)
 static func preview_example(ui: Control,info: Dictionary) -> void:
 	ui.action=info.kind
 	if info.has("item"):ui.tool=info.item
@@ -49,26 +50,26 @@ static func actions(ui: Control,box: VBoxContainer) -> void:
 		var info: Dictionary=Learning.describe(topic,ui.session.content)
 		if info.is_empty():continue
 		if topic.begins_with("protocol:"):info.kind="protocol"
-		var button: Button=ui.button(grid,("新 · " if not known.has(topic) else "")+title(ui,info),func():select(ui,info))
+		var button: Button=ui.button(grid,(I18n.s("新 · ") if not known.has(topic) else "")+title(ui,info),func():select(ui,info))
 		button.size_flags_horizontal=Control.SIZE_EXPAND_FILL;button.custom_minimum_size.x=0
-		button.tooltip_text=info.why+"\n"+info.how
+		button.tooltip_text=I18n.s(info.why)+"\n"+I18n.s(info.how)
 		if not known.has(topic):button.add_theme_stylebox_override("normal",ui.surface(Color("35524c"),8,ui.TEAL))
-	copy(ui,box,"选操作 → 点目标 → 看预览",ui.MUTED)
+	copy(ui,box,I18n.s("选操作 → 点目标 → 看预览"),ui.MUTED)
 	if known.has("service_watch") and not ui.session.state.battle.service.is_empty():
 		var service: Dictionary=ui.session.state.battle.service
-		copy(ui,box,service.definition.label+" · %d/%d轮"%[service.ticks,service.definition.consecutive_rounds]+(" · 已完成" if service.done else (" · 已失效" if service.failed else " · 需持续值守")),ui.GOLD)
+		copy(ui,box,I18n.s(service.definition.label)+I18n.s(" · %d/%d轮")%[service.ticks,service.definition.consecutive_rounds]+(I18n.s(" · 已完成") if service.done else (I18n.s(" · 已失效") if service.failed else I18n.s(" · 需持续值守"))),ui.GOLD)
 static func browse(ui: Control) -> void:
-	var dialog: Dictionary=ui.modal("按需学习 · 选择一项")
-	ui.label(dialog.box,"可查阅当前队员能用的操作；关闭后仍按场景逐个教学。")
-	ui.button(dialog.box,"查看现场与全部目标",func():dialog.window.queue_free();ui.show_site())
-	ui.button(dialog.box,"展开全部操作 · 跳过教学",func():dialog.window.queue_free();ui.tutorial_ack("skip"))
+	var dialog: Dictionary=ui.modal(I18n.s("按需学习 · 选择一项"))
+	ui.label(dialog.box,I18n.s("可查阅当前队员能用的操作；关闭后仍按场景逐个教学。"))
+	ui.button(dialog.box,I18n.s("查看现场与全部目标"),func():dialog.window.queue_free();ui.show_site())
+	ui.button(dialog.box,I18n.s("展开全部操作 · 跳过教学"),func():dialog.window.queue_free();ui.tutorial_ack("skip"))
 	for topic: String in Learning.available(ui.session.state,ui.session.content,ui.selected):
 		var info: Dictionary=Learning.describe(topic,ui.session.content)
 		ui.button(dialog.box,title(ui,info),func():dialog.window.queue_free();details(ui,topic,true))
 static func details(ui: Control,topic: String,manual: bool) -> void:
 	var info: Dictionary=Learning.describe(topic,ui.session.content)
 	var dialog: Dictionary=ui.modal(title(ui,info));ui.label(dialog.box,info.why);ui.label(dialog.box,info.how)
-	ui.button(dialog.box,"已了解 · 保留这个操作",func():dialog.window.queue_free();ui.field_ack(topic,manual))
+	ui.button(dialog.box,I18n.s("已了解 · 保留这个操作"),func():dialog.window.queue_free();ui.field_ack(topic,manual))
 static func choices(ui: Control,topic: String) -> void:
 	var info: Dictionary=Learning.describe(topic,ui.session.content)
 	if topic.begins_with("protocol:"):info.kind="protocol"
@@ -80,32 +81,32 @@ static func choices(ui: Control,topic: String) -> void:
 		var caption: String=title(ui,info)
 		if payload.has("partner"):caption+=" · "+ui.actor_name(payload.partner)
 		if payload.has("target"):
-			caption+=" · "+(ui.actor_name(payload.target) if ui.session.state.battle.heroes.has(payload.target) else ("现场设施" if payload.target=="live_service" else (ui.object_name(payload.target) if ui.session.state.battle.objects.has(payload.target) else "机器")))
-		if payload.has("post"):caption+=" · 岗位%d"%(payload.post+1)
-		if payload.has("priority"):caption+=" · "+("人员优先" if payload.priority=="people" else "物资优先")
-		if info.kind=="prepare_safety":caption+=" · "+("施工保障" if payload.protocol=="protected_work" else "掩护保障")
+			caption+=" · "+(ui.actor_name(payload.target) if ui.session.state.battle.heroes.has(payload.target) else (I18n.s("现场设施") if payload.target=="live_service" else (ui.object_name(payload.target) if ui.session.state.battle.objects.has(payload.target) else I18n.s("机器"))))
+		if payload.has("post"):caption+=I18n.s(" · 岗位%d")%(payload.post+1)
+		if payload.has("priority"):caption+=" · "+(I18n.s("人员优先") if payload.priority=="people" else I18n.s("物资优先"))
+		if info.kind=="prepare_safety":caption+=" · "+(I18n.s("施工保障") if payload.protocol=="protected_work" else I18n.s("掩护保障"))
 		if payload.has("cell"):caption+=" → %d,%d"%[payload.cell[0]+1,payload.cell[1]+1]
 		ui.button(dialog.box,caption,func():dialog.window.queue_free();ui.action=info.kind;ui.propose(info.kind,payload.duplicate(true)))
-	if count==0:ui.label(dialog.box,"当前没有满足条件的方案。请先检查距离、双方行动点和现场状态。")
+	if count==0:ui.label(dialog.box,I18n.s("当前没有满足条件的方案。请先检查距离、双方行动点和现场状态。"))
 static func briefing(ui: Control,parent: Node) -> void:
 	var s: Dictionary=ui.session.state
 	var board: Dictionary=ui.session.content.boards[s.journey.next_mission]
 	var frame:=HBoxContainer.new();frame.size_flags_horizontal=Control.SIZE_EXPAND_FILL;frame.add_theme_constant_override("separation",24);parent.add_child(frame)
 	var left:=VBoxContainer.new();left.size_flags_horizontal=Control.SIZE_EXPAND_FILL;frame.add_child(left)
 	left.add_child(ui.Art.site_picture(board.location,Vector2(0,240)))
-	ui.label(left,"第 %d 天 · %s"%[s.campaign.day,board.title]).add_theme_font_size_override("font_size",28)
+	ui.label(left,I18n.s("第 %d 天 · %s")%[s.campaign.day,I18n.s(board.title)]).add_theme_font_size_override("font_size",28)
 	ui.label(left,board.decision)
 	var right:=VBoxContainer.new();right.custom_minimum_size.x=440;right.size_flags_horizontal=Control.SIZE_EXPAND_FILL;frame.add_child(right)
-	ui.label(right,"本次要完成").add_theme_color_override("font_color",ui.GOLD)
+	ui.label(right,I18n.s("本次要完成")).add_theme_color_override("font_color",ui.GOLD)
 	for group: Array in ui.Full.groups(s,board):
 		var names: Array[String]=[]
 		for id: String in group:
 			for object: Dictionary in board.objectives:
-				if object.id==id:names.append(object.label)
+				if object.id==id:names.append(I18n.s(object.label))
 		ui.label(right," / ".join(names))
-	ui.label(right,"仍使用已学的操作。新装置和新方法，会在现场一次介绍一个。").add_theme_color_override("font_color",ui.MUTED)
+	ui.label(right,I18n.s("仍使用已学的操作。新装置和新方法，会在现场一次介绍一个。")).add_theme_color_override("font_color",ui.MUTED)
 	var roster: Array[String]=[]
 	for id: String in s.journey.draft.roster:roster.append(ui.actor_name(id))
-	ui.label(right,"出勤："+"、".join(roster))
-	ui.button(right,"出发 · 到现场再学",func():ui.full_preparation=false;ui.propose("depart",s.journey.draft.duplicate(true)))
-	ui.button(right,"调整阵容与装备",func():ui.full_preparation=true;ui.render())
+	ui.label(right,I18n.s("出勤：")+"、".join(roster))
+	ui.button(right,I18n.s("出发 · 到现场再学"),func():ui.full_preparation=false;ui.propose("depart",s.journey.draft.duplicate(true)))
+	ui.button(right,I18n.s("调整阵容与装备"),func():ui.full_preparation=true;ui.render())

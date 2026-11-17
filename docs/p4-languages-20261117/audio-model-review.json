@@ -1,0 +1,94 @@
+{
+  "purpose": "first-night camp audition only; not production replacement",
+  "provider": "Alibaba Cloud Model Studio",
+  "key_source": ".env variable aliyun-apikey; never included in runtime or repository",
+  "workspace_supplied_by_user": true,
+  "attempts": [
+    {
+      "model": "fun-music-v1",
+      "prompt": "原创游戏配乐，无人声、无演唱、无说话。洪水后的城市救援事务所，第一晚营地，窗外细雨、室内一盏暖灯。克制温暖而略有忧伤，疲惫后的安定感；稀疏的柔音钢琴、温暖低音弦乐、轻微空气质感，72 BPM，避免激昂、避免流行歌曲结构、避免强烈鼓点。约45秒，稳定织体，适合循环作背景，不要大起大落，不要模拟任何现有歌曲。",
+      "instrumental_requested": true,
+      "status": "rejected",
+      "http_status": 403,
+      "provider_code": "AccessDenied"
+    },
+    {
+      "model": "qwen-audio-3.1-tts-next",
+      "prompt": "原创游戏配乐，无人声、无演唱、无说话。洪水后的城市救援事务所，第一晚营地，窗外细雨、室内一盏暖灯。克制温暖而略有忧伤，疲惫后的安定感；稀疏的柔音钢琴、温暖低音弦乐、轻微空气质感，72 BPM，避免激昂、避免流行歌曲结构、避免强烈鼓点。约45秒，稳定织体，适合循环作背景，不要大起大落，不要模拟任何现有歌曲。",
+      "instrumental_requested": true,
+      "status": "connection_error",
+      "exception_type": "IncompleteRead"
+    },
+    {
+      "model": "qwen-audio-3.1-tts-next",
+      "prompt": "原创游戏配乐，无人声、无演唱、无说话。洪水后的城市救援事务所，第一晚营地，窗外细雨、室内一盏暖灯。克制温暖而略有忧伤，疲惫后的安定感；稀疏的柔音钢琴、温暖低音弦乐、轻微空气质感，72 BPM，避免激昂、避免流行歌曲结构、避免强烈鼓点。约45秒，稳定织体，适合循环作背景，不要大起大落，不要模拟任何现有歌曲。",
+      "instrumental_requested": true,
+      "status": "connection_error",
+      "stage": "download",
+      "exception_type": "TimeoutError"
+    },
+    {
+      "model": "qwen-audio-3.1-tts-next",
+      "status": "generated_download_recovered",
+      "file": "outputs/aliyun-audio-20261117/qwen-audio-3.1-tts-next-camp.wav",
+      "sha256": "1a29cdf69da11992ad9a880c93af666a3119a971278cc8f4910f9cb3db135dc7",
+      "duration": 44.96,
+      "usage": {
+        "input_tokens": 564,
+        "output_tokens": 8992,
+        "total_tokens": 9556,
+        "duration": 45
+      },
+      "note": "Same successful generation downloaded over HTTPS after HTTP timeout; no regeneration."
+    }
+  ],
+  "automatic_listening": {
+    "model": "qwen3.8-omni-flash",
+    "prompt": "请仅根据实际听到的音频描述内容：是否有说话或歌声？主要乐器/音色、情绪、明显噪声/破音、结尾是否突然中断。不要猜测创作意图，不要根据文件名推断。用中文简洁回答。",
+    "assessment": "根据音频内容描述如下：\n\n*   **是否有说话或歌声**：没有，这是一段纯音乐。\n*   **主要乐器/音色**：以钢琴为主奏乐器，背景有弦乐（如小提琴、大提琴）进行铺垫和旋律呼应。\n*   **情绪**：整体氛围抒情、柔和、略带伤感与怀旧感。\n*   **明显噪声/破音**：无明显的背景噪声或电流声，音质清晰干净，无破音现象。\n*   **结尾是否突然中断**：是，音乐在最后一个音符的余音尚未完全结束时被突然切断，并非自然淡出。",
+    "usage": {
+      "prompt_tokens": 369,
+      "total_tokens": 504,
+      "completion_tokens": 135,
+      "prompt_tokens_details": {
+        "cached_tokens": 0,
+        "audio_tokens": 310,
+        "text_tokens": 59
+      },
+      "completion_tokens_details": {
+        "text_tokens": 135
+      }
+    },
+    "human_listening": false
+  },
+  "measurements": {
+    "codec": "PCM signed 16-bit little endian",
+    "sample_rate": 48000,
+    "channels": 2,
+    "seconds": 44.96,
+    "mean_dbfs": -16.2,
+    "maximum_dbfs": 0.0,
+    "full_scale_samples": 33,
+    "total_interleaved_samples": 4316160
+  },
+  "audition_processing": {
+    "file": "outputs/aliyun-audio-20261117/camp-audition-fade.mp3",
+    "gain_db": -3,
+    "end_fade_start_seconds": 43,
+    "end_fade_duration_seconds": 1.96,
+    "seamless_loop": false,
+    "clipping_repair": false
+  },
+  "files": {
+    "outputs/aliyun-audio-20261117/camp-audition.mp3": "165acae6b53375e662ed122e6bcc5c6616b3fcc84c40401672ffeba8260f9c8b",
+    "outputs/aliyun-audio-20261117/camp-audition-fade.mp3": "5634ec79c1ecfddb00c1edea5778aae346614aa0c2b64d179f8cb9746f7f5e16",
+    "outputs/aliyun-audio-20261117/qwen-audio-3.1-tts-next-camp.wav": "1a29cdf69da11992ad9a880c93af666a3119a971278cc8f4910f9cb3db135dc7"
+  },
+  "human_listening": false,
+  "production_replaced": false,
+  "sources": [
+    "https://help.aliyun.com/zh/model-studio/fun-music/",
+    "https://help.aliyun.com/en/model-studio/audio-generation-api",
+    "https://help.aliyun.com/en/model-studio/qwen-omni"
+  ]
+}

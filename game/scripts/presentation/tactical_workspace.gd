@@ -1,4 +1,5 @@
 extends RefCounted
+const I18n=preload("res://scripts/presentation/localization.gd")
 const Field=preload("res://scripts/presentation/field_guide.gd")
 const Readable=preload("res://scripts/presentation/tactical_readability.gd")
 const First=preload("res://scripts/presentation/first_shift.gd")
@@ -26,9 +27,9 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 			for id: String in group:
 				if not b.objects.has(id):continue
 				var o: Dictionary=b.objects[id]
-				var locate: Button=ui.button(objectives,Readable.code(board,b,id)+" · "+ui.object_name(id)+"\n"+Readable.status(o)+" · 点击定位",func():ui.focus_cell=o.cell.duplicate();ui.render())
+				var locate: Button=ui.button(objectives,Readable.code(board,b,id)+" · "+ui.object_name(id)+"\n"+Readable.status(o)+I18n.s(" · 点击定位"),func():ui.focus_cell=o.cell.duplicate();ui.render())
 				locate.add_theme_font_size_override("font_size",maxi(14,ui.font_size-4));locate.custom_minimum_size.y=46
-				if group.size()>1:locate.tooltip_text="这一组目标择一完成即可。"
+				if group.size()>1:locate.tooltip_text=I18n.s("这一组目标择一完成即可。")
 
 	var objective_scroll:=ScrollContainer.new();objective_scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;objective_scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;objectives.add_child(objective_scroll)
 	var goals:=VBoxContainer.new();goals.size_flags_horizontal=Control.SIZE_EXPAND_FILL;goals.add_theme_constant_override("separation",12);objective_scroll.add_child(goals)
@@ -49,7 +50,7 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 				if not b.objects.has(id):continue
 				var o: Dictionary=b.objects[id]
 				if not o.completed and not o.lost:
-					var locate: Button=ui.button(detail,Readable.status(o)+" · 定位 "+Readable.code(board,b,id),func():ui.focus_cell=o.cell.duplicate();ui.render())
+					var locate: Button=ui.button(detail,Readable.status(o)+I18n.s(" · 定位 ")+Readable.code(board,b,id),func():ui.focus_cell=o.cell.duplicate();ui.render())
 					locate.add_theme_font_size_override("font_size",16)
 					var deadline: int=ui.Rules.Hazards.rescue_deadline(b,o)
 					if deadline>0 and not o.stable:small(ui,detail,ui.I18n.t("difficulty.rescue_deadline")%deadline,ui.GOLD)
@@ -62,7 +63,7 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 			var caption: String=ui.I18n.t("guide.switch")%ui.actor_name(next.actor) if next.has("actor") else ui.I18n.t("guide.preview")%ui.action_name(next.action)
 			var suggestion: Button=ui.button(goals,caption,ui.preview_guidance);suggestion.add_theme_font_size_override("font_size",maxi(14,ui.font_size-4))
 	if field:
-		ui.button(objectives,"查阅操作与现场",func():Field.browse(ui)).add_theme_font_size_override("font_size",16)
+		ui.button(objectives,I18n.s("查阅操作与现场"),func():Field.browse(ui)).add_theme_font_size_override("font_size",16)
 	if not guided:
 		ui.button(objectives,ui.I18n.t("p3.site_view"),ui.show_site).add_theme_font_size_override("font_size",16)
 		ui.button(objectives,ui.I18n.t("intro.button"),func():ui.show_intro(false)).add_theme_font_size_override("font_size",16)
@@ -82,8 +83,8 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 	map.reachable=[] if ui.feedback_active() else ui.reach_cache.values()
 	map.validate_hover=func(cell: Array):return ui.reach_cache.has(str(cell))
 	map.cell_chosen.connect(ui.click_cell);center.add_child(map)
-	small(ui,center,"绿点：可移动　橙纹：机器预告　字母：目标",ui.MUTED)
-	var inspection: Label=small(ui,center,"指向人物或字母目标，查看状态",ui.INK)
+	small(ui,center,I18n.s("绿点：可移动　橙纹：机器预告　字母：目标"),ui.MUTED)
+	var inspection: Label=small(ui,center,I18n.s("指向人物或字母目标，查看状态"),ui.INK)
 	inspection.custom_minimum_size.y=42;inspection.max_lines_visible=2
 	map.cell_inspected.connect(func(text: String):inspection.text=text.replace("\n"," · "))
 
@@ -95,7 +96,7 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 		if ui.Art.CharacterArt.has_actor(hero.id):
 			var portrait=ui.Art.character(hero.id,"work","neutral",Vector2(48,52),true);card.add_child(portrait)
 		var select: Button=ui.button(card,ui.actor_name(hero.id),func():ui.selected=hero.id;ui.action="move";ui.render())
-		select.custom_minimum_size=Vector2(0,34);select.add_theme_font_size_override("font_size",maxi(14,ui.font_size-4))
+		select.custom_minimum_size=Vector2(0,34);select.add_theme_font_size_override("font_size",14 if I18n.locale=="en" else maxi(14,ui.font_size-4))
 		if ui.selected==hero.id:select.add_theme_stylebox_override("normal",ui.surface(Color("23493f"),6,ui.TEAL))
 		small(ui,card,ui.I18n.t("quality.crew_numbers")%[hero.hp,hero.ap],ui.MUTED).horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER
 	var selected: Dictionary=b.heroes[ui.selected]
