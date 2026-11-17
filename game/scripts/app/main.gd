@@ -11,6 +11,11 @@ const Audio=preload("res://scripts/presentation/audio_controller.gd")
 var sound: Node
 var metrics: Node
 const Product=preload("res://scripts/domain/product_systems.gd")
+const FieldGuide=preload("res://scripts/presentation/field_guide.gd")
+var full_preparation: bool=false
+var field_offer_key: int=0
+var field_offer: Dictionary={}
+var focus_cell: Array=[]
 const FirstShift=preload("res://scripts/presentation/first_shift.gd")
 const Guidance=preload("res://scripts/presentation/guidance.gd")
 var guidance_enabled: bool=true
@@ -192,7 +197,8 @@ func render() -> void:
 	var header:=HBoxContainer.new();root.add_child(header)
 	var title:=VBoxContainer.new();title.size_flags_horizontal=Control.SIZE_EXPAND_FILL;header.add_child(title)
 	var heading:=label(title,I18n.t("ui.ea0219b09f08"));heading.add_theme_font_size_override("font_size",20 if s.campaign.phase=="battle" or feedback_active() else 28);heading.add_theme_color_override("font_color",TEAL)
-	var subtitle:=label(title,I18n.t("ui.6b73f6729147") % [s.campaign.day,I18n.content("boards",s.battle.mission_id,"title",session.content.boards[s.battle.mission_id].title)])
+	var displayed_mission: String=s.journey.next_mission if s.campaign.phase=="briefing" else s.battle.mission_id
+	var subtitle:=label(title,I18n.t("ui.6b73f6729147") % [s.campaign.day,I18n.content("boards",displayed_mission,"title",session.content.boards[displayed_mission].title)])
 	subtitle.add_theme_color_override("font_color",MUTED);subtitle.add_theme_font_size_override("font_size",16)
 	for currency: String in ["credits","supplies","parts"]:
 		var balance:=HBoxContainer.new();header.add_child(balance)
@@ -215,6 +221,7 @@ func render() -> void:
 	if title_screen:Screens.title(self,body)
 	elif s.campaign.phase=="briefing":
 		if s.campaign.day==1 and FirstShift.enabled(self):FirstShift.briefing(self,body)
+		elif FirstShift.enabled(self) and not full_preparation:FieldGuide.briefing(self,body)
 		else:Screens.briefing(self,body)
 	elif s.campaign.phase=="battle" or feedback_active():render_battle(body)
 	else:
@@ -511,6 +518,7 @@ func propose(kind: String,payload: Dictionary) -> void:
 	if not changes.is_empty():confirmation_text.text+=I18n.t("ui.d7b6fc9ef523")+"\n".join(changes)
 	confirmation.popup_centered_clamped(Vector2i(820,560),.95)
 func commit_pending() -> void:
+	focus_cell=[]
 	if feedback_active() or pending.is_empty():return
 	inline_pending=false
 	var input_start: int=Time.get_ticks_usec()
@@ -541,7 +549,7 @@ func commit_pending() -> void:
 	if result.ok and pending.kind=="story_choice":
 		var view: Dictionary=preload("res://scripts/presentation/journey_presentation.gd").scene(session.state,session.content,str(pending.payload.node))
 		preload("res://scripts/presentation/story_screen.gd").show(self,str(pending.payload.node),int(view.opening_count))
-	if result.ok and pending.kind in ["depart","next_mission","start_side"] and session.state.campaign.phase=="battle" and not FirstShift.active(self):show_site()
+	if result.ok and pending.kind in ["depart","next_mission","start_side"] and session.state.campaign.phase=="battle" and not FirstShift.active(self) and not FieldGuide.active(self):show_site()
 func save_manual() -> void:Screens.manual_slots(self,true)
 func load_manual() -> void:Screens.manual_slots(self,false)
 func recover() -> void:
@@ -695,6 +703,7 @@ func render_mentors(box: VBoxContainer) -> void:
 
 func objective_summary() -> String:
 	var s: Dictionary=session.state
+	if s.campaign.phase=="briefing":return "准备出勤："+session.content.boards[s.journey.next_mission].title
 	var board: Dictionary=session.content.boards[s.battle.mission_id]
 	var lines: Array[String]=[]
 	for group: Array in Full.groups(s,board):
@@ -1081,3 +1090,9 @@ func music_context() -> String:
 			if h.downed or (not h.left and h.hp<=3):urgent=true
 		return "battle_high" if urgent else "battle"
 	return "camp"
+
+func field_ack(topic: String,manual: bool=false) -> void:
+	sequence+=1
+	var result: Dictionary=session.submit({"command_id":"field-%d-%d"%[Time.get_ticks_usec(),sequence],"expected_revision":session.state.revision,"actor_id":selected,"kind":"field_lesson","payload":{"topic":topic,"manual":manual},"root_decision_id":"field-%d"%sequence})
+	message="这个操作已保留；先按自己的节奏继续。" if result.ok else error_text(result.error_code)
+	inline_pending=false;pending={};render()

@@ -1,0 +1,54 @@
+{
+  "scope": "Continuous production new campaign M01-M04. fixture-M08/M12/support are isolated UI contexts, safeguard checks are isolated relationship contexts. Hidden macOS GPU, not Windows or human acceptance.",
+  "renderer": "OpenGL Compatibility / Apple M3",
+  "checks": 140,
+  "recorded_commands": 158,
+  "screenshots": {
+    "outputs/fieldguide-m02-briefing.png": "86c5f9b085aea9e67896cc5e1c6987e9a935629cd010e5de4cd4ee6deef69dd5",
+    "outputs/fieldguide-m02-full-preparation.png": "285090b1a355be73962a4a611e6bc192ce11d0a7303d8f3161bcba43e1427b67",
+    "outputs/fieldguide-m02-font16.png": "9822a02db91574a0cd8cd438038042fab2c52812ed9c949b7e1cd7cf3339a0a3",
+    "outputs/fieldguide-m02-font20.png": "b95c639351839e29499a045e32ebc62bedd151df7018b90e6b739d7cda80a2df",
+    "outputs/fieldguide-m02-font24.png": "5bf53804f96f8b86cf190046681f7331b4655da0325e42056dfd3656780997df",
+    "outputs/fieldguide-m02-1080p.png": "c518adc0f4a58ac07fc5a66ccf224160d09022982c3841c4848a6b1ea03e7b8e",
+    "outputs/fieldguide-m02-locate.png": "3f2808570629d77bcc7fcf6a8cd75204d22ccdc505ae074c6e1c3bd114f29d9e",
+    "outputs/fieldguide-m02-entry.png": "e86de6cfb2dfe3bba2eed6725d212025e2ab3c2b0141e4a23391b31f4687a5a7",
+    "outputs/fieldguide-m02-lesson-ability-xu_1.png": "1e48288c00d8c9aaad7b5f456dd7a03ea30a7ea89f76abd83c0c8dbd6dbb08c0",
+    "outputs/fieldguide-m02-lesson-protocol-protected_work.png": "d0eb003a0d0394d1d25c609df4ccbdbe35fc66960ac80cf49c8bf3aef15046f5",
+    "outputs/fieldguide-m02-lesson-ability-su_1.png": "61bf8c41d02918a93e3c32c52a2b650f607f32d109ba016c8718cd8331bf1085",
+    "outputs/fieldguide-m03-entry.png": "206c98c8ec295af9068958d3eaa2e79ee449db6c0b622165b827075a47f87892",
+    "outputs/fieldguide-m03-lesson-tool-crowbar.png": "867616ead0ea0bb1bb4828ccf8f88d97a57ff0d90310e7c5b9dc0ce4e194d1d3",
+    "outputs/fieldguide-m03-lesson-attack.png": "3e5d3bcb9a0dd096cfc46e14d638e6540150ab978d02673e4e6c5ec1cd39c93f",
+    "outputs/fieldguide-m03-lesson-protocol-mutual_cover.png": "740807e8ae3eb0b010efa8a5248304da689e2b041c222174154658bbb67d231f",
+    "outputs/fieldguide-m03-lesson-push.png": "3774d27db6b503a0514b22162eacf3ca6cf5b0d389c0ee02b5c5624f5c22c06f",
+    "outputs/fieldguide-m04-entry.png": "0ad75e509e6c8b238cc5b8892be4bb4053f000e648c89f6c38f07a2ca42dfc17",
+    "outputs/fieldguide-m04-lesson-protocol-relay_carry.png": "cc6b073c20648e805e6051bcbfb0c5a95d35e1bab53fc83a441396293e34bc4c",
+    "outputs/fieldguide-fixture-M08.png": "7bd5ebc4a2db3e46dd2ab142bce401bfa5e6cc368c1c1ba61cf1f3f9647ac996",
+    "outputs/fieldguide-fixture-M12.png": "43508ec265860dd9cfda441ac8fe369e083efa0fdba67740a20ba97a41cce313",
+    "outputs/fieldguide-fixture-support.png": "17607cc7a2a017ddabe55a43c0e6532d40928b9489520fc7a834af8f69335118",
+    "outputs/fieldguide-firstshift-move-font16.png": "e5dc4c0bf02e1382c5a4a30813163379281b7ae8d03ca21c4a3f2ac12b724863",
+    "outputs/fieldguide-firstshift-move-font20.png": "5133429d2faeab1f795d13fc8a4bcce9a5c76b57ac4411266a1f4686997b4e05",
+    "outputs/fieldguide-firstshift-move-font24.png": "620f5b3c5faf0a8ded1e7f01fe37eff10365bc0744bb83c9e284a0a4876099c7",
+    "outputs/fieldguide-firstshift-pickup.png": "7639a0812415b4726068902366ae62ab9b2ac96239ddd72c07fd901992d708ea"
+  },
+  "continuous_save": {
+    "outputs/fieldguide-gpu-day04.json": "406a83b9cc7a581c8cfa46e80838c13794544723ef983cec52f1e1900d4071a6"
+  },
+  "report_sha256": "815cdb96fd3f3b5d590d6ce967b771f413cc869cefbc4a24dcc0ac1ad365cd95",
+  "rendered_source_hashes": {
+    "game/scripts/presentation/tactical_board.gd": "433838d3210cec604551a8ef284f94d1eddba5a8821d27f0fa99a388eea95052",
+    "game/scripts/presentation/tactical_workspace.gd": "12e56d27cc2826658e8800880effeec6f552e223b0dc92b81df349dbc946f9bb",
+    "game/scripts/presentation/field_guide.gd": "0d0c049be5d279da7b4031dc8d7c9cdcf1e8fbe956290cb5e1d88daca636838e",
+    "game/scripts/domain/field_learning.gd": "92364b7ff98ab0caf4dd2787b42372de21210e9951a74d7016b9abfa029d6b05"
+  },
+  "firstshift_regression": {
+    "checks": 119,
+    "report": "outputs/fieldguide-firstshift-review-gpu.json",
+    "sha256": "31bb1d9b9fa759e7cb65a2cb94c7bec6234b03825aa1d254a8c7b957f3815f40",
+    "retained_captures": [
+      "outputs/fieldguide-firstshift-move-font16.png",
+      "outputs/fieldguide-firstshift-move-font20.png",
+      "outputs/fieldguide-firstshift-move-font24.png",
+      "outputs/fieldguide-firstshift-pickup.png"
+    ]
+  }
+}

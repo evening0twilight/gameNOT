@@ -78,6 +78,13 @@ static func validate_state(s: Dictionary,content: Dictionary,expected_revision: 
 		for action: Variant in lesson.actions:
 			if not action is String or action.is_empty() or learned.has(action):return {"ok":false,"error_code":"corrupt_save"}
 			learned.append(action)
+	if s.tutorial.has("field_lessons"):
+		var lesson: Variant=s.tutorial.field_lessons
+		if not lesson is Dictionary or not lesson.get("quiet") is bool or not lesson.get("known") is Array:return {"ok":false,"error_code":"corrupt_save"}
+		var unique: Array=[]
+		for topic: Variant in lesson.known:
+			if not topic is String or unique.has(topic) or not preload("res://scripts/domain/field_learning.gd").valid_topic(topic,content):return {"ok":false,"error_code":"corrupt_save"}
+			unique.append(topic)
 	var template: Dictionary = validation_template(content)
 	for field: String in ["campaign","actors","inventory","social","rng"]:
 		if not shape_matches(template[field],s[field]): return {"ok":false,"error_code":"corrupt_save"}

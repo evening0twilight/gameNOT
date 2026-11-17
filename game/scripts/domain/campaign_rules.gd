@@ -1,4 +1,5 @@
 extends RefCounted
+const FieldLearning=preload("res://scripts/domain/field_learning.gd")
 const Appraisal=preload("res://scripts/domain/appraisal.gd")
 const Field=preload("res://scripts/domain/field_operations.gd")
 const Crew=preload("res://scripts/domain/crew_journey.gd")
@@ -158,12 +159,13 @@ static func reduce(snapshot: Dictionary,command: Dictionary,content: Dictionary)
 		var restored: Dictionary=history.pop_back()
 		# Skipping is a player preference; undo reverses learning progress, not that choice.
 		if snapshot.tutorial.get("first_shift",{}).get("enabled",true)==false and restored.tutorial.has("first_shift"):restored.tutorial.first_shift.enabled=false
+		if snapshot.tutorial.has("field_lessons"):restored.tutorial.field_lessons=snapshot.tutorial.field_lessons.duplicate(true)
 		restored.battle.undo=history
 		restored.commands=s.commands.duplicate(true)
 		restored.revision=revision
 		s=restored
 		before_count=s.receipts.size()
-	elif s.campaign.phase=="battle" and command.kind not in ["end_round","emergency_retreat","authorize","promise_retreat","tutorial_ack"]:
+	elif s.campaign.phase=="battle" and command.kind not in ["end_round","emergency_retreat","authorize","promise_retreat","tutorial_ack","field_lesson"]:
 		var checkpoint:=snapshot.duplicate(true)
 		checkpoint.battle.undo=[]
 		s.battle.undo.append(checkpoint)
@@ -173,6 +175,7 @@ static func reduce(snapshot: Dictionary,command: Dictionary,content: Dictionary)
 	if s.battle.has("safety") and snapshot.battle.mission_id==s.battle.mission_id:
 		s.battle.safety=s.battle.safety.filter(func(mark):return mark.round==s.battle.round and s.battle.heroes.has(mark.actor) and same(s.battle.heroes[mark.actor].cell,mark.origin) and not s.battle.heroes[mark.actor].left and not s.battle.heroes[mark.actor].downed)
 	Full.after_action(s,command,content)
+	FieldLearning.record(s,snapshot,command)
 	if s.tutorial.has("first_shift") and snapshot.battle.mission_id=="M01" and snapshot.campaign.phase=="battle" and command.kind not in ["undo","tutorial_ack"]:
 		var learned: Array=s.tutorial.first_shift.actions
 		if not learned.has(command.kind):learned.append(command.kind)
@@ -226,6 +229,7 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 	var b: Dictionary = s.battle
 	var board: Dictionary = content.boards[b.mission_id]
 	Chapter.ensure(s)
+	if kind=="field_lesson":return FieldLearning.accept(s,c,content)
 	if kind=="tutorial_ack":
 		if not s.tutorial.get("first_shift") is Dictionary:return "invalid_target"
 		if p.get("lesson","") not in ["forecast","skip"]:return "invalid_target"

@@ -1,0 +1,55 @@
+{
+  "reason": "Keep prior generic reports and saves byte-for-byte. This run has dedicated p4fieldguide check logs and fieldguide continuous day04 saves.",
+  "files": {
+    "outputs/baseline018-linked-campaign.json": {
+      "previous_sha256": "00c98caf95c1cc210d28fd1b5b4bff1ed215311916ed72ad780ba6a3697b2af9",
+      "generated_this_run_sha256": "6a5dabdd0af45b0515c4086c60aa3a7a7b3a55f49e3cd533bc3a00d836bd1798",
+      "restored_sha256": "00c98caf95c1cc210d28fd1b5b4bff1ed215311916ed72ad780ba6a3697b2af9"
+    },
+    "outputs/baseline018-linked-day04.json": {
+      "previous_sha256": "bd095c11617f90877891c5e5b68183c0553ca3ad9b9dd6deae85a390e0287f6c",
+      "generated_this_run_sha256": "6564e7aa8b936e1d7a695518b0438404163b6006cdad3152eccfdd564ea64897",
+      "restored_sha256": "bd095c11617f90877891c5e5b68183c0553ca3ad9b9dd6deae85a390e0287f6c"
+    },
+    "outputs/baseline018-linked-day06.json": {
+      "previous_sha256": "559e1741f46338b9c344878f9abac1456732603092465a57809f2f8e0a9c130b",
+      "generated_this_run_sha256": "9fd722fcdef161eeff8e2b33c70d43b46f012b533fcab1db1f0a7b185ca86a3c",
+      "restored_sha256": "559e1741f46338b9c344878f9abac1456732603092465a57809f2f8e0a9c130b"
+    },
+    "outputs/baseline018-linked-day16.json": {
+      "previous_sha256": "d7cfde3590995ac0b6e2901f2f8cd1e88bbd256cb276f59513c2d8fb1403ea97",
+      "generated_this_run_sha256": "0108b37db2efcbf56424bd90976fbca9dfb06a879ad5ae7f94218033aff4d648",
+      "restored_sha256": "d7cfde3590995ac0b6e2901f2f8cd1e88bbd256cb276f59513c2d8fb1403ea97"
+    },
+    "outputs/baseline018-linked-day18.json": {
+      "previous_sha256": "540d6738ac1490abde456630168654614b7835b3dfc7a6a651d88e1c0360801e",
+      "generated_this_run_sha256": "e33eefa9b483dfbe59278d615d88400ed64a33736312ed9f6bcb67b749eeae96",
+      "restored_sha256": "540d6738ac1490abde456630168654614b7835b3dfc7a6a651d88e1c0360801e"
+    },
+    "outputs/baseline018-linked-day19.json": {
+      "previous_sha256": "13da4c706ab5c4e066f74f443f9f41ab3fe5327a93a986fe0b3ba7fcbd913b86",
+      "generated_this_run_sha256": "e8bd962a6b8b8d3ea803374d7df40c5daa204f66784b46008ba3696ca7feccea",
+      "restored_sha256": "13da4c706ab5c4e066f74f443f9f41ab3fe5327a93a986fe0b3ba7fcbd913b86"
+    },
+    "outputs/baseline018-linked-day24.json": {
+      "previous_sha256": "3b522dc306fb39053f0645f34bcf5099ec2c10fcd455b1619a0669fb91aec0d4",
+      "generated_this_run_sha256": "7f956dc6812bb7186c574220b091d118acdddb023cbba75ef6993fa7ce2b30ef",
+      "restored_sha256": "3b522dc306fb39053f0645f34bcf5099ec2c10fcd455b1619a0669fb91aec0d4"
+    },
+    "outputs/p4close-before-mentor.json": {
+      "previous_sha256": "95de55bf84acab6d4f8cae1c3ec1decb9fdbfc01e517091b3b636a6f07fd1637",
+      "generated_this_run_sha256": "f9d99195f2b5a293c51a1d1e1d2fe2d8a67d13fc8a4325801bab52c2cfe518d6",
+      "restored_sha256": "95de55bf84acab6d4f8cae1c3ec1decb9fdbfc01e517091b3b636a6f07fd1637"
+    },
+    "outputs/p4close-growth-mo-day23.json": {
+      "previous_sha256": "f90431bce1b6e21d9da5259097d5de99383fd0afd7a4f1a6bbfa337e45d53303",
+      "generated_this_run_sha256": "7fba80d611ae2fd56da6c1a8238279a303306c701047330f6e8cc3a734a74eac",
+      "restored_sha256": "f90431bce1b6e21d9da5259097d5de99383fd0afd7a4f1a6bbfa337e45d53303"
+    },
+    "outputs/product018-crew-campaign.json": {
+      "previous_sha256": "79d04c842c40c1d369fdf553bd3970f617c4eb59cbcc8aee380ace5737845484",
+      "generated_this_run_sha256": "79e4c75a9cadf878b2a54307c9e27ef191e3cc0cb0f71d3c1eb7be11b7def22f",
+      "restored_sha256": "79d04c842c40c1d369fdf553bd3970f617c4eb59cbcc8aee380ace5737845484"
+    }
+  }
+}

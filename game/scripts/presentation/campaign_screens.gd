@@ -78,6 +78,7 @@ static func introduction(ui: Control,id: String) -> void:
 static func briefing(ui: Control,parent: Node) -> void:
 	var s: Dictionary=ui.session.state
 	var frame:=VBoxContainer.new();frame.size_flags_horizontal=Control.SIZE_EXPAND_FILL;parent.add_child(frame)
+	if ui.FirstShift.enabled(ui):ui.button(frame,"返回简明准备",func():ui.full_preparation=false;ui.render())
 	var columns:=HBoxContainer.new();columns.size_flags_vertical=Control.SIZE_EXPAND_FILL;columns.add_theme_constant_override("separation",20);frame.add_child(columns)
 	var box:=column(columns)
 	box.get_parent().size_flags_stretch_ratio=.85

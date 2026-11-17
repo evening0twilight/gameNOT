@@ -1,12 +1,12 @@
 # 夜潮事务所
 
-2026-11-17：第一场救援新增按实际操作推进的逐步教学；第一晚和关键剧情继续返修。[实际变化、截图与角色获取顺序](docs/p4-firstshift-20261117/review.md) · [验证范围](docs/p4-firstshift-20261117/validation.md)。当前仍未达到正式发行验收；配乐重制暂停。
+2026-11-17：第二场之后继续按场景逐个教学，保留已学操作；出发准备默认收起复杂选项，目标固定并可定位，地图补上姓名牌、机器名和目标编号/类别。实际画面与范围见 [本轮返修](docs/p4-fieldguide-20261117/review.md)，当前入口见 [接手说明](docs/NEXT_AGENT_HANDOFF.md)。P4仍在品质返修阶段，没有发行或真人验收通过声明。
 
 **交接入口（2026-11-17）：[下一位开发代理必读](docs/NEXT_AGENT_HANDOFF.md)**。当前仍在 P4 产品对齐与最终验收阶段；接手后从该文档第 5 节 **P4-018-01 剩余差异闭环**继续。
 
 当前工程沿用 **0.18 定稿**，仅教学展示政策按2026-11-17用户要求作了明确修订；仍是同一24日战役。下述2026-11-07记录属于历史：该轮补入人物登场与准备选择、培养比较、真实关系结果说明、休养/来信剧情、地区事实与地图预览，以及对应表情、背景、音乐用途。用户已报告验证过 Windows 包；P4 最终验收仍未关闭。
 
-- 本机新候选：`build/night-tide-0.18-p4firstshift-20261117-windows.zip`；[本轮构建收据](docs/p4firstshift-20261117-build.json)。安装包不入Git，新克隆按交接文档重建。2026-11-07旧包已按授权删除。
+- 本机新候选：`build/night-tide-0.18-p4fieldguide-20261117-windows.zip`；[本轮构建收据](docs/p4fieldguide-20261117-build.json)。安装包不入Git，新克隆按交接文档重建。2026-11-07旧包已按授权删除。
 - [玩法与操作说明](docs/product018-player-guide.txt)
 - [2026-11-07逐项修正及证据边界（历史）](docs/product018-alignment.txt) · [验证范围](docs/product018-validation.txt) · [构建收据](docs/product018-build.json)
 - [八人实际入队、成长与专长周目](outputs/product018-crew-campaign.json) · [真实带教、计划与接应周目](outputs/baseline018-linked-campaign.json)
@@ -15,7 +15,7 @@
 
 24张主线、12张支线、96节点、8固定人物。角色按主线结算加入；训练、约定、带教与接应使用真实项目、资源和任务贡献。三难度为从容、标准、严峻。存档runtime_revision=8兼容2–8；旧任务沿用原部署数值，不重发历史奖励。
 
-当前检查：`python3 tools/check_product018.py --full --report-prefix p4firstshift-20261117`。打包：`python3 tools/build_windows_product018.py --candidate p4firstshift-20261117 --review-dir docs/p4-firstshift-20261117`。新克隆也用默认检查，按[清理记录](docs/product018-cleanup.md)区分已移除的历史路径与意外缺失；现存受保护文件仍逐一校验。旧检查和打包入口只对应历史阶段。
+当前检查：`python3 tools/check_product018.py --full --report-prefix p4fieldguide-20261117`。打包：`python3 tools/build_windows_product018.py --candidate p4fieldguide-20261117 --review-dir docs/p4-fieldguide-20261117`。新克隆也用默认检查，按[清理记录](docs/product018-cleanup.md)区分已移除的历史路径与意外缺失；现存受保护文件仍逐一校验。旧检查和打包入口只对应历史阶段。
 
 旧报告、构建收据与冻结定稿保留。之前“整体实现完成”的结论已撤回；复查原始发现见 [复查记录](docs/baseline018-product-reassessment.txt)。本轮修正情况以新报告为准。2026-11-11用户授权将源码、素材与文档直接提交到远程 `main`；未发布商店或GitHub Release。
 

@@ -1,6 +1,8 @@
 extends Control
 ## Render-only board. All action legality and mutations stay in Session/Rules.
 signal cell_chosen(cell: Array)
+signal cell_inspected(text: String)
+const Readable=preload("res://scripts/presentation/tactical_readability.gd")
 const Rules=preload("res://scripts/domain/campaign_rules.gd")
 const I18n=preload("res://scripts/presentation/localization.gd")
 const Art=preload("res://scripts/presentation/visual_assets.gd")
@@ -34,6 +36,7 @@ var legal_hover: bool=false
 var path: Array=[]
 var elapsed: float=0
 var redraw_clock: float=0
+var badge_styles: Dictionary={}
 var colors: Dictionary={"lin":Color("70d9c1"),"xu":Color("f1bd72"),"su":Color("d296b3")}
 func _ready() -> void:
 	mouse_filter=Control.MOUSE_FILTER_STOP
@@ -55,7 +58,8 @@ func _gui_input(event: InputEvent) -> void:
 		if next!=hover:
 			hover=next
 			legal_hover=hover.x>=0 and validate_hover.is_valid() and validate_hover.call([hover.x,hover.y])
-			tooltip_text=hover_description([hover.x,hover.y])
+			tooltip_text=hover_description([hover.x,hover.y]) if hover.x>=0 else ""
+			cell_inspected.emit(tooltip_text)
 			path=route(state.battle,state.battle.heroes[selected].cell,[hover.x,hover.y]) if legal_hover else []
 			queue_redraw()
 		if event is InputEventMouseButton and event.pressed and event.button_index==MOUSE_BUTTON_LEFT and hover.x>=0:
@@ -201,7 +205,7 @@ func _draw() -> void:
 	var tile: float=area.size.x/8
 	# Water surrounds the ferry; clinic gets an architectural surround.
 	draw_texture_rect(Art.environment(board.location),Rect2(Vector2.ZERO,size),false,Color(.8,.86,.88))
-	draw_rect(Rect2(Vector2.ZERO,size),Color(.015,.045,.065,.32))
+	draw_rect(Rect2(Vector2.ZERO,size),Color(.015,.045,.065,.65))
 	var landmark: Texture2D=Art.landmark(board.location)
 	var landmark_size: float=minf(64,area.position.x-12)
 	if landmark!=null and landmark_size>=28:draw_texture_rect(landmark,Rect2(Vector2(6,6),Vector2.ONE*landmark_size),false)
@@ -222,7 +226,7 @@ func _draw() -> void:
 				draw_line(at-Vector2(4,0),at+Vector2(4,0),Color("b3b4a4"),3,true)
 			var ring_at:=Vector2(rail_x+side*18,area.get_center().y)
 			draw_arc(ring_at,11,0,TAU,32,Color("d68f58"),5,true)
-	draw_texture_rect(Art.ground(board.location),area,false,Color(.70,.79,.80))
+	draw_texture_rect(Art.ground(board.location),area,false,Color(.50,.61,.62))
 	for y: int in range(8):
 		for x: int in range(8):
 			var cell: Array=[x,y]
@@ -235,7 +239,7 @@ func _draw() -> void:
 			var tint:=Color(.85,.92,.94)
 			if terrain=="X":tint=Color(.38,.53,.59)
 			if terrain in ["X","~","#",":"]:draw_texture_rect(Art.ground(board.location,terrain),rect,false,tint)
-			draw_rect(rect,Color(.55,.69,.68,.18),false,1)
+			draw_rect(rect,Color(.55,.69,.68,.26),false,1)
 			if terrain in ["X","~"]:
 				for wave: int in range(2):
 					var points:=PackedVector2Array()
@@ -272,6 +276,9 @@ func _draw() -> void:
 			var at:=center(cell)
 			draw_rect(Rect2(at-Vector2.ONE*tile*.46,Vector2.ONE*tile*.92),Color(1,.28,.15,.17+.04*sin(elapsed*3)))
 			draw_polyline(PackedVector2Array([at+Vector2(-tile*.16,-tile*.1),at+Vector2(0,tile*.06),at+Vector2(tile*.16,-tile*.1)]),Color("ed957a"),2,true)
+			for mark: int in range(4):
+				var edge: Vector2=at+Vector2(-tile*.42+mark*tile*.22,tile*.38)
+				draw_line(edge,edge+Vector2(tile*.12,-tile*.12),Color("f3a175"),2,true)
 	for barrier: Dictionary in b.get("barriers",{}).values():
 		draw_rect(Rect2(center(barrier.cell)-Vector2.ONE*tile*.3,Vector2.ONE*tile*.6),Color("ceaa65"),false,4)
 	for cell: Array in b.get("insulation",[]):
@@ -305,10 +312,7 @@ func _draw() -> void:
 		if object.kind=="rescue":paint_texture(Art.rescue_marker(b.mission_id,object),at,tile,tint)
 		else:paint_sprite(index,at,tile,tint)
 		if object.completed or object.stable:draw_circle(at+Vector2(tile*.32,-tile*.31),tile*.055,Color("70d9c1"))
-		if not object.completed and not object.lost:
-			var marker: String=I18n.t("quality.marker."+("rescue" if object.kind=="rescue" else ("cargo" if object.kind=="cargo" else "work")))
-			draw_string_outline(get_theme_default_font(),at+Vector2(-tile*.4,-tile*.29),marker,HORIZONTAL_ALIGNMENT_LEFT,-1,maxi(12,int(tile*.23)),4,Color("10242b"))
-			draw_string(get_theme_default_font(),at+Vector2(-tile*.4,-tile*.29),marker,HORIZONTAL_ALIGNMENT_LEFT,-1,maxi(12,int(tile*.23)),Color("e8ca8a"))
+
 	for enemy: Dictionary in b.enemies.values():
 		var old: Dictionary=previous.get("enemies",{}).get(enemy.id,enemy)
 		var age: float=seconds()-changed_enemy_at(enemy.id)
@@ -322,13 +326,29 @@ func _draw() -> void:
 				tint=Color(1,.53,.4) if int(age*18)%2==0 else Color.WHITE
 			if enemy.hp<=0:tint.a=1-clampf(age/.42,0,1)
 		paint_sprite({"welder":30,"hauler":31,"skimmer":32,"relay":44,"sentinel":45}.get(enemy.type,3),at,tile,tint)
+		badge(at+Vector2(0,tile*.32),"停机" if enemy.disabled else I18n.t("quality.enemy."+enemy.type),tile,Color("a5bbb9") if enemy.disabled else Color("f3b38e"))
 	for hero: Dictionary in b.heroes.values():
 		if hero.left and not animating():continue
 		var at:=hero_position(hero)
 		var ink: Color=colors.get(hero.id,Color("ccd5d2"))
 		if not hero.left:draw_arc(at+Vector2(0,tile*.28),tile*.33,0,TAU,36,ink,3 if hero.id==selected else 1,true)
 		paint_actor(hero,at,tile)
+		var name: String=I18n.content("characters",hero.id,"name","支援"+hero.id.right(1))
+		badge(at+Vector2(0,tile*.31),name,tile,ink,hero.id==selected)
 		for ap: int in range(int(hero.ap)):draw_circle(at+Vector2((ap-(float(hero.ap)-1)/2)*tile*.14,tile*.47),tile*.035,ink)
+	# Labels are drawn after sprites; co-located objectives get separate rows.
+	var label_rows: Dictionary={}
+	for object: Dictionary in b.objects.values():
+		if object.delivered or not object.carrier.is_empty() or object.has("unavailable_reason"):continue
+		var at: Vector2=center(object.cell)
+		var marker: String=Readable.code(board,b,object.id)+{"rescue":"救","work":"工","cargo":"物","channel":"守","convoy":"送"}.get(object.kind,"")
+		if object.completed:marker+="✓"
+		elif object.lost:marker+="×"
+		var row: int=label_rows.get(str(object.cell),0);label_rows[str(object.cell)]=row+1
+		badge(at+Vector2(-tile*.1,-tile*.31+row*maxf(21,tile*.34)),marker,tile,Color("70d9c1") if object.completed else Color("f2d397"))
+		if object.work>0 and not object.completed and not object.lost:
+			draw_rect(Rect2(at+Vector2(-tile*.36,tile*.42),Vector2(tile*.72,3)),Color("10242b"))
+			draw_rect(Rect2(at+Vector2(-tile*.36,tile*.42),Vector2(tile*.72*clampf(float(object.progress)/object.work,0,1),3)),Color("f2d397"))
 	draw_feedback(tile)
 	if not hint_cell.is_empty() and not animating():
 		var at:=center(hint_cell)
@@ -345,8 +365,23 @@ func hover_description(cell: Array) -> String:
 			lines.append(I18n.t("quality.inspect_crew")%[I18n.content("characters",hero.id,"name",I18n.t("visual.support")),hero.hp,hero.ap])
 	for object: Dictionary in state.battle.objects.values():
 		if not object.delivered and object.carrier.is_empty() and Rules.same(object.cell,cell):
-			lines.append(I18n.content("objects",state.battle.mission_id+"."+object.id,"label",I18n.t("visual.casualty")))
+			lines.append(Readable.code(board,state.battle,object.id)+" · "+I18n.content("objects",state.battle.mission_id+"."+object.id,"label",I18n.t("visual.casualty"))+" · "+Readable.status(object))
 			if object.work>0:lines.append(I18n.t("quality.inspect_work")%[object.progress,object.work])
 	for enemy: Dictionary in state.battle.enemies.values():
 		if enemy.hp>0 and Rules.same(enemy.cell,cell):lines.append(I18n.t("quality.inspect_machine")%[I18n.t("quality.enemy."+enemy.type),enemy.hp])
 	return "\n".join(lines)
+
+func badge(at: Vector2,text: String,tile: float,ink: Color,selected_badge: bool=false) -> void:
+	var font: Font=get_theme_default_font()
+	var font_size: int=clampi(int(tile*.28),14,20)
+	var width: float=font.get_string_size(text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size).x+8
+	var rect:=Rect2(at-Vector2(width/2,float(font_size)/2+3),Vector2(width,font_size+6))
+	draw_style_box(badge_style(ink,selected_badge),rect)
+	draw_string(font,rect.position+Vector2(4,font_size),text,HORIZONTAL_ALIGNMENT_LEFT,-1,font_size,ink)
+func badge_style(ink: Color,selected_badge: bool) -> StyleBoxFlat:
+	var key: String=str(ink)+str(selected_badge)
+	if badge_styles.has(key):return badge_styles[key]
+	var style:=StyleBoxFlat.new();style.bg_color=Color("153d38") if selected_badge else Color("0c2029")
+	style.border_color=ink;style.set_border_width_all(2 if selected_badge else 1);style.set_corner_radius_all(3)
+	badge_styles[key]=style
+	return style

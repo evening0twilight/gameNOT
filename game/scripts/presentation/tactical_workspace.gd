@@ -1,4 +1,6 @@
 extends RefCounted
+const Field=preload("res://scripts/presentation/field_guide.gd")
+const Readable=preload("res://scripts/presentation/tactical_readability.gd")
 const First=preload("res://scripts/presentation/first_shift.gd")
 ## A readable workspace around the actual board; all commands still use Session.
 static func small(ui: Control,parent: Node,text: String,color: Color) -> Label:
@@ -8,7 +10,9 @@ static func small(ui: Control,parent: Node,text: String,color: Color) -> Label:
 	return label
 
 static func render(ui: Control,body: HBoxContainer) -> void:
-	var guided: bool=First.active(ui)
+	var first: bool=First.active(ui)
+	var field: bool=Field.active(ui)
+	var guided: bool=first or field
 	var s: Dictionary=ui.session.state
 	if ui.feedback_active() and s.campaign.phase!="battle":s=s.duplicate(true);s.campaign.phase="battle"
 	var b: Dictionary=s.battle
@@ -17,8 +21,18 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 	body.add_theme_constant_override("separation",12)
 	var objectives:=VBoxContainer.new();objectives.custom_minimum_size.x=260 if guided else 210;body.add_child(objectives)
 	small(ui,objectives,ui.I18n.t("quality.mission"),ui.GOLD)
+	if field:
+		for group: Array in ui.Full.groups(s,board):
+			for id: String in group:
+				if not b.objects.has(id):continue
+				var o: Dictionary=b.objects[id]
+				var locate: Button=ui.button(objectives,Readable.code(board,b,id)+" · "+ui.object_name(id)+"\n"+Readable.status(o)+" · 点击定位",func():ui.focus_cell=o.cell.duplicate();ui.render())
+				locate.add_theme_font_size_override("font_size",maxi(14,ui.font_size-4));locate.custom_minimum_size.y=46
+				if group.size()>1:locate.tooltip_text="这一组目标择一完成即可。"
+
 	var objective_scroll:=ScrollContainer.new();objective_scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;objective_scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;objectives.add_child(objective_scroll)
 	var goals:=VBoxContainer.new();goals.size_flags_horizontal=Control.SIZE_EXPAND_FILL;goals.add_theme_constant_override("separation",12);objective_scroll.add_child(goals)
+	if field:Field.panel(ui,goals)
 	if not guided:
 		for group: Array in ui.Full.groups(s,board):
 			var names: Array[String]=[];var done: bool=false
@@ -26,26 +40,29 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 				if not b.objects.has(id):continue
 				var target: Dictionary=b.objects[id]
 				done=done or (target.completed and (not target.sustain_until_exit or target.hp>0))
-				names.append(ui.object_name(id))
+				names.append(Readable.code(board,b,id)+" · "+ui.object_name(id))
 			var card:=PanelContainer.new();card.add_theme_stylebox_override("panel",ui.surface(ui.SURFACE,8));goals.add_child(card)
 			var detail:=VBoxContainer.new();card.add_child(detail)
 			small(ui,detail,ui.I18n.t("p3.done") if done else ui.I18n.t("p3.todo"),ui.TEAL if done else ui.GOLD)
-			ui.label(detail," / ".join(names))
+			small(ui,detail," / ".join(names),ui.INK)
 			for id: String in group:
 				if not b.objects.has(id):continue
 				var o: Dictionary=b.objects[id]
 				if not o.completed and not o.lost:
-					small(ui,detail,ui.I18n.t("quality.at_cell")%[int(o.cell[0])+1,int(o.cell[1])+1],ui.MUTED)
+					var locate: Button=ui.button(detail,Readable.status(o)+" · 定位 "+Readable.code(board,b,id),func():ui.focus_cell=o.cell.duplicate();ui.render())
+					locate.add_theme_font_size_override("font_size",16)
 					var deadline: int=ui.Rules.Hazards.rescue_deadline(b,o)
 					if deadline>0 and not o.stable:small(ui,detail,ui.I18n.t("difficulty.rescue_deadline")%deadline,ui.GOLD)
-	var next: Dictionary=First.lesson(ui).next if guided else (ui.current_guidance() if ui.guidance_enabled else {})
-	if guided:First.panel(ui,goals)
-	elif not next.is_empty():
+	var next: Dictionary=First.lesson(ui).next if first else (ui.current_guidance() if ui.guidance_enabled else {})
+	if first:First.panel(ui,goals)
+	elif not field and not next.is_empty():
 		small(ui,goals,ui.I18n.t("quality.next_step"),ui.TEAL)
 		small(ui,goals,ui.I18n.t("guide."+next.key),ui.INK)
 		if not next.get("action","").is_empty() or next.has("actor"):
 			var caption: String=ui.I18n.t("guide.switch")%ui.actor_name(next.actor) if next.has("actor") else ui.I18n.t("guide.preview")%ui.action_name(next.action)
 			var suggestion: Button=ui.button(goals,caption,ui.preview_guidance);suggestion.add_theme_font_size_override("font_size",maxi(14,ui.font_size-4))
+	if field:
+		ui.button(objectives,"查阅操作与现场",func():Field.browse(ui)).add_theme_font_size_override("font_size",16)
 	if not guided:
 		ui.button(objectives,ui.I18n.t("p3.site_view"),ui.show_site).add_theme_font_size_override("font_size",16)
 		ui.button(objectives,ui.I18n.t("intro.button"),func():ui.show_intro(false)).add_theme_font_size_override("font_size",16)
@@ -56,7 +73,7 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 	small(ui,top,ui.actor_name(ui.selected)+" · "+ui.action_name(ui.action),ui.TEAL).horizontal_alignment=HORIZONTAL_ALIGNMENT_RIGHT
 	var map=ui.BoardView.new();map.name="TacticalMap";map.state=s;map.board=board;map.selected=ui.selected
 	map.previous=ui.visual_previous;map.animation_started=ui.visual_started;map.feedback=ui.feedback_plan;map.actor_facings=ui.actor_facings;map.playback_seconds=ui.feedback_seconds
-	map.hint_cell=next.get("cell",[]);map.size_flags_vertical=Control.SIZE_EXPAND_FILL;map.custom_minimum_size=Vector2(320,320)
+	map.hint_cell=ui.focus_cell if not ui.focus_cell.is_empty() else next.get("cell",[]);map.size_flags_vertical=Control.SIZE_EXPAND_FILL;map.custom_minimum_size=Vector2(320,320)
 	var cache_key: String="%s:%s:%s"%[hash(b),ui.selected,ui.action]
 	if ui.reach_key!=cache_key:
 		ui.reach_cache.clear();ui.reach_key=cache_key
@@ -65,7 +82,10 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 	map.reachable=[] if ui.feedback_active() else ui.reach_cache.values()
 	map.validate_hover=func(cell: Array):return ui.reach_cache.has(str(cell))
 	map.cell_chosen.connect(ui.click_cell);center.add_child(map)
-	small(ui,center,ui.I18n.t("quality.map_legend"),ui.MUTED)
+	small(ui,center,"绿点：可移动　橙纹：机器预告　字母：目标",ui.MUTED)
+	var inspection: Label=small(ui,center,"指向人物或字母目标，查看状态",ui.INK)
+	inspection.custom_minimum_size.y=42;inspection.max_lines_visible=2
+	map.cell_inspected.connect(func(text: String):inspection.text=text.replace("\n"," · "))
 
 	var panel:=PanelContainer.new();panel.custom_minimum_size.x=(270 if ui.font_size<24 else 300) if guided else (320 if ui.font_size<24 else 350);panel.add_theme_stylebox_override("panel",ui.surface(ui.SURFACE,10));body.add_child(panel)
 	var right:=VBoxContainer.new();right.add_theme_constant_override("separation",8);panel.add_child(right)
@@ -89,7 +109,8 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 			if ui.panel_tab==item[0]:tab.add_theme_stylebox_override("normal",ui.surface(Color("23493f"),6,ui.TEAL))
 	var scroll:=ScrollContainer.new();scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;right.add_child(scroll)
 	var contents:=VBoxContainer.new();contents.size_flags_horizontal=Control.SIZE_EXPAND_FILL;contents.add_theme_constant_override("separation",8);scroll.add_child(contents)
-	if guided:First.actions(ui,contents)
+	if first:First.actions(ui,contents)
+	elif field:Field.actions(ui,contents)
 	else:
 		match ui.panel_tab:
 			"actions":ui.action_panel(contents)
@@ -105,7 +126,7 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 				ui.label(contents,ui.I18n.t("ui.3ef5bf27c047")%b.environment.water_addition.round)
 	for control: Node in contents.find_children("*","Button",true,false):
 		control.add_theme_font_size_override("font_size",maxi(16,ui.font_size-2));control.custom_minimum_size.y=38
-	if guided and not s.tutorial.first_shift.forecast:return
+	if first and not s.tutorial.first_shift.forecast:return
 	var end: Button=ui.button(right,ui.I18n.t("ui.975778d99095"),func():ui.propose("end_round",{}));end.add_theme_stylebox_override("normal",ui.surface(Color("35524c"),8,ui.TEAL))
 	var footer:=HBoxContainer.new();right.add_child(footer)
 	ui.button(footer,ui.I18n.t("ui.926a50b98ece"),func():ui.propose("undo",{})).size_flags_horizontal=Control.SIZE_EXPAND_FILL
