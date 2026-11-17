@@ -97,6 +97,8 @@ static func briefing(ui: Control,parent: Node) -> void:
 	ui.label(left,I18n.s("第 %d 天 · %s")%[s.campaign.day,I18n.s(board.title)]).add_theme_font_size_override("font_size",28)
 	ui.label(left,board.decision)
 	var right:=VBoxContainer.new();right.custom_minimum_size.x=440;right.size_flags_horizontal=Control.SIZE_EXPAND_FILL;frame.add_child(right)
+	if preload("res://scripts/domain/camp_learning.gd").completed(s):
+		ui.label(right,I18n.s("基础教程已完成 · 自主安排")).add_theme_color_override("font_color",ui.TEAL)
 	ui.label(right,I18n.s("本次要完成")).add_theme_color_override("font_color",ui.GOLD)
 	for group: Array in ui.Full.groups(s,board):
 		var names: Array[String]=[]

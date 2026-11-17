@@ -16,6 +16,7 @@ var full_preparation: bool=false
 var field_offer_key: int=0
 var field_offer: Dictionary={}
 var focus_cell: Array=[]
+const CampGuide=preload("res://scripts/presentation/camp_guide.gd")
 const FirstShift=preload("res://scripts/presentation/first_shift.gd")
 const Guidance=preload("res://scripts/presentation/guidance.gd")
 var guidance_enabled: bool=true
@@ -613,7 +614,8 @@ func modal(title_text: String) -> Dictionary:
 	var window:=Window.new();window.title=I18n.s(title_text);window.size=Vector2i(850,600);window.min_size=Vector2i(580,400)
 	window.transient=true;window.exclusive=true;add_child(window)
 	window.close_requested.connect(window.queue_free)
-	window.tree_exiting.connect(func():call_deferred("restore_modal",previous_window))
+	var previous_window_id: int=previous_window.get_instance_id() if is_instance_valid(previous_window) else 0
+	window.tree_exiting.connect(func():call_deferred("restore_modal",previous_window_id))
 	var margin:=MarginContainer.new();margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	for side: String in ["left","right","top","bottom"]:margin.add_theme_constant_override("margin_"+side,20)
 	window.add_child(margin)
@@ -621,7 +623,8 @@ func modal(title_text: String) -> Dictionary:
 	var box:=VBoxContainer.new();box.size_flags_horizontal=Control.SIZE_EXPAND_FILL;box.add_theme_constant_override("separation",12);scroll.add_child(box)
 	window.popup_centered()
 	return {"window":window,"box":box}
-func restore_modal(previous_window: Variant) -> void:
+func restore_modal(previous_window_id: int) -> void:
+	var previous_window: Object=instance_from_id(previous_window_id) if previous_window_id!=0 else null
 	if not is_instance_valid(previous_window) or previous_window.is_queued_for_deletion():return
 	for child: Node in get_children():
 		if child is Window and child.visible:return
@@ -714,32 +717,33 @@ func objective_summary() -> String:
 			names.append(object_name(id))
 		lines.append((I18n.t("p3.done") if done else I18n.t("p3.todo"))+" / ".join(names))
 	return " · ".join(lines)
-func render_campaign_options(box: VBoxContainer) -> void:
+func render_campaign_options(box: VBoxContainer,include_medicine: bool=true,section: String="all") -> void:
 	var s: Dictionary=session.state
-	button(box,I18n.t("p3.journal"),show_journal)
-	button(box,I18n.t("p3.craft_medicine"),func():propose("craft_medicine",{})).icon=Art.icon("medicine")
-	if s.campaign.day>=18 and not s.full_campaign.evidence.is_empty():
+	if section in ["all","journal"]:button(box,I18n.t("p3.journal"),show_journal)
+	if include_medicine:button(box,I18n.t("p3.craft_medicine"),func():propose("craft_medicine",{})).icon=Art.icon("medicine")
+	if section in ["all","publish"] and s.campaign.day>=18 and not s.full_campaign.evidence.is_empty():
 		for privacy: String in ["redacted","unredacted"]:button(box,I18n.t("p3.publish_"+privacy),func():propose("publish_record",{"privacy":privacy}))
 	label(box,I18n.t("p3.chapter") % [Full.chapter(s.campaign.day),s.campaign.day])
-	if int(s.campaign.day) in [20,22,23] or (s.campaign.day==18 and Product.tier(s,"communications")>=1):
+	if section in ["all","evidence"] and (int(s.campaign.day) in [20,22,23] or (s.campaign.day==18 and Product.tier(s,"communications")>=1)):
 		for id: String in session.content.domains.world.evidence:
 			if not s.full_campaign.evidence.has(id):button(box,I18n.t("p3.review_named") % I18n.t("p3."+id),func():propose("review_record",{"evidence":id}))
-	if Product.tier(s,"communications")>=2 and int(s.campaign.day) in [20,22,23]:
+	if section in ["all","evidence"] and Product.tier(s,"communications")>=2 and int(s.campaign.day) in [20,22,23]:
 		var remaining: Array=[]
 		for id: String in session.content.domains.world.evidence:
 			if not s.full_campaign.evidence.has(id):remaining.append(id)
 		if remaining.size()>=2:button(box,I18n.t("p4.review_two"),func():propose("review_record",{"records":remaining.slice(0,2)}))
-	for id: String in s.full_campaign.contracts:
-		var contract: Dictionary=s.full_campaign.contracts[id]
-		label(box,I18n.t("p3.plan_status") % [actor_name(id),I18n.t("p3.fulfilled") if contract.fulfilled else (I18n.t("baseline018.2a50f442d19a") if contract.get("interrupted_by_injury",false) else (I18n.t("baseline018.3b98164d604b") if contract.get("breached",false) else I18n.t("p3.pending"))),contract.proof])
-	if s.campaign.day==23:
+	if section in ["all","journal","route"]:
+		for id: String in s.full_campaign.contracts:
+			var contract: Dictionary=s.full_campaign.contracts[id]
+			label(box,I18n.t("p3.plan_status") % [actor_name(id),I18n.t("p3.fulfilled") if contract.fulfilled else (I18n.t("baseline018.2a50f442d19a") if contract.get("interrupted_by_injury",false) else (I18n.t("baseline018.3b98164d604b") if contract.get("breached",false) else I18n.t("p3.pending"))),contract.proof])
+	if section in ["all","route"] and s.campaign.day==23:
 		label(box,I18n.t("p3.final_warning"))
 		var total: int=0
 		for value: int in s.campaign.districts.values():total+=value
 		label(box,I18n.t("p3.route_conditions") % [total,s.full_campaign.evidence.size()])
 		for route: String in Full.routes(s):button(box,I18n.t("p3.route_"+route),func():propose("select_route",{"route":route}))
 		if not s.full_campaign.route.is_empty():label(box,I18n.t("p3.selected_route") % I18n.t("p3.route_"+s.full_campaign.route))
-	if int(s.campaign.day)%6==0:chapter_report(box)
+	if section in ["all","journal"] and int(s.campaign.day)%6==0:chapter_report(box)
 func render_ending(box: VBoxContainer) -> void:
 	var s: Dictionary=session.state
 	label(box,I18n.t("p3.final_title") % I18n.t("p3.route_"+s.full_campaign.ending)).add_theme_color_override("font_color",GOLD)
@@ -884,13 +888,15 @@ func render_tools(box: VBoxContainer) -> void:
 		button(box,I18n.t("p4.tool_button") % [I18n.t("p4.item."+id),remaining],func():tool=id;anchor_start=[];action="use_tool";message=I18n.content("equipment",id,"effect",definition.effect);render()).icon=Art.icon(id)
 	if not b.deployed_tools.is_empty():button(box,I18n.t("p4.action.cross_anchor"),func():action="cross_anchor";message=I18n.t("p4.anchor_cross");render())
 	if gear.values().has("medkit"):label(box,I18n.t("p4.medical_status") % [b.medicine,b.medicine_limit,int(b.tool_uses.get("medkit",0))])
-func show_workshop() -> void:
-	var dialog:=modal(I18n.t("p4.equipment_facilities"));var box: VBoxContainer=dialog.box
+func show_workshop(mode: String="all",focus: String="") -> void:
+	var dialog:=modal(I18n.t("p4.equipment_facilities") if mode=="all" else (I18n.s("已有装备") if mode=="owned" else (I18n.t("p4.item."+focus) if mode=="purchase" else (I18n.t("p4.facility."+focus) if mode=="facility" else I18n.s("补充物资")))));var box: VBoxContainer=dialog.box
 	var s: Dictionary=session.state
-	label(box,I18n.t("p4.workshop_intro"))
-	button(box,I18n.t("p4.buy_supplies") % session.content.domains.economy.supply_buy_cost,func():dialog.window.queue_free();propose("buy_supplies",{}))
+	if mode=="all":label(box,I18n.t("p4.workshop_intro"))
+	elif mode=="owned":label(box,I18n.s("每件工具全队共用一件；选择携带者，预览后确认。出发前仍可调整。"))
+	if mode in ["all","supplies"]:button(box,I18n.t("p4.buy_supplies") % session.content.domains.economy.supply_buy_cost,func():dialog.window.queue_free();propose("buy_supplies",{}))
 	for definition: Dictionary in session.content.domains.equipment.items:
 		var id: String=definition.id
+		if mode!="all" and not (mode=="owned" and s.product.owned.has(id)) and not (mode=="purchase" and id==focus):continue
 		var item_row:=HBoxContainer.new();box.add_child(item_row);item_row.add_child(Art.picture(Art.icon(id),Vector2(30,30)))
 		label(item_row,I18n.t("p4.item."+id)).add_theme_color_override("font_color",GOLD)
 		label(box,I18n.content("equipment",id,"effect",definition.effect))
@@ -906,6 +912,7 @@ func show_workshop() -> void:
 			var purchase:=button(box,I18n.t("p4.purchase") % [definition.price_credits,maxi(0,int(definition.price_parts)-discount),definition.unlocked_after_main],func():dialog.window.queue_free();propose("buy_tool",{"item":id}))
 			purchase.disabled=s.chapter_one.main_completed<int(definition.unlocked_after_main)
 	for definition: Dictionary in session.content.domains.facilities:
+		if mode!="all" and not (mode=="facility" and definition.id==focus):continue
 		var tier: int=Product.tier(s,definition.id)
 		var facility_row:=HBoxContainer.new();box.add_child(facility_row);facility_row.add_child(Art.picture(Art.icon(definition.id),Vector2(30,30)))
 		label(facility_row,I18n.t("p4.facility."+definition.id)+" · "+str(tier)+" / 2").add_theme_color_override("font_color",GOLD)
@@ -1043,13 +1050,14 @@ func plan_next_roster() -> void:
 func show_night_review() -> void:
 	var dialog:=modal(I18n.t("baseline018.07f04b8b6e99"))
 	label(dialog.box,I18n.t("baseline018.d6866791de57")%[session.state.campaign.day,session.state.campaign.projects,session.state.campaign.talked.size()])
+	if CampGuide.night_review(self,dialog.box,dialog.window):return
 	if session.state.campaign.day==23:
 		label(dialog.box,I18n.t("baseline018.fb149873289e"))
 		for id: String in session.state.full_campaign.contracts:
 			var contract: Dictionary=session.state.full_campaign.contracts[id]
 			if not contract.fulfilled:label(dialog.box,actor_name(id)+" · "+(I18n.t("baseline018.2a50f442d19a") if contract.get("interrupted_by_injury",false) else (I18n.t("baseline018.3b98164d604b") if contract.get("breached",false) else I18n.t("baseline018.bf513a1c326e"))))
 		label(dialog.box,I18n.t("baseline018.5ab7b400e6b1")+session.state.full_campaign.route)
-	button(dialog.box,I18n.t("baseline018.e6f809da1227"),func():dialog.window.queue_free();propose("finish_evening",{}))
+	button(dialog.box,I18n.s("完成基础引导 · 开始第5天") if CampGuide.active(self) and session.state.campaign.day==4 and not CampGuide.Learning.completed(session.state) else I18n.t("baseline018.e6f809da1227"),func():dialog.window.queue_free();propose("finish_evening",{}))
 
 func show_conflict_notice() -> void:
 	if conflict_notices.is_empty() or feedback_active():return
@@ -1102,3 +1110,10 @@ func show_languages() -> void:
 		var choice: Button=button(dialog.box,I18n.NAMES[id],func():
 			dialog.window.queue_free();I18n.locale=id;I18n.save_preferences();reach_key="";guide_key=0;field_offer_key=0;message=I18n.t("ui.da10edbf29b7");render())
 		choice.text=I18n.NAMES[id];choice.disabled=I18n.locale==id
+
+func camp_ack(topic: String) -> bool:
+	sequence+=1
+	var result: Dictionary=session.submit({"command_id":"camp-%d-%d"%[Time.get_ticks_usec(),sequence],"expected_revision":session.state.revision,"actor_id":selected,"kind":"camp_lesson","payload":{"topic":topic},"root_decision_id":"camp-%d"%sequence})
+	message=I18n.s("已了解；入口保留在营地，可稍后再用。") if result.ok else error_text(result.error_code)
+	render()
+	return result.ok

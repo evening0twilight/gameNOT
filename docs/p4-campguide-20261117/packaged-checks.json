@@ -1,0 +1,37 @@
+{
+  "runtime": "macOS headless reading the actual exported PCK; not Windows native",
+  "pack_sha256": "305c9558d9825d5c0ebf73daf55bec492d9794ee479581c366b7db30d0f02905",
+  "results": {
+    "verify_pack_languages.gd": {
+      "en": {
+        "entries": 3690,
+        "sha256": "d232e96840e3805a63cc734c95f413507a1b3435ff82b965fa3f3d25d89cef93",
+        "title": "Night Tide Agency"
+      },
+      "zh_CN": {
+        "entries": 2651,
+        "sha256": "86e260945bec69a7ec90c9103b86c4ab2d25ba02047dfbfc7b4afcfb70b51c88",
+        "title": "夜潮事务所"
+      },
+      "zh_TW": {
+        "entries": 3685,
+        "sha256": "f1cfc19dc1531dd2d7cf498f7eabe2abeb564a22b5a1518f9897dd6303de4444",
+        "title": "夜潮事務所"
+      }
+    },
+    "verify_pack_campguide.gd": {
+      "foundation": [
+        "stories",
+        "equipment",
+        "roster"
+      ],
+      "loaded_day": 5.0,
+      "new_campaign_active": true,
+      "new_campaign_completed": false,
+      "reading_changes_resources": false,
+      "save_sha256": "ca8378ce1bb4137b8eb4d6cd54a847a43a8fe8d6d90db69b649ff1a6357b3912",
+      "saved_completion_day": 4.0,
+      "scenario": "actual continuous day05 save loaded from exported pack; read-only lesson probe"
+    }
+  }
+}

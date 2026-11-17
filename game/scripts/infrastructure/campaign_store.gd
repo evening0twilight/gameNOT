@@ -78,6 +78,7 @@ static func validate_state(s: Dictionary,content: Dictionary,expected_revision: 
 		for action: Variant in lesson.actions:
 			if not action is String or action.is_empty() or learned.has(action):return {"ok":false,"error_code":"corrupt_save"}
 			learned.append(action)
+	if s.tutorial.has("camp_lessons") and not preload("res://scripts/domain/camp_learning.gd").valid(s.tutorial.camp_lessons,content,int(s.campaign.day)):return {"ok":false,"error_code":"corrupt_save"}
 	if s.tutorial.has("field_lessons"):
 		var lesson: Variant=s.tutorial.field_lessons
 		if not lesson is Dictionary or not lesson.get("quiet") is bool or not lesson.get("known") is Array:return {"ok":false,"error_code":"corrupt_save"}

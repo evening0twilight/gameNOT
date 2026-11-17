@@ -75,9 +75,28 @@ static func movement(s: Dictionary,actor: String,goals: Array,key: String,rules:
 		# Do not spend AP circling without getting closer, unless leaving a danger cell.
 		if distance>=int(distances.get(cell_key(hero.cell),999)) and not rules.contains_cell(hazards,hero.cell):continue
 		if value<score:score=value;best=cell
-	if best.is_empty():return {"key":"blocked","action":"","cell":[]}
+	if best.is_empty():
+		# The last crew member can have AP left but too little to traverse water.
+		# Suggest a refresh instead of stranding the beginner on an empty hint.
+		if hero.ap<3:
+			var others_spent: bool=true
+			for h: Dictionary in b.heroes.values():
+				if h.id!=actor and not h.left and not h.downed and h.ap>0:others_spent=false
+			if others_spent:return {"key":"round_ready","action":"end_round","payload":{},"cell":[]}
+		return {"key":"blocked","action":"","cell":[]}
 	return {"key":"risky_move" if rules.contains_cell(hazards,best) else key,"action":"move","cell":best,"payload":{"cell":best}}
 static func next_step(s: Dictionary,content: Dictionary,actor: String) -> Dictionary:
+	var suggestion: Dictionary=actor_step(s,content,actor)
+	if suggestion.get("key","")!="blocked":return suggestion
+	# A teammate can be occupying the only useful path. Try a crew member who
+	# can actually make progress, rather than swapping repeatedly between blockers.
+	for id: String in s.battle.heroes:
+		if id==actor:continue
+		var alternative: Dictionary=actor_step(s,content,id)
+		if not alternative.get("action","").is_empty() and alternative.action not in ["end_round","emergency_retreat"]:
+			return {"key":"choose_crew","action":"","actor":id,"cell":s.battle.heroes[id].cell}
+	return suggestion
+static func actor_step(s: Dictionary,content: Dictionary,actor: String) -> Dictionary:
 	if s.campaign.phase!="battle" or not s.battle.heroes.has(actor):return {}
 	var rules: GDScript=load("res://scripts/domain/campaign_rules.gd")
 	var b: Dictionary=s.battle

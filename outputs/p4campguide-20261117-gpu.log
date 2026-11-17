@@ -1,0 +1,10 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M3
+
+PROJECT_BOOT_OK: baseline 0.18 campaign UI
+CAMP_DAY: 1
+CAMP_DAY: 2
+CAMP_DAY: 3
+CAMP_DAY: 4
+CAMP_DAY: 5
+CAMPGUIDE_RESULTS: checks=955 failures=0 commands=202

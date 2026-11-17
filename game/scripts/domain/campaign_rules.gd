@@ -1,4 +1,5 @@
 extends RefCounted
+const CampLearning=preload("res://scripts/domain/camp_learning.gd")
 const FieldLearning=preload("res://scripts/domain/field_learning.gd")
 const Appraisal=preload("res://scripts/domain/appraisal.gd")
 const Field=preload("res://scripts/domain/field_operations.gd")
@@ -31,6 +32,7 @@ static func begin_campaign(content: Dictionary,campaign_id: String,options: Dict
 	var state: Dictionary=fresh(content,campaign_id,options)
 	Crew.prepare_initial(state)
 	state.tutorial.first_shift={"enabled":true,"actions":[],"forecast":false}
+	CampLearning.initialize(state)
 	return state
 
 static func deploy(s: Dictionary, content: Dictionary, mission: String) -> void:
@@ -176,6 +178,7 @@ static func reduce(snapshot: Dictionary,command: Dictionary,content: Dictionary)
 		s.battle.safety=s.battle.safety.filter(func(mark):return mark.round==s.battle.round and s.battle.heroes.has(mark.actor) and same(s.battle.heroes[mark.actor].cell,mark.origin) and not s.battle.heroes[mark.actor].left and not s.battle.heroes[mark.actor].downed)
 	Full.after_action(s,command,content)
 	FieldLearning.record(s,snapshot,command)
+	CampLearning.record(s,snapshot,command)
 	if s.tutorial.has("first_shift") and snapshot.battle.mission_id=="M01" and snapshot.campaign.phase=="battle" and command.kind not in ["undo","tutorial_ack"]:
 		var learned: Array=s.tutorial.first_shift.actions
 		if not learned.has(command.kind):learned.append(command.kind)
@@ -229,6 +232,7 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 	var b: Dictionary = s.battle
 	var board: Dictionary = content.boards[b.mission_id]
 	Chapter.ensure(s)
+	if kind=="camp_lesson":return CampLearning.accept(s,c,content)
 	if kind=="field_lesson":return FieldLearning.accept(s,c,content)
 	if kind=="tutorial_ack":
 		if not s.tutorial.get("first_shift") is Dictionary:return "invalid_target"
