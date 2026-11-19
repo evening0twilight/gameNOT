@@ -2,12 +2,12 @@ extends Node
 
 const AUDIO_ROOT := "res://assets/product018/audio/nov13/"
 const MUSIC := {
-	"camp": "res://assets/audio018/camp.wav",
-	"battle": AUDIO_ROOT + "battle.wav",
-	"battle_high": AUDIO_ROOT + "battle_high.wav",
-	"daily": AUDIO_ROOT + "daily.wav",
-	"grave": AUDIO_ROOT + "grave.wav",
-	"ending": "res://assets/audio018/ending.wav",
+	"camp": "res://assets/product018/audio/score/camp.wav",
+	"battle": "res://assets/product018/audio/score/battle.wav",
+	"battle_high": "res://assets/product018/audio/score/battle_high.wav",
+	"daily": "res://assets/product018/audio/score/daily.wav",
+	"grave": "res://assets/product018/audio/score/grave.wav",
+	"ending": "res://assets/product018/audio/score/ending.wav",
 }
 const UI_CUES := ["ui_focus", "ui_confirm", "ui_cancel", "ui_error", "ui_page", "ui_save"]
 const FIELD_FOLEY := ["move", "work", "stabilize", "extract"]
@@ -34,6 +34,7 @@ var output_enabled: bool = DisplayServer.get_name() != "headless"
 var music: AudioStreamPlayer
 var fading_music: AudioStreamPlayer
 var music_tween: Tween
+var music_positions: Dictionary = {}
 var phase: String = ""
 var base_phase: String = "camp"
 var scene_phases: Dictionary = {}
@@ -136,7 +137,7 @@ func _update_music() -> void:
 		# source. Reversing the fade above preserves both tracks' positions.
 		if not fading_music.playing or music.volume_linear >= fading_music.volume_linear:
 			_swap_music_players()
-		music.stop()
+		_release_music(music)
 		var loop := stream.duplicate() as AudioStreamWAV
 		loop.resource_name = next
 		if loop.loop_mode == AudioStreamWAV.LOOP_DISABLED:
@@ -145,7 +146,7 @@ func _update_music() -> void:
 			loop.loop_mode = AudioStreamWAV.LOOP_FORWARD
 		music.stream = loop
 		music.volume_linear = 0.0
-		music.play()
+		music.play(float(music_positions.get(next, 0.0)))
 	phase = next
 	var incoming: AudioStreamPlayer=music
 	var outgoing: AudioStreamPlayer=fading_music
@@ -165,6 +166,10 @@ func _swap_music_players() -> void:
 	fading_music = old
 
 func _release_music(player: AudioStreamPlayer) -> void:
+	# Camp tasks often interrupt the score with a story. Returning should
+	# continue the same piece, including after the crossfade has finished.
+	if player.playing and player.stream != null:
+		music_positions[player.stream.resource_name] = fposmod(player.get_playback_position(), player.stream.get_length())
 	player.stop()
 	player.stream = null
 
@@ -320,6 +325,7 @@ func stop_audio() -> void:
 		_release_music(music)
 	if is_instance_valid(fading_music):
 		_release_music(fading_music)
+	music_positions.clear()
 	cancel_timeline()
 	for voice: AudioStreamPlayer in voices + action_voices:
 		voice.stop()

@@ -39,7 +39,7 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary,rules: Script)
 			if not o.contributors.has(h.id):o.contributors.append(h.id)
 		"xu_1":
 			var cell: Variant=p.get("cell")
-			if not valid_cell(cell) or rules.terrain(b,cell)!="." or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(str(cell)):return "invalid_target"
+			if not valid_cell(cell) or rules.terrain(b,cell)!="." or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(rules.barrier_key(b,cell)):return "invalid_target"
 			var dist: int=rules.distance(h.cell,cell)
 			if dist<1 or dist>3 or (h.cell[0]!=cell[0] and h.cell[1]!=cell[1]):return "invalid_target"
 			var d: Array=[signi(int(cell[0])-int(h.cell[0])),signi(int(cell[1])-int(h.cell[1]))]
@@ -66,7 +66,7 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary,rules: Script)
 				if b.round_markers.has("pull:"+target):return "already_used"
 				if h.cell[0]!=other.cell[0] and h.cell[1]!=other.cell[1]:return "invalid_target"
 				var cell: Array=[int(other.cell[0])+signi(int(h.cell[0])-int(other.cell[0])),int(other.cell[1])+signi(int(h.cell[1])-int(other.cell[1]))]
-				if rules.terrain(b,cell)!="." or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(str(cell)):return "invalid_target"
+				if rules.terrain(b,cell)!="." or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(rules.barrier_key(b,cell)):return "invalid_target"
 				other.cell=cell
 				b.round_markers["pull:"+target]=true
 			elif p.get("mode","move")=="ap":
@@ -95,7 +95,7 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary,rules: Script)
 			if rules.distance(h.cell,enemy.cell)==2:
 				if h.cell[0]!=enemy.cell[0] and h.cell[1]!=enemy.cell[1]:return "invalid_target"
 				var middle: Array=[int((h.cell[0]+enemy.cell[0])/2),int((h.cell[1]+enemy.cell[1])/2)]
-				if rules.blocked(b,middle) or rules.occupied(b,middle) or b.barriers.has(str(middle)):return "invalid_target"
+				if rules.blocked(b,middle) or rules.occupied(b,middle) or b.barriers.has(rules.barrier_key(b,middle)):return "invalid_target"
 			enemy.isolated=true
 		"ye_3":
 			var cell: Variant=p.get("cell")
@@ -112,8 +112,8 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary,rules: Script)
 				if not rules.contains_cell(b.insulation,at):b.insulation.append(at)
 		"he_1":
 			var cell: Variant=p.get("cell")
-			if not valid_cell(cell) or rules.distance(h.cell,cell)!=1 or rules.terrain(b,cell)!="." or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(str(cell)):return "invalid_target"
-			b.barriers[str(cell)]={"cell":cell.duplicate(),"hp":5 if lv>=5 else 3,"expires":0 if lv>=5 else b.round+1,"actor":h.id}
+			if not valid_cell(cell) or rules.distance(h.cell,cell)!=1 or rules.terrain(b,cell)!="." or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(rules.barrier_key(b,cell)):return "invalid_target"
+			b.barriers[rules.cell_key(cell)]={"cell":cell.duplicate(),"hp":5 if lv>=5 else 3,"expires":0 if lv>=5 else b.round+1,"actor":h.id}
 		"mo_1":
 			if o.is_empty() or not o.get("interaction_tags",[]).has("machine_shutdown") or o.completed or o.lost or rules.distance(h.cell,o.cell)>5:return "invalid_target"
 			for required: String in o.prerequisites:
@@ -124,7 +124,7 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary,rules: Script)
 		"mo_3":
 			var cell: Variant=p.get("cell")
 			if not b.enemies.has(target) or b.enemies[target].type!="scout" or b.enemies[target].hp<=0 or b.enemies[target].disabled:return "invalid_target"
-			if not valid_cell(cell) or rules.distance(h.cell,cell)>3 or rules.terrain(b,cell)!="." or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(str(cell)):return "invalid_target"
+			if not valid_cell(cell) or rules.distance(h.cell,cell)>3 or rules.terrain(b,cell)!="." or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(rules.barrier_key(b,cell)):return "invalid_target"
 			b.beacons[target]={"cell":cell.duplicate(),"round":b.round+1}
 		"jiang_1":
 			if h.carrying.is_empty() or other.is_empty() or not other.carrying.is_empty() or other.left or other.downed or not p.get("consent",false):return "invalid_target"

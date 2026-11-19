@@ -1,0 +1,60 @@
+{
+  "platform": "macOS / hidden GPU 1280x720",
+  "scope": "Three fresh engine processes on final checked sources; not a Windows cold start or physical input measurement. Synthetic click on the ordinary departure preview then confirmation; end at Godot post_draw.",
+  "samples": [
+    [
+      {
+        "engine_seconds": "0.992",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "preview",
+        "event_to_post_draw_ms": "11.223"
+      },
+      {
+        "engine_seconds": "1.069",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "commit",
+        "event_to_post_draw_ms": "62.890"
+      }
+    ],
+    [
+      {
+        "engine_seconds": "0.979",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "preview",
+        "event_to_post_draw_ms": "10.337"
+      },
+      {
+        "engine_seconds": "1.051",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "commit",
+        "event_to_post_draw_ms": "54.529"
+      }
+    ],
+    [
+      {
+        "engine_seconds": "1.009",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "preview",
+        "event_to_post_draw_ms": "15.909"
+      },
+      {
+        "engine_seconds": "1.093",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "commit",
+        "event_to_post_draw_ms": "73.939"
+      }
+    ]
+  ],
+  "sources_sha256": {
+    "game/scripts/app/main.gd": "cfd42d9ed7cc0ae581e27fd0aeffcccc0e796d486b5300eff3bc4c814741bfab",
+    "game/scripts/presentation/visual_assets.gd": "e1fe38b9bcb52a83b8f9c3c1cda3611fd5752dbc2bcbf4888d54e3f607e851e3",
+    "game/scripts/presentation/reference_recording.gd": "a9e9bf7a10d3e2f4c76f2e658485c13800b6f42031979b63e8170f95a156809f",
+    "game/tests/reference_recording_review.gd": "96b1f4f2cf66876d25cb12fe4c2ff3fa38c90dc2e44421112c6cbca6bf3a3829"
+  }
+}

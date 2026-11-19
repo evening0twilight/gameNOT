@@ -1,0 +1,46 @@
+{
+  "exe_sha256": "29b24a75122f0d9ab5cc22b1bd2885ac095afe8a27e546fbb3dc2c4f0e68b905",
+  "icon_png_sha256": "488004028923359cc2ff05b8b35cc95dde5fd7d0857bf0003afafcdc53e22751",
+  "ico_sha256": "5140085a2756c84707c74cdddb81136418855c0ec3ca02525883e0263496967f",
+  "method": "Decode the Windows PE RT_GROUP_ICON and its referenced RT_ICON entries, compare all RGBA pixels to the supplied ICO at each size and the source PNG at 256px.",
+  "resource_groups": [
+    {
+      "resource_group": "",
+      "sizes": [
+        [
+          16,
+          16
+        ],
+        [
+          32,
+          32
+        ],
+        [
+          48,
+          48
+        ],
+        [
+          64,
+          64
+        ],
+        [
+          128,
+          128
+        ],
+        [
+          256,
+          256
+        ]
+      ],
+      "matches_rgba": true,
+      "matches_ico_resource": {
+        "16": true,
+        "32": true,
+        "48": true,
+        "64": true,
+        "128": true,
+        "256": true
+      }
+    }
+  ]
+}

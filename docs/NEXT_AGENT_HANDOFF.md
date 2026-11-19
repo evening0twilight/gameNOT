@@ -1,9 +1,15 @@
 # 接手入口：夜潮事务所 0.18
 
-更新：2026-11-17（Asia/Singapore）。仓库：https://github.com/evening0twilight/gameNOT 。用户已授权直接提交/推送 main；不发布商店版本。先读本文件，再看本轮差异表和冻结设计。
+更新：2026-11-19（Asia/Singapore）。仓库：https://github.com/evening0twilight/gameNOT 。用户已授权直接提交/推送 main；不发布商店版本。先读本文件，再看本轮差异表和冻结设计。
 
 ## 当前进度（优先于下方历史记录）
 
+
+本次为 `p4release-20261119`。发行判断为 **NO-GO**。请先看[逐项验收](p4-release-20261119/validation.md)、[本轮状态](p4-release-20261119/release-status.md)及[正式战役中的角色选择](p4-release-20261119/campaign.md)。第 5 节列出新的复现入口。冻结基线和存档版本仍为 0.18 与 8。
+
+本机交付包为 `build/night-tide-0.18-p4release-20261119-windows.zip`，157843219 bytes，SHA256 `72a0c0e9457f43ce922e95d5df117c42de5914ed67096761372f4f6782f5dbf4`。[构建收据](p4release-20261119-build.json)对应48组统一检查与499个生产文件。[证据索引](p4-release-20261119/evidence-index.json)把最终截图、存档、验具、实包验证和 Mac 计时绑定到同一候选。20份旧通用输出已恢复原字节，新生成内容保存在独立前缀。Windows 与真人验收仍开放。
+
+### 2026-11-17 营地返修（历史）
 
 2026-11-17 最新营地引导返修见 `docs/p4-campguide-20261117/review.md`、`validation.md`。新周目第2晚故事、第3晚已有装备、第4晚配队；结束第4晚才保存基础教程完成，第5天起仍保留现场逐项教学。营地采购逐件、设施逐处，带教看真实资格，证据/公开/路线各自独立；限时支援与第23晚优先提示。旧档无camp_lessons时保留原入口，不强制重学。冻结设计、角色/资源/经验和runtime_revision=8未改。
 
@@ -137,20 +143,17 @@ README下半部、P1/P2/P3/P4旧报告、technical-setup-handoff、p1/p3-handoff
 
 ## 5. 下一步从这里继续：核对 P4-018-01 与 P4-018-02/03 验收
 
-**接手后的第一项工作是对照0.18清单核查剩余产品差异，而不是重建核心框架、直接发行、再补几个动画后宣称完成。**
+按 [11 月 19 日验收表](p4-release-20261119/validation.md) 核对 R01–R08/H01–H04。遇到缺陷要保留当天存档、输入步骤与本包 SHA256，修复对应入口后再交付新包。
 
-1. 建立逐项剩余项表（可以新建 `docs/p4-018-remaining.md`）：每项写权威字段、当前生产入口、实际玩家行为、证据、未满足部分和关闭条件。沿用R01–R06/A–D编号；已修项复核证据，发现回归再打开。
-2. 优先核对已知仍不充分的内容：
-   - 8人正/侧/三分之二设定、轮廓与96px辨识；当前是图集，并未交付完整独立三视设定板。服装图与表情特写分开显示，**不能声称已完成定稿要求的分层脸部复用成品**。核查后完成或取得用户对具体替代方案的明确认可，不能自行算作验收。
-   - 初始3人的首次接触目前已在默认阵容，直接选择主要是保持阵容/查看档案；后加入人物可以替换下次阵容。检查是否真正满足“外形、说话方式、一次有用选择、日常反差”，不要把已读介绍当有用玩法选择。
-   - 8人各等级专长的普通方案对比、可遇到的使用场景与机会成本；补缺失的实际玩法证据。既有首专长覆盖不能代替全部养成体验。
-   - 96节点所有适用正常/重伤/离队/知情分支的实际台词与选择、身体动作、摘要和回看，特别是只做过规则覆盖的42节点。不要把“文本非空”当内容合格。
-   - 12地点套件、敌人/居民/棋子、48图标的真实用途和辨识；核查按钮/引导、难度披露、夜间安排的信息负担。既有截图和资源数量只作线索。
-3. 对确认的缺口直接在正式工程修复；按变化做相关规则/剧情/布局检查，并实际看对应界面。新截图优先使用正式连续周目存档，隔离夹具必须标明，不能灌经验后称真实成长。
-4. 实现对齐后进入 **P4-018-02 Windows候选包与用户实测**：全量检查、导出新包、记录源代码与包哈希，按 `docs/baseline018-windows-checklist.txt` 请用户后续实测并记录问题。沿用用户已说好的方式，不再索要远程入口。
-5. 最后 **P4-018-03 体验/性能/审美验收**：对照 `acceptance.json`，取得目标8GB机器1080p性能、冷启动/输入反馈、连续2小时内存、新人试玩、人物辨识和音乐听感的真实证据。未达到就继续修，缺证据就标待验收。全项具备才能关闭P4；未经授权不发布商店。
+1. P4-018-01 已有新周目 24 天可见控件走查、三条逐晚读盘路线、八人同时点对照、96 节点三语审读、12 地点棋盘和六首运行时配乐。完整人工节奏、96px 辨认、台词自然度和听感仍待实测。详见同目录 campaign.md、story-review.md、audio-handoff.md。
+2. P4-018-02 使用下列命令重建并独立核对 ZIP 内的 PCK。使用默认历史检查，保留旧证据原字节。正式安装包不进 Git。
+3. P4-018-03 继续按本候选的[实测单](p4-release-20261119/windows-review.md)、[采样说明](p4-release-20261119/reference-session.md)和验收表获取 Windows 11 x64 8GB 的实际采样、5 人首战与一章记录、5 份完整周目观察。旧包实测不能移作本包证据。发现阻断缺陷即继续返修。
 
-用户希望持续推进，不要每修一项就问要不要继续。不要用“完整战役可执行”替换“与定稿完整一致且验收通过”。必须需要用户的输入时，指出具体尚缺事实；可独立进行的实现继续做。
+```sh
+python3 tools/check_product018.py --full --jobs 3 --report-prefix p4release-20261119
+python3 tools/build_windows_product018.py --candidate p4release-20261119 --review-dir docs/p4-release-20261119
+python3 tools/verify_release_pack.py --candidate p4release-20261119 --review-dir docs/p4-release-20261119
+```
 
 ## 6. 新账号/新克隆如何启动
 
@@ -167,8 +170,8 @@ Linux（适合API代理/CI，无第三方Python包）：
 python3 tools/bootstrap.py linux
 python3 tools/bootstrap.py templates
 export GODOT="$PWD/work/toolchain/linux/Godot_v4.7.2-stable_linux.x86_64"
-python3 tools/check_product018.py --full
-python3 tools/build_windows_product018.py
+python3 tools/check_product018.py --full --jobs 3 --report-prefix p4release-20261119
+python3 tools/build_windows_product018.py --candidate p4release-20261119 --review-dir docs/p4-release-20261119
 ```
 
 Windows PowerShell（Python已安装）：
@@ -177,8 +180,8 @@ Windows PowerShell（Python已安装）：
 python tools/bootstrap.py windows
 python tools/bootstrap.py templates
 $env:GODOT = (Resolve-Path 'work/toolchain/windows/Godot_v4.7.2-stable_win64.exe').Path
-python tools/check_product018.py --full
-python tools/build_windows_product018.py
+python tools/check_product018.py --full --jobs 3 --report-prefix p4release-20261119
+python tools/build_windows_product018.py --candidate p4release-20261119 --review-dir docs/p4-release-20261119
 ```
 
 原 macOS 工作机：`/Users/a1-6/projects/person/gameNOT`；默认引擎为 `work/toolchain/godot-4.7.2/Godot.app/Contents/MacOS/Godot`，已安装的 Windows 导出模板仍可离线使用。新 Mac 需自行准备锁定版本并使用 `GODOT` 指向可执行文件；bootstrap 当前没有 macOS 引擎下载目标。

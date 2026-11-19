@@ -1,0 +1,19 @@
+夜潮事务所 · Night Tide Agency
+
+完整解压后打开 night-tide.exe。让 night-tide.pck 和它留在同一个文件夹。标题页的「语言 / Language」可选简体中文、繁體中文、English。日常游玩和存档都在本机完成。
+
+第一次值班
+新周目从三个人和一班渡轮开始。选「开始救援 · 边做边学」。第一步只需点「移动」和一个亮格。路线会留在棋盘上，底部预览显示行动点和落点；确认才走。一步步靠近、稳定、拾起、送回箭头出口，最后队员也要离场。橙纹标出机器预告，结束回合才执行。右键或 Esc 可以取消选择，F1 打开说明。
+
+收班之后可以直接结束今晚。没安排额外项目的人也会睡眠恢复。第二晚开始读伙伴故事，第三晚使用已有装备，第四晚安排下一班。基础教学完成后，学过的入口保留在营地和手册里，新操作随现场出现。行动有不同结算；有些成果保不住也可以继续下去。
+
+读回和设置
+返回标题可继续上次的周目。游戏保留自动存档、上一份备份和手动槽。开始新的周目会另存一份。如果自动档损坏，可以从标题或「切换周目」查看可用的备份和手动槽，选中后恢复。音量、语言、字号和减少动态效果可在设置中调整。动画期间空格跳过表现，Esc 暂停。移交试玩记录时请使用自己的测试周目。
+
+繁體中文
+將整個壓縮檔解壓縮，再開啟 night-tide.exe。選擇「語言 / Language」切換介面。第一次出勤從「移動」開始，點亮起的格子查看路線，再按確認。回到營地後可以直接結束當晚，沒有安排工作的人也會休息。舊進度可從標題畫面繼續。
+
+English
+Extract the whole archive and open night-tide.exe. Keep the PCK file beside it. Use Language on the title screen and start a new campaign. On the ferry, select Move and a lit tile. Check the route and confirm to spend an action. Watch the crew's prompts as the rescue unfolds. At camp you can end the night without assigning projects. The game saves locally. Open Settings to change text size, music, effects or motion. Press F1 for the field guide.
+
+准备进行正式观察的新人只需拿到游戏和启动方法。THIS-BUILD-REVIEW.md、REFERENCE-SESSION.md 和 playtest-form.csv 供组织试玩的人使用。

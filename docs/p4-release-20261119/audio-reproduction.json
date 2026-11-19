@@ -1,0 +1,16 @@
+{
+  "source_archive": "outputs/p4release-20261119/audio-sources/",
+  "generator": "tools/master_release_score.py",
+  "numpy": "2.5.5",
+  "scipy": "1.18.1",
+  "python": "3.12.10",
+  "ffmpeg": "ffmpeg version 8.1.2 Copyright (c) 2000-2026 the FFmpeg developers",
+  "rebuilt_wav_hashes_match": [
+    "camp",
+    "battle",
+    "battle_high",
+    "daily",
+    "grave",
+    "ending"
+  ]
+}

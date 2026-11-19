@@ -3,6 +3,7 @@ const Screens=preload("res://scripts/presentation/campaign_screens.gd")
 const StoryFacts=preload("res://scripts/presentation/story_facts.gd")
 const Crew=preload("res://scripts/domain/crew_journey.gd")
 var title_screen: bool=true
+var title_load_error: String=""
 var animation_rate: float=1.0
 var reduced_motion: bool=false
 var paused: bool=false
@@ -10,6 +11,7 @@ var conflict_notices: Array=[]
 const Audio=preload("res://scripts/presentation/audio_controller.gd")
 var sound: Node
 var metrics: Node
+var reference_recording: Node
 const Product=preload("res://scripts/domain/product_systems.gd")
 const FieldGuide=preload("res://scripts/presentation/field_guide.gd")
 var full_preparation: bool=false
@@ -30,6 +32,7 @@ const Chapter=preload("res://scripts/domain/chapter_one.gd")
 const Stories=preload("res://scripts/domain/chapter_stories.gd")
 var reading_scene: String=""
 const Art=preload("res://scripts/presentation/visual_assets.gd")
+const Readable=preload("res://scripts/presentation/tactical_readability.gd")
 const BoardView=preload("res://scripts/presentation/tactical_board.gd")
 var panel_tab: String="actions"
 var visual_previous: Dictionary={}
@@ -40,10 +43,30 @@ var actor_facings: Dictionary={}
 var feedback_elapsed: float=0.0
 func feedback_seconds() -> float:return feedback_elapsed
 func feedback_active() -> bool:return not feedback_plan.is_empty()
+var ferry_pending: Array[String] = []
+var ferry_textures: Array[Resource] = []
+
 func _process(_delta: float) -> void:
+	if not ferry_pending.is_empty():
+		for i: int in range(ferry_pending.size()-1,-1,-1):
+			var path := ferry_pending[i]
+			var status := ResourceLoader.load_threaded_get_status(path)
+			if status == ResourceLoader.THREAD_LOAD_IN_PROGRESS:
+				continue
+			if status == ResourceLoader.THREAD_LOAD_LOADED:
+				ferry_textures.append(ResourceLoader.load_threaded_get(path))
+			ferry_pending.remove_at(i)
+	if not ferry_textures.is_empty() and ferry_pending.is_empty() and (title_screen or session.state.campaign.phase != "briefing"):
+		# Atlases used by custom board drawing acquire their references during
+		# the first draw, after _process. Keep prepared textures until then.
+		if not RenderingServer.frame_post_draw.is_connected(release_ferry_textures):
+			RenderingServer.frame_post_draw.connect(release_ferry_textures, CONNECT_ONE_SHOT)
 	if feedback_active() and not paused:
 		feedback_elapsed+=_delta*animation_rate
 		if feedback_elapsed>=float(feedback_plan.duration):finish_feedback(true)
+func release_ferry_textures() -> void:
+	ferry_textures.clear()
+
 func finish_feedback(completed: bool=false) -> void:
 	if completed:sound.finish_timeline()
 	else:sound.cancel_timeline()
@@ -88,6 +111,7 @@ var font_size: int = 20
 var sequence: int = 0
 var root: VBoxContainer
 var confirmation_text: Label
+var confirmation_origin: int=0
 var confirmation: ConfirmationDialog
 func _ready() -> void:
 	var acceptance: bool="--acceptance-test" in OS.get_cmdline_user_args()
@@ -133,7 +157,7 @@ func _ready() -> void:
 	var loaded: Dictionary=session.load_game()
 	if not loaded.ok:
 		session.state=Rules.begin_campaign(content,"title-preview")
-		if loaded.error_code!="missing_save":message=I18n.t("baseline018.213b98e39610")+error_text(loaded.error_code)
+		if loaded.error_code!="missing_save" or not Session.recovery_files(session.path).is_empty():title_load_error=loaded.error_code
 	if acceptance:title_screen=false
 	confirmation=ConfirmationDialog.new()
 	confirmation.title=I18n.t("ui.fa9622b77529")
@@ -141,6 +165,7 @@ func _ready() -> void:
 	confirmation.ok_button_text=I18n.t("ui.68a35e224268")
 	confirmation.cancel_button_text=I18n.t("ui.2cd0f3be8738")
 	confirmation.confirmed.connect(commit_pending)
+	confirmation.canceled.connect(cancel_preview_dialog)
 	add_child(confirmation)
 	confirmation.get_label().hide()
 	var preview_scroll:=ScrollContainer.new();preview_scroll.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
@@ -149,6 +174,8 @@ func _ready() -> void:
 	confirmation_text=Label.new();confirmation_text.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;confirmation_text.size_flags_horizontal=Control.SIZE_EXPAND_FILL
 	preview_scroll.add_child(confirmation_text)
 	render()
+	if "--reference-session" in OS.get_cmdline_user_args() and not OS.get_environment("NIGHT_TIDE_REVIEW_DIR").is_empty():
+		reference_recording=preload("res://scripts/presentation/reference_recording.gd").new();add_child(reference_recording)
 	print("PROJECT_BOOT_OK: baseline 0.18 campaign UI")
 	if acceptance:
 		var runner=preload("res://scripts/app/native_acceptance.gd").new();add_child(runner);runner.call_deferred("run",self)
@@ -197,11 +224,12 @@ func render() -> void:
 	sound.ambience(music_context())
 	var header:=HBoxContainer.new();root.add_child(header)
 	var title:=VBoxContainer.new();title.size_flags_horizontal=Control.SIZE_EXPAND_FILL;header.add_child(title)
-	var heading:=label(title,I18n.t("ui.ea0219b09f08"));heading.add_theme_font_size_override("font_size",20 if s.campaign.phase=="battle" or feedback_active() else 28);heading.add_theme_color_override("font_color",TEAL)
 	var displayed_mission: String=s.journey.next_mission if s.campaign.phase=="briefing" else s.battle.mission_id
 	var subtitle:=label(title,I18n.t("ui.6b73f6729147") % [s.campaign.day,I18n.content("boards",displayed_mission,"title",session.content.boards[displayed_mission].title)])
-	subtitle.add_theme_color_override("font_color",MUTED);subtitle.add_theme_font_size_override("font_size",16)
+	subtitle.add_theme_color_override("font_color",INK);subtitle.add_theme_font_size_override("font_size",maxi(20,font_size))
+	header.add_theme_constant_override("separation",14)
 	for currency: String in ["credits","supplies","parts"]:
+		if FirstShift.enabled(self) and not full_preparation and s.campaign.day==1 and s.campaign.phase in ["briefing","battle"]:break
 		var balance:=HBoxContainer.new();header.add_child(balance)
 		var glyph:=TextureRect.new();glyph.texture=Art.icon(currency);glyph.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;glyph.custom_minimum_size=Vector2(24,24);glyph.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;balance.add_child(glyph)
 		var value_label:=label(balance,I18n.t("journey.currency."+currency)%int(s.inventory[currency]));value_label.autowrap_mode=TextServer.AUTOWRAP_OFF
@@ -236,7 +264,9 @@ func render() -> void:
 	var status_message: String=message
 	if message==I18n.t("ui.28efa9cc44f6") and s.campaign.phase!="battle":status_message=I18n.t("journey.status_briefing" if s.campaign.phase=="briefing" else "journey.status_camp")
 	if s.chapter_one.finished:status_message=I18n.t("journey.status_ending")
-	if title_screen:status_message=I18n.t("journey.status_title")
+	if title_screen:
+		status_message=I18n.s("无法继续这个自动存档，可恢复备份或选择其他周目。") if not title_load_error.is_empty() else message
+		notice.visible=not title_load_error.is_empty() or message.begins_with(I18n.t("error.save").get_slice("%",0))
 	var status:=label(status_row,status_message);status.add_theme_font_size_override("font_size",16);status.max_lines_visible=3
 	if feedback_active():
 		button(status_row,I18n.t("baseline018.8d12fc0d4eb2"),pause_menu)
@@ -247,7 +277,7 @@ func render() -> void:
 		button(status_row,I18n.t("p4.cancel_action"),cancel_selection).add_theme_font_size_override("font_size",16)
 	confirmation.title=I18n.t("ui.db51313720b4");confirmation.ok_button_text=I18n.t("ui.68a35e224268");confirmation.cancel_button_text=I18n.t("ui.2cd0f3be8738")
 func settings_action(index: int) -> void:
-	if index==12:title_screen=true;render();return
+	if index==12:return_to_title();return
 	if index==13:pause_menu();return
 	match index:
 		0:save_manual()
@@ -315,6 +345,16 @@ func object_name(id: String) -> String:
 	return I18n.content("objects",session.state.battle.mission_id+"."+id,"label",str(o.get("label","")))
 func actor_name(id: String) -> String:
 	return I18n.content("characters",id,"name",session.state.actors[id].name) if session.state.actors.has(id) else I18n.t("ui.5c6114712d44") % id.right(1)
+func target_label(id: String) -> String:
+	var battle: Dictionary=session.state.battle
+	if battle.objects.has(id):return Readable.code(session.content.boards[battle.mission_id],battle,id)+" · "+object_name(id)
+	if battle.enemies.has(id):
+		var enemy: Dictionary=battle.enemies[id]
+		return I18n.t("quality.enemy."+enemy.type)+" "+Readable.cell_text(enemy.cell)
+	if battle.heroes.has(id) or session.state.actors.has(id):return actor_name(id)
+	if id=="live_service":return I18n.s("现场设施")
+	return I18n.s(id)
+
 func click_cell(cell: Array) -> void:
 	if feedback_active():return
 	if action=="drop":propose("drop",{"cell":cell});return
@@ -327,10 +367,10 @@ func click_cell(cell: Array) -> void:
 	var candidates: Array=[]
 	if action in ["stabilize","pickup","interact"] or (action=="protocol" and protocol=="protected_work") or (action=="use_tool" and tool in ["crowbar","scanner"]):
 		for object: Dictionary in session.state.battle.objects.values():
-			if Rules.same(object.cell,cell) and not object.lost and not object.delivered:candidates.append(object.id)
+			if Rules.same(object.cell,cell) and not object.lost and not object.delivered and not object.has("unavailable_reason"):candidates.append(object.id)
 		if candidates.size()>1:
 			var chooser:=modal(I18n.t("baseline018.56ce9faa674f"))
-			for id: String in candidates:button(chooser.box,object_name(id)+" · "+id,func():chooser.window.queue_free();choose_object(id))
+			for id: String in candidates:button(chooser.box,target_label(id),func():chooser.window.queue_free();choose_object(id))
 			return
 	if action=="cross_anchor":propose(action,{"cell":cell});return
 	if action=="use_tool":
@@ -359,10 +399,12 @@ func click_cell(cell: Array) -> void:
 		var targets: Array=[]
 		for collection: Dictionary in [session.state.battle.objects,session.state.battle.enemies,session.state.battle.heroes]:
 			for target: Dictionary in collection.values():
+				if target.get("left",false) or target.get("lost",false) or target.get("delivered",false) or target.has("unavailable_reason"):continue
+				if target.has("type") and target.hp<=0:continue
 				if Rules.same(target.cell,cell):targets.append(target.id)
 		if targets.size()>1:
 			var chooser:=modal(I18n.t("baseline018.0a5b6bee9e4b"))
-			for id: String in targets:button(chooser.box,object_name(id) if session.state.battle.objects.has(id) else (actor_name(id) if session.state.battle.heroes.has(id) else id),func():chooser.window.queue_free();specialty_click(id))
+			for id: String in targets:button(chooser.box,target_label(id),func():chooser.window.queue_free();specialty_click(id))
 		elif targets.size()==1:specialty_click(targets[0])
 		return
 	if action=="move": propose(action,{"cell":cell}); return
@@ -384,49 +426,63 @@ func render_camp(body: HBoxContainer) -> void:
 		return
 	if s.campaign.phase=="settlement" and s.battle.mission_id=="M01" and FirstShift.enabled(self):
 		FirstShift.settlement(self,box);return
-	Screens.recruits(self,box)
-	var nav:=HFlowContainer.new();box.add_child(nav)
-	button(nav,I18n.t("baseline018.b2bc2ee20311"),func():Screens.roster_page(self))
-	button(nav,I18n.t("journey.city_button"),func():Screens.city(self))
-	button(nav,I18n.t("baseline018.00768fb3f70c"),func():Screens.relationships(self))
-	var banner:=HBoxContainer.new();banner.add_theme_constant_override("separation",16);box.add_child(banner)
-	var atmosphere=Art.picture(Art.narrative("office"),Vector2(380,120 if s.campaign.phase=="camp" else 200));atmosphere.size_flags_horizontal=Control.SIZE_EXPAND_FILL;banner.add_child(atmosphere)
-	var summary:=PanelContainer.new();summary.add_theme_stylebox_override("panel",surface(SURFACE,12));summary.size_flags_horizontal=Control.SIZE_EXPAND_FILL;banner.add_child(summary)
-	var overview:=VBoxContainer.new();summary.add_child(overview)
-	label(overview,I18n.t("camp.title")).add_theme_color_override("font_color",TEAL)
-	label(overview,risk_text(s) if s.campaign.phase=="settlement" else risk_text(s).split("\n")[0])
+	render_settlement(box)
+
+func render_settlement(box: VBoxContainer) -> void:
+	var s: Dictionary=session.state
+	var board: Dictionary=session.content.boards[s.battle.mission_id]
 	var result: Dictionary=s.campaign.last_result
-	label(overview,I18n.t("camp.summary") % resource_text(result.reward))
-	for entry: Dictionary in (result.get("reward_rows",[]) if s.campaign.phase=="settlement" else []):label(overview,entry.reason+"："+resource_text(entry.resources))
-	for id: String in (result.get("xp_receipts",{}).keys() if s.campaign.phase=="settlement" else []):
+	var title:=label(box,I18n.content("boards",board.id,"title",board.title))
+	title.add_theme_font_size_override("font_size",28);title.add_theme_color_override("font_color",GOLD)
+	var banner:=HBoxContainer.new();banner.add_theme_constant_override("separation",16);box.add_child(banner)
+	var site:=Art.site_picture(board.location,Vector2(0,132));site.size_flags_stretch_ratio=.8;banner.add_child(site)
+	var summary:=VBoxContainer.new();summary.size_flags_horizontal=Control.SIZE_EXPAND_FILL;banner.add_child(summary)
+	label(summary,"\n".join(risk_text(s).split("\n").slice(0,2)))
+	label(summary,I18n.t("camp.summary") % resource_text(result.reward))
+	var next:=HFlowContainer.new();box.add_child(next)
+	var camp:=button(next,I18n.t("ui.6de354f5f7cd"),func():propose("enter_camp",{}))
+	camp.add_theme_stylebox_override("normal",surface(Color("35524c"),8,TEAL))
+	var sides: Array=Chapter.side_available(s,session.content)
+	for side: String in sides:
+		button(next,I18n.t("p2.side") % I18n.content("boards",side,"title",session.content.boards[side].title),func():prepare_mission(side,true))
+	Screens.recruits(self,box)
+	for entry: Dictionary in session.content.domains.scripts.community:
+		if entry.source!=s.battle.mission_id:continue
+		label(box,StoryFacts.community(s,session.content,entry).text)
+		var flag: String="community."+entry.source+".public"
+		if s.chapter_one.flags.has(flag):
+			var choice: String="publish" if s.chapter_one.flags[flag] else "archive"
+			label(box,story_lines(entry.id,"choices."+choice,entry.choices[choice]))
+		else:
+			var options:=HFlowContainer.new();box.add_child(options)
+			for choice: String in ["publish","archive"]:
+				button(options,I18n.t("p2.community_"+choice),func():propose("community_report",{"choice":choice}))
+	var records:=HFlowContainer.new();box.add_child(records)
+	button(records,I18n.s("查看完整结算"),show_settlement_details)
+	button(records,I18n.t("baseline018.b2bc2ee20311"),func():Screens.roster_page(self))
+	button(records,I18n.t("journey.city_button"),func():Screens.city(self))
+	button(records,I18n.t("baseline018.00768fb3f70c"),func():Screens.relationships(self))
+	for side: String in sides:
+		button(records,I18n.t("baseline018.bc5141d3c6cc")+I18n.content("boards",side,"title",session.content.boards[side].title),func():propose("decline_side",{"mission":side}))
+
+func show_settlement_details() -> void:
+	var dialog:=modal(I18n.s("查看完整结算"))
+	var box: VBoxContainer=dialog.box
+	var s: Dictionary=session.state
+	var result: Dictionary=s.campaign.last_result
+	label(box,risk_text(s))
+	for row: Dictionary in result.get("reward_rows",[]):
+		label(box,I18n.s(row.reason)+" · "+resource_text(row.resources))
+	for id: String in result.get("xp_receipts",{}):
 		var growth: Dictionary=result.xp_receipts[id]
-		label(overview,actor_name(id)+I18n.t("baseline018.aa68ce525b6c")%[growth.before,growth.after,{"main":I18n.t("baseline018.11ac606f3fa7"),"side":I18n.t("baseline018.d9df006540bb"),"support":I18n.t("baseline018.9588f74237f4")}.get(growth.source,growth.source)])
-	var facts:=HFlowContainer.new();overview.add_child(facts)
-	for id: String in (result.facts.keys() if s.campaign.phase=="settlement" else []):
-		var fact:=Label.new();fact.text="%s · %s   " % [object_name(id),{"saved":I18n.t("ui.1fb12e48bde3"),"completed":I18n.t("ui.f28461bb49c8"),"lost":I18n.t("ui.c9cc5aa759c6"),"unresolved":I18n.t("ui.6707de42c29d")}.get(result.facts[id],I18n.t("event.unknown"))];facts.add_child(fact)
-	if s.campaign.phase=="settlement":
-		if s.chapter_one.finished:
-			render_ending(box)
-			return
-		for entry: Dictionary in session.content.domains.scripts.community:
-			if entry.source!=s.battle.mission_id:continue
-			label(overview,StoryFacts.community(s,session.content,entry).text)
-			var flag: String="community."+entry.source+".public"
-			if s.chapter_one.flags.has(flag):
-				var choice: String="publish" if s.chapter_one.flags[flag] else "archive"
-				label(overview,story_lines(entry.id,"choices."+choice,entry.choices[choice]))
-			else:
-				for choice: String in ["publish","archive"]:
-					button(overview,I18n.t("p2.community_"+choice),func():propose("community_report",{"choice":choice}))
-		Screens.appraisal_log(self,overview)
-		for side: String in Chapter.side_available(s,session.content):
-			button(overview,I18n.t("p2.side") % I18n.content("boards",side,"title",session.content.boards[side].title),func():prepare_mission(side,true))
-		for side: String in Chapter.side_available(s,session.content):button(overview,I18n.t("baseline018.bc5141d3c6cc")+session.content.boards[side].title,func():propose("decline_side",{"mission":side}))
-		button(overview,I18n.t("ui.6de354f5f7cd"),func():propose("enter_camp",{}))
-		return
-	preload("res://scripts/presentation/camp_workspace.gd").show(self,box)
+		var source: String={"main":I18n.t("baseline018.11ac606f3fa7"),"side":I18n.t("baseline018.d9df006540bb"),"support":I18n.t("baseline018.9588f74237f4")}.get(growth.source,growth.source)
+		label(box,actor_name(id)+I18n.t("baseline018.aa68ce525b6c")%[growth.before,growth.after,source])
+	for id: String in result.facts:
+		label(box,object_name(id)+" · "+I18n.t("p3.fact_"+result.facts[id]))
+	Screens.appraisal_log(self,box)
 func propose(kind: String,payload: Dictionary) -> void:
 	if feedback_active():return
+	if is_instance_valid(reference_recording):reference_recording.observe_command(kind,"preview")
 	sequence+=1
 	if guidance_enabled:
 		var hint: Dictionary=Guidance.card(session.state,session.content)
@@ -436,6 +492,7 @@ func propose(kind: String,payload: Dictionary) -> void:
 	pending={"command_id":"ui-%d-%d-%d" % [Time.get_ticks_usec(),session.state.revision,sequence],"expected_revision":session.state.revision,"kind":kind,"actor_id":selected,"payload":payload,"root_decision_id":"decision-%d" % sequence}
 	var preview: Dictionary = session.preview(pending)
 	if not preview.ok:
+		inline_pending=false;pending={}
 		message=I18n.t("error.action") % error_text(preview.error_code)
 		sound.play("ui_error");render()
 		if preview.error_code=="relationship_safeguard_required":
@@ -451,10 +508,27 @@ func propose(kind: String,payload: Dictionary) -> void:
 		render();return
 	confirmation_text.text=I18n.t("ui.32942064f5c9") % [action_name(kind),preview.costs.ap,resource_text(preview.costs.resources),risk_text(preview.next_state) if kind in ["emergency_retreat","end_round","leave_site"] else I18n.t("ui.dcb6036882a9")]
 	var changes: Array[String]=[]
-	changes.append(I18n.t("baseline018.0c7188e33d47")+actor_name(selected)+(I18n.t("baseline018.659950576da9")+actor_name(str(payload.partner)) if payload.has("partner") else ""))
-	if payload.has("target"):changes.append(I18n.t("baseline018.4d2d25a2888d")+(object_name(str(payload.target)) if session.state.battle.objects.has(str(payload.target)) else str(payload.target))+" ["+str(payload.target)+"]")
-	if payload.has("cell"):changes.append(I18n.t("baseline018.1d5ca789d6b9")+str(payload.cell))
-	changes.append(I18n.t("baseline018.75787a40d819")+risk_text(preview.next_state))
+	if kind in ["depart","next_mission","start_side"] and preview.next_state.campaign.phase=="battle":
+		var crew_names: Array[String]=[]
+		for id: String in preview.next_state.battle.heroes:crew_names.append(actor_name(id))
+		changes.append(I18n.s("出勤：")+(", " if I18n.locale=="en" else "、").join(crew_names))
+	elif session.state.campaign.phase=="battle" and kind not in ["end_round","emergency_retreat"]:
+		changes.append(I18n.t("baseline018.0c7188e33d47")+actor_name(selected)+(I18n.t("baseline018.659950576da9")+actor_name(str(payload.partner)) if payload.has("partner") else ""))
+	if kind=="select_route":
+		var route: String=preview.next_state.full_campaign.route
+		var finale: Dictionary=session.content.boards.M24
+		changes.append(I18n.t("p3.selected_route")%I18n.t("p3.route_"+route))
+		changes.append(I18n.s("本次要完成"))
+		for group: Array in Full.groups(preview.next_state,finale):
+			var objectives: Array[String]=[]
+			for id: String in group:
+				for objective: Dictionary in finale.objectives:
+					if objective.id==id:objectives.append(I18n.content("objects","M24."+id,"label",objective.label))
+			changes.append(" · "+" / ".join(objectives))
+	if payload.has("target"):changes.append(I18n.t("baseline018.4d2d25a2888d")+target_label(str(payload.target)))
+	if payload.has("cell"):changes.append(I18n.t("baseline018.1d5ca789d6b9")+Readable.cell_text(payload.cell))
+	if preview.next_state.campaign.phase=="battle" and kind not in ["end_round","leave_site","emergency_retreat"]:
+		changes.append(I18n.t("baseline018.75787a40d819")+risk_text(preview.next_state))
 	if kind=="protocol":changes.append_array(cooperation_details(payload))
 	if kind in ["end_round","leave_site","emergency_retreat"]:
 		for id: String in session.state.battle.heroes:
@@ -492,7 +566,7 @@ func propose(kind: String,payload: Dictionary) -> void:
 	var service: Dictionary=preview.next_state.battle.get("service",{})
 	if not service.is_empty() and service!=session.state.battle.get("service",{}):
 		changes.append(I18n.t("baseline018.1102fd4f05eb")%[service.ticks,service.definition.consecutive_rounds,I18n.t("baseline018.c0b3fbff51cc") if service.done else (I18n.t("baseline018.9aeb9b8ba679") if service.failed else I18n.t("baseline018.dc9591e56d50"))])
-	if preview.next_state.battle.get("exits",[])!=session.state.battle.get("exits",[]):changes.append(I18n.t("baseline018.048630905cca")+str(preview.next_state.battle.exits))
+	if preview.next_state.battle.get("exits",[])!=session.state.battle.get("exits",[]):changes.append(I18n.t("baseline018.048630905cca")+Readable.cell_list(preview.next_state.battle.exits))
 	for id: String in session.state.actors:
 		var before: Dictionary=session.state.actors[id]
 		var after: Dictionary=preview.next_state.actors[id]
@@ -516,16 +590,38 @@ func propose(kind: String,payload: Dictionary) -> void:
 	for id: String in preview.next_state.product.withdrawn:
 		if not session.state.product.withdrawn.has(id):changes.append(I18n.t("p4.withdrawal_warning") % actor_name(id))
 	if not changes.is_empty():confirmation_text.text+=I18n.t("ui.d7b6fc9ef523")+"\n".join(changes)
+	# queue_free() runs at the end of this frame. A chooser may still own
+	# the exclusive focus while its button is requesting this preview.
+	confirmation_origin=0
+	for child: Node in get_children():
+		if child is Window and child!=confirmation and child.visible:
+			confirmation_origin=child.get_meta("return_window_id",0) if child.is_queued_for_deletion() else child.get_instance_id()
+			child.hide()
 	confirmation.popup_centered_clamped(Vector2i(820,560),.95)
+
+func cancel_preview_dialog() -> void:
+	pending={};inline_pending=false
+	call_deferred("restore_modal",confirmation_origin)
+	confirmation_origin=0
+	render()
+
 func commit_pending() -> void:
 	focus_cell=[]
 	if feedback_active() or pending.is_empty():return
+	if is_instance_valid(reference_recording):reference_recording.observe_command(pending.kind,"commit")
 	inline_pending=false
 	var input_start: int=Time.get_ticks_usec()
 	var previous_state: Dictionary=session.state
 	var before: Dictionary=session.state.battle.duplicate(true)
 	var result: Dictionary = session.submit(pending)
 	var saved_at: int=Time.get_ticks_usec()
+	confirmation.hide()
+	if confirmation_origin!=0:
+		var origin: Object=instance_from_id(confirmation_origin)
+		if result.ok:
+			if is_instance_valid(origin) and not origin.is_queued_for_deletion():origin.queue_free()
+		else:call_deferred("restore_modal",confirmation_origin)
+		confirmation_origin=0
 	if result.ok:
 		if pending.kind in ["depart","next_mission","start_side"] and session.state.campaign.phase=="battle":action="move"
 		for id: String in session.state.journey.recruited:
@@ -552,8 +648,28 @@ func commit_pending() -> void:
 	if result.ok and pending.kind in ["depart","next_mission","start_side"] and session.state.campaign.phase=="battle" and not FirstShift.active(self) and not FieldGuide.active(self):show_site()
 func save_manual() -> void:Screens.manual_slots(self,true)
 func load_manual() -> void:Screens.manual_slots(self,false)
+func return_to_title() -> void:
+	inline_pending=false;pending={};focus_cell=[];action="move"
+	title_screen=true;render()
+
+func enter_loaded_campaign(fresh: bool=false) -> void:
+	if fresh and DisplayServer.get_name() != "headless" and ferry_pending.is_empty():
+		ferry_pending = Art.request_ferry_assets()
+	pending={};inline_pending=false;focus_cell=[];anchor_start=[]
+	feedback_plan={};visual_previous={};welcome_queue=[];conflict_notices=[];actor_facings={}
+	selected="lin";action="move";partner="xu";panel_tab="actions";specialty_target="";full_preparation=false
+	reach_key="";guide_key=0;field_offer_key=0;title_load_error="";paused=false
+	title_screen=false;message=I18n.t("ui.28efa9cc44f6")
+	render()
+
+func continue_campaign() -> void:
+	var result: Dictionary=session.load_game()
+	if result.ok:enter_loaded_campaign()
+	else:title_load_error=result.error_code;render()
+
 func recover() -> void:
 	var result: Dictionary = session.load_game(true)
+	if result.ok:enter_loaded_campaign()
 	message=I18n.t("ui.cb88d2cdf9c2") if result.ok else I18n.t("error.recover") % error_text(result.error_code)
 	render()
 
@@ -579,7 +695,7 @@ func risk_text(candidate: Dictionary) -> String:
 				if h.left or h.downed or not Rules.contains_cell(cells,h.cell):continue
 				var water: bool=enemy.type=="skimmer" and int(b.round)%2==0
 				if water and Rules.contains_cell(b.insulation,h.cell):continue
-				risks.append(actor_name(h.id)+I18n.t("baseline018.a850d56fa243")+enemy.id+I18n.t("baseline018.8af2350cfd65")+(I18n.t("baseline018.9d3c4d578acc") if water else I18n.t("baseline018.85bafee7886e")%int(b.cover.get(h.id,0))))
+				risks.append(actor_name(h.id)+I18n.t("baseline018.a850d56fa243")+I18n.t("quality.enemy."+enemy.type)+I18n.t("baseline018.8af2350cfd65")+(I18n.t("baseline018.9d3c4d578acc") if water else I18n.t("baseline018.85bafee7886e")%int(b.cover.get(h.id,0))))
 		var fire: Dictionary=b.environment.fire_pulse
 		if b.round>=fire.round and b.round<fire.round+fire.duration_rounds:
 			for h: Dictionary in b.heroes.values():
@@ -588,7 +704,8 @@ func risk_text(candidate: Dictionary) -> String:
 	var result: Dictionary = candidate.campaign.last_result
 	var names: Array[String] = []
 	for id: String in result.injured: names.append(actor_name(id))
-	return I18n.t("ui.fd6383d67ac6") % [{"success":I18n.t("ui.053461ce86d2"),"partial":I18n.t("ui.1bd16b45b478"),"failed":I18n.t("ui.28384d7afd2e")}[result.outcome],"、".join(names) if not names.is_empty() else I18n.t("ui.484d55613910")]
+	var summary: String=I18n.t("ui.fd6383d67ac6") % [{"success":I18n.t("ui.053461ce86d2"),"partial":I18n.t("ui.1bd16b45b478"),"failed":I18n.t("ui.28384d7afd2e")}[result.outcome],"、".join(names) if not names.is_empty() else I18n.t("ui.484d55613910")]
+	return "\n".join(summary.split("\n").slice(0,2)) if candidate.chapter_one.finished else summary
 
 func resource_text(resources: Dictionary) -> String:
 	return I18n.t("ui.5316db6ad41c") % [resources.get("credits",0),resources.get("supplies",0),resources.get("parts",0)]
@@ -615,6 +732,7 @@ func modal(title_text: String) -> Dictionary:
 	window.transient=true;window.exclusive=true;add_child(window)
 	window.close_requested.connect(window.queue_free)
 	var previous_window_id: int=previous_window.get_instance_id() if is_instance_valid(previous_window) else 0
+	window.set_meta("return_window_id",previous_window_id)
 	window.tree_exiting.connect(func():call_deferred("restore_modal",previous_window_id))
 	var margin:=MarginContainer.new();margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	for side: String in ["left","right","top","bottom"]:margin.add_theme_constant_override("margin_"+side,20)
@@ -696,11 +814,11 @@ func chapter_report(box: VBoxContainer) -> void:
 		label(box,StoryFacts.chapter(session.state,session.content,entry).text)
 
 func render_mentors(box: VBoxContainer) -> void:
-	for teacher: String in session.state.actors:
-		for student: String in session.state.actors:
-			var trial: Dictionary=session.state.duplicate(true)
-			if Chapter.mentor(trial,{"actor_id":teacher,"payload":{"student":student,"consent":true}})!="":continue
-			var gain: int=int(trial.actors[student].xp)-int(session.state.actors[student].xp)
+	for teacher: String in session.state.journey.recruited:
+		for student: String in session.state.journey.recruited:
+			var offer: Dictionary=Chapter.mentor_offer(session.state,teacher,student)
+			if not offer.error.is_empty():continue
+			var gain: int=offer.gain
 			button(box,I18n.t("p2.mentor_option") % [actor_name(teacher),actor_name(student),gain],func():selected=teacher;propose("mentor",{"student":student,"consent":true}))
 
 func objective_summary() -> String:
@@ -709,29 +827,31 @@ func objective_summary() -> String:
 	var board: Dictionary=session.content.boards[s.battle.mission_id]
 	var lines: Array[String]=[]
 	for group: Array in Full.groups(s,board):
-		var names: Array[String]=[];var done: bool=false
+		var names: Array[String]=[]
+		var secured: Array[String]=[]
 		for id: String in group:
 			if not s.battle.objects.has(id):continue
 			var o: Dictionary=s.battle.objects[id]
-			done=done or (o.completed and (not o.sustain_until_exit or o.hp>0))
+			if Guidance.secured(o):secured.append(object_name(id))
 			names.append(object_name(id))
-		lines.append((I18n.t("p3.done") if done else I18n.t("p3.todo"))+" / ".join(names))
+		lines.append(I18n.t("p3.todo")+" / ".join(names) if secured.is_empty() else I18n.t("p3.done")+" / ".join(secured))
 	return " · ".join(lines)
 func render_campaign_options(box: VBoxContainer,include_medicine: bool=true,section: String="all") -> void:
 	var s: Dictionary=session.state
 	if section in ["all","journal"]:button(box,I18n.t("p3.journal"),show_journal)
 	if include_medicine:button(box,I18n.t("p3.craft_medicine"),func():propose("craft_medicine",{})).icon=Art.icon("medicine")
 	if section in ["all","publish"] and s.campaign.day>=18 and not s.full_campaign.evidence.is_empty():
-		for privacy: String in ["redacted","unredacted"]:button(box,I18n.t("p3.publish_"+privacy),func():propose("publish_record",{"privacy":privacy}))
+		for privacy: String in ["redacted","unredacted"]:
+			var publish:=button(box,I18n.t("p3.publish_"+privacy),func():propose("publish_record",{"privacy":privacy}))
+			publish.disabled=s.full_campaign.publications.has(privacy)
 	label(box,I18n.t("p3.chapter") % [Full.chapter(s.campaign.day),s.campaign.day])
-	if section in ["all","evidence"] and (int(s.campaign.day) in [20,22,23] or (s.campaign.day==18 and Product.tier(s,"communications")>=1)):
-		for id: String in session.content.domains.world.evidence:
-			if not s.full_campaign.evidence.has(id):button(box,I18n.t("p3.review_named") % I18n.t("p3."+id),func():propose("review_record",{"evidence":id}))
-	if section in ["all","evidence"] and Product.tier(s,"communications")>=2 and int(s.campaign.day) in [20,22,23]:
-		var remaining: Array=[]
-		for id: String in session.content.domains.world.evidence:
-			if not s.full_campaign.evidence.has(id):remaining.append(id)
-		if remaining.size()>=2:button(box,I18n.t("p4.review_two"),func():propose("review_record",{"records":remaining.slice(0,2)}))
+	if section in ["all","evidence"]:
+		var remaining: Array=Full.reviewable(s,session.content)
+		for id: String in remaining:
+			button(box,I18n.t("p3.review_named") % I18n.t("p3."+id),func():propose("review_record",{"evidence":id})).disabled=s.campaign.projects>=2
+		if Product.tier(s,"communications")>=2 and int(s.campaign.day) in [20,22,23] and remaining.size()>=2:
+			button(box,I18n.t("p4.review_two"),func():propose("review_record",{"records":remaining.slice(0,2)})).disabled=s.campaign.projects>=2
+		if section=="evidence" and s.campaign.projects>=2:label(box,I18n.s("今晚两个项目已经用完"))
 	if section in ["all","journal","route"]:
 		for id: String in s.full_campaign.contracts:
 			var contract: Dictionary=s.full_campaign.contracts[id]
@@ -746,40 +866,67 @@ func render_campaign_options(box: VBoxContainer,include_medicine: bool=true,sect
 	if section in ["all","journal"] and int(s.campaign.day)%6==0:chapter_report(box)
 func render_ending(box: VBoxContainer) -> void:
 	var s: Dictionary=session.state
-	label(box,I18n.t("p3.final_title") % I18n.t("p3.route_"+s.full_campaign.ending)).add_theme_color_override("font_color",GOLD)
-	button(box,I18n.t("p3.journal"),show_journal)
-	button(box,I18n.t("p3.new_campaign"),new_campaign)
-	box.add_child(Art.picture(Art.environment("shelter"),Vector2(0,260)))
-	label(box,I18n.t("p3.ending_"+s.full_campaign.ending))
-	for district: String in s.campaign.districts:label(box,I18n.t("journey.district_state")%[Screens.Journey.district_name(district),s.campaign.districts[district],s.full_campaign.district_caps[district]])
+	var route: String=s.full_campaign.ending
+	var cover:=Control.new();cover.custom_minimum_size.y=205;box.add_child(cover)
+	var location: String={"shared_control":"control","distributed_rebuild":"gate","evacuation":"shelter"}[route]
+	var art:=Art.picture(Art.environment(location),Vector2.ZERO);cover.add_child(art);art.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var tint:=Art.scrim();cover.add_child(tint);tint.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var words:=VBoxContainer.new();cover.add_child(words);words.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	words.offset_left=24;words.offset_right=-24;words.offset_top=12;words.offset_bottom=-12
+	words.alignment=BoxContainer.ALIGNMENT_CENTER;words.add_theme_constant_override("separation",12)
+	var title:=label(words,I18n.t("p3.final_title") % I18n.t("p3.route_"+route))
+	title.add_theme_font_size_override("font_size",maxi(30,font_size));title.add_theme_color_override("font_color",GOLD)
+	label(words,I18n.t("p3.ending_"+route))
 	label(box,risk_text(s))
 	for entry: Dictionary in session.content.domains.scripts.community:
 		if entry.source=="M24":label(box,StoryFacts.community(s,session.content,entry).text)
-	chapter_report(box)
-	for id: String in s.actors:
-		var node_id: String="P_"+id+"_3"
-		var node: Dictionary=Stories.nodes(session.content)[node_id]
-		var script: Dictionary=Stories.script(session.content,node)
-		var record: Dictionary=s.chapter_one.scenes.get(node_id,{})
-		label(box,actor_name(id)).add_theme_color_override("font_color",TEAL)
-		var portrait=Art.character(id,"camp","grief" if s.product.withdrawn.has(id) else ("relieved" if record.get("choice","")=="integrated" else "neutral"),Vector2(0,180));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;box.add_child(portrait)
-		label(box,I18n.t("baseline018.139478be0703")+(I18n.t("baseline018.a973c1399893") if s.product.withdrawn.has(id) else I18n.t("baseline018.68e5b398962f")))
-		if s.product.withdrawn.has(id):
-			label(box,I18n.content("scenes",node_id,"withdrawn",script.withdrawn))
-		var later: Dictionary=StoryFacts.breach(s,id,script)
-		if not later.is_empty():label(box,later.line+"\n"+later.reason)
-		label(box,I18n.t("baseline018.7b9c7799cdb3"))
-		if record.get("choice","").is_empty():label(box,I18n.content("scenes",node_id,"unread",script.unread))
-		elif record.choice=="integrated" and s.full_campaign.contracts.get(id,{}).get("breached",false):label(box,I18n.t("p3.past_fulfilled"))
-		else:label(box,story_lines(node_id,"choices."+record.choice,script.choices[record.choice]))
-		if s.full_campaign.contracts.has(id):
-			var contract: Dictionary=s.full_campaign.contracts[id]
-			label(box,I18n.t("p3.plan_status") % [actor_name(id),I18n.t("p3.fulfilled") if contract.fulfilled else (I18n.t("baseline018.2a50f442d19a") if contract.get("interrupted_by_injury",false) else (I18n.t("baseline018.3b98164d604b") if contract.get("breached",false) else I18n.t("p3.pending"))),contract.proof])
-		for relation: Dictionary in s.social.values():
-			if relation.observer!=id:continue
-			label(box,I18n.t("baseline018.ed421a5cf3c8")+(I18n.t("baseline018.36caf75886a3") if relation.target=="leader" else actor_name(relation.target))+"："+I18n.t("band."+relation.band)+"；"+(I18n.t("baseline018.be70db1b5226") if relation.agreement=="cooperate" else I18n.t("baseline018.fc4055ae6171")))
-			for memory: Dictionary in relation.memories:
-				if memory.stage<2:label(box,I18n.t("p3.unresolved_memory") % [actor_name(relation.target) if relation.target!="leader" else I18n.t("leader"),Screens.Journey.memory_text(session.state,memory)])
+	var districts:=HFlowContainer.new();box.add_child(districts)
+	for district: String in s.campaign.districts:
+		var card:=PanelContainer.new();card.add_theme_stylebox_override("panel",surface(SURFACE,8));districts.add_child(card)
+		var reading:=label(card,I18n.t("journey.district_state")%[Screens.Journey.district_name(district),s.campaign.districts[district],s.full_campaign.district_caps[district]])
+		reading.autowrap_mode=TextServer.AUTOWRAP_OFF
+	label(box,I18n.s("查看队员的结局")).add_theme_color_override("font_color",TEAL)
+	var people:=HFlowContainer.new();box.add_child(people)
+	for id: String in s.journey.recruited:
+		var person:=button(people,actor_name(id),func():show_person_ending(id))
+		person.custom_minimum_size=Vector2(125,54);person.icon=Art.CharacterArt.region(id,"camp",true)
+		person.add_theme_constant_override("icon_max_width",44)
+	var navigation:=HFlowContainer.new();box.add_child(navigation)
+	button(navigation,I18n.t("p3.journal"),show_journal)
+	button(navigation,I18n.t("p2.chapter_summary"),func():var dialog:=modal(I18n.t("p2.chapter_summary"));chapter_report(dialog.box))
+	button(navigation,I18n.t("p3.new_campaign"),new_campaign)
+
+func show_person_ending(id: String) -> void:
+	var dialog:=modal(actor_name(id))
+	var box: VBoxContainer=dialog.box
+	var s: Dictionary=session.state
+	var node_id: String="P_"+id+"_3"
+	var node: Dictionary=Stories.nodes(session.content)[node_id]
+	var script: Dictionary=Stories.script(session.content,node)
+	var record: Dictionary=s.chapter_one.scenes.get(node_id,{})
+	var portrait=Art.character(id,"camp","grief" if s.product.withdrawn.has(id) else ("relieved" if record.get("choice","")=="integrated" else "neutral"),Vector2(150,200));portrait.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;box.add_child(portrait)
+	label(box,I18n.t("baseline018.139478be0703")+(I18n.t("baseline018.a973c1399893") if s.product.withdrawn.has(id) else I18n.s("在队")))
+	if s.product.withdrawn.has(id):
+		label(box,I18n.content("scenes",node_id,"withdrawn",script.withdrawn))
+	var later: Dictionary=StoryFacts.breach(s,id,script)
+	if not later.is_empty():label(box,later.line+"\n"+later.reason)
+	label(box,I18n.t("baseline018.7b9c7799cdb3"))
+	if record.get("choice","").is_empty():
+		label(box,I18n.t("story.unread_ending"))
+	else:
+		var view: Dictionary=Screens.Journey.scene(s,session.content,node_id)
+		label(box,I18n.t("journey.delivery."+view.delivery.mode)%view.delivery.day).add_theme_color_override("font_color",MUTED)
+		for page: Dictionary in view.pages.slice(int(view.opening_count)):label(box,page.text)
+		if s.product.withdrawn.has(id):label(box,I18n.t("journey.now_absent"))
+		if record.choice=="integrated" and s.full_campaign.contracts.get(id,{}).get("breached",false):label(box,I18n.t("p3.past_fulfilled"))
+	if s.full_campaign.contracts.has(id):
+		var contract: Dictionary=s.full_campaign.contracts[id]
+		label(box,I18n.t("p3.plan_status") % [actor_name(id),I18n.t("p3.fulfilled") if contract.fulfilled else (I18n.t("baseline018.2a50f442d19a") if contract.get("interrupted_by_injury",false) else (I18n.t("baseline018.3b98164d604b") if contract.get("breached",false) else I18n.t("p3.pending"))),contract.proof])
+	for relation: Dictionary in s.social.values():
+		if relation.observer!=id:continue
+		label(box,I18n.t("baseline018.ed421a5cf3c8")+(I18n.t("baseline018.36caf75886a3") if relation.target=="leader" else actor_name(relation.target))+"："+I18n.t("band."+relation.band)+"；"+(I18n.t("baseline018.be70db1b5226") if relation.agreement=="cooperate" else I18n.t("baseline018.fc4055ae6171")))
+		for memory: Dictionary in relation.memories:
+			if memory.stage<2:label(box,I18n.t("p3.unresolved_memory") % [actor_name(relation.target) if relation.target!="leader" else I18n.t("leader"),Screens.Journey.memory_text(session.state,memory)])
 
 func show_site() -> void:
 	var board: Dictionary=session.content.boards[session.state.battle.mission_id]
@@ -840,24 +987,64 @@ func create_campaign(options: Dictionary) -> void:
 	var result: Dictionary=candidate.start(session.content,slot,id,options)
 	if result.ok:
 		var config:=ConfigFile.new();config.set_value("campaign","path",slot)
-		if config.save("user://p4_active_slot.cfg")==OK:session=candidate;title_screen=false;selected="lin";message=I18n.t("p3.new_campaign_ready")
+		if config.save("user://p4_active_slot.cfg")==OK:session=candidate;enter_loaded_campaign(true);message=I18n.t("p3.new_campaign_ready")
 		else:message=I18n.t("error.save") % error_text("save_io_failed")
 	else:message=I18n.t("error.save") % error_text(result.error_code)
 	render()
-	if result.ok:
+	if result.ok and session==candidate:
 		if not FirstShift.enabled(self):welcome_queue=["lin","xu","su"];show_next_welcome()
 func campaign_picker() -> void:
 	var dialog:=modal(I18n.t("p3.switch_campaign"))
 	var slots: Array[String]=["user://saves/p4/autosave.json"]
 	for directory: String in (DirAccess.get_directories_at("user://saves/p4") if DirAccess.dir_exists_absolute("user://saves/p4") else PackedStringArray()):
 		if directory.begins_with("campaign-"):slots.append("user://saves/p4/"+directory+"/autosave.json")
+	var readable: int=0
 	for slot: String in slots:
 		var result: Dictionary=session.store.load_slot(slot,session.content)
-		if not result.ok:continue
+		if not result.ok:
+			for source in Session.recovery_files(slot):
+				var saved: Dictionary=session.store.load_slot(source,session.content)
+				if not saved.ok:continue
+				var action_label: String=I18n.t("ui.1ae486278078" if source==slot+".bak" else "baseline018.186908b78346")
+				button(dialog.box,"%s · %s" % [saved.state.campaign.id,action_label],recover_campaign_picker.bind(slot,dialog.window))
+				readable+=1
+				break
+			continue
+		readable+=1
 		button(dialog.box,I18n.t("p3.slot_label") % [result.state.campaign.id,result.state.campaign.day],func():
 			var config:=ConfigFile.new();config.set_value("campaign","path",slot)
 			if config.save("user://p4_active_slot.cfg")!=OK:message=I18n.t("error.save") % error_text("save_io_failed");return
-			session.path=slot;session.state=result.state;title_screen=false;dialog.window.queue_free();render())
+			session.path=slot;session.state=result.state;dialog.window.queue_free();enter_loaded_campaign())
+	if readable==0:label(dialog.box,I18n.s("当前没有可读取的周目。"))
+
+func recover_campaign_picker(slot: String, picker: Window) -> void:
+	var dialog := modal(I18n.t("ui.1ae486278078"))
+	for source in Session.recovery_files(slot):
+		var loaded: Dictionary = session.store.load_slot(source, session.content)
+		if not loaded.ok:
+			continue
+		var description: String = I18n.t("p3.slot_label") % [loaded.state.campaign.id, loaded.state.campaign.day]
+		button(dialog.box, "%s · %s" % [source.get_file(), description], restore_campaign_source.bind(slot, source, picker, dialog))
+
+func restore_campaign_source(slot: String, source: String, picker: Window, choices: Dictionary) -> void:
+	# Do not switch the player's active save just by browsing damaged campaigns.
+	var recovered = Session.new()
+	recovered.content = session.content
+	recovered.path = slot
+	var loaded: Dictionary = recovered.store.load_slot(source, recovered.content)
+	var result: Dictionary = recovered.restore_state(loaded.state) if loaded.ok else loaded
+	if not result.ok:
+		label(choices.box, I18n.t("error.recover") % error_text(result.error_code))
+		return
+	var config := ConfigFile.new()
+	config.set_value("campaign", "path", slot)
+	if config.save("user://p4_active_slot.cfg") != OK:
+		label(choices.box, I18n.t("error.save") % error_text("save_io_failed"))
+		return
+	choices.window.queue_free()
+	picker.queue_free()
+	session = recovered
+	enter_loaded_campaign()
 
 func difficulty_controls(box: VBoxContainer,board: Dictionary,initial: String="") -> Dictionary:
 	var settings: Dictionary={"difficulty":session.state.campaign.difficulty if initial.is_empty() else initial,"ack":session.state.campaign.difficulty=="hard" and initial.is_empty()}
@@ -908,8 +1095,7 @@ func show_workshop(mode: String="all",focus: String="") -> void:
 				button(row,I18n.t("p4.equip") % [actor_name(actor),I18n.t("p4.unequip") if equipped else I18n.t("p4.equip_word")],func():selected=actor;dialog.window.queue_free();propose("equip_tool",{"item":"" if equipped else id,"slot":definition.slot}))
 			if s.product.purchases.has(id) and not s.product.purchases[id].deployed:button(row,I18n.t("p4.action.refund_tool"),func():dialog.window.queue_free();propose("refund_tool",{"item":id}))
 		else:
-			var discount: int=1 if Product.tier(s,"workshop")>=1 and s.product.discount_main!=s.chapter_one.main_completed else 0
-			var purchase:=button(box,I18n.t("p4.purchase") % [definition.price_credits,maxi(0,int(definition.price_parts)-discount),definition.unlocked_after_main],func():dialog.window.queue_free();propose("buy_tool",{"item":id}))
+			var purchase:=button(box,I18n.t("p4.purchase") % [definition.price_credits,Product.purchase_parts(session.state,definition),definition.unlocked_after_main],func():dialog.window.queue_free();propose("buy_tool",{"item":id}))
 			purchase.disabled=s.chapter_one.main_completed<int(definition.unlocked_after_main)
 	for definition: Dictionary in session.content.domains.facilities:
 		if mode!="all" and not (mode=="facility" and definition.id==focus):continue
@@ -956,6 +1142,9 @@ func cancel_selection() -> void:
 	sound.play("ui_cancel")
 	inline_pending=false;pending={};anchor_start=[];action="move";message=I18n.t("p4.selection_cancelled");render()
 func _unhandled_input(event: InputEvent) -> void:
+	if title_screen:
+		if event is InputEventKey and event.pressed and not event.echo and event.keycode==KEY_F1:show_help();get_viewport().set_input_as_handled()
+		return
 	if feedback_active():
 		if event is InputEventKey and event.pressed and not event.echo:
 			if event.keycode==KEY_ESCAPE and not paused:pause_menu();get_viewport().set_input_as_handled()
@@ -1031,7 +1220,7 @@ func pause_menu() -> void:
 	reduced.toggled.connect(func(value: bool):reduced_motion=value;save_presentation())
 	button(dialog.box,I18n.t("baseline018.a897aeb6cf42"),func():paused=false;dialog.window.queue_free())
 	button(dialog.box,I18n.t("baseline018.8e12463580ce"),func():paused=false;dialog.window.queue_free();show_help())
-	button(dialog.box,I18n.t("baseline018.df0379d3d6af"),func():finish_feedback();paused=false;dialog.window.queue_free();title_screen=true;render())
+	button(dialog.box,I18n.t("baseline018.df0379d3d6af"),func():sound.cancel_timeline();feedback_plan={};visual_previous={};paused=false;dialog.window.queue_free();return_to_title())
 func save_presentation() -> void:
 	var config:=ConfigFile.new();config.set_value("feedback","rate",animation_rate);config.set_value("feedback","reduced",reduced_motion);config.save("user://presentation018.cfg")
 
@@ -1056,7 +1245,15 @@ func show_night_review() -> void:
 		for id: String in session.state.full_campaign.contracts:
 			var contract: Dictionary=session.state.full_campaign.contracts[id]
 			if not contract.fulfilled:label(dialog.box,actor_name(id)+" · "+(I18n.t("baseline018.2a50f442d19a") if contract.get("interrupted_by_injury",false) else (I18n.t("baseline018.3b98164d604b") if contract.get("breached",false) else I18n.t("baseline018.bf513a1c326e"))))
-		label(dialog.box,I18n.t("baseline018.5ab7b400e6b1")+session.state.full_campaign.route)
+		if session.state.full_campaign.route.is_empty():
+			label(dialog.box,I18n.s("先选定明天的路线，再结束今晚。"))
+			button(dialog.box,I18n.s("查看最终路线"),func():
+				dialog.window.queue_free()
+				if CampGuide.active(self) and not CampGuide.Learning.known(session.state).has("route"):
+					if not camp_ack("route"):return
+				CampGuide.open_feature(self,"route"))
+			return
+		label(dialog.box,I18n.t("p3.selected_route")%I18n.t("p3.route_"+session.state.full_campaign.route))
 	button(dialog.box,I18n.s("完成基础引导 · 开始第5天") if CampGuide.active(self) and session.state.campaign.day==4 and not CampGuide.Learning.completed(session.state) else I18n.t("baseline018.e6f809da1227"),func():dialog.window.queue_free();propose("finish_evening",{}))
 
 func show_conflict_notice() -> void:

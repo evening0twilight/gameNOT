@@ -1,0 +1,12 @@
+夜潮事务所 · Night Tide Agency
+
+简体中文
+完整解压这个文件夹，双击 night-tide.exe。从标题页开始新周目，或继续上次的进度。请将 night-tide.pck 保持在 EXE 旁边。标题页可以选择语言。
+
+繁體中文
+將整個資料夾解壓縮，按兩下 night-tide.exe，即可從標題畫面開始新周目或繼續上次的進度。請把 night-tide.pck 和 EXE 放在同一個資料夾。語言可在標題畫面選擇。
+
+English
+Extract the entire folder and open night-tide.exe. Keep night-tide.pck beside it. You can select your language, start a campaign or continue a saved game from the title screen.
+
+FIELD-GUIDE.txt · 选读操作手册 / 選讀操作手冊 / Optional controls and play guide

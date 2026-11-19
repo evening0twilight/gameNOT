@@ -27,7 +27,10 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 			for id: String in group:
 				if not b.objects.has(id):continue
 				var o: Dictionary=b.objects[id]
-				var locate: Button=ui.button(objectives,Readable.code(board,b,id)+" · "+ui.object_name(id)+"\n"+Readable.status(o)+I18n.s(" · 点击定位"),func():ui.focus_cell=o.cell.duplicate();ui.render())
+				var actionable: bool=not o.delivered and not o.lost and not o.has("unavailable_reason")
+				var caption: String=Readable.code(board,b,id)+" · "+ui.object_name(id)+"\n"+Readable.status(o)
+				var locate: Button=ui.button(objectives,caption+(I18n.s(" · 点击定位") if actionable else ""),func():ui.focus_cell=Readable.location(b,o).duplicate();ui.render())
+				locate.disabled=not actionable
 				locate.add_theme_font_size_override("font_size",maxi(14,ui.font_size-4));locate.custom_minimum_size.y=46
 				if group.size()>1:locate.tooltip_text=I18n.s("这一组目标择一完成即可。")
 
@@ -49,8 +52,8 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 			for id: String in group:
 				if not b.objects.has(id):continue
 				var o: Dictionary=b.objects[id]
-				if not o.completed and not o.lost:
-					var locate: Button=ui.button(detail,Readable.status(o)+I18n.s(" · 定位 ")+Readable.code(board,b,id),func():ui.focus_cell=o.cell.duplicate();ui.render())
+				if not o.completed and not o.lost and not o.has("unavailable_reason"):
+					var locate: Button=ui.button(detail,Readable.status(o)+I18n.s(" · 定位 ")+Readable.code(board,b,id),func():ui.focus_cell=Readable.location(b,o).duplicate();ui.render())
 					locate.add_theme_font_size_override("font_size",16)
 					var deadline: int=ui.Rules.Hazards.rescue_deadline(b,o)
 					if deadline>0 and not o.stable:small(ui,detail,ui.I18n.t("difficulty.rescue_deadline")%deadline,ui.GOLD)
@@ -74,7 +77,14 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 	small(ui,top,ui.actor_name(ui.selected)+" · "+ui.action_name(ui.action),ui.TEAL).horizontal_alignment=HORIZONTAL_ALIGNMENT_RIGHT
 	var map=ui.BoardView.new();map.name="TacticalMap";map.state=s;map.board=board;map.selected=ui.selected
 	map.previous=ui.visual_previous;map.animation_started=ui.visual_started;map.feedback=ui.feedback_plan;map.actor_facings=ui.actor_facings;map.playback_seconds=ui.feedback_seconds
-	map.hint_cell=ui.focus_cell if not ui.focus_cell.is_empty() else next.get("cell",[]);map.size_flags_vertical=Control.SIZE_EXPAND_FILL;map.custom_minimum_size=Vector2(320,320)
+	map.hint_cell=ui.focus_cell if not ui.focus_cell.is_empty() else next.get("cell",[])
+	if ui.inline_pending:
+		var payload: Dictionary=ui.pending.payload
+		map.preview_cell=payload.get("cell",[])
+		for targets: Dictionary in [b.objects,b.enemies,b.heroes]:
+			if targets.has(payload.get("target","")):map.preview_cell=targets[payload.target].cell;break
+		if ui.action=="move" and not map.preview_cell.is_empty():map.preview_path=map.route(b,b.heroes[ui.selected].cell,map.preview_cell)
+	map.size_flags_vertical=Control.SIZE_EXPAND_FILL;map.custom_minimum_size=Vector2(320,320)
 	var cache_key: String="%s:%s:%s"%[hash(b),ui.selected,ui.action]
 	if ui.reach_key!=cache_key:
 		ui.reach_cache.clear();ui.reach_key=cache_key
@@ -83,10 +93,11 @@ static func render(ui: Control,body: HBoxContainer) -> void:
 	map.reachable=[] if ui.feedback_active() else ui.reach_cache.values()
 	map.validate_hover=func(cell: Array):return ui.reach_cache.has(str(cell))
 	map.cell_chosen.connect(ui.click_cell);center.add_child(map)
-	small(ui,center,I18n.s("绿点：可移动　橙纹：机器预告　字母：目标"),ui.MUTED)
-	var inspection: Label=small(ui,center,I18n.s("指向人物或字母目标，查看状态"),ui.INK)
+	map.set_process(not ui.reduced_motion)
+	var legend: String=I18n.s("绿点：可移动　橙纹：机器预告　字母：目标")
+	var inspection: Label=small(ui,center,legend,ui.INK)
 	inspection.custom_minimum_size.y=42;inspection.max_lines_visible=2
-	map.cell_inspected.connect(func(text: String):inspection.text=text.replace("\n"," · "))
+	map.cell_inspected.connect(func(text: String):inspection.text=text.replace("\n"," · ") if not text.is_empty() else legend)
 
 	var panel:=PanelContainer.new();panel.custom_minimum_size.x=(270 if ui.font_size<24 else 300) if guided else (320 if ui.font_size<24 else 350);panel.add_theme_stylebox_override("panel",ui.surface(ui.SURFACE,10));body.add_child(panel)
 	var right:=VBoxContainer.new();right.add_theme_constant_override("separation",8);panel.add_child(right)

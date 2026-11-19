@@ -14,6 +14,9 @@ static func ensure(s: Dictionary) -> void:
 		if not s.battle.has("medicine_limit"):s.battle.medicine_limit=2
 static func tier(s: Dictionary,id: String) -> int:
 	return int(s.get("product",{}).get("facilities",{}).get(id,0))
+static func purchase_parts(s: Dictionary,definition: Dictionary) -> int:
+	var discount: int=1 if tier(s,"workshop")>=1 and s.product.discount_main!=s.chapter_one.main_completed else 0
+	return maxi(0,int(definition.price_parts)-discount)
 static func pack_limit(s: Dictionary) -> int:return 3 if tier(s,"workshop")>=2 else 2
 static func item(content: Dictionary,id: String) -> Dictionary:
 	for entry: Dictionary in content.domains.equipment.items:
@@ -59,7 +62,7 @@ static func camp(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 		"buy_tool":
 			if definition.is_empty() or s.product.owned.has(id) or s.chapter_one.main_completed<int(definition.unlocked_after_main):return "tool_unavailable"
 			var discounted: bool=tier(s,"workshop")>=1 and s.product.discount_main!=s.chapter_one.main_completed
-			var parts: int=maxi(0,int(definition.price_parts)-(1 if discounted else 0))
+			var parts: int=purchase_parts(s,definition)
 			if s.inventory.credits<definition.price_credits or s.inventory.parts<parts:return "insufficient_resources"
 			s.inventory.credits-=definition.price_credits;s.inventory.parts-=parts
 			s.product.owned.append(id)
@@ -108,7 +111,7 @@ static func use_tool(s: Dictionary,c: Dictionary,content: Dictionary,rules: GDSc
 			if anchor.get("kind")!="winch":continue
 			if (rules.same(h.cell,anchor.cell) and rules.same(target,anchor.other)) or (rules.same(h.cell,anchor.other) and rules.same(target,anchor.cell)):
 				if h.ap<1:return "insufficient_ap"
-				if rules.blocked(b,target) or rules.occupied(b,target) or b.barriers.has(str(target)) or rules.terrain(b,target)!=".":return "invalid_target"
+				if rules.blocked(b,target) or rules.occupied(b,target) or b.barriers.has(rules.barrier_key(b,target)) or rules.terrain(b,target)!=".":return "invalid_target"
 				if not h.carrying.is_empty():rules.record_transport(b.objects[h.carrying],h.id,h.cell,target)
 				h.cell=target.duplicate();h.ap-=1;return ""
 		return "invalid_target"
@@ -144,8 +147,8 @@ static func use_tool(s: Dictionary,c: Dictionary,content: Dictionary,rules: GDSc
 			if not valid_cell(cell) or rules.distance(h.cell,cell)>1:return "invalid_target"
 			if rules.terrain(b,cell) in ["#","X"]:return "invalid_target"
 			if id=="shield":
-				if rules.occupied(b,cell) or rules.blocked(b,cell) or b.barriers.has(str(cell)):return "invalid_target"
-				b.barriers[str(cell)]={"cell":cell.duplicate(),"hp":4,"expires":0,"actor":h.id}
+				if rules.occupied(b,cell) or rules.blocked(b,cell) or b.barriers.has(rules.barrier_key(b,cell)):return "invalid_target"
+				b.barriers[rules.cell_key(cell)]={"cell":cell.duplicate(),"hp":4,"expires":0,"actor":h.id}
 			elif id=="insulation":
 				if rules.contains_cell(b.insulation,cell):return "already_used"
 				b.insulation.append(cell.duplicate())

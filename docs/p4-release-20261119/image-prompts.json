@@ -1,0 +1,11 @@
+{
+  "asset": "Windows application icon and startup lantern",
+  "tool": "OpenAI imagegen, built-in generation",
+  "prompt": "Square desktop game icon for Night Tide Agency, a grounded illustrated strategy game about a small rescue crew working through urban floods at night. One unmistakable battered brass storm lantern with a broad glowing amber glass chamber, a dark petroleum-teal hood and a sturdy arched handle. Seen front on, with two broad stylized turquoise tide ripples curling around its foot. Mature, restrained semi-realistic painted game key art. Strong silhouette, tactile enamel and warm glass, simple lighting, broad shapes legible at 32 pixels. Centered and filling the canvas, one single lantern, no people, no scenery, no writing, no letters or numbers, no watermark. Isolated cutout with transparent space around the silhouette. This is a game executable icon, not a sheet of variants.",
+  "source_png_sha256": "8d4d392e5b528b784e8e332b032153d6ba376793aa70f9b5421a549bbb64338c",
+  "process": "Scaled the generated square RGBA to 256 by 256 with sips. Packed 16, 32, 48, 64, 128 and 256 pixel PNGs into an ICO with Pillow for Windows export.",
+  "file": "game/assets/product018/night-tide.png",
+  "file_sha256": "488004028923359cc2ff05b8b35cc95dde5fd7d0857bf0003afafcdc53e22751",
+  "windows_icon": "game/assets/product018/night-tide.ico",
+  "ico_sha256": "5140085a2756c84707c74cdddb81136418855c0ec3ca02525883e0263496967f"
+}

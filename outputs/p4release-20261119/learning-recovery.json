@@ -1,0 +1,1665 @@
+{
+	"actions": 772,
+	"checkpoints": [
+		{
+			"day": 24,
+			"file": "ending-recovery.json",
+			"sha256": "c71d3f7401979e8feff213d689c35ac38332a0a413a9f69b91ffab577a10d346"
+		}
+	],
+	"checks": 1760,
+	"ending": "evacuation",
+	"failures": [],
+	"missions": [
+		{
+			"commands": {},
+			"day": 1,
+			"inventory": {
+				"credits": 36.0,
+				"parts": 2.0,
+				"supplies": 6.0
+			},
+			"lessons": [],
+			"mission": "M01",
+			"outcome": "failed",
+			"party": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"round": 1
+		},
+		{
+			"commands": {
+				"emergency_retreat": 1,
+				"end_round": 7,
+				"interact": 4,
+				"leave_site": 2,
+				"move": 28
+			},
+			"day": 2.0,
+			"inventory": {
+				"credits": 42.0,
+				"parts": 2.0,
+				"supplies": 1.0
+			},
+			"lessons": [
+				{
+					"actor": "lin",
+					"round": 1,
+					"topic": "interact"
+				},
+				{
+					"actor": "lin",
+					"round": 6,
+					"topic": "leave_site"
+				}
+			],
+			"mission": "M02",
+			"outcome": "partial",
+			"party": [
+				"lin",
+				"xu",
+				"responder_M02_2"
+			],
+			"round": 8
+		},
+		{
+			"commands": {
+				"end_round": 7,
+				"extract": 1,
+				"interact": 2,
+				"leave_site": 3,
+				"move": 22,
+				"pickup": 1
+			},
+			"day": 3.0,
+			"inventory": {
+				"credits": 52.0,
+				"parts": 3.0,
+				"supplies": 1.0
+			},
+			"lessons": [
+				{
+					"actor": "xu",
+					"round": 3,
+					"topic": "pickup"
+				},
+				{
+					"actor": "xu",
+					"round": 6,
+					"topic": "extract"
+				}
+			],
+			"mission": "M03",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"round": 8
+		},
+		{
+			"commands": {},
+			"day": 4.0,
+			"inventory": {
+				"credits": 58.0,
+				"parts": 3.0,
+				"supplies": 0.0
+			},
+			"lessons": [],
+			"mission": "M04",
+			"outcome": "failed",
+			"party": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"round": 1
+		},
+		{
+			"commands": {},
+			"day": 5.0,
+			"inventory": {
+				"credits": 64.0,
+				"parts": 3.0,
+				"supplies": 0.0
+			},
+			"lessons": [],
+			"mission": "M05",
+			"outcome": "failed",
+			"party": [
+				"chen",
+				"responder_M05_1",
+				"responder_M05_2"
+			],
+			"round": 1
+		},
+		{
+			"commands": {
+				"end_round": 7,
+				"extract": 2,
+				"leave_site": 3,
+				"move": 23,
+				"pickup": 2,
+				"stabilize": 2
+			},
+			"day": 6.0,
+			"inventory": {
+				"credits": 70.0,
+				"parts": 4.0,
+				"supplies": 2.0
+			},
+			"lessons": [
+				{
+					"actor": "xu",
+					"round": 1,
+					"topic": "ability:xu_1"
+				},
+				{
+					"actor": "xu",
+					"round": 2,
+					"topic": "stabilize"
+				},
+				{
+					"actor": "xu",
+					"round": 2,
+					"topic": "protocol:mutual_cover"
+				},
+				{
+					"actor": "lin",
+					"round": 2,
+					"topic": "ability:lin_1"
+				},
+				{
+					"actor": "su",
+					"round": 2,
+					"topic": "ability:su_1"
+				},
+				{
+					"actor": "lin",
+					"round": 4,
+					"topic": "attack"
+				},
+				{
+					"actor": "su",
+					"round": 4,
+					"topic": "protocol:relay_carry"
+				},
+				{
+					"actor": "lin",
+					"round": 4,
+					"topic": "push"
+				}
+			],
+			"mission": "M06",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 8
+		},
+		{
+			"commands": {
+				"end_round": 7,
+				"extract": 1,
+				"interact": 1,
+				"leave_site": 3,
+				"move": 23,
+				"pickup": 1,
+				"stabilize": 1
+			},
+			"day": 7.0,
+			"inventory": {
+				"credits": 80.0,
+				"parts": 5.0,
+				"supplies": 2.0
+			},
+			"lessons": [
+				{
+					"actor": "su",
+					"round": 3,
+					"topic": "protocol:protected_work"
+				},
+				{
+					"actor": "lin",
+					"round": 5,
+					"topic": "tool:medkit"
+				}
+			],
+			"mission": "M07",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 8
+		},
+		{
+			"commands": {
+				"end_round": 8,
+				"interact": 3,
+				"leave_site": 3,
+				"move": 18
+			},
+			"day": 8.0,
+			"inventory": {
+				"credits": 90.0,
+				"parts": 6.0,
+				"supplies": 2.0
+			},
+			"lessons": [
+				{
+					"actor": "lin",
+					"round": 1,
+					"topic": "objective:convoy"
+				}
+			],
+			"mission": "M08",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 9
+		},
+		{
+			"commands": {
+				"end_round": 7,
+				"extract": 2,
+				"leave_site": 3,
+				"move": 21,
+				"pickup": 2,
+				"stabilize": 2
+			},
+			"day": 9.0,
+			"inventory": {
+				"credits": 100.0,
+				"parts": 7.0,
+				"supplies": 3.0
+			},
+			"lessons": [],
+			"mission": "M09",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 8
+		},
+		{
+			"commands": {
+				"end_round": 4,
+				"interact": 2,
+				"leave_site": 3,
+				"move": 21
+			},
+			"day": 10.0,
+			"inventory": {
+				"credits": 110.0,
+				"parts": 8.0,
+				"supplies": 4.0
+			},
+			"lessons": [
+				{
+					"actor": "xu",
+					"round": 1,
+					"topic": "ability:xu_3"
+				},
+				{
+					"actor": "lin",
+					"round": 2,
+					"topic": "service_watch"
+				}
+			],
+			"mission": "M10",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 5
+		},
+		{
+			"commands": {
+				"end_round": 4,
+				"interact": 2,
+				"leave_site": 3,
+				"move": 22
+			},
+			"day": 11.0,
+			"inventory": {
+				"credits": 120.0,
+				"parts": 9.0,
+				"supplies": 5.0
+			},
+			"lessons": [
+				{
+					"actor": "su",
+					"round": 1,
+					"topic": "ability:su_3"
+				},
+				{
+					"actor": "su",
+					"round": 3,
+					"topic": "tool:crowbar"
+				}
+			],
+			"mission": "M11",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 5
+		},
+		{
+			"commands": {
+				"end_round": 7,
+				"extract": 1,
+				"interact": 1,
+				"leave_site": 3,
+				"move": 16,
+				"pickup": 1
+			},
+			"day": 12.0,
+			"inventory": {
+				"credits": 130.0,
+				"parts": 10.0,
+				"supplies": 6.0
+			},
+			"lessons": [
+				{
+					"actor": "lin",
+					"round": 1,
+					"topic": "objective:channel"
+				}
+			],
+			"mission": "M12",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 8
+		},
+		{
+			"commands": {
+				"end_round": 4,
+				"interact": 2,
+				"leave_site": 3,
+				"move": 22
+			},
+			"day": 13.0,
+			"inventory": {
+				"credits": 140.0,
+				"parts": 11.0,
+				"supplies": 7.0
+			},
+			"lessons": [],
+			"mission": "M13",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 5
+		},
+		{
+			"commands": {
+				"end_round": 4,
+				"extract": 1,
+				"interact": 1,
+				"leave_site": 3,
+				"move": 20,
+				"pickup": 1
+			},
+			"day": 14.0,
+			"inventory": {
+				"credits": 150.0,
+				"parts": 12.0,
+				"supplies": 11.0
+			},
+			"lessons": [],
+			"mission": "M14",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 5
+		},
+		{
+			"commands": {
+				"end_round": 4,
+				"extract": 2,
+				"leave_site": 3,
+				"move": 14,
+				"pickup": 2,
+				"stabilize": 2
+			},
+			"day": 15.0,
+			"inventory": {
+				"credits": 160.0,
+				"parts": 13.0,
+				"supplies": 12.0
+			},
+			"lessons": [
+				{
+					"actor": "lin",
+					"round": 1,
+					"topic": "ability:lin_3"
+				}
+			],
+			"mission": "M15",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 5
+		},
+		{
+			"commands": {
+				"end_round": 6,
+				"extract": 1,
+				"interact": 1,
+				"leave_site": 3,
+				"move": 21,
+				"pickup": 1,
+				"stabilize": 1
+			},
+			"day": 16.0,
+			"inventory": {
+				"credits": 170.0,
+				"parts": 14.0,
+				"supplies": 13.0
+			},
+			"lessons": [],
+			"mission": "M16",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 7
+		},
+		{
+			"commands": {
+				"end_round": 1,
+				"interact": 1,
+				"leave_site": 3,
+				"move": 4
+			},
+			"day": 17.0,
+			"inventory": {
+				"credits": 180.0,
+				"parts": 15.0,
+				"supplies": 14.0
+			},
+			"lessons": [],
+			"mission": "M17",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 2
+		},
+		{
+			"commands": {
+				"end_round": 6,
+				"interact": 2,
+				"leave_site": 3,
+				"move": 22
+			},
+			"day": 18.0,
+			"inventory": {
+				"credits": 190.0,
+				"parts": 16.0,
+				"supplies": 15.0
+			},
+			"lessons": [],
+			"mission": "M18",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 7
+		},
+		{
+			"commands": {
+				"end_round": 4,
+				"extract": 1,
+				"interact": 1,
+				"leave_site": 3,
+				"move": 19,
+				"pickup": 1,
+				"stabilize": 1
+			},
+			"day": 19.0,
+			"inventory": {
+				"credits": 200.0,
+				"parts": 17.0,
+				"supplies": 16.0
+			},
+			"lessons": [
+				{
+					"actor": "su",
+					"round": 1,
+					"topic": "ability:su_3:ap"
+				}
+			],
+			"mission": "M19",
+			"outcome": "success",
+			"party": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"round": 5
+		},
+		{
+			"commands": {
+				"end_round": 2,
+				"interact": 1,
+				"leave_site": 3,
+				"move": 13
+			},
+			"day": 20.0,
+			"inventory": {
+				"credits": 210.0,
+				"parts": 18.0,
+				"supplies": 17.0
+			},
+			"lessons": [],
+			"mission": "M20",
+			"outcome": "success",
+			"party": [
+				"chen",
+				"he",
+				"jiang"
+			],
+			"round": 3
+		},
+		{
+			"commands": {
+				"end_round": 3,
+				"interact": 3,
+				"leave_site": 3,
+				"move": 14
+			},
+			"day": 21.0,
+			"inventory": {
+				"credits": 220.0,
+				"parts": 19.0,
+				"supplies": 18.0
+			},
+			"lessons": [
+				{
+					"actor": "he",
+					"round": 2,
+					"topic": "ability:he_1"
+				}
+			],
+			"mission": "M21",
+			"outcome": "success",
+			"party": [
+				"chen",
+				"he",
+				"jiang"
+			],
+			"round": 4
+		},
+		{
+			"commands": {
+				"end_round": 4,
+				"interact": 1,
+				"leave_site": 3,
+				"move": 13
+			},
+			"day": 22.0,
+			"inventory": {
+				"credits": 230.0,
+				"parts": 20.0,
+				"supplies": 19.0
+			},
+			"lessons": [
+				{
+					"actor": "jiang",
+					"round": 3,
+					"topic": "ability:jiang_3"
+				}
+			],
+			"mission": "M22",
+			"outcome": "success",
+			"party": [
+				"chen",
+				"he",
+				"jiang"
+			],
+			"round": 5
+		},
+		{
+			"commands": {
+				"end_round": 7,
+				"extract": 2,
+				"leave_site": 3,
+				"move": 23,
+				"pickup": 2,
+				"stabilize": 2
+			},
+			"day": 23.0,
+			"inventory": {
+				"credits": 240.0,
+				"parts": 21.0,
+				"supplies": 20.0
+			},
+			"lessons": [
+				{
+					"actor": "chen",
+					"round": 3,
+					"topic": "ability:chen_1"
+				}
+			],
+			"mission": "M23",
+			"outcome": "success",
+			"party": [
+				"chen",
+				"he",
+				"jiang"
+			],
+			"round": 8
+		},
+		{
+			"commands": {
+				"end_round": 6,
+				"extract": 2,
+				"leave_site": 3,
+				"move": 21,
+				"pickup": 2,
+				"stabilize": 2
+			},
+			"day": 24.0,
+			"inventory": {
+				"credits": 250.0,
+				"parts": 22.0,
+				"supplies": 21.0
+			},
+			"lessons": [
+				{
+					"actor": "he",
+					"round": 3,
+					"topic": "ability:he_3"
+				},
+				{
+					"actor": "jiang",
+					"round": 5,
+					"topic": "ability:jiang_1"
+				}
+			],
+			"mission": "M24",
+			"outcome": "success",
+			"party": [
+				"chen",
+				"he",
+				"jiang"
+			],
+			"round": 7
+		}
+	],
+	"nights": [
+		{
+			"available": [
+				"projects",
+				"talk"
+			],
+			"day": 1,
+			"inventory": {
+				"credits": 36.0,
+				"parts": 2.0,
+				"supplies": 6.0
+			},
+			"projects": [
+				"treat:[\"lin\", \"xu\"]",
+				"craft_medicine"
+			],
+			"recruited": [
+				"lin",
+				"xu",
+				"su"
+			],
+			"topic": "",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories"
+			],
+			"day": 2,
+			"inventory": {
+				"credits": 42.0,
+				"parts": 2.0,
+				"supplies": 1.0
+			},
+			"projects": [
+				"craft_medicine"
+			],
+			"recruited": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"topic": "stories",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment"
+			],
+			"day": 3,
+			"inventory": {
+				"credits": 52.0,
+				"parts": 3.0,
+				"supplies": 1.0
+			},
+			"projects": [
+				"craft_medicine"
+			],
+			"recruited": [
+				"lin",
+				"su",
+				"xu"
+			],
+			"topic": "equipment",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster"
+			],
+			"day": 4,
+			"inventory": {
+				"credits": 58.0,
+				"parts": 3.0,
+				"supplies": 0.0
+			},
+			"projects": [],
+			"recruited": [
+				"lin",
+				"su",
+				"xu",
+				"chen"
+			],
+			"topic": "roster",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations"
+			],
+			"day": 5,
+			"inventory": {
+				"credits": 64.0,
+				"parts": 3.0,
+				"supplies": 0.0
+			},
+			"projects": [
+				"buy_supplies"
+			],
+			"recruited": [
+				"chen",
+				"lin",
+				"su",
+				"xu"
+			],
+			"topic": "supplies",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 6,
+			"inventory": {
+				"credits": 70.0,
+				"parts": 4.0,
+				"supplies": 2.0
+			},
+			"projects": [
+				"craft_medicine"
+			],
+			"recruited": [
+				"chen",
+				"lin",
+				"su",
+				"xu"
+			],
+			"topic": "operations",
+			"urgent": "operations"
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 7,
+			"inventory": {
+				"credits": 80.0,
+				"parts": 5.0,
+				"supplies": 2.0
+			},
+			"projects": [
+				"craft_medicine"
+			],
+			"recruited": [
+				"chen",
+				"lin",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "growth",
+			"urgent": "operations"
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 8,
+			"inventory": {
+				"credits": 90.0,
+				"parts": 6.0,
+				"supplies": 2.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"lin",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "purchase:winch",
+			"urgent": "operations"
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 9,
+			"inventory": {
+				"credits": 100.0,
+				"parts": 7.0,
+				"supplies": 3.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"lin",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 10,
+			"inventory": {
+				"credits": 110.0,
+				"parts": 8.0,
+				"supplies": 4.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"lin",
+				"su",
+				"xu",
+				"ye",
+				"he"
+			],
+			"topic": "groups",
+			"urgent": "operations"
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 11,
+			"inventory": {
+				"credits": 120.0,
+				"parts": 9.0,
+				"supplies": 5.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"lin",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "facility:rest_area",
+			"urgent": "operations"
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 12,
+			"inventory": {
+				"credits": 130.0,
+				"parts": 10.0,
+				"supplies": 6.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"lin",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "city",
+			"urgent": "operations"
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 13,
+			"inventory": {
+				"credits": 140.0,
+				"parts": 11.0,
+				"supplies": 7.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"lin",
+				"su",
+				"xu",
+				"ye",
+				"mo"
+			],
+			"topic": "purchase:shield",
+			"urgent": "operations"
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 14,
+			"inventory": {
+				"credits": 150.0,
+				"parts": 12.0,
+				"supplies": 11.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "",
+			"urgent": "operations"
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 15,
+			"inventory": {
+				"credits": 160.0,
+				"parts": 13.0,
+				"supplies": 12.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"purchase:stretcher",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 16,
+			"inventory": {
+				"credits": 170.0,
+				"parts": 14.0,
+				"supplies": 13.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye",
+				"jiang"
+			],
+			"topic": "purchase:insulation",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"purchase:stretcher",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 17,
+			"inventory": {
+				"credits": 180.0,
+				"parts": 15.0,
+				"supplies": 14.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"jiang",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"purchase:stretcher",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 18,
+			"inventory": {
+				"credits": 190.0,
+				"parts": 16.0,
+				"supplies": 15.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"jiang",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "journal",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"purchase:stretcher",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 19,
+			"inventory": {
+				"credits": 200.0,
+				"parts": 17.0,
+				"supplies": 16.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"jiang",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "purchase:scanner",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"purchase:stretcher",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal",
+				"evidence"
+			],
+			"day": 20,
+			"inventory": {
+				"credits": 210.0,
+				"parts": 18.0,
+				"supplies": 17.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"jiang",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "evidence",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"purchase:stretcher",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal"
+			],
+			"day": 21,
+			"inventory": {
+				"credits": 220.0,
+				"parts": 19.0,
+				"supplies": 18.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"jiang",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"purchase:stretcher",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal",
+				"evidence"
+			],
+			"day": 22,
+			"inventory": {
+				"credits": 230.0,
+				"parts": 20.0,
+				"supplies": 19.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"jiang",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "purchase:stretcher",
+			"urgent": ""
+		},
+		{
+			"available": [
+				"projects",
+				"talk",
+				"stories",
+				"equipment",
+				"roster",
+				"supplies",
+				"medicine",
+				"growth",
+				"relationships",
+				"groups",
+				"city",
+				"history",
+				"purchase:winch",
+				"purchase:shield",
+				"purchase:insulation",
+				"purchase:scanner",
+				"purchase:stretcher",
+				"facility:infirmary",
+				"facility:workshop",
+				"facility:rest_area",
+				"facility:communications",
+				"operations",
+				"journal",
+				"evidence",
+				"route"
+			],
+			"day": 23,
+			"inventory": {
+				"credits": 240.0,
+				"parts": 21.0,
+				"supplies": 20.0
+			},
+			"projects": [],
+			"recruited": [
+				"chen",
+				"he",
+				"jiang",
+				"lin",
+				"mo",
+				"su",
+				"xu",
+				"ye"
+			],
+			"topic": "route",
+			"urgent": "route"
+		}
+	],
+	"profile": "recovery",
+	"scope": "Fresh production commands driven by displayed guidance rules; no injected stats or rewards. Nightly durable save/load. No human, Windows, elapsed reading time or difficulty acceptance.",
+	"value_comparisons": {}
+}

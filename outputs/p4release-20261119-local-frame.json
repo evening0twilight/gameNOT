@@ -1,0 +1,32 @@
+{
+  "continuous_input_sha256": "f982b8ba99cd5ad3084a7a6fb1a010166ff04890ca3cdab91cd45da2333b00ed",
+  "cpu": "Apple M3",
+  "fraction_under_16_7_ms": 0.996918767507003,
+  "gpu": "Apple M3",
+  "guide": true,
+  "host": "macOS",
+  "measurement": "Hidden macOS root and forced GPU draw of 1080p SubViewport, synthetic calls to actual final-mission preview. Window/screen latency, cold first launch and Windows memory trend not measured.",
+  "mission": "M24",
+  "preview_to_rendered_ms": [
+    18.629,
+    17.083,
+    14.921,
+    14.715,
+    13.752,
+    15.029,
+    14.713,
+    13.322,
+    14.539,
+    15.099,
+    14.278,
+    15.409
+  ],
+  "preview_to_rendered_p95_ms": 18.629,
+  "stable_frames": 3570,
+  "stable_p95_ms": 14.88,
+  "stable_seconds": 30.004061,
+  "viewport": [
+    1920,
+    1080
+  ]
+}

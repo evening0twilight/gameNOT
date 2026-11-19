@@ -1,0 +1,20 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M3
+
+PROJECT_BOOT_OK: baseline 0.18 campaign UI
+INPUT_TIMING: {"feedback_render_ms":27.012,"kind":"depart","receipts":1,"submit_ms":6.045,"undo":0}
+REFERENCE_RECORDER_PIPELINE passed=true simulated_mouse_events=2 hidden_720p_stable_samples=0
+
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M3
+
+PROJECT_BOOT_OK: baseline 0.18 campaign UI
+INPUT_TIMING: {"feedback_render_ms":15.239,"kind":"depart","receipts":1,"submit_ms":6.024,"undo":0}
+REFERENCE_RECORDER_PIPELINE passed=true simulated_mouse_events=2 hidden_720p_stable_samples=0
+
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M3
+
+PROJECT_BOOT_OK: baseline 0.18 campaign UI
+INPUT_TIMING: {"feedback_render_ms":23.003,"kind":"depart","receipts":1,"submit_ms":6.446,"undo":0}
+REFERENCE_RECORDER_PIPELINE passed=true simulated_mouse_events=2 hidden_720p_stable_samples=0

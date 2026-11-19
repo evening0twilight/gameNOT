@@ -1,0 +1,45 @@
+{
+  "source_map_sha256_before": "383610ab6ca075b2f2ef6af7d0ff2f9622d2ae18be12631a0d3d1009877651e3",
+  "source_map_sha256_after": "383610ab6ca075b2f2ef6af7d0ff2f9622d2ae18be12631a0d3d1009877651e3",
+  "source_map_encoding": "UTF-8 compact sorted-key JSON of tools.check_product018.source_hashes()",
+  "source_files": 499,
+  "runner_sha256": {
+    "release_visible_campaign.gd": "02f536fe407507fb8290ada9ab3a89bea28fac6b98845da48116b965b9038b02",
+    "release_route_preview.gd": "d9be658fe9e734fa7e340c2d0a5ef4d9a818aa38d480dded6a70a4b612049804"
+  },
+  "renderer": "macOS Godot OpenGL Compatibility in a hidden 1280x720 SubViewport",
+  "input": "viewport mouse motion and clicks, isolated fresh standard save, reduced motion",
+  "events": 2041,
+  "scrolls": 0,
+  "night_visits": 23,
+  "days": 24,
+  "outcomes": {
+    "success": 23,
+    "partial": 1
+  },
+  "ending": "evacuation",
+  "route_previews": 9,
+  "scope": "Scripted UI path; no human perception, elapsed playtime or Windows timing claim.",
+  "sha256": {
+    "visible-macOS.json": "f9e0c8597d388a0d635aaa20aec2b1ecb970f66810d3d909a5c55d235ca08c5c",
+    "visible-ending-macOS.json": "52b49db8e671d30f5792751d3b86307d5fbcf0092d3bdbcd6714592c5940d467",
+    "visible-gpu.log": "0b0cc4123f249a6178a6f6a0502e8f0cb19d094d35b7b613f191432155d7ac75",
+    "route-preview-gpu.log": "cbb8c036dff5a256ee76f5b298fa8cfa77665b5555d96ac5ed6255354c66cd49",
+    "route-preview-macOS.json": "f494e9406a68d114bd8dfdee96d628d58105e1db7fd0b192aef8f0d62d0e75bf",
+    "camp-day23.json": "f982b8ba99cd5ad3084a7a6fb1a010166ff04890ca3cdab91cd45da2333b00ed",
+    "visible-first-move.png": "5062b9bf294e16e2969c1a4ea031b7862df8ff854c26fa6644c789dea813a43f",
+    "visible-clinic-circuit.png": "2928fe6b690fc80d863939a594742c0461a3f65878b6d0afaad5bbad4a6e4a56",
+    "visible-evidence-night.png": "1037800846122bd8e6403ec42529c170103f4aa9ae2a219327e8e6d76f8dcf4c",
+    "visible-final-route-preview.png": "0d0eb32fe2b33156015daccb4af0f7294af2347f3e626521eb02214360404269",
+    "visible-ending.png": "795343c21efdca7cd41f620715e2fe8a0deeeef8c20032024d2f08ff6a3987be",
+    "visible-route-zh_CN-shared_control.png": "c0abc27f591a356e34f2a7db2270af4620c04aefb694880e4e99f389fcb3f740",
+    "visible-route-zh_CN-distributed_rebuild.png": "b00f4ae6cae5b036c26a7fa05106b3d1a1e9bd6333dede7f713b5efa48b62d9b",
+    "visible-route-zh_CN-evacuation.png": "583fc687c8b3b6c565c7cebe48be49b056945caca80476ea8b6a28c87546d229",
+    "visible-route-zh_TW-shared_control.png": "bcf2fa9e33cb9a7370f398b219c2df377ba5cfe2f742da9ff2d77ee741bd334d",
+    "visible-route-zh_TW-distributed_rebuild.png": "23b46d5e75b7e29088fc85df7abf176d67fa8e33e90430b63c45652698ff508d",
+    "visible-route-zh_TW-evacuation.png": "1626f76323b49894eb2c8fecee9f9986d4b769280bbe206a6e0f24e00f4a3abf",
+    "visible-route-en-shared_control.png": "13c62eb7ec109a351296ed1029d98300ef5f3a59a4550ccadc663a19d6e2d2ed",
+    "visible-route-en-distributed_rebuild.png": "5c08f998f264f02964352ef3a088a460e05068e7ee7d6ce47f71f7195e53c358",
+    "visible-route-en-evacuation.png": "3481372d65622bd02b3bc9127cb2a22607676931676d726b7c039813b75dfd3e"
+  }
+}

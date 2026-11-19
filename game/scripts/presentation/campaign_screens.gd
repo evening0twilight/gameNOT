@@ -1,4 +1,5 @@
 extends RefCounted
+const Readable=preload("res://scripts/presentation/tactical_readability.gd")
 const I18n=preload("res://scripts/presentation/localization.gd")
 const Journey=preload("res://scripts/presentation/journey_presentation.gd")
 const Crew=preload("res://scripts/domain/crew_journey.gd")
@@ -12,7 +13,7 @@ static func column(parent: Node) -> VBoxContainer:
 static func title(ui: Control,parent: Node) -> void:
 	var stage:=Control.new();stage.size_flags_horizontal=Control.SIZE_EXPAND_FILL;stage.size_flags_vertical=Control.SIZE_EXPAND_FILL;parent.add_child(stage)
 	var art=ui.Art.picture(ui.Art.narrative("office"),Vector2.ZERO);stage.add_child(art);art.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	var shade:=ColorRect.new();shade.color=Color(.025,.06,.08,.48);shade.mouse_filter=Control.MOUSE_FILTER_IGNORE;stage.add_child(shade);shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
+	var shade: TextureRect=ui.Art.scrim();stage.add_child(shade);shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var margin:=MarginContainer.new();stage.add_child(margin);margin.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	for side: String in ["left","right","top","bottom"]:margin.add_theme_constant_override("margin_"+side,40)
 	var layout:=HBoxContainer.new();layout.add_theme_constant_override("separation",48);margin.add_child(layout)
@@ -20,12 +21,19 @@ static func title(ui: Control,parent: Node) -> void:
 	ui.label(copy,ui.I18n.t("baseline018.ea0219b09f08")).add_theme_font_size_override("font_size",52)
 	ui.label(copy,ui.I18n.t("quality.title_line")).add_theme_color_override("font_color",ui.GOLD)
 	ui.label(copy,ui.I18n.t("quality.title_description")).add_theme_font_size_override("font_size",maxi(16,ui.font_size))
-	ui.label(copy,ui.I18n.t("quality.variant_unlocked" if ui.can_variant_b() else "p4.variant_locked")).add_theme_font_size_override("font_size",16)
+
 	var panel:=PanelContainer.new();panel.custom_minimum_size.x=320;panel.size_flags_vertical=Control.SIZE_SHRINK_CENTER;panel.add_theme_stylebox_override("panel",ui.surface(Color(.04,.09,.11,.94),12));layout.add_child(panel)
 	var box:=VBoxContainer.new();box.add_theme_constant_override("separation",14);panel.add_child(box)
 	ui.label(box,ui.I18n.t("quality.title_return")).add_theme_color_override("font_color",ui.MUTED)
-	ui.button(box,ui.I18n.t("baseline018.b5fbc7830ee2")%ui.session.state.campaign.day,func():ui.title_screen=false;ui.render()).disabled=not FileAccess.file_exists(ui.session.path)
-	var start: Button=ui.button(box,ui.I18n.t("baseline018.383860206bb4"),ui.new_campaign);start.add_theme_stylebox_override("normal",ui.surface(Color("35524c"),8,ui.TEAL))
+	var resumable: bool=ui.title_load_error.is_empty() and FileAccess.file_exists(ui.session.path)
+	if resumable:
+		var resume: Button=ui.button(box,ui.I18n.t("baseline018.b5fbc7830ee2")%ui.session.state.campaign.day,ui.continue_campaign)
+		resume.add_theme_stylebox_override("normal",ui.surface(Color("35524c"),8,ui.TEAL))
+	elif not ui.title_load_error.is_empty():
+		if FileAccess.file_exists(ui.session.path+".bak"):ui.button(box,ui.I18n.t("ui.1ae486278078"),ui.recover)
+		ui.button(box,ui.I18n.t("baseline018.186908b78346"),ui.load_manual)
+	var start: Button=ui.button(box,ui.I18n.t("baseline018.383860206bb4"),ui.new_campaign)
+	if not resumable:start.add_theme_stylebox_override("normal",ui.surface(Color("35524c"),8,ui.TEAL))
 	ui.button(box,ui.I18n.t("baseline018.fbe77b429bd8"),ui.campaign_picker)
 	ui.button(box,ui.I18n.t("baseline018.f0c4b4c6f9cd"),ui.show_help)
 	ui.button(box,ui.I18n.t("ui.f5bb41e345b5"),ui.show_languages)
@@ -95,7 +103,7 @@ static func briefing(ui: Control,parent: Node) -> void:
 				if obj.id==id:names.append(I18n.s(obj.label))
 		ui.label(box,ui.I18n.t("baseline018.1a78ccb9b0d5")+" / ".join(names))
 	ui.label(box,ui.I18n.t("baseline018.c06312b8d2a7"))
-	ui.label(box,board.decision)
+	ui.label(box,ui.I18n.content("boards",board.id,"decision",board.decision))
 	var context:=VBoxContainer.new();box.add_child(context)
 	for line: String in Journey.situation(s,ui.session.content,mission):ui.label(context,line)
 	ui.button(context,ui.I18n.t("journey.city_button"),func():city(ui))
@@ -153,13 +161,13 @@ static func briefing(ui: Control,parent: Node) -> void:
 	var support:=OptionButton.new();support.add_item(ui.I18n.t("baseline018.49922c9d36c2"));support.set_item_metadata(0,"");box.add_child(support)
 	for id: String in s.journey.recruited:
 		if s.product.withdrawn.has(id) or s.actors[id].ready_day>s.campaign.day or s.actors[id].fatigue+8>100:continue
-		support.add_item(s.actors[id].name);support.set_item_metadata(support.item_count-1,id)
+		support.add_item(ui.actor_name(id));support.set_item_metadata(support.item_count-1,id)
 		if draft.get("support","")==id:support.select(support.item_count-1)
 	support.item_selected.connect(func(i: int):draft.support=str(support.get_item_metadata(i));refresh_dispatch[0].call())
 	ui.label(box,ui.I18n.t("baseline018.c535e1b44b3e")%[s.full_campaign.medicine_stock,Product.pack_limit(s)])
 	var medicine:=SpinBox.new();medicine.min_value=0;medicine.max_value=mini(s.full_campaign.medicine_stock,Product.pack_limit(s));medicine.value=draft.get("medicine",0);box.add_child(medicine)
 	var dispatch:=CheckButton.new();dispatch.text=ui.I18n.t("baseline018.c8fb6bfa320c");dispatch.autowrap_mode=TextServer.AUTOWRAP_WORD_SMART;dispatch.button_pressed=draft.get("dispatch",false);box.add_child(dispatch)
-	ui.label(box,ui.I18n.t("baseline018.7fbfe38cc7a7")+str(board.exits)+ui.I18n.t("baseline018.cc68a892e198"))
+	ui.label(box,ui.I18n.t("baseline018.7fbfe38cc7a7")+Readable.cell_list(board.exits)+"\n"+I18n.s("改派后的出口：%s")%Readable.cell_text([7,7])+"\n"+I18n.s("M10、M21 的其他出口需要完成现场操作。"))
 	refresh_dispatch[0]=func():
 		dispatch.disabled=not ui.Rules.Field.dispatch_ready(s,roster,str(draft.get("support",""))) or s.inventory.supplies<2
 		if dispatch.disabled:dispatch.button_pressed=false;draft.dispatch=false
@@ -274,12 +282,20 @@ static func manual_slots(ui: Control,saving: bool) -> void:
 			var path: String=ui.session.path.get_base_dir().path_join(legacy)
 			var loaded: Dictionary=ui.session.store.load_slot(path,ui.session.content)
 			if loaded.ok:ui.button(dialog.box,ui.I18n.t("baseline018.a8c6d8f5a849")+legacy,func():
-				var saved: Dictionary=ui.session.store.save_slot(ui.session.path,loaded.state,ui.session.content)
-				if saved.ok:ui.session.state=loaded.state;ui.title_screen=false;dialog.window.queue_free();ui.render())
+				var saved: Dictionary=ui.session.restore_state(loaded.state)
+				if saved.ok:dialog.window.queue_free();ui.enter_loaded_campaign())
 	for i: int in range(1,11):
 		var path: String=ui.session.path.get_base_dir().path_join("manual-%02d.json"%i)
 		var existing: Dictionary=ui.session.store.load_slot(path,ui.session.content)
-		var caption: String=ui.I18n.t("baseline018.f857ef1eb9e2")%[i,ui.I18n.t("baseline018.fd6cf6476633")%[existing.state.campaign.day,existing.state.campaign.phase] if existing.ok else (ui.I18n.t("baseline018.e14ac69ed248") if FileAccess.file_exists(path) else ui.I18n.t("baseline018.2f8267a89ad5"))]
+		var from_backup: bool=not saving and not existing.ok and FileAccess.file_exists(path+".bak")
+		if from_backup:existing=ui.session.store.load_slot(path,ui.session.content,true)
+		var status: String=ui.I18n.t("baseline018.e14ac69ed248") if FileAccess.file_exists(path) else ui.I18n.t("baseline018.2f8267a89ad5")
+		if existing.ok:
+			var phases: Dictionary={"briefing":ui.I18n.t("p2.briefing"),"battle":ui.I18n.t("ui.b3033f3709e4"),"settlement":ui.I18n.t("event.settled"),"camp":ui.I18n.s("营地")}
+			var phase: String=ui.I18n.s("结局") if existing.state.chapter_one.finished else str(phases.get(existing.state.campaign.phase,""))
+			status=ui.I18n.t("baseline018.fd6cf6476633")%[existing.state.campaign.day,phase]
+		var caption: String=ui.I18n.t("baseline018.f857ef1eb9e2")%[i,status]
+		if from_backup and existing.ok:caption+=" · "+path.get_file()+".bak"
 		ui.button(dialog.box,caption,func():
 			if saving and FileAccess.file_exists(path):
 				var confirm: Dictionary=ui.modal(ui.I18n.t("baseline018.262faac2210e")%i)
@@ -287,8 +303,8 @@ static func manual_slots(ui: Control,saving: bool) -> void:
 				ui.button(confirm.box,ui.I18n.t("baseline018.d788c6261163"),func():confirm.window.queue_free();dialog.window.queue_free();write_manual(ui,path))
 			elif saving:dialog.window.queue_free();write_manual(ui,path)
 			elif existing.ok:
-				var saved: Dictionary=ui.session.store.save_slot(ui.session.path,existing.state,ui.session.content)
-				if saved.ok:ui.session.state=existing.state;ui.title_screen=false;dialog.window.queue_free();ui.render()
+				var saved: Dictionary=ui.session.restore_state(existing.state)
+				if saved.ok:dialog.window.queue_free();ui.enter_loaded_campaign()
 				else:ui.message=ui.error_text(saved.error_code);ui.render()).disabled=not saving and not existing.ok
 static func write_manual(ui: Control,path: String) -> void:
 	var result: Dictionary=ui.session.store.save_slot(path,ui.session.state,ui.session.content)
@@ -304,7 +320,7 @@ static func operations(ui: Control,box: VBoxContainer) -> void:
 		ui.label(box,ui.I18n.t("baseline018.5aaac2f8b4ee"))
 		for i: int in range(ui.Rules.Field.posts(s.battle).size()):
 			var cell: Array=ui.Rules.Field.posts(s.battle)[i]
-			ui.button(box,ui.I18n.t("baseline018.44081200bb96")%[i+1,str(cell)],func():ui.propose("service_watch",{"post":i})).disabled=f.done or f.failed
+			ui.button(box,ui.I18n.t("baseline018.44081200bb96")%[i+1,preload("res://scripts/presentation/tactical_readability.gd").cell_text(cell)],func():ui.propose("service_watch",{"post":i})).disabled=f.done or f.failed
 			ui.button(box,ui.I18n.t("baseline018.fe3a1266e41f")%ui.actor_name(ui.partner),func():ui.propose("protocol",{"protocol":"protected_work","partner":ui.partner,"post":i,"consent":true})).disabled=f.done or f.failed
 		if ui.selected=="chen":ui.button(box,ui.I18n.t("baseline018.49762365263d"),func():ui.propose("specialty",{"ability":"chen_3","target":"live_service"}))
 		for id: String in f.definition.linked_controls:
@@ -319,12 +335,15 @@ static func operations(ui: Control,box: VBoxContainer) -> void:
 		var f: Dictionary=s.operations.facilities[id]
 		var spec: Dictionary=ui.session.content.domains.field_operations.investments[id]
 		ui.label(box,spec.label+ui.I18n.t("baseline018.a158c92d099f")%[spec.first_day,spec.last_day])
-		var remaining: int=maxi(0,int(spec.last_day)-maxi(s.campaign.day+1,spec.first_day)+1)
+		var earliest: int=maxi(spec.first_day,f.available_day) if f.qualified else int(s.campaign.day)+1
+		earliest=maxi(earliest,int(s.campaign.day)+(1 if s.operations.assistance_day==s.campaign.day else 0))
+		var remaining: int=maxi(0,int(spec.last_day)-maxi(earliest,spec.first_day)+1)
 		ui.label(box,ui.I18n.t("baseline018.ac9eba24148d")%[remaining,mini(2-f.used,remaining),16 if s.product.facilities.rest_area>=1 else 12])
 		if not f.qualified:
 			ui.label(box,ui.I18n.t("baseline018.05fe2c4a84d5"))
-			ui.button(box,ui.I18n.t("baseline018.605c80e898ce"),func():ui.propose("repair_field_facility",{"facility":id}))
-		elif s.campaign.day>=maxi(spec.first_day,f.available_day) and s.campaign.day<=spec.last_day and f.used<2:
+			var caption: String=ui.I18n.s("公益修复 · 仅记入社区后记") if remaining==0 else ui.I18n.t("baseline018.605c80e898ce")
+			ui.button(box,caption,func():ui.propose("repair_field_facility",{"facility":id})).disabled=s.campaign.projects>=2 or s.inventory.supplies<spec.repair_supplies
+		elif s.campaign.day>=maxi(spec.first_day,f.available_day) and s.campaign.day<=spec.last_day and f.used<2 and s.operations.assistance_day!=s.campaign.day:
 			ui.button(box,ui.I18n.t("baseline018.0672009b88fb"),func():
 				var dialog: Dictionary=ui.modal(spec.label);var ids: Array=[]
 				for actor: String in s.journey.recruited:

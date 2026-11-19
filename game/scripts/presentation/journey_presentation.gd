@@ -26,7 +26,12 @@ static func scene(s: Dictionary,content: Dictionary,id: String) -> Dictionary:
 		else:lines=[I18n.t("journey.recovery_scene")]+script.opening
 	else:lines=script.get("opening",[])
 	var pages: Array=[]
-	for index: int in range(lines.size()):pages.append(page(content,node,staging,"opening",index,str(lines[index]),delivery))
+	var replacements: Dictionary=catalog().get("scene_lines",{}).get(id,{})
+	for index: int in range(lines.size()):
+		var line: String=lines[index]
+		if delivery.mode=="present" and index<replacements.get("opening",[]).size():
+			line=replacements.opening[index]
+		pages.append(page(content,node,staging,"opening",index,line,delivery))
 	# Authored staging adds physical context, never replacement facts or rewards.
 	# It is only valid for the recorded present delivery, not injury or letters.
 	if delivery.mode=="present" and catalog().get("scene_beats",{}).has(id) and not pages.is_empty():
@@ -40,7 +45,14 @@ static func scene(s: Dictionary,content: Dictionary,id: String) -> Dictionary:
 			var line: String=choices[record.choice][index]
 			if line.begins_with("本次只记录意愿和安排"):
 				line=catalog().recovery_close[node.actor]
-			pages.append(page(content,node,staging,"choices."+record.choice,index,line,delivery))
+			var field_name: String="choices."+record.choice
+			if index<replacements.get(field_name,[]).size():line=replacements[field_name][index]
+			var tail: Array=catalog().get("dialogue_tails",{}).get(id,{}).get(record.choice,[])
+			if not tail.is_empty() and index==0 and line==script.choices[record.choice][0]:
+				var split_page: Dictionary=page(content,node,staging,field_name,index,tail[0],delivery)
+				split_page.beat_after=I18n.s(tail[1])
+				pages.append(split_page)
+			else:pages.append(page(content,node,staging,field_name,index,line,delivery))
 	return {"pages":pages,"opening_count":lines.size(),"delivery":delivery,"field":field,"location":"clinic" if delivery.mode=="recovery" else staging.location,"tone":staging.tone,"node":node,"record":record,"script":script}
 static func page(content: Dictionary,node: Dictionary,staging: Dictionary,field: String,index: int,line: String,delivery: Dictionary) -> Dictionary:
 	var actors: Array=node.get("actors",[node.get("actor","")])

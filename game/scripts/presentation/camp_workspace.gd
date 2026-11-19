@@ -4,14 +4,19 @@ const Guide=preload("res://scripts/presentation/camp_guide.gd")
 static func show(ui: Control,box: VBoxContainer) -> void:
 	var s: Dictionary=ui.session.state
 	if s.campaign.day==1 and ui.FirstShift.enabled(ui):ui.FirstShift.camp(ui,box);return
-	var top:=HBoxContainer.new();box.add_child(top)
-	ui.label(top,ui.I18n.t("quality.camp_heading")).add_theme_color_override("font_color",ui.GOLD)
+	var banner:=PanelContainer.new();banner.clip_contents=true
+	banner.add_theme_stylebox_override("panel",ui.surface(ui.SURFACE,8));box.add_child(banner)
+	var backdrop=ui.Art.picture(ui.Art.narrative("office"),Vector2.ZERO);banner.add_child(backdrop)
+	var shade: TextureRect=ui.Art.scrim();banner.add_child(shade)
+	var top:=HBoxContainer.new();top.add_theme_constant_override("separation",16);banner.add_child(top)
+	var summary:=VBoxContainer.new();summary.size_flags_horizontal=Control.SIZE_EXPAND_FILL;top.add_child(summary)
+	var heading: Label=ui.label(summary,ui.I18n.t("quality.camp_heading"));heading.add_theme_font_size_override("font_size",maxi(24,ui.font_size));heading.add_theme_color_override("font_color",ui.GOLD)
+	var slots: String=ui.I18n.s("项目%d/2 · 短谈%d/2 · 均可不安排") if Guide.active(ui) else ui.I18n.t("ui.10a3c2a27fcc")
+	ui.label(summary,slots%[s.campaign.projects,s.campaign.talked.size()]).add_theme_font_size_override("font_size",maxi(14,ui.font_size-4))
 	var advance: Button=ui.button(top,ui.I18n.s("结束今晚") if Guide.active(ui) else ui.I18n.t("p2.prepare_next"),ui.show_night_review)
+	advance.size_flags_vertical=Control.SIZE_SHRINK_CENTER
 	advance.custom_minimum_size.x=180 if Guide.active(ui) else 260;advance.add_theme_stylebox_override("normal",ui.surface(Color("35524c"),8,ui.TEAL))
-	if Guide.active(ui):
-		ui.label(box,ui.I18n.s("项目%d/2 · 短谈%d/2 · 均可不安排")%[s.campaign.projects,s.campaign.talked.size()]).add_theme_font_size_override("font_size",maxi(14,ui.font_size-4))
-	else:
-		ui.label(box,ui.I18n.t("ui.10a3c2a27fcc")%[s.campaign.projects,s.campaign.talked.size()])
+	if not Guide.active(ui):
 		ui.label(box,ui.I18n.t("quality.camp_optional")).add_theme_color_override("font_color",ui.MUTED)
 		ui.Screens.recruits(ui,box)
 	if s.campaign.day==23:ui.label(box,ui.I18n.t("p3.final_warning")).add_theme_color_override("font_color",ui.GOLD)

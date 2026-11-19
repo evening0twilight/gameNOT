@@ -18,7 +18,9 @@ import tempfile
 import wave
 
 ROOT = Path(__file__).resolve().parents[1]
-DOCS = ROOT / 'docs/p4-018-20261113'
+ORIGINAL = ROOT / 'docs/p4-018-20261113'
+DOCS = ROOT / 'docs/p4-release-20261119'
+PREVIEW_PREFIX = 'p4release-20261119-audio'
 CONTROLLER = (ROOT / 'game/scripts/presentation/audio_controller.gd').read_text()
 BUDGET = {
     'ui': ['ui_focus', 'ui_confirm', 'ui_cancel', 'ui_error', 'ui_page', 'ui_save'],
@@ -48,7 +50,7 @@ def gain_db(level):
 def record(source, name, relpath, category):
     path = ROOT / relpath
     digest = hashlib.sha256(path.read_bytes()).hexdigest()
-    src, expected = source[relpath]
+    src, expected, loop_head = source[relpath]
     assert digest == expected, f'hash changed: {path}'
     rate, channels = exact_frames(path)
     frames = len(channels[0])
@@ -61,16 +63,16 @@ def record(source, name, relpath, category):
         'seconds': round(frames / rate, 6), 'rms_dbfs': gain_db(rms), 'peak_dbfs': gain_db(peak),
     }
     if category == 'music':
-        jump = max(abs(ch[0] - ch[-1]) for ch in channels)
+        jump = max(abs(ch[loop_head] - ch[-1]) for ch in channels)
         # A periodic signal need not be zero at the boundary; compare the
         # join's first difference to the neighbouring samples' slopes.
-        seam_residual = max(abs((ch[0] - ch[-1]) - ((ch[1] - ch[0]) + (ch[-1] - ch[-2])) / 2)
+        seam_residual = max(abs((ch[loop_head] - ch[-1]) - ((ch[loop_head+1] - ch[loop_head]) + (ch[-1] - ch[-2])) / 2)
                             for ch in channels)
         span = rate // 5
-        lead_rms = math.sqrt(sum(v*v for ch in channels for v in ch[:span]) / (span * len(channels)))
+        lead_rms = math.sqrt(sum(v*v for ch in channels for v in ch[loop_head:loop_head+span]) / (span * len(channels)))
         tail_rms = math.sqrt(sum(v*v for ch in channels for v in ch[-span:]) / (span * len(channels)))
-        assert frames / rate >= 16 and seam_residual <= 82 and min(lead_rms, tail_rms) > 120, f'loop gap or sample jump: {path}'
-        data.update(seam_jump_pcm16=jump, seam_slope_residual_pcm16=seam_residual, seam_head_tail_rms_dbfs=[gain_db(lead_rms / 32768), gain_db(tail_rms / 32768)])
+        assert frames / rate >= 16 and (frames-loop_head)/rate >= 16 and seam_residual <= 82 and min(lead_rms, tail_rms) > 120, f'loop gap or sample jump: {path}'
+        data.update(loop_begin=loop_head, seam_jump_pcm16=jump, seam_slope_residual_pcm16=seam_residual, seam_head_tail_rms_dbfs=[gain_db(lead_rms / 32768), gain_db(tail_rms / 32768)])
     else:
         assert .04 < frames / rate < .8, f'invalid short cue duration: {path}'
         assert max(abs(ch[-1]) for ch in channels) < 100, f'abrupt release: {path}'
@@ -80,9 +82,10 @@ def record(source, name, relpath, category):
 def build_report():
     source = {}
     for manifest in ['docs/baseline018-audio.json', 'docs/p4-feedback-audio.json',
-                     'docs/p4-audio-assets.json', str((DOCS / 'audio-generated.json').relative_to(ROOT))]:
+                     'docs/p4-audio-assets.json', str((ORIGINAL / 'audio-generated.json').relative_to(ROOT)),
+                     str((DOCS / 'audio-generated.json').relative_to(ROOT))]:
         for entry in json.loads((ROOT / manifest).read_text())['assets']:
-            source[entry['path']] = manifest, entry['sha256']
+            source[entry['path']] = manifest, entry['sha256'], entry.get('loop_begin_frame', 0)
 
     prefix = re.search(r'const AUDIO_ROOT := "res://([^"]+)"', CONTROLLER)[1]
     music = CONTROLLER.split('const MUSIC := {', 1)[1].split('}', 1)[0]
@@ -98,7 +101,7 @@ def build_report():
     assert len({row['sha256'] for row in cues}) == len(cues) == 24
     return {
         'design': '0.18: release_scope, requirements.AUDIO-01, acceptance.R08',
-        'source': 'Original project synthesis; no third-party recordings, voice or model output.',
+        'source': 'Six project-prompted Qwen instrumental cues with offline editing. All 24 effects use retained project synthesis.',
         'music': loops, 'sfx': cues,
         'metrics': 'Peak, RMS and loop boundaries measured from source PCM, before Godot compression and bus gain.',
         'human_listening_accepted': False,
@@ -156,16 +159,17 @@ def previews(report, directory):
     # One loop seam per 12-second block, at local time 0:05.
     for name in ['camp', 'battle', 'battle_high', 'daily', 'grave', 'ending']:
         clip = stereo_clip(music[name])
-        excerpt = [c[-5 * PREVIEW_RATE:] + c[:6 * PREVIEW_RATE] for c in clip]
+        head = round(music[name]['loop_begin'] * PREVIEW_RATE / music[name]['rate'])
+        excerpt = [c[-5 * PREVIEW_RATE:] + c[head:head + 6 * PREVIEW_RATE] for c in clip]
         parts += [faded(excerpt), silence(1)]
-    export_mp3(directory / 'p4-audio-nov13-music.mp3', concatenate(parts))
+    export_mp3(directory / f'{PREVIEW_PREFIX}-music.mp3', concatenate(parts))
 
     parts = []
     # One cue at each integer second, in budget order, at source levels.
     for cue in cues.values():
         clip = stereo_clip(cue)
         parts.append([ch + [0.] * (PREVIEW_RATE - len(ch)) for ch in clip])
-    export_mp3(directory / 'p4-audio-nov13-sfx.mp3', concatenate(parts))
+    export_mp3(directory / f'{PREVIEW_PREFIX}-sfx.mp3', concatenate(parts))
 
     # Example in-game gain ratios. A common 2x gain makes the file easier to
     # preview; the mix retains exactly the Music / Effects slider ratio.
@@ -191,7 +195,7 @@ def previews(report, directory):
         for j, ch in enumerate(stereo_clip(cues[name])):
             for i, v in enumerate(ch):
                 mix[j][at + i] += common_gain * .60 * v
-    export_mp3(directory / 'p4-audio-nov13-field-mix.mp3', faded(mix, .45))
+    export_mp3(directory / f'{PREVIEW_PREFIX}-field-mix.mp3', faded(mix, .45))
 
 
 def main():

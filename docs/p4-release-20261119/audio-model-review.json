@@ -1,0 +1,234 @@
+{
+  "provider_generations": [
+    {
+      "model": "qwen-audio-3.1-tts-next",
+      "prompt": "为夜间救援队回到灯下整理装备的场景写一段45秒原创钢琴独奏，钢琴独奏从第一秒到最后一秒，不出现任何其他乐器、鼓、节拍器、空间声、朗读或者人声。独奏始终很轻，像房间里隔着木窗传来，左手用稀疏的低音保持脉搏，右手是带呼吸的三音问答，四小节一换气，约70 BPM。安抚、务实、清醒，留出阅读与界面提示的空间。保持全曲的编制与强弱相近，避免高潮、转风格或终止式大落点。最后四小节回到开头和声，可无缝回环。不模仿任何现有曲目。",
+      "usage": {
+        "input_tokens": 473,
+        "output_tokens": 9000,
+        "total_tokens": 9473,
+        "duration": 45
+      },
+      "request_id": "2a415bc3-66e8-912d-8279-d371a554af39",
+      "status": "generated",
+      "route": "camp",
+      "response_wav_sha256": "19e95b397d3d132c9b01583c284bfb5a06e93299b6c284fb684984a7748baade",
+      "provider": "Alibaba Cloud Model Studio (Beijing)"
+    },
+    {
+      "model": "qwen-audio-3.1-tts-next",
+      "prompt": "约45秒纯器乐背景配乐。冒着夜雨，在水位上涨前仔细规划救援路线。原创室内乐，D小调、4/4拍、84 BPM，短弓大提琴的重复脉动很稳，柔音钢琴用稀疏三音上行的问句与低音弦乐应答，偶尔有空心木块轻击。让前景保留给游戏提示音。克制、专注而有人情味，避免大片式打击、警报、雨声、环境声、人声、歌词或口白。中段改变弓法和乐句，末段自然回到开头的节拍和D小调。写完全原创曲调，不参考现成音乐。",
+      "usage": {
+        "input_tokens": 510,
+        "output_tokens": 8992,
+        "total_tokens": 9502,
+        "duration": 45
+      },
+      "request_id": "ac111f02-f0a0-9695-84ee-67e6a9897510",
+      "status": "generated",
+      "route": "battle",
+      "response_wav_sha256": "a12023509fdfd43784842d4846cefcf08f3b1304dbbf5de127a9101b18ea8d8d",
+      "provider": "Alibaba Cloud Model Studio (Beijing)"
+    },
+    {
+      "model": "qwen-audio-3.1-tts-next",
+      "prompt": "约45秒纯器乐战术游戏配乐，洪水迫近，救援队必须尽快抬出最后一人。原创小型室内乐，D小调、4/4拍、84 BPM。大提琴整齐快速的八分音符短弓作脉动，不间断，低音钢琴短句与中提琴切分回应。少量克制的框鼓轻击，推进感明显，音量不过度起伏，提示音仍有空间。中段有一次和声变化，尾段回到开头的节拍与D小调。拒绝大鼓轰鸣、合成器警报、环境声、朗读、歌声或口白。无歌词，不模仿任何既有曲目。",
+      "usage": {
+        "input_tokens": 530,
+        "output_tokens": 9000,
+        "total_tokens": 9530,
+        "duration": 45
+      },
+      "request_id": "d3430679-1b81-93bb-8a36-f6e498ea246d",
+      "status": "generated_download_recovered",
+      "route": "battle_high",
+      "response_wav_sha256": "2055f1b31020e687822921cc1bb2c97db8e5432033c11ecd9f1829542100d378",
+      "provider": "Alibaba Cloud Model Studio (Beijing)",
+      "first_download_error": "URLError"
+    },
+    {
+      "model": "qwen-audio-3.1-tts-next",
+      "prompt": "为以洪水救援为背景的现实题材战术游戏作约45秒的原创纯器乐。深夜整理工具、分半个苹果、队友调侃又默契地接住话头。温和、轻巧，有一点好奇的微笑。暖木质音色，小编制，大提琴拨弦、单簧管与中提琴短短的对答。6/8温和摇曳，稀疏，留出阅读对白的安静。不要煽情也不要夸张搞笑。不用钢琴、鼓组和歌词，不要人说话、哼唱或任何人声。中间安排拨弦乐句的小变化，再回到开场织体以便做游戏循环，不引用现成旋律。",
+      "usage": {
+        "input_tokens": 559,
+        "output_tokens": 9000,
+        "total_tokens": 9559,
+        "duration": 45
+      },
+      "request_id": "b8977e25-03b2-9975-a03d-8556f384a8a3",
+      "status": "generated_download_recovered",
+      "route": "daily",
+      "response_wav_sha256": "f38e28f7ac430c60026ba25fe404be5c8a4712eb0232d14031b4b7a183859aaa",
+      "provider": "Alibaba Cloud Model Studio (Beijing)",
+      "first_download_error": "URLError",
+      "prior_connection_without_result": {
+        "status": "error",
+        "stage": "generation",
+        "error": "URLError"
+      }
+    },
+    {
+      "model": "qwen-audio-3.1-tts-next",
+      "prompt": "为原创洪水救援游戏写约45秒沉重事件背景器乐。屋外雨停了，队员在窗边读一封未寄出的信。低音单簧管与弱音中提琴、极稀疏的低音弦乐互相应答，慢速小调，停顿和呼吸构成乐句，重心低而稳。克制、内省、有份量，无跳吓、突发渐强、鼓点及声效。保持房间般贴近的空间，不要史诗感。纯器乐，无人说话、歌唱或哼唱。末段回到开头的长音织体，适合循环和阅读，完全原创不模仿既有作品。",
+      "usage": {
+        "input_tokens": 602,
+        "output_tokens": 8992,
+        "total_tokens": 9594,
+        "duration": 45
+      },
+      "request_id": "f153194e-f479-9f27-87af-cd35e388692d",
+      "status": "generated",
+      "route": "grave",
+      "response_wav_sha256": "446ea66c5bf664872f5a1c4651250d84b06db8dcf2a13fc06652cda066a8e6d8",
+      "provider": "Alibaba Cloud Model Studio (Beijing)",
+      "prior_connection_without_result": {
+        "status": "error",
+        "stage": "generation",
+        "error": "URLError"
+      }
+    },
+    {
+      "model": "qwen-audio-3.1-tts-next",
+      "prompt": "为原创战术救援游戏写一段约45秒的纯器乐片尾配乐。洪水退去，救援队从屋顶看见窗灯一户户亮起。用柔音钢琴引出三音的简短上行乐句，大提琴用低音回答，逐渐添入很轻的中提琴及低音木管。旋律经历一次展开，再回到克制而平静的开头和声，尾段预留一个可以回环的乐句。小编制，近距离自然声场，沉着、温暖又带着代价感，避免宏大庆典和煽情的鼓点。纯音乐，无歌词、口白与歌声，不模拟任何现有音乐。",
+      "usage": {
+        "input_tokens": 549,
+        "output_tokens": 8992,
+        "total_tokens": 9541,
+        "duration": 45
+      },
+      "request_id": "7154749d-ddc3-9aa1-b70a-7a6d234bcd1c",
+      "status": "generated",
+      "route": "ending",
+      "response_wav_sha256": "862dda27126d72235a30db8a5e9187598e130ff48cdd570d51de6cd8f7bccdb0",
+      "provider": "Alibaba Cloud Model Studio (Beijing)"
+    }
+  ],
+  "prior_camp_trial": "docs/p4-languages-20261117/audio-model-review.json",
+  "listening": {
+    "model": "qwen3.8-omni-flash",
+    "protocol": "Pairs submitted without cue names or creative brief, full edited cue plus 12 seconds after its loop marker; MP3 24kHz encoded for the API with a common +6dB, no game effects. Model descriptions may be mistaken; no human acceptance.",
+    "prompt": "依序独立听每段音频，按1、2、3等编号逐段报告。逐段说明是否有说话/歌声/杂音/爆音、实际主要音色、节奏强度、音乐在中间是否有显眼的拼接断拍或不协调和声，以及哪一段最平静、哪一段最紧张。请按听到的内容判断，不推测曲名、用途或创作意图。精简中文。",
+    "reviews": [
+      {
+        "inputs": [
+          "camp_before",
+          "ending"
+        ],
+        "stage": "First edit; November 17 camp arrangement rejected. Ending retained.",
+        "assessment": "1. 第一段（00:00–00:47）：无说话、歌声、杂音或爆音。主要音色为钢琴，中段加入电子鼓/打击乐与弦乐（小提琴类）。节奏由舒缓转为中等偏强，有稳定拍点。中间存在较显眼的拼接/断拍感：钢琴独奏后突然切入鼓点，弦乐进出与段落切换处衔接略生硬，但和声未明显不协调。\n\n2. 第二段（00:48–01:59）：无说话、歌声、杂音或爆音。主要音色为大提琴（或同类低音乐器）与钢琴。节奏整体缓慢、抒情，强度弱。段落间过渡相对自然，未见明显断拍或突兀拼接，和声连贯。\n\n最平静：第二段。最紧张/节奏感最强：第一段。",
+        "tokens": {
+          "completion_tokens": 689,
+          "completion_tokens_details": {
+            "reasoning_tokens": 498,
+            "text_tokens": 191
+          },
+          "prompt_tokens": 821,
+          "prompt_tokens_details": {
+            "audio_tokens": 697,
+            "cached_tokens": 0,
+            "text_tokens": 124
+          },
+          "total_tokens": 1510
+        }
+      },
+      {
+        "inputs": [
+          "daily_before",
+          "grave_before"
+        ],
+        "stage": "First edit; pause and restart identified.",
+        "assessment": "**第1段：**\n- 说话/歌声/杂音/爆音：无。\n- 主要音色：竖琴分解和弦为主，叠加弦乐（大提琴/中提琴）长弓旋律，后段加入低音拨弦。\n- 节奏强度：偏弱至中等，平稳流动。\n- 拼接/不协调：约00:21及00:31处有明显断点切换，段落间衔接突兀，但各自内部和声协调。\n- 整体感受：平静、优雅。\n\n**第2段：**\n- 说话/歌声/杂音/爆音：无。\n- 主要音色：低音弦乐拨奏/拉奏开场，随后小提琴主导旋律，音色偏尖锐、紧张。\n- 节奏强度：中等偏强，有明显推动感。\n- 拼接/不协调：约01:29处插入短暂拨弦音后 abrupt 切回弦乐段，拼接痕迹明显；小提琴段落和声张力较强。\n- 整体感受：较紧张、戏剧化。\n\n**对比结论：** 第1段最平静，第2段最紧张。",
+        "tokens": {
+          "completion_tokens": 656,
+          "completion_tokens_details": {
+            "reasoning_tokens": 405,
+            "text_tokens": 251
+          },
+          "prompt_tokens": 835,
+          "prompt_tokens_details": {
+            "audio_tokens": 711,
+            "cached_tokens": 0,
+            "text_tokens": 124
+          },
+          "total_tokens": 1491
+        }
+      },
+      {
+        "inputs": [
+          "daily",
+          "grave_before_slowing"
+        ],
+        "stage": "Joined daily phrases and removed grave coda; grave still rhythmically too animated at this speed.",
+        "assessment": "**第1段：**\n- 说话/歌声/杂音/爆音：无。\n- 主要音色：拨弦（类似竖琴或拨奏弦乐）的分解和弦为底，上方有弓弦乐器（大提琴或中提琴）拉出连贯旋律。\n- 节奏强度：中等偏柔，律动平稳舒缓。\n- 拼接断拍/不协调和声：无明显拼接痕迹，和声协和流畅。\n\n**第2段：**\n- 说话/歌声/杂音/爆音：无。\n- 主要音色：弓弦乐器（小提琴/民间fiddle风格）演奏主旋律，下方有低音弦乐（大提琴或低音提琴）以短促重复的顿弓/拨奏提供节奏脉冲。\n- 节奏强度：较第1段明显更强，低音脉冲持续驱动，旋律带有民间舞曲式的跳动感。\n- 拼接断拍/不协调和声：无明显拼接，但弓法切换处偶有粗粝感，整体仍属同一风格内部变化。\n\n**对比总结：**\n- 最平静：第1段（拨弦琶音+悠长弓弦旋律，氛围柔和）。\n- 最紧张：第2段（低音脉冲持续推动，fiddle式弓法更活跃，节奏驱动力更强）。",
+        "tokens": {
+          "completion_tokens": 666,
+          "completion_tokens_details": {
+            "reasoning_tokens": 380,
+            "text_tokens": 286
+          },
+          "prompt_tokens": 730,
+          "prompt_tokens_details": {
+            "audio_tokens": 606,
+            "cached_tokens": 0,
+            "text_tokens": 124
+          },
+          "total_tokens": 1396
+        }
+      },
+      {
+        "inputs": [
+          "battle",
+          "battle_high"
+        ],
+        "stage": "Final edits.",
+        "assessment": "**1.** 纯器乐，无说话、歌声，无明显杂音或爆音。主要音色为弓弦乐（小提琴／中提琴／大提琴一类），旋律线条连贯、带揉弦与弓擦质感，偏古典室内乐风格。节奏强度中等，律动优雅流畅。全段和声协调，未听到显眼的拼接断拍或突兀不协和。整体气质平静。\n\n**2.** 纯器乐，无说话、歌声，无明显杂音或爆音。主要音色为拨弦（竖琴／拨奏弦乐一类），颗粒感强、清脆，叠加持续的节奏脉冲与重复琶音型。节奏强度偏高，驱动力明显，比第1段更紧凑。结构上有循环重复的乐句，衔接处可感到一定的拼接／复述痕迹，但节拍本身连续，和声统一、无不协和。整体气质较紧张。\n\n**对比结论：** 第1段最平静（弓弦长线条、节奏舒缓优雅）；第2段最紧张（拨弦颗粒＋持续节奏脉冲、重复律动带来压力感）。",
+        "tokens": {
+          "completion_tokens": 788,
+          "completion_tokens_details": {
+            "reasoning_tokens": 555,
+            "text_tokens": 233
+          },
+          "prompt_tokens": 828,
+          "prompt_tokens_details": {
+            "audio_tokens": 704,
+            "cached_tokens": 0,
+            "text_tokens": 124
+          },
+          "total_tokens": 1616
+        }
+      },
+      {
+        "inputs": [
+          "camp",
+          "grave"
+        ],
+        "stage": "Final retake and low-register revision.",
+        "assessment": "1. 纯钢琴独奏，无说话/歌声/杂音/爆音；音色清亮带踏板共鸣；节奏自由舒缓；中段无明显拼接断拍或不协调和声。整体最平静。\n\n2. 低音弦乐（似大提琴）独奏，无说话/歌声/杂音/爆音；音色低沉、带弓弦摩擦感；节奏缓慢沉重；中段无明显拼接断拍或不协调和声。整体最紧张。\n\n结论：第1段最平静，第2段最紧张。",
+        "tokens": {
+          "completion_tokens": 325,
+          "completion_tokens_details": {
+            "reasoning_tokens": 209,
+            "text_tokens": 116
+          },
+          "prompt_tokens": 814,
+          "prompt_tokens_details": {
+            "audio_tokens": 690,
+            "cached_tokens": 0,
+            "text_tokens": 124
+          },
+          "total_tokens": 1139
+        }
+      }
+    ]
+  },
+  "provider_terms": "https://terms.alicdn.com/legal-agreement/terms/common_platform_service/20230728213935489/20230728213935489.html",
+  "provider_terms_sections": [
+    "7.5",
+    "7.6",
+    "7.7"
+  ],
+  "audio_generation_docs": "https://help.aliyun.com/zh/model-studio/audio-generation",
+  "audio_understanding_docs": "https://help.aliyun.com/zh/model-studio/qwen-omni",
+  "human_listening": false,
+  "runtime_network": false
+}

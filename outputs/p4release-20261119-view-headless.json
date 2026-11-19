@@ -1,0 +1,27 @@
+{
+  "checks": 74,
+  "failures": [],
+  "frames": [],
+  "host": "macOS",
+  "inputs": {
+    "campguide-day05.json": "468358a18848cb563c3b7a576ea75dabeee179f6b84eaeff55b615d9c1d358b2",
+    "p4release-20261119/camp-day06.json": "56a877203d72250b09a1b722a7e1d9037a7b7b7b512aeb4dc8067545b11fd2e3",
+    "p4release-20261119/camp-day12.json": "bf2308815af5403233f325efe8125b8b7f1ea3c95a3cb23b2c7b4f66e6d38401",
+    "p4release-20261119/camp-day18.json": "e1c50ed2bbdc23c8810fe05ba489917f9caab79f8c3f9d456551278783dca0d6",
+    "p4release-20261119/camp-day23.json": "f982b8ba99cd5ad3084a7a6fb1a010166ff04890ca3cdab91cd45da2333b00ed",
+    "p4release-20261119/ending-sides.json": "3b7eaade7d0a4cea23565de95d46a97ebc9872c5d8231d8055cc9efcc2d58625",
+    "tmp/quality-review/p4release-boards/bridge.json": "aef8ac00b5a751d87e1333bda562e937eb0f616dc3c2e637a78766f5f1346f69",
+    "tmp/quality-review/p4release-boards/clinic.json": "cb6310ae7bf7f2dd74b818d18708d489408e1deb08499ac1550dac0a19a62e83",
+    "tmp/quality-review/p4release-boards/coldstore.json": "0131690c18948046c8b1cda3b08972368264f202d57211905be5c86a6399c619",
+    "tmp/quality-review/p4release-boards/control.json": "dd10bb59f16afc5bfde0600ca42004de7cccfb39a61939f57a3d1d6ee256c172",
+    "tmp/quality-review/p4release-boards/factory.json": "39d72e0b3225a9cecf6ced21cd37ea5ee9d0fc92b966a082bcbe46116f66f837",
+    "tmp/quality-review/p4release-boards/ferry.json": "57ca40149f27914295da5dc0f4024cd34678aa404b6caea951521eefdd1b5a15",
+    "tmp/quality-review/p4release-boards/gate.json": "43f6168e665f0bf0d252e58f80612e48065422b2a4de77291d6f33cf1b5b1ab0",
+    "tmp/quality-review/p4release-boards/housing.json": "2d76066036c515a8cdfc993e054c19ce1dffbeeb489b345c5424415e01647ffa",
+    "tmp/quality-review/p4release-boards/pump.json": "1d9ffdfcb76e6c6cd8cb9bb928f4d13a4a28e3f6e5f7d2e8f7279e9016a88f21",
+    "tmp/quality-review/p4release-boards/roof.json": "f16c7d0de771fea4da829cce1c03a2051e61997d26b3367507b4f8e1869fb592",
+    "tmp/quality-review/p4release-boards/shelter.json": "ae18b91aaf778a4913b23c0713ad4c92bc21561355b71d60dc0985abe1651966",
+    "tmp/quality-review/p4release-boards/warehouse.json": "183b3d6835b74d1bbae3f553c71da9f099da0f5fe57d48c029f1268d8b42d413"
+  },
+  "native_windows": false
+}

@@ -101,8 +101,19 @@ static func occupied(b: Dictionary,c: Array) -> bool:
 	for h: Dictionary in b.heroes.values():
 		if not h.left and not h.downed and same(h.cell,c): return true
 	return false
+static func cell_key(cell: Array) -> String:
+	return str([int(cell[0]),int(cell[1])])
+
+static func barrier_key(b: Dictionary,cell: Array) -> String:
+	var canonical_key: String=cell_key(cell)
+	if not b.barriers.has(canonical_key):
+		# Some previous saves used the JSON float spelling of an integral cell.
+		for key: String in b.barriers:
+			if same(b.barriers[key].cell,cell):return key
+	return canonical_key
+
 static func move_cost(b: Dictionary,start: Array,target: Array,budget: int) -> int:
-	if same(start,target) or blocked(b,target) or occupied(b,target): return -1
+	if same(start,target) or blocked(b,target) or occupied(b,target) or b.barriers.has(barrier_key(b,target)): return -1
 	var queue: Array = [[start,0]]
 	var best: Dictionary = {str(start):0}
 	while not queue.is_empty():
@@ -323,7 +334,7 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 				if not (coordinate is float or coordinate is int) or not is_finite(float(coordinate)) or coordinate!=int(coordinate): return "invalid_target"
 			var budget: int=movement_budget(s,h.id)
 			var passive: bool=movement_passive(s,h.id)
-			if b.barriers.has(str([int(cell[0]),int(cell[1])])) or move_cost(b,h.cell,cell,budget)<0: return "invalid_target"
+			if move_cost(b,h.cell,cell,budget)<0: return "invalid_target"
 			var previous_cell: Array=h.cell.duplicate()
 			h.cell = [int(cell[0]),int(cell[1])]
 			if not h.carrying.is_empty():record_transport(b.objects[h.carrying],h.id,previous_cell,h.cell)
@@ -386,7 +397,7 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 			if h.carrying.is_empty(): return "invalid_target"
 			b.objects[h.carrying].carrier=""
 			var destination: Variant=p.get("cell",h.cell)
-			if not Product.valid_cell(destination) or distance(h.cell,destination)>1 or blocked(b,destination) or b.barriers.has(str(destination)) or (not same(h.cell,destination) and occupied(b,destination)):return "invalid_target"
+			if not Product.valid_cell(destination) or distance(h.cell,destination)>1 or blocked(b,destination) or b.barriers.has(barrier_key(b,destination)) or (not same(h.cell,destination) and occupied(b,destination)):return "invalid_target"
 			b.objects[h.carrying].cell=destination.duplicate()
 			h.carrying=""
 		"extract","leave_site":
@@ -646,5 +657,5 @@ static func reachable_cells(s: Dictionary,id: String) -> Array:
 	for y: int in range(8):
 		for x: int in range(8):
 			var cell: Array=[x,y]
-			if not same(cell,start) and best.has(str(cell)) and not occupied(b,cell) and not b.barriers.has(str(cell)):cells.append(cell)
+			if not same(cell,start) and best.has(str(cell)) and not occupied(b,cell) and not b.barriers.has(barrier_key(b,cell)):cells.append(cell)
 	return cells

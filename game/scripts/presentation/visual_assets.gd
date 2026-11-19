@@ -2,6 +2,25 @@ extends RefCounted
 ## Atlas regions are runtime views; original generated assets remain unmodified.
 const CharacterArt=preload("res://scripts/presentation/character_art.gd")
 static var cache: Dictionary={}
+# The opening board uses large atlases, including three separate crew sheets.
+# Queue decoding during the first briefing; Godot's ordinary load() then reuses
+# the same resources on entry instead of decoding them inside the input handler.
+static func request_ferry_assets() -> Array[String]:
+	var paths: Array[String] = [
+		"res://assets/product018/terrain-quality.png",
+		"res://assets/characters018/markers.png",
+		"res://assets/visual_p1/rescue_sprites.png",
+		"res://assets/visual_p2/objectives.png",
+	]
+	for actor: String in ["lin", "xu", "su"]:
+		paths.append("res://assets/characters018/" + actor + "-bodies.png")
+		paths.append("res://assets/characters018/" + actor + "-motion.png")
+	var requested: Array[String] = []
+	for path in paths:
+		if not ResourceLoader.has_cached(path) and ResourceLoader.load_threaded_request(path, "Texture2D") == OK:
+			requested.append(path)
+	return requested
+
 static func character(id: String,kind: String="work",expression: String="neutral",minimum: Vector2=Vector2(155,200),head_only: bool=false) -> TextureRect:
 	if CharacterArt.has_actor(id):return CharacterArt.view(id,kind,expression,minimum,head_only)
 	return picture(portrait(id,expression) if head_only else outfit(id,kind),minimum)
@@ -120,3 +139,12 @@ static func site_picture(location: String,minimum: Vector2) -> Control:
 			mark.size=Vector2.ONE*side;mark.position=Vector2(maxf(0,frame.size.x-side-10),maxf(0,frame.size.y-side-8))
 		frame.resized.connect(fit)
 	return frame
+
+## Preserve light in the room while giving overlaid text a readable dark edge.
+static func scrim() -> TextureRect:
+	var texture:=GradientTexture2D.new()
+	var gradient:=Gradient.new()
+	gradient.offsets=PackedFloat32Array([0.0,0.57,1.0])
+	gradient.colors=PackedColorArray([Color(.025,.065,.075,.93),Color(.025,.06,.07,.42),Color(.02,.045,.055,.12)])
+	texture.gradient=gradient;texture.fill_to=Vector2(1,0)
+	return picture(texture,Vector2.ZERO)

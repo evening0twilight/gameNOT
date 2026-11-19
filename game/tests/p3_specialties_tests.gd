@@ -16,6 +16,20 @@ func run() -> void:
 	check(act("specialty",{"ability":"he_1","cell":[4,7]},"he").ok,"He places shield")
 	check(s.battle.barriers["[4, 7]"].hp==5 and s.battle.barriers["[4, 7]"].expires==0,"L5 persistent shield HP")
 	check(not act("move",{"cell":[4,7]},"he").ok,"cannot land on barrier")
+	# The UI supplies integers; cells restored from disk are JSON numbers.
+	# Both representations must land on the same shield, including old keys.
+	var before_barrier_fixture: Dictionary=s
+	s=s.duplicate(true)
+	var float_cell: Array=JSON.parse_string("[4,7]")
+	var old_key: String=str(float_cell)
+	var canonical_key: String=Rules.cell_key(float_cell)
+	check(old_key!=canonical_key,"old JSON-coordinate spelling can differ")
+	s.battle.barriers[old_key]=s.battle.barriers[canonical_key]
+	s.battle.barriers.erase(canonical_key)
+	check(Rules.move_cost(s.battle,[4,6],float_cell,3)<0 and not Rules.contains_cell(Rules.reachable_cells(s,"he"),[4,7]),"old shield blocks integer and float landings")
+	check(not act("specialty",{"ability":"he_1","cell":[4,7]},"he").ok,"cannot stack a fresh shield on a legacy shield key")
+	check(Rules.barrier_key(s.battle,[4,7])==old_key,"forecast and damage locate prior JSON shield")
+	s=before_barrier_fixture
 	s.battle.heroes.mo.cell=[6,4]
 	check(act("specialty",{"ability":"mo_1","target":"M17_enemy2_cut1"},"mo").ok,"remote switch work")
 	check(not s.battle.enemies.M17_enemy2.disabled,"remote switch respects two-switch sentinel")

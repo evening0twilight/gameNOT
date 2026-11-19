@@ -1,6 +1,7 @@
 @echo off
 chcp 65001 >nul
 setlocal
+if exist "%~dp0Record-Windows-Session.ps1" goto recorded
 if not exist "%~dp0night-tide.exe" (
   echo Keep this file beside night-tide.exe and night-tide.pck.
   pause
@@ -21,5 +22,11 @@ if errorlevel 1 (
 echo Test exit code: %night_tide_exit%
 echo Log: %night_tide_log%
 explorer "%APPDATA%\Godot\app_userdata\夜潮事务所\diagnostics"
+pause
+exit /b %night_tide_exit%
+
+:recorded
+powershell.exe -NoLogo -NoProfile -ExecutionPolicy Bypass -File "%~dp0Record-Windows-Session.ps1" -Automated
+set "night_tide_exit=%ERRORLEVEL%"
 pause
 exit /b %night_tide_exit%

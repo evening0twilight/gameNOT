@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+PROJECT_BOOT_OK: baseline 0.18 campaign UI
+NATIVE_MISSION: M01 actions=30
+NATIVE_MISSION: M02 actions=32
+NATIVE_MISSION: M03 actions=29
+NATIVE_ACCEPTANCE: passed=true windows=false report=/Users/a1-6/projects/person/gameNOT/work/audio-release-20261119/native-final/report.json

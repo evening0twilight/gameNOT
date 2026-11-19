@@ -1,0 +1,944 @@
+{
+  "authority": "0.18-predevelopment",
+  "full": true,
+  "jobs": 3,
+  "checks": [
+    {
+      "name": "import",
+      "seconds": 2.24,
+      "markers": [],
+      "log": "outputs/p4release-20261119-check-import.log"
+    },
+    {
+      "name": "run_tests",
+      "seconds": 0.54,
+      "markers": [
+        "TEST_RESULTS: 33 passed, 0 failed"
+      ],
+      "log": "outputs/p4release-20261119-check-run_tests.log"
+    },
+    {
+      "name": "content_catalog_tests",
+      "seconds": 0.25,
+      "markers": [
+        "CONTENT_TEST_RESULTS: failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-content_catalog_tests.log"
+    },
+    {
+      "name": "p1_tests",
+      "seconds": 1.79,
+      "markers": [
+        "P1_TEST_RESULTS: 167 passed, 0 failed"
+      ],
+      "log": "outputs/p4release-20261119-check-p1_tests.log"
+    },
+    {
+      "name": "p1_systems_tests",
+      "seconds": 0.83,
+      "markers": [
+        "P1_SYSTEMS_RESULTS: 179 passed, 0 failed"
+      ],
+      "log": "outputs/p4release-20261119-check-p1_systems_tests.log"
+    },
+    {
+      "name": "p3_rules_tests",
+      "seconds": 4.53,
+      "markers": [
+        "P3_RULES_RESULTS: checks=1789 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-p3_rules_tests.log"
+    },
+    {
+      "name": "p3_specialties_tests",
+      "seconds": 0.53,
+      "markers": [
+        "P3_SPECIALTIES_RESULTS: checks=73 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-p3_specialties_tests.log"
+    },
+    {
+      "name": "p3_story_proofs",
+      "seconds": 0.93,
+      "markers": [
+        "P3_STORY_PROOFS_RESULTS: checks=56 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-p3_story_proofs.log"
+    },
+    {
+      "name": "p4_history_tests",
+      "seconds": 0.64,
+      "markers": [
+        "P4_HISTORY_RESULTS: checks=56 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-p4_history_tests.log"
+    },
+    {
+      "name": "p4_tests",
+      "seconds": 3.16,
+      "markers": [
+        "P4_PRODUCT_RESULTS: checks=1028 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-p4_tests.log"
+    },
+    {
+      "name": "p4_feedback_tests",
+      "seconds": 1.5,
+      "markers": [
+        "P4_FEEDBACK_RESULTS: checks=89 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-p4_feedback_tests.log"
+    },
+    {
+      "name": "baseline018_tests",
+      "seconds": 0.44,
+      "markers": [
+        "BASELINE018_RESULTS: checks=66 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-baseline018_tests.log"
+    },
+    {
+      "name": "baseline018_edges",
+      "seconds": 0.44,
+      "markers": [
+        "BASELINE018_EDGES: checks=32 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-baseline018_edges.log"
+    },
+    {
+      "name": "baseline018_guidance",
+      "seconds": 3.76,
+      "markers": [
+        "P4_TUNING_RESULTS: checks=709 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-baseline018_guidance.log"
+    },
+    {
+      "name": "ui_localization_tests",
+      "seconds": 6.57,
+      "markers": [
+        "UI_LOCALIZATION_RESULTS: checks=654 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-ui_localization_tests.log"
+    },
+    {
+      "name": "baseline018_ui",
+      "seconds": 1.13,
+      "markers": [
+        "BASELINE018_UI: failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-baseline018_ui.log"
+    },
+    {
+      "name": "product018_story_tests",
+      "seconds": 5.88,
+      "markers": [],
+      "log": "outputs/p4release-20261119-check-product018_story_tests.log"
+    },
+    {
+      "name": "p4close_tests",
+      "seconds": 3.95,
+      "markers": [
+        "P4CLOSE_RESULTS: checks=4001 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-p4close_tests.log"
+    },
+    {
+      "name": "p4quality_tests",
+      "seconds": 6.66,
+      "markers": [
+        "P4QUALITY_RESULTS: checks=916 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-p4quality_tests.log"
+    },
+    {
+      "name": "firstshift_review",
+      "seconds": 6.87,
+      "markers": [
+        "FIRSTSHIFT_RESULTS: checks=119 failures=0 commands=92"
+      ],
+      "log": "outputs/p4release-20261119-check-firstshift_review.log"
+    },
+    {
+      "name": "fieldguide_review",
+      "seconds": 12.5,
+      "markers": [
+        "FIELDGUIDE_RESULTS: checks=116 failures=0 commands=159"
+      ],
+      "log": "outputs/p4release-20261119-check-fieldguide_review.log"
+    },
+    {
+      "name": "campguide_review",
+      "seconds": 18.06,
+      "markers": [
+        "CAMPGUIDE_RESULTS: checks=943 failures=0 commands=202"
+      ],
+      "log": "outputs/p4release-20261119-check-campguide_review.log"
+    },
+    {
+      "name": "multilanguage_review",
+      "seconds": 18.83,
+      "markers": [
+        "LANGUAGE_RESULTS: checks=129 failures=0 untranslated=0"
+      ],
+      "log": "outputs/p4release-20261119-check-multilanguage_review.log"
+    },
+    {
+      "name": "language_lategame_review",
+      "seconds": 10.45,
+      "markers": [
+        "LANGUAGE_LATE_RESULTS: checks=230 failures=0 untranslated=0"
+      ],
+      "log": "outputs/p4release-20261119-check-language_lategame_review.log"
+    },
+    {
+      "name": "release_story_review",
+      "seconds": 4.8,
+      "markers": [
+        "RELEASE_STORY: nodes=96 pages=3231 checks=13432 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-release_story_review.log"
+    },
+    {
+      "name": "release_story_layout",
+      "seconds": 5.78,
+      "markers": [
+        "RELEASE_STORY_UI: checks=135 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-release_story_layout.log"
+    },
+    {
+      "name": "language_catalog",
+      "seconds": 0.12,
+      "markers": [
+        "LANGUAGE_CATALOG_RESULTS: {\"source_count\": 3755, \"locales\": {\"en\": {\"entries\": 3769, \"covered\": 3755}, \"zh_TW\": {\"entries\": 3764, \"covered\": 3755}}, \"failures\": []}"
+      ],
+      "log": "outputs/p4release-20261119-check-language_catalog.log"
+    },
+    {
+      "name": "p4_audio_nov13",
+      "seconds": 7.82,
+      "markers": [
+        "P4_AUDIO_NOV13: checks=81 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-p4_audio_nov13.log"
+    },
+    {
+      "name": "p4close_growth_campaign",
+      "seconds": 687.62,
+      "markers": [
+        "P4CLOSE_GROWTH_RESULTS: failures=0 unobserved=[]"
+      ],
+      "log": "outputs/p4release-20261119-check-p4close_growth_campaign.log"
+    },
+    {
+      "name": "baseline018_campaign",
+      "seconds": 267.5,
+      "markers": [
+        "BASELINE018_CAMPAIGN: mode=shared_control days=24 ending=shared_control",
+        "BASELINE018_CAMPAIGN: mode=distributed_rebuild days=24 ending=distributed_rebuild",
+        "BASELINE018_CAMPAIGN: mode=evacuation days=24 ending=evacuation",
+        "BASELINE018_CAMPAIGN: mode=failure days=24 ending=evacuation",
+        "BASELINE018_CAMPAIGN_RESULTS: campaigns=4 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-baseline018_campaign.log"
+    },
+    {
+      "name": "baseline018_linked_campaign",
+      "seconds": 114.44,
+      "markers": [
+        "BASELINE018_LINKED: failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-baseline018_linked_campaign.log"
+    },
+    {
+      "name": "baseline018_missions",
+      "seconds": 13.74,
+      "markers": [
+        "P3_PATH_RESULTS: missions=36 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-baseline018_missions.log"
+    },
+    {
+      "name": "baseline018_field_paths",
+      "seconds": 1.92,
+      "markers": [
+        "BASELINE018_FIELD_PATHS: paths=4 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-baseline018_field_paths.log"
+    },
+    {
+      "name": "product018_crew_campaign",
+      "seconds": 101.81,
+      "markers": [],
+      "log": "outputs/p4release-20261119-check-product018_crew_campaign.log"
+    },
+    {
+      "name": "matrix-relaxed",
+      "seconds": 36.59,
+      "markers": [
+        "P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ \"success\": 72, \"partial\": 0, \"failed\": 0 }"
+      ],
+      "log": "outputs/p4release-20261119-check-matrix-relaxed.log"
+    },
+    {
+      "name": "matrix-standard",
+      "seconds": 28.08,
+      "markers": [
+        "P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ \"success\": 72, \"partial\": 0, \"failed\": 0 }"
+      ],
+      "log": "outputs/p4release-20261119-check-matrix-standard.log"
+    },
+    {
+      "name": "matrix-hard",
+      "seconds": 28.01,
+      "markers": [
+        "P4_MATRIX_RESULTS: paths=72 failures=0 outcomes={ \"success\": 72, \"partial\": 0, \"failed\": 0 }"
+      ],
+      "log": "outputs/p4release-20261119-check-matrix-hard.log"
+    },
+    {
+      "name": "profile-no_training",
+      "seconds": 80.88,
+      "markers": [
+        "P4_PROFILE_RESULTS: profile=no_training days=24 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-profile-no_training.log"
+    },
+    {
+      "name": "profile-few_sides",
+      "seconds": 87.82,
+      "markers": [
+        "P4_PROFILE_RESULTS: profile=few_sides days=24 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-profile-few_sides.log"
+    },
+    {
+      "name": "profile-fixed_favorites",
+      "seconds": 80.78,
+      "markers": [
+        "P4_PROFILE_RESULTS: profile=fixed_favorites days=24 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-profile-fixed_favorites.log"
+    },
+    {
+      "name": "profile-injury_rotation",
+      "seconds": 68.67,
+      "markers": [
+        "P4_PROFILE_RESULTS: profile=injury_rotation days=24 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-profile-injury_rotation.log"
+    },
+    {
+      "name": "learning-main",
+      "seconds": 36.12,
+      "markers": [
+        "RELEASE_LEARNING_RESULTS profile=main missions=24 nights=23 failures=[]"
+      ],
+      "log": "outputs/p4release-20261119-check-learning-main.log"
+    },
+    {
+      "name": "learning-sides",
+      "seconds": 72.74,
+      "markers": [
+        "RELEASE_LEARNING_RESULTS profile=sides missions=36 nights=23 failures=[]"
+      ],
+      "log": "outputs/p4release-20261119-check-learning-sides.log"
+    },
+    {
+      "name": "learning-recovery",
+      "seconds": 33.1,
+      "markers": [
+        "RELEASE_LEARNING_RESULTS profile=recovery missions=24 nights=23 failures=[]"
+      ],
+      "log": "outputs/p4release-20261119-check-learning-recovery.log"
+    },
+    {
+      "name": "release_workspace_review",
+      "seconds": 4.87,
+      "markers": [
+        "WORKSPACE_RESULTS: checks=74 failures=0"
+      ],
+      "log": "outputs/p4release-20261119-check-release_workspace_review.log"
+    },
+    {
+      "name": "release_route_preview",
+      "seconds": 1.92,
+      "markers": [],
+      "log": "outputs/p4release-20261119-check-release_route_preview.log"
+    },
+    {
+      "name": "release_visible_campaign",
+      "seconds": 190.16,
+      "markers": [],
+      "log": "outputs/p4release-20261119-check-release_visible_campaign.log"
+    },
+    {
+      "name": "release_score",
+      "seconds": 24.4,
+      "markers": [
+        "RELEASE_SCORE_REVIEW true"
+      ],
+      "log": "outputs/p4release-20261119-check-release_score.log"
+    }
+  ],
+  "preserved_files": 244,
+  "history": {
+    "verified": 244,
+    "expected": 287,
+    "missing": [],
+    "retired": [
+      "build/night-tide-windows-p2.zip",
+      "build/night-tide-windows-p3.zip",
+      "build/night-tide-windows-p4-feedback.zip",
+      "build/night-tide-windows-p4-tuning.zip",
+      "build/night-tide-windows-p4.zip",
+      "outputs/p4-feedback-gui/M01-result.png",
+      "outputs/p4-feedback-gui/M02-result.png",
+      "outputs/p4-feedback-gui/M03-result.png",
+      "outputs/p4-feedback-gui/M04-result.png",
+      "outputs/p4-feedback-gui/M05-result.png",
+      "outputs/p4-feedback-gui/M06-result.png",
+      "outputs/p4-feedback-gui/M07-result.png",
+      "outputs/p4-feedback-gui/M08-result.png",
+      "outputs/p4-feedback-gui/M09-result.png",
+      "outputs/p4-feedback-gui/M10-result.png",
+      "outputs/p4-feedback-gui/M11-result.png",
+      "outputs/p4-feedback-gui/M12-result.png",
+      "outputs/p4-feedback-gui/M13-result.png",
+      "outputs/p4-feedback-gui/M14-result.png",
+      "outputs/p4-feedback-gui/M15-result.png",
+      "outputs/p4-feedback-gui/M16-result.png",
+      "outputs/p4-feedback-gui/M17-result.png",
+      "outputs/p4-feedback-gui/M18-result.png",
+      "outputs/p4-feedback-gui/M19-result.png",
+      "outputs/p4-feedback-gui/M20-result.png",
+      "outputs/p4-feedback-gui/M21-result.png",
+      "outputs/p4-feedback-gui/M22-result.png",
+      "outputs/p4-feedback-gui/M23-result.png",
+      "outputs/p4-feedback-gui/M24-result.png",
+      "outputs/p4-feedback-gui/S01-result.png",
+      "outputs/p4-feedback-gui/S02-result.png",
+      "outputs/p4-feedback-gui/S03-result.png",
+      "outputs/p4-feedback-gui/S04-result.png",
+      "outputs/p4-feedback-gui/S05-result.png",
+      "outputs/p4-feedback-gui/S06-result.png",
+      "outputs/p4-feedback-gui/S07-result.png",
+      "outputs/p4-feedback-gui/S08-result.png",
+      "outputs/p4-feedback-gui/S09-result.png",
+      "outputs/p4-feedback-gui/S10-result.png",
+      "outputs/p4-feedback-gui/S11-result.png",
+      "outputs/p4-feedback-gui/S12-result.png",
+      "outputs/p4-feedback-runtime.avi",
+      "outputs/p4-tuning-runtime.avi"
+    ],
+    "complete": false,
+    "amended_originals_verified_at": {
+      "game/data/final_design/release_baseline.json": "docs/p4-firstshift-20261117/before-release_baseline.json"
+    },
+    "unchanged_original_paths": 243
+  },
+  "source_hashes": {
+    "game/scripts/app/main.gd": "cfd42d9ed7cc0ae581e27fd0aeffcccc0e796d486b5300eff3bc4c814741bfab",
+    "game/scripts/app/main.gd.uid": "e6fb83784ea02ad897a5947c939a9817c734e10be0b4d8d694a655c47c48822c",
+    "game/scripts/app/native_acceptance.gd": "d9775275b7cb655cc2dd9784c02231fcfed552ce32e394d31f7fd50372a52bab",
+    "game/scripts/app/native_acceptance.gd.uid": "97f591c24208e4ad413a6d08b542edb4d7c9c08a58c166958b19ab13acb13cec",
+    "game/scripts/app/session.gd": "cb7a794775fae23d05e28a91592d4152659255906ed90718ee339d50ca6e7aac",
+    "game/scripts/app/session.gd.uid": "2520eb51bccf37a2b5e688866b00443e1210d13db4d6626413af0d79766aeffa",
+    "game/scripts/domain/appraisal.gd": "4d708bc24842cd68694d9016b77011a0307c9b3804412f0dc8f7c3ea2a01b2b4",
+    "game/scripts/domain/appraisal.gd.uid": "2b190ab6198d4f777496225f461a7ad90fd1f4a3d27e9a4b515ddf9bfdfcc81e",
+    "game/scripts/domain/camp_learning.gd": "ae1e1902a2b062f94a97eff89a8fe3383226a42ec6bf72c68f54a960422afba5",
+    "game/scripts/domain/camp_learning.gd.uid": "60ed209ed285005cc76fac8f6772c02e610a26da13431393ba97279f81bc055c",
+    "game/scripts/domain/campaign_rules.gd": "ce7227726885d34f9b48d23e5064b880d682735d47963c6e8b3ca5a89e67fb4b",
+    "game/scripts/domain/campaign_rules.gd.uid": "3ba12ff259842eed9619163c9963d6992b42f66c1bced34e8990e4d4075016cf",
+    "game/scripts/domain/campaign_social.gd": "d1c2e5b18625ec1e8499c0f18627b385b73fcef7dc88660b8b3ef1955e71a7a2",
+    "game/scripts/domain/campaign_social.gd.uid": "a8ec7facc6e8266c8a6cbed3741a4a826900d970c78c39fc87806a795bd77ecb",
+    "game/scripts/domain/chapter_hazards.gd": "fd60b6e2b3b71f4ecc2cabb03d3167c35ab1ae5aac27b171c8d132d13bc514e1",
+    "game/scripts/domain/chapter_hazards.gd.uid": "042e1e87a3216ed0d5b9424bad770d21823ed8394c26168f53ab4d511fa90f1d",
+    "game/scripts/domain/chapter_one.gd": "45ac2fb74610acb07bbd5c5c8d0a5240a8f35e5e1cc483edbe6156ba1898d0df",
+    "game/scripts/domain/chapter_one.gd.uid": "deedf481de971db5cf658a390aad585e2a8f78ac3c70c421d8dad8d3636ddf05",
+    "game/scripts/domain/chapter_stories.gd": "bca68b665dfcab91a3b1cbc69fcee6831b2cc3f1d2e8bbf0e6d9f4e354cbf8ca",
+    "game/scripts/domain/chapter_stories.gd.uid": "1e22ec21ea951089b29f22875b7c9e0a40e21cd3550b2a16e70c8a587e3d41da",
+    "game/scripts/domain/crew_journey.gd": "3a82c54e325d3d7e0ba85acd403344e07bda29c983aa187850afaa7b16f19929",
+    "game/scripts/domain/crew_journey.gd.uid": "103a8da558e236a103e910c34827d0a196338b498c41434301fe5cfaf48c8a0d",
+    "game/scripts/domain/field_learning.gd": "66e3db4109dbb92b37549a3491cd5f4985bf74bbd8b4c4a48372fe609ed12c5c",
+    "game/scripts/domain/field_learning.gd.uid": "642135315a7c3daf2e31cd262a7fc888d63b546f51c6a460a3ac51ccd2424556",
+    "game/scripts/domain/field_operations.gd": "3a8d9d2726f8cc8aa824109f7c3139c6ea26e03b7f54ea796756f4a4b53dd1ed",
+    "game/scripts/domain/field_operations.gd.uid": "438b101406436007b5afc28093e7adc1dd19e476746c2869e7ec3c5be63267b2",
+    "game/scripts/domain/full_campaign.gd": "8d24837ee09c97c592793582208e17d3b26b4a34a25bd01f78f4cfb8d9b9d910",
+    "game/scripts/domain/full_campaign.gd.uid": "360cadbbd22055cc49a8d17ff05c0a689e62e0ee58660196598ad3e0c1526208",
+    "game/scripts/domain/history_repair.gd": "93e0c4a2907721702ca63027727282959294d566cc34b02b0606844d64fca846",
+    "game/scripts/domain/history_repair.gd.uid": "ebe89f20396057b0bb2b455d095f01e8d699ac7dcf2c570baeb5bd6e175e84b9",
+    "game/scripts/domain/p1_protocols.gd": "72f8e684bc9043d53ce4800fef3895a789b726ad5e8d21a8d954640cee7cfe00",
+    "game/scripts/domain/p1_protocols.gd.uid": "4d9999479d1b593ab90573d091df9afa2d5c2173b5864c13ad5ed173cd26fbb0",
+    "game/scripts/domain/p1_specialties.gd": "b9f46f2a1a2f97d6555ac0a9a9e82e7329fc0728a7d4dd0cfa2340b75049801b",
+    "game/scripts/domain/p1_specialties.gd.uid": "091e07c85714f0c479f8614a2974d760fa8e93ed922c7eead97a4747467b94fc",
+    "game/scripts/domain/product_systems.gd": "e2484550f29594aefd6d67cd71ace9dbb690f8425e92d1d807fae3bc368f713a",
+    "game/scripts/domain/product_systems.gd.uid": "1b22f2a0ec02db7f4ddaddaffa429878f06a1e05ce6ab4d56765605a096bbf4b",
+    "game/scripts/domain/relationship_rules.gd": "fd9847d5e7f345f0fd9fd1f9e8a8567b43b48832b6d7c9519a824efa186ac6d1",
+    "game/scripts/domain/relationship_rules.gd.uid": "1a9da0cb04258d6089bd41d452dbbb51376394bed8c0a55c7763ced3abcafe79",
+    "game/scripts/domain/save_store.gd": "547a7699d55e48c066106e2b0bd0039144b21138b85bf911dec2bf21e53faf14",
+    "game/scripts/domain/save_store.gd.uid": "1f8875ea9c5386a766c67fdeaaaf164b2646aa325f0a72ecb0497e6b35c233c2",
+    "game/scripts/domain/story_delivery.gd": "dd771f335d8ecbfc8cfc5b33acc518b00a65fea67842775a32a13e17077990c1",
+    "game/scripts/domain/story_delivery.gd.uid": "ac26a416411703438de053f7a7bda3202d80f254fe51e7d2c11416a6e3748ac5",
+    "game/scripts/infrastructure/alignment_validation.gd": "b03411ffaa4de7e42c429c7c404b1dec398ab5a4e6aed4be26470202ad1bad5b",
+    "game/scripts/infrastructure/alignment_validation.gd.uid": "34db68ad0a449d5c91c736a9b743e23e878abef4307efbdb9459324d89e57c12",
+    "game/scripts/infrastructure/baseline_catalog_validation.gd": "70d866c977b78fff6d882301334ccc29604639bcfc10938990aeb35b3c542530",
+    "game/scripts/infrastructure/baseline_catalog_validation.gd.uid": "d5803d1de9e63047d4a1e6abeca4c9cf3a25867f7b1e4db93ae1c5d9143cf746",
+    "game/scripts/infrastructure/campaign_store.gd": "b2e4aed48420f5443d2141890fa662486322c55a8d14321cb95dc7b5ec1e13b8",
+    "game/scripts/infrastructure/campaign_store.gd.uid": "ca3ee9c4e55d2919a5a086c7427ecaf4a3377f3786b49e5c3125ec573da93cc0",
+    "game/scripts/infrastructure/content_catalog.gd": "8be4a6f421ab86fa82dec69cc453a6362c1fc62ff71c6a3fcee423984dae30d6",
+    "game/scripts/infrastructure/content_catalog.gd.uid": "244caa75b7f445903675e7d5db1045e7ad82b4ee5f416ec7507ea021360fd890",
+    "game/scripts/presentation/action_feedback.gd": "a9d13f1cfa393f0746d5b503880ca435486c2c42df7dcb90f779fdd34b90d357",
+    "game/scripts/presentation/action_feedback.gd.uid": "ca6af71a8b676aa78797e01cbf3ba13ceed9eea0516d16a7368177ad6cb02b6f",
+    "game/scripts/presentation/action_preview.gd": "e30b562ea002ca35005ee2b30fcb89a42686d9fca85bc7201bb4e91e2e536828",
+    "game/scripts/presentation/action_preview.gd.uid": "9f3292395ce87dda75741f481c85110aa5d3c6be2f0726fb2d8220017b61a944",
+    "game/scripts/presentation/audio_controller.gd": "c589e8fc4a6ebf1cfd402563daa156e92bcdc0dcd60185e7aac41c850a2a7607",
+    "game/scripts/presentation/audio_controller.gd.uid": "a26b80db036e454ad9c164b305d4bfcde2ef03760ae58a3e2a4cfad3f0700e38",
+    "game/scripts/presentation/camp_guide.gd": "55f1d78f18567e9d2f8d62ded964008d87f81f1bac77df9935d2c060c822a293",
+    "game/scripts/presentation/camp_guide.gd.uid": "0b11f295b6c5ef2fb9801960e60750977777d692586c5a352efd7cc6f5ea0f01",
+    "game/scripts/presentation/camp_workspace.gd": "9a904d443651eccb115540bf8531df0aceb17bca317990596d4160cfa9553aeb",
+    "game/scripts/presentation/camp_workspace.gd.uid": "3d05cd9a94e2eac5341471fe830ce1bd3edc0509007aaed1667c2e9ac76b6c39",
+    "game/scripts/presentation/campaign_screens.gd": "d44bc61c8eadb79a3671891dede745ba261a7bc2ad335cc35ba715e0d3408a3d",
+    "game/scripts/presentation/campaign_screens.gd.uid": "8fbe41781fb1be59fd4e43eafe7b9d068108833c8e93f07416ba54fcd745ff7c",
+    "game/scripts/presentation/character_art.gd": "24eacf46363049a944284c667a9db46e96b828d394055f4dabe6e6b1f00d2b15",
+    "game/scripts/presentation/character_art.gd.uid": "ef364b2a352bdd1dea901a32cfeda5c9fdf7fc76994b97cd0dc21c1843844234",
+    "game/scripts/presentation/field_guide.gd": "805a5567ac2a67d3b80f9c298d76bb0e46f140414d556297cfedc86f482dd277",
+    "game/scripts/presentation/field_guide.gd.uid": "8d949cfe482dc8ffca5c4fee8b9612e032a43cedc0f73ce3e31158e4b9679f60",
+    "game/scripts/presentation/first_shift.gd": "cf21e958e90256cd8f798a37805aa917c2fce6c08b755782c51acd47709330f8",
+    "game/scripts/presentation/first_shift.gd.uid": "afa56eafbbb1e27cf0f118f7905520b7aa1b0322b8311a58c136ac74cdc96022",
+    "game/scripts/presentation/growth_presentation.gd": "b7b0c97b50cc4ef85793fc1f3a3db7623b7ca68da1eae7cf58c66d117be093f1",
+    "game/scripts/presentation/growth_presentation.gd.uid": "2e28f2db1c0a61324b0537256604eb171f1a58b28226b2918d1468a0acd6da74",
+    "game/scripts/presentation/guidance.gd": "d010905efa05825c84d87a2f74d4394a72462dac42463b88d7c3e63fec64ced0",
+    "game/scripts/presentation/guidance.gd.uid": "4c09262f9bbb3b9f1910721a1ccf9643b09ff5273ff1afa219a837287134c3c0",
+    "game/scripts/presentation/journey_presentation.gd": "382aab716578a304b1c81f2fe985b80b70fe323468a0b845fb7d11a341bad2a1",
+    "game/scripts/presentation/journey_presentation.gd.uid": "dad07cb073fa6b67e57eced7b82d953042f443b908fed4954615163c7b9c598a",
+    "game/scripts/presentation/localization.gd": "2b254038d112d531b3604eddeafde5444e425573d77ca59a3afa7f09093e8a23",
+    "game/scripts/presentation/localization.gd.uid": "21261c8a3465a909d2cff9914871be53b3a3dd5d8618deafe69a23e59635aa22",
+    "game/scripts/presentation/reference_recording.gd": "a9e9bf7a10d3e2f4c76f2e658485c13800b6f42031979b63e8170f95a156809f",
+    "game/scripts/presentation/reference_recording.gd.uid": "34d581d48ff306c09bc9d9fdb3e23f1c0964c0d722829fb9e9bc53653f6b04bc",
+    "game/scripts/presentation/runtime_metrics.gd": "edb7f6fc4905180d17e7aec6c1afb2713ae4fb0677e1c28e01a1e2837cecd4fc",
+    "game/scripts/presentation/runtime_metrics.gd.uid": "8ac36671fe172b620672802a84133714f3fa30d091d754bdcf42b503be998bea",
+    "game/scripts/presentation/story_facts.gd": "22748460a10a31720ea1ac1f48270da9cff6a413872e23edfe1897f4e11b3906",
+    "game/scripts/presentation/story_facts.gd.uid": "76d56edfba8eed68de1356d6c754f2dec196364b385d8fbc436eca219e641664",
+    "game/scripts/presentation/story_screen.gd": "0988a1034b637531942aabb3e49f7a10c70b5c714cdf295c55f51abaa7b12a4c",
+    "game/scripts/presentation/story_screen.gd.uid": "7984539f276094469568a0808f04f49182c43d2b08cea57ce68d530f65fa6179",
+    "game/scripts/presentation/tactical_board.gd": "d83fe8358b2be09cdc2d5c81e2ef06aee147131a46d8ca8ce0f74137a2573129",
+    "game/scripts/presentation/tactical_board.gd.uid": "ba513b7b57c78ba18754eb9ce451c01df0ab93c84fdf311729e49d1700e79865",
+    "game/scripts/presentation/tactical_readability.gd": "d3a793f971a7d340ca7330a35bc18e955a1621aba730ed2327796545f7504065",
+    "game/scripts/presentation/tactical_readability.gd.uid": "801f3cc323b73b2ff32e603b8d1c1d8bd85ba287724ec2f70d7124ccf994e58a",
+    "game/scripts/presentation/tactical_workspace.gd": "c53fce181ed6643653e60cbe3344919f5d13460cb93d305f12b9b8566260884b",
+    "game/scripts/presentation/tactical_workspace.gd.uid": "faaab8eae2fe7a6f99bc6e9e6c628323fc9d362ef5c8dc54ee8a1273c164f040",
+    "game/scripts/presentation/visual_assets.gd": "e1fe38b9bcb52a83b8f9c3c1cda3611fd5752dbc2bcbf4888d54e3f607e851e3",
+    "game/scripts/presentation/visual_assets.gd.uid": "baba12eb3c65d0f2dea2c7c0da7b21a948c8ae8228b0e1c77ea55cab6e97f860",
+    "game/scenes/main.tscn": "a7ff59318635c8c9578f59b7773597fae1147729221166a56fa37ea77032bb98",
+    "game/data/campaign_coordination_contract.json": "f1eae32a9c28d111a6cbd5154ade2f238881f1b3dd13b0a2d74b81f9e1328773",
+    "game/data/campaign_economy_contract.json": "a0a60f456c853b56d543f77ae1a3648579eb40ba474c9c2680e766a6bcf789da",
+    "game/data/campaign_flow.json": "62ad3710b0e052551825ce7704d10bdb694ca53b09b8a5512c4675cbd9788772",
+    "game/data/campaign_world_contract.json": "d38b514e60a54589a890a7d3fe24cb19cc1f2b552229d76b67c54aa6c7d689b6",
+    "game/data/characters.json": "8b71fd1cd460da591d11b2fcb61d607ed2793e267e8cf8df23297eb895d972d9",
+    "game/data/confirmed_experience_policy.json": "79c943fcaf92ff2fd4ecdbf39d06f16a1409f509e2169055ad0b650762648413",
+    "game/data/enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+    "game/data/equipment.json": "a9135be50fcad91a5a9873cdd33128a7733ce2d275e3b84ec46e75d9814209df",
+    "game/data/event_contract_example.json": "857dd9bf93e846464afb104d1cc46df416337a1bbdfc8ef6557b8211fec31a48",
+    "game/data/final_design/abilities.json": "8653d237f2a73f88cfef2e731eb22187ff251e543fe04ccee324a46a369eb875",
+    "game/data/final_design/acceptance.json": "0b08a7f4ecd913eab7103aee7072c3f7f02009763709071558d57ddf9851a0cc",
+    "game/data/final_design/approach_review_contract.json": "6cb65a61f3bfd7ef3f09dcfb55a632a63bf786a6d16ff5f58024fcd140634dc2",
+    "game/data/final_design/boards.json": "80d5050519b04549268a4d46fbea608725fbb79c208769bbfd4a22d7a9c63855",
+    "game/data/final_design/character_scripts.json": "eafee9a799a3598e460bd26239dc6735435d70139e877217c376969205f100a9",
+    "game/data/final_design/combat.json": "33daa21a56ad76026a49bf35c0c98e8672bbc5e52a25af2545cb89c407289031",
+    "game/data/final_design/design_manifest.json": "94a140d60a14788dbd320e384500e425262c7ad8d254bb00e8c314fe28004cec",
+    "game/data/final_design/enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+    "game/data/final_design/equipment.json": "4339095d58912300eb6835b7d40756d8d63481c9848369e40b606c52b8454141",
+    "game/data/final_design/facilities.json": "b7a1774db0358850e1a3c050cd993963f6d4c7a53f19a739dea3914355709e7a",
+    "game/data/final_design/full_audit_contract.json": "6de56925ccbd4bf0fe184b5be8054ce9403c1908c2b299e7a7dfcdb5b9ab7a48",
+    "game/data/final_design/growth_identity_contract.json": "f045b2ff0954bb9de4dd5409103074c64055e0783304bcb46070dfcb056ccf6f",
+    "game/data/final_design/integrated_review_contract.json": "7c663fa46ade1d69d51527a99af17b4336bdaf58447a332428760c759f7bed48",
+    "game/data/final_design/integration.json": "c9b1e8230f5ebe56587b4027c0354499d95f16c2da830c39a4dc6fc829aa74f7",
+    "game/data/final_design/ordinary_player_contract.json": "1b7fa4ef7457c659dab5c30559db1753b1e41fb5e4bd105742bf30289226e44b",
+    "game/data/final_design/player_choice_contract.json": "daca55c228bfdda51251de3c8453a277911fa5da1af8a6f63d32ba48a05203af",
+    "game/data/final_design/player_experience_contract.json": "e76f4dcab38acfabd0cefaa97bf725a90c0b1a4108ea4a7520ffa710aaf71a5a",
+    "game/data/final_design/player_flow.json": "62ad3710b0e052551825ce7704d10bdb694ca53b09b8a5512c4675cbd9788772",
+    "game/data/final_design/player_ready_contract.json": "69ba1905c7038e7605d75de2afab0058aa55a3f14e7d730813e5cb6c32da87ee",
+    "game/data/final_design/predevelopment_decisions.json": "e1d8cc41e77ec4aa121e8d7234ac488149740484eeba1beff2412a33e58c2a04",
+    "game/data/final_design/production_scope.json": "e980fdfb7b4202b23949df2674b0f91ebf5eb0addc3b6166cedd8f6b3a2909c6",
+    "game/data/final_design/progression_relationship.json": "f4b467aa82fb60ff01447253d4a3da8f187e3e26ab2fe83a763c608b990036a4",
+    "game/data/final_design/relationship_edge_cases.json": "3fab447e2c8aa7af07e1041eecd5c053e69cf367b35f8d1c16681b06407d1630",
+    "game/data/final_design/release_baseline.json": "f5a51e5375e0f31ee85510b56bb728c1417ce46d5594a94bd907e1eddff92a9c",
+    "game/data/final_design/release_scope.json": "f4ac9f21673f3290ea9ce6627de2ec575e3ebe0de0d3c8e9232f8f2e14e084c3",
+    "game/data/final_design/stories.json": "1e48cfdcda5dc282957cba6ab5792ec235be9e56d1d38d8fce6aca23dc0b5b0a",
+    "game/data/final_design/system_audit_contract.json": "a197d32753872c49999ca46cdbc6b693d9d6cc49cb53c5a8e1a31b7f533eb99b",
+    "game/data/final_design/tactical_review_contract.json": "132120d0fc23335a3f09043660d7031593a605db0e1a3aaf567bd720c6378185",
+    "game/data/final_design/training_value_contract.json": "8840fa8e5ba4308b81ad85181def8c5ff6772c162f61f08790fc0182e65eb0a3",
+    "game/data/final_design/whole_campaign_contract.json": "feb03d9ded7b571ff85ff4ebedf4da21048a3cdf195faebca3448bac963e2ec4",
+    "game/data/initial_relationships.json": "315ef69cf7f624bd395ea6f780c33db95df89213f85537300fe1467171af8a76",
+    "game/data/localization/en.json": "96e951b1d15594509615905b3418a8d78b4921e7a00d7e1b13e3388b695ed658",
+    "game/data/localization/zh_CN.json": "042e0e26ef155f327b8301d600d13daa6a6117a95e81b58f9f60a62519d70525",
+    "game/data/localization/zh_TW.json": "26c23466b45c16234188975ebc80e382d1a39a54ca85444ecb33291157179e13",
+    "game/data/mission_registry.json": "ed5d08192557008f53c4497e2b5464a17915f1d0bceb2cbfef65a9f6c2177002",
+    "game/data/presentation/asset_roles.json": "b4268da9b4712368920606455c70e92d3232205ef0a84f1b063f0e82ad1fc72e",
+    "game/data/presentation/character_journey.json": "42460feca3c852914aa8a8f87652996671828a5a9cdab8e5f466a6f10cc52ed2",
+    "game/data/product.json": "7a77bc9371ca7980a1d5a1471b7eca9f2fc952d66423d47055c19b05bfda78e4",
+    "game/data/requirements.json": "29e4e75e4a53bec3f2bb28f5a3cac342a9f2423fd7acb6324dfd2f76bc654d75",
+    "game/data/rules.json": "bfac9922bd6a9fcea32bab9f202e6c82e9a8f512f47428fcc7b570821a04a26b",
+    "game/assets/audio018/battle.wav": "073b270db319f036f3f4e6e3add14f418e4de9cbc0f112322448272131bb8104",
+    "game/assets/audio018/battle.wav.import": "4b1b45f9ebda7644789551e4fbe9c9dc6bda57af67dfb09222284c5c5d362f86",
+    "game/assets/audio018/briefing.wav": "d376b60d9366f0ee79524c86b413dd9e194e6d517266b1759a8095ada9f5ad18",
+    "game/assets/audio018/briefing.wav.import": "604f73de0662b2c3cb9013ab20fb7c2ef99615f66e013dd16bd57aa84ea70729",
+    "game/assets/audio018/camp.wav": "22324fffb09487991cfece39ad2ed778bdaae78954cb60a840313b198606519c",
+    "game/assets/audio018/camp.wav.import": "3adeb09073a99b274760a496783521c91770dd19b8300c0253cbc895abca02ae",
+    "game/assets/audio018/ending.wav": "e0b402ed3eb200c1f9f5d3a1329ce059c1ee4069914c9bdb05c20a24c717f9c8",
+    "game/assets/audio018/ending.wav.import": "b9054e0906b534e7b54c418cb4502f3d268943bcc062ec4e0ef9f5f7a88913dc",
+    "game/assets/audio018/story.wav": "de675aa9c71ec81d166e14b838e8627ef6b496b5db78108d516b25c49537e917",
+    "game/assets/audio018/story.wav.import": "1d0b33f09c0b502e0c0b67c0e9eaf09f80115ff6d3337be6559125b6dbd2a2c6",
+    "game/assets/audio018/title.wav": "dbc67a110b3b77c27cf8326a957bcea6d569bd71cf45e6ed54ead9881512b633",
+    "game/assets/audio018/title.wav.import": "0a4256cd8b0864fddbbb329768a9b80868f5add3fbe891a81ddcbcb4802bb1c5",
+    "game/assets/audio_feedback/attack.wav": "237496733cf888b6191d80250042968c32e04be03bf6c8845ce68ce1c6907e00",
+    "game/assets/audio_feedback/attack.wav.import": "a0a4f7b0bb1a9ad7a3a813982145cd471142290968dcabe864bd34042e55ef34",
+    "game/assets/audio_feedback/drop.wav": "5c9623e6803fbbc0d46b54fd682863b70545f74d9180bd26a5408dabfea62615",
+    "game/assets/audio_feedback/drop.wav.import": "09507354df3cee9e5331674f0aa778b776e7c5ab4f73af728100825859e1a188",
+    "game/assets/audio_feedback/extract.wav": "6126c18a25e7483d7941a06a970001a8de6e80ddb591d0c1e3950c00f9d4eff4",
+    "game/assets/audio_feedback/extract.wav.import": "6b3c1b4196b875dbe505d070dbece93a8aadcf24ab61016ced118e44447668bf",
+    "game/assets/audio_feedback/injury.wav": "2432e29983547236f09a0d725c0922a075b50195dfe4aae8da265044f47a2f63",
+    "game/assets/audio_feedback/injury.wav.import": "cfb52a1c54b15b9c362b645777be1219721309eacc084ee0d10ea7dbd660e61a",
+    "game/assets/audio_feedback/move.wav": "642f124a88c27f85220cfbc028519b3df767c39b94b72bb02402cdb13f33e181",
+    "game/assets/audio_feedback/move.wav.import": "dbc5291f51eb34985b4c33cc6503278e6a40bf78dd7d87476885c741d77b9a41",
+    "game/assets/audio_feedback/pickup.wav": "c16304f1368813d39ee077829a696465a257a24156a1213d320e319c0c6bc323",
+    "game/assets/audio_feedback/pickup.wav.import": "8079d3ecd63b83ff0b4375b8a336e06c4d4b1df96ac3a088a912ff4bfee5916a",
+    "game/assets/audio_feedback/push.wav": "6f9e35bb8bc842876e291f197e51c315edf1418fca00e8a6af1d5dc74dbc83e2",
+    "game/assets/audio_feedback/push.wav.import": "8655991b554b8152eb024d006e55b0a5866f2851782ddee18c081c5f16eaa551",
+    "game/assets/audio_feedback/stabilize.wav": "ed6a351d50571f4012497cfa6193709618a487e5610b811ed8eb0d6f8e769830",
+    "game/assets/audio_feedback/stabilize.wav.import": "b3d82ccc29cf507571b27d464f186ea26fbc909b59d4375802bd240d549ece26",
+    "game/assets/audio_feedback/work.wav": "0d95e440ba9ba277e0363bf0cd34e1af9dd89383b053201219ac72d5e14206b3",
+    "game/assets/audio_feedback/work.wav.import": "e902830e9cea569c0ff0c16fc3db472102e81506c571570e61a05ce48a0006d8",
+    "game/assets/audio_p4/ambient_camp.wav": "db3bc61c50c28c817505e74f2b1be248a06225c6ab7f8c2eb9fb3120a3cf57ee",
+    "game/assets/audio_p4/ambient_camp.wav.import": "4b2720aac147d8b883c3ee6c2882407e4fcb791e9c9613bbbcc25966d9a1b56c",
+    "game/assets/audio_p4/ambient_field.wav": "b4c1b0fea0057785ff9cc9f80e083ee126225fd20fe8f5e79c74b37f4db8f214",
+    "game/assets/audio_p4/ambient_field.wav.import": "93316786ad036f053f6f53f7c794cf1d2ff7a6ae43b1f40aa0d0b58b569c28d1",
+    "game/assets/audio_p4/attack.wav": "5549f2a51d36da6b76a0b5d365b96b14d954d1a5ee195b8298065236cc8bf136",
+    "game/assets/audio_p4/attack.wav.import": "ee2454f7db554b127083530a10172800fe3ded8af9c3c8717754ce097dd1cebf",
+    "game/assets/audio_p4/drop.wav": "6fb8f9d450998a7220fcb064afebef2d8f018aa12046e9ab0656dfa7158de09a",
+    "game/assets/audio_p4/drop.wav.import": "4b9c6b60ea481f7d748b5a16b53be383520c4bfd1e757a63c5d84c49de8acdbf",
+    "game/assets/audio_p4/end_round.wav": "78b5032884d499fe69d535232be8d59840807b615658d870804755ef8ece6091",
+    "game/assets/audio_p4/end_round.wav.import": "2deb79b7e20b0e49321292f1d52ed0cd23551a2d4e6f0880094bcf4a3ce8ef64",
+    "game/assets/audio_p4/ending.wav": "904de5b4cb5c3e65ca863798183abb18f4f4fb2aa21e208277011394ec772050",
+    "game/assets/audio_p4/ending.wav.import": "8bc671addcc130d68d8a45f7d8e3c1754c8f2d70d8d70139bbee639d2ffb10d8",
+    "game/assets/audio_p4/extract.wav": "4a272cc3d92d81590583acb5d57df0a1fbb0a788dd38c1d2eda993792ba8e11d",
+    "game/assets/audio_p4/extract.wav.import": "55e1ecedcd63b417f6702a8abe3851f1b0b5c228aeb2ebf81bc59636f8b9eee7",
+    "game/assets/audio_p4/injury.wav": "f6f62ede0f3a7551e42f0842ca05242079d001dc17641f75c114bdc68f9b76eb",
+    "game/assets/audio_p4/injury.wav.import": "2e383739e6a7cb4c4f22c704c1331dad5b4aa936c4fe84d31db208862e995732",
+    "game/assets/audio_p4/machine_hauler.wav": "9ec7f68b57c543b2a2ac4d13cc213c20156ecb9c2e369eefddf19b6fc672bdc9",
+    "game/assets/audio_p4/machine_hauler.wav.import": "05e06f912a8bf18cfb78454d39a3e7f3859c12801552d1fa2fff3fdad3f3f215",
+    "game/assets/audio_p4/machine_relay.wav": "f4a64ba7692fcffcc0689c7c4d9c8e1164368f9b894aab9fdcdd58ae689ef2f6",
+    "game/assets/audio_p4/machine_relay.wav.import": "9a4089d33db345c13377bb278fcb2bc1dbbbc7ed2431a0bc9f0f3fa7283752ba",
+    "game/assets/audio_p4/machine_scout.wav": "074c021b5db9d32943b4a4c1539adc8edef52ef0ff86b4bb3d302026c13c0b38",
+    "game/assets/audio_p4/machine_scout.wav.import": "c02da19a0cd5ba5b1ccf97b559b05d991efefcc7850cec6c57d23e9449e6bcc6",
+    "game/assets/audio_p4/machine_sentinel.wav": "0de7177a3487f235d60ef1f5d9cd808d78dcb5f7c4ecc0363dd62208fd812c77",
+    "game/assets/audio_p4/machine_sentinel.wav.import": "1d5d3aeaf2219b955626561520b8472b26fc63eb9102e6fa474a4a634fed8ffc",
+    "game/assets/audio_p4/machine_skimmer.wav": "839b6f4ac86b687008f9a920fa2a00dd9606a257a39c18f0eaf31940cc0779df",
+    "game/assets/audio_p4/machine_skimmer.wav.import": "094f1f1be72859ee4f94d966831a4b45bfce814ebf8512f6c6980ca8b358015f",
+    "game/assets/audio_p4/machine_welder.wav": "46d972f153aa925392aa86792e40d81a3a80f29715d75820c8ba28acc1cb2ccb",
+    "game/assets/audio_p4/machine_welder.wav.import": "837b30139d3f44485aef056f7e74987bf7fa9424eef9664c97d43e3e03fb8f4b",
+    "game/assets/audio_p4/move.wav": "2ebdaa8a64018846fb53449e56073f67a4287d7217a33ece2287d416a680fe9d",
+    "game/assets/audio_p4/move.wav.import": "c182771cc53dd9e0602999f6f2216ccb07a2c7bd05bf6630337c57f3c177f1fb",
+    "game/assets/audio_p4/objective.wav": "661c416aee2186213fbede0d4d736d04da9e28be08e73e5f508fa08ffc514a27",
+    "game/assets/audio_p4/objective.wav.import": "c49772f64766c1b8d6c427ad1f1c7031d029ac472f2f783d18f5258b3f61ee96",
+    "game/assets/audio_p4/pickup.wav": "24bd48c2173279e26d59e38acf222eac3c4c58cf8ccc69cff1b58b5df748f981",
+    "game/assets/audio_p4/pickup.wav.import": "ddaba7bc88cf2821bd124bcee3abd5c4a9d7ed7bead92c9aca41a0de881993fc",
+    "game/assets/audio_p4/push.wav": "bd0354461812a54a03b1e0c60091ad33387070e867914560766f7455668afb15",
+    "game/assets/audio_p4/push.wav.import": "2c1c7461ef93242b17333a776e9fd9833e45124c3dc9a585d98e712bcfc80eea",
+    "game/assets/audio_p4/stabilize.wav": "3556817169a1a1fef5eb50a734e7db04ffb3046ecbc47011b0b6145dc8414368",
+    "game/assets/audio_p4/stabilize.wav.import": "8e635c05e126efbe881c29f85d4064e4200bfc03e5cb4f4d8983e1ead1fb5418",
+    "game/assets/audio_p4/ui_cancel.wav": "428619fb751512c6047329ace231cab583dbf7fb24a347be95027530043a5756",
+    "game/assets/audio_p4/ui_cancel.wav.import": "ff4acc27d1226539ec08021d1747f974d85762b10c681dbe53572624075ea4c1",
+    "game/assets/audio_p4/ui_confirm.wav": "08c228f91102eb3e52c28fa21ac9a001d5cf6c0dd736c09ff6563517e5ae2d85",
+    "game/assets/audio_p4/ui_confirm.wav.import": "ad42a4d3238a228b4a952f0f6bb4c4cd5bd263fac16d793b27b5423477ddc036",
+    "game/assets/audio_p4/ui_error.wav": "eb0ec72dfb4b72c29a49fa12202c41f04180db6622ca07b4bc64ea2ea59a8bf8",
+    "game/assets/audio_p4/ui_error.wav.import": "54c46118407aa50a6c252889c6b3be9881fa4cad9e91a6dfdc007d716e6e42cb",
+    "game/assets/audio_p4/ui_focus.wav": "2d9a745f0b1cb35e73bb4ebd6486268b2fd8d15f87d4e2c65c20eda6c8df39d1",
+    "game/assets/audio_p4/ui_focus.wav.import": "f31e39d7dc02727b4d261b2c328a53a0f6abe62cb01cff993b972ee0714ff40d",
+    "game/assets/audio_p4/ui_page.wav": "a6d0dbdc755865579cdfdb4fe8a715d975a5be3d6a50a91bdb9da292bd8d2c80",
+    "game/assets/audio_p4/ui_page.wav.import": "cccb2f161f4bb601249c91921d9e443a77331bbb1e02c9fefcf7f1a3493aaac7",
+    "game/assets/audio_p4/ui_save.wav": "9fccda0fbd088aebc3257cd565a33d1374d4ef4a928dfe06280e4c943a868c12",
+    "game/assets/audio_p4/ui_save.wav.import": "593344b25fff1fa7ba2b955f5d8cec797f8574c3fde8ca231e31757c31951b7b",
+    "game/assets/audio_p4/work.wav": "b436dd4190ccb329c1ae228859fdc1c506a9fe45200c8aade3f21e85da1daffb",
+    "game/assets/audio_p4/work.wav.import": "0ad2c80e04b67fd5c211ea40c361d69cad2ad6edf11e3e2f994abcb158df5c99",
+    "game/assets/characters018/chen-bodies.png": "62847558d1db1fbcd227e364734170775df96f0734a8f91e02b9e13da21997da",
+    "game/assets/characters018/chen-bodies.png.import": "d36c1802548d2c26326230e213182e46ceab94069ec8ab8a8d8ce64aba4faada",
+    "game/assets/characters018/chen-expressions.png": "c7ac9d9cac6e775468384d58a5940476fed1aa517ce63fe9a752d58ed584a9e2",
+    "game/assets/characters018/chen-expressions.png.import": "2148e5433fe9843749103c5285ee77fdabf604237e8f0b217f084c3b99efc7a4",
+    "game/assets/characters018/chen-motion.png": "7703d2944c8454755bba199fe5eb60a907ce5284d166110a53acbdc756274a3d",
+    "game/assets/characters018/chen-motion.png.import": "7a2bb6579b10bcde7c9df53a739959832068535abd14400073c168c6c714becb",
+    "game/assets/characters018/he-bodies.png": "1510c4815ce63772850b4f084f84fadaa810b45a3594fe376af8d14ca8ef5594",
+    "game/assets/characters018/he-bodies.png.import": "96d6258febe31791707727da0b74b8ed2e2e73e0baec5d343f4e1a0f919d6676",
+    "game/assets/characters018/he-expressions.png": "dda62db5c4777bab4aeda3b399286ebeb3c0ec0a3db983467425e1c3ccd3c06e",
+    "game/assets/characters018/he-expressions.png.import": "8367bcb0f4555efc0a6a1e53564a5ac92e6d39eef7a22d1ae0f6c5f99065a22d",
+    "game/assets/characters018/he-motion.png": "c40dca4d1b02c1cc95c0e0f74fa95d489dff6d55b0363ca4379a83dff238fdc8",
+    "game/assets/characters018/he-motion.png.import": "54ff7c1ed44e3853e19fa325fa032a6e7ec4c0ffe60e906e2b0f150f93d7f092",
+    "game/assets/characters018/jiang-bodies.png": "70d1e3e26d7c2ff51675b9f72ed4bb847778b654920fb9d494896f55753f20c2",
+    "game/assets/characters018/jiang-bodies.png.import": "0b4a24ea430a9a2debcfc7a811ce6b82a4811c5bd725caeafa7add011f5d25c6",
+    "game/assets/characters018/jiang-expressions.png": "ee08c267cf11dc85ea1333d71bede508d82f58798ad8b4afb7d8af411aba0e8e",
+    "game/assets/characters018/jiang-expressions.png.import": "d5347d2d9296db1a3ad40a9f05ee531aad7a07a9845cb5e61926af80ea2691dd",
+    "game/assets/characters018/jiang-motion.png": "bc40ced9919c8d3621288413aa7a7d00862e9d806871641848d2734b402081e0",
+    "game/assets/characters018/jiang-motion.png.import": "6ce437a526fc8da9150a6431d11bb23175afb55bb1116796a014fb87fc00aa67",
+    "game/assets/characters018/landmarks.png": "996238643e8126bc00bfe2344b2dee7e513675a2c4f5e68f6d8e769455768b82",
+    "game/assets/characters018/landmarks.png.import": "5f47497689a1b52d4c08284ac15b65487e82792b8019d32da71b2f0ddef1c94f",
+    "game/assets/characters018/lin-bodies.png": "6f5b86b24d0d0c4d4abc91a962eb37146dcad2d0dc36ac20cdd5e0b50bc82fee",
+    "game/assets/characters018/lin-bodies.png.import": "ae72f9778b292fb985e24fe1c7e4bdbf52884db5dc040d95ce87a3d65434dc66",
+    "game/assets/characters018/lin-expressions.png": "824c896e1484a179bc78e2f52411e2e23eed1d4973882775cbd8f072525a3a19",
+    "game/assets/characters018/lin-expressions.png.import": "991651f3ffc929461134f74dd4a894e6b0b70e3d715beb4d4a09f0b0a10a95f8",
+    "game/assets/characters018/lin-motion.png": "c964e1b4814381af1010893483dd9c290119a1a120053e69d00444c94cd8a1ec",
+    "game/assets/characters018/lin-motion.png.import": "29b1bd3e3d15a4236d7811895f3e26f3578578b2cb2d097c9b55230dd6309577",
+    "game/assets/characters018/manifest.json": "70900a4b81733e0a93196697f1a2959c7f74a111ef70505d9e2fcc08cb66442a",
+    "game/assets/characters018/markers.png": "2d082c0cb887543ce994ccb505ed7a3c0866944abf3963a424c5157675228fd5",
+    "game/assets/characters018/markers.png.import": "4cd4059e462fe4347465c7bec22ee251af147a319fa448dd1bd4a47e48ff1800",
+    "game/assets/characters018/mo-bodies.png": "257865092d8fc0aa790aafd0d0ff9069c4ba92e951628158ab466a8d9508925a",
+    "game/assets/characters018/mo-bodies.png.import": "4f005a5e2790ddc8723f85a4c412aa3e7a49a7adef1f50782bcfb68e2eb4d937",
+    "game/assets/characters018/mo-expressions.png": "1a066ebb33a8ead35dddf824426fcd5980c2b21dd7f7fe0a19399789f6a573ff",
+    "game/assets/characters018/mo-expressions.png.import": "220f88a5caa94281a37cb9343e11ee494e7b9775690edce620ad96ec04efa546",
+    "game/assets/characters018/mo-motion.png": "2e42f3575d3e72b046ca1e5bf19be6ec5b7409c1e3f45f2c4073d875c70a1119",
+    "game/assets/characters018/mo-motion.png.import": "de0561b6d68745741c60c32c9ac2852e11afe5278811d3952caa881df723044e",
+    "game/assets/characters018/su-bodies.png": "62f9a5a4a0169ee4fa7508ec4a652e6b152314ab2a0ea6024d120708026bb00b",
+    "game/assets/characters018/su-bodies.png.import": "6247e5838c89e83853e9c89c9e24a4d7c43ff8398c5c368ecf522c4c5d34087b",
+    "game/assets/characters018/su-expressions.png": "8619850ffd379730007498b2d99588804606ae76ae63d201f28747a4ed3f276f",
+    "game/assets/characters018/su-expressions.png.import": "fa6cfd24e297fcd8ffd30241c05d4fcd6ce6108dc1a2041ea2ce88d409119d66",
+    "game/assets/characters018/su-motion.png": "e9987a26c1e8405a2e4fce0c6921b7e390f660749eeed5d1d9d7a937d16b0772",
+    "game/assets/characters018/su-motion.png.import": "ab4e8f628375c2aaabb2559e344f253876a83342df229f201c9c099ef6b43f5b",
+    "game/assets/characters018/xu-bodies.png": "d529ff9dd6146642ebdf4b2751bfbdbd5728789c9c35a963b28aa8cdd9b85eb1",
+    "game/assets/characters018/xu-bodies.png.import": "b34cca27e3d48146e857f6092ce2b213748e4d389917770271796b3a2331da21",
+    "game/assets/characters018/xu-expressions.png": "f014363d2248b815a556d4f91cf694246f3bd2c302978530efe5268822d3c091",
+    "game/assets/characters018/xu-expressions.png.import": "a0b166e4b4507306aa0531462365f31f2a36f2e8952401d25cfbd4c0858e6e56",
+    "game/assets/characters018/xu-motion.png": "c84e1c980aac0da9bcb68193b666888956fda44b184210264711c3a7186b8224",
+    "game/assets/characters018/xu-motion.png.import": "39909ea5b5d839dbd40ca49c36dcc9a9af3ed92cf80d98a739e2a9a22b5e8d69",
+    "game/assets/characters018/ye-bodies.png": "22ebb05672a942b4632ac6dc1f5c91a8cf2f46b9548be0544b583e3437164d1b",
+    "game/assets/characters018/ye-bodies.png.import": "3be1f90fda3b991534d55c391c9b068205b3eef5907652eb50e368d12bfef87e",
+    "game/assets/characters018/ye-expressions.png": "348be7d52e9534cb1682b42ee811c3e3b52de9c9a60500a2a2ae111dca9e040f",
+    "game/assets/characters018/ye-expressions.png.import": "56f454fcdba9f4fa646597b74b97a899a6d9deda4d7b9e1421b5996cccb96aa7",
+    "game/assets/characters018/ye-motion.png": "a82073e0f9db0dd2747a0cce6f6e89778dbba3b752ce95b4319019c5aba729e9",
+    "game/assets/characters018/ye-motion.png.import": "a5593eb78c5cf2b12a8fd430e9135930f6cae1fc7a48ee0b8a081d6048c20201",
+    "game/assets/fonts/OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "game/assets/fonts/noto_sans_cjk_sc_regular.otf": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+    "game/assets/fonts/noto_sans_cjk_sc_regular.otf.import": "896ff995e1a9c9c3d5e7ea87be0c7204fbdd0f4f695a54c8c5ba86039217c125",
+    "game/assets/motion_p4/crew_a.png": "12dc07b164ad6802bdfe5218871adb3667bf1a6ddf1d2583c8da945c6254c040",
+    "game/assets/motion_p4/crew_a.png.import": "ddee1b04c3ae060da7b9da4e3d1fd99c58d0aee045d50ba59ea81065dcf1ef63",
+    "game/assets/motion_p4/crew_b.png": "b10dca459fff153007445a48b273b043ee59ed6b6fd8bef84ccbdcc3622adaf6",
+    "game/assets/motion_p4/crew_b.png.import": "feb1f7966c467074700466b6981257f56a7dadeb81e0aecbe4e4d2565f2453c7",
+    "game/assets/portraits018/chen.png": "0cfd29029950baf01f501caa499aaa3fde373ffeac0b6477016b3aa49d214496",
+    "game/assets/portraits018/chen.png.import": "7a7bd827ad644fff6c58ef5911b9145e8ee87f34d7091e96b6e5f9246a2a134d",
+    "game/assets/portraits018/he.png": "dfcfa79a54375287ed319feb551fc12d533be328993114eefee3b87b767b9614",
+    "game/assets/portraits018/he.png.import": "afbbe0e4bfb198a7af482de562b822dbe6cd058dc74b42353b6c791b0d0e86b0",
+    "game/assets/portraits018/jiang.png": "e1c039a76f2726234df918c2752a6fd4d271129517eca5a56b8d76a556f03e95",
+    "game/assets/portraits018/jiang.png.import": "a2dba3ff0c91967deb6d01a4cbfed6f6c718594826eb44425c6a2c9af90abae5",
+    "game/assets/portraits018/lin.png": "2ce54caa6cc8ef4ce974a3de5a5f41847b53eb15baf11200333056316ea5487b",
+    "game/assets/portraits018/lin.png.import": "74be85b5bd54b33dd848502ea8a986af0f013b800ff3eddf36cfadda715c7621",
+    "game/assets/portraits018/mo.png": "33abccd12fe33bc2a96f2ddda1b8b0ef2ef02773d2b7c0290dd6965015b4c44e",
+    "game/assets/portraits018/mo.png.import": "43291bf4e5f60eedf41d629b7ed9d669fb71cc5631da0f683777b5523748fda8",
+    "game/assets/portraits018/su.png": "1e38f666b3f5b8eb568ffbe92fec2a988a9b0c8b0a6d6253000a4adae0935095",
+    "game/assets/portraits018/su.png.import": "e1d125c4b26d970c766cc2869a7460ae08c52c9c4566581fb219d28580c3985c",
+    "game/assets/portraits018/xu.png": "fb1498ccc71c075f4700228b388cd1217f9de3b1687e5f8d58f0e1ad71ff9ea9",
+    "game/assets/portraits018/xu.png.import": "6c1f446b37d26f1e15db24793a7d10e072e8b026dc289ff066699460854fb356",
+    "game/assets/portraits018/ye.png": "d1cf652e8397d054066041e24eda7eef403c6975fb0edd38230f771e42b77d70",
+    "game/assets/portraits018/ye.png.import": "7e045e6c48ffcc7f4d2b96d670a12953e133e9c6c178c64d3767bd363d43c774",
+    "game/assets/product018/audio/battle_high.wav": "17d8fd54b858f22a5dff0d35dc35800e33985f1bd1c79e202a995e05909c318e",
+    "game/assets/product018/audio/battle_high.wav.import": "02385e039efe67abee5fadf8cd2a5464074000bda2756b3c956941b0ff27db10",
+    "game/assets/product018/audio/daily.wav": "0c2d413caddd6f68fbf2d75e9cb262fdb05cab1ccf6e30e517fe5911a84661ec",
+    "game/assets/product018/audio/daily.wav.import": "98a7cbb4245697997d10445df09279d38a888c376dc4bda3798c1e6848461b08",
+    "game/assets/product018/audio/grave.wav": "5975eee809dc5ffc7c5aa7d07874564710825ecf87ca67e91fd82bbfa3d14d1c",
+    "game/assets/product018/audio/grave.wav.import": "316582d5e30002e3b33a7b3c1adc5a8e43a48cd37d81bb17aedb578e7f1d2de3",
+    "game/assets/product018/audio/nov13/attack.wav": "4d7d936247bfa19cf9e27ac663fb011f830206dd1fb6a63b8157b42f03477e28",
+    "game/assets/product018/audio/nov13/attack.wav.import": "0feb6c6e7b3f5940ac5962524b945840b28b827b4085b93dc59d38c705e7901b",
+    "game/assets/product018/audio/nov13/battle.wav": "ac37982c5be42fa940c35425f70ff6996c8df99c0591d76fb88c94c4c9dc8687",
+    "game/assets/product018/audio/nov13/battle.wav.import": "e0087ce2305e6e46f45c243c135c3e2ac4b2cc063dfadabf2e9043a7cf6b6ed5",
+    "game/assets/product018/audio/nov13/battle_high.wav": "a1fad4deca63139af16600c85ba3524f2748b455caf048bf08e4ab30670bf81a",
+    "game/assets/product018/audio/nov13/battle_high.wav.import": "cf47a7418df88af935952a50587efbb7081904ac88d67a66c175809ad9b96893",
+    "game/assets/product018/audio/nov13/daily.wav": "863f90b3660c1b9490a31ec13b6e2bb5a0623ef3fcda630c2e9ab14016d26987",
+    "game/assets/product018/audio/nov13/daily.wav.import": "edce10eb209bb9375e42293c1ad000c45884e15f155bf0f704d6e4b95d519f16",
+    "game/assets/product018/audio/nov13/drop.wav": "f9418d7fb40cbc375ddbfaaed8f65a20f983df0242bd5ad05e5f92b7660e7e38",
+    "game/assets/product018/audio/nov13/drop.wav.import": "c78884c676613d68373c0a465819880fbcde1e2e0c1fcf7fe59eda16aacc54df",
+    "game/assets/product018/audio/nov13/grave.wav": "7b0667de86381a6e4fddcb51ccfa11850b98ce14ce8874f1d6f3acdb7741948d",
+    "game/assets/product018/audio/nov13/grave.wav.import": "7592b91820eb1ec3f82622f4959839290f14bd99358de4b7f7ee4cc03fe34572",
+    "game/assets/product018/audio/nov13/injury.wav": "c710fc26fb8d235cfda6de0267d5783197fc4f2755a12cfcb35ceadf89568182",
+    "game/assets/product018/audio/nov13/injury.wav.import": "7d434a5d8c2fabb6faabb8f83cb6d0cea0461d77e8e49325e2b411e5dfb618af",
+    "game/assets/product018/audio/nov13/machine_hauler.wav": "cd00d10c7a98bccd5a9bc15edc967f495064d5f7e6e154eee689042515de732b",
+    "game/assets/product018/audio/nov13/machine_hauler.wav.import": "c7186c4d984df11e17ba91f5aa6f3cb045458a45f6a1733175261fe4ac3c3567",
+    "game/assets/product018/audio/nov13/machine_relay.wav": "bb05e755cdae5ef1ee3706b3c23c2b82499ac8a63d040936c2b1e1b793737464",
+    "game/assets/product018/audio/nov13/machine_relay.wav.import": "7a15528a406eebc87af55ebdd0097c666b7c34d09b2112f260f85ba5e91adeb0",
+    "game/assets/product018/audio/nov13/machine_scout.wav": "537c538ff44a948453f54b6f5000de0bf1a44b88fad8fe8e14d725bcf43913ff",
+    "game/assets/product018/audio/nov13/machine_scout.wav.import": "45322868055d6a2e73ad338d6a06dd9aa0b35cbece31b726c5ef9ab29190a5b6",
+    "game/assets/product018/audio/nov13/machine_sentinel.wav": "156d245d2f37ed33480cc5d629f96cb961d2c22d4c523eed5ba2688642efc441",
+    "game/assets/product018/audio/nov13/machine_sentinel.wav.import": "0e7f51f51e9faefabc66405057e1874ff6c7c9b2ed30c0332026be140cb49a6b",
+    "game/assets/product018/audio/nov13/machine_skimmer.wav": "ce403718a3df6ddaeded893ef5401f67ea20c4e154b56e98ac281491eb83e6d9",
+    "game/assets/product018/audio/nov13/machine_skimmer.wav.import": "42ce6f6cb5349c8c824ecb6fc8057cb3e70913aee073658963820e84c7063971",
+    "game/assets/product018/audio/nov13/machine_welder.wav": "03502548599c3f0356a66c7cdd8b769e849d5bb3b3e67b57d772b8a15bcb1644",
+    "game/assets/product018/audio/nov13/machine_welder.wav.import": "8ac667b1e501b738237a85585ca4be49790a56ae5ec7a93b44c457e5b8d05251",
+    "game/assets/product018/audio/nov13/objective.wav": "13bcf57ea1295e58cbce34ac0f3cb91f55c040b25f9d462899eb7392998e7f6f",
+    "game/assets/product018/audio/nov13/objective.wav.import": "05560012b3de7b8611693aac0f90420f422e5f1a766ca7f402f86131db14c612",
+    "game/assets/product018/audio/nov13/pickup.wav": "e2f154a926d8ea3dc78033019528913dfe8f4cab93b19bd1f4287351d08321b7",
+    "game/assets/product018/audio/nov13/pickup.wav.import": "b99dbb8903be241b84e5eda483d72e70ebbd6a111e69ffd76b6e882c99383df7",
+    "game/assets/product018/audio/nov13/push.wav": "6bd5849c232cd64f092fd2648ac42ab6656fdf214c5ecd1af5ecdfcc03a24b2b",
+    "game/assets/product018/audio/nov13/push.wav.import": "883f6e6d0e8332a339f7281334ce336eb1cea9f5e53f0ce1a6ff7583e7715ffa",
+    "game/assets/product018/audio/score/battle.wav": "e01694bbf4143d3d71a45a77d0cbea08930c54f465b577ed941d922b1e411c69",
+    "game/assets/product018/audio/score/battle.wav.import": "f62184678f8b7a817c26b52e8c47df6a693c129f147b711a9bf3a00b9f8b958c",
+    "game/assets/product018/audio/score/battle_high.wav": "b316141d5beb541dcb008838e7a35441b69e0cf543abced4060f9ef63e577d53",
+    "game/assets/product018/audio/score/battle_high.wav.import": "0e5162970fd189c9422f7940f650f8b3694f1d882cebb5d4025afed32b36ee69",
+    "game/assets/product018/audio/score/camp.wav": "52ceb0f46d4ebef76858134928d9e05e829cafd646d8e76bf08ebb4002b3d56a",
+    "game/assets/product018/audio/score/camp.wav.import": "6bd219036866cca8cf8ab486f1e70a89559388da648dd6e0b3c80a7f1438bbcd",
+    "game/assets/product018/audio/score/daily.wav": "760449a7bc57b7f1e5a5dc4af6d39302660e3820a43cfb72d63d8c2f98fe8fc7",
+    "game/assets/product018/audio/score/daily.wav.import": "c36bb29263aa822dac0c3b1e2e4b701315157421d751e4e59be31f892503110f",
+    "game/assets/product018/audio/score/ending.wav": "1b5ddecaa3d8f41bebef5054f0c263b3901b26c2b49dbf09d8ed100c43aa5d60",
+    "game/assets/product018/audio/score/ending.wav.import": "67d67e633d9f1b6daca2e41b0db6e2ac4b6b88b9b463dcaab817fb696d60eaf9",
+    "game/assets/product018/audio/score/grave.wav": "920a11a7e21f1151f75eedc9e84363db0c6ac2d7038714e02d3e966dcde09e92",
+    "game/assets/product018/audio/score/grave.wav.import": "eadea961a2ab715a018de34e37a8d8b97e93d580c9b2993f1c00a748e4a00d31",
+    "game/assets/product018/chen.png": "0157b9e352d229c3138f3006497f6924f40394f00f5a6b06833f66f484349dd3",
+    "game/assets/product018/chen.png.import": "0f200b100f79eb5e7dd8646187f62a9ebf46679dc1ada83fa7154995571e9b31",
+    "game/assets/product018/he.png": "960c2df775e69144a25895dc9c053bb7df8e006a2dadf1525d6c6ae5a81be66e",
+    "game/assets/product018/he.png.import": "b568201270d003d94c9b1e7b6628968352b7d110a95f586db28be9950f51c3ec",
+    "game/assets/product018/icons/attack.svg": "eb3b599d3d35d5b34de55434a0ff4e82df4d4cbcff399214d32f7e03627f4bef",
+    "game/assets/product018/icons/attack.svg.import": "98b1cf092d669b3dcda424312d65ba39751e8f3cc28bf7934ae465950246f912",
+    "game/assets/product018/icons/chen_1.svg": "4ad6a7c841a2c17b901721c354862c48914d4f9e5f8e9b56bd0e213d370fa733",
+    "game/assets/product018/icons/chen_1.svg.import": "4c63d8512f09a1c75c9d7c471719a2edb730c201800e248ca73f00c8b320b4e8",
+    "game/assets/product018/icons/chen_3.svg": "546299d12dcd066c8886aee27946dfa0d974fd702b63692a5bb47658515668cf",
+    "game/assets/product018/icons/chen_3.svg.import": "d140c486397654a24de6a69066a8ffefe0f1672e352571459047ed7b6f60c5c6",
+    "game/assets/product018/icons/communications.svg": "8dec83bed07de2aa986285fd4ed4c313f4fe74533174a95f97107184df81c6c0",
+    "game/assets/product018/icons/communications.svg.import": "1f2d121ab50a68175d59b85cbd0a430ae066361e8527f027b6e3734be031c0f7",
+    "game/assets/product018/icons/coordinated_pull.svg": "942f1b5820e4d99cf154b0fe74da09775aaf6f4d055869c6f307061c9fb3bc73",
+    "game/assets/product018/icons/coordinated_pull.svg.import": "5ae00e0f6f71583a0da91954da77ceca529b267d1696bbe7aa2c3bce6e8d2811",
+    "game/assets/product018/icons/credits.svg": "27281820380218e992f956d6caaf79f25c0bf98e60885bf12198cc87ffdfc34a",
+    "game/assets/product018/icons/credits.svg.import": "c5632209041e23045149f7a9b8b53d7c86b4dfff038b3edd3005bb27371dfb4e",
+    "game/assets/product018/icons/crowbar.svg": "e9048ed88019ef27a3e8be0c74cc984e3cd10d851740dcf848834a86afb6486d",
+    "game/assets/product018/icons/crowbar.svg.import": "54d2b874481e3f533c9c1c407f035ad05852e8adf9b7281259010a8f81c4c1bf",
+    "game/assets/product018/icons/drop.svg": "02646dd93c9290969b9762dac2266049cc45178ae54dba744f8dd01a67f31231",
+    "game/assets/product018/icons/drop.svg.import": "06247ebc0ba506ecf18b6f68ded86160e0f951e0c549212926a7fd3183c47314",
+    "game/assets/product018/icons/end_round.svg": "991fe88ed413769408104f48e5b4b6b4275661e844f12eba8cdf56843ce8c69a",
+    "game/assets/product018/icons/end_round.svg.import": "ff672307724c12705f89d1c036b5b8660a1bd30809bed078af544762374d7eb7",
+    "game/assets/product018/icons/extract.svg": "526b619f1000863e47a6d2e4730cdb7347a1663e4018fbbe343a531d4d1f24fa",
+    "game/assets/product018/icons/extract.svg.import": "b6e56e987afd474e6aeb584636e2c98c525e3b58e55d1f5fdb5808314276b39c",
+    "game/assets/product018/icons/he_1.svg": "a6f38f188d38781b4fdfe8dd421009f1bccaee34de5e90c2767a2f6859d66ae5",
+    "game/assets/product018/icons/he_1.svg.import": "6dba1f82fcab563be7e158685662e0cc44905932480bdce60f593c09c6bbce8e",
+    "game/assets/product018/icons/he_3.svg": "6443bfc8b59f0d59c4dd6a6acbe2084158ca5622b6da275b614eaa789ec2507a",
+    "game/assets/product018/icons/he_3.svg.import": "f4e7f4c071562b4ff6f5ba7950e0fe93519ceccb9fd3c63414bb95ec959120fe",
+    "game/assets/product018/icons/infirmary.svg": "fd784142fa00dcef1c451e62d0f4def40dfa196e426ca4c42fa3eed66160cc8e",
+    "game/assets/product018/icons/infirmary.svg.import": "c20bd8bb10c3779ccb627cb505fc37b5bb880362bd3fda878a2396cf89a9ea15",
+    "game/assets/product018/icons/insulation.svg": "cf08fa55808a655e3905d689815d4f0814e942d62df4b8323ad05f6ec6a00a38",
+    "game/assets/product018/icons/insulation.svg.import": "54b1c7c7ac64ac452efe172e6351cdf007cacfd0a802a527446fe56ee0c4c7dd",
+    "game/assets/product018/icons/interact.svg": "e9048ed88019ef27a3e8be0c74cc984e3cd10d851740dcf848834a86afb6486d",
+    "game/assets/product018/icons/interact.svg.import": "0810dda50f0dd8adba5e017a910667f0e90e747161d434bd4b5d4dcf76b271ae",
+    "game/assets/product018/icons/jiang_1.svg": "8f322068c21f08d38ef4b49b0f36e70c3474cd431c94ec7a43eefca77bdd789a",
+    "game/assets/product018/icons/jiang_1.svg.import": "09894c3fef41ad9e193c7d8bc383d2d1e2f694076062ac9c8caa570e6f4064e4",
+    "game/assets/product018/icons/jiang_3.svg": "672a128c3c469933dcff0fe2cb4972d83180d436f3316791c8db20614afbd7e7",
+    "game/assets/product018/icons/jiang_3.svg.import": "d248e4778f0051e866ca737641c1da435fce048ecdd30bc08b405e707bdee418",
+    "game/assets/product018/icons/journal.svg": "a2b8df200893d905ecd06c2510cac6c2f9ef8705615bcc58b32a9c4f9f6f691f",
+    "game/assets/product018/icons/journal.svg.import": "31f858467d4265e6bdb635475381ee3e45cf42559f707aa10a29f0776fe05dda",
+    "game/assets/product018/icons/leave_site.svg": "cc8de0912eb029f184bbb950d4497159ceef9b3830dec1da43cef37f38730fd4",
+    "game/assets/product018/icons/leave_site.svg.import": "9214637f3c48a6ef055432db40715342d5c1d9d46a4cd8888b4c534de656ea2f",
+    "game/assets/product018/icons/lin_1.svg": "d01e4f95591b63e0c2323238385c01080a51185039f7dc121c8b667bc78a7a57",
+    "game/assets/product018/icons/lin_1.svg.import": "1770ba9609b5adb1e3538c6b4dc3e5f0d186eefa237b08581f9f51efd0f91f3d",
+    "game/assets/product018/icons/lin_3.svg": "9ae94a0d62800be986b302cb0442dc5ae7ac7fba1eacbd2e335ed060c44d9e23",
+    "game/assets/product018/icons/lin_3.svg.import": "3cde072166c407411c67d66508510469769c362cbb3650d5ff1fbd2b4dd2e8f0",
+    "game/assets/product018/icons/medicine.svg": "375abaabc796e5a5c97dea81774903f379582a879e794e9393fc734bdb52fba3",
+    "game/assets/product018/icons/medicine.svg.import": "b31894a6669e7ce25384f3109664d59bde304b1cb0b715c0afc5977a00f2371d",
+    "game/assets/product018/icons/medkit.svg": "337b105fa6bef8414cb9e37248d45739cfde86e380d9fc438b2e1c4f1c222439",
+    "game/assets/product018/icons/medkit.svg.import": "3a2a3a5a5272690445f0f4b5d16c9840d27dfded3f0ea0e307e683989697e796",
+    "game/assets/product018/icons/mo_1.svg": "63cf0b256becf39c3251c32410f8bcec18d6fe354676c4cf132eb4b4532670e0",
+    "game/assets/product018/icons/mo_1.svg.import": "7a20143e51586a342c9aa990487b98551526bac537793eb7dd059090b44931c7",
+    "game/assets/product018/icons/mo_3.svg": "6889b142b2e5ae30fabd3ec59e4732a10cc83cb47a3781e7a1cae7894b1ea23f",
+    "game/assets/product018/icons/mo_3.svg.import": "21e55aaba3a7811de22e4af5460462956552cf5aed13c7925db14b2488a8b28e",
+    "game/assets/product018/icons/move.svg": "d0117785d729884567f04ab1ef36bcd831d3f49a90651241d78bdff2a37667d3",
+    "game/assets/product018/icons/move.svg.import": "a29845281027da7d8e7a3b983c04cfcecec038e4b6a09a7a7be7008799bbd48f",
+    "game/assets/product018/icons/mutual_cover.svg": "10d97fff0113cde1648b528cdd22dbadacf6dcda01e7237bc30f02b859d010d3",
+    "game/assets/product018/icons/mutual_cover.svg.import": "9c567598447be6b770a5e16a9af61d8fd8921ac9c78c2ae966a34b49a1c835fc",
+    "game/assets/product018/icons/parts.svg": "a518b7f709759ca833e2e966fb6a65dee74b21e0f8e1403099274c865503c4e9",
+    "game/assets/product018/icons/parts.svg.import": "e94a6c56291ad56542d41bb84120487524dfbb26d293d6dbd0b98dd52c7cc81a",
+    "game/assets/product018/icons/pickup.svg": "9431a76ca7df4acb64b2b29249c5c886692dfd3b3b6bbbe09439225f82ece139",
+    "game/assets/product018/icons/pickup.svg.import": "5885df58813f0f3ba66f1d6f7b6b29757b267e19efa53290b21c086d525fae4c",
+    "game/assets/product018/icons/protected_work.svg": "2852d239cc9a903b477df0e5c015132231a9c21e2f1ae79eec8182809cb16e8a",
+    "game/assets/product018/icons/protected_work.svg.import": "d5db9380a40ba9323829deccfd4655e915e3a4df77f4c11e7fa02a172dfffce6",
+    "game/assets/product018/icons/push.svg": "06e872a26acb055ab2b0d294d489579da7a6e92c8102d2d39def243c3a270143",
+    "game/assets/product018/icons/push.svg.import": "7c5a9c90d57a8fb130fdab32b269a80fb724e4ac3f601ff9c94fa305bfa82901",
+    "game/assets/product018/icons/relations.svg": "d9b4f64e787500ac7ff9e95d86d19e82ec9e1fb5a4891196db2607bdf9f111a8",
+    "game/assets/product018/icons/relations.svg.import": "7574899d9b67dc24944d1e906299537e8d9a50cc549dcd7bdd94dd2cdaa7c030",
+    "game/assets/product018/icons/relay_carry.svg": "93f3746b7e4c552fa6d6b252806005967ae6b45f4422c516268e6048be05553b",
+    "game/assets/product018/icons/relay_carry.svg.import": "d36937e74b6920db7ea697e5d535007833a647d310dcdef1809d17eb8e42fb14",
+    "game/assets/product018/icons/rest_area.svg": "08a03f794914239f2bba75f7d93c10fed309d8f1fcad037bb200dd9cb625dea9",
+    "game/assets/product018/icons/rest_area.svg.import": "d4d263065a7221eccb56cd90d7bf19f3381c61db27586ca319ebf187e6fc9231",
+    "game/assets/product018/icons/scanner.svg": "396247a5166b9863d7defbb6117d6fea088265e86b77b2acd743c1abe6f9efdc",
+    "game/assets/product018/icons/scanner.svg.import": "e28bbe41f4c7ef41972abfb846620cd7ccb6be4130e08fb37d6074055da4f355",
+    "game/assets/product018/icons/shield.svg": "d5f90167f918aa9cf06fce0bb9fd517611f6d4d92e5fb29047040c08c672722d",
+    "game/assets/product018/icons/shield.svg.import": "522778b1821ff4e87dd59690b179f8eea46cd577811369c042c5e24ee2c5fbdc",
+    "game/assets/product018/icons/stabilize.svg": "2c68b4282099fab224a3cf7466c75bd2d77a60be7cce6878247083ac74e954aa",
+    "game/assets/product018/icons/stabilize.svg.import": "f2415bde74478680f3acb84ef4c3b8bca703f5a15bdc36ecc3d8bb952b8e5d66",
+    "game/assets/product018/icons/stretcher.svg": "131f3d1661bcca9c1d211b51eca30377f39c9df4b8c2382d1f3bd50b611a0079",
+    "game/assets/product018/icons/stretcher.svg.import": "8a9d185025ce0661b6806a481d9f7053fe73059b4f87623325a47f9235515be6",
+    "game/assets/product018/icons/su_1.svg": "ee8632cc6c5e8b19b720d56dbedbd6ba41b0f3b4f3423a8e150517a710e5822f",
+    "game/assets/product018/icons/su_1.svg.import": "db16a9cef3490871f6770dd3541867d825a922a4eea024a2ca9c5dfdd2285781",
+    "game/assets/product018/icons/su_3.svg": "f9b9f26eed864bb6d84526624474e257b40bcccc0d20ff3820c501094321c9a3",
+    "game/assets/product018/icons/su_3.svg.import": "734928a3f5ddc1b3e75efd7e3d6d512ee7ac5adbf3d76ec17b4985ce39d394c3",
+    "game/assets/product018/icons/supplies.svg": "19f8c8e9988153adbff8b9a8237ecdcf92b7e8b57f39fc4774d789efb163f584",
+    "game/assets/product018/icons/supplies.svg.import": "b2aabf81623bd7eea183fa9ae31712b01128032136fc36d6e0e47306372c3738",
+    "game/assets/product018/icons/undo.svg": "465c7135e77ae8ff4ed9cff8f7312d14b2de4c93d2861185d0d5657b9f53737d",
+    "game/assets/product018/icons/undo.svg.import": "96032208f55acd0ff0f3d2a5f48408b81df5dd0cdcce77e9ad06c8c7a5873337",
+    "game/assets/product018/icons/winch.svg": "d9b4f64e787500ac7ff9e95d86d19e82ec9e1fb5a4891196db2607bdf9f111a8",
+    "game/assets/product018/icons/winch.svg.import": "25b26e880eb2df5b49ac5f228cf5cbaab6033514148571da10d56d4f7ab066ae",
+    "game/assets/product018/icons/workshop.svg": "b1036b104214bc0fddc733df3dd61439134dadc4c88dc0589ff14091e34e1bdd",
+    "game/assets/product018/icons/workshop.svg.import": "d7bd43f57af10bac30fd11bed569f6c0bbe919d83ad58c896ae6a5d92a547d04",
+    "game/assets/product018/icons/xu_1.svg": "62f8577f4d6c1d91a84ec70320589cdaa7f378548ce0a97c19f66672d6ab4fea",
+    "game/assets/product018/icons/xu_1.svg.import": "14411f070c5f1f7f2de8dfb80e74018f426d96e17c71e37e801be855e7ccb4b6",
+    "game/assets/product018/icons/xu_3.svg": "f049765557cd414284b0b0780aa9e1a315e8061d240f973caa78ba156db13853",
+    "game/assets/product018/icons/xu_3.svg.import": "2b8f28eb7091b4d63eada04978644956b1cd6bd65c6381b531672f68c9da531f",
+    "game/assets/product018/icons/ye_1.svg": "02e3d2a7696fe8fba27e599577108a036f4ea0df6f9bd1d089b17357155bd1d1",
+    "game/assets/product018/icons/ye_1.svg.import": "839dc37f491b16994c55b2b066a9b5fb634417ce07a0a441592387719032109c",
+    "game/assets/product018/icons/ye_3.svg": "f82f2d0840a11190aa236bd4f1c78b27ad83c6bbd2584b72a429f994c2959abb",
+    "game/assets/product018/icons/ye_3.svg.import": "a15a8da48b7161f772df7fde379d078997b3e3cd895aa9d2a6e9e0d8154c13b6",
+    "game/assets/product018/jiang.png": "8875e57efd428a896acbf90cbe67f8acba8e657f149d0696fc251f365e5ae8ff",
+    "game/assets/product018/jiang.png.import": "21346ae61bbdb957a17361c60731b458b66616dbe42039daa3a04051b06eb349",
+    "game/assets/product018/lin.png": "c18643221533ddaaf0df2616694ff97c45fd2ff4649577f9cf7944ce5810b5e4",
+    "game/assets/product018/lin.png.import": "69950165169360ba97e2b80903dc02a28b0aaee460bc076213c4c34e8156f930",
+    "game/assets/product018/mo.png": "f6aea7f6d62a200390b1627a1ef6c97b5a8cfe48037a752170f5d7e068ac3d24",
+    "game/assets/product018/mo.png.import": "26f61257c7c6803de3008114524194c5869c1e2d0b995bd840f9938968d21e27",
+    "game/assets/product018/narrative.png": "0279b1409ccb85587dd1f62695f4c122e9aa0897ca2a7a8eb53eee0066c0929b",
+    "game/assets/product018/narrative.png.import": "984301d80c0403ba4cc8c19bf7306a6d99bcebd25ca60be9a03b6d8464ccc8be",
+    "game/assets/product018/night-tide.ico": "5140085a2756c84707c74cdddb81136418855c0ec3ca02525883e0263496967f",
+    "game/assets/product018/night-tide.png": "488004028923359cc2ff05b8b35cc95dde5fd7d0857bf0003afafcdc53e22751",
+    "game/assets/product018/night-tide.png.import": "c73bab98398df0c87aa603ea95544c1a1a3287a67053d0685cc8c98f27864e57",
+    "game/assets/product018/su.png": "dbec804f510cf2aa4aef7e3645d36e35bc09c6301895924cfc3dc819cf4a9c3c",
+    "game/assets/product018/su.png.import": "c28de4a5234a4c75b15dceb255026e0f319bba869e66a3dcabe60893f9c3d230",
+    "game/assets/product018/terrain-quality.png": "5ad46216aa550fff5e98d63c2f7b852a82c4ad3090065994fd6b226c335522e7",
+    "game/assets/product018/terrain-quality.png.import": "67ce4fb021b83a5c565606ba1ff6f2f135101ea1fc4cf2887983c6383ca9e925",
+    "game/assets/product018/xu.png": "d32be2972cd63a3127dc79a4e8e731bb5b93b3d802aa49f8c6c631d647bdb8c3",
+    "game/assets/product018/xu.png.import": "b3e43ac1a073eb9d3f570371803031ed1b7a42920012a6cd938e1ecf1c472d5e",
+    "game/assets/product018/ye.png": "7b20e6e1245aa960396f2bf672d0a1c8eb32e5fdb12a449ac207411b7d5be7aa",
+    "game/assets/product018/ye.png.import": "fd2e030c68f618ece3bb972a90ce12121a78de673e7b0dd28c12f3f417784419",
+    "game/assets/visual_p1/crew_portraits.png": "211b632e309bc74a186423fc11c5870fab04f81e2b2a44a6b43a9048e4c2db9f",
+    "game/assets/visual_p1/crew_portraits.png.import": "1e4865af6eba2fbb3b94afd4ae88a0d6436bd0843f196d425f31b91cd6456792",
+    "game/assets/visual_p1/harbor_camp.png": "6a6235c9f352d89b70525577eb6b0ad5500347cad441bb56fd4cd0d287dbc762",
+    "game/assets/visual_p1/harbor_camp.png.import": "b7acc5ff25ad5f4ef21521c4054fa960ecd92b10020bb2908e487636d8315852",
+    "game/assets/visual_p1/rescue_sprites.png": "9b6d171f782aa6eb2aba10f46ee4c943e1a61028a4c5cff1681fe9c13debd18f",
+    "game/assets/visual_p1/rescue_sprites.png.import": "68286c4227962c107d4071d7f567013efc416df08ae54f4f82917df1c233b9fa",
+    "game/assets/visual_p1/support_responder.png": "163126e30bc30b0d8ef0337e1ea37f9606a138ea1f4a78415418d69fc23bcaa5",
+    "game/assets/visual_p1/support_responder.png.import": "cc40a09fa01cee81eee1db9b2ef78e83fb4638a3e7d3d14134141f1c001de2d8",
+    "game/assets/visual_p1/terrain_atlas.png": "a9715b1d68b2d1c0fb39aabbeb38a5941078c4c828bcf816dc2b82ba062cff7e",
+    "game/assets/visual_p1/terrain_atlas.png.import": "4c0f86616c052ad7de0097c5650822e50bd1a14d7db0fa3e5472225030b62bef",
+    "game/assets/visual_p2/chen_portrait.png": "50b796ecd00802f6e231904809cfab39a1cdd260de3651f6c2a67df47081f06c",
+    "game/assets/visual_p2/chen_portrait.png.import": "81b74093346ac3b89069e6527404e1daef7eaceb4fad9da4e21f9f7e74cb9de1",
+    "game/assets/visual_p2/chen_sprite.png": "bf11574a8e72ebf5229dde09c07c93af46c47e43e330a97a37820f81ece17796",
+    "game/assets/visual_p2/chen_sprite.png.import": "548b597cf0f82d9baf3a45a3d32d94eae3afd38810f055ec5fe0e47b82a8b7cf",
+    "game/assets/visual_p2/environments.png": "b7ca27b17e506fdadb21f72f33e133ba4f4568027c351903b5916d5f7641900e",
+    "game/assets/visual_p2/environments.png.import": "60ee14cb9c27de4fe82515d2379343bd4b8160f5372dc0890c6e0d614069d587",
+    "game/assets/visual_p2/machines.png": "7af37568cbf3d920135a81a428bb3b27c3fe961801cef814353243f658f6d6b6",
+    "game/assets/visual_p2/machines.png.import": "fef8340106c3ba4cc41eab5b4fa8c9366cf4b592fdcce7e2788c55bdef2f40c1",
+    "game/assets/visual_p2/objectives.png": "5322e7f01986de8024b88299cd99d34097d4a61150f9c86ba93acc9c1c1361ee",
+    "game/assets/visual_p2/objectives.png.import": "59104d6ae0d688cbc656e65bf3ad2799240910f546f4499313aeaba07e8425a7",
+    "game/assets/visual_p3/crew_portraits.png": "809efd1ddd696eb08a67983f7d245a24908f0b608d746ece21fe1927ccbb3414",
+    "game/assets/visual_p3/crew_portraits.png.import": "12190c39e973005bb590c1819bebfbcf9a938e525eed7ffb4c11dd5a518c8aaa",
+    "game/assets/visual_p3/crew_sprites.png": "73ae95a3b3f0c29d3296e35a285777448eafc871d89dd24dfca54cf28160be2b",
+    "game/assets/visual_p3/crew_sprites.png.import": "096aa1558bba23603d4bbf2f6b142513868d09377d89b7d86cf5d4e805505a95",
+    "game/assets/visual_p3/crew_sprites_source.png": "e3502f76dbf8458ed29854edfce212d14852e29ccc15ae9e1b62273ee9f050f5",
+    "game/assets/visual_p3/crew_sprites_source.png.import": "8ae011991a559c1596234dceacbbc76e8c7e19edea9ff7737d57a1dedbff1718",
+    "game/assets/visual_p3/environments.png": "ca18bfe4b6064e5994528ac4f254c4468e9cf07662421804cb36866529f230b6",
+    "game/assets/visual_p3/environments.png.import": "12498f9177677e1abfeedfc3283617bc98001eaa7a65ec33cb6c6098935e46f7",
+    "game/project.godot": "4745f85749e7d8966722593a14ddac579c26b786ea66fc382cf166719381cb4e",
+    "game/export_presets.cfg": "6222e271407152c125b62fc4781416fc2fcbaf55b941b616c01cb5d61df090bf"
+  },
+  "windows_native_tested": false,
+  "human_acceptance": false
+}

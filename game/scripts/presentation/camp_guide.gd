@@ -51,17 +51,35 @@ static func navigation(ui: Control,box: VBoxContainer) -> void:
 	if not due.is_empty() and Learning.known(s).has(due):
 		ui.button(box,ui.I18n.s("离开今晚前留意 · ")+title(ui,due),func():open_feature(ui,due))
 	var nav:=HFlowContainer.new();nav.add_theme_constant_override("h_separation",8);box.add_child(nav)
-	for learned: String in Learning.known(s):
-		if learned in ["projects","talk"]:continue
-		ui.button(nav,title(ui,learned),func():details(ui,learned))
+	# Keep daily actions close. Every other learned action stays one menu away
+	# in the handbook; a larger crew should not push its own cards off screen.
+	var recent: Array=Learning.known(s).duplicate()
+	recent.reverse()
+	var shortcuts: Array=[]
+	var available: Array=Learning.available(s,ui.session.content)
+	for learned: String in Learning.FOUNDATION+recent:
+		if shortcuts.size()>=4:break
+		if learned in ["projects","talk",due] or shortcuts.has(learned) or not Learning.known(s).has(learned) or not available.has(learned):continue
+		shortcuts.append(learned)
+		ui.button(nav,title(ui,learned),func():open_feature(ui,learned))
 	ui.button(nav,ui.I18n.s("按需查阅营地功能"),func():browse(ui))
 static func browse(ui: Control) -> void:
 	var dialog: Dictionary=ui.modal(ui.I18n.s("按需查阅营地功能"))
 	ui.label(dialog.box,ui.I18n.s("选择一项查看用途。尚未到使用时机的功能，会在之后出现；关闭手册不会跳过教学。"))
-	for topic: String in Learning.available(ui.session.state,ui.session.content):
-		ui.button(dialog.box,title(ui,topic),func():dialog.window.queue_free();details(ui,topic))
+	var available: Array=Learning.available(ui.session.state,ui.session.content)
+	for topic: String in Learning.known(ui.session.state):
+		ui.button(dialog.box,title(ui,topic),func():
+			dialog.window.queue_free()
+			if available.has(topic) or topic=="mentors":open_feature(ui,topic)
+			else:details(ui,topic))
+	for topic: String in available:
+		if not Learning.known(ui.session.state).has(topic):
+			ui.button(dialog.box,title(ui,topic),func():dialog.window.queue_free();details(ui,topic))
 static func details(ui: Control,topic: String) -> void:
 	var dialog: Dictionary=ui.modal(title(ui,topic));explanation(ui,dialog.box,topic)
+	if Learning.known(ui.session.state).has(topic) and not Learning.available(ui.session.state,ui.session.content).has(topic):
+		ui.label(dialog.box,ui.I18n.s("这项功能今晚没有可执行的安排。"))
+		return
 	ui.button(dialog.box,ui.I18n.s("了解并打开"),func():dialog.window.queue_free();if ui.camp_ack(topic):open_feature(ui,topic))
 	ui.button(dialog.box,ui.I18n.s("明白了 · 稍后再用"),func():dialog.window.queue_free();ui.camp_ack(topic))
 static func night_review(ui: Control,box: VBoxContainer,window: Window) -> bool:

@@ -1,0 +1,17 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M3
+
+PROJECT_BOOT_OK: baseline 0.18 campaign UI
+Two new campaigns=true backup=true manual=true
+Older campaign recovery offered=true
+Cancel kept B in memory and on disk=true
+Restored A=true preserved damaged bytes=true
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 4.1 Metal - 90.5 - Compatibility - Using Device: Apple - Apple M3
+
+PROJECT_BOOT_OK: baseline 0.18 campaign UI
+Fresh process: missing primary, no false Continue=true
+Visible localized recovery row [zh_CN] 位置01 · 第1日 · 任务简报与配队 · manual-01.json.bak verified=true
+Visible localized recovery row [zh_TW] 位置01 · 第1日 · 任務簡報與配隊 · manual-01.json.bak verified=true
+Visible localized recovery row [en] Location 01 · Day 1 · Mission Briefing & Squad Assignment · manual-01.json.bak verified=true
+Sole numbered manual backup restored original campaign=true

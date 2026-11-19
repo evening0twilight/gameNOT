@@ -1,0 +1,3422 @@
+{
+  "checks": 13432,
+  "failures": 0,
+  "nodes": {
+    "C01": {
+      "mission": "M01",
+      "publication_outcome_pairs": 9
+    },
+    "C02": {
+      "mission": "M02",
+      "publication_outcome_pairs": 9
+    },
+    "C03": {
+      "mission": "M03",
+      "publication_outcome_pairs": 9
+    },
+    "C04": {
+      "mission": "M04",
+      "publication_outcome_pairs": 9
+    },
+    "C05": {
+      "mission": "M05",
+      "publication_outcome_pairs": 9
+    },
+    "C06": {
+      "mission": "M06",
+      "publication_outcome_pairs": 9
+    },
+    "C07": {
+      "mission": "M07",
+      "publication_outcome_pairs": 9
+    },
+    "C08": {
+      "mission": "M08",
+      "publication_outcome_pairs": 9
+    },
+    "C09": {
+      "mission": "M09",
+      "publication_outcome_pairs": 9
+    },
+    "C10": {
+      "mission": "M10",
+      "publication_outcome_pairs": 9
+    },
+    "C11": {
+      "mission": "M11",
+      "publication_outcome_pairs": 9
+    },
+    "C12": {
+      "mission": "M12",
+      "publication_outcome_pairs": 9
+    },
+    "C13": {
+      "mission": "M13",
+      "publication_outcome_pairs": 9
+    },
+    "C14": {
+      "mission": "M14",
+      "publication_outcome_pairs": 9
+    },
+    "C15": {
+      "mission": "M15",
+      "publication_outcome_pairs": 9
+    },
+    "C16": {
+      "mission": "M16",
+      "publication_outcome_pairs": 9
+    },
+    "C17": {
+      "mission": "M17",
+      "publication_outcome_pairs": 9
+    },
+    "C18": {
+      "mission": "M18",
+      "publication_outcome_pairs": 9
+    },
+    "C19": {
+      "mission": "M19",
+      "publication_outcome_pairs": 9
+    },
+    "C20": {
+      "mission": "M20",
+      "publication_outcome_pairs": 9
+    },
+    "C21": {
+      "mission": "M21",
+      "publication_outcome_pairs": 9
+    },
+    "C22": {
+      "mission": "M22",
+      "publication_outcome_pairs": 9
+    },
+    "C23": {
+      "mission": "M23",
+      "publication_outcome_pairs": 9
+    },
+    "C24": {
+      "mission": "M24",
+      "publication_outcome_pairs": 9
+    },
+    "K01": {
+      "mission": "M03",
+      "objective": "crate",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K02": {
+      "mission": "M04",
+      "objective": "worker",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K03": {
+      "mission": "M06",
+      "objective": "r1",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K04": {
+      "mission": "M06",
+      "objective": "asset",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K05": {
+      "mission": "M08",
+      "objective": "truck",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K06": {
+      "mission": "M09",
+      "objective": "r2",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K07": {
+      "mission": "M10",
+      "objective": "meeting",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K08": {
+      "mission": "M12",
+      "objective": "e",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K09": {
+      "mission": "M14",
+      "objective": "meds",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K10": {
+      "mission": "M15",
+      "objective": "east",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K11": {
+      "mission": "M16",
+      "objective": "people",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K12": {
+      "mission": "M17",
+      "objective": "repair2",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K13": {
+      "mission": "M18",
+      "objective": "broadcast",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K14": {
+      "mission": "M19",
+      "objective": "patient",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K15": {
+      "mission": "M20",
+      "objective": "east",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K16": {
+      "mission": "M21",
+      "objective": "route",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K17": {
+      "mission": "M22",
+      "objective": "privacy",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "K18": {
+      "mission": "M23",
+      "objective": "rebuild",
+      "statuses": [
+        "saved",
+        "completed",
+        "lost",
+        "unresolved"
+      ]
+    },
+    "L01": {
+      "actors": [
+        "lin"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L02": {
+      "actors": [
+        "xu"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L03": {
+      "actors": [
+        "su"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L04": {
+      "actors": [
+        "chen"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L05": {
+      "actors": [
+        "ye"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L06": {
+      "actors": [
+        "he"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L07": {
+      "actors": [
+        "mo"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L08": {
+      "actors": [
+        "jiang"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L09": {
+      "actors": [
+        "lin"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L10": {
+      "actors": [
+        "xu"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L11": {
+      "actors": [
+        "su"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L12": {
+      "actors": [
+        "chen"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L13": {
+      "actors": [
+        "ye"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L14": {
+      "actors": [
+        "he"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L15": {
+      "actors": [
+        "mo"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L16": {
+      "actors": [
+        "jiang"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L17": {
+      "actors": [
+        "su"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "L18": {
+      "actors": [
+        "lin"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "a"
+            },
+            {
+              "accepted": true,
+              "choice": "b"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "a"
+            },
+            {
+              "accepted": false,
+              "choice": "b"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_chen_1": {
+      "actors": [
+        "chen"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "copy"
+            },
+            {
+              "accepted": true,
+              "choice": "explain"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "copy"
+            },
+            {
+              "accepted": true,
+              "choice": "explain"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "copy"
+            },
+            {
+              "accepted": false,
+              "choice": "explain"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_chen_2": {
+      "actors": [
+        "chen"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "fund"
+            },
+            {
+              "accepted": true,
+              "choice": "duty"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "fund"
+            },
+            {
+              "accepted": true,
+              "choice": "duty"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "fund"
+            },
+            {
+              "accepted": false,
+              "choice": "duty"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_chen_3": {
+      "actors": [
+        "chen"
+      ],
+      "attribution": [
+        "self",
+        "other",
+        "shared",
+        "unknown"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "integrated"
+            },
+            {
+              "accepted": false,
+              "choice": "professional"
+            },
+            {
+              "accepted": false,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_he_1": {
+      "actors": [
+        "he"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "name"
+            },
+            {
+              "accepted": true,
+              "choice": "route"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "name"
+            },
+            {
+              "accepted": true,
+              "choice": "route"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "name"
+            },
+            {
+              "accepted": false,
+              "choice": "route"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_he_2": {
+      "actors": [
+        "he"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "delegate"
+            },
+            {
+              "accepted": true,
+              "choice": "discipline"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "delegate"
+            },
+            {
+              "accepted": true,
+              "choice": "discipline"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "delegate"
+            },
+            {
+              "accepted": false,
+              "choice": "discipline"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_he_3": {
+      "actors": [
+        "he"
+      ],
+      "attribution": [
+        "self",
+        "other",
+        "shared",
+        "unknown"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "integrated"
+            },
+            {
+              "accepted": false,
+              "choice": "professional"
+            },
+            {
+              "accepted": false,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_jiang_1": {
+      "actors": [
+        "jiang"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "wages"
+            },
+            {
+              "accepted": true,
+              "choice": "family"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "wages"
+            },
+            {
+              "accepted": true,
+              "choice": "family"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "wages"
+            },
+            {
+              "accepted": false,
+              "choice": "family"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_jiang_2": {
+      "actors": [
+        "jiang"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "settle"
+            },
+            {
+              "accepted": true,
+              "choice": "negotiate"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "settle"
+            },
+            {
+              "accepted": true,
+              "choice": "negotiate"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "settle"
+            },
+            {
+              "accepted": false,
+              "choice": "negotiate"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_jiang_3": {
+      "actors": [
+        "jiang"
+      ],
+      "attribution": [
+        "self",
+        "other",
+        "shared",
+        "unknown"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "integrated"
+            },
+            {
+              "accepted": false,
+              "choice": "professional"
+            },
+            {
+              "accepted": false,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_lin_1": {
+      "actors": [
+        "lin"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "private"
+            },
+            {
+              "accepted": true,
+              "choice": "share"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "private"
+            },
+            {
+              "accepted": true,
+              "choice": "share"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "private"
+            },
+            {
+              "accepted": false,
+              "choice": "share"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_lin_2": {
+      "actors": [
+        "lin"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "rotation"
+            },
+            {
+              "accepted": true,
+              "choice": "independent"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "rotation"
+            },
+            {
+              "accepted": true,
+              "choice": "independent"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "rotation"
+            },
+            {
+              "accepted": false,
+              "choice": "independent"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_lin_3": {
+      "actors": [
+        "lin"
+      ],
+      "attribution": [
+        "self",
+        "other",
+        "shared",
+        "unknown"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "integrated"
+            },
+            {
+              "accepted": false,
+              "choice": "professional"
+            },
+            {
+              "accepted": false,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_mo_1": {
+      "actors": [
+        "mo"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "classify"
+            },
+            {
+              "accepted": true,
+              "choice": "verify"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "classify"
+            },
+            {
+              "accepted": true,
+              "choice": "verify"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "classify"
+            },
+            {
+              "accepted": false,
+              "choice": "verify"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_mo_2": {
+      "actors": [
+        "mo"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "redact"
+            },
+            {
+              "accepted": true,
+              "choice": "independent"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "redact"
+            },
+            {
+              "accepted": true,
+              "choice": "independent"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "redact"
+            },
+            {
+              "accepted": false,
+              "choice": "independent"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_mo_3": {
+      "actors": [
+        "mo"
+      ],
+      "attribution": [
+        "self",
+        "other",
+        "shared",
+        "unknown"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "integrated"
+            },
+            {
+              "accepted": false,
+              "choice": "professional"
+            },
+            {
+              "accepted": false,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_su_1": {
+      "actors": [
+        "su"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "list"
+            },
+            {
+              "accepted": true,
+              "choice": "listen"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "list"
+            },
+            {
+              "accepted": true,
+              "choice": "listen"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "list"
+            },
+            {
+              "accepted": false,
+              "choice": "listen"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_su_2": {
+      "actors": [
+        "su"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "rota"
+            },
+            {
+              "accepted": true,
+              "choice": "specialist"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "rota"
+            },
+            {
+              "accepted": true,
+              "choice": "specialist"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "rota"
+            },
+            {
+              "accepted": false,
+              "choice": "specialist"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_su_3": {
+      "actors": [
+        "su"
+      ],
+      "attribution": [
+        "self",
+        "other",
+        "shared",
+        "unknown"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "integrated"
+            },
+            {
+              "accepted": false,
+              "choice": "professional"
+            },
+            {
+              "accepted": false,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_xu_1": {
+      "actors": [
+        "xu"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "record"
+            },
+            {
+              "accepted": true,
+              "choice": "testimony"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "record"
+            },
+            {
+              "accepted": true,
+              "choice": "testimony"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "record"
+            },
+            {
+              "accepted": false,
+              "choice": "testimony"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_xu_2": {
+      "actors": [
+        "xu"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "bounded"
+            },
+            {
+              "accepted": true,
+              "choice": "solo"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "bounded"
+            },
+            {
+              "accepted": true,
+              "choice": "solo"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "bounded"
+            },
+            {
+              "accepted": false,
+              "choice": "solo"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_xu_3": {
+      "actors": [
+        "xu"
+      ],
+      "attribution": [
+        "self",
+        "other",
+        "shared",
+        "unknown"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "integrated"
+            },
+            {
+              "accepted": false,
+              "choice": "professional"
+            },
+            {
+              "accepted": false,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_ye_1": {
+      "actors": [
+        "ye"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "retain"
+            },
+            {
+              "accepted": true,
+              "choice": "compare"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "retain"
+            },
+            {
+              "accepted": true,
+              "choice": "compare"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "retain"
+            },
+            {
+              "accepted": false,
+              "choice": "compare"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_ye_2": {
+      "actors": [
+        "ye"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "audit"
+            },
+            {
+              "accepted": true,
+              "choice": "boundary"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "audit"
+            },
+            {
+              "accepted": true,
+              "choice": "boundary"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "audit"
+            },
+            {
+              "accepted": false,
+              "choice": "boundary"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "P_ye_3": {
+      "actors": [
+        "ye"
+      ],
+      "attribution": [
+        "self",
+        "other",
+        "shared",
+        "unknown"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "integrated"
+            },
+            {
+              "accepted": true,
+              "choice": "professional"
+            },
+            {
+              "accepted": true,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "integrated"
+            },
+            {
+              "accepted": false,
+              "choice": "professional"
+            },
+            {
+              "accepted": false,
+              "choice": "new_life"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R01": {
+      "actors": [
+        "lin",
+        "xu"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R02": {
+      "actors": [
+        "chen",
+        "ye"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R03": {
+      "actors": [
+        "xu",
+        "he"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R04": {
+      "actors": [
+        "su",
+        "jiang"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R05": {
+      "actors": [
+        "mo",
+        "chen"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R06": {
+      "actors": [
+        "lin",
+        "su"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R07": {
+      "actors": [
+        "ye",
+        "mo"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R08": {
+      "actors": [
+        "he",
+        "lin"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "lin",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R09": {
+      "actors": [
+        "xu",
+        "jiang"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "xu",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R10": {
+      "actors": [
+        "su",
+        "mo"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "su",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "mo",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R11": {
+      "actors": [
+        "chen",
+        "he"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "chen",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "he",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    },
+    "R12": {
+      "actors": [
+        "ye",
+        "jiang"
+      ],
+      "variants": [
+        {
+          "affected": "",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "present"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "ye",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": true,
+              "choice": "agreement"
+            },
+            {
+              "accepted": true,
+              "choice": "distance"
+            }
+          ],
+          "mode": "recovery"
+        },
+        {
+          "affected": "jiang",
+          "choices": [
+            {
+              "accepted": false,
+              "choice": "agreement"
+            },
+            {
+              "accepted": false,
+              "choice": "distance"
+            }
+          ],
+          "mode": "letter"
+        }
+      ]
+    }
+  },
+  "scope": "Isolated production command and rendering-data checks. Injury or withdrawal affects each participant in turn. Fulfilled proofs are fixtures. Mixed public records probe source selection, not reachability. No player or Windows observations.",
+  "translated_pages": 3231
+}

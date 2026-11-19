@@ -32,6 +32,21 @@ def main():
         copies.pop('docs/product018-validation.txt')
         copies.pop('docs/product018-alignment.txt')
         copies.update({f'{review_name}/validation.md':'validation.txt','docs/p4-018-remaining.md':'CURRENT-STATUS.md',f'{review_name}/windows-review.md':'THIS-BUILD-REVIEW.md',f'{review_name}/playtest-form.csv':'playtest-form.csv'})
+        if (review/'release-status.md').is_file():
+            copies.pop('docs/p4-018-remaining.md')
+            copies[f'{review_name}/release-status.md']='CURRENT-STATUS.md'
+        if (review/'audio-inventory.json').is_file():
+            copies.pop('docs/product018-audio.json')
+        if (review/'reference-session.md').is_file():
+            copies.pop('docs/baseline018-windows-checklist.txt')
+            copies.update({'tools/Record-Windows-Session.cmd':'Record-Windows-Session.cmd','tools/Record-Windows-Session.ps1':'Record-Windows-Session.ps1',f'{review_name}/reference-session.md':'REFERENCE-SESSION.md'})
+        if (review/'guide.txt').is_file():
+            copies.pop('docs/product018-player-guide.txt')
+            if (review/'start.txt').is_file():
+                copies[f'{review_name}/start.txt']='README.txt'
+                copies[f'{review_name}/guide.txt']='FIELD-GUIDE.txt'
+            else:
+                copies[f'{review_name}/guide.txt']='README.txt'
         if (review/'review.md').is_file():
             copies[f'{review_name}/review.md']='PRODUCT-REVIEW.md'
             for source in re.findall(r'\]\(\.\./\.\./(outputs/[a-zA-Z0-9_-]+\.png)\)',(review/'review.md').read_text()):
@@ -44,6 +59,9 @@ def main():
     for source,target in copies.items():
         (out/target).parent.mkdir(parents=True,exist_ok=True)
         shutil.copy2(ROOT/source,out/target)
+    if (review/'reference-session.md').is_file() and args.candidate!='product018':
+        instructions=out/'THIS-BUILD-REVIEW.md'
+        instructions.write_text(instructions.read_text().replace('](reference-session.md)','](REFERENCE-SESSION.md)'))
     if review_images:
         report=out/'PRODUCT-REVIEW.md'
         body=report.read_text()
@@ -51,7 +69,7 @@ def main():
         report.write_text(body)
     if args.candidate!='product018':
         readme=out/'README.txt'
-        readme.write_text('候选版本：'+args.candidate+'。这是开发候选，P4最终验收尚未通过；本包素材与功能范围以随包记录为准。先读THIS-BUILD-REVIEW.md、CURRENT-STATUS.md和build-receipt.json。\n\n'+readme.read_text())
+        readme.write_text(f'夜潮事务所 · 候选 {args.candidate}\n\n'+readme.read_text())
     archive=ROOT/('build/night-tide-0.18-windows.zip' if args.candidate=='product018' else f'build/night-tide-0.18-{args.candidate}-windows.zip')
     with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED) as z:
         for name in ['night-tide.exe','night-tide.pck','build-receipt.json']+list(copies.values()):z.write(out/name,name)

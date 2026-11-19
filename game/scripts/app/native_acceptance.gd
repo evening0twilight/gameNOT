@@ -11,8 +11,13 @@ func wait_frames(count: int=3) -> void:
 	for frame: int in range(count):await get_tree().process_frame
 func run(owner_scene: Node) -> void:
 	scene=owner_scene;started=Time.get_ticks_msec()
-	output="user://diagnostics/baseline018-native-%d" % Time.get_unix_time_from_system()
-	DirAccess.make_dir_recursive_absolute(output)
+	output=OS.get_environment("NIGHT_TIDE_NATIVE_DIR")
+	if output.is_empty():
+		output="user://diagnostics/baseline018-native-%d-%d" % [Time.get_unix_time_from_system(), OS.get_process_id()]
+	if DirAccess.make_dir_recursive_absolute(output) != OK:
+		printerr("NATIVE_ACCEPTANCE: cannot create output folder")
+		get_tree().quit(2)
+		return
 	check(scene.session.path.begins_with("user://tests/"),"isolated campaign path")
 	if not checks[-1].ok:finish();return
 	check(scene.session.state.campaign.phase=="briefing","production new-game preparation")
@@ -67,7 +72,7 @@ func run(owner_scene: Node) -> void:
 		check(loaded.ok and scene.session.store.canonical(scene.session.state)==stable,"save/load exact roundtrip "+mission)
 		if DisplayServer.get_name()!="headless":
 			scene.render();await wait_frames(3);await RenderingServer.frame_post_draw
-			get_viewport().get_texture().get_image().save_png(output.path_join(mission+"-result.png"))
+			check(get_viewport().get_texture().get_image().save_png(output.path_join(mission+"-result.png")) == OK,"write result screenshot "+mission)
 		print("NATIVE_MISSION: ",mission," actions=",steps)
 	finish()
 func finish() -> void:
@@ -75,7 +80,11 @@ func finish() -> void:
 	for result: Dictionary in checks:passed=passed and result.ok
 	var report: Dictionary={"kind":"packaged local automated acceptance; not human usability evidence","platform":OS.get_name(),"native_windows":OS.get_name()=="Windows","rendered":DisplayServer.get_name()!="headless","checks":checks,"passed":passed,"human_audio_motion_review":false,"human_difficulty_review":false,"seconds":(Time.get_ticks_msec()-started)/1000.0,"runtime":scene.metrics.report(),"screen":DisplayServer.window_get_current_screen() if DisplayServer.get_name()!="headless" else -1,"primary":DisplayServer.get_primary_screen() if DisplayServer.get_name()!="headless" else -1}
 	var file:=FileAccess.open(output.path_join("report.json"),FileAccess.WRITE)
-	if file!=null:file.store_string(JSON.stringify(report,"  "));file.close()
+	if file==null:
+		printerr("NATIVE_ACCEPTANCE: cannot write report")
+		get_tree().quit(2)
+		return
+	file.store_string(JSON.stringify(report,"  "));file.close()
 	print("NATIVE_ACCEPTANCE: passed=",passed," windows=",report.native_windows," report=",ProjectSettings.globalize_path(output.path_join("report.json")))
 	scene.sound.stop_audio()
 	await wait_frames(15)

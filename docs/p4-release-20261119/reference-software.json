@@ -1,0 +1,198 @@
+{
+  "date": "2026-11-19",
+  "scope": "Recorder and automation pipeline review on macOS; no Windows hardware, power or human acceptance.",
+  "source_sha256": {
+    "tools/Record-Windows-Session.cmd": "eb1000c8a9f5e3710d8832813ac280fbdb11a8fb74bb915f305f3d1c1e04c6f9",
+    "tools/Record-Windows-Session.ps1": "a751579f33d4e441d2bafaf9ec4692e46c9c82cc9e01ad30d78985163650df45",
+    "tools/windows_acceptance_baseline018.cmd": "7076f364ff7a095c087cc3f1da00c0c27c27799c823956cdb6616a200fa76276",
+    "game/scripts/presentation/reference_recording.gd": "a9e9bf7a10d3e2f4c76f2e658485c13800b6f42031979b63e8170f95a156809f",
+    "game/scripts/app/native_acceptance.gd": "d9775275b7cb655cc2dd9784c02231fcfed552ce32e394d31f7fd50372a52bab",
+    "game/tests/reference_recording_review.gd": "96b1f4f2cf66876d25cb12fe4c2ff3fa38c90dc2e44421112c6cbca6bf3a3829",
+    "game/scripts/presentation/visual_assets.gd": "e1fe38b9bcb52a83b8f9c3c1cda3611fd5752dbc2bcbf4888d54e3f607e851e3",
+    "game/scripts/app/main.gd": "ef34ef893b5b8e1bef89f1b81931a594907a8272554e714d142d4779b98d0873"
+  },
+  "hidden_gpu": {
+    "main_window": "hidden",
+    "viewport": "1280x720 SubViewport",
+    "actual_title_marker_written": true,
+    "generated_input_to_actual_controls": [
+      {
+        "engine_seconds": "1.088",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "preview",
+        "event_to_post_draw_ms": "18.959"
+      },
+      {
+        "engine_seconds": "1.187",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "commit",
+        "event_to_post_draw_ms": "88.553"
+      }
+    ],
+    "game_metrics": {
+      "client_pixels": [
+        1280,
+        720
+      ],
+      "input_max_ms": 88.553,
+      "input_over_100_ms": 0,
+      "input_samples": 2,
+      "platform": "macOS",
+      "render_device": "Apple M3",
+      "scope": "Godot post-draw intervals while focused at 1920x1080, battle revision stable for one second, no preview/animation/modal. Timed commands start at game input receipt and end at post-draw. OS input, compositor, display scanout and screen response require external observation.",
+      "screen_refresh_hz": 144.0,
+      "stable_1080p_frames": 0,
+      "stable_fraction_le_16_7_ms": null,
+      "stable_frame_p95_ms_upper_bound": null,
+      "stable_seconds": 0.0
+    },
+    "log": "outputs/p4release-20261119-reference-pipeline.log"
+  },
+  "scripted_automatic_runner": {
+    "scope": "Isolated M01–M03 with actual UI commands; headless macOS, rendering not evaluated here",
+    "checks": 203,
+    "passed": true,
+    "report": "outputs/p4release-20261119-native-runner-local.json",
+    "sha256": "700497097fc30e4470e41173e90c9bd1c89fe4db453d6a90c92ca8c482e44ce6"
+  },
+  "shell_review": {
+    "parser": "PowerShell 7.7.0 macOS arm64, ParseFile zero errors",
+    "method": "Copy of the launcher with only MyDocuments redirected to a disposable directory. Used an executable stand-in with a path containing spaces, a test receipt and a placeholder PCK. Windows PowerShell 5.1, Win32 CIM and double-click are untested on Windows.",
+    "normal_sample_wrote_csv": true,
+    "single_memory_sample_span_is_zero": true,
+    "post_exit_hashes_match_fixture": true,
+    "non_windows_automated_report_rejected": true
+  },
+  "windows_native_tested": false,
+  "human_acceptance": false,
+  "before_optimization": {
+    "main_window": "hidden",
+    "viewport": "1280x720 SubViewport",
+    "actual_title_marker_written": true,
+    "generated_input_to_actual_controls": [
+      {
+        "engine_seconds": "0.954",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "preview",
+        "event_to_post_draw_ms": "13.661"
+      },
+      {
+        "engine_seconds": "1.257",
+        "input": "mouse",
+        "command": "depart",
+        "stage": "commit",
+        "event_to_post_draw_ms": "292.524"
+      }
+    ],
+    "game_metrics": {
+      "client_pixels": [
+        1280,
+        720
+      ],
+      "input_max_ms": 292.524,
+      "input_over_100_ms": 1,
+      "input_samples": 2,
+      "platform": "macOS",
+      "render_device": "Apple M3",
+      "scope": "Godot post-draw intervals while focused at 1920x1080, battle revision stable for one second, no preview/animation/modal. Timed commands start at game input receipt and end at post-draw. OS input, compositor, display scanout and screen response require external observation.",
+      "screen_refresh_hz": 144.0,
+      "stable_1080p_frames": 0,
+      "stable_fraction_le_16_7_ms": null,
+      "stable_frame_p95_ms_upper_bound": null,
+      "stable_seconds": 0.0
+    },
+    "log": "outputs/p4release-20261119-reference-before.log"
+  },
+  "first_departure": {
+    "scope": "Same Mac, hidden 720p GPU viewport, actual rendered briefing and embedded confirmation with synthetic mouse. Each measurement starts a separate process. OS cache/CPU contention can vary. No Windows or physical input claim.",
+    "before_commit_ms": [
+      670.232,
+      396.696,
+      292.524
+    ],
+    "after": [
+      {
+        "run": 1,
+        "input": [
+          {
+            "engine_seconds": "1.096",
+            "input": "mouse",
+            "command": "depart",
+            "stage": "preview",
+            "event_to_post_draw_ms": "15.593"
+          },
+          {
+            "engine_seconds": "1.182",
+            "input": "mouse",
+            "command": "depart",
+            "stage": "commit",
+            "event_to_post_draw_ms": "74.779"
+          }
+        ],
+        "commit_profile": {
+          "feedback_render_ms": 39.175,
+          "kind": "depart",
+          "receipts": 1,
+          "submit_ms": 7.992,
+          "undo": 0
+        }
+      },
+      {
+        "run": 2,
+        "input": [
+          {
+            "engine_seconds": "1.086",
+            "input": "mouse",
+            "command": "depart",
+            "stage": "preview",
+            "event_to_post_draw_ms": "7.222"
+          },
+          {
+            "engine_seconds": "1.209",
+            "input": "mouse",
+            "command": "depart",
+            "stage": "commit",
+            "event_to_post_draw_ms": "83.169"
+          }
+        ],
+        "commit_profile": {
+          "feedback_render_ms": 50.66,
+          "kind": "depart",
+          "receipts": 1,
+          "submit_ms": 7.6,
+          "undo": 0
+        }
+      },
+      {
+        "run": 3,
+        "input": [
+          {
+            "engine_seconds": "1.088",
+            "input": "mouse",
+            "command": "depart",
+            "stage": "preview",
+            "event_to_post_draw_ms": "18.959"
+          },
+          {
+            "engine_seconds": "1.187",
+            "input": "mouse",
+            "command": "depart",
+            "stage": "commit",
+            "event_to_post_draw_ms": "88.553"
+          }
+        ],
+        "commit_profile": {
+          "feedback_render_ms": 54.607,
+          "kind": "depart",
+          "receipts": 1,
+          "submit_ms": 7.917,
+          "undo": 0
+        }
+      }
+    ],
+    "change": "Only creation of a new campaign queues 10 needed M01 texture resources for background decoding. Normal loads and late campaigns skip the queue. Temporary references release after the board draws."
+  }
+}

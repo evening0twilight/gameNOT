@@ -54,10 +54,12 @@ func run() -> void:
 	sound.ambience("battle")
 	await create_timer(1.25).timeout
 	var standard := sound.music
-	var loop_length: float = standard.stream.get_length()
+	var field_stream := standard.stream as AudioStreamWAV
+	var loop_length: float = float(field_stream.loop_end) / field_stream.mix_rate
+	var loop_head: float = float(field_stream.loop_begin) / field_stream.mix_rate
 	standard.seek(loop_length - .12)
 	await create_timer(.30).timeout
-	check(standard.playing and standard.get_playback_position() < .7, "actual imported battle player wraps through loop boundary")
+	check(standard.playing and absf(standard.get_playback_position() - loop_head) < .7, "actual imported battle player wraps through loop boundary")
 	sound.ambience("battle_high")
 	await create_timer(.5).timeout
 	check(standard.playing and sound.music.playing and standard.volume_linear > .1 and sound.music.volume_linear > .1,
@@ -66,6 +68,18 @@ func run() -> void:
 	check(sound.music == standard and sound.music.get_playback_position() > .3, "reverse transition keeps the old track position")
 	await create_timer(1.30).timeout
 	check(not sound.fading_music.playing and is_equal_approx(sound.music.volume_linear, 1.0), "crossfade releases outgoing stream")
+	# A long popup fully releases the underlying camp stream.
+	sound.ambience("camp")
+	await create_timer(1.30).timeout
+	sound.music.seek(13)
+	var owner := Node.new()
+	root.add_child(owner)
+	sound.scene_music(owner, "daily")
+	await create_timer(1.35).timeout
+	owner.queue_free()
+	await process_frame
+	await process_frame
+	check(sound.phase == "camp" and sound.music.get_playback_position() >= 12.9, "return from a long camp story resumes its place in the score")
 	var cue_ids: Array = Audio.UI_CUES + Audio.FIELD_FOLEY + Audio.NEW_CUES + Audio.OTHER_CUES
 	check(cue_ids.size() == 24, "cue budget")
 	for id: String in cue_ids:
@@ -164,10 +178,10 @@ func run() -> void:
 	check(window != null and sound.phase == "daily", "personal story opens daily music")
 	var playing_stream := sound.music.stream
 	await create_timer(.06).timeout
-	check(window != null and press(window, ui.I18n.t("journey.summary")), "full-text summary button exists")
+	check(window != null and press(window, ui.I18n.t("story.transcript")), "unavailable archived response opens the transcript")
 	await process_frame
 	await process_frame
-	check(sound.phase == "daily" and sound.music.stream == playing_stream and sound.cue_cache.has("ui_page"), "real summary change keeps the score and plays page cue")
+	check(sound.phase == "daily" and sound.music.stream == playing_stream and sound.cue_cache.has("ui_page") and window.find_children("*", "Button", true, false).any(func(b: Button): return b.text == ui.I18n.t("journey.full")), "transcript opens and keeps the score with a page cue")
 	window = scene_window(ui)
 	if window != null:
 		window.queue_free()

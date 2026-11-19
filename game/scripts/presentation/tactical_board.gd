@@ -18,6 +18,8 @@ var feedback: Dictionary={}
 var playhead: float=-1.0
 var playback_seconds: Callable
 var hint_cell: Array=[]
+var preview_cell: Array=[]
+var preview_path: Array=[]
 var actor_facings: Dictionary={}
 func seconds() -> float:
 	if playhead>=0:return playhead
@@ -37,11 +39,17 @@ var path: Array=[]
 var elapsed: float=0
 var redraw_clock: float=0
 var badge_styles: Dictionary={}
+const FLOOR_LIGHT={
+	"ferry":Color(.65,.75,.78), "bridge":Color(.74,.70,.60), "warehouse":Color(.78,.69,.54),
+	"clinic":Color(.71,.82,.79), "pump":Color(.56,.75,.72), "gate":Color(.63,.72,.83),
+	"housing":Color(.81,.69,.60), "shelter":Color(.82,.76,.66), "coldstore":Color(.62,.76,.86),
+	"factory":Color(.78,.64,.55), "roof":Color(.70,.75,.86), "control":Color(.67,.72,.80),
+}
 var colors: Dictionary={"lin":Color("70d9c1"),"xu":Color("f1bd72"),"su":Color("d296b3")}
 func _ready() -> void:
 	mouse_filter=Control.MOUSE_FILTER_STOP
 	resized.connect(queue_redraw)
-	mouse_exited.connect(func():hover=Vector2i(-1,-1);path=[];queue_redraw())
+	mouse_exited.connect(func():hover=Vector2i(-1,-1);path=[];tooltip_text="";cell_inspected.emit("");queue_redraw())
 func _process(delta: float) -> void:
 	elapsed+=delta;redraw_clock+=delta
 	if redraw_clock>=0.033:
@@ -136,7 +144,7 @@ func paint_actor(hero: Dictionary,at: Vector2,tile: float) -> void:
 		var facing: float=-1 if direction.x<-.1 else 1
 		# Vertical travel has a subtle body lean; horizontal corners change facing.
 		draw_set_transform(at+offset+Vector2(0,bob*tile),direction.y*.04 if moving else 0,Vector2(facing,1))
-		draw_texture_rect(Art.motion(hero.id,frame),Rect2(Vector2(-tile*.53,-tile*.62),Vector2.ONE*tile*1.06),false,tint)
+		draw_texture_rect(Art.motion(hero.id,frame),Rect2(Vector2(-tile*.62,-tile*.74),Vector2.ONE*tile*1.24),false,tint)
 		draw_set_transform(Vector2.ZERO)
 	var held: String=hero.carrying
 	if animating() and seconds()<impact():held=old.carrying
@@ -205,7 +213,7 @@ func _draw() -> void:
 	var tile: float=area.size.x/8
 	# Water surrounds the ferry; clinic gets an architectural surround.
 	draw_texture_rect(Art.environment(board.location),Rect2(Vector2.ZERO,size),false,Color(.8,.86,.88))
-	draw_rect(Rect2(Vector2.ZERO,size),Color(.015,.045,.065,.65))
+	draw_rect(Rect2(Vector2.ZERO,size),Color(.015,.045,.065,.49))
 	var landmark: Texture2D=Art.landmark(board.location)
 	var landmark_size: float=minf(64,area.position.x-12)
 	if landmark!=null and landmark_size>=28:draw_texture_rect(landmark,Rect2(Vector2(6,6),Vector2.ONE*landmark_size),false)
@@ -214,7 +222,7 @@ func _draw() -> void:
 	# Coordinates agree with preparation, hints and previews (one-based to players).
 	for index: int in range(8):
 		var font: Font=get_theme_default_font()
-		draw_string(font,Vector2(area.position.x+(index+.5)*tile-4,area.position.y-11),str(index+1),HORIZONTAL_ALIGNMENT_LEFT,-1,12,Color("c2d1c9"))
+		draw_string(font,Vector2(area.position.x+(index+.5)*tile-4,area.position.y-3),str(index+1),HORIZONTAL_ALIGNMENT_LEFT,-1,12,Color("c2d1c9"))
 		draw_string(font,Vector2(area.position.x-14,area.position.y+(index+.5)*tile+4),str(index+1),HORIZONTAL_ALIGNMENT_LEFT,-1,12,Color("c2d1c9"))
 	# Decorative railings stay outside the interactive board footprint.
 	if board.location=="ferry":
@@ -226,19 +234,21 @@ func _draw() -> void:
 				draw_line(at-Vector2(4,0),at+Vector2(4,0),Color("b3b4a4"),3,true)
 			var ring_at:=Vector2(rail_x+side*18,area.get_center().y)
 			draw_arc(ring_at,11,0,TAU,32,Color("d68f58"),5,true)
-	draw_texture_rect(Art.ground(board.location),area,false,Color(.50,.61,.62))
+	draw_texture_rect(Art.ground(board.location),area,false,FLOOR_LIGHT.get(board.location,Color(.65,.72,.72)))
 	for y: int in range(8):
 		for x: int in range(8):
 			var cell: Array=[x,y]
 			var at:=center(cell)
 			var rect:=Rect2(at-Vector2.ONE*tile*.5,Vector2.ONE*tile)
 			var terrain: String=b.rows[y].substr(x,1)
-			var texture: int=2 if board.location=="clinic" else 0
-			if terrain in ["X","~"]:texture=1
-			elif terrain=="#":texture=3
 			var tint:=Color(.85,.92,.94)
 			if terrain=="X":tint=Color(.38,.53,.59)
 			if terrain in ["X","~","#",":"]:draw_texture_rect(Art.ground(board.location,terrain),rect,false,tint)
+			if terrain=="#":
+				draw_rect(Rect2(rect.position,Vector2(tile,tile*.09)),Color(.77,.78,.69,.65))
+				draw_rect(Rect2(rect.position+Vector2(0,tile*.83),Vector2(tile,tile*.17)),Color(.04,.08,.09,.8))
+			elif terrain=="X":
+				draw_rect(rect.grow(-1),Color(.025,.12,.18,.42))
 			draw_rect(rect,Color(.55,.69,.68,.26),false,1)
 			if terrain in ["X","~"]:
 				for wave: int in range(2):
@@ -285,10 +295,13 @@ func _draw() -> void:
 		draw_rect(Rect2(center(cell)-Vector2.ONE*tile*.4,Vector2.ONE*tile*.8),Color("89dbb7"),false,2)
 	for pending: Dictionary in b.queued_reinforcements:
 		draw_arc(center(pending.cell),tile*.42,0,TAU,32,Color("f08e69"),3,true)
-	if path.size()>1:
+	var shown_path: Array=preview_path if not preview_path.is_empty() else path
+	if shown_path.size()>1:
 		var points:=PackedVector2Array()
-		for cell: Array in path:points.append(center(cell))
+		for cell: Array in shown_path:points.append(center(cell))
+		draw_polyline(points,Color("183b3c"),6,true)
 		draw_polyline(points,Color("a1f2d5"),3,true)
+		for point: Vector2 in points:draw_circle(point,3.5,Color("d7f5dc"))
 	for current_object: Dictionary in b.objects.values():
 		var object: Dictionary=previous.get("objects",{}).get(current_object.id,current_object) if animating() and seconds()<impact() else current_object
 		if object.delivered or not object.carrier.is_empty():continue
@@ -296,7 +309,7 @@ func _draw() -> void:
 		if animating() and object.kind=="convoy":
 			var old: Dictionary=previous.get("objects",{}).get(object.id,object)
 			at=center(old.cell).lerp(at,clampf((seconds()-impact())/.4,0,1))
-		var tint:=Color(.5,.5,.5,.7) if object.lost else Color.WHITE
+		var tint:=Color(.50,.55,.55,.65) if object.lost or object.has("unavailable_reason") else Color.WHITE
 		var index: int=4 if object.kind=="rescue" else (7 if object.has("disables") else (6 if object.kind=="cargo" else 8))
 		if board.location=="clinic":
 			if object.id=="power" or object.id=="spare":index=5
@@ -339,18 +352,22 @@ func _draw() -> void:
 	# Labels are drawn after sprites; co-located objectives get separate rows.
 	var label_rows: Dictionary={}
 	for object: Dictionary in b.objects.values():
-		if object.delivered or not object.carrier.is_empty() or object.has("unavailable_reason"):continue
+		if object.delivered or not object.carrier.is_empty():continue
 		var at: Vector2=center(object.cell)
 		var marker: String=Readable.code(board,b,object.id)+("" if I18n.locale=="en" else {"rescue":I18n.s("救"),"work":I18n.s("工"),"cargo":I18n.s("物"),"channel":I18n.s("守"),"convoy":I18n.s("送")}.get(object.kind,""))
-		if object.completed:marker+="✓"
-		elif object.lost:marker+="×"
+		if object.lost or object.has("unavailable_reason"):marker+="×"
+		elif object.completed:marker+="✓"
 		var row: int=label_rows.get(str(object.cell),0);label_rows[str(object.cell)]=row+1
 		badge(at+Vector2(-tile*.1,-tile*.31+row*maxf(21,tile*.34)),marker,tile,Color("70d9c1") if object.completed else Color("f2d397"))
-		if object.work>0 and not object.completed and not object.lost:
+		if object.work>0 and not object.completed and not object.lost and not object.has("unavailable_reason"):
 			draw_rect(Rect2(at+Vector2(-tile*.36,tile*.42),Vector2(tile*.72,3)),Color("10242b"))
 			draw_rect(Rect2(at+Vector2(-tile*.36,tile*.42),Vector2(tile*.72*clampf(float(object.progress)/object.work,0,1),3)),Color("f2d397"))
 	draw_feedback(tile)
-	if not hint_cell.is_empty() and not animating():
+	if not preview_cell.is_empty() and not animating():
+		var rect:=Rect2(center(preview_cell)-Vector2.ONE*tile*.45,Vector2.ONE*tile*.9)
+		draw_rect(rect,Color("183b3c"),false,6)
+		draw_rect(rect,Color("a1f2d5"),false,3)
+	elif not hint_cell.is_empty() and not animating():
 		var at:=center(hint_cell)
 		draw_rect(Rect2(at-Vector2.ONE*tile*.45,Vector2.ONE*tile*.9),Color(.9,.8,.5,.65+.25*sin(elapsed*4)),false,3)
 	if hover.x>=0:
@@ -360,6 +377,16 @@ func _draw() -> void:
 func hover_description(cell: Array) -> String:
 	var lines: Array[String]=[]
 	lines.append(I18n.t("quality.preview_cell")%[int(cell[0])+1,int(cell[1])+1])
+	var b: Dictionary=state.battle
+	match Rules.terrain(b,cell):
+		"#":lines.append(I18n.s("墙体 · 无法通行"))
+		"X":lines.append(I18n.s("深水 · 无法通行"))
+		"~":lines.append(I18n.s("浅水 · 移动距离消耗 2 格"))
+		":":lines.append(I18n.s("碎石 · 移动距离消耗 2 格"))
+	if Rules.contains_cell(b.get("exits",board.exits),cell):lines.append(I18n.s("出口 · 可交付或撤出"))
+	for enemy: Dictionary in b.enemies.values():
+		if enemy.get("paused_round",0)!=b.round and Rules.contains_cell(Rules.Hazards.footprint(b,enemy,Rules),cell):
+			lines.append(I18n.t("quality.inspect_hazard"));break
 	for hero: Dictionary in state.battle.heroes.values():
 		if not hero.left and Rules.same(hero.cell,cell):
 			lines.append(I18n.t("quality.inspect_crew")%[I18n.content("characters",hero.id,"name",I18n.t("visual.support")),hero.hp,hero.ap])

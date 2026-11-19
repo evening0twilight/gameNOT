@@ -1,0 +1,1097 @@
+{
+  "button_geometry": [
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "archive-P_lin_1-zh_CN",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "阅读对白",
+      "view": "archive-P_lin_1-zh_CN",
+      "window_height": 662,
+      "y_end": 510
+    },
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "archive-R04-zh_CN",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "阅读对白",
+      "view": "archive-R04-zh_CN",
+      "window_height": 662,
+      "y_end": 510
+    },
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "fixture-P_lin_3-zh_CN-16",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_lin_3-zh_CN-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速览与选择",
+      "view": "fixture-P_lin_3-zh_CN-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "重新建立有边界的信任 · 需先兑现约定",
+      "view": "fixture-P_lin_3-zh_CN-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "保留专业距离",
+      "view": "fixture-P_lin_3-zh_CN-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "战役结束后回到社区诊所",
+      "view": "fixture-P_lin_3-zh_CN-16",
+      "window_height": 662,
+      "y_end": 488
+    },
+    {
+      "disabled": false,
+      "label": "暂时搁置，保留到以后",
+      "view": "fixture-P_lin_3-zh_CN-16",
+      "window_height": 662,
+      "y_end": 488
+    },
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "fixture-P_chen_2-zh_CN-16",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_chen_2-zh_CN-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速览与选择",
+      "view": "fixture-P_chen_2-zh_CN-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "公开说明签字责任并设维修补偿专项 · 8 资金 · 最迟第 20 晚约定",
+      "view": "fixture-P_chen_2-zh_CN-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "严格执行新验收，不承诺当前付不起的补偿",
+      "view": "fixture-P_chen_2-zh_CN-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "暂时搁置，保留到以后",
+      "view": "fixture-P_chen_2-zh_CN-16",
+      "window_height": 662,
+      "y_end": 488
+    },
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "fixture-P_lin_3-zh_CN-20",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_lin_3-zh_CN-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速览与选择",
+      "view": "fixture-P_lin_3-zh_CN-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "重新建立有边界的信任 · 需先兑现约定",
+      "view": "fixture-P_lin_3-zh_CN-20",
+      "window_height": 662,
+      "y_end": 456
+    },
+    {
+      "disabled": false,
+      "label": "保留专业距离",
+      "view": "fixture-P_lin_3-zh_CN-20",
+      "window_height": 662,
+      "y_end": 456
+    },
+    {
+      "disabled": false,
+      "label": "战役结束后回到社区诊所",
+      "view": "fixture-P_lin_3-zh_CN-20",
+      "window_height": 662,
+      "y_end": 508
+    },
+    {
+      "disabled": false,
+      "label": "暂时搁置，保留到以后",
+      "view": "fixture-P_lin_3-zh_CN-20",
+      "window_height": 662,
+      "y_end": 508
+    },
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "fixture-P_chen_2-zh_CN-20",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_chen_2-zh_CN-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速览与选择",
+      "view": "fixture-P_chen_2-zh_CN-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "公开说明签字责任并设维修补偿专项 · 8 资金 · 最迟第 20 晚约定",
+      "view": "fixture-P_chen_2-zh_CN-20",
+      "window_height": 662,
+      "y_end": 478
+    },
+    {
+      "disabled": false,
+      "label": "严格执行新验收，不承诺当前付不起的补偿",
+      "view": "fixture-P_chen_2-zh_CN-20",
+      "window_height": 662,
+      "y_end": 478
+    },
+    {
+      "disabled": false,
+      "label": "暂时搁置，保留到以后",
+      "view": "fixture-P_chen_2-zh_CN-20",
+      "window_height": 662,
+      "y_end": 530
+    },
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "fixture-P_lin_3-zh_CN-24",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_lin_3-zh_CN-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速览与选择",
+      "view": "fixture-P_lin_3-zh_CN-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "重新建立有边界的信任 · 需先兑现约定",
+      "view": "fixture-P_lin_3-zh_CN-24",
+      "window_height": 662,
+      "y_end": 471
+    },
+    {
+      "disabled": false,
+      "label": "保留专业距离",
+      "view": "fixture-P_lin_3-zh_CN-24",
+      "window_height": 662,
+      "y_end": 471
+    },
+    {
+      "disabled": false,
+      "label": "战役结束后回到社区诊所",
+      "view": "fixture-P_lin_3-zh_CN-24",
+      "window_height": 662,
+      "y_end": 528
+    },
+    {
+      "disabled": false,
+      "label": "暂时搁置，保留到以后",
+      "view": "fixture-P_lin_3-zh_CN-24",
+      "window_height": 662,
+      "y_end": 528
+    },
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "fixture-P_chen_2-zh_CN-24",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_chen_2-zh_CN-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速览与选择",
+      "view": "fixture-P_chen_2-zh_CN-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "公开说明签字责任并设维修补偿专项 · 8 资金 · 最迟第 20 晚约定",
+      "view": "fixture-P_chen_2-zh_CN-24",
+      "window_height": 662,
+      "y_end": 498
+    },
+    {
+      "disabled": false,
+      "label": "严格执行新验收，不承诺当前付不起的补偿",
+      "view": "fixture-P_chen_2-zh_CN-24",
+      "window_height": 662,
+      "y_end": 498
+    },
+    {
+      "disabled": false,
+      "label": "暂时搁置，保留到以后",
+      "view": "fixture-P_chen_2-zh_CN-24",
+      "window_height": 662,
+      "y_end": 555
+    },
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "fixture-recovery-zh_CN",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-recovery-zh_CN",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速览与选择",
+      "view": "fixture-recovery-zh_CN",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "逐项登记而不编结果",
+      "view": "fixture-recovery-zh_CN",
+      "window_height": 662,
+      "y_end": 428
+    },
+    {
+      "disabled": false,
+      "label": "先休息，次日核查",
+      "view": "fixture-recovery-zh_CN",
+      "window_height": 662,
+      "y_end": 428
+    },
+    {
+      "disabled": false,
+      "label": "暂时搁置，保留到以后",
+      "view": "fixture-recovery-zh_CN",
+      "window_height": 662,
+      "y_end": 485
+    },
+    {
+      "disabled": false,
+      "label": "关闭对话",
+      "view": "fixture-letter-zh_CN",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "查看全文",
+      "view": "fixture-letter-zh_CN",
+      "window_height": 662,
+      "y_end": 510
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "archive-P_lin_1-zh_TW",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "閱讀對白",
+      "view": "archive-P_lin_1-zh_TW",
+      "window_height": 662,
+      "y_end": 510
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "archive-R04-zh_TW",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "閱讀對白",
+      "view": "archive-R04-zh_TW",
+      "window_height": 662,
+      "y_end": 510
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "fixture-P_lin_3-zh_TW-16",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_lin_3-zh_TW-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速覽與選擇",
+      "view": "fixture-P_lin_3-zh_TW-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "重新建立有邊界的信任 · 需先履行約定",
+      "view": "fixture-P_lin_3-zh_TW-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "保留專業距離",
+      "view": "fixture-P_lin_3-zh_TW-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "戰役結束後回到社區診所",
+      "view": "fixture-P_lin_3-zh_TW-16",
+      "window_height": 662,
+      "y_end": 488
+    },
+    {
+      "disabled": false,
+      "label": "晚點再談",
+      "view": "fixture-P_lin_3-zh_TW-16",
+      "window_height": 662,
+      "y_end": 488
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "fixture-P_chen_2-zh_TW-16",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_chen_2-zh_TW-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速覽與選擇",
+      "view": "fixture-P_chen_2-zh_TW-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "公開說明簽字責任，並設立維修補償專項 · 8 資金 · 最晚要在第 20 晚約定",
+      "view": "fixture-P_chen_2-zh_TW-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "嚴格執行新驗收，不承諾當前付不起的補償",
+      "view": "fixture-P_chen_2-zh_TW-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "晚點再談",
+      "view": "fixture-P_chen_2-zh_TW-16",
+      "window_height": 662,
+      "y_end": 488
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "fixture-P_lin_3-zh_TW-20",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_lin_3-zh_TW-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速覽與選擇",
+      "view": "fixture-P_lin_3-zh_TW-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "重新建立有邊界的信任 · 需先履行約定",
+      "view": "fixture-P_lin_3-zh_TW-20",
+      "window_height": 662,
+      "y_end": 456
+    },
+    {
+      "disabled": false,
+      "label": "保留專業距離",
+      "view": "fixture-P_lin_3-zh_TW-20",
+      "window_height": 662,
+      "y_end": 456
+    },
+    {
+      "disabled": false,
+      "label": "戰役結束後回到社區診所",
+      "view": "fixture-P_lin_3-zh_TW-20",
+      "window_height": 662,
+      "y_end": 508
+    },
+    {
+      "disabled": false,
+      "label": "晚點再談",
+      "view": "fixture-P_lin_3-zh_TW-20",
+      "window_height": 662,
+      "y_end": 508
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "fixture-P_chen_2-zh_TW-20",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_chen_2-zh_TW-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速覽與選擇",
+      "view": "fixture-P_chen_2-zh_TW-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "公開說明簽字責任，並設立維修補償專項 · 8 資金 · 最晚要在第 20 晚約定",
+      "view": "fixture-P_chen_2-zh_TW-20",
+      "window_height": 662,
+      "y_end": 478
+    },
+    {
+      "disabled": false,
+      "label": "嚴格執行新驗收，不承諾當前付不起的補償",
+      "view": "fixture-P_chen_2-zh_TW-20",
+      "window_height": 662,
+      "y_end": 478
+    },
+    {
+      "disabled": false,
+      "label": "晚點再談",
+      "view": "fixture-P_chen_2-zh_TW-20",
+      "window_height": 662,
+      "y_end": 530
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "fixture-P_lin_3-zh_TW-24",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_lin_3-zh_TW-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速覽與選擇",
+      "view": "fixture-P_lin_3-zh_TW-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "重新建立有邊界的信任 · 需先履行約定",
+      "view": "fixture-P_lin_3-zh_TW-24",
+      "window_height": 662,
+      "y_end": 471
+    },
+    {
+      "disabled": false,
+      "label": "保留專業距離",
+      "view": "fixture-P_lin_3-zh_TW-24",
+      "window_height": 662,
+      "y_end": 471
+    },
+    {
+      "disabled": false,
+      "label": "戰役結束後回到社區診所",
+      "view": "fixture-P_lin_3-zh_TW-24",
+      "window_height": 662,
+      "y_end": 528
+    },
+    {
+      "disabled": false,
+      "label": "晚點再談",
+      "view": "fixture-P_lin_3-zh_TW-24",
+      "window_height": 662,
+      "y_end": 528
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "fixture-P_chen_2-zh_TW-24",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-P_chen_2-zh_TW-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速覽與選擇",
+      "view": "fixture-P_chen_2-zh_TW-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "公開說明簽字責任，並設立維修補償專項 · 8 資金 · 最晚要在第 20 晚約定",
+      "view": "fixture-P_chen_2-zh_TW-24",
+      "window_height": 662,
+      "y_end": 498
+    },
+    {
+      "disabled": false,
+      "label": "嚴格執行新驗收，不承諾當前付不起的補償",
+      "view": "fixture-P_chen_2-zh_TW-24",
+      "window_height": 662,
+      "y_end": 498
+    },
+    {
+      "disabled": false,
+      "label": "晚點再談",
+      "view": "fixture-P_chen_2-zh_TW-24",
+      "window_height": 662,
+      "y_end": 555
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "fixture-recovery-zh_TW",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "上一句",
+      "view": "fixture-recovery-zh_TW",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "全文速覽與選擇",
+      "view": "fixture-recovery-zh_TW",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "逐項登記而不編結果",
+      "view": "fixture-recovery-zh_TW",
+      "window_height": 662,
+      "y_end": 428
+    },
+    {
+      "disabled": false,
+      "label": "先休息，次日核查",
+      "view": "fixture-recovery-zh_TW",
+      "window_height": 662,
+      "y_end": 428
+    },
+    {
+      "disabled": false,
+      "label": "晚點再談",
+      "view": "fixture-recovery-zh_TW",
+      "window_height": 662,
+      "y_end": 485
+    },
+    {
+      "disabled": false,
+      "label": "關閉對話",
+      "view": "fixture-letter-zh_TW",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "閱讀全文",
+      "view": "fixture-letter-zh_TW",
+      "window_height": 662,
+      "y_end": 510
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "archive-P_lin_1-en",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Read page by page",
+      "view": "archive-P_lin_1-en",
+      "window_height": 662,
+      "y_end": 510
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "archive-R04-en",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Read page by page",
+      "view": "archive-R04-en",
+      "window_height": 662,
+      "y_end": 510
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "fixture-P_lin_3-en-16",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Back",
+      "view": "fixture-P_lin_3-en-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "Read all & choose",
+      "view": "fixture-P_lin_3-en-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "Rebuild trust on agreed terms · Requires a kept promise",
+      "view": "fixture-P_lin_3-en-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "Keep a professional distance",
+      "view": "fixture-P_lin_3-en-16",
+      "window_height": 662,
+      "y_end": 440
+    },
+    {
+      "disabled": false,
+      "label": "Return to the clinic after the rescue",
+      "view": "fixture-P_lin_3-en-16",
+      "window_height": 662,
+      "y_end": 488
+    },
+    {
+      "disabled": false,
+      "label": "Decide later",
+      "view": "fixture-P_lin_3-en-16",
+      "window_height": 662,
+      "y_end": 488
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "fixture-P_chen_2-en-16",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Back",
+      "view": "fixture-P_chen_2-en-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "Read all & choose",
+      "view": "fixture-P_chen_2-en-16",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "Acknowledge the signature and fund compensation · 8 credits · Had to be agreed by night 20",
+      "view": "fixture-P_chen_2-en-16",
+      "window_height": 662,
+      "y_end": 454
+    },
+    {
+      "disabled": false,
+      "label": "Tighten inspections and promise only what you can pay",
+      "view": "fixture-P_chen_2-en-16",
+      "window_height": 662,
+      "y_end": 454
+    },
+    {
+      "disabled": false,
+      "label": "Decide later",
+      "view": "fixture-P_chen_2-en-16",
+      "window_height": 662,
+      "y_end": 502
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "fixture-P_lin_3-en-20",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Back",
+      "view": "fixture-P_lin_3-en-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "Read all & choose",
+      "view": "fixture-P_lin_3-en-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "Rebuild trust on agreed terms · Requires a kept promise",
+      "view": "fixture-P_lin_3-en-20",
+      "window_height": 662,
+      "y_end": 456
+    },
+    {
+      "disabled": false,
+      "label": "Keep a professional distance",
+      "view": "fixture-P_lin_3-en-20",
+      "window_height": 662,
+      "y_end": 456
+    },
+    {
+      "disabled": false,
+      "label": "Return to the clinic after the rescue",
+      "view": "fixture-P_lin_3-en-20",
+      "window_height": 662,
+      "y_end": 508
+    },
+    {
+      "disabled": false,
+      "label": "Decide later",
+      "view": "fixture-P_lin_3-en-20",
+      "window_height": 662,
+      "y_end": 508
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "fixture-P_chen_2-en-20",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Back",
+      "view": "fixture-P_chen_2-en-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "Read all & choose",
+      "view": "fixture-P_chen_2-en-20",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "Acknowledge the signature and fund compensation · 8 credits · Had to be agreed by night 20",
+      "view": "fixture-P_chen_2-en-20",
+      "window_height": 662,
+      "y_end": 478
+    },
+    {
+      "disabled": false,
+      "label": "Tighten inspections and promise only what you can pay",
+      "view": "fixture-P_chen_2-en-20",
+      "window_height": 662,
+      "y_end": 478
+    },
+    {
+      "disabled": false,
+      "label": "Decide later",
+      "view": "fixture-P_chen_2-en-20",
+      "window_height": 662,
+      "y_end": 530
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "fixture-P_lin_3-en-24",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Back",
+      "view": "fixture-P_lin_3-en-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "Read all & choose",
+      "view": "fixture-P_lin_3-en-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "Rebuild trust on agreed terms · Requires a kept promise",
+      "view": "fixture-P_lin_3-en-24",
+      "window_height": 662,
+      "y_end": 498
+    },
+    {
+      "disabled": false,
+      "label": "Keep a professional distance",
+      "view": "fixture-P_lin_3-en-24",
+      "window_height": 662,
+      "y_end": 498
+    },
+    {
+      "disabled": false,
+      "label": "Return to the clinic after the rescue",
+      "view": "fixture-P_lin_3-en-24",
+      "window_height": 662,
+      "y_end": 555
+    },
+    {
+      "disabled": false,
+      "label": "Decide later",
+      "view": "fixture-P_lin_3-en-24",
+      "window_height": 662,
+      "y_end": 555
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "fixture-P_chen_2-en-24",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Back",
+      "view": "fixture-P_chen_2-en-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "Read all & choose",
+      "view": "fixture-P_chen_2-en-24",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": true,
+      "label": "Acknowledge the signature and fund compensation · 8 credits · Had to be agreed by night 20",
+      "view": "fixture-P_chen_2-en-24",
+      "window_height": 662,
+      "y_end": 571
+    },
+    {
+      "disabled": false,
+      "label": "Tighten inspections and promise only what you can pay",
+      "view": "fixture-P_chen_2-en-24",
+      "window_height": 662,
+      "y_end": 571
+    },
+    {
+      "disabled": false,
+      "label": "Decide later",
+      "view": "fixture-P_chen_2-en-24",
+      "window_height": 662,
+      "y_end": 628
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "fixture-recovery-en",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Back",
+      "view": "fixture-recovery-en",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "Read all & choose",
+      "view": "fixture-recovery-en",
+      "window_height": 662,
+      "y_end": 326
+    },
+    {
+      "disabled": false,
+      "label": "Record what each call actually tells you",
+      "view": "fixture-recovery-en",
+      "window_height": 662,
+      "y_end": 428
+    },
+    {
+      "disabled": false,
+      "label": "Rest now and check tomorrow",
+      "view": "fixture-recovery-en",
+      "window_height": 662,
+      "y_end": 428
+    },
+    {
+      "disabled": false,
+      "label": "Decide later",
+      "view": "fixture-recovery-en",
+      "window_height": 662,
+      "y_end": 485
+    },
+    {
+      "disabled": false,
+      "label": "Close",
+      "view": "fixture-letter-en",
+      "window_height": 662,
+      "y_end": 62
+    },
+    {
+      "disabled": false,
+      "label": "Read transcript",
+      "view": "fixture-letter-en",
+      "window_height": 662,
+      "y_end": 510
+    }
+  ],
+  "captures": [
+    "outputs/p4release-20261119-story-archive-P_lin_1-zh_CN.png",
+    "outputs/p4release-20261119-story-archive-R04-zh_CN.png",
+    "outputs/p4release-20261119-story-fixture-P_lin_3-zh_CN-24.png",
+    "outputs/p4release-20261119-story-archive-P_lin_1-zh_TW.png",
+    "outputs/p4release-20261119-story-archive-R04-zh_TW.png",
+    "outputs/p4release-20261119-story-fixture-P_lin_3-zh_TW-24.png",
+    "outputs/p4release-20261119-story-archive-P_lin_1-en.png",
+    "outputs/p4release-20261119-story-archive-R04-en.png",
+    "outputs/p4release-20261119-story-fixture-P_lin_3-en-24.png",
+    "outputs/p4release-20261119-story-fixture-recovery-en.png",
+    "outputs/p4release-20261119-story-fixture-letter-en.png"
+  ],
+  "checks": 288,
+  "failures": [],
+  "runtime": "macOS",
+  "scope": "real saved day 2/day 24 journal replay; isolated day 23 decisions; 1280x720 three locales and three font sizes. No human or Windows evidence.",
+  "sources": [
+    "outputs/firstshift-day02-story.json",
+    "outputs/baseline018-linked-day24.json",
+    "outputs/p4art-benefits-growth-mo-day23.json"
+  ]
+}

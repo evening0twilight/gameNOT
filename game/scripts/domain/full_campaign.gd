@@ -23,6 +23,17 @@ static func routes(s: Dictionary) -> Array:
 	for value: int in s.campaign.districts.values():total+=value
 	if total>=10 and s.full_campaign.evidence.size()>=2:result.push_front("shared_control")
 	return result
+static func review_window(s: Dictionary,record: Dictionary) -> bool:
+	return record.review_days.has(float(s.campaign.day)) or (s.campaign.day==18 and s.product.facilities.communications>=1)
+
+static func reviewable(s: Dictionary,content: Dictionary) -> Array:
+	var records: Array=[]
+	if s.campaign.phase!="camp":return records
+	for id: String in content.domains.world.evidence:
+		if not s.full_campaign.evidence.has(id) and review_window(s,content.domains.world.evidence[id]):
+			records.append(id)
+	return records
+
 static func command(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 	ensure(s)
 	if s.campaign.phase!="camp" or s.campaign.day>=24:return "invalid_phase"
@@ -53,7 +64,7 @@ static func command(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 		var unique: Array=[]
 		for id: Variant in ids:
 			if not id is String or not content.domains.world.evidence.has(id) or unique.has(id):return "record_unavailable"
-			if not content.domains.world.evidence[id].review_days.has(float(s.campaign.day)) and not (s.campaign.day==18 and product.tier(s,"communications")>=1):return "record_unavailable"
+			if not review_window(s,content.domains.world.evidence[id]):return "record_unavailable"
 			if s.full_campaign.evidence.has(id):return "already_used"
 			unique.append(id)
 		if s.campaign.projects>=2:return "project_used"

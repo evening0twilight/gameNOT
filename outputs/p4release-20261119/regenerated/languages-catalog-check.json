@@ -1,0 +1,14 @@
+{
+  "source_count": 3755,
+  "locales": {
+    "en": {
+      "entries": 3769,
+      "covered": 3755
+    },
+    "zh_TW": {
+      "entries": 3764,
+      "covered": 3755
+    }
+  },
+  "failures": []
+}

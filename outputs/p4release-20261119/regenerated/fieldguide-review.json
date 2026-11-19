@@ -1,0 +1,2172 @@
+{
+	"checks": 116,
+	"commands": [
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "depart",
+			"message": "已完成：确认出发 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"difficulty": "standard",
+				"dispatch": false,
+				"loadout": {
+					"chen": {
+						"support": "",
+						"tool": ""
+					},
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					},
+					"mo": {
+						"support": "",
+						"tool": ""
+					},
+					"su": {
+						"support": "",
+						"tool": ""
+					},
+					"xu": {
+						"support": "",
+						"tool": ""
+					},
+					"ye": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"medicine": 0,
+				"roster": [
+					"lin",
+					"xu",
+					"su"
+				],
+				"support": "",
+				"tendencies": {}
+			},
+			"revision": 1,
+			"round": 1
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					1,
+					4
+				]
+			},
+			"revision": 3,
+			"round": 1
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					1,
+					2
+				]
+			},
+			"revision": 4,
+			"round": 1
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					2,
+					4
+				]
+			},
+			"revision": 5,
+			"round": 1
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					2,
+					2
+				]
+			},
+			"revision": 6,
+			"round": 1
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					3,
+					4
+				]
+			},
+			"revision": 7,
+			"round": 1
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					3,
+					2
+				]
+			},
+			"revision": 8,
+			"round": 1
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {},
+			"revision": 9,
+			"round": 2
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "stabilize",
+			"message": "已完成：稳定 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"target": "r1"
+			},
+			"revision": 10,
+			"round": 2
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "pickup",
+			"message": "已完成：拾起 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"target": "r1"
+			},
+			"revision": 11,
+			"round": 2
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					4,
+					2
+				]
+			},
+			"revision": 12,
+			"round": 2
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					6,
+					1
+				]
+			},
+			"revision": 13,
+			"round": 2
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					5,
+					2
+				]
+			},
+			"revision": 14,
+			"round": 2
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "stabilize",
+			"message": "已完成：稳定 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"target": "r2"
+			},
+			"revision": 15,
+			"round": 2
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {},
+			"revision": 16,
+			"round": 3
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "pickup",
+			"message": "已完成：拾起 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"target": "r2"
+			},
+			"revision": 17,
+			"round": 3
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					4,
+					2
+				]
+			},
+			"revision": 18,
+			"round": 3
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					1,
+					2
+				]
+			},
+			"revision": 19,
+			"round": 3
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					0,
+					3
+				]
+			},
+			"revision": 20,
+			"round": 3
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {},
+			"revision": 21,
+			"round": 4
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					2,
+					2
+				]
+			},
+			"revision": 22,
+			"round": 4
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					0,
+					2
+				]
+			},
+			"revision": 23,
+			"round": 4
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					0,
+					5
+				]
+			},
+			"revision": 24,
+			"round": 4
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 25,
+			"round": 4
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {},
+			"revision": 26,
+			"round": 5
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					0,
+					4
+				]
+			},
+			"revision": 27,
+			"round": 5
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					0,
+					5
+				]
+			},
+			"revision": 28,
+			"round": 5
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "extract",
+			"message": "已完成：交付 · 已达成：前舱居民 · 待办：后舱居民",
+			"payload": {},
+			"revision": 29,
+			"round": 5
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：前舱居民 · 待办：后舱居民",
+			"payload": {},
+			"revision": 30,
+			"round": 6
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：前舱居民 · 待办：后舱居民",
+			"payload": {
+				"cell": [
+					0,
+					7
+				]
+			},
+			"revision": 31,
+			"round": 6
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "extract",
+			"message": "已完成：交付 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {},
+			"revision": 32,
+			"round": 6
+		},
+		{
+			"actor": "su",
+			"day": 1,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {},
+			"revision": 33,
+			"round": 6
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {
+				"cell": [
+					4,
+					2
+				]
+			},
+			"revision": 34,
+			"round": 6
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {
+				"cell": [
+					1,
+					2
+				]
+			},
+			"revision": 35,
+			"round": 6
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {},
+			"revision": 36,
+			"round": 7
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {
+				"cell": [
+					1,
+					4
+				]
+			},
+			"revision": 37,
+			"round": 7
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {
+				"cell": [
+					1,
+					6
+				]
+			},
+			"revision": 38,
+			"round": 7
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {},
+			"revision": 39,
+			"round": 7
+		},
+		{
+			"actor": "xu",
+			"day": 1,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {},
+			"revision": 40,
+			"round": 8
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 41,
+			"round": 8
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {},
+			"revision": 42,
+			"round": 8
+		},
+		{
+			"actor": "lin",
+			"day": 1,
+			"kind": "enter_camp",
+			"message": "已完成：返回营地 · 已达成：前舱居民 · 已达成：后舱居民",
+			"payload": {},
+			"revision": 43,
+			"round": 8
+		},
+		{
+			"actor": "lin",
+			"day": 2,
+			"kind": "finish_evening",
+			"message": "已完成：结束夜间，进入次日准备 · 准备出勤：诊所的备用电",
+			"payload": {},
+			"revision": 44,
+			"round": 8
+		},
+		{
+			"actor": "lin",
+			"day": 2,
+			"kind": "save_preparation",
+			"message": "已完成：保存准备草案 · 准备出勤：诊所的备用电",
+			"payload": {
+				"draft": {
+					"difficulty": "standard",
+					"dispatch": false,
+					"loadout": {
+						"chen": {
+							"support": "",
+							"tool": ""
+						},
+						"he": {
+							"support": "",
+							"tool": ""
+						},
+						"jiang": {
+							"support": "",
+							"tool": ""
+						},
+						"lin": {
+							"support": "",
+							"tool": ""
+						},
+						"mo": {
+							"support": "",
+							"tool": ""
+						},
+						"su": {
+							"support": "",
+							"tool": "crowbar"
+						},
+						"xu": {
+							"support": "",
+							"tool": ""
+						},
+						"ye": {
+							"support": "",
+							"tool": ""
+						}
+					},
+					"medicine": 0,
+					"roster": [
+						"lin",
+						"xu",
+						"su"
+					],
+					"support": "",
+					"tendencies": {}
+				}
+			},
+			"revision": 45,
+			"round": 8
+		},
+		{
+			"actor": "lin",
+			"day": 2,
+			"kind": "depart",
+			"message": "已完成：确认出发 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"difficulty": "standard",
+				"dispatch": false,
+				"loadout": {
+					"chen": {
+						"support": "",
+						"tool": ""
+					},
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					},
+					"mo": {
+						"support": "",
+						"tool": ""
+					},
+					"su": {
+						"support": "",
+						"tool": "crowbar"
+					},
+					"xu": {
+						"support": "",
+						"tool": ""
+					},
+					"ye": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"medicine": 0,
+				"roster": [
+					"lin",
+					"xu",
+					"su"
+				],
+				"support": "",
+				"tendencies": {}
+			},
+			"revision": 46,
+			"round": 1
+		},
+		{
+			"actor": "lin",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					1,
+					4
+				]
+			},
+			"revision": 48.0,
+			"round": 1.0
+		},
+		{
+			"actor": "lin",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					0,
+					2
+				]
+			},
+			"revision": 49.0,
+			"round": 1.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					2,
+					5
+				]
+			},
+			"revision": 50.0,
+			"round": 1.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					3,
+					3
+				]
+			},
+			"revision": 51.0,
+			"round": 1.0
+		},
+		{
+			"actor": "xu",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					2,
+					4
+				]
+			},
+			"revision": 52.0,
+			"round": 1.0
+		},
+		{
+			"actor": "xu",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					0,
+					3
+				]
+			},
+			"revision": 53.0,
+			"round": 1.0
+		},
+		{
+			"actor": "xu",
+			"day": 2.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 54.0,
+			"round": 2.0
+		},
+		{
+			"actor": "xu",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					1,
+					2
+				]
+			},
+			"revision": 55.0,
+			"round": 2.0
+		},
+		{
+			"actor": "xu",
+			"day": 2.0,
+			"kind": "interact",
+			"message": "已完成：施工 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"target": "cut"
+			},
+			"revision": 56.0,
+			"round": 2.0
+		},
+		{
+			"actor": "lin",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					2,
+					1
+				]
+			},
+			"revision": 57.0,
+			"round": 2.0
+		},
+		{
+			"actor": "lin",
+			"day": 2.0,
+			"kind": "interact",
+			"message": "已完成：施工 · 已达成：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"target": "cut"
+			},
+			"revision": 58.0,
+			"round": 2.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					4,
+					2
+				]
+			},
+			"revision": 59.0,
+			"round": 2.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					6,
+					1
+				]
+			},
+			"revision": 60.0,
+			"round": 2.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 61.0,
+			"round": 3.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "interact",
+			"message": "已完成：施工 · 已达成：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"target": "power"
+			},
+			"revision": 62.0,
+			"round": 3.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "interact",
+			"message": "已完成：施工 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"target": "power"
+			},
+			"revision": 63.0,
+			"round": 3.0
+		},
+		{
+			"actor": "lin",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					0,
+					2
+				]
+			},
+			"revision": 64.0,
+			"round": 3.0
+		},
+		{
+			"actor": "lin",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					0,
+					5
+				]
+			},
+			"revision": 65.0,
+			"round": 3.0
+		},
+		{
+			"actor": "xu",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					0,
+					4
+				]
+			},
+			"revision": 66.0,
+			"round": 3.0
+		},
+		{
+			"actor": "xu",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 67.0,
+			"round": 3.0
+		},
+		{
+			"actor": "xu",
+			"day": 2.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 68.0,
+			"round": 4.0
+		},
+		{
+			"actor": "xu",
+			"day": 2.0,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 69.0,
+			"round": 4.0
+		},
+		{
+			"actor": "lin",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 70.0,
+			"round": 4.0
+		},
+		{
+			"actor": "lin",
+			"day": 2.0,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 71.0,
+			"round": 4.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					6,
+					4
+				]
+			},
+			"revision": 72.0,
+			"round": 4.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					3,
+					4
+				]
+			},
+			"revision": 73.0,
+			"round": 4.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 74.0,
+			"round": 5.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					0,
+					4
+				]
+			},
+			"revision": 75.0,
+			"round": 5.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 76.0,
+			"round": 5.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 77.0,
+			"round": 6.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 78.0,
+			"round": 6.0
+		},
+		{
+			"actor": "su",
+			"day": 2.0,
+			"kind": "enter_camp",
+			"message": "已完成：返回营地 · 已达成：切断错误回路 · 已达成：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 79.0,
+			"round": 6.0
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "finish_evening",
+			"message": "已完成：结束夜间，进入次日准备 · 准备出勤：被锁住的仓库",
+			"payload": {},
+			"revision": 80.0,
+			"round": 6.0
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "depart",
+			"message": "已完成：确认出发 · 待办：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"difficulty": "standard",
+				"dispatch": false,
+				"loadout": {
+					"chen": {
+						"support": "",
+						"tool": ""
+					},
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					},
+					"mo": {
+						"support": "",
+						"tool": ""
+					},
+					"su": {
+						"support": "",
+						"tool": "crowbar"
+					},
+					"xu": {
+						"support": "",
+						"tool": ""
+					},
+					"ye": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"medicine": 0,
+				"roster": [
+					"lin",
+					"xu",
+					"su"
+				],
+				"support": "",
+				"tendencies": {}
+			},
+			"revision": 81.0,
+			"round": 1
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					2,
+					5
+				]
+			},
+			"revision": 82.0,
+			"round": 1
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					3,
+					3
+				]
+			},
+			"revision": 83.0,
+			"round": 1
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					3,
+					5
+				]
+			},
+			"revision": 84.0,
+			"round": 1
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					3,
+					2
+				]
+			},
+			"revision": 85.0,
+			"round": 1
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					3,
+					4
+				]
+			},
+			"revision": 86.0,
+			"round": 1
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					3,
+					1
+				]
+			},
+			"revision": 87.0,
+			"round": 1
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 待办：打开货仓锁 · 待办：转运救援箱",
+			"payload": {},
+			"revision": 88.0,
+			"round": 2
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "use_tool",
+			"message": "已完成：使用工具 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"item": "crowbar",
+				"target": "door"
+			},
+			"revision": 90.0,
+			"round": 2
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					6,
+					1
+				]
+			},
+			"revision": 91.0,
+			"round": 2
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					5,
+					3
+				]
+			},
+			"revision": 92.0,
+			"round": 2
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					6,
+					2
+				]
+			},
+			"revision": 93.0,
+			"round": 2
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					5,
+					3
+				]
+			},
+			"revision": 94.0,
+			"round": 2
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					6,
+					3
+				]
+			},
+			"revision": 95.0,
+			"round": 2
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {},
+			"revision": 96.0,
+			"round": 3
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "pickup",
+			"message": "已完成：拾起 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"target": "crate"
+			},
+			"revision": 97.0,
+			"round": 3
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					4,
+					3
+				]
+			},
+			"revision": 98.0,
+			"round": 3
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {},
+			"revision": 99.0,
+			"round": 4
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					2,
+					3
+				]
+			},
+			"revision": 100.0,
+			"round": 4
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					0,
+					3
+				]
+			},
+			"revision": 101.0,
+			"round": 4
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {},
+			"revision": 102.0,
+			"round": 5
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					0,
+					5
+				]
+			},
+			"revision": 103.0,
+			"round": 5
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 104.0,
+			"round": 5
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：打开货仓锁 · 待办：转运救援箱",
+			"payload": {},
+			"revision": 105.0,
+			"round": 6
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "extract",
+			"message": "已完成：交付 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {},
+			"revision": 106.0,
+			"round": 6
+		},
+		{
+			"actor": "xu",
+			"day": 3.0,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {},
+			"revision": 107.0,
+			"round": 6
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {
+				"cell": [
+					4,
+					3
+				]
+			},
+			"revision": 108.0,
+			"round": 6
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {
+				"cell": [
+					3,
+					5
+				]
+			},
+			"revision": 109.0,
+			"round": 6
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {
+				"cell": [
+					3,
+					1
+				]
+			},
+			"revision": 110.0,
+			"round": 6
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {
+				"cell": [
+					0,
+					1
+				]
+			},
+			"revision": 111.0,
+			"round": 6
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {},
+			"revision": 112.0,
+			"round": 7
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {
+				"cell": [
+					0,
+					4
+				]
+			},
+			"revision": 113.0,
+			"round": 7
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 114.0,
+			"round": 7
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {
+				"cell": [
+					0,
+					5
+				]
+			},
+			"revision": 115.0,
+			"round": 7
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {
+				"cell": [
+					0,
+					7
+				]
+			},
+			"revision": 116.0,
+			"round": 7
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {},
+			"revision": 117.0,
+			"round": 8
+		},
+		{
+			"actor": "lin",
+			"day": 3.0,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {},
+			"revision": 118.0,
+			"round": 8
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {},
+			"revision": 119.0,
+			"round": 8
+		},
+		{
+			"actor": "su",
+			"day": 3.0,
+			"kind": "enter_camp",
+			"message": "已完成：返回营地 · 已达成：打开货仓锁 · 已达成：转运救援箱",
+			"payload": {},
+			"revision": 120.0,
+			"round": 8
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "finish_evening",
+			"message": "已完成：结束夜间，进入次日准备 · 准备出勤：高架桥下",
+			"payload": {},
+			"revision": 121.0,
+			"round": 8
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "depart",
+			"message": "已完成：确认出发 · 待办：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"difficulty": "standard",
+				"dispatch": false,
+				"loadout": {
+					"chen": {
+						"support": "",
+						"tool": ""
+					},
+					"he": {
+						"support": "",
+						"tool": ""
+					},
+					"jiang": {
+						"support": "",
+						"tool": ""
+					},
+					"lin": {
+						"support": "",
+						"tool": ""
+					},
+					"mo": {
+						"support": "",
+						"tool": ""
+					},
+					"su": {
+						"support": "",
+						"tool": "crowbar"
+					},
+					"xu": {
+						"support": "",
+						"tool": ""
+					},
+					"ye": {
+						"support": "",
+						"tool": ""
+					}
+				},
+				"medicine": 0,
+				"roster": [
+					"lin",
+					"xu",
+					"su"
+				],
+				"support": "",
+				"tendencies": {}
+			},
+			"revision": 122.0,
+			"round": 1
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					3,
+					4
+				]
+			},
+			"revision": 123.0,
+			"round": 1
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					3,
+					1
+				]
+			},
+			"revision": 124.0,
+			"round": 1
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					1,
+					4
+				]
+			},
+			"revision": 125.0,
+			"round": 1
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					2,
+					2
+				]
+			},
+			"revision": 126.0,
+			"round": 1
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					3,
+					5
+				]
+			},
+			"revision": 127.0,
+			"round": 1
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					3,
+					2
+				]
+			},
+			"revision": 128.0,
+			"round": 1
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 待办：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {},
+			"revision": 129.0,
+			"round": 2
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "protocol",
+			"message": "已完成：双人协作 · 已达成：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"consent": true,
+				"partner": "lin",
+				"protocol": "protected_work",
+				"target": "brace1"
+			},
+			"revision": 131.0,
+			"round": 2
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					5,
+					2
+				]
+			},
+			"revision": 132.0,
+			"round": 2
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					4,
+					2
+				]
+			},
+			"revision": 133.0,
+			"round": 2
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					4,
+					1
+				]
+			},
+			"revision": 134.0,
+			"round": 2
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					6,
+					2
+				]
+			},
+			"revision": 135.0,
+			"round": 2
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：北桥加固 · 待办：南桥加固 · 待办：接维修员离开",
+			"payload": {},
+			"revision": 136.0,
+			"round": 3
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "interact",
+			"message": "已完成：施工 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"target": "brace2"
+			},
+			"revision": 137.0,
+			"round": 3
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					3,
+					2
+				]
+			},
+			"revision": 138.0,
+			"round": 3
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					3,
+					3
+				]
+			},
+			"revision": 139.0,
+			"round": 3
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "stabilize",
+			"message": "已完成：稳定 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"target": "worker"
+			},
+			"revision": 140.0,
+			"round": 3
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					4,
+					3
+				]
+			},
+			"revision": 141.0,
+			"round": 3
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "pickup",
+			"message": "已完成：拾起 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"target": "worker"
+			},
+			"revision": 142.0,
+			"round": 3
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {},
+			"revision": 143.0,
+			"round": 4
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					3,
+					4
+				]
+			},
+			"revision": 144.0,
+			"round": 4
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					2,
+					5
+				]
+			},
+			"revision": 145.0,
+			"round": 4
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {},
+			"revision": 146.0,
+			"round": 5
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					0,
+					5
+				]
+			},
+			"revision": 147.0,
+			"round": 5
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 148.0,
+			"round": 5
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：北桥加固 · 已达成：南桥加固 · 待办：接维修员离开",
+			"payload": {},
+			"revision": 149.0,
+			"round": 6
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "extract",
+			"message": "已完成：交付 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {},
+			"revision": 150.0,
+			"round": 6
+		},
+		{
+			"actor": "xu",
+			"day": 4.0,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {},
+			"revision": 151.0,
+			"round": 6
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {
+				"cell": [
+					3,
+					5
+				]
+			},
+			"revision": 152.0,
+			"round": 6
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {
+				"cell": [
+					0,
+					5
+				]
+			},
+			"revision": 153.0,
+			"round": 6
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {
+				"cell": [
+					0,
+					2
+				]
+			},
+			"revision": 154.0,
+			"round": 6
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {
+				"cell": [
+					0,
+					4
+				]
+			},
+			"revision": 155.0,
+			"round": 6
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "end_round",
+			"message": "已完成：结束回合 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {},
+			"revision": 156.0,
+			"round": 7
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 157.0,
+			"round": 7
+		},
+		{
+			"actor": "su",
+			"day": 4.0,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {},
+			"revision": 158.0,
+			"round": 7
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "move",
+			"message": "已完成：移动 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {
+				"cell": [
+					0,
+					6
+				]
+			},
+			"revision": 159.0,
+			"round": 7
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "leave_site",
+			"message": "已完成：撤出 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {},
+			"revision": 160.0,
+			"round": 7
+		},
+		{
+			"actor": "lin",
+			"day": 4.0,
+			"kind": "enter_camp",
+			"message": "已完成：返回营地 · 已达成：北桥加固 · 已达成：南桥加固 · 已达成：接维修员离开",
+			"payload": {},
+			"revision": 161.0,
+			"round": 7
+		},
+		{
+			"actor": "lin",
+			"day": 2,
+			"kind": "move",
+			"message": "已完成：移动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {
+				"cell": [
+					1,
+					4
+				]
+			},
+			"revision": 2,
+			"round": 1
+		},
+		{
+			"actor": "lin",
+			"day": 2,
+			"kind": "undo",
+			"message": "已完成：撤销上一组行动 · 待办：切断错误回路 · 待办：手摇恢复诊所电源",
+			"payload": {},
+			"revision": 3,
+			"round": 1
+		}
+	],
+	"failures": [],
+	"lessons": [
+		{
+			"actor": "su",
+			"day": 3,
+			"round": 2,
+			"topic": "tool:crowbar"
+		},
+		{
+			"actor": "xu",
+			"day": 4,
+			"round": 2,
+			"topic": "protocol:protected_work"
+		}
+	],
+	"renderer": "headless",
+	"scope": "continuous production new campaign M01 to M04; later mission UI fixtures explicitly isolated; no Windows native evidence",
+	"screenshots": [],
+	"used_lessons": [
+		"tool:crowbar",
+		"protocol:protected_work"
+	]
+}

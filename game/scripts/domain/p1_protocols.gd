@@ -32,7 +32,7 @@ static func apply(s: Dictionary,c: Dictionary,rules: Script) -> String:
 			var cell: Variant=p.get("cell")
 			if enemy.is_empty() or enemy.hp<=0 or enemy.type not in ["hauler","sentinel"] or not rules.Product.valid_cell(cell):return "invalid_target"
 			if not a.carrying.is_empty() or not other.carrying.is_empty() or rules.distance(a.cell,enemy.cell)!=1 or rules.distance(other.cell,enemy.cell)!=1:return "invalid_target"
-			if rules.distance(enemy.cell,cell)!=1 or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(str(cell)):return "invalid_target"
+			if rules.distance(enemy.cell,cell)!=1 or rules.blocked(b,cell) or rules.occupied(b,cell) or b.barriers.has(rules.barrier_key(b,cell)):return "invalid_target"
 			enemy.cell=cell.duplicate();enemy.erase("push_marker")
 			if enemy.type=="hauler":enemy.off_rail=not rules.contains_cell(enemy.rail,cell)
 		"protected_work":

@@ -12,13 +12,13 @@ def run(args, name, prefix="product018"):
     start=time.monotonic()
     result=subprocess.run(args,cwd=ROOT,text=True,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,timeout=1200)
     (ROOT/f'outputs/{prefix}-check-{name}.log').write_text(result.stdout)
-    if result.returncode or 'SCRIPT ERROR:' in result.stdout or '\nERROR:' in result.stdout or re.search(r'failures=[1-9]|[1-9][0-9]* failed',result.stdout):
+    if result.returncode or 'SCRIPT ERROR:' in result.stdout or '\nERROR:' in result.stdout or re.search(r'failures=[1-9]|(?<!\w)[1-9][0-9]* failed\b',result.stdout):
         print(result.stdout);raise SystemExit(f'Failed: {name}')
-    markers=[x for x in result.stdout.splitlines() if 'RESULTS:' in x or 'BASELINE018_' in x or 'TEST_RESULTS:' in x or 'P4_AUDIO_NOV13:' in x]
+    markers=[x for x in result.stdout.splitlines() if 'RESULTS:' in x or 'BASELINE018_' in x or 'TEST_RESULTS:' in x or 'P4_AUDIO_NOV13:' in x or x.startswith(('RELEASE_', 'WORKSPACE_RESULTS', 'SCORE_RESULTS'))]
     print(name+': '+(' | '.join(markers[-2:]) or 'ok'),flush=True)
     return {'name':name,'seconds':round(time.monotonic()-start,2),'markers':markers,'log':f'outputs/{prefix}-check-{name}.log'}
 def source_hashes():
-    result={str(p.relative_to(ROOT)):digest(p) for base in ['game/scripts','game/scenes','game/data','game/assets'] for p in sorted((ROOT/base).rglob('*')) if p.is_file() and p.suffix not in ['.uid','.import']}
+    result={str(p.relative_to(ROOT)):digest(p) for base in ['game/scripts','game/scenes','game/data','game/assets'] for p in sorted((ROOT/base).rglob('*')) if p.is_file() and not p.name.startswith('.')}
     for name in ['game/project.godot','game/export_presets.cfg']:result[name]=digest(ROOT/name)
     return result
 def excluded_history(name):
@@ -103,7 +103,7 @@ def main():
     for path in (ROOT/'game/scripts').rglob('*.gd'):
         for reference in re.findall(r'(?:preload|load)\("res://([^"%]+)"\)',path.read_text()):assert reference.casefold() in game_files,(path,reference)
     records=[execute([engine,'--headless','--path','game','--editor','--import','--quit'],'import')]
-    names=['run_tests','content_catalog_tests','p1_tests','p1_systems_tests','p3_rules_tests','p3_specialties_tests','p3_story_proofs','p4_history_tests','p4_tests','p4_feedback_tests','baseline018_tests','baseline018_edges','baseline018_guidance','ui_localization_tests','baseline018_ui','product018_story_tests','p4close_tests','p4quality_tests','firstshift_review','fieldguide_review','campguide_review','multilanguage_review','language_lategame_review']
+    names=['run_tests','content_catalog_tests','p1_tests','p1_systems_tests','p3_rules_tests','p3_specialties_tests','p3_story_proofs','p4_history_tests','p4_tests','p4_feedback_tests','baseline018_tests','baseline018_edges','baseline018_guidance','ui_localization_tests','baseline018_ui','product018_story_tests','p4close_tests','p4quality_tests','firstshift_review','fieldguide_review','campguide_review','multilanguage_review','language_lategame_review','release_story_review','release_story_layout']
     for name in names:records.append(execute([engine,'--headless','--path','game','--script',f'tests/{name}.gd','--','--isolated-ui-review'],name))
     records.append(execute([sys.executable,'tools/check_localization.py'],'language_catalog'))
     records.append(execute([engine,'--headless','--path','game','--script','tests/p4_audio_nov13.gd','--',str(ROOT/'outputs/baseline018-linked-day24.json')],'p4_audio_nov13'))
@@ -111,14 +111,20 @@ def main():
         # These rule-only processes write distinct reports and unique save slots.
         # UI/import checks stay sequential; none of these jobs consumes another's output.
         jobs=[]
-        for name in ['baseline018_missions','baseline018_field_paths','baseline018_campaign','baseline018_linked_campaign','product018_crew_campaign','p4close_growth_campaign']:
+        for name in ['p4close_growth_campaign','baseline018_campaign','baseline018_linked_campaign','baseline018_missions','baseline018_field_paths','product018_crew_campaign']:
             jobs.append(([engine,'--headless','--path','game','--script',f'tests/{name}.gd'],name))
         for difficulty in ['relaxed','standard','hard']:
             jobs.append(([engine,'--headless','--path','game','--script','tests/baseline018_matrix.gd','--','--difficulty='+difficulty],'matrix-'+difficulty))
         for profile in ['no_training','few_sides','fixed_favorites','injury_rotation']:
             jobs.append(([engine,'--headless','--path','game','--script','tests/baseline018_profiles.gd','--','--profile='+profile],'profile-'+profile))
+        for profile in ['main','sides','recovery']:
+            jobs.append(([engine,'--headless','--path','game','--script','tests/release_campaign_learning.gd','--','--profile='+profile],'learning-'+profile))
         with ThreadPoolExecutor(max_workers=args.jobs) as pool:
             records.extend(pool.map(lambda job:execute(*job),jobs))
+        # The workspace review consumes the exact checkpoint files from the sides run.
+        for name in ['release_workspace_review','release_route_preview','release_visible_campaign']:
+            records.append(execute([engine,'--headless','--path','game','--script',f'tests/{name}.gd','--','--isolated-ui-review'],name))
+        records.append(execute([engine,'--headless','--audio-driver','Dummy','--path','game','--script','tests/release_score_review.gd','--',str(ROOT/f'outputs/{args.report_prefix}-score.json')],'release_score'))
     assert initial_hashes==source_hashes(),'Game sources changed during validation; rerun against one consistent revision'
     history=history_status(args.allow_missing_history)
     record={'authority':manifest['version'],'full':args.full,'jobs':args.jobs,'checks':records,'preserved_files':history['verified'],'history':history,'source_hashes':initial_hashes,'windows_native_tested':False,'human_acceptance':False}

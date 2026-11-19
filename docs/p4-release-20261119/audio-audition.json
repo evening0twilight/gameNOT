@@ -1,0 +1,88 @@
+{
+  "scope": "Source mastered cues, played from first frame through one loop boundary plus 12 seconds; .5 s fade at excerpt ends and .7 s silence between tracks, common +6 dB gain. No game mix or human listening.",
+  "sections_seconds": [
+    {
+      "cue": "camp",
+      "start": 0,
+      "loop_at": 36.46,
+      "end": 48.46
+    },
+    {
+      "cue": "battle",
+      "start": 49.16,
+      "loop_at": 84.0,
+      "end": 96.0
+    },
+    {
+      "cue": "battle_high",
+      "start": 96.7,
+      "loop_at": 138.78,
+      "end": 150.78
+    },
+    {
+      "cue": "daily",
+      "start": 151.48,
+      "loop_at": 187.22,
+      "end": 199.22
+    },
+    {
+      "cue": "grave",
+      "start": 199.92,
+      "loop_at": 237.89,
+      "end": 249.89
+    },
+    {
+      "cue": "ending",
+      "start": 250.59,
+      "loop_at": 291.13,
+      "end": 303.13
+    }
+  ],
+  "score": {
+    "file": "outputs/p4release-20261119-audio-score.mp3",
+    "sha256": "36dce1839404bfcbbeaf282aae2337fb9ab7fdb96de2dc79eb9a10833c1d533d"
+  },
+  "godot_mix": {
+    "file": "outputs/p4release-20261119-audio-mix.mp3",
+    "sha256": "cd10c2052f265741bde9bba3cb21154f2f0637af5abebc27ea0f1add9d1b7916",
+    "scope": "Post-limiter Godot dummy driver capture from the six imported streams and one live cue per route. Script seeks close to each loop boundary; common +6dB for the MP3.",
+    "sections_seconds": [
+      {
+        "id": "camp",
+        "cue": "ui_confirm",
+        "start": 0,
+        "end": 3.715
+      },
+      {
+        "id": "battle",
+        "cue": "move",
+        "start": 3.715,
+        "end": 7.43
+      },
+      {
+        "id": "battle_high",
+        "cue": "injury",
+        "start": 7.43,
+        "end": 11.238
+      },
+      {
+        "id": "daily",
+        "cue": "ui_page",
+        "start": 11.238,
+        "end": 14.954
+      },
+      {
+        "id": "grave",
+        "cue": "ui_cancel",
+        "start": 14.954,
+        "end": 18.669
+      },
+      {
+        "id": "ending",
+        "cue": "ending",
+        "start": 18.669,
+        "end": 22.477
+      }
+    ]
+  }
+}

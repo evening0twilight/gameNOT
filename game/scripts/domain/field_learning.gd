@@ -54,7 +54,7 @@ static func compact(s: Dictionary) -> Dictionary:
 static func legal(s: Dictionary,content: Dictionary,actor: String,kind: String,payload: Dictionary) -> bool:
 	var rules: GDScript=load("res://scripts/domain/campaign_rules.gd")
 	return rules.reduce(compact(s),{"kind":kind,"actor_id":actor,"payload":payload,"command_id":"learning-probe-%d"%s.revision,"root_decision_id":"learning-probe","expected_revision":s.revision},content).ok
-static func describe(topic: String,content: Dictionary) -> Dictionary:
+static func describe(topic: String,content: Dictionary,state: Dictionary={}) -> Dictionary:
 	var rows: Dictionary={
 		"prepare_safety":["先做保障","关系紧张时，协作可能需要有人先站稳保护位置。","站在伙伴旁的干地，选择保障对象和类型；消耗与本轮有效条件会显示在预览。"],
 		"authorize":["明确授权","许舟在关系紧张时，需要明确授权才愿意进行部分协作。","选择许舟后确认授权。这会形成现场承诺记录，并越过撤销边界。"],
@@ -84,7 +84,16 @@ static func describe(topic: String,content: Dictionary) -> Dictionary:
 			var method: String="点专长，再点对应目标；先看费用和次数，确认后才使用。"
 			if spec.id in ["xu_1","ye_3","he_1"]:method="点专长，再点地图上的落点或铺设格；先检查预览，再确认。"
 			if spec.id in ["lin_3","mo_3"]:method="先点专长和目标，再点移动或布设位置；最后核对预览。"
-			return {"topic":topic,"title":spec.name+(" · 行动点支援" if topic.ends_with(":ap") else ""),"why":spec.effect,"how":method,"kind":"specialty","ability":spec.id,"passive":spec.id=="he_3"}
+			var effect: String=spec.effect
+			var experience: int=state.get("actors",{}).get(spec.actor,{}).get("xp",0)
+			var level: int=preload("res://scripts/domain/p1_specialties.gd").level(experience)
+			if topic.ends_with(":ap"):
+				effect=spec.level5_effect
+			elif spec.id!="su_3":
+				if level>=5 and spec.has("level5_effect"):effect=spec.level5_effect
+				elif level>=3 and spec.has("level3_effect"):effect=spec.level3_effect
+			if spec.id=="he_3":method="搬起目标后直接移动，预览会显示这次能走到哪里。"
+			return {"topic":topic,"title":spec.name+(" · 行动点支援" if topic.ends_with(":ap") else ""),"why":effect,"how":method,"kind":"specialty","ability":spec.id,"passive":spec.id=="he_3"}
 	for item: Dictionary in content.domains.equipment.items:
 		if topic=="tool:"+item.id:return {"topic":topic,"title":item.name if item.has("name") else item.id,"why":item.effect,"how":{"crowbar":"点撬棍，再点相邻的轻障碍。先看增加的施工进度，再确认。","scanner":"点扫描器，再点附近的停机装置；检查进度和剩余次数。","medkit":"点医疗包，再点身旁受伤的伙伴。确认前检查药剂与恢复量。","shield":"点屏障，再点身旁的空地。先看费用和布设位置，避免挡住通路。","insulation":"点绝缘工具，再点需要铺设的位置；预览会核对距离与费用。","winch":"先选一侧锚点，再选深水另一侧。布设后可使用跨锚点。","stretcher":"被动生效：装备者搬运时自动应用，不需要另外按一个技能。"}.get(item.id,""),"kind":"use_tool","item":item.id,"passive":item.id=="stretcher"}
 	return {}
@@ -93,7 +102,18 @@ static func neighbors(cell: Array) -> Array:
 static func payloads(s: Dictionary,content: Dictionary,actor: String,topic: String) -> Array:
 	var rules: GDScript=load("res://scripts/domain/campaign_rules.gd")
 	var b: Dictionary=s.battle;var h: Dictionary=b.heroes[actor];var result: Array=[]
-	var danger: Array=load("res://scripts/presentation/guidance.gd").danger(b,rules)
+	var danger: Array=[]
+	# Match the material to the actual attack. Insulation cannot stop a fire,
+	# and a shield does not absorb an electrical discharge.
+	if topic in ["ability:he_1","tool:shield","ability:ye_3","tool:insulation"]:
+		var electric: bool=topic in ["ability:ye_3","tool:insulation"]
+		for enemy: Dictionary in b.enemies.values():
+			if enemy.get("paused_round",0)==b.round:continue
+			if electric and (enemy.type!="skimmer" or int(b.round)%2!=0):continue
+			if not electric and enemy.type not in ["scout","sentinel","hauler"]:continue
+			danger.append_array(rules.Hazards.footprint(b,enemy,rules))
+	elif topic=="protocol:mutual_cover":
+		danger=load("res://scripts/presentation/guidance.gd").danger(b,rules)
 	if topic in ["attack","push","interact","stabilize","pickup","restore_power"]:
 		for object: Dictionary in (b.enemies.values() if topic in ["attack","push"] else b.objects.values()):
 			if rules.distance(h.cell,object.cell)<=1:result.append({"target":object.id})
@@ -119,7 +139,7 @@ static func payloads(s: Dictionary,content: Dictionary,actor: String,topic: Stri
 					if obstacle:result.append({"ability":id,"cell":cell})
 		elif id in ["he_1","ye_3"]:
 			for cell: Array in danger:
-				if rules.distance(h.cell,cell)<=3 and not rules.contains_cell(b.insulation,cell):result.append({"ability":id,"cell":cell})
+				if rules.distance(h.cell,cell)<=3 and (id=="he_1" or not rules.contains_cell(b.insulation,cell)):result.append({"ability":id,"cell":cell})
 		else:
 			var targets: Array=b.objects.values() if id in ["lin_1","lin_3","chen_3","mo_1"] else (b.heroes.values() if id in ["xu_3","su_3","jiang_1","jiang_3"] else b.enemies.values())
 			for target: Dictionary in targets:
@@ -181,7 +201,7 @@ static func available(s: Dictionary,content: Dictionary,actor: String) -> Array:
 		if object.kind in ["channel","convoy"] and not result.has("objective:"+object.kind):result.append("objective:"+object.kind)
 	return result
 static func example(s: Dictionary,content: Dictionary,actor: String,topic: String) -> Dictionary:
-	var info: Dictionary=describe(topic,content)
+	var info: Dictionary=describe(topic,content,s)
 	if topic.begins_with("protocol:"):info.kind="protocol"
 	for payload: Dictionary in payloads(s,content,actor,topic):
 		if legal(s,content,actor,info.kind,payload):
@@ -202,7 +222,8 @@ static func offer(s: Dictionary,content: Dictionary,actor: String) -> Dictionary
 	var h: Dictionary=s.battle.heroes.get(actor,{})
 	if h.is_empty() or h.left or h.downed or h.ap<=0:return {}
 	var rules: GDScript=load("res://scripts/domain/campaign_rules.gd")
-	if not learned.has("service_watch"):
+	var service: Dictionary=s.battle.get("service",{})
+	if not learned.has("service_watch") and not service.is_empty() and not service.done and not service.failed and s.battle.round<=service.definition.deadline:
 		for cell: Array in rules.Field.posts(s.battle):
 			if rules.distance(h.cell,cell)<=2:
 				var info: Dictionary=describe("service_watch",content);info.why=s.battle.service.definition.label+"："+info.why;return info
@@ -221,11 +242,25 @@ static func offer(s: Dictionary,content: Dictionary,actor: String) -> Dictionary
 				var payload: Dictionary={"target":"lin","protocol":"protected_work"}
 				if legal(s,content,actor,"prepare_safety",payload):
 					var info: Dictionary=describe("prepare_safety",content);info.payload=payload;info.actor=actor;info.cell=lin.cell.duplicate();return info
+	# During the four foundation nights, anchor the field card to the
+	# current job. The handbook remains available for other legal choices.
+	if s.campaign.day<=4:
+		match s.battle.mission_id:
+			"M03":
+				if not learned.has("tool:crowbar") and s.battle.equipment.get(actor,{}).get("tool","")=="crowbar":
+					return example(s,content,actor,"tool:crowbar")
+			"M04","S01":
+				if not learned.has("protocol:protected_work"):
+					return example(s,content,actor,"protocol:protected_work")
+			"S02":
+				if not learned.has("protocol:relay_carry"):
+					return example(s,content,actor,"protocol:relay_carry")
+		return {}
 	var topics: Array=available(s,content,actor)
 	# Character/tool opportunities first, then ordinary combat and cooperation.
 	for topic: String in topics:
 		if learned.has(topic) or not topic.contains(":") or topic.begins_with("objective:"):continue
-		var info: Dictionary=describe(topic,content)
+		var info: Dictionary=describe(topic,content,s)
 		if info.get("passive",false):
 			if not h.carrying.is_empty():return info
 			continue

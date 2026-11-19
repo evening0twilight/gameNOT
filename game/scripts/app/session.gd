@@ -22,17 +22,40 @@ func submit(command: Dictionary) -> Dictionary:
 	state=result.next_state
 	return result
 func load_game(backup: bool=false) -> Dictionary:
-	var result: Dictionary = store.load_slot(path,content,backup)
-	if result.ok:
-		if backup:
-			# Archive first, then durably restore; failure leaves the original slot intact.
-			if store.fail_writes:return {"ok":false,"error_code":"save_io_failed"}
-			var archived: String=path+".damaged-%d-%d" % [Time.get_unix_time_from_system(),Time.get_ticks_usec()]
-			var existed: bool=FileAccess.file_exists(path)
-			if existed and DirAccess.rename_absolute(path,archived)!=OK:return {"ok":false,"error_code":"save_io_failed"}
-			var restored: Dictionary=store.save_slot(path,result.state,content)
-			if not restored.ok:
-				if existed:DirAccess.rename_absolute(archived,path)
-				return restored
-		state=result.state
+	var result: Dictionary=store.load_slot(path,content,backup)
+	if not result.ok:return result
+	if backup:return restore_state(result.state,true)
+	state=result.state
 	return result
+
+func restore_state(candidate: Dictionary,archive_primary: bool=false) -> Dictionary:
+	# A damaged primary is retained for recovery. A valid primary follows the
+	# usual atomic save path, which preserves its bytes as the preceding backup.
+	if store.fail_writes:return {"ok":false,"error_code":"save_io_failed"}
+	var archived: String=""
+	if FileAccess.file_exists(path) and (archive_primary or not store.known_valid_file(path,content)):
+		archived=path+".damaged-%d-%d" % [Time.get_unix_time_from_system(),Time.get_ticks_usec()]
+		if DirAccess.rename_absolute(path,archived)!=OK:return {"ok":false,"error_code":"save_io_failed"}
+	var result: Dictionary=store.save_slot(path,candidate,content)
+	if not result.ok:
+		if not archived.is_empty():DirAccess.rename_absolute(archived,path)
+		return result
+	state=candidate
+	return {"ok":true,"state":state,"error_code":""}
+
+## Ordered recovery candidates for an autosave, including manual-slot backups.
+static func recovery_files(slot: String) -> Array[String]:
+	var paths: Array[String] = [slot + ".bak"]
+	var directory := slot.get_base_dir()
+	var manuals: Array[String] = ["manual.json"]
+	for i in range(1,11):
+		manuals.append("manual-%02d.json" % i)
+	for name in manuals:
+		var manual := directory.path_join(name)
+		paths.append(manual)
+		paths.append(manual + ".bak")
+	var present: Array[String] = []
+	for candidate in paths:
+		if FileAccess.file_exists(candidate):
+			present.append(candidate)
+	return present

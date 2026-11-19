@@ -1,0 +1,278 @@
+{
+  "candidate": "p4release-20261119",
+  "runtime": "darwin headless, extracted ZIP/PCK in an empty project; dummy audio output",
+  "windows_native_tested": false,
+  "human_acceptance": false,
+  "zip_sha256": "72a0c0e9457f43ce922e95d5df117c42de5914ed67096761372f4f6782f5dbf4",
+  "zip_bytes": 157843219,
+  "pe_machine": "AMD64",
+  "zip_members_sha256": {
+    "night-tide.exe": "29b24a75122f0d9ab5cc22b1bd2885ac095afe8a27e546fbb3dc2c4f0e68b905",
+    "night-tide.pck": "3b3223caab969a4f568b7081667975203a3f23a8cbb2251c63c2913636058e63",
+    "build-receipt.json": "f8f75ae663fe80920f714fd74f240a31b097257a89667d13febd6eb3401daa49",
+    "OFL.txt": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2",
+    "Godot-LICENSE.txt": "29e293e2d478740232b2a563b1dde91fbdac0ed355cdf1078b0397f1abcc2cf8",
+    "asset-sources.csv": "22c3e3535d8cff3dfc3658991bd48228126901003e9b159f9d78bad8f5a4ef35",
+    "Run-Windows-Checks.cmd": "7076f364ff7a095c087cc3f1da00c0c27c27799c823956cdb6616a200fa76276",
+    "image-generation-prompts.json": "afd03fe2e538a1f3d6f1315aab7d6827b3b0f8e5003adcbc83b4536d9c77ef7c",
+    "icon-production.json": "5ebc2e23a7fa0186dfdad9957a75d822d846a792c3084eca5c23700edb01e414",
+    "validation.txt": "bb16d509840a7cd23c65dd6703a3e0fe5323bd565a5393b419a390683ebcd313",
+    "THIS-BUILD-REVIEW.md": "974a12de47fbb8fd6e945c4e0ac79f16a6be8d544e0baacf6be9111f6e3ca1a3",
+    "playtest-form.csv": "dc79fa8233ff9f9623949d35c66e9e13ff0ba385db1fb4428338790d1d8e69b1",
+    "CURRENT-STATUS.md": "6aad45d7a74cb663b0635094ee734096d3c4dc0fe458a104136e9a06e6c31a8a",
+    "Record-Windows-Session.cmd": "eb1000c8a9f5e3710d8832813ac280fbdb11a8fb74bb915f305f3d1c1e04c6f9",
+    "Record-Windows-Session.ps1": "a751579f33d4e441d2bafaf9ec4692e46c9c82cc9e01ad30d78985163650df45",
+    "REFERENCE-SESSION.md": "0323229a5ebbb0d075f5888f8352dc8badd2a963143f0c82b42e9a0c08eb46c3",
+    "README.txt": "7b7e5d23fc1dcd9f8c8f981755cc70bcb4bf547a83102bd2dc9fb32e6d2a9158",
+    "FIELD-GUIDE.txt": "b63e000fd27bd401e5886062733947821b79bb80b0d669f7a2dd5b2b57b1b6b9",
+    "PRODUCT-REVIEW.md": "a076faaddf1df91e48fdefdb4495abd532fb24f2249eaf7aa9ab772feeae41c0",
+    "review-images/p4release-20261119-first-preview.png": "acc3ddab0a9862b240c17ec1c95f20494986e82e3b1f4c3707bdc61270d8771a",
+    "review-images/p4release-20261119-camp-06.png": "feaf607ea9fb5d2ce255fe74b56ec828d220b6f2eec63c4a9c8c5fc4cd0ff294",
+    "review-images/p4release-20261119-ending-zh_CN.png": "0da0fec89299dc76a12677864890495b5c8846ef957349d6c4c1a42c3ecc444f",
+    "current-image-generation-prompts.json": "c49c99548e0fca82aa9186d1f71897ed32f8fb626c0c9691aa6738cba8aca3f2",
+    "audio-generated.json": "4814249de3bcf7f00df6d0a9e93f89b5894a8bcccef7558c0ef1951ebe2126d3",
+    "audio-inventory.json": "1521b487acac14df0cf454775a25ef20ec8d81bc9d4667e51f51d282da6e31e0",
+    "audio-handoff.md": "2a43b04fd0fb36c6e33635e7dbd4f83233c7a31ad53318a4c05c62fc874bd94e",
+    "audio-model-review.json": "6ab8b0fc52614fc4ab5a2612d62aa7a83125eda9d0278734561f825d146dcb26"
+  },
+  "verified_handouts": [
+    "FIELD-GUIDE.txt",
+    "REFERENCE-SESSION.md",
+    "playtest-form.csv",
+    "Record-Windows-Session.cmd",
+    "Record-Windows-Session.ps1",
+    "Run-Windows-Checks.cmd",
+    "README.txt"
+  ],
+  "verified_handout_links": [
+    {
+      "document": "PRODUCT-REVIEW.md",
+      "target": "review-images/p4release-20261119-first-preview.png"
+    },
+    {
+      "document": "PRODUCT-REVIEW.md",
+      "target": "review-images/p4release-20261119-camp-06.png"
+    },
+    {
+      "document": "PRODUCT-REVIEW.md",
+      "target": "review-images/p4release-20261119-ending-zh_CN.png"
+    },
+    {
+      "document": "THIS-BUILD-REVIEW.md",
+      "target": "REFERENCE-SESSION.md"
+    }
+  ],
+  "license_and_provenance_copies": [
+    "Godot-LICENSE.txt",
+    "OFL.txt",
+    "asset-sources.csv",
+    "audio-generated.json",
+    "audio-inventory.json"
+  ],
+  "pack": {
+    "members": 475,
+    "compiled_scripts": 46,
+    "remap_targets": 164,
+    "data_sha256": {
+      "game/data/campaign_coordination_contract.json": "f1eae32a9c28d111a6cbd5154ade2f238881f1b3dd13b0a2d74b81f9e1328773",
+      "game/data/campaign_economy_contract.json": "a0a60f456c853b56d543f77ae1a3648579eb40ba474c9c2680e766a6bcf789da",
+      "game/data/campaign_flow.json": "62ad3710b0e052551825ce7704d10bdb694ca53b09b8a5512c4675cbd9788772",
+      "game/data/campaign_world_contract.json": "d38b514e60a54589a890a7d3fe24cb19cc1f2b552229d76b67c54aa6c7d689b6",
+      "game/data/characters.json": "8b71fd1cd460da591d11b2fcb61d607ed2793e267e8cf8df23297eb895d972d9",
+      "game/data/confirmed_experience_policy.json": "79c943fcaf92ff2fd4ecdbf39d06f16a1409f509e2169055ad0b650762648413",
+      "game/data/enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+      "game/data/equipment.json": "a9135be50fcad91a5a9873cdd33128a7733ce2d275e3b84ec46e75d9814209df",
+      "game/data/event_contract_example.json": "857dd9bf93e846464afb104d1cc46df416337a1bbdfc8ef6557b8211fec31a48",
+      "game/data/final_design/abilities.json": "8653d237f2a73f88cfef2e731eb22187ff251e543fe04ccee324a46a369eb875",
+      "game/data/final_design/acceptance.json": "0b08a7f4ecd913eab7103aee7072c3f7f02009763709071558d57ddf9851a0cc",
+      "game/data/final_design/approach_review_contract.json": "6cb65a61f3bfd7ef3f09dcfb55a632a63bf786a6d16ff5f58024fcd140634dc2",
+      "game/data/final_design/boards.json": "80d5050519b04549268a4d46fbea608725fbb79c208769bbfd4a22d7a9c63855",
+      "game/data/final_design/character_scripts.json": "eafee9a799a3598e460bd26239dc6735435d70139e877217c376969205f100a9",
+      "game/data/final_design/combat.json": "33daa21a56ad76026a49bf35c0c98e8672bbc5e52a25af2545cb89c407289031",
+      "game/data/final_design/design_manifest.json": "94a140d60a14788dbd320e384500e425262c7ad8d254bb00e8c314fe28004cec",
+      "game/data/final_design/enemies.json": "c81c4c5eba3333f9fd74225890451e63361e2d1d67bdb918077ba101e1ed24c0",
+      "game/data/final_design/equipment.json": "4339095d58912300eb6835b7d40756d8d63481c9848369e40b606c52b8454141",
+      "game/data/final_design/facilities.json": "b7a1774db0358850e1a3c050cd993963f6d4c7a53f19a739dea3914355709e7a",
+      "game/data/final_design/full_audit_contract.json": "6de56925ccbd4bf0fe184b5be8054ce9403c1908c2b299e7a7dfcdb5b9ab7a48",
+      "game/data/final_design/growth_identity_contract.json": "f045b2ff0954bb9de4dd5409103074c64055e0783304bcb46070dfcb056ccf6f",
+      "game/data/final_design/integrated_review_contract.json": "7c663fa46ade1d69d51527a99af17b4336bdaf58447a332428760c759f7bed48",
+      "game/data/final_design/integration.json": "c9b1e8230f5ebe56587b4027c0354499d95f16c2da830c39a4dc6fc829aa74f7",
+      "game/data/final_design/ordinary_player_contract.json": "1b7fa4ef7457c659dab5c30559db1753b1e41fb5e4bd105742bf30289226e44b",
+      "game/data/final_design/player_choice_contract.json": "daca55c228bfdda51251de3c8453a277911fa5da1af8a6f63d32ba48a05203af",
+      "game/data/final_design/player_experience_contract.json": "e76f4dcab38acfabd0cefaa97bf725a90c0b1a4108ea4a7520ffa710aaf71a5a",
+      "game/data/final_design/player_flow.json": "62ad3710b0e052551825ce7704d10bdb694ca53b09b8a5512c4675cbd9788772",
+      "game/data/final_design/player_ready_contract.json": "69ba1905c7038e7605d75de2afab0058aa55a3f14e7d730813e5cb6c32da87ee",
+      "game/data/final_design/predevelopment_decisions.json": "e1d8cc41e77ec4aa121e8d7234ac488149740484eeba1beff2412a33e58c2a04",
+      "game/data/final_design/production_scope.json": "e980fdfb7b4202b23949df2674b0f91ebf5eb0addc3b6166cedd8f6b3a2909c6",
+      "game/data/final_design/progression_relationship.json": "f4b467aa82fb60ff01447253d4a3da8f187e3e26ab2fe83a763c608b990036a4",
+      "game/data/final_design/relationship_edge_cases.json": "3fab447e2c8aa7af07e1041eecd5c053e69cf367b35f8d1c16681b06407d1630",
+      "game/data/final_design/release_baseline.json": "f5a51e5375e0f31ee85510b56bb728c1417ce46d5594a94bd907e1eddff92a9c",
+      "game/data/final_design/release_scope.json": "f4ac9f21673f3290ea9ce6627de2ec575e3ebe0de0d3c8e9232f8f2e14e084c3",
+      "game/data/final_design/stories.json": "1e48cfdcda5dc282957cba6ab5792ec235be9e56d1d38d8fce6aca23dc0b5b0a",
+      "game/data/final_design/system_audit_contract.json": "a197d32753872c49999ca46cdbc6b693d9d6cc49cb53c5a8e1a31b7f533eb99b",
+      "game/data/final_design/tactical_review_contract.json": "132120d0fc23335a3f09043660d7031593a605db0e1a3aaf567bd720c6378185",
+      "game/data/final_design/training_value_contract.json": "8840fa8e5ba4308b81ad85181def8c5ff6772c162f61f08790fc0182e65eb0a3",
+      "game/data/final_design/whole_campaign_contract.json": "feb03d9ded7b571ff85ff4ebedf4da21048a3cdf195faebca3448bac963e2ec4",
+      "game/data/initial_relationships.json": "315ef69cf7f624bd395ea6f780c33db95df89213f85537300fe1467171af8a76",
+      "game/data/localization/en.json": "96e951b1d15594509615905b3418a8d78b4921e7a00d7e1b13e3388b695ed658",
+      "game/data/localization/zh_CN.json": "042e0e26ef155f327b8301d600d13daa6a6117a95e81b58f9f60a62519d70525",
+      "game/data/localization/zh_TW.json": "26c23466b45c16234188975ebc80e382d1a39a54ca85444ecb33291157179e13",
+      "game/data/mission_registry.json": "ed5d08192557008f53c4497e2b5464a17915f1d0bceb2cbfef65a9f6c2177002",
+      "game/data/presentation/asset_roles.json": "b4268da9b4712368920606455c70e92d3232205ef0a84f1b063f0e82ad1fc72e",
+      "game/data/presentation/character_journey.json": "42460feca3c852914aa8a8f87652996671828a5a9cdab8e5f466a6f10cc52ed2",
+      "game/data/product.json": "7a77bc9371ca7980a1d5a1471b7eca9f2fc952d66423d47055c19b05bfda78e4",
+      "game/data/requirements.json": "29e4e75e4a53bec3f2bb28f5a3cac342a9f2423fd7acb6324dfd2f76bc654d75",
+      "game/data/rules.json": "bfac9922bd6a9fcea32bab9f202e6c82e9a8f512f47428fcc7b570821a04a26b"
+    },
+    "engine_runtime_resource_entries": {
+      ".godot/exported": 1,
+      ".godot/global_script_class_cache.cfg": 1,
+      ".godot/imported": 163,
+      ".godot/uid_cache.bin": 1
+    },
+    "directory_checksums_verified": 475,
+    "editor_cache_or_test_roots": []
+  },
+  "locales": {
+    "en": {
+      "entries": 3769,
+      "sha256": "96e951b1d15594509615905b3418a8d78b4921e7a00d7e1b13e3388b695ed658",
+      "title": "Night Tide Agency"
+    },
+    "zh_CN": {
+      "entries": 2662,
+      "sha256": "042e0e26ef155f327b8301d600d13daa6a6117a95e81b58f9f60a62519d70525",
+      "title": "夜潮事务所"
+    },
+    "zh_TW": {
+      "entries": 3764,
+      "sha256": "26c23466b45c16234188975ebc80e382d1a39a54ca85444ecb33291157179e13",
+      "title": "夜潮事務所"
+    }
+  },
+  "story_capture_source_map_sha256": "383610ab6ca075b2f2ef6af7d0ff2f9622d2ae18be12631a0d3d1009877651e3",
+  "campaigns": {
+    "authority": "f5a51e5375e0f31ee85510b56bb728c1417ce46d5594a94bd907e1eddff92a9c",
+    "problems": [],
+    "saves": {
+      "camp-day06": {
+        "accepted_commands": 362,
+        "current_projects_used": 0,
+        "known_after_load": true,
+        "offered_after_load": "mentors",
+        "recorded_command_topic": "mentors",
+        "repeat_offer_after_read": "",
+        "restored_equal": true,
+        "revision": 358.0,
+        "sha256": "56a877203d72250b09a1b722a7e1d9037a7b7b7b512aeb4dc8067545b11fd2e3",
+        "trained_student": true
+      },
+      "camp-day23": {
+        "available_routes": [
+          "shared_control",
+          "distributed_rebuild",
+          "evacuation"
+        ],
+        "day": 23.0,
+        "known": true,
+        "route": "shared_control",
+        "sha256": "f982b8ba99cd5ad3084a7a6fb1a010166ff04890ca3cdab91cd45da2333b00ed"
+      },
+      "ending-main": {
+        "day": 24.0,
+        "ending": "evacuation",
+        "locales": {
+          "en": {
+            "M24_outcome": "success",
+            "R05_isolation_text": "The pump room is handed over under the Isolation Protocol. Hazardous outputs have been severed; this action is not logged as a full repair.",
+            "crew_buttons": 8,
+            "title": "Campaign finale · Citywide Evacuation"
+          },
+          "zh_CN": {
+            "M24_outcome": "success",
+            "R05_isolation_text": "泵房按隔离方案交接，危险输出已切断；这次没有登记为完整修复。",
+            "crew_buttons": 8,
+            "title": "战役终局 · 总撤离"
+          },
+          "zh_TW": {
+            "M24_outcome": "success",
+            "R05_isolation_text": "泵房按隔離方案交接，危險輸出已切斷；這次沒有登記為完整修復。",
+            "crew_buttons": 8,
+            "title": "戰役終局 · 總撤離"
+          }
+        },
+        "main_missions": 24,
+        "route": "evacuation",
+        "sha256": "b125aa0677e3227878f315d41c6e9c34295ba10771de79050e816ac1d8d0e1c4",
+        "side_missions": 0
+      },
+      "ending-recovery": {
+        "day": 24.0,
+        "ending": "evacuation",
+        "locales": {
+          "en": {
+            "M24_outcome": "success",
+            "R05_isolation_text": "The pump room is handed over under the Isolation Protocol. Hazardous outputs have been severed; this action is not logged as a full repair.",
+            "crew_buttons": 8,
+            "title": "Campaign finale · Citywide Evacuation"
+          },
+          "zh_CN": {
+            "M24_outcome": "success",
+            "R05_isolation_text": "泵房按隔离方案交接，危险输出已切断；这次没有登记为完整修复。",
+            "crew_buttons": 8,
+            "title": "战役终局 · 总撤离"
+          },
+          "zh_TW": {
+            "M24_outcome": "success",
+            "R05_isolation_text": "泵房按隔離方案交接，危險輸出已切斷；這次沒有登記為完整修復。",
+            "crew_buttons": 8,
+            "title": "戰役終局 · 總撤離"
+          }
+        },
+        "main_missions": 24,
+        "route": "evacuation",
+        "sha256": "c71d3f7401979e8feff213d689c35ac38332a0a413a9f69b91ffab577a10d346",
+        "side_missions": 0
+      },
+      "ending-sides": {
+        "day": 24.0,
+        "ending": "shared_control",
+        "locales": {
+          "en": {
+            "M24_outcome": "success",
+            "R05_isolation_text": "The pump room is handed over under the Isolation Protocol. Hazardous outputs have been severed; this action is not logged as a full repair.",
+            "crew_buttons": 8,
+            "saved_choice": "share",
+            "title": "Campaign finale · Joint Control"
+          },
+          "zh_CN": {
+            "M24_outcome": "success",
+            "R05_isolation_text": "泵房按隔离方案交接，危险输出已切断；这次没有登记为完整修复。",
+            "crew_buttons": 8,
+            "saved_choice": "share",
+            "title": "战役终局 · 共同控制"
+          },
+          "zh_TW": {
+            "M24_outcome": "success",
+            "R05_isolation_text": "泵房按隔離方案交接，危險輸出已切斷；這次沒有登記為完整修復。",
+            "crew_buttons": 8,
+            "saved_choice": "share",
+            "title": "戰役終局 · 共同控制"
+          }
+        },
+        "main_missions": 24,
+        "route": "shared_control",
+        "sha256": "3b7eaade7d0a4cea23565de95d46a97ebc9872c5d8231d8055cc9efcc2d58625",
+        "side_missions": 12
+      }
+    }
+  },
+  "packaged_score": "packaged-score.json",
+  "packaged_score_sha256": "46af57e7f465f9e920526426e719a81a0a94231ce7c208211f6f4e1ccd28dc4b",
+  "credential_scan": {
+    "configured_values_compared": 3,
+    "matches": 0,
+    "runtime_script_files_checked": 46,
+    "scope": "Exact locally configured credentials (12+ characters), checked against ZIP member bytes and runtime script source. No network client class or configured service identifier in checked runtime. Compiled resources and runtime UID/class lookups are expected under .godot/. No claim concerning arbitrary unknown keys."
+  }
+}

@@ -26,7 +26,7 @@ static func footprint(b: Dictionary,e: Dictionary,rules: GDScript) -> Array:
 				var cell: Array=[int(e.cell[0])+d[0]*step,int(e.cell[1])+d[1]*step]
 				if rules.terrain(b,cell)=="#" or not rules.Product.valid_cell(cell):break
 				cells.append(cell)
-				if b.barriers.has(str(cell)):break
+				if b.barriers.has(rules.barrier_key(b,cell)):break
 		"welder":
 			if int(b.round)%2==1:return cells
 			for offset: int in [-1,0,1]:
@@ -72,10 +72,11 @@ static func resolve(b: Dictionary,e: Dictionary,rules: GDScript) -> void:
 	if e.get("paused_round",0)==b.round or e.get("isolated",false):return
 	var cells:=footprint(b,e,rules)
 	for cell: Array in cells:
-		if e.type in ["scout","sentinel","hauler"] and b.barriers.has(str(cell)):
-			if not b.protection.has(b.barriers[str(cell)].actor):b.protection.append(b.barriers[str(cell)].actor)
-			b.barriers[str(cell)].hp-=enemy_damage(b,3 if e.type=="sentinel" else 2)
-			if b.barriers[str(cell)].hp<=0:b.barriers.erase(str(cell))
+		var barrier: String=rules.barrier_key(b,cell)
+		if e.type in ["scout","sentinel","hauler"] and b.barriers.has(barrier):
+			if not b.protection.has(b.barriers[barrier].actor):b.protection.append(b.barriers[barrier].actor)
+			b.barriers[barrier].hp-=enemy_damage(b,3 if e.type=="sentinel" else 2)
+			if b.barriers[barrier].hp<=0:b.barriers.erase(barrier)
 			break
 		var carried_before: Array=[]
 		for hero: Dictionary in b.heroes.values():

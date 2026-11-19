@@ -1,0 +1,133 @@
+{
+  "clean_initial_head": "bda73840f1c73218c17ff5daff331b179682732c",
+  "reason": "Legacy regression tools write generic paths. The current bytes are retained under the new candidate prefix and earlier Git-tracked bytes are restored to their original paths.",
+  "files": [
+    {
+      "path": "outputs/baseline018-linked-campaign.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/baseline018-linked-campaign.json.gz",
+      "regenerated_sha256": "fc0f29cf09b29b6ed91810fc42f9d1110146b653a7ee87025b7c97eafb87d754",
+      "restored_sha256": "00c98caf95c1cc210d28fd1b5b4bff1ed215311916ed72ad780ba6a3697b2af9",
+      "encoding": "gzip",
+      "uncompressed_bytes": 1493626,
+      "archive_sha256": "ed8298a78ae9dd74764ddc77af23f6e044640811357847798f2b0ea4d451a037"
+    },
+    {
+      "path": "outputs/baseline018-linked-day04.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/baseline018-linked-day04.json",
+      "regenerated_sha256": "45f5f7da720bdd7c7c9ad3e8c0c24d563de0a8a82fbf3fedf315c07f13778c6f",
+      "restored_sha256": "bd095c11617f90877891c5e5b68183c0553ca3ad9b9dd6deae85a390e0287f6c"
+    },
+    {
+      "path": "outputs/baseline018-linked-day06.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/baseline018-linked-day06.json",
+      "regenerated_sha256": "745ba7c8b7cb7536c04b58065d36146aa5912d5b335e37015123320342fdcff4",
+      "restored_sha256": "559e1741f46338b9c344878f9abac1456732603092465a57809f2f8e0a9c130b"
+    },
+    {
+      "path": "outputs/baseline018-linked-day16.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/baseline018-linked-day16.json",
+      "regenerated_sha256": "297a49b0c1a128503d32d8834d2d7fc5fc9e0935e84855d31af603b2e1bf2a96",
+      "restored_sha256": "d7cfde3590995ac0b6e2901f2f8cd1e88bbd256cb276f59513c2d8fb1403ea97"
+    },
+    {
+      "path": "outputs/baseline018-linked-day18.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/baseline018-linked-day18.json",
+      "regenerated_sha256": "b6dd562696e88db7cfcf340d6e9046f6daa34e6e7fe8fa3f372dd1e22c7fae20",
+      "restored_sha256": "540d6738ac1490abde456630168654614b7835b3dfc7a6a651d88e1c0360801e"
+    },
+    {
+      "path": "outputs/baseline018-linked-day19.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/baseline018-linked-day19.json",
+      "regenerated_sha256": "ae6a348294f35eec03a24ea9be2367221be56e1ead6b357fac8027c7fdec5dfd",
+      "restored_sha256": "13da4c706ab5c4e066f74f443f9f41ab3fe5327a93a986fe0b3ba7fcbd913b86"
+    },
+    {
+      "path": "outputs/baseline018-linked-day24.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/baseline018-linked-day24.json",
+      "regenerated_sha256": "53686ac762feed892a2371e88177f9661cf5d6f5b0e7771ea3b63d694da6f9b0",
+      "restored_sha256": "3b522dc306fb39053f0645f34bcf5099ec2c10fcd455b1619a0669fb91aec0d4"
+    },
+    {
+      "path": "outputs/campguide-day05.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/campguide-day05.json",
+      "regenerated_sha256": "f80e7604d878c2ff59bd19521e78934ee3ab82945be60093e2647e34c23304cf",
+      "restored_sha256": "468358a18848cb563c3b7a576ea75dabeee179f6b84eaeff55b615d9c1d358b2"
+    },
+    {
+      "path": "outputs/campguide-review.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/campguide-review.json",
+      "regenerated_sha256": "ddd553008e859dca2d6662d76693be03efee87ce7f34e918b7a51d7377f31e2d",
+      "restored_sha256": "edcc4796391f8dd487d2a24b4491b10c16d411e37f812f50b6512177fecba04a"
+    },
+    {
+      "path": "outputs/fieldguide-day04.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/fieldguide-day04.json",
+      "regenerated_sha256": "0d594f2377a7aef3c803d30b5a8226a0ca02e24bb46394b48f930d02378bad01",
+      "restored_sha256": "504b37f3991e9ea987f8b40fb5cd16250fa56e54d891fc4f2273be00bda834e6"
+    },
+    {
+      "path": "outputs/fieldguide-review.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/fieldguide-review.json",
+      "regenerated_sha256": "41c87b7e849de999eecc9ee5aa655c80f37007058895bbf1118a9dd8cd95ec91",
+      "restored_sha256": "7475bdea6816c5df2045b920d99c249bd97ededc12a9d6a32954246cd5063b29"
+    },
+    {
+      "path": "outputs/firstshift-day01-camp.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/firstshift-day01-camp.json",
+      "regenerated_sha256": "d129b0b5111bf9ced597f19519016c63705d51bccdad62d7a7a521f668d47836",
+      "restored_sha256": "5d41f5ddb2c3788112dd57ed96176d3d1dc5eeb532e4bb7ac94571f74f7986cb"
+    },
+    {
+      "path": "outputs/firstshift-day02-story.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/firstshift-day02-story.json",
+      "regenerated_sha256": "6ed809a4918ba6cbf2f36eaa0d8a59dcbdbd10cbb47847f57fda8a0ae0d22f0c",
+      "restored_sha256": "8f0287e3482ec90d06ef16396cf24d9fa12fce3b6439f592e00c39cf2520a46d"
+    },
+    {
+      "path": "outputs/firstshift-review.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/firstshift-review.json",
+      "regenerated_sha256": "8125c803d5cbddfad11d463fb6b33da5870d510f1756a6542c9a67812a6ec66c",
+      "restored_sha256": "1c1bd27d5ffd1154b6addcc48eca3f426a5722b7373af706090a6ce15f96b955"
+    },
+    {
+      "path": "outputs/languages-catalog-check.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/languages-catalog-check.json",
+      "regenerated_sha256": "43af3e31e9f6a26a9817b78e87ac9a458e8143d6aee2089b04fd04ed68f01af1",
+      "restored_sha256": "b8df0582002db1c6748bb4f571b32f70e4ea0947d2a0b679ea246bb21f95603e"
+    },
+    {
+      "path": "outputs/p4close-before-mentor.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/p4close-before-mentor.json",
+      "regenerated_sha256": "8c05ad03240ff6acc94c01fedbe1f206a762fa44a1eba478f922671c1125b5ce",
+      "restored_sha256": "95de55bf84acab6d4f8cae1c3ec1decb9fdbfc01e517091b3b636a6f07fd1637"
+    },
+    {
+      "path": "outputs/p4close-editorial.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/p4close-editorial.json",
+      "regenerated_sha256": "6c31b9500765dedbd62ed9c5da5cce7d2d70292c4d08ac08eaa8026df8db2fb3",
+      "restored_sha256": "33c6c1a3e4598bb6f7e439fe4f55a71a6ef6ef0250ce09f2de1a598a9cade243"
+    },
+    {
+      "path": "outputs/p4close-growth-mo-day23.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/p4close-growth-mo-day23.json",
+      "regenerated_sha256": "5c5564f6479a06810bd4778c3f4859e910a7cb73978d7e6ee36f10e4bbd10805",
+      "restored_sha256": "f90431bce1b6e21d9da5259097d5de99383fd0afd7a4f1a6bbfa337e45d53303"
+    },
+    {
+      "path": "outputs/product018-crew-campaign.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/product018-crew-campaign.json.gz",
+      "regenerated_sha256": "39178c3c2419c60f29b45e66f9a29b817679e5521103b3c73869186e61678d27",
+      "restored_sha256": "79d04c842c40c1d369fdf553bd3970f617c4eb59cbcc8aee380ace5737845484",
+      "encoding": "gzip",
+      "uncompressed_bytes": 25449276,
+      "archive_sha256": "57ca4ebb914c6ac2d5818a8717582f1433255fd608d276d8eb00faddf20a82df"
+    },
+    {
+      "path": "outputs/product018-story-coverage.json",
+      "regenerated_copy": "outputs/p4release-20261119/regenerated/product018-story-coverage.json",
+      "regenerated_sha256": "f2415eb9d2fcb4c73da0fd0aba110ac1beb84c79c2a0a4174e16dc5719ef6122",
+      "restored_sha256": "5105819c1ac21ece4a04637f132b129cc5f88d9ebf45804fc3a3445451816824"
+    }
+  ],
+  "large_files": "Regenerated outputs over 1 MiB are gzip archives. The regenerated_sha256 is the digest of their decompressed bytes."
+}

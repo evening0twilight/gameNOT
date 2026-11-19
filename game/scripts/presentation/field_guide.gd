@@ -47,7 +47,7 @@ static func actions(ui: Control,box: VBoxContainer) -> void:
 	var grid:=GridContainer.new();grid.columns=2;box.add_child(grid)
 	for topic: String in topics:
 		if topic.begins_with("objective:") or (not known.has(topic) and lesson.get("topic","")!=topic):continue
-		var info: Dictionary=Learning.describe(topic,ui.session.content)
+		var info: Dictionary=Learning.describe(topic,ui.session.content,ui.session.state)
 		if info.is_empty():continue
 		if topic.begins_with("protocol:"):info.kind="protocol"
 		var button: Button=ui.button(grid,(I18n.s("新 · ") if not known.has(topic) else "")+title(ui,info),func():select(ui,info))
@@ -64,14 +64,14 @@ static func browse(ui: Control) -> void:
 	ui.button(dialog.box,I18n.s("查看现场与全部目标"),func():dialog.window.queue_free();ui.show_site())
 	ui.button(dialog.box,I18n.s("展开全部操作 · 跳过教学"),func():dialog.window.queue_free();ui.tutorial_ack("skip"))
 	for topic: String in Learning.available(ui.session.state,ui.session.content,ui.selected):
-		var info: Dictionary=Learning.describe(topic,ui.session.content)
+		var info: Dictionary=Learning.describe(topic,ui.session.content,ui.session.state)
 		ui.button(dialog.box,title(ui,info),func():dialog.window.queue_free();details(ui,topic,true))
 static func details(ui: Control,topic: String,manual: bool) -> void:
-	var info: Dictionary=Learning.describe(topic,ui.session.content)
+	var info: Dictionary=Learning.describe(topic,ui.session.content,ui.session.state)
 	var dialog: Dictionary=ui.modal(title(ui,info));ui.label(dialog.box,info.why);ui.label(dialog.box,info.how)
 	ui.button(dialog.box,I18n.s("已了解 · 保留这个操作"),func():dialog.window.queue_free();ui.field_ack(topic,manual))
 static func choices(ui: Control,topic: String) -> void:
-	var info: Dictionary=Learning.describe(topic,ui.session.content)
+	var info: Dictionary=Learning.describe(topic,ui.session.content,ui.session.state)
 	if topic.begins_with("protocol:"):info.kind="protocol"
 	var dialog: Dictionary=ui.modal(title(ui,info));ui.label(dialog.box,info.how)
 	var count: int=0
@@ -93,10 +93,15 @@ static func briefing(ui: Control,parent: Node) -> void:
 	var board: Dictionary=ui.session.content.boards[s.journey.next_mission]
 	var frame:=HBoxContainer.new();frame.size_flags_horizontal=Control.SIZE_EXPAND_FILL;frame.add_theme_constant_override("separation",24);parent.add_child(frame)
 	var left:=VBoxContainer.new();left.size_flags_horizontal=Control.SIZE_EXPAND_FILL;frame.add_child(left)
-	left.add_child(ui.Art.site_picture(board.location,Vector2(0,240)))
+	var site: Control=ui.Art.site_picture(board.location,Vector2(0,210))
+	site.size_flags_vertical=Control.SIZE_EXPAND_FILL;left.add_child(site)
+	left.add_theme_constant_override("separation",12)
 	ui.label(left,I18n.s("第 %d 天 · %s")%[s.campaign.day,I18n.s(board.title)]).add_theme_font_size_override("font_size",28)
-	ui.label(left,board.decision)
-	var right:=VBoxContainer.new();right.custom_minimum_size.x=440;right.size_flags_horizontal=Control.SIZE_EXPAND_FILL;frame.add_child(right)
+	ui.label(left,I18n.content("boards",board.id,"decision",board.decision))
+	if s.campaign.failure_modifier:ui.label(left,I18n.t("journey.rubble")).add_theme_color_override("font_color",ui.GOLD)
+	var panel:=PanelContainer.new();panel.custom_minimum_size.x=420;panel.size_flags_vertical=Control.SIZE_SHRINK_CENTER
+	panel.add_theme_stylebox_override("panel",ui.surface(ui.SURFACE,12));frame.add_child(panel)
+	var right:=VBoxContainer.new();right.add_theme_constant_override("separation",10);panel.add_child(right)
 	if preload("res://scripts/domain/camp_learning.gd").completed(s):
 		ui.label(right,I18n.s("基础教程已完成 · 自主安排")).add_theme_color_override("font_color",ui.TEAL)
 	ui.label(right,I18n.s("本次要完成")).add_theme_color_override("font_color",ui.GOLD)
@@ -109,6 +114,7 @@ static func briefing(ui: Control,parent: Node) -> void:
 	ui.label(right,I18n.s("仍使用已学的操作。新装置和新方法，会在现场一次介绍一个。")).add_theme_color_override("font_color",ui.MUTED)
 	var roster: Array[String]=[]
 	for id: String in s.journey.draft.roster:roster.append(ui.actor_name(id))
-	ui.label(right,I18n.s("出勤：")+"、".join(roster))
-	ui.button(right,I18n.s("出发 · 到现场再学"),func():ui.full_preparation=false;ui.propose("depart",s.journey.draft.duplicate(true)))
+	ui.label(right,I18n.s("出勤：")+(", " if I18n.locale=="en" else "、").join(roster))
+	var depart: Button=ui.button(right,I18n.s("出发 · 到现场再学"),func():ui.full_preparation=false;ui.propose("depart",s.journey.draft.duplicate(true)))
+	depart.add_theme_stylebox_override("normal",ui.surface(Color("35524c"),8,ui.TEAL))
 	ui.button(right,I18n.s("调整阵容与装备"),func():ui.full_preparation=true;ui.render())

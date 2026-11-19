@@ -56,16 +56,9 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 	for option: Dictionary in node.choices:
 		if option.id==c.payload.get("choice"):choice=option;break
 	if choice.is_empty():return "invalid_target"
-	if node.get("stage",0)==3 and choice.id=="integrated":
-		var contract: Dictionary=s.full_campaign.contracts.get(node.actor,{})
-		if not contract.get("fulfilled",false) or contract.get("breached",false):return "proof_required"
-	if choice.get("creates_contract",false) and s.campaign.day>choice.get("latest_creation_day",23):return "story_unavailable"
+	var unavailable: String=choice_error(s,node,choice)
+	if not unavailable.is_empty():return unavailable
 	var project_cost: int=int(node.get("project_cost",0))
-	if s.campaign.projects+project_cost>2:return "project_used"
-	if project_cost>0:
-		for actor: String in node.get("participants",[node.get("actor","")]):
-			if s.campaign.used.has(actor):return "project_used"
-	if s.inventory.credits<int(choice.get("credits",0)):return "insufficient_resources"
 	s.inventory.credits-=int(choice.get("credits",0));s.campaign.projects+=project_cost
 	if project_cost>0:
 		for actor: String in node.get("participants",[node.get("actor","")]):s.campaign.used.append(actor)
@@ -86,4 +79,19 @@ static func apply(s: Dictionary,c: Dictionary,content: Dictionary) -> String:
 			s.social[pair].agreement="cooperate" if choice.id=="agreement" else "professional"
 			s.social[pair].renegotiated_day=s.campaign.day
 	preload("res://scripts/domain/full_campaign.gd").verify(s,content)
+	return ""
+
+## The dialogue and the command use the same proof, deadline and cost checks.
+## Callers first establish that this scene can currently accept a response.
+static func choice_error(s: Dictionary,node: Dictionary,choice: Dictionary) -> String:
+	if node.get("stage",0)==3 and choice.id=="integrated":
+		var contract: Dictionary=s.full_campaign.contracts.get(node.actor,{})
+		if not contract.get("fulfilled",false) or contract.get("breached",false):return "proof_required"
+	if choice.get("creates_contract",false) and s.campaign.day>choice.get("latest_creation_day",23):return "story_unavailable"
+	var project_cost: int=int(node.get("project_cost",0))
+	if s.campaign.projects+project_cost>2:return "project_used"
+	if project_cost>0:
+		for actor: String in node.get("participants",[node.get("actor","")]):
+			if s.campaign.used.has(actor):return "project_used"
+	if s.inventory.credits<int(choice.get("credits",0)):return "insufficient_resources"
 	return ""

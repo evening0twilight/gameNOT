@@ -1,0 +1,13 @@
+{
+  "button_geometry": [],
+  "captures": [],
+  "checks": 135,
+  "failures": [],
+  "runtime": "headless",
+  "scope": "real saved day 2/day 24 journal replay; isolated day 23 decisions; 1280x720 three locales and three font sizes. No human or Windows evidence.",
+  "sources": [
+    "outputs/firstshift-day02-story.json",
+    "outputs/baseline018-linked-day24.json",
+    "outputs/p4art-benefits-growth-mo-day23.json"
+  ]
+}

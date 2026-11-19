@@ -1,0 +1,53 @@
+{
+	"failures": [],
+	"frames": [],
+	"previews": [
+		{
+			"locale": "zh_CN",
+			"preview": "行动：确认终局路线\nAP消耗：0\n资源变化：资金 +0 / 物资 +0 / 零件 +0\n确认后保存并执行；取消不会消耗资源。\n具体变化：\n已选择：共同控制\n本次要完成\n · 切断错误总线\n · 交接公开权限",
+			"route": "shared_control"
+		},
+		{
+			"locale": "zh_CN",
+			"preview": "行动：确认终局路线\nAP消耗：0\n资源变化：资金 +0 / 物资 +0 / 零件 +0\n确认后保存并执行；取消不会消耗资源。\n具体变化：\n已选择：分区重建\n本次要完成\n · 隔离西支路\n · 隔离东支路",
+			"route": "distributed_rebuild"
+		},
+		{
+			"locale": "zh_CN",
+			"preview": "行动：确认终局路线\nAP消耗：0\n资源变化：资金 +0 / 物资 +0 / 零件 +0\n确认后保存并执行；取消不会消耗资源。\n具体变化：\n已选择：总撤离\n本次要完成\n · 撤离末班居民\n · 撤离末班伤员",
+			"route": "evacuation"
+		},
+		{
+			"locale": "zh_TW",
+			"preview": "行動：確認終局路線\nAP消耗：0\n資源變化：資金 +0／物資 +0／零件 +0\n確認後儲存並執行；取消不消耗資源。\n具體變化：\n已選擇：共同控制\n本次要完成\n · 切斷錯誤總線\n · 交接公開權限",
+			"route": "shared_control"
+		},
+		{
+			"locale": "zh_TW",
+			"preview": "行動：確認終局路線\nAP消耗：0\n資源變化：資金 +0／物資 +0／零件 +0\n確認後儲存並執行；取消不消耗資源。\n具體變化：\n已選擇：分區重建\n本次要完成\n · 隔離西支路\n · 隔離東支路",
+			"route": "distributed_rebuild"
+		},
+		{
+			"locale": "zh_TW",
+			"preview": "行動：確認終局路線\nAP消耗：0\n資源變化：資金 +0／物資 +0／零件 +0\n確認後儲存並執行；取消不消耗資源。\n具體變化：\n已選擇：總撤離\n本次要完成\n · 撤離末班居民\n · 撤離末班傷員",
+			"route": "evacuation"
+		},
+		{
+			"locale": "en",
+			"preview": "Action: Confirm endgame route\nAP cost: 0\nResource change: Funds +0 / Supplies +0 / Parts +0\nConfirm to save and execute; cancellation consumes no resources.\nSpecific changes:\nSelected: Joint Control\nYour objectives\n · Disconnect the faulty bus\n · Hand over public access",
+			"route": "shared_control"
+		},
+		{
+			"locale": "en",
+			"preview": "Action: Confirm endgame route\nAP cost: 0\nResource change: Funds +0 / Supplies +0 / Parts +0\nConfirm to save and execute; cancellation consumes no resources.\nSpecific changes:\nSelected: District Reconstruction\nYour objectives\n · Isolate the west circuit\n · Isolate the east circuit",
+			"route": "distributed_rebuild"
+		},
+		{
+			"locale": "en",
+			"preview": "Action: Confirm endgame route\nAP cost: 0\nResource change: Funds +0 / Supplies +0 / Parts +0\nConfirm to save and execute; cancellation consumes no resources.\nSpecific changes:\nSelected: Citywide Evacuation\nYour objectives\n · Evacuate the last residents\n · Evacuate the last casualties",
+			"route": "evacuation"
+		}
+	],
+	"sha256": "f982b8ba99cd5ad3084a7a6fb1a010166ff04890ca3cdab91cd45da2333b00ed",
+	"source": "camp-day23.json"
+}
