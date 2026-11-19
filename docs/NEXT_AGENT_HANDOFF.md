@@ -7,7 +7,7 @@
 
 本次为 `p4release-20261119`。发行判断为 **NO-GO**。请先看[逐项验收](p4-release-20261119/validation.md)、[本轮状态](p4-release-20261119/release-status.md)及[正式战役中的角色选择](p4-release-20261119/campaign.md)。第 5 节列出新的复现入口。冻结基线和存档版本仍为 0.18 与 8。
 
-本机交付包为 `build/night-tide-0.18-p4release-20261119-windows.zip`，157843219 bytes，SHA256 `72a0c0e9457f43ce922e95d5df117c42de5914ed67096761372f4f6782f5dbf4`。[构建收据](p4release-20261119-build.json)对应48组统一检查与499个生产文件。[证据索引](p4-release-20261119/evidence-index.json)把最终截图、存档、验具、实包验证和 Mac 计时绑定到同一候选。20份旧通用输出已恢复原字节，新生成内容保存在独立前缀。Windows 与真人验收仍开放。
+本机交付包为 `build/night-tide-0.18-p4release-20261119-windows.zip`，157843219 bytes，SHA256 `72a0c0e9457f43ce922e95d5df117c42de5914ed67096761372f4f6782f5dbf4`。[构建收据](p4release-20261119-build.json)对应48组统一检查与499个生产文件。[证据索引](p4-release-20261119/evidence-index.json)把最终截图、存档、验具、实包验证和 Mac 计时绑定到同一候选。20份旧通用输出已恢复原字节，新生成内容保存在独立前缀。交付后，用户确认已在 Windows 上测试好这份候选包。已按上述包哈希登记此次实测。用户未提供机器规格、性能采样或多玩家观察记录，R07 的量化指标与真人体验条件仍待核实。
 
 ### 2026-11-17 营地返修（历史）
 
